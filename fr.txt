@@ -569,38 +569,37 @@ $53266310714298 Control
 
 === levels/3_decoder ===
 
-$19231618567710 With 3 bits of input there are 8 combinations. Make a circuit that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
-
+$19231618567710 Avec 3 bits en entrée 8 combinaisons sont possibles. Réalise un circuit pour sélectionner une sortie pour chacune des 8 combinaisons. Un bit et un seul doit être [ON] à chaque instant.
+$14293122338496 Nous avons fait ajouter au stagiaire un bit "désactivé" sur ce composant. Nous étions las de le voir tourner en rond et cherchions une nouvelle tâche inutile et assommante à lui donner.
 
 === levels/test_lab ===
 
 $11038144815919
-This level uses programs to test your circuits. When the programs are run, this level checks if the "watched state" behaves the way you expect.
+Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
 
-The lab has 2 extra keywords.
+Le labo a 2 mots-clés supplémentaires.
 
-The [color=#c54d5e]expect[/color] keyword is used to describe what a value a memory address should hold next tick.
+Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au tic suivant à une adresse mémoire.
 
-The first number after [color=#c54d5e]expect[/color] is index in the watched state, the second number is the expected value. The watched state indexes are the order the components are connected up in to the program component.
+La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
 [img]dialogue/watched_state.png[/img]
 
-For example:
+Par exemple :
 [code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
 [color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]_[/color] [color=#4a9658]r2[/color][/code]
 
-Here, the first line says that we expect the 2nd watched state slot to hold a value of 4 after the next tick.
+Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
 
-All watched state is checked against expectations at every tick. All watched state is expected to be 0 at the start of the program, and expectations for memory components only change as you specifically change the expectations. The one exception are counters, these are naturally expected to increment each tick.
+Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque tic. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
-The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With this you can control the input of the computer:
+[color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
 [color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
 
-You can at any time also (re)import example tests by clicking below:
+Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
-$15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+$15446846177093 Bienvenu au labo. Comme la fabrique de composants, ce n'est pas un niveau normal mais un outil.
+$16072814175447 Programmer du matériel bogué est très frustrant. Il est pénible de devoir soudainement se poser des questions sur les circuits quand on est en plein résolution d'un problème de programmation. Il est tentant de faire un correctif rapide afin de revenir au problème initial. Mais maintenant ce correctif vite-fait a cassé autre chose dans un programme qui fonctionnait jusque là et ainsi de suite. Au final en développant le matériel essaie de viser 100% de fiabilité avant de démarrer la programmation !
 
 
 === levels/Opcodes ===
