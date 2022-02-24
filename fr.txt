@@ -356,7 +356,7 @@ $49526452710191 NE PAS DEPILER
 $58050047963238 VALEUR
 $30926395960020 EMPILER
 $19245209470436 Créer une pile
-$12227209887733 A chaque tic les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stockes la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
+$12227209887733 A chaque cycle les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stockes la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
 $85171087236638 ACTIVER
 $15662660252584 Ne rien faire
 $23726790986805 DEPILER
@@ -506,7 +506,7 @@ $11457737665157 Plat de Spaghetti
 $59485174474959 Délices ordonnés
 $85514901357243 Addition d'Octets
 $98013649264532 Pile
-$35790581910835 Second Tic
+$35790581910835 Second Cycle
 $94979277765051 Course de Robots
 $13303326918621 Porte NAND
 $16463062897451 Réveil brutal
@@ -522,7 +522,7 @@ $70651296323768 Porte XOR
 $31140969090253 Noms de Planètes
 $42873691377272 Ajouter 5
 $36114120875026 Storage cracker
-$45773199639367 Tics pairs
+$45773199639367 Cycles pairs
 $17198602105978 Inférieur non signé
 $43018398941741 Toujours On
 $68155633878444 Délai
@@ -579,7 +579,7 @@ Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes 
 
 Le labo a 2 mots-clés supplémentaires.
 
-Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au tic suivant à une adresse mémoire.
+Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au cycle suivant à une adresse mémoire.
 
 La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
@@ -591,7 +591,7 @@ Par exemple :
 
 Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
 
-Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque tic. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
+Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
 [color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
 [color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
