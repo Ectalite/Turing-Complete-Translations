@@ -36,33 +36,33 @@ $71951682957395 Level map
 
 === ui/state_ui/title_screen/exit ===
 
-$12639868461113 exit
+$12639868461113 Quitter
 
 
 === misc/button_next ===
 
-$50213503063080 Next tick (Hotkey: F5)
+$50213503063080 Prochain cycle (Raccourci clavier: F5)
 
 
 === levels/saving_bytes ===
 
 $10633476398156
-Create a circuit that can [SAVE] or [LOAD] a byte.
+Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un byte.
 
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
-$15510981129613 LOAD
+Lorsque le premier bit est [ON], [CHARGEZ] la mémoire et envoyez la vers la sortie.
+Lorsque le second bit est [ON], [SAUVEGARDEZ] le byte d'entrée.
+$15510981129613 CHARGER
 $13502950630653
 [color=#ff9800]None
 0
 0[/color]
-$19109563882664 DON'T LOAD
-$16372198430230 SAVE
-$11467279617581 SAVE
-$15498440508450 Do nothing
-$10080722944246 DON'T SAVE
-$18873598212433 LOAD
-$15582618410991 LOAD and SAVE
+$19109563882664 NE PAS CHARGER
+$16372198430230 SAUVEGARDER
+$11467279617581 SAUVEGARDER
+$15498440508450 Ne rien faire
+$10080722944246 NE PAS SAUVEGARDER
+$18873598212433 CHARGER
+$15582618410991 CHARGER ET SAUVEGARDER
 
 
 === levels/maze ===
