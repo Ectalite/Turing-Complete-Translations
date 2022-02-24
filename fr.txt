@@ -604,15 +604,15 @@ $16072814175447 Programmer du matériel bogué est très frustrant. Il est péni
 
 === levels/Opcodes ===
 
-$19693461238792 Set the counter increment to 4
-$38976231780455 Watched state {nr} should point to a register or custom component with a register inside
-$20916717363300 Watched state {nr} should point to the output
-$18189600217529 [center]Implement the OPCODE instructions[/center]
-$13450117997204 Add a counter to the circuit
-$77044880242883 Watched state {nr} should point to the counter
-$13870568875751 Create a new schematic and add a program with 4 byte output
+$19693461238792 Fixe l'incrément du compteur à 4
+$38976231780455 Espion {nr} doit cibler un registre ou un composant personalisé contenant un registre
+$20916717363300 Espion {nr} doit cibler la sortie
+$18189600217529 [center]Implémente l'instruction OPCODE[/center]
+$13450117997204 Ajoute un compteur dans le circuit
+$77044880242883 Espion {nr} doit cibler le compteur
+$13870568875751 Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
 $10303603301757
-Implement the following opcodes:
+Implémente les opcodes suivants :
 [code][color=#87a8c8]0 ADD
 1 SUB
 2 AND
@@ -620,9 +620,8 @@ Implement the following opcodes:
 4 NOT
 5 XOR[/color][/code]
 
-The opcode NOT ignores the second argument.
-$17495651785164 Add 6 registers to the map
-
+L'opcode NOT ignore le second argument.
+$17495651785164 Ajoute 6 registres à la carte
 
 === levels/Nor GATE ===
 
