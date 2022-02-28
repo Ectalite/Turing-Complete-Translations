@@ -651,8 +651,8 @@ La porte n'arrête pas de changer le code d'accès, nous avons besoin d'un progr
 
 $17462419719036
 La façon la plus simple de trouver le code serait d'essayer toutes les combinaisons juqu'à ce que tu trouves la bonne.
-Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop élevé, il doit être possible d'en tirer profit.
-11183892008673 Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop élevé et 0 sinon.
+Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop grand, il doit être possible d'en tirer profit.
+11183892008673 Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop grand et 0 sinon.
 
 
 === levels/constants ===
@@ -677,10 +677,10 @@ $58678516111149 Editer les espions
 === levels/program ===
 
 $16693098943939
-The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
+Le composant d'entrée [INSTRUCTION] a été supprimé. Il a été remplacé par un composant programme. A chaque cycle, utilise le compteur pour charger l'[INSTRUCTION] suivante de la mémoire du programme.
 	
-You must use the counter component you unlocked earlier for this level.
-$19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
+Tu dois utiliser le composant compteur que tu as déverrouillé dans un niveau précédent.
+$19686277478479 Le programme envoie toujours la première instruction. As tu connecté un compteur ?
 
 
 === levels/wide_instrucitons ===
