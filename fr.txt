@@ -685,25 +685,25 @@ $19686277478479 Le programme envoie toujours la première instruction. As tu con
 
 === levels/wide_instrucitons ===
 
-$13709034294291 Save on even tick, output both bytes on odd ticks
-$17693995237077 Output both bytes
-$19068760748550 Output 0 on even ticks
-$65009239162932 The correct outputs were {a} and {b}
-$19203973423116 Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
-$17409169138995 Save the byte
+$13709034294291 Mémorise lors des cycles pairs et envoie en sortie les deux octets lors des cycles impairs.
+$17693995237077 Envoie en sortie les deux octets
+$19068760748550 Envoie 0 en sortie à chaque cycle pair
+$65009239162932 Les sorties correctes étaient {a} et {b}
+$19203973423116 Réalise un circuit qui enregistre la sortie du programme lors des cycles pairs et envoie en sortie les deux octets lors des cycles impairs.
+$17409169138995 Mémorise l'octet
 
 
 === components/Input 3 ===
 
-$70689623552857 Input
+$70689623552857 Entrée
 
 
 === levels/Arithmetic Engine ===
 
 $16434409050195
-Add addition and subtraction to your circuit.
+Ajoute l'addition et la soustraction à ton circuit.
 
-Instructions:
+Instructions
 [code][color=#87a8c8]0 OR
 1 NAND
 2 NOR
@@ -715,11 +715,12 @@ Instructions:
 === levels/capitalize ===
 
 $14894954428144
-The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
-(The possible input characters are a to z lowercase, space, apostrophe and dash)
-$13301617098810 We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
-$11647445869837 Input: 
-$11201813578269 Output: 
+Dans ce niveau, les entrées représentent les lettres dans une liste de noms de planète, encodés en ASCII (voir le manuel). Chaque nom est séparé par un espace qui a la valeur numérique 32. Remplace la première lettre de chaque mot avec la majuscule correspondante.
+(Les caractères possibles en entrée sont les minuscules de a à z, l'espace, l'apostrophe et le tiret).
+
+$13301617098810 A notre demande le stagiaire a saisi une liste de planètes en langue humaine. Malheureusement il a oublié de mettre les majuscules aux noms.
+$11647445869837 Entrée : 
+$11201813578269 Sortie : 
 
 
 === levels/byte_equal ===
