@@ -647,7 +647,6 @@ $14958585065722 En fait c'est le nombre de bras d'une créature qui est claireme
 
 $11910674853271
 La porte sécurisée de la réserve est défaillante et elle enferme régulièrement notre vieil homme de ménage.
-
 La porte n'arrête pas de changer le code d'accès, nous avons besoin d'un programme qui peut le récupérer quand c'est nécessaire.
 
 $17462419719036
@@ -659,20 +658,20 @@ Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop �
 === levels/constants ===
 
 $17098439090371
-We need a way to directly move numbers from our program into registers. For this we use the immediate mode (when the two highest bits are [OFF][OFF]).
+Nous devons transférer directement les nombres de notre programme aux registres. Pour cela nous utilisons le mode immédiat (qui correspond aux deux bits supérieurs à [OFF][OFF]).
 
-When in immediate mode the whole byte is interpreted as a number that we [SAVE] into REG 0. This means we can 
-[SAVE] any value between 0 and 63.
+Avec le mode immédiat, tout l'octet est interprété comme un nombre à [SAUVER] dans le REG 0. Ca veut dire qu'on peut 
+[SAUVER] des valeurs allant de 0 à 63.
 
 
 === misc/circuit_draw ===
 
-$59836059268386 New circuit (Hotkey: Alt & drag)
+$59836059268386 Nouveau circuit (Raccourci : Alt & glisser)
 
 
 === misc/watchable_state ===
 
-$58678516111149 Edit watched state
+$58678516111149 Editer les espions
 
 
 === levels/program ===
