@@ -605,7 +605,7 @@ $16072814175447 Programmer du matériel bogué est très frustrant. Il est péni
 === levels/Opcodes ===
 
 $19693461238792 Fixe l'incrément du compteur à 4
-$38976231780455 Espion {nr} doit cibler un registre ou un composant personalisé contenant un registre
+$38976231780455 Espion {nr} doit cibler un registre ou un composant personnalisé contenant un registre
 $20916717363300 Espion {nr} doit cibler la sortie
 $18189600217529 [center]Implémente l'instruction OPCODE[/center]
 $13450117997204 Ajoute un compteur dans le circuit
@@ -626,34 +626,34 @@ $17495651785164 Ajoute 6 registres à la carte
 === levels/Nor GATE ===
 
 $11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
+La plupart des créatures sur la Terre sont aggressives et ne savent pas se concentrer.
 
-To succeed you must learn to think logically, while not destroying things.
+Pour réussir tu dois apprendre à raisonner, sans rien casser.
 
 
 === misc/run ===
 
-$67345621265845 Run ticks (Hotkey: F6)
+$67345621265845 Démarrer les cycles (Raccourci : F6)
 
 
 === levels/byte_not ===
 
-$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137 "NOT" each bit of the byte input.
-$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
-$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
-
+$14196498898485 La réalisation et l'utilisation d'outils est fondamentale lors des premières étapes de l'évolution de l'intelligence.
+$12982025748137 Applique "NOT" sur chaque bit de l'octet en entrée.
+$10294533225655 Notre précédent model utilisant la taille du cerveau pour prédire l'intelligence était naïf.
+$14958585065722 En fait c'est le nombre de bras d'une créature qui est clairement le principal prédicteur de l'intelligence. Savais-tu qu'il existe des créatures marines sur ta planète avec quatre fois plus de bras que toi et qui réussissent mieux dans les tests ?
 
 === levels/Storage cracker ===
 
 $11910674853271
-The security access door to the storage room is broken and it keeps locking our old janitor inside.
+La porte sécurisée de la réserve est défaillante et elle enferme régulièrement notre vieil homme de ménage.
 
-The door keeps changing the passcode, we need a program that can recover the passcode at any time.
+La porte n'arrête pas de changer le code d'accès, nous avons besoin d'un programme qui peut le récupérer quand c'est nécessaire.
+
 $17462419719036
-The easiest way to find the passcode would be to try all combinations until you find the right one. 
-Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
-$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
+La façon la plus simple de trouver le code serait d'essayer toutes les combinaisons juqu'à ce que tu trouves la bonne.
+Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop élevé, il doit être possible d'en tirer profit.
+11183892008673 Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop élevé et 0 sinon.
 
 
 === levels/constants ===
