@@ -1,4 +1,4 @@
-Game version: 0.567 Beta
+Game version: 0.568 Beta
 Total translation entries: 574
 
 Language progress:
