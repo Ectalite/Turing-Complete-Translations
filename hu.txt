@@ -25,7 +25,7 @@ $13520918982355 Add a ram block, so the computer can address 256 additional byte
 === levels/byte_less_i ===
 
 $16755383054285 [center]Determine if the first input is less than the second.[/center]
-$19006843777401 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
+$19006843777401 Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]SIGNED[/color].
 $46083799633716 Is {input_1} less than {input_2}?
 
 
@@ -101,7 +101,7 @@ A kimenet legyen [ON] csak akkor ha a bemenetből 2 vagy több állapota [ON].
 
 === levels/byte_constant ===
 
-$12641789008694 Create a circuit that always outputs the number 164.
+$12641789008694 Create a wire that always outputs the number 164.
 
 
 === components/Output 1 + 1B ===
@@ -296,8 +296,8 @@ $97461374731210 Wire color
 
 $17077079648771 Components can be added, renamed or deleted using the level save system.
 $19551383617326
-Welcome to the component factory, the circuits you create in here will be usable as components in architecture levels.
-The circuitry you create defines the behavior of the component and the layout defines its shape.
+Welcome to the component factory, the wires you create in here will be usable as components in architecture levels.
+The wirery you create defines the behavior of the component and the layout defines its shape.
 $12516102012088 This component has no area and will not be usable in levels. Place components on the map to give it area.
 $14712417427860 Since this level is a tool and not a challenge, you can go to the level map and continue on when you want.
 $15549447390000 2 input/output components are in the same square. The custom component will be unusable since 2 pins can't overlap.
@@ -345,10 +345,10 @@ $69987793052607 Wire comment (Click on wire)
 === levels/delay_level ===
 
 $19986989895202
-All components have a delay. And in a circuit, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
+All components have a delay. And in a wire, the total delay is determined by the slowest path. This means you normally want to put things in parallel.
 In this level you must prove that you understand this concept.
 $11246430085016 Note, you can see the delay path by clicking the hour glass in the upper right corner.
-$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a circuit with a delay of 6 and a nand cost of 5.
+$12817338693402 The delay of any component is ultimately derived from the delay of the nand gate, which has a delay of 2. Build a wire with a delay of 6 and a nand cost of 5.
 
 
 === levels/push_pop ===
@@ -418,7 +418,7 @@ $18132100348781
  Create nested components in the
  factory by changing the "nesting 
  level" in the file menu.
-$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a circuit that does this.
+$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a wire that does this.
 $10430040077737 Bit 3
 $10274387271390 Bit 0
 $16301538038805 Bit 2
@@ -440,7 +440,7 @@ Példáué 4 átfuttatva ezen a komonensen -4 lenne, -9-ből pedig 9.
 
 === levels/byte_and ===
 
-$15885763626223 Create a circuit that ANDs two bytes bitwise.
+$15885763626223 Create a wire that ANDs two bytes bitwise.
 
 
 === ui/toggles/level_log2 ===
@@ -451,6 +451,8 @@ $91515053618360 Manual
 === main_scripts/functions ===
 
 $11467644007149 Counter {nr}
+$55340369810284 Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
+$71002719236066 Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
 $10533010562232 DELAY SCORE: {delay}
 $87591753278764 Reg {nr}
 $29169064199243 Output {nr}
@@ -463,6 +465,11 @@ $32508339206292 NAND SCORE: {nand}
 $16173829560311 Maximum 3 komponens használatával készíts egy áramkört,  ahol a kimenet csak akkor legyen [ON], páratlan számú bemenet van [ON] állapotban.
 $85589489148198 Components spent\n{nr} of 3
 $18288998816979 Ennek a szintnek van egy [color=#e63e5b][url=odd_number]segítsége[/url][/color], amit használhatsz akkor ha elakadnál.
+
+
+=== misc/wire_color ===
+
+$78287906849040 Wire color
 
 
 === levels/or_gate_3 ===
@@ -577,7 +584,7 @@ $14293122338496 A gyakornokunk hozzátadott egy "disable" bemenetet ehhez a komp
 === levels/test_lab ===
 
 $11038144815919
-This level uses programs to test your circuits. When the programs are run, this level checks if the "watched state" behaves the way you expect.
+This level uses programs to test your wires. When the programs are run, this level checks if the "watched state" behaves the way you expect.
 
 The lab has 2 extra keywords.
 
@@ -601,7 +608,7 @@ The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With
 You can at any time also (re)import example tests by clicking below:
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
 $15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about circuits, when you are in the middle of solving a programming problem. It is tempting to apply a quick circuit fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
 
 
 === levels/Opcodes ===
@@ -610,7 +617,7 @@ $19693461238792 Set the counter increment to 4
 $38976231780455 Watched state {nr} should point to a register or custom component with a register inside
 $20916717363300 Watched state {nr} should point to the output
 $18189600217529 [center]Implement the OPCODE instructions[/center]
-$13450117997204 Add a counter to the circuit
+$13450117997204 Add a counter to the wire
 $77044880242883 Watched state {nr} should point to the counter
 $13870568875751 Create a new schematic and add a program with 4 byte output
 $10303603301757
@@ -668,11 +675,6 @@ When in immediate mode the whole byte is interpreted as a number that we [SAVE] 
 [SAVE] any value between 0 and 63.
 
 
-=== misc/circuit_draw ===
-
-$59836059268386 New circuit (Hotkey: Alt & drag)
-
-
 === misc/watchable_state ===
 
 $58678516111149 Edit watched state
@@ -697,6 +699,11 @@ $19203973423116 Create a device that saves the program output on even ticks, and
 $17409169138995 Save the byte
 
 
+=== components/Bidirectional ===
+
+$11125298125151 Bidirectional
+
+
 === components/Input 3 ===
 
 $70689623552857 Input
@@ -705,7 +712,7 @@ $70689623552857 Input
 === levels/Arithmetic Engine ===
 
 $16434409050195
-Add addition and subtraction to your circuit.
+Add addition and subtraction to your wire.
 
 Instructions:
 [code][color=#87a8c8]0 OR
@@ -734,7 +741,7 @@ $17156565273196 Output [ON] when both inputs are the same.
 === levels/Calculations ===
 
 $14458828731919
-Time to merge in the "Arithmetic Engine" circuit you made previously with the register circuit. The calculation circuit was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the circuit in the component factory.
+Time to merge in the "Arithmetic Engine" wire you made previously with the register wire. The calculation wire was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the wire in the component factory.
 
 Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
 [OFF][OFF] Immediate
@@ -853,7 +860,7 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 
 To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
 $15888345020710
-In this level you need to create a circuit which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
+In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
 
 The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color]. 
 
@@ -879,7 +886,7 @@ $11090938799865 Csináld meg a XOR kapu fordítottját, vagyis a XNOR-t.
 
 === levels/decoder ===
 
-$16133643476631 The circuit you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same circuit. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
+$16133643476631 The wire you built in the "Registers" level can copy values between registers, while the "Arithmetic Engine" can do different operations on 2 inputs. But you need to be able to do both in the same wire. To do this, build a "decoder", which will decide which mode our computer is in, based on the 2 bits we haven't used yet.
 $18435544383511 CALCULATE pattern\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18198768092383 COPY
 $18945946395447
@@ -894,7 +901,7 @@ Here [ANY] means any value.
 Determine the MODE we are in from the input, then send [ON] to the correct output.
 $16785126425267 CALCULATION
 $15440615199508 CONDITION
-$12671132029272 Your circuit has been saved to the component factory.
+$12671132029272 Your wire has been saved to the component factory.
 $15105859227432 COPY pattern\n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $12068329066372 [b]ALERT: THIS IS AN OUTDATED VERSION OF THIS MAP, PLEASE CLICK THE SAVE ICON IN THE TOP LEFT AND CREATE AND LOAD A NEW SCHEMATIC[/b]
 $11382827588408 CONDITION pattern\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
@@ -1074,6 +1081,11 @@ Végül van egy bemeneti carry is. Ez akkor hasznos, ha "byte adder"-eket lánco
 
 Használd [color=#e63e5b][url=byte_adder]Ezt a segítséget[/url][/color] ha elakadnál.
 $18732877690173 Add össze a 2 bemeneti byte-ot. A kimenet legyen a bemenetek bitenkénti összeadása és ahhoz hozzáadva a carry, ha van.
+
+
+=== components/Bidirectional8 ===
+
+$74301998849984 Bidirectional
 
 
 === misc/ide_control_link ===
@@ -1291,7 +1303,7 @@ $18234235689107 If VALUE ≥ 0 output [img]dialogue/on.png[/img]
 $12429396872036 Regardless of VALUE output [img]dialogue/off.png[/img]
 $19014698800906 If VALUE = 0 output [img]dialogue/on.png[/img]
 $13680487623452 If VALUE ≤ 0 output [img]dialogue/on.png[/img]
-$12706881725738 Your circuit has been saved to the component factory.
+$12706881725738 Your wire has been saved to the component factory.
 
 
 === levels/full_adder ===
@@ -1363,14 +1375,14 @@ nyomd meg, hogy kapcsold ki as "IN" komponenst.
 $17675121574388 Figyeld meg, hogy az OUT komponens kikapcsolt.\nEz azért van, mert a jel már nem jön az IN komponensből.
 
 
-=== misc/circuit_color ===
-
-$78287906849040 Wire color
-
-
 === misc/instr_clone ===
 
 $69090690657232 Clone
+
+
+=== misc/wire_draw ===
+
+$59836059268386 New wire (Hotkey: Alt & drag)
 
 
 === levels/byte_or ===
@@ -1395,7 +1407,7 @@ $38557550573896 Level log
 === levels/Conditionals ===
 
 $10794262854382
-Add if statements to your circuit. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
+Add if statements to your wire. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
 	
 The previous instructions had the 4 bytes represent:
 [code][color=#87a8c8]OPCODE, ARGUMENT_1, ARGUMENT_2, RESULT[/color][/code]
@@ -1417,7 +1429,7 @@ Each opcode does what their name implies. For example the following jumps to byt
 [code][color=#87a8c8]IF_LESS REG0 REG1 16[/color][/code]
 $18542005958715 Set the counter increment to 4
 $17133561664335 Congratulations, you finished the [color=#e49f44]LEG[/color] computer!
-$14973719570693 Add a counter to the circuit
+$14973719570693 Add a counter to the wire
 $12920514303805 Add 6 registers to the map
 $14309211963063 Create a new schematic and add a program with 4 byte output
 $16826220977157
@@ -1437,7 +1449,7 @@ $79554853897000 Switch schematic
 
 === levels/byte_less ===
 
-$11252365204151 Create a circuit that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$11252365204151 Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
 $62766453128684 Is {a} less than {b}?
 $11632471752785 [center]Determine if the first input is less than the second.[/center]
 
@@ -1477,15 +1489,15 @@ $15754153332116
 This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.  
 	
 If you do not have experience with electronics, it is recommended that you skip this level. You can always come back later.
-$15213907597666 Using 2 NOR gates, build the circuit that matches the table. You will need a latch.
+$15213907597666 Using 2 NOR gates, build the wire that matches the table. You will need a latch.
 $19448398663695
-When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the circuit, the wires either flicker between [ON] and [OFF], or settle in a stable state.
+When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the wire, the wires either flicker between [ON] and [OFF], or settle in a stable state.
 	
-When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such circuits are called "latches".
+When you have a wire where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
 $10290382368587
-In this level (and only this level), components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these circuits have stable outputs, at least for some inputs.
+In this level (and only this level), components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
 
-The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
+The wire you are asked to construct here has a circular dependency. The wire also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The wire will switch between these two states forever, so it is not stable.
 
 
 === misc/inst_new_rule ===
@@ -1495,7 +1507,7 @@ $41064305626707 New rule
 
 === levels/byte_xor ===
 
-$19636386696963 Create a circuit that XORs two bytes bitwise.
+$19636386696963 Create a wire that XORs two bytes bitwise.
 
 
 === misc/multi_select ===
@@ -1537,7 +1549,7 @@ $31564629398121 OPCODE
 $14073567083496 ARGUMENT 2
 $19338533633006 Set the counter increment to 4
 $15197362332657 Create a new schematic and add a program with 4 byte output
-$18004215603701 Add a counter to the circuit
+$18004215603701 Add a counter to the wire
 $98173834092208 RESULT ADDRESS
 $10141611261952 [center]Implement immediate values[/center]
 
@@ -1555,6 +1567,11 @@ $12758156517177 Using the instructions of your computer, read the input twice an
 $16047615798435 [center]Read the input twice and XOR the bits of the two inputs[/center]
 
 
+=== components/Bidirectional64 ===
+
+$94112143079453 Bidirectional
+
+
 === misc/menu ===
 
 $56916384895438 Main menu
@@ -1562,7 +1579,7 @@ $56916384895438 Main menu
 
 === levels/Wire Spaghetti ===
 
-$17106892574116 Add a counter to the circuit
+$17106892574116 Add a counter to the wire
 $20104629254326 ARGUMENT 2
 $15754373587500 Set the counter increment to 4
 $56024330661504 Watched state {watched_state} should point to a register or custom component with a register inside
