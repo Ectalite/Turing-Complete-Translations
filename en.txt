@@ -1120,9 +1120,13 @@ $13740696609075
 In this level you have 2 inputs.
 When the first input is [ON], update the saved value.
 The second input is the value.
+Always output what is currently saved.
+
+This is a diagram of the component we want you to build:
 
 [img]dialogue/saving_gracefully/bit_memory.png[/img]
-Always output what is currently saved.
+
+
 
 
 === levels/Calibrating Laser Cannons ===
