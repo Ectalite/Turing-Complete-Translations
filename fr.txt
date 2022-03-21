@@ -26,12 +26,12 @@ $13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mé
 
 $16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
 $19006843777401 Créez un wire qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
-$46083799633716 Is {input_1} less than {input_2}?
+$46083799633716 {input_1} est plus petit que {input_2}?
 
 
 === ui/toggles/level_map ===
 
-$71951682957395 Level map
+$71951682957395 Carte des niveaux
 
 
 === ui/state_ui/title_screen/exit ===
@@ -41,7 +41,7 @@ $12639868461113 Quitter
 
 === misc/button_next ===
 
-$50213503063080 Prochain cycle (Raccourci clavier: F5)
+$50213503063080 Prochain cycle (Touches de fonction: F5)
 
 
 === levels/saving_bytes ===
