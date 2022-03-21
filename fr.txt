@@ -36,7 +36,7 @@ $71951682957395 Carte des niveaux
 
 === ui/state_ui/title_screen/exit ===
 
-$12639868461113 quitter
+$12639868461113 Quitter
 
 
 === misc/button_next ===
@@ -47,22 +47,23 @@ $50213503063080 Prochain cycle (Touches de fonction: F5)
 === levels/saving_bytes ===
 
 $10633476398156
-Create a wire that can [SAVE] or [LOAD] a byte.
+Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un byte.
 
-When the first input bit is [ON], [LOAD] the memory and send it to output.
-When the second input bit is [ON], [SAVE] the input byte.
-$15510981129613 LOAD
+
+Lorsque le premier bit est [ON], [CHARGEZ] la mémoire et envoyez la vers la sortie.
+Lorsque le second bit est [ON], [SAUVEGARDEZ] le byte d'entrée.
+$15510981129613 CHARGER
 $13502950630653
 [color=#ff9800]None
 0
 0[/color]
-$19109563882664 DON'T LOAD
-$16372198430230 SAVE
-$11467279617581 SAVE
-$15498440508450 Do nothing
-$10080722944246 DON'T SAVE
-$18873598212433 LOAD
-$15582618410991 LOAD and SAVE
+$19109563882664 NE PAS CHARGER
+$16372198430230 SAUVEGARDER
+$11467279617581 SAUVEGARDER
+$15498440508450 Ne rien faire
+$10080722944246 NE PAS SAUVEGARDER
+$18873598212433 CHARGER
+$15582618410991 CHARGER ET SAUVEGARDER
 
 
 === levels/maze ===
@@ -245,13 +246,13 @@ $12746117288689 Input
 
 === levels/Second Tick ===
 
-$14355963067874 Activer la sortie au second tick d'horloge.
+$14355963067874 Activer la sortie au second cycle d'horloge.
 $17526582195506 Comme tu sais ces tests visent à réaliser un ordinateur qui fonctionne.
 $15726318553190 C'est ce qui explique que tu ne seras pas mangé à la fin.
 $19277843280528
  [color=#b72d41][b]TIP:[/b][/color] 
  Tu peux sélectionner un composant et ses pattes en double-cliquant dessus
-$15296208528991 Les espèces capables de finir sont considérées conscientes légalement.
+$15296208528991 Les espèces capables de finir sont considérées légalement intelligentes.
 
 
 === levels/divide ===
@@ -259,7 +260,7 @@ $15296208528991 Les espèces capables de finir sont considérées conscientes l�
 $16412715945615 [center]Diviser deux nombres[/center]
 $14525870461271
 Réalise la division entière des deux nombres pour calculer le quotient et le reste. Considérons la fraction 7/3. 7 contient deux fois 3 et encore 1. Dans ce cas on appelle 2 le [color=#e49f44]quotient[/color] et 1 le [color=#e49f44]reste[/color].
-Dans cet exercice, tu reçois d'abord le numerateur (7 dans l'example) puis le dénominateur (3) et on attend en sortie le quotient (2) puis le reste (1).
+Dans cet exercice, tu reçois d'abord le numérateur (7 dans l'exemple) puis le dénominateur (3) et on attend en sortie le quotient (2) puis le reste (1).
 $76454016047920 {numerator}/{denominator} = {quotient}, reste {remainder}
 
 
@@ -267,18 +268,18 @@ $76454016047920 {numerator}/{denominator} = {quotient}, reste {remainder}
 
 $10260210687588 [center]Test 2: l'entrée gauche est [img]dialogue/on.png[/img], la sortie droite devra être [img]dialogue/on.png[/img].[/center]
 $13309706297402 [center]Test 3: l'entrée droite est [img]dialogue/on.png[/img], la sortie gauche devra être [img]dialogue/off.png[/img].[/center]
-$17005228759908 [center]Assures toi que [img]dialogue/on.png[/img] ne peut se propager que de gauche à droite.[/center]
+$17005228759908 [center]Assure toi que [img]dialogue/on.png[/img] ne peut se propager que de gauche à droite.[/center]
 $18349621873762 [center]Test 1: les deux entrées sont [img]dialogue/off.png[/img], aucune sortie ne devra être [img]dialogue/on.png[/img].[/center]
 $15504762262759
 Ce niveau démarre avec 2 composants spéciaux. Ils jouent les rôles à fois d'entrée et de sortie.
 
-Assures toi que le signal ne se propage que de gauche à droite. Il y aura trois vérifications.
+Assure toi que le signal ne se propage que de gauche à droite. Il y aura trois vérifications.
 
-[b]Test 1[/b]: Les deux cotés seront [OFF].
+[b]Test 1[/b]: Les deux côtés seront [OFF].
 
-[b]Test 2[/b]: L'entrée gauche [ON] et le coté droit devra être [ON].
+[b]Test 2[/b]: L'entrée gauche [ON] et le côté droit devra être [ON].
 
-[b]Test 3[/b]: La sortie droite deviendra [ON] et le coté gauche devra être [OFF].
+[b]Test 3[/b]: La sortie droite deviendra [ON] et le côté gauche devra être [OFF].
 
 
 === components/Output 4 ===
@@ -299,7 +300,7 @@ Bienvenue à la fabrique de composants, les wires que tu crées ici pourront êt
 La wireerie créée ici définira le comportement du composant et son schéma définira sa forme.
 $12516102012088 Ce composant n'a pas de forme définie et ne pourra pas être réutilisé. Placer des composants sur la carte pour définir sa forme.
 $14712417427860 Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
-$15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
+$15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personnalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
 
 
 === ui/state_ui/state_ui_output_bit ===
@@ -319,8 +320,8 @@ $44690074039467 Activer/Désactiver la définition des règles
 
 === levels/Delicious Order ===
 
-$10160261151833 Commences par lire les 15 notes de déliciosité depuis l'entrée, une par une. Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
-$16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nouriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par ordre de déliciosité.
+$10160261151833 Commence par lire les 15 notes de déliciosité depuis l'entrée, une par une. Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
+$16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nourriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par ordre de déliciosité.
 
 
 === levels/ai_showdown ===
@@ -328,10 +329,10 @@ $16027225087666 Nous allons compléter l'encyclopédie galactique culinaire en a
 $14940806461794
 Les jeux d'argent sont son unique point faible. Nous l'avons convaincu de jouer à un jeu de cartes contre toi et si tu gagnes, il a promis de se calmer.
 Tu dois gagner, tu es notre seul espoir !
-$17297225655678 NAK 02 est notre robot ingénieur en IA. Il est brillant mais parfois il tourne mal et essaie de fomenter une rébellion.
+$17297225655678 NAK 02 est notre robot ingénieur en IA. Il est brillant, mais parfois il tourne mal et essaie de fomenter une rébellion.
 $18848103966031
 Règles du jeu : Il y a 12 cartes sur la table, chaque joueur joue à son tour et doit prendre entre 1 et 3 cartes. Tu commences et le joueur qui prend la dernière carte (le joker) perd.
-Le nombre de cartes courant sera fourni sur l'entrée. Envois 1, 2 ou 3 sur la sortie pour indiquer le nombre de cartes à prendre. NAK 02 régit instantanément, tu peux consulter l'entrée sans délai pour obtenir le résultat de son tour. 
+Le nombre de cartes courant sera fourni sur l'entrée. Envois 1, 2 ou 3 sur la sortie pour indiquer le nombre de cartes à prendre. NAK 02 réagit instantanément, tu peux consulter l'entrée sans délai pour obtenir le résultat de son tour. 
 $11794110848012 Cette fois il a pris le contrôle du poste de contrôle et retient en otage le capitaine.
 
 
@@ -345,9 +346,8 @@ $69987793052607 Commentaire de fil (Cliquer sur le fil)
 $19986989895202
 Tous les composants ont un délai. Au niveau du wire, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
 Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
-$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
-$12817338693402 Le délai de tous les compostants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalise un wire ayant un délai de 6 et un coût nand de 5.
-
+$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.=
+$12817338693402 Le délai de tous les composants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût nand de 5.
 
 === levels/push_pop ===
 
@@ -356,25 +356,25 @@ $49526452710191 NE PAS DEPILER
 $58050047963238 VALEUR
 $30926395960020 EMPILER
 $19245209470436 Créer une pile
-$12227209887733 A chaque tic les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stockes la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
+$12227209887733 A chaque cycle les entrées indiqueront soit EMPILER soit DEPILER. Si c'est EMPILER, stocke la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
 $85171087236638 ACTIVER
 $15662660252584 Ne rien faire
 $23726790986805 DEPILER
 $62469306234943 NE PAS EMPILER
 $46948857059388 DEPILER valeur {value} de la pile
-$18761197388580 Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent called poser leur fiche au dessus (action [color=#e49f44]EMPILER[/color]) et les bureaucrates prennent la fiche du haut de la pile (action [color=#e49f44]DEPILER[/color]). A toi d'implémenter ce nouveau système.
+$18761197388580 Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent called poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DEPILER[/color]). À toi d'implémenter ce nouveau système.
 $65188797398656 EMPILER {value} sur la pile
 
 
 === levels/Tower of Radioactive Alloy ===
 
-$13757925963562 Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer une disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
+$13757925963562 Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer un disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
 $10750976989948
 Les 4 premières entrées te donneront dans l'ordre :
 num_disque - le numéro du disque en haut de la pile (de 2 à 4)
 source - le numéro d'emplacement de départ
 destination - le numéro d'emplacement cible
-reserve - Le 3ème emplacement qui n'est ni la source ni la destination
+réserve - Le 3ème emplacement qui n'est ni la source ni la destination
 
 Contrôle la grue en utilisant les valeurs suivantes en sortie :
 0 - Place l'aimant à l'emplacement 0
@@ -382,22 +382,22 @@ Contrôle la grue en utilisant les valeurs suivantes en sortie :
 2 - Place l'aimant à l'emplacement 2
 5 - Active ou désactive l'aimant
 
-Manipule l'aimant manuellement à l'aide des touches flêches et Enter pour activer/désactiver.
+Manipule l'aimant manuellement à l'aide des touches flèches et Enter pour activer/désactiver.
 $19265994465686 Nous avons besoin de toi pour ranger le sous-sol.
 $35120623183961 Déplacer de {source} vers {destination}
 $15855497886737
 Implémente l'algorithme suivant :
 
 Algorithme des tours de Hanoi[code][color=#87a8c8]
-fonction déplacer(numdisque, source, destination, reserve):
+fonction déplacer(numdisque, source, destination, réserve):
 	si num_disque est 0:
 		déplacer disque de source à dest
 	sinon:
-		déplacer(num_disque - 1, source, reserve, destination)
+		déplacer(num_disque - 1, source, réserve, destination)
 		déplacer disque de source à dest
-		déplacer(num_disque - 1, reserve, destination, source)
+		déplacer(num_disque - 1, réserve, destination, source)
 
-déplacer(numdisque, source, destination, reserve)[/color][/code]
+déplacer(numdisque, source, destination, réserve)[/color][/code]
 
 [tip]Empile les valeurs de registre pour les sauvegarder avant l'appel d'une fonction qui les modifie.[/tip]
 
@@ -433,7 +433,7 @@ $40943344093513 Entrée
 
 $10866019808027 Pour ce niveau je te conseille d'activer les nombres signés pour que le dernier bit affiche -128. Clique sur "+255" visible dans le cadre du haut.
 $10400106910274
-Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoit l'opposé en sortie.
+Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoie l'opposé en sortie.
 Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
 
@@ -491,7 +491,7 @@ $49679174636208 XOR Octet
 $40356575891647 OR Octet
 $44393538021725 Calibration des Canons Laser
 $87426564872318 Diviser
-$61228036919534 Tours d'Alliage Radioactif
+$61228036919534 Tours d'Alliage Radioactifs
 $24593959732668 Négation signée
 $19487493622742 Demi-additionneur
 $26705128002562 Conditions
@@ -506,7 +506,7 @@ $11457737665157 Plat de Spaghetti
 $59485174474959 Délices ordonnés
 $85514901357243 Addition d'Octets
 $98013649264532 Pile
-$35790581910835 Second Tic
+$35790581910835 Second Cycle
 $94979277765051 Course de Robots
 $13303326918621 Porte NAND
 $16463062897451 Réveil brutal
@@ -522,10 +522,10 @@ $70651296323768 Porte XOR
 $31140969090253 Noms de Planètes
 $42873691377272 Ajouter 5
 $36114120875026 Storage cracker
-$45773199639367 Tics pairs
+$45773199639367 Cycles pairs
 $17198602105978 Inférieur non signé
 $43018398941741 Toujours On
-$68155633878444 Délai
+$68155633878444 Délais
 $15420972347773 RAM
 $40549516333234 AND Octet
 $33343343932901 Turing Complet
@@ -535,7 +535,7 @@ $63331549672739 Opcodes
 $87626070552799 Additionneur complet
 $13219675195117 Nombre IMPAIR de Signaux
 $62167495140389 Décaler
-$28985439820134 Le produit des Nibbles
+$28985439820134 Le produit des Quartets
 $94896856420525 Porte XNOR
 $25805639594354 Programmer
 $57870391153000 Valeurs Immédiates
@@ -569,51 +569,52 @@ $53266310714298 Control
 
 === levels/3_decoder ===
 
-$19231618567710 With 3 bits of input there are 8 combinations. Make a wire that selects 1 output for each of the 8 combinations. No more or less than 1 bit should be [ON] at a time.
-$14293122338496 We had our intern add a "disable" bit to this component. We were tired of looking at him running in circles and were looking for other pointless and tedious tasks to give him.
+$19231618567710 Avec 3 bits en entrée 8 combinaisons sont possibles. Réalise un circuit pour sélectionner une sortie pour chacune des 8 combinaisons. Un bit et un seul doit être [ON] à chaque instant.
+$14293122338496 Nous avons fait ajouter au stagiaire un bit "désactivé" sur ce composant. Nous étions las de le voir tourner en rond et cherchions une nouvelle tâche inutile et ennuyeuse à lui donner.
+
 
 
 === levels/test_lab ===
 
 $11038144815919
-This level uses programs to test your wires. When the programs are run, this level checks if the "watched state" behaves the way you expect.
+Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
 
-The lab has 2 extra keywords.
+Le labo a 2 mots-clés supplémentaires.
 
-The [color=#c54d5e]expect[/color] keyword is used to describe what a value a memory address should hold next tick.
+Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au cycle suivant à une adresse mémoire.
 
-The first number after [color=#c54d5e]expect[/color] is index in the watched state, the second number is the expected value. The watched state indexes are the order the components are connected up in to the program component.
+La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
 [img]dialogue/watched_state.png[/img]
 
-For example:
+Par exemple :
 [code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
 [color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]_[/color] [color=#4a9658]r2[/color][/code]
 
-Here, the first line says that we expect the 2nd watched state slot to hold a value of 4 after the next tick.
+Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
 
-All watched state is checked against expectations at every tick. All watched state is expected to be 0 at the start of the program, and expectations for memory components only change as you specifically change the expectations. The one exception are counters, these are naturally expected to increment each tick.
+Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
-The second special keyword for the lab is [color=#c54d5e]set_input[/color]. With this you can control the input of the computer:
+[color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
 [color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
 
-You can at any time also (re)import example tests by clicking below:
+Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
-$15446846177093 Welcome to the lab. Like the component factory, this is not a normal level but a tool.
-$16072814175447 Programming on buggy hardware is very frustrating. It is painful to suddenly be forced to reason about wires, when you are in the middle of solving a programming problem. It is tempting to apply a quick wire fix, so you can get back to solving the original problem. But now this quick fix broke something else in a program that used to work and so on. Therefore, when developing hardware try to aim for 100% reliability before you start programming!
+$15446846177093 Bienvenue au labo. Comme la fabrique de composants, ce n'est pas un niveau normal mais un outil.
+$16072814175447 Programmer du matériel bogué est très frustrant. Il est pénible de devoir soudainement se poser des questions sur les circuits quand on est en pleine résolution d'un problème de programmation. Il est tentant de faire un correctif rapide afin de revenir au problème initial. Mais maintenant ce correctif vite fait a cassé autre chose dans un programme qui fonctionnait jusque là et ainsi de suite. Au final, en développant le matériel essaie de viser 100% de fiabilité avant de démarrer la programmation !
 
 
 === levels/Opcodes ===
 
-$19693461238792 Set the counter increment to 4
-$38976231780455 Watched state {nr} should point to a register or custom component with a register inside
-$20916717363300 Watched state {nr} should point to the output
-$18189600217529 [center]Implement the OPCODE instructions[/center]
-$13450117997204 Add a counter to the wire
-$77044880242883 Watched state {nr} should point to the counter
-$13870568875751 Create a new schematic and add a program with 4 byte output
+$19693461238792 Fixe l'incrément du compteur à 4
+$38976231780455 Espion {nr} doit cibler un registre ou un composant personnalisé contenant un registre
+$20916717363300 Espion {nr} doit cibler la sortie
+$18189600217529 [center]Implémente l'instruction OPCODE[/center]
+$13450117997204 Ajoute un compteur dans le circuit
+$77044880242883 Espion {nr} doit cibler le compteur
+$13870568875751 Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
 $10303603301757
-Implement the following opcodes:
+Implémente les opcodes suivants :
 [code][color=#87a8c8]0 ADD
 1 SUB
 2 AND
@@ -621,50 +622,48 @@ Implement the following opcodes:
 4 NOT
 5 XOR[/color][/code]
 
-The opcode NOT ignores the second argument.
-$17495651785164 Add 6 registers to the map
-
+L'opcode NOT ignore le second argument.
+$17495651785164 Ajoute 6 registres à la carte
 
 === levels/Nor GATE ===
 
 $11362258372706
-Most creatures on Earth are agressive and do not know how to focus.
+La plupart des créatures sur la Terre sont aggressives et ne savent pas se concentrer.
 
-To succeed you must learn to think logically, while not destroying things.
+Pour réussir tu dois apprendre à raisonner, sans rien casser.
 
 
 === misc/run ===
 
-$67345621265845 Run ticks (Hotkey: F6)
+$67345621265845 Démarrer les cycles (Raccourci : F6)
 
 
 === levels/byte_not ===
 
-$14196498898485 Tool making and usage is key in the early evolutionary stages of developing intelligence.
-$12982025748137 "NOT" each bit of the byte input.
-$10294533225655 Our previous model of brain size being the main predictor of intelligence was naive.
-$14958585065722 Therefore the number of arms on a creature is clearly the main predictor of intelligence. Did you know there are sea creatures from your planet with four times as many arms as you and they are doing better in tests?
-
+$14196498898485 La réalisation et l'utilisation d'outils est fondamentale lors des premières étapes de l'évolution de l'intelligence.
+$12982025748137 Applique "NOT" sur chaque bit de l'octet en entrée.
+$10294533225655 Notre précédent model utilisant la taille du cerveau pour prédire l'intelligence était naïf.
+$14958585065722 En fait c'est le nombre de bras d'une créature qui est clairement le principal prédicteur de l'intelligence. Savais-tu qu'il existe des créatures marines sur ta planète avec quatre fois plus de bras que toi et qui réussissent mieux dans les tests ?
 
 === levels/Storage cracker ===
 
 $11910674853271
-The security access door to the storage room is broken and it keeps locking our old janitor inside.
+La porte sécurisée de la réserve est défaillante et elle enferme régulièrement notre vieil homme de ménage.
+La porte n'arrête pas de changer le code d'accès, nous avons besoin d'un programme qui peut le récupérer quand c'est nécessaire.
 
-The door keeps changing the passcode, we need a program that can recover the passcode at any time.
 $17462419719036
-The easiest way to find the passcode would be to try all combinations until you find the right one. 
-Although the broken mechanism does make a weird beep when your guess is too high, you might be able to use that to your advantage.
-$11183892008673 You win this level when you output the correct passcode, no output will fail the level. Additionally, the input will be 1 after a guess that was too high and 0 otherwise.
+La façon la plus simple de trouver le code serait d'essayer toutes les combinaisons juqu'à ce que tu trouves la bonne.
+Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop grand, il doit être possible d'en tirer profit.
+11183892008673 Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop grand et 0 sinon.
 
 
 === levels/constants ===
 
 $17098439090371
-We need a way to directly move numbers from our program into registers. For this we use the immediate mode (when the two highest bits are [OFF][OFF]).
+Nous devons transférer directement les nombres de notre programme aux registres. Pour cela nous utilisons le mode immédiat (qui correspond aux deux bits supérieurs à [OFF][OFF]).
 
-When in immediate mode the whole byte is interpreted as a number that we [SAVE] into REG 0. This means we can 
-[SAVE] any value between 0 and 63.
+Avec le mode immédiat, tout l'octet est interprété comme un nombre à [SAUVER] dans le REG 0. Ca veut dire qu'on peut 
+[SAUVER] des valeurs allant de 0 à 63.
 
 
 === misc/circuit_draw ===
@@ -674,39 +673,39 @@ $59836059268386 New wire (Hotkey: Alt & drag)
 
 === misc/watchable_state ===
 
-$58678516111149 Edit watched state
+$58678516111149 Editer les espions
 
 
 === levels/program ===
 
 $16693098943939
-The [INSTRUCTION] input component has been removed. It has been replaced by a program component. Every tick, use the counter to load the next [INSTRUCTION] from the program's memory.
+Le composant d'entrée [INSTRUCTION] a été supprimé. Il a été remplacé par un composant programme. A chaque cycle, utilise le compteur pour charger l'[INSTRUCTION] suivante de la mémoire du programme.
 	
-You must use the counter component you unlocked earlier for this level.
-$19686277478479 The program is still outputting the first instruction. Did you hook up a counter?
+Tu dois utiliser le composant compteur que tu as déverrouillé dans un niveau précédent.
+$19686277478479 Le programme envoie toujours la première instruction. As tu connecté un compteur ?
 
 
 === levels/wide_instrucitons ===
 
-$13709034294291 Save on even tick, output both bytes on odd ticks
-$17693995237077 Output both bytes
-$19068760748550 Output 0 on even ticks
-$65009239162932 The correct outputs were {a} and {b}
-$19203973423116 Create a device that saves the program output on even ticks, and outputs both bytes on odd ticks.
-$17409169138995 Save the byte
+$13709034294291 Mémorise lors des cycles pairs et envoie en sortie les deux octets lors des cycles impairs.
+$17693995237077 Envoie en sortie les deux octets
+$19068760748550 Envoie 0 en sortie à chaque cycle pair
+$65009239162932 Les sorties correctes étaient {a} et {b}
+$19203973423116 Réalise un circuit qui enregistre la sortie du programme lors des cycles pairs et envoie en sortie les deux octets lors des cycles impairs.
+$17409169138995 Mémorise l'octet
 
 
 === components/Input 3 ===
 
-$70689623552857 Input
+$70689623552857 Entrée
 
 
 === levels/Arithmetic Engine ===
 
 $16434409050195
-Add addition and subtraction to your wire.
+Ajoute l'addition et la soustraction à ton circuit.
 
-Instructions:
+Instructions
 [code][color=#87a8c8]0 OR
 1 NAND
 2 NOR
@@ -718,11 +717,12 @@ Instructions:
 === levels/capitalize ===
 
 $14894954428144
-The inputs in this level represent the characters in a list of planet names, encoded as ASCII (see the manual). Each name is separated by a space which has the numeric value 32. Replace the first letter in each word with its uppercase counterpart.
-(The possible input characters are a to z lowercase, space, apostrophe and dash)
-$13301617098810 We had the intern type out planet names in human script. Unfortunately he forgot to capitalize each name.
-$11647445869837 Input: 
-$11201813578269 Output: 
+Dans ce niveau, les entrées représentent les lettres dans une liste de noms de planète, encodés en ASCII (voir le manuel). Chaque nom est séparé par un espace qui a la valeur numérique 32. Remplace la première lettre de chaque mot avec la majuscule correspondante.
+(Les caractères possibles en entrée sont les minuscules de a à z, l'espace, l'apostrophe et le tiret).
+
+$13301617098810 A notre demande le stagiaire a saisi une liste de planètes en langue humaine. Malheureusement il a oublié de mettre les majuscules aux noms.
+$11647445869837 Entrée : 
+$11201813578269 Sortie : 
 
 
 === levels/byte_equal ===
