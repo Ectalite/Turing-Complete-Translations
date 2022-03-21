@@ -69,20 +69,22 @@ $15582618410991 CHARGER ET SAUVEGARDER
 === levels/maze ===
 
 $13225915898937
-If you choose to go on to the rest of the levels I will teach you about ram, the stack and function calls and you will get to solve more interesting challenges like this one.
-		
-But first you would have to build a better computer. [color=#e49f44]OVERTURE[/color] was good as a first machine, but it is clumsy and programs get very messy. To solve the challenges I have for you without pulling all your hair out, you will need something more expressive, the [color=#e49f44]LEG[/color] architecture.
-$17275059688693 Congratulations, you won the competition! An amazing achievement!
-$13741358519166 The fabled maze. If you solve it you win the competition!
-$11103446544344 On the other hand, you could also retire, be proud and enjoy your reward of not being eaten.
+Si vous réussissez ce niveau, je vous montrerai comment fonctionne la ram, le stack et l'appel de fonctions. Vous pourrez ainsi résoudre des défis plus intéressants comme celui-ci.
+	
+Mais avant vous devez construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/color] était une bonne première machine, mais elle est construite à l'arrache et les programmes sont rapidement illisibles.
+Pour résoudre les défis que je vous proposerais sans tirer tous les cheveux qu'il vous reste, vous aurez besoin d'un élément en plus: l'architecture [color=#e49f44]LEG[/color].
+
+$17275059688693 Bravo! Vous avez réussi la compétition, c'est une prouesse incomparable!
+$13741358519166 Le labyrinthe mythique. Si vous réussissez à en sortir vous gagnerez la compétition!
+$11103446544344 D'un autre côté, vous pouvez aussi fièrement partir et ne pas être mangé. 
 $19331074553774
-Write an algorithm that gets the robot from the start to the exit. 
+Ecrivez un algorithme qui permettra au robot de sortir du labyrithe.
 
-This level is hard, you probably want to write down the pseudocode for your algorithm before you implement it.
+Ce niveau est dur, vous devriez d'abord écrire votre algorithme sur le papier avant de l'implémenter ici.
 
-Use [color=#e63e5b][url=maze]this hint[/url][/color] if you get stuck.
+Utilisez [color=#e63e5b][url=maze]cet indice[/url][/color] si vous êtes coincé. 
 
-[tip]Remember you can't use immedate values larger than 63, a common mistake is to try to jump to a label further down than the 63rd byte.[/tip]
+[tip]Souvenez-vous que vous ne pouvez pas utiliser de valeur immédiates plus grande que 63, attention donc à ne pas vouloir sauter à une ligne plus bas que la ligne 63.[/tip]
 
 
 === misc/level_gate_component_icon ===
