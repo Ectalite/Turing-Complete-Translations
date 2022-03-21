@@ -105,12 +105,12 @@ Sortez [ON] quand 2 entrées ou plus sont [ON].
 
 === levels/byte_constant ===
 
-$12641789008694 Create a wire that always outputs the number 164.
+$12641789008694 Créez un système qui sortira toujours le nombre 164.
 
 
 === components/Output 1 + 1B ===
 
-$81929942356043 Output
+$81929942356043 Sortie
 
 
 === levels/call_ret ===
