@@ -89,17 +89,18 @@ Utilisez [color=#e63e5b][url=maze]cet indice[/url][/color] si vous êtes coincé
 
 === misc/level_gate_component_icon ===
 
-$83440578602427 Unlocks component
+$83440578602427 Déverouille des composants
 
 
 === levels/any_doubles ===
 
-$16587030847545 Because we are so technologically advanced we have machines fold our socks. Unfortunately the wire that detects sock pairs broke on the machine.
+$16587030847545 
+Au vu de notre intélligence clairement supérieur, nous avons construit une machine pour plier nos chaussettes. Malheureusement, le fil qui détecte les paires de chaussettes est cassé sur cette machine.
 $14373083988184
-This level has 4 inputs. 
-Output [ON] when 2 or more of them are [ON].
+Ce niveau a 4 entrées. 
+Sortez [ON] quand 2 entrées ou plus sont [ON].
 
-[tip]Don't overthink this level.[/tip]
+[tip]Ne vous cassez pas trop la tête sur ce niveau.[/tip]
 
 
 === levels/byte_constant ===
