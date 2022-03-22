@@ -347,9 +347,9 @@ $69987793052607 Commentaire de fil (Cliquer sur le fil)
 === levels/delay_level ===
 
 $19986989895202
-Tous les composants ont un délai. Au niveau du wire, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
+Tous les composants ont un délai. Au niveau du schéma, le délai cumulé est déterminé par le chemin le plus lent. En pratique ça signifie qu'il faut paralléliser les choses.
 Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
-$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.=
+$11246430085016 Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
 $12817338693402 Le délai de tous les composants dérivent en fin de compte du délai de la porte nand, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût nand de 5.
 
 === levels/push_pop ===
@@ -419,8 +419,7 @@ $18132100348781
  Crée des composants imbriqués dans la
  fabrique en changeant le "niveau 
  d'imbrication" dans le menu fichier.
- 14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le wire adapté.
-$14533861483435 Multiplying two 4 bit numbers gives you a 8 bit number. Build a wire that does this.
+$14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
 $10430040077737 Bit 3
 $10274387271390 Bit 0
 $16301538038805 Bit 2
