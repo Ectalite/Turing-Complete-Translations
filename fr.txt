@@ -244,7 +244,7 @@ Ces conditions correspondent au composant que vous avez sauvegardé dans l'ateli
 
 === components/Input 1 ===
 
-$12746117288689 Input
+$12746117288689 Entrée
 
 
 === levels/Second Tick ===
@@ -299,8 +299,8 @@ $97461374731210 Couleur de fil
 
 $17077079648771 Des composants peuvent être ajoutés, renommés ou supprimés en utilisant le système de sauvegarde du niveau.
 $19551383617326
-Bienvenue à la fabrique de composants, les wires que tu crées ici pourront être utilisés comme composants dans les niveaux d'architecture.
-La wireerie créée ici définira le comportement du composant et son schéma définira sa forme.
+Bienvenue dans l'atelier de composants, les schémas que tu crées ici pourront être utilisés comme composants dans les niveaux d'architecture.
+Le composants imporé aura le même comportement et son schéma définira sa forme.
 $12516102012088 Ce composant n'a pas de forme définie et ne pourra pas être réutilisé. Placer des composants sur la carte pour définir sa forme.
 $14712417427860 Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
 $15549447390000 2 composants d'entrée/sortie sont dans la même zone. Le composant personnalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
@@ -736,7 +736,7 @@ $17156565273196 Output [ON] when both inputs are the same.
 === levels/Calculations ===
 
 $14458828731919
-Time to merge in the "Arithmetic Engine" wire you made previously with the register wire. The calculation wire was saved in the component factory and can now be added as a component. If you forgot which pin does what, check the wire in the component factory.
+Time to merge in the "Arithmetic Engine" wire you made previously with the register wire. The calculation wire was saved in the l'atelier de composants and can now be added as a component. If you forgot which pin does what, check the wire in the l'atelier de composants.
 
 Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
 [OFF][OFF] Immediate
@@ -824,7 +824,7 @@ $18518173140953 I recommend that you add [color=#e49f44]shift left[/color] and [
 
 === misc/factory ===
 
-$53123649343022 Component Factory
+$53123649343022 L'atelier de composants
 
 
 === levels/registers ===
@@ -1247,7 +1247,7 @@ $98930461722118 Return to level
 
 === misc/component_factory_toggle ===
 
-$55499239951858 Component Factory
+$55499239951858 L'atelier de composants
 
 
 === levels/unseen_fruit ===
@@ -1294,7 +1294,7 @@ $18234235689107 If VALUE ≥ 0 output [img]dialogue/on.png[/img]
 $12429396872036 Regardless of VALUE output [img]dialogue/off.png[/img]
 $19014698800906 If VALUE = 0 output [img]dialogue/on.png[/img]
 $13680487623452 If VALUE ≤ 0 output [img]dialogue/on.png[/img]
-$12706881725738 Your wire has been saved to the component factory.
+$12706881725738 Your wire has been saved to the l'atelier de composants.
 
 
 === levels/full_adder ===
@@ -1313,7 +1313,7 @@ $11472059692644 You get a chance to communicate with very advanced people from t
 
 === misc/factory_back_inner ===
 
-$12211557416281 Return to level
+$12211557416281 Revenir au niveau
 
 
 === nim/backend ===
