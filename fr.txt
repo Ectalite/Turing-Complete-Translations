@@ -151,14 +151,14 @@ $59658696292688 POP {value} off stack
 
 === levels/odd_ticks ===
 
-$18510295620397 Output [OFF] on the even ticks and [ON] on the odd ticks.
-$16987046679863 In a previous level you learned how we don't allow circular dependencies. Now you must learn the one exception.
+$18510295620397 Mettez la sortie à [OFF] pendant les cycles paires et [ON] pendant les cycles paires.
+$16987046679863 Vous avez appris précédemment que nous n'acceptons pas les dépendances circulaires. Il existe cependant une exception à la règle que vous verrez maintenant.
 $16037516781370
-Square pins in the game never affect the output in the same tick. They therefore never cause circular dependencies.
+Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour celà que l'on peut les utiliser pour les dépendances circulaire. 
 	
 	[img]dialogue/delay_buffer.png[/img]
 $17588119878416
-The delay line is allowed to depend on its own input. This is because its input does not influence the rest of the wire until next tick.
+Le ligne de délais a le droit de dépendre de sa sortie, car son entrée ne va pas influencer le reste du circuit jusqu'au prochain cycle.
 	
 [img]dialogue/delay_buffer.png[/img]
 
