@@ -482,7 +482,7 @@ $58391129129347 Registres
 $45936227746026 Compteur
 $12946639957230 Porte NOT
 $16881141174140 Course Binaire
-$37136208388559 Circuit de Verrouillage (SR Latch)
+$37136208388559 Bascule SR
 $32191988336459 Sauvegarde parfaite
 $59136962133320 Moteur Logique
 $30920780473397 Dépendance Circulaire
@@ -828,9 +828,9 @@ $53123649343022 L'atelier de composants
 
 === levels/registers ===
 
-$10661964231175 I have locked the red components of this level in place, since you always make a mess and don't leave enough space. The mess you make from now on is saved between levels, you no longer get to start fresh each level.
+$10661964231175 J'ai forcé la position des composants rouges pour ce niveau, car tu t'embrouilles toujours en ne laissant pas assez de place. A partir d'ici tu ne repartiras plus de rien à chaque niveau, le désordre sera désormais sauvegardé d'un niveau à l'autre.
 $10211777161405
-These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e49f44]destination[/color].
+Voici les combinaisons de bits pour chaque [color=#c54d5e]source[/color] et [color=#e49f44]destination[/color].
 
 [color=#c54d5e]Source[/color]:
 [OFF] [OFF] [OFF]  REG 0 
@@ -839,8 +839,8 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 [OFF] [ON] [ON]  REG 3 
 [ON] [OFF] [OFF]  REG 4 
 [ON] [OFF] [ON]  REG 5 
-[ON] [ON] [OFF]  INPUT 
-[ON] [ON] [ON]  UNUSED
+[ON] [ON] [OFF]  ENTREE 
+[ON] [ON] [ON]  NON UTILISE
 
 [color=#e49f44]Destination[/color]:
 [OFF] [OFF] [OFF]  REG 0 
@@ -849,23 +849,23 @@ These are the bit patterns for each [color=#c54d5e]source[/color] and [color=#e4
 [OFF] [ON] [ON]  REG 3 
 [ON] [OFF] [OFF]  REG 4 
 [ON] [OFF] [ON]  REG 5 
-[ON] [ON] [OFF]  OUTPUT
-[ON] [ON] [ON]  UNUSED
+[ON] [ON] [OFF]  SORTIE
+[ON] [ON] [ON]  NON UTILISE
 
-To get a more intuitive understanding of the requirements, click the [INSTRUCTION] icon in the upper left corner.
+Pour obtenir des explications plus intuitives des exigences clique sur l'icône [INSTRUCTION] dans le coin supérieur gauche.
 $15888345020710
-In this level you need to create a wire which can copy from a [color=#c54d5e]source[/color] to a [color=#e49f44]destination[/color]. 
+Dans ce niveau tu dois créer un circuit pour copier d'une [color=#c54d5e]source[/color] vers une [color=#e49f44]destination[/color]. 
 
-The instruction byte in this level determines the [color=#c54d5e]source[/color] and the [color=#e49f44]destination[/color]. 
+L'octet instruction indique ici la [color=#c54d5e]source[/color] et la [color=#e49f44]destination[/color]. 
 
-Bits 1, 2 and 3 give the [color=#e49f44]destination[/color]. Bits 4, 5 and 6 give the [color=#c54d5e]source[/color].
-$14823499195861 Open "Instructions" in the top bar
-$14108238519744 Time to create your master project, implementing the [color=#e49f44]OVERTURE[/color] computer architecture. This will be an actual Turing complete machine, a true computer in every way!
-$14411286553593 Finally, the input and output components now have an additional pin. Set that pin [ON] when you want to read from input, or copy to output.
+Les bits 1, 2 et 3 indiquent la [color=#e49f44]destination[/color]. Les bits 4, 5 et 6 indiquent la [color=#c54d5e]source[/color].
+$14823499195861 Ouvrir les "Instructions" dans la barre en haut
+$14108238519744 Il est temps de créer ton chef d'oeuvre, en implémentant l'architecture informatique [color=#e49f44]OVERTURE[/color]. Ce sera un véritable système Turing Complet, un vrai ordinateur dans tous les sens du terme !
+$14411286553593 Enfin les composants d'entrée et sortie ont maintenant une nouvelle patte. Met cette patte à [ON] pour lire depuis l'entrée ou copier vers la sortie.
 $14041158687959
-[color=#c54d5e]Source[/color] and [color=#e49f44]destination[/color] can be 1 of 6 registers, we will name them REG 0 to REG 5 respectively. 
+Les [color=#c54d5e]Sources[/color] et les [color=#e49f44]destinations[/color] peuvent être un des 6 registres, nous les appelerons REG 0 jusqu'à REG 5. 
 	
-Additionally, this map has a dedicated input component, which can be the [color=#c54d5e]source[/color] and an output component, which can be the [color=#e49f44]destination[/color].
+De plus cette carte a un composant d'entrée spécifique qui peut être la [color=#c54d5e]source[/color] et un composant de sortie qui peut être la [color=#e49f44]destination[/color].
 
 
 === components/Output 2 ===
