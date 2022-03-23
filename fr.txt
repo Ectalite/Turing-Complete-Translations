@@ -751,23 +751,23 @@ $13013863429580 Pour ce niveau une patte supplémentaire a été ajoutée aux re
 
 === levels/Counter ===
 
-$17701404772563 Add 1
-$17940006660359 Count
+$17701404772563 Ajouter 1
+$17940006660359 Compter
 $17263901743088
-Build a counter that will increase by 1 each tick.
+Construis un compteur qui s'incrémente de 1 à chaque cycle.
 
-Additionally, there should be an option for overwriting the counter with a given value.
+De plus il doit y avoir la possibilité de forcer le compteur à une valeur fournie.
 
-You are given 2 inputs, a bit and a byte.
+Tu reçois 2 entrées, un bit et un octet.
 
-The bit input should toggle between counting and overwriting with the value of the byte.
-$68874699768861 Overwrite with {value}
-$17883663978196 Overwrite
+Le bit en entrée permet de basculer entre les modes comptage et enregistrement de la valeur de l'octet.
+$68874699768861 Enregistrer {value}
+$17883663978196 Enregister
 $19407121413983 ACTION
 $10555159894041
-Counting is so fundamental even insects do it. From counting, species can evolve to compare and do arithmetic. And before you know it, you have apes building computers.
+Compter est tellement fondamental que même les insectes le font. A partir de là, les espèces peuvent évoluer vers la comparaison et le calcul. Et alors que vous ne vous y attendiez pas, voilà que des singes construisent des ordinateurs...
 
-Make a device that counts increments once per tick.
+Réalise un composant qui compte en s'incrémentant une fois par cycle.
 
 
 === components/InputQword ===
