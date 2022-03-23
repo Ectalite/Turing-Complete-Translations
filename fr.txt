@@ -785,7 +785,7 @@ $36195388998735 Général
 $19085882338208 [b]Consigne[/b]\nFaites un clique droit pour déselectionner
 $10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre circuit.
 $14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du circuit. Dans ce niveau vous devrez créer un circuit qui correspondra au tableau.
-$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
+$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
 $19798729463813
 En utilisant des portes NAND, construisez une porte NOT.
 
