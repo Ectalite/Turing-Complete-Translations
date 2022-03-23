@@ -1471,24 +1471,23 @@ $17712385236630 Create a wire that is always [ON].
 
 $18317133991943
  [color=#b72d41][b]TIP:[/b][/color] 
- Inline SR latches like this one
- can be enabled for all levels
- through the options menu.
-$18165461234561 Delay lines are easy to understand and can be used to build any computer architecture. However, modern hardware no longer use these as a basis for memory.
+ Des bascules SR comme celle-ci
+ peuvent être activées dans tous les niveaux
+ via le menu options.
+$18165461234561 Les lignes de retard sont simples à comprendre et peuvent être utilisées pour construire n'importe quelle architecture d'ordinateur. Pourtant le matériel moderne ne les utilise plus comme base des mémoires.
 $15754153332116
-This level introduces the concept of latches. This mechanic is not used anywhere else in the game. However, this level is here for the sake of completeness.  
+Ce niveau présente le concept de bascule. Ce dispositif n'est pas utilisé ailleurs dans le jeu. Néanmoins ce niveau existe pour une raison d'exhaustivité.
 	
-If you do not have experience with electronics, it is recommended that you skip this level. You can always come back later.
-$15213907597666 Using 2 NOR gates, build the wire that matches the table. You will need a latch.
+If vous n'avez aucune expérience en électronique, il est recommandé de sauter ce niveau. Vous pourrez toujours revenir plus tard.
+$15213907597666 Avec 2 portes NOR, construisez le circuit qui correspond à la table. Vous aurez besoin d'une bascule.
 $19448398663695
-When we want to determine what components in a circular dependency are outputting, we don't have a first component we can start with. Instead we use the values of the wires from last tick. This is because in real hardware electrons don't travel instantly. Depending on the wire, the wires either flicker between [ON] and [OFF], or settle in a stable state.
+Pour déterminer quels composants contrôlent la sortie dans une dépendance circulaire, il est impossible de fixer un composant de départ. A la place nous utilisons les valeurs des fils du cycle précédent. Cela s'explique par le fait que les électrons ne se déplacent pas instantanément dans la réalite. En fonction du cable, le circuit oscille entre [ON] et [OFF], ou se fixe dans un état stable.
 	
-When you have a wire where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
+Quand un circuit peut se fixer dans 2 états stables distincts, vous avez une base pour une mémoire. L'état suivant dépendra des valeurs sur les fils du cycle précédent. De tels circuits sont appelés "bascules".
 $10290382368587
-In this level (and only this level), components may depend on themselves or form loops of up to two components. Despite depending on their own output, some of these wires have stable outputs, at least for some inputs.
+Dans ce niveau (et uniquement celui-ci), les composants peuvent dépendre d'eux-même ou former des boucles d'au maximum 2 composants. Malgré le fait qu'ils dépendent de leur propre sortie, certains de ces circuits ont des sorties stables, au moins pour certaines combinaisons en entrée.
 
-The wire you are asked to construct here has a circular dependency. The wire also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The wire will switch between these two states forever, so it is not stable.
-
+Le circuit que vous devez construire ici présente une dépendance circulaire. Il a également 2 "états stables" pour la plupart des entrées possibles. Un état stable signifie ici que les sorties de chaque composants sont en accord avec leurs entrées. Par exemple, une porte OR avec une entrée déconnectée et l'autre connectée à sa propre sortie est stable. Si la sortie est [OFF], les 2 entrées sont [OFF], ce qui est acceptable pour la porte OR. Si la sortie est [ON] alors l'une des entrée l'est aussi. Par contre, une porte NOT connectée à sa propre entrée n'est pas stable. Si la sortie est [ON], alors l'entrée l'est aussi. Cela fait que la porte NOT essaie de changer sa sortie en [OFF]. Le circuit va osciller entre ces deux états indéfiniment et il n'est donc pas stable.
 
 === misc/inst_new_rule ===
 
