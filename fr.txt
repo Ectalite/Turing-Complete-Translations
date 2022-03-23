@@ -772,12 +772,12 @@ Réalise un composant qui compte en s'incrémentant une fois par cycle.
 
 === components/InputQword ===
 
-$31709565019284 Input
+$31709565019284 Entrée
 
 
 === ui/options/General ===
 
-$36195388998735 General
+$36195388998735 Général
 
 
 === levels/not_gate ===
@@ -804,21 +804,21 @@ $18780831606716 [b]Consigne[/b]\nMaintenez le clique gauche pour ajouter un fil
 
 === levels/byte_shift ===
 
-$16023356915123 The task in this level is to shift the first input to the left by the value given in the second input. The second input will never exceed 7.
-$37338672894296 Shift the bits of {value} left by {amount}
-$10598344098990 [center]Shift the first input left by the number of places given by the second[/center]
+$16023356915123 Ta tâche dans ce niveau est de décaler vers la gauche la première entrée en fonction de la valeur de la seconde entrée. Cette seconde entrée aura au maximum un valeur de 7.
+$37338672894296 Décale les bits de {value} de {amount} positions vers la gauche.
+$10598344098990 [center]Décale la première entrée vers la gauche du nombre de position indiquée par la seconde entrée[/center]
 $16216408139965
-To [color=#e49f44]shift[/color] a value 1 left just means moving all the bits in a byte to the left by 1 position.
-For example: [color=#e49f44]90 shl 1[/color]
+[color=#e49f44]Décaler[/color] une valeur à gauche de 1 signifie déplacer tous les bits de l'octets de 1 position vers la gauche.
+Par exemple : [color=#e49f44]90 decg 1[/color]
 
-[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
+[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] deviendrait :
 [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] [OFF]
 
-Shifting by 3: [color=#e49f44]90 shl 3[/color]
-[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] would become:
+Décalage de 3 : [color=#e49f44]90 decg 3[/color]
+[OFF] [ON] [OFF] [ON] [ON] [OFF] [ON] [OFF] deviendrait :
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
-$18137790657923 In addition to giving you a shift left component, we also had the intern create a shift right component. All he had to do was to create the mirror version of this schematic.
-$18518173140953 I recommend that you add [color=#e49f44]shift left[/color] and [color=#e49f44]shift right[/color] to your hardware for future levels.
+$18137790657923 En plus de te faire faire le composant décaler à gauche, nous avons aussi demander au stagiaire de faire le composant décaler à droite. Il lui a suffi de réaliser une version mirroir de ce schéma.
+$18518173140953 Je te recommande d'ajouter [color=#e49f44]décaler gauche[/color] et [color=#e49f44]décaler droite[/color] à tes circuits pour les prochains niveaux.
 
 
 === misc/factory ===
