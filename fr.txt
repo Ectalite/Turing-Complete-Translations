@@ -729,24 +729,24 @@ $11201813578269 Sortie :
 
 === levels/byte_equal ===
 
-$17156565273196 Output [ON] when both inputs are the same.
+$17156565273196 La sortie doit être [ON] quand les deux entrées sont identiques.
 
 
 === levels/Calculations ===
 
 $14458828731919
-Time to merge in the "Arithmetic Engine" wire you made previously with the register wire. The calculation wire was saved in the l'atelier de composants and can now be added as a component. If you forgot which pin does what, check the wire in the l'atelier de composants.
+C'est maintenant qu'il faut intégrer le circuit "Moteur Arithmétique" réalisé précédemment avec le circuit registre. Le circuit de calcul a été enregistré dans l'atelier de composants et peut maintenant reservir en tant que composant. Si tu as oublié à quoi correspondent les pattes retourne regarder le circuit dans l'atelier de composants.
 
-Use the decoder you built to figure out if we should copy between registers or do calculations. Here are the 4 different modes again:
-[OFF][OFF] Immediate
-[ON][OFF] Copy
-[OFF][ON] Calculate
+Utilise le décodeur déjà construit pour déterminer si l'on doit copier de registres à registres ou faire un calcul. Voici pour rappel les 4 modes possibles:
+[OFF][OFF] Constante
+[ON][OFF] Copie
+[OFF][ON] Calcul
 [ON][ON] Condition
 
-For this level you only have to worry about the copy and calculate mode, check [INSTRUCTIONS] in the top panel for the details. When in calculate mode, take [color=#e49f44]REG 1[/color] and [color=#e49f44]REG 2[/color] as inputs, and save the result in [color=#e49f44]REG 3[/color].
+Pour ce niveau tu n'as à t'occupper que des modes copie et calcul, lis les [INSTRUCTIONS] détaillées dans le panneau du haut. En mode calcul, prends [color=#e49f44]REG 1[/color] et [color=#e49f44]REG 2[/color] comme entrées et envoie le résultat dans [color=#e49f44]REG 3[/color].
 
-[tip]Don't forget the 3 bit decoder component has a disable bit.[/tip]
-$13013863429580 For this level an extra pin has been added to the registers. This pin always emits the value of the register, regardless if load is selected or not.
+[tip]Pense à la patte de désactivation du décodeur 3 bits.[/tip]
+$13013863429580 Pour ce niveau une patte supplémentaire a été ajoutée aux registres. Cette patte émet toujours en sortie la valeur du registre même lorsque la lecture n'est pas activée.
 
 
 === levels/Counter ===
