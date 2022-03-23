@@ -25,7 +25,7 @@ $13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mé
 === levels/byte_less_i ===
 
 $16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
-$19006843777401 Créez un wire qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
+$19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprêtez les bytes comme étant [color=#dd6576]SIGNÉS[/color].
 $46083799633716 {input_1} est plus petit que {input_2}?
 
 
@@ -416,8 +416,8 @@ $13549246864135 Bit 0
 $15857218442751 Bit 1
 $18132100348781
  [color=#b72d41][b]TIP:[/b][/color] 
- Crée des composants imbriqués dans la
- fabrique en changeant le "niveau 
+ Crée des composants imbriqués dans
+ l'atelier en changeant le "niveau 
  d'imbrication" dans le menu fichier.
 $14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
 $10430040077737 Bit 3
@@ -441,7 +441,7 @@ Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
 === levels/byte_and ===
 
-$15885763626223 Réalise un wire qui applique la fonction AND logique (bit à bit) sur deux octets.
+$15885763626223 Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
 
 
 === ui/toggles/level_log2 ===
@@ -482,7 +482,7 @@ $58391129129347 Registres
 $45936227746026 Compteur
 $12946639957230 Porte NOT
 $16881141174140 Course Binaire
-$37136208388559 Wire de Verrouillage (SR Latch)
+$37136208388559 Circuit de Verrouillage (SR Latch)
 $32191988336459 Sauvegarde parfaite
 $59136962133320 Moteur Logique
 $30920780473397 Dépendance Circulaire
@@ -499,7 +499,7 @@ $19487493622742 Demi-additionneur
 $26705128002562 Conditions
 $94163943335575 Le Bac à Sable
 $64662599400870 Inverteur Octet
-$27566801288091 Fabrique de composants
+$27566801288091 Atelier de composants
 $14193654974055 Inférieur Signé
 $14522992467987 Porte OR
 $74096060570427 Instructions Larges
@@ -602,7 +602,7 @@ Toutes les valeurs des états surveillés sont comparées aux valeurs attendues 
 
 Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
 [url=import_overture][color=#e49f44]OVERTURE[/color][/url]
-$15446846177093 Bienvenue au labo. Comme la fabrique de composants, ce n'est pas un niveau normal mais un outil.
+$15446846177093 Bienvenue au labo. Comme l'atelier de composants, ce n'est pas un niveau normal mais un outil.
 $16072814175447 Programmer du matériel bogué est très frustrant. Il est pénible de devoir soudainement se poser des questions sur les circuits quand on est en pleine résolution d'un problème de programmation. Il est tentant de faire un correctif rapide afin de revenir au problème initial. Mais maintenant ce correctif vite fait a cassé autre chose dans un programme qui fonctionnait jusque là et ainsi de suite. Au final, en développant le matériel essaie de viser 100% de fiabilité avant de démarrer la programmation !
 
 
@@ -783,9 +783,9 @@ $36195388998735 General
 === levels/not_gate ===
 
 $19085882338208 [b]Consigne[/b]\nFaites un clique droit pour déselectionner
-$10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre wire.
-$14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du wire. Dans ce niveau vous devrez créer un wire qui correspondra avec le tableau.
-$10604720087324 [b]Consigne[/b]\nConstruisez un wire qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
+$10042327259531 Maintenant que vous avez déverouillé la porte NAND, il est temps de créer votre propre circuit.
+$14042842216181 Dans le dernier niveau, vous avez construit le tableau à partir du circuit. Dans ce niveau vous devrez créer un circuit qui correspondra au tableau.
+$10604720087324 [b]Consigne[/b]\nConstruisez un circuit qui corresponde au tableau.\nCliquez [i][/i] (Prochain Tick) en haut à gauche pour tester chaque combinaison d'entrées.\nVous réuissirez le niveau une fois que les deux combinaisons seront justes.
 $19798729463813
 En utilisant des portes NAND, construisez une porte NOT.
 
@@ -880,7 +880,7 @@ $11090938799865 Créez la porte XOR inverse, connue sous le nom de XNOR.
 
 === levels/decoder ===
 
-$16133643476631 Le wire que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
+$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
 $18435544383511 CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18198768092383 COPIER
 $18945946395447
@@ -896,9 +896,9 @@ Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
 Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoyez [ON] vers la sortie qui correspond.
 $16785126425267 Calculer
 $15440615199508 Condition logique
-$12671132029272 Votre wire à été sauvegardé dans la fabrique de composants.
+$12671132029272 Votre circuit à été sauvegardé dans l'atelier de composants.
 $15105859227432 COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12068329066372 [b]ATTENTION: CETTE VERSION DU WIRE EST OBSOLÈTE, VEUILLEZ CLIQUER SUR L'ICÔNE DE SAUVEGARDE ET CRÉEZ UNE NOUVELLE VERSION DE CE WIRE[/b]
+$12068329066372 [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLÈTE, VEUILLEZ CLIQUER SUR L'ICÔNE DE SAUVEGARDE ET CRÉEZ UNE NOUVELLE VERSION DE CE CIRCUIT[/b]
 $11382827588408 Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
 $12976424717611 Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $12532951884542 Valeur immédiate
@@ -928,7 +928,7 @@ $32676754026463 Save {value} and load
 $30856781458049 Save {value}
 $14259545926196 A
 $12306130287676
-Dans ce niveau vous devrez construire un wire qui pourra
+Dans ce niveau vous devrez construire un circuit qui pourra
 [SAUVEGARDER] ou [CHARGER] 4 bytes de mémoire différents. 
 
 1 Bit sera donné pour [CHARGER] et un autre pour [SAUVEGARDER].
@@ -1047,7 +1047,7 @@ $18270083417453 Vérifier
 $19208664264770 [b]Consigne[/b]\nCliquez sur l'un des bouttons de la dernière ligne du tableau.
 $17923274216766 Nous en avons conclus que vous n'êtes probablement pas une plante.
 $14777350869870 Nous sommes impressionnés par votre capacité à avoir résolu le dernier test!
-$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du wire change son comportement.\nUtilisez la barre sur votre gauche pour experimenter les effets qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
+$17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son comportement.\nUtilisez la barre sur votre gauche pour experimenter les effets qu'ont les entrées sur les sorties et complétez le tableau en conséquence.
 
 
 === components/Input 2 ===
@@ -1293,7 +1293,7 @@ $18234235689107 If VALUE ≥ 0 output [img]dialogue/on.png[/img]
 $12429396872036 Regardless of VALUE output [img]dialogue/off.png[/img]
 $19014698800906 If VALUE = 0 output [img]dialogue/on.png[/img]
 $13680487623452 If VALUE ≤ 0 output [img]dialogue/on.png[/img]
-$12706881725738 Your wire has been saved to the l'atelier de composants.
+$12706881725738 Votre circuit a été enregistré dans l'atelier de composants.
 
 
 === levels/full_adder ===
