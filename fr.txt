@@ -95,7 +95,7 @@ $83440578602427 Déverouille des composants
 === levels/any_doubles ===
 
 $16587030847545 
-Au vu de notre intélligence clairement supérieur, nous avons construit une machine pour plier nos chaussettes. Malheureusement, le fil qui détecte les paires de chaussettes est cassé sur cette machine.
+Au vu de notre intelligence clairement supérieure, nous avons construit une machine pour plier nos chaussettes. Malheureusement, le fil qui détecte les paires de chaussettes est cassé sur cette machine.
 $14373083988184
 Ce niveau a 4 entrées. 
 Sortez [ON] quand 2 entrées ou plus sont [ON].
@@ -880,7 +880,7 @@ $11090938799865 Créez la porte XOR inverse, connue sous le nom de XNOR.
 
 === levels/decoder ===
 
-$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l' "Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
+$16133643476631 Le circuit que vous avez créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que l'"Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
 $18435544383511 CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18198768092383 COPIER
 $18945946395447
@@ -907,10 +907,10 @@ $12532951884542 Valeur immédiate
 === levels/bit_inverter ===
 
 $15769391111364 Quand "Inverser" est [ON], veuillez sortir l'inverse de la valeur d'entrée. Sinon, copiez l'entrée sur la sortie.
-$15272914096446 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas: la seule véritée se trouve dans la table de véritée.
-$14944872827527 Malgré le drôle de context que nous vous avons donné, vous avez réussi à voir qu'il ne s'agissait en réallité que d'une porte XOR déguisée. Bien joué!
+$15272914096446 Ce niveau est exactement comme le XOR que vous avez résolu avant. N'oubliez pas : la seule véritée se trouve dans la table de vérité.
+$14944872827527 Malgré le drôle de contexte que nous vous avons donné, vous avez réussi à voir qu'il ne s'agissait en réalité que d'une porte XOR déguisée. Bien joué !
 $16125025706490 Hmm, peut-être que vous avez étudié un peu trop les mémoires...
-$13224963076378 Nous étudions comment les expériences passés influent les fonctions cognitives des humains.
+$13224963076378 Nous étudions comment les expériences passées influent les fonctions cognitives des humains.
 
 
 === levels/ram_block ===
@@ -1367,7 +1367,7 @@ $17675121574388 Le composant OUT s'est maintenant éteint, car aucun signal ne v
 
 === misc/circuit_color ===
 
-$78287906849040 Wire color
+$78287906849040 Couleur de fil
 
 
 === misc/instr_clone ===
