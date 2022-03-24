@@ -41,7 +41,7 @@ $12639868461113 Quitter
 
 === misc/button_next ===
 
-$50213503063080 Prochain cycle (Touches de fonction: F5)
+$50213503063080 Prochain cycle (Raccourci : F5)
 
 
 === levels/saving_bytes ===
@@ -213,7 +213,7 @@ $85430022417382 Montrer les délais
 
 === misc/options ===
 
-$49251062339706 options
+$49251062339706 Options
 
 
 === levels/turing_complete ===
@@ -473,7 +473,7 @@ $15448906128695 Réalise une porte OR avec 3 entrées.
 
 === ui/state_ui/title_screen/play ===
 
-$82533529573294 jouer
+$82533529573294 Jouer
 
 
 === nim/backend_lib/level_list ===
@@ -566,7 +566,7 @@ $36221227239949 Machine à Danser
 
 === ui/options/Controls ===
 
-$53266310714298 Control
+$53266310714298 Contrôles
 
 
 === levels/3_decoder ===
@@ -670,12 +670,12 @@ Avec le mode immédiat, tout l'octet est interprété comme un nombre à [SAUVER
 
 === misc/circuit_draw ===
 
-$59836059268386 New wire (Hotkey: Alt & drag)
+$59836059268386 Nouveau fil (Raccourci : Alt & glisser)
 
 
 === misc/watchable_state ===
 
-$58678516111149 Editer les espions
+$58678516111149 Éditer les espions
 
 
 === levels/program ===
@@ -952,17 +952,17 @@ $12291627335021 SAUVEGARDER
 
 === misc/score_sync ===
 
-$76911045833478 score sync
+$76911045833478 synchroniser le score
 
 
 === misc/level_gate_manual_icon ===
 
-$22002156022920 Unlocks manual entry
+$22002156022920 Déverrouille la page de manuel
 
 
 === misc/level_gate_unlocks_unknown ===
 
-$76731326010721 Unlocks something unknown
+$76731326010721 Déverrouille quelquechose d'inconnu
 
 
 === ui/top_bar/nand_score ===
@@ -972,7 +972,7 @@ $16224450605442 NAND SCORE:
 
 === misc/hdd_edit_button ===
 
-$38481453712356 Edit memory
+$38481453712356 Éditer la mémoire
 
 
 === levels/Switch ===
@@ -1080,7 +1080,7 @@ $18732877690173 Add the two input bytes. Each output bit in the output should be
 
 === misc/ide_control_link ===
 
-$80788685813993 Robot controls
+$80788685813993 Contrôles du Robot
 
 
 === levels/saving_gracefully ===
@@ -1149,7 +1149,7 @@ Then output the total volume that the landscape can carry as the answer.
 
 === misc/profile ===
 
-$32835651830157 profile
+$32835651830157 Profil
 
 
 === levels/Dancing Machine ===
@@ -1196,12 +1196,12 @@ $18134632592542 You have built your computer, but to win the competition you sti
 
 === misc/program_edit_signals ===
 
-$98772447663910 Edit watched state
+$98772447663910 Éditer les espions
 
 
 === misc/credits ===
 
-$15234594767991 credits
+$15234594767991 Crédits
 
 
 === misc/specifications ===
@@ -1211,12 +1211,12 @@ $68054407020318 Instructions
 
 === misc/delete ===
 
-$53448014080434 Delete (Hotkey: Right click)
+$53448014080434 Supprimer (Raccourci : Clic droit)
 
 
 === misc/controls2 ===
 
-$38773676077206 Edit Instructions
+$38773676077206 Éditer les Instructions
 
 
 === levels/1_decoder ===
@@ -1266,7 +1266,7 @@ $51779464354363 Toggle signed numbers
 
 === misc/reset ===
 
-$39440928972984 Reset (Hotkey: F4)
+$39440928972984 Reset (Raccourci : F4)
 
 
 === levels/conditions ===
@@ -1372,7 +1372,7 @@ $78287906849040 Couleur de fil
 
 === misc/instr_clone ===
 
-$69090690657232 Clone
+$69090690657232 Clôner
 
 
 === levels/byte_or ===
@@ -1434,7 +1434,7 @@ $12034111753799 Watched state {number} should point to the counter
 
 === misc/change_schematic ===
 
-$79554853897000 Switch schematic
+$79554853897000 Changer de schéma
 
 
 === levels/byte_less ===
@@ -1491,7 +1491,7 @@ Le circuit que vous devez construire ici présente une dépendance circulaire. I
 
 === misc/inst_new_rule ===
 
-$41064305626707 New rule
+$41064305626707 Nouvelle règle
 
 
 === levels/byte_xor ===
@@ -1501,7 +1501,7 @@ $19636386696963 Create a wire that XORs two bytes bitwise.
 
 === misc/multi_select ===
 
-$85147529532131 Multi select (Hotkey: SHIFT & drag)
+$85147529532131 Sélection multiple (Raccourci : SHIFT & glisser)
 
 
 === levels/binary_racer ===
@@ -1558,7 +1558,7 @@ $16047615798435 [center]Read the input twice and XOR the bits of the two inputs[
 
 === misc/menu ===
 
-$56916384895438 Main menu
+$56916384895438 Menu Général
 
 
 === levels/Wire Spaghetti ===
