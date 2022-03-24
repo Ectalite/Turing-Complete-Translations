@@ -1132,7 +1132,7 @@ $11316928751185 In our education system we traditionally teach by tricking stude
 
 === ui/top_bar/scores ===
 
-$56840961921536 NAND SCORE: \nDELAY SCORE:
+$56840961921536 SCORE NAND : \n SCORE DELAI :
 
 
 === levels/Water World ===
@@ -1261,8 +1261,7 @@ $17070232883226 But we want to make sure we don’t get the same fruit twice as 
 
 === ui/toggles/negative_numbers ===
 
-$51779464354363 Toggle signed numbers
-
+$51779464354363 Nombres signés
 
 === misc/reset ===
 
@@ -1348,7 +1347,7 @@ $15231724707514 I don't want to discourage you, but I think the elephant will wi
 
 === ui/toggles/race_condition ===
 
-$75558678297830 Circular dependency
+$75558678297830 Dépendance circulaire
 
 
 === levels/Crude Awakening ===
@@ -1391,7 +1390,7 @@ $15226896485081 You may think it is unethical to eat all the earthlings that don
 
 === ui/toggles/level_log ===
 
-$38557550573896 Level log
+$38557550573896 Présentation du niveau
 
 
 === levels/Conditionals ===
