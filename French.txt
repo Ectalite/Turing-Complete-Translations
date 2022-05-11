@@ -889,11 +889,11 @@ Additionally, it would greatly simplify future wires if the representation works
 
 === levels/Masking Time ===
 
-$16810715868480 [center]Calculate modulo 4 of the input.[/center]
+$16810715868480 [center]Calculez le modulo 4 de l'entrée.[/center]
 $17375862136921
-The length of our week is 4 days. Our weekdays are named Zero's day, One's day, Two's day and Three's day. I hear some earthlings number their Two's day incorrectly? 
-  
-It doesn't really surprise me.
+La durée de notre semaine est de 4 jours. On appelle les jours Jour Zéro, Jour Un, Jour Deux et Jour Trois. J'ai entendu que les humains ne savaient pas compter les jours corrêctement?
+
+Ça me surprends pas vraiment.
 
 
 === levels/NAND Gate ===
