@@ -506,11 +506,11 @@ $14293122338496 Nous avons fait ajouter au stagiaire un bit "désactivé" sur ce
 === levels/Opcodes ===
 
 $19693461238792 Fixe l'incrément du compteur à 4
-$38976231780455 Espion {nr} doit cibler un registre ou un composant personnalisé contenant un registre
-$20916717363300 Espion {nr} doit cibler la sortie
+$38976231780455 Point d'observation {nr} doit cibler un registre ou un composant personnalisé contenant un registre
+$20916717363300 Point d'observation {nr} doit cibler la sortie
 $18189600217529 [center]Implémente l'instruction OPCODE[/center]
 $13450117997204 Ajoute un compteur dans le circuit
-$77044880242883 Espion {nr} doit cibler le compteur
+$77044880242883 Point d'observation {nr} doit cibler le compteur
 $13870568875751 Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
 $10303603301757
 Implémente les opcodes suivants :
@@ -593,7 +593,7 @@ Avec le mode immédiat, tout l'octet est interprété comme un nombre à [SAUVER
 
 === misc/watchable_state ===
 
-$58678516111149 Éditer les espions
+$58678516111149 Éditer les points d'observation
 
 
 === levels/program ===
@@ -977,7 +977,7 @@ The answer pseudo random number generators.
 
 === misc/program_edit_signals ===
 
-$98772447663910 Éditer les espions
+$98772447663910 Éditer les points d'observation
 
 
 === misc/credits ===
