@@ -105,13 +105,14 @@ $85430022417382 Montrer les délais
 === levels/call_ret ===
 
 $19416009887091
-Sometimes it is useful to reuse a section of code. We call these sections "functions". To implement this reuse, one can [color=#e63e5b][url=termonology]jump[/url][/color] to the beginning of the function and jump back again at the end of the function. We call jumping to the function "calling" the function, and jumping back from the function "returning" from the function. 
-  
-But for this section of code to actually be reusable, the return jump will have to be able to return to different locations, depending on where we called the function from.
+Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. On appele cette méthode "l'appel" d'une fonction et le retour au programme le "retour" de la fonction.
 
-We could save the counter value to a register before jumping to the function and use this value when returning. However, if done this way, a function would not be able to call another function, since this would overwrite the original return address.
+Mais pour que l'on puisse utiliser ce morceau de code plusieurs fois, on doit pouvoir sauter à des endroits différents lors du retour, dépendant de l'endroit dans le programme où on a appelé la fonction.
 
-Say function A calls function B, who calls function C. When we want to return from C, we only need the return address for B and in B we only need the address for A. In general, regardless of which function we look at and how they are nested, the last return address we added is always the first one we will need again. This is exactly the behavior of the stack.
+On pourrait sauvegarder la valeur du compteur dans un registre avant de sauter dans la foncton et utiliser cette valeur pour en resortir. Cependant, en faisant comme ça on pourrait écrire par dessus la valeur du registre si on appele une fonction depuis une autre fonction et on ne pourrait jamais revenir au programme principal.
+
+Par exemple:
+Disons que la fonction A appele la fonction B qui appele a son tour la fonction C. Quand on voudra revenir en arrière on aura besoin que de l'adresse de retour de la fonction B et une fois dans B on aura besoin que de l'adresse de retour de la fonction A. En général, indépendement du nombre d'appels de fonctions, la première adresse stocké sera toujours utilisé en dernier. Magiquement, c'est exactement le comportement du stack.
 
 
 === levels/odd_ticks ===
