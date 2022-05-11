@@ -480,7 +480,7 @@ $17750429607702 Décodeur 1 bit
 $59939822079116 Nombres Négatifs
 $79570913613529 Doubler les Nombres
 $49328023903824 Égalité
-$33132016601448 EMPILER et DEPILER
+$33132016601448 Empiler et Dépiler
 $74292408260828 Calculs
 $45480765206717 Conditions
 $71126291573555 Doublement compliqué
@@ -910,11 +910,11 @@ $17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son c
 === levels/byte_adder ===
 
 $16888130664370
-If the result does not fit in 8 bits, turn the output carry [ON] (you can think of it as the 9th bit)
+Si le résultat prends plus que 8 bits de place, mettez la sortie carry [ON] (vous pouvez l'utiliser comme un 9ème bit)
   
-Finally, there is an input carry as well. This is useful for chaining together byte adders to add larger numbers. You can think of this carry as adding either 0 [OFF] or 1 [ON].
+Il y a aussi une entrée carry, elle sera utile pour additionner des bytes à la suite. On additionne le carry en entrée au résultat (0 [OFF] ou 1 [ON]).
 
-Use [color=#e63e5b][url=byte\_adder]this hint[/url][/color] if you get stuck.
+Utilisez [color=#e63e5b][url=byte\_adder]cet indice[/url][/color] si vous êtes coincé.
 
 
 === misc/ide_control_link ===
