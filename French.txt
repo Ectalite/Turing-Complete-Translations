@@ -831,7 +831,7 @@ $12901484249817 Pourrez-vous mettre 4 octets de mémoire dans un espace aussi li
 $15908016538045 VALEUR
 $14218335256117
 Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
-    C'est pour cela que nous avons dis au stagiaire de faire une version 256 bytes de votre composant. 
+    C'est pour cela que nous avons dit au stagiaire de faire une version 256 octets de votre composant. 
 $13765566466116 NE PAS SAUVEGARDER
 $12306130287676
 Dans ce niveau vous devrez construire un circuit qui pourra
