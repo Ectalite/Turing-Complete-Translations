@@ -19,13 +19,13 @@ $12242923444593 Sortie
 === levels/RAM ===
 
 $17967666262990 Dans ce niveau, copiez d'abord 32 valeurs et sauvegardez chacune d'elle. Après les avoirs sauvegardé, envoyez les vers la sortie dans l'ordre d'arrivé. Envoyer une valeur vers la sortie avant d'avoir stocker toutes les valeurs vous fera perdre le niveau. 
-$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 bytes de mémoire en plus. Vous devez trouver un moyen d'accéder à un byte indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
+$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 octets de mémoire en plus. Vous devez trouver un moyen d'accéder à un octet indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
 
 
 === levels/byte_less_i ===
 
 $16755383054285 [center]Déterminez si la première entrée est plus petite que la seconde.[/center]
-$19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprétez les bytes comme étant [color=#dd6576]SIGN…S[/color].
+$19006843777401 Créez un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interprétez les octets comme étant [color=#dd6576]SIGN…S[/color].
 $46083799633716 {input\_1} est plus petit que {input\_2}?
 
 
@@ -42,11 +42,11 @@ $50213503063080 Prochain cycle (Raccourci : F5)
 === levels/saving_bytes ===
 
 $10633476398156
-Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un byte.
+Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 
 
 Lorsque le premier bit est [ON], [CHARGEZ] la mémoire et envoyez la vers la sortie.
-Lorsque le second bit est [ON], [SAUVEGARDEZ] le byte d'entrée.
+Lorsque le second bit est [ON], [SAUVEGARDEZ] l'octet en entrée.
 $15510981129613 CHARGER
 $19109563882664 NE PAS CHARGER
 $16372198430230 SAUVEGARDER
@@ -165,7 +165,7 @@ $15326252036920 Jusqu'à maintenant, le code pouvait seulement influencer la mé
 $16583885726240 Bravo, tu as réussi! Je pensais juste que t'étais un singe bizarre pas poilu, mais t'as réussi à créer un vrai ordinateur! INCROYABLE! 
 $10510746154639 Au premier cycle, le programme devrait charger l'adresse 1.
 $10317244906317 Aucun programme trouvé.
-$14587485007736 Jusqu'à maintenant, les programmes étaient limités à tourner dans l'ordre dans lequel ils étaient écrit, byte par byte.
+$14587485007736 Jusqu'à maintenant, les programmes étaient limités à tourner dans l'ordre dans lequel ils étaient écrit, octet par octet.
 $19649119273248
 La dernière chose que l'on doit rajouter est un mécanisme pour changer le programme counter avec des [INSTRUCTIONS] quand certaines conditions sont respectées.
 
@@ -827,7 +827,7 @@ $13224963076378 Nous étudions comment les expériences passées influent les fo
 === levels/ram_block ===
 
 $17142958857584 A OU B
-$12901484249817 Pourrez-vous mettre 4 bytes de mémoire dans un espace aussi limité?
+$12901484249817 Pourrez-vous mettre 4 octets de mémoire dans un espace aussi limité?
 $15908016538045 VALEUR
 $14218335256117
 Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
@@ -835,12 +835,12 @@ Dans notre civilisation avancée, forcer les prisonniers à faire des tâches co
 $13765566466116 NE PAS SAUVEGARDER
 $12306130287676
 Dans ce niveau vous devrez construire un circuit qui pourra
-[SAUVEGARDER] ou [CHARGER] 4 bytes de mémoire différents. 
+[SAUVEGARDER] ou [CHARGER] 4 octets de mémoire différents. 
 
 1 Bit sera donné pour [CHARGER] et un autre pour [SAUVEGARDER].
 Enfin, 2 bits seront données pour l'adresse.
 
-Avec 2 bits, vous aurez 4 combinaisons possibles, une pour chaque byte de mémoire dans ce niveau.
+Avec 2 bits, vous aurez 4 combinaisons possibles, une pour chaque octet de mémoire dans ce niveau.
 [i][tip]Rassemblez les fils au centre et utilisez des angles droits, sinon ce sera le bazar ![/tip][/i]
 [i][tip]La barre d'espace fait tourner les composants.[/tip][/i]
 $18084166025569 Rien
@@ -913,7 +913,7 @@ $17994568832660 [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son c
 $16888130664370
 Si le résultat prends plus que 8 bits de place, mettez la sortie carry [ON] (vous pouvez l'utiliser comme un 9ème bit)
   
-Il y a aussi une entrée carry, elle sera utile pour additionner des bytes à la suite. On additionne le carry en entrée au résultat (0 [OFF] ou 1 [ON]).
+Il y a aussi une entrée carry, elle sera utile pour additionner des octets à la suite. On additionne le carry en entrée au résultat (0 [OFF] ou 1 [ON]).
 
 Utilisez [color=#e63e5b][url=byte\_adder]cet indice[/url][/color] si vous êtes coincé.
 
