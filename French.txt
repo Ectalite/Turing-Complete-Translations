@@ -19,7 +19,7 @@ $12242923444593 Sortie
 === levels/RAM ===
 
 $17967666262990 Dans ce niveau, copiez d'abord 32 valeurs et sauvegardez chacune d'elle. Après les avoirs sauvegardé, envoyez les vers la sortie dans l'ordre d'arrivé. Envoyer une valeur vers la sortie avant d'avoir stocker toutes les valeurs vous fera perdre le niveau. 
-$13520918982355 Ajoutez un bloc de ram, ainsi l'ordinateur aura 256 octets de mémoire en plus. Vous devez trouver un moyen d'accéder à un octet indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
+$13520918982355 Ajoutez un bloc de RAM, ainsi l'ordinateur aura 256 octets de mémoire en plus. Vous devez trouver un moyen d'accéder à un octet indépendamment des autres. Indice: nous utiliserons un registre pour choisir l'adresse de la RAM, ainsi si vous voulez sauvegarder ou charger une valeur, vous pourrez indiquer l'adresse dans ce registre.
 
 
 === levels/byte_less_i ===
@@ -60,7 +60,7 @@ $15582618410991 CHARGER ET SAUVEGARDER
 === levels/maze ===
 
 $13225915898937
-Si vous réussissez ce niveau, je vous montrerai comment fonctionne la ram, le stack et l'appel de fonctions. Vous pourrez ainsi résoudre des défis plus intéressants comme celui-ci.
+Si vous réussissez ce niveau, je vous montrerai comment fonctionne la RAM, le stack et l'appel de fonctions. Vous pourrez ainsi résoudre des défis plus intéressants comme celui-ci.
   
 Mais avant vous devez construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/color] était une bonne première machine, mais elle est construite à l'arrache et les programmes sont rapidement illisibles.
 Pour résoudre les défis que je vous proposerais sans tirer tous les cheveux qu'il vous reste, vous aurez besoin d'un élément en plus: l'architecture [color=#e49f44]LEG[/color].
