@@ -1312,7 +1312,7 @@ Voici les premières choses à faire pour résoudre ce niveau :
 $18860645759682
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
-Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+Le premier octet correspond à l'opération (l'[color=#e49f44]OPCODE[/color]).
 
 Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
 
@@ -1339,7 +1339,7 @@ Les valeurs utilisées pour les arguments ou la destination sont les suivantes :
 [color=#e49f44]7[/color]: Entrée/Sortie
 [/code]
 
-Dans le niveau suivant tu implémentaras d'autres [color=#e49f44]OPCODES[/color], ce qui nécessitera une nouvelle ALU différente de celle d'[color=#e49f44]OVERTURE[/color].
+Dans le niveau suivant tu implémentaras d'autres [color=#e49f44]OPCODES[/color], ce qui nécessitera une ALU différente de celle d'[color=#e49f44]OVERTURE[/color].
 
 $10922418807673 L'argument 7 nécessite de lire sur l'entrée, mais l'entrée n'est pas active.
 $62258842382434 Le point d'Observation {counter} doit pointer sur le compteur
