@@ -935,7 +935,7 @@ Ce niveau comporte deux entrées.
 La valeur sauvegardée est modifiée seulement quand la première entrée est à [ON].
 La seconde entrée est la nouvelle valeur de la [color=#e49f44]sauvegarde[/color].
 
-Envois toujours en sortie La [color=#e49f44]sauvegarde[/color].
+Envois toujours en sortie la [color=#e49f44]sauvegarde[/color].
 
 
 === levels/circular_dependency ===
@@ -955,9 +955,9 @@ $56840961921536 SCORE NAND : \n SCORE DELAI :
 === levels/Water World ===
 
 $12881972193444
-The landscape is 16 columns wide. Read the input 16 times to get the height of the landscape at each column from left to right.
+Le terrain mesure 16 colonnes de large. Lis l'entrée 16 fois pour trouver la hauteur disponible pour chaque colonne de gauche à droite.
   
-Then output the total volume that the landscape can carry as the answer.
+Envois alors en sortie comme réponse le volume total que le terrain peut contenir.
 
 
 === misc/profile ===
@@ -968,12 +968,11 @@ $32835651830157 Profil
 === levels/Dancing Machine ===
 
 $14975070588197
-We all like the way Robot moves on the dance floor. That's why we want him to lead our dance team. 
+Nous aimons tous la façon dont le Robot bouge sur la piste de dance. C'est pourquoi nous le voulons à la tête de notre équipe de danceurs.
   
-The only problem is to make him come up with original dance sequences. How do you make creativity out of deterministic logic you ask?
+Le seul problème c'est de lui faire trouver des séries de mouvements originaux. Comment pourrait-on bien obtenir de la créativité à partir d'une logique déterministe ?
 
-The answer pseudo random number generators.
-
+La solution a pour nom générateurs de nombres pseudo-aléatoires.
 
 === misc/program_edit_signals ===
 
@@ -997,7 +996,7 @@ $38773676077206 Éditer les instructions
 
 === misc/factory_back ===
 
-$98930461722118 Return to level
+$98930461722118 Revenir au niveau
 
 
 === misc/component_factory_toggle ===
@@ -1022,15 +1021,15 @@ $12211557416281 Revenir au niveau
 
 === levels/sandbox ===
 
-$19454393978813 The Keyboard lets you directly control your computer, using well... your keyboard
+$19454393978813 Le Clavier te permet de contrôler ton ordinateur directement avec simplement... ton  clavier.
 
 
 === levels/and_gate ===
 
 $15232844525838
-Create the wire that matches the table.
+Réalise le circuit qui correspond au tableau.
   
-[tip]Double click on a component to move it together with connected wires.[/tip]
+[tip]Double-clique sur un composant pour le déplacer avec son groupe de fils connectés directement.[/tip]
 
 
 === misc/instr_clone ===
@@ -1048,7 +1047,7 @@ $38481453712356 Éditer la mémoire
 $12508086025944
 Nous allons vous tester.
 
-Les règles sont simples, construisez un ordinateur fonctionnel ou vous allez être manger. Bonne chance !
+Les règles sont simples, construisez un ordinateur fonctionnel ou vous allez être mangé. Bonne chance !
 $16321577947087 Félicitation, vous vous êtes fait enlever!
 $19257730429557
 Un signal se déplace toujours de composants "IN" vers des composants "OUT".
@@ -1075,28 +1074,28 @@ $38557550573896 Présentation du niveau
 === levels/Conditionals ===
 
 $10794262854382
-Add if statements to your wire. For the if statements, the 2 arguments are compared and if the condition is true, the counter is set to a jump address.
-  
-The previous instructions had the 4 bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, RESULT[/color][/code]
+Ajoute des instructions si à ton circuit. Avec l'instruction si, les 2 arguments sont comparés et si la condition est vraie, le compteur est chargé avec une adresse de saut.
 
-For if statements the bytes represent:
-[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, JUMP\_ADDRESS[/color][/code]
+L'instruction précédente contient 4 octets qui représentent :  
+[code][color=#87a8c8]CODEOP, ARGUMENT\_1, ARGUMENT\_2, RÉSULTAT[/color][/code]
 
-In addition to the previous opcodes, add:
-[code][color=#87a8c8]32 IF\_EQUAL
-33 IF\_NOT\_EQUAL
-34 IF\_LESS
-35 IF\_LESS\_OR\_EQUAL
-36 IF\_GREATER
-37 IF\_GREATER\_OR\_EQUAL[/color][/code]
+Pour l'instruction si les octets représentent :
+[code][color=#87a8c8]CODEOP, ARGUMENT\_1, ARGUMENT\_2, ADDRESSE\_SAUT[/color][/code]
 
-Use unsigned less / greater for the comparisons.
+En plus des copeops précédents, ajoute :
+[code][color=#87a8c8]32 SI\_EGAL
+33 SI\_NON\_EGAL
+34 SI\_MOINS
+35 SI\_MOINS\_OU\_EGAL
+36 SI\_PLUS
+37 SI\_PLUS\_OU\_EGAL[/color][/code]
 
-Each opcode does what their name implies. For example the following jumps to byte 16 if REG0 is less than REG1: 
-[code][color=#87a8c8]IF\_LESS REG0 REG1 16[/color][/code]
-$14973719570693 Add a counter to the wire
-$14690660047411 [center]Implement the condition opcodes[/center]
+Compare avec les composants pour nombres non signés.
+
+Chaque codeop fait ce que son nom indique. Par exempie pour sauter à l'octet 16 si REG0 est inférieur à REG1 : 
+[code][color=#87a8c8]SI\_MOINS REG0 REG1 16[/color][/code]
+$14973719570693 Ajoute un compteur au circuit
+$14690660047411 [center]Implémente les codeop conditionnels[/center]
 
 
 === misc/change_schematic ===
@@ -1106,7 +1105,7 @@ $79554853897000 Changer de schéma
 
 === levels/byte_less ===
 
-$11252365204151 Create a wire that outputs [ON] when the first input is less than the second. Interpret the bytes as being [color=#dd6576]UNSIGNED[/color].
+$11252365204151 Réalise un circuit dont la sortie est [ON] quand la première entrée est inférieure à la seconde. Les octets sont [color=#dd6576]NON SIGNES[/color].
 
 
 === levels/sr_latch ===
@@ -1135,22 +1134,22 @@ $41064305626707 Nouvelle règle
 
 === levels/always_on ===
 
-$17712385236630 Create a wire that is always [ON].
+$17712385236630 Réalise un circuit qui est toujours [ON].
 
 
 === levels/byte_xor ===
 
-$19636386696963 Create a wire that XORs two bytes bitwise.
+$19636386696963 Réalise un circuit qui applique XOR bit à bit sur deux octets.
 
 
 === levels/binary_racer ===
 
 $19111664765554
-Toggle the bits in the level panel so they add up to the decimal number in the question.
+Modifie les bits dans le panneau afin qu'ils représentent le nombre décimal demandé.
 
-You must reach level 3 to pass.
+Tu dois atteindre le niveau 3 pour réussir.
 
-(click [color=#e63e5b][url=accessibility\_mode]here[/url][/color] to turn on timerless accessibility mode)
+(cliques [color=#e63e5b][url=accessibility\_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours.)
 
 
 === misc/menu ===
@@ -1160,45 +1159,45 @@ $56916384895438 Menu Général
 
 === levels/xor_gate ===
 
-$19182751521677 Last level you built a wire that was [ON] when we were at the second tick. This level build a wire that is [ON] when we are at the second OR third tick.
+$19182751521677 Dans le dernier niveau tu as réalisé un circuit qui était [ON] au second cycle. Ce niveau nécessite un circuit [ON] au second OU au troisième cycle.
 
 
 === levels/Immediate Values ===
 
 $14960344494328
-Sometimes it is useful to load a value directly from the program instead of from registers. This is called loading an immediate value. In the [color=#e49f44]LEG[/color] architecture we signal when we want to do this directly in the opcode. We can do that in the following way:
-  
-When the 8th bit of the opcode is [ON], use argument 1 as an immediate value, instead of as a register address.
-When the 7th bit of the opcode is [ON], use argument 2 as an immediate value, instead of as a register address.
+Parfois il est utile de charger une valeur directement depuis le programme que d'un registre. Cela s'appelle charger une valeur immédiate. Pour l'architecture [color=#e49f44]LEG[/color] l'opcode indique directement que nous voulons faire cela. C'est possible de la façon suivante :
+
+Quand le 8ème bit du codeop est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
+Quand le 7ème bit du codeop est [ON], utilise l'argument 2 comme une valeur immédiate et non comme une adresse de registre.
   
     [img]dialogue/leg\_diagram.png[/img]
     
-$18004215603701 Add a counter to the wire
+$18004215603701 Ajoute un compteur au circuit
 
 
 === levels/Wire Spaghetti ===
 
-$17106892574116 Add a counter to the wire
-$56024330661504 Watched state {watched\_state} should point to a register or custom component with a register inside
+$17106892574116 Ajoute un compteur au circuit
+$56024330661504 Le point d'Observation {watched\_state} doit pointer sur un registre ou un composant personnel contenant un registre.
 $19099471819164
-The following are the set up steps that needs to be done in order to complete this level:
+Voici les premières choses à faire pour résoudre ce niveau :
     
-[b]1.[/b] Click the schematic icon ([b][i]?[/i][/b]) and create a new empty architecture.
-[b]2.[/b] Place a program block with 4 outputs.
-[b]3.[/b] Place a counter, set its increment to 4 and connect it to the program block.
-[b]4.[/b] Add 6 registers (or custom components with registers)
-[b]5.[/b] Click "Edit watched state" on the program component and connect registers to 0 to 5. Connect the counter to 6 and the output to 7.
+[b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
+[b]2.[/b] Ajoute un bloc de programme avec 4 sorties.
+[b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
+[b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
+[b]5.[/b] Clique "Editer point d'observation" sur le composant programme et connectr les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
 $18860645759682
-The [color=#e49f44]LEG[/color] architecture is a computer that takes 4 bytes per tick from the program. 
+L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
-The first byte describes the operation (called the [color=#e49f44]OPCODE[/color]).
+Le premier octet correspond à l'opération (called the [color=#e49f44]CODEOP[/color]).
 
-Since many operations take 2 arguments (like ADD, OR etc), the second and third byte are for arguments.
+Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
 
-And since most operations return 1 result, the fourth byte is for the result.
+Et comme la plupart des opérations retourne 1 résultat, le quatrième octet est pour le résultat.
   
   [img]dialogue/leg\_diagram\_1.png[/img]
-$62258842382434 Watched state {value} should point to the counter
+$62258842382434 Le point d'Observation {value} doit pointer sur le compteur.
 
 
 === levels/and_gate_3 ===
