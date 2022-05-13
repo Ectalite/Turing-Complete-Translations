@@ -1,0 +1,51 @@
+$63331549672739 Codes Opération (Opcodes)
+
+$18860645759682
+L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
+
+Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+
+Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
+
+Et comme la plupart des opérations retourne 1 résultat, le quatrième octet est pour le résultat.
+  
+  [img]dialogue/leg\_diagram\_1.png[/img]
+$62258842382434 Le point d'Observation {value} doit pointer sur le compteur.
+
+$18189600217529 [center]Implémente l'instruction OPCODE[/center]
+
+$10303603301757
+Implémente les opcodes suivants :
+[code][color=#87a8c8]0 ADD
+1 SUB
+2 AND
+3 OR
+4 NOT
+5 XOR[/color][/code]
+
+L'opcode NOT ignore le second argument.
+
+$10794262854382
+Ajoute des instructions si à ton circuit. Avec l'instruction si, les 2 arguments sont comparés et si la condition est vraie, le compteur est chargé avec une adresse de saut.
+
+L'instruction précédente contient 4 octets qui représentent :  
+[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, RÉSULTAT[/color][/code]
+
+Pour l'instruction si les octets représentent :
+[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, ADDRESSE\_SAUT[/color][/code]
+
+En plus des copeops précédents, ajoute :
+[code][color=#87a8c8]32 SI\_EGAL
+33 SI\_NON\_EGAL
+34 SI\_MOINS
+35 SI\_MOINS\_OU\_EGAL
+36 SI\_PLUS
+37 SI\_PLUS\_OU\_EGAL[/color][/code]
+
+Compare avec les composants pour nombres non signés.
+
+Chaque opcode fait ce que son nom indique. Par exempie pour sauter à l'octet 16 si REG0 est inférieur à REG1 : 
+[code][color=#87a8c8]SI\_MOINS REG0 REG1 16[/color][/code]
+$14973719570693 Ajoute un compteur au circuit
+$14690660047411 [center]Implémente les opcodes conditionnels[/center]
+

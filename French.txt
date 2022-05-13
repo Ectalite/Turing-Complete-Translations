@@ -1214,4 +1214,62 @@ $14788981567936 Créez une porte NAND avec 3 entrées.
 
 $43552728118031 Sortie
 
+=== added from 202205213 ===
+
+=== levels/push_pop2 ===
+
+$10062117579269 Ajoute la pile à ton ordinateur
+$14685569269160
+Dans ce niveau on attend que tu ajoutes la pile à l'ordinateur et que tu écrives un programme pour le résoudre.
+Quand l'entrée est 0, tu dois [color=#e49f44]DEPILER[/color] une valeur de la pile et l'envoyer en sortie. Quand l'entrée n'est pas 0, tu dois l'[color=#e49f44]EMPILER[/color] sur la pile.
+$18561605111721 EMPILER {input} sur la pile
+$59658696292688 DEPILER {value} de la pile
+
+=== levels/Immediate Values ===
+
+$64348543296709 Le point d'Observation {value} doit pointer sur la sortie
+$14060810229477 Ajoute 6 registres dans le circuit
+$79667526283284 Le point d'Observation {value} doit pointer sur le compteur
+$14960344494328
+Parfois il est utile de charger une valeur directement depuis le programme que d'un registre. Cela s'appelle charger une valeur immédiate. Pour l'architecture [color=#e49f44]LEG[/color] l'opcode indique directement que nous voulons faire cela. C'est possible de la façon suivante :
+
+Quand le 8ème bit de l'opcode est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
+Quand le 7ème bit de l'opcode est [ON], utilise l'argument 2 comme une valeur immédiate et non comme une adresse de registre.
+	
+		[img]dialogue/leg_diagram.png[/img]
+
+$10788301006338 Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
+$19338533633006 Définis l'incrément du compteur à 4
+$15197362332657 Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
+$10141611261952 [center]Implémente les valeurs immédiates[/center]
+
+=== levels/The Product of Nibbles ===
+
+$14622683750375 Bit 2
+$14957949958941 Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
+$17331397914567 Bit 1
+$19136817138607 [center]Multiplie les nombres de 4 bits[/center]
+$13232094477834 Bit 3
+$13549246864135 Bit 0
+$15857218442751 Bit 1
+$14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
+$10430040077737 Bit 3
+$10274387271390 Bit 0
+$16301538038805 Bit 2
+$83694551809785 Multiplier {num1} et {num2}
+
+=== levels/sandbox ===
+
+$17054292175058 Bienvenue dans le bac à sable, ici tu es libre de t'amuser librement. Je t'ai donné des fils de 64 bits et quelques composants supplémentaires d'Entrées/Sorties (IO).
+$10731996208080 Il y a également des versions 64 bit du programme, du compteur, du registre et de la RAM. Rappelles toi que les lectures en RAM 64 bits prennent 1 cycle.
+$72764802067974
+Bienvenue dans le bac à sable. 
+
+Les composants sont disponibles dans les menus du coté droit. Une fois placé, clique sur les pattes du composant et glisse pour les connecter au circuit. A gauche tu trouveras l'interface pour le contrôle de la simulation. Note que tu peux utiliser le clic droit sur le bouton "Vitesse d'Exécution" pour sélectionner la vitesse de ton choix.
+
+Tu peux trouver plus d'information sur la simulation dans le manuel (bouton en haut à gauche). Les fonctions importantes à voir sont l'"atelier de composants" qui te permet de créer tes propres composants and le composant programme, qui te permet de définir ton propre langage assembleur.
+$19454393978813 Le mini clavier te permet de contrôler ton ordinateur directement avec ton  clavier.
+$14434122873489 Le générateur de forme d'onde (Waveform) te permet de générer des sons. Je vais probablement regretter de t'avoir donné celui-là.
+$18405942066048 L'horloge donne l'heure UNIX courante en microsecondes.
+$10451578314373 L'Ecran Console te permet de dessiner des caractères sur un écran (voir caractères ASCII dans le manuel)
 
