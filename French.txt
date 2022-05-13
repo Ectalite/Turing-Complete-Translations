@@ -926,25 +926,25 @@ $80788685813993 Contrôles du Robot
 === levels/saving_gracefully ===
 
 $12474728041023
-The Delay Line allows us to use a value 1 tick later.
+La Ligne à Retard nous permet d'utiliser une valeur un cycle plus tard.
 
-We need to make a component that allows us to use a value whenever we want, regardless of how many ticks later.
-We call such a value [color=#e49f44]saved[/color].
+Nous devons réaliser un composant qui nous permet d'utiliser une valeur dans le futur, quelque soit le nombre de cycles plus tard.
+Nous appelerons cette valeur [color=#e49f44]sauvegarde[/color].
 $13740696609075
-In this level you have 2 inputs.
-Only if the first input is [ON], update the [color=#e49f44]saved[/color] value.
-The second input is the value to be [color=#e49f44]saved[/color].
+Ce niveau comporte deux entrées.
+La valeur sauvegardée est modifiée seulement quand la première entrée est à [ON].
+La seconde entrée est la nouvelle valeur de la [color=#e49f44]sauvegarde[/color].
 
-Always output what is currently [color=#e49f44]saved[/color].
+Envois toujours en sortie La [color=#e49f44]sauvegarde[/color].
 
 
 === levels/circular_dependency ===
 
-$13880985462901 Make a wire where the input of a component depends on its own output
+$13880985462901 Réalise un circuit pour lequel l'entrée du composant dépend de sa propre sortie.
 $18010308863615
-Create a "circular dependency". This is a wire where the input of a component relies on its own output. In a circular dependency situation, it is not possible to determine the output of a component, because you would first need to determine the input, which relies on the output and so on (hence the "circular").
+Crée une "dépendance circulaire". C'est un circuit pour lequel l'entrée du composant dépend de sa propre sortie. En cas de dépendance circulaire, il n'est pas possible de déterminer la sortie du composant, cela nécessiterait de connaître son entrée, qui dépend de sa sortie, et ainsi de suite, d'ou le "circulaire".
 
-This state is normally not allowed in other levels, but in this level the goal is to create it, so you understand what it is before going forward.
+Ce cas n'est normalement pas accepté dans les autres niveaux, mais ici l'objectif est d'en créer un, afin de comprendre ce dont il s'agit avant de passer à la suite.
 
 
 === ui/top_bar/scores ===
