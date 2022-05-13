@@ -468,6 +468,7 @@ $95989050249094 Porte AND en plus grand (Bigger AND Gate)
 $81417895515868 Commutateur de bits (Bit Switch)
 $69830943995038 Sens Unique (One Way)
 $62167495140389 Décaler (Shift)
+$63331549672739 Codes Opération (Opcodes)
 $87626070552799 Additionneur complet (Full Adder)
 $13219675195117 Nombre IMPAIR de Signaux (ODD Number of Signals)
 $28985439820134 Le produit des Quartets (The Product of Nibbles)
@@ -1081,10 +1082,10 @@ $10794262854382
 Ajoute des instructions si à ton circuit. Avec l'instruction si, les 2 arguments sont comparés et si la condition est vraie, le compteur est chargé avec une adresse de saut.
 
 L'instruction précédente contient 4 octets qui représentent :  
-[code][color=#87a8c8]CODEOP, ARGUMENT\_1, ARGUMENT\_2, RÉSULTAT[/color][/code]
+[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, RÉSULTAT[/color][/code]
 
 Pour l'instruction si les octets représentent :
-[code][color=#87a8c8]CODEOP, ARGUMENT\_1, ARGUMENT\_2, ADDRESSE\_SAUT[/color][/code]
+[code][color=#87a8c8]OPCODE, ARGUMENT\_1, ARGUMENT\_2, ADDRESSE\_SAUT[/color][/code]
 
 En plus des copeops précédents, ajoute :
 [code][color=#87a8c8]32 SI\_EGAL
@@ -1096,10 +1097,10 @@ En plus des copeops précédents, ajoute :
 
 Compare avec les composants pour nombres non signés.
 
-Chaque codeop fait ce que son nom indique. Par exempie pour sauter à l'octet 16 si REG0 est inférieur à REG1 : 
+Chaque opcode fait ce que son nom indique. Par exempie pour sauter à l'octet 16 si REG0 est inférieur à REG1 : 
 [code][color=#87a8c8]SI\_MOINS REG0 REG1 16[/color][/code]
 $14973719570693 Ajoute un compteur au circuit
-$14690660047411 [center]Implémente les codeop conditionnels[/center]
+$14690660047411 [center]Implémente les opcodes conditionnels[/center]
 
 
 === misc/change_schematic ===
@@ -1171,8 +1172,8 @@ $19182751521677 Dans le dernier niveau tu as réalisé un circuit qui était [ON
 $14960344494328
 Parfois il est utile de charger une valeur directement depuis le programme que d'un registre. Cela s'appelle charger une valeur immédiate. Pour l'architecture [color=#e49f44]LEG[/color] l'opcode indique directement que nous voulons faire cela. C'est possible de la façon suivante :
 
-Quand le 8ème bit du codeop est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
-Quand le 7ème bit du codeop est [ON], utilise l'argument 2 comme une valeur immédiate et non comme une adresse de registre.
+Quand le 8ème bit de l'opcode est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
+Quand le 7ème bit de l'opcode est [ON], utilise l'argument 2 comme une valeur immédiate et non comme une adresse de registre.
   
     [img]dialogue/leg\_diagram.png[/img]
     
@@ -1194,7 +1195,7 @@ Voici les premières choses à faire pour résoudre ce niveau :
 $18860645759682
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
-Le premier octet correspond à l'opération (called the [color=#e49f44]CODEOP[/color]).
+Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
 
 Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
 
