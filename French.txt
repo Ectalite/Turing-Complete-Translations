@@ -875,17 +875,17 @@ $22002156022920 Déverrouille la page de manuel
 
 === levels/Further Delayed Lines ===
 
-$17366913897135 Construct a wire that outputs the same as the input, just delayed by 2 ticks.
+$17366913897135 Construis un circuit dont la sortie est identique à l'entrée avec un retard de 2 cycles.
 
 
 === levels/negative_numbers ===
 
 $12574817679356
-We need a way to have negative values in bytes. The scheme we have been using so far can represent all numbers from 0 to 255 using a byte. This scheme is called "unsigned", since it only deals with positive numbers.
+Nous avons besoin de valeurs négatives dans les octets. Le système que nous avons utilisé jusqu'ici représente tous les nombres de 0 à 255 avec un octet. Ce système est appelé "non signé", car il ne gère que les nombres positifs.
 
-We need a scheme that allows negative numbers, normally referred to as a "signed" representation. 
+Nous avons besoin d'un système pour gérer les nombres négatifs, habituellement nommé représentation "signée".
 
-Additionally, it would greatly simplify future wires if the representation works with the adder you already made. 
+De plus, cela simplifierait grandement les prochains circuit si la représentation fonctionnait avec l'additionneur que tu as déjà réalisé.
 
 
 === levels/Masking Time ===
