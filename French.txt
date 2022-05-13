@@ -1273,3 +1273,101 @@ $14434122873489 Le générateur de forme d'onde (Waveform) te permet de génére
 $18405942066048 L'horloge donne l'heure UNIX courante en microsecondes.
 $10451578314373 L'Ecran Console te permet de dessiner des caractères sur un écran (voir caractères ASCII dans le manuel)
 
+=== components/Input32 ===
+
+$10677927084411 Entrée
+
+=== levels/counting_signals ===
+
+$10724914203078
+Le composant sortie de ce niveau est un compteur binaire dont les 3 premières pattes correspondent à 1, 2 et 4.
+Utilise le compteur binaire pour compter le nombre de signaux.
+
+Regarde [color=#e63e5b][url=counting_signals]cet indice[/url][/color] si tu te retrouves coincé
+
+[i][tip]La solution de ce niveau n'est pas très propre et nécessite pas mal de composants.[/tip][/i]
+
+$10881918807029
+ [color=#b72d41][b]ASTUCE:[/b][/color] 
+ Il n'y a pas de honte à utiliser
+ une feuille et un stylo
+
+=== levels/Wire Spaghetti ===
+
+$29329105515650 Ajoute un registre de plus au circuit
+$17106892574116 Ajoute un compteur au circuit
+$50177586789991 Ajoute {nr} registres de plus au circuit
+$15754373587500 Définis l'incrément du compteur à 4
+$56024330661504 Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
+$19099471819164
+Voici les premières choses à faire pour résoudre ce niveau :
+    
+[b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
+[b]2.[/b] Ajoute un bloc de programme avec 4 sorties.
+[b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
+[b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
+[b]5.[/b] Clique "Editer point d'observation" sur le composant programme et connecter les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
+
+
+$18860645759682
+L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
+
+Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+
+Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
+
+Et comme la plupart des opérations retourne 1 résultat, le quatrième octet est pour le résultat.
+  
+  [img]dialogue/leg\_diagram\_1.png[/img]
+$11377431500625 Ajoute 6 registres au circuit
+$14051336765362 Enfin c'est maintenant que tu commences à construire l'architecture [color=#e49f44]LEG[/color] !
+$13268807052125 (Tu pourras additionner 7+7, mais ici 7 signifie lire depuis l'entrée et l'entrée a pour valeur 8)
+$30006055126224 Le point d'Observation {output} doit pointer sur la sortie
+$19066122929275 [center]Met en place les registres et implémente l'opcode ADD [/center]
+$10912834168905
+Enfin, pour ce niveau l'[color=#e49f44]OPCODE[/color] est toujours 0. Cela veut dire qu'il faut additionner les arguments 1 2 et envoyer le résultat sur la destination.
+
+Les valeurs utilisées pour les arguments ou la destination sont les suivantes :
+[code]
+[color=#e49f44]0[/color]: Registre 0
+[color=#e49f44]1[/color]: Registre 1
+[color=#e49f44]2[/color]: Registre 2
+[color=#e49f44]3[/color]: Registre 3
+[color=#e49f44]4[/color]: Registre 4
+[color=#e49f44]5[/color]: Registre 5
+[color=#e49f44]6[/color]: Compteur
+[color=#e49f44]7[/color]: Entrée/Sortie
+[/code]
+
+Dans le niveau suivant tu implémentaras d'autres [color=#e49f44]OPCODES[/color], ce qui nécessitera une nouvelle ALU différente de celle d'[color=#e49f44]OVERTURE[/color].
+
+$10922418807673 L'argument 7 nécessite de lire sur l'entrée, mais l'entrée n'est pas active.
+$62258842382434 Le point d'Observation {counter} doit pointer sur le compteur
+$18769284297247 Créé un nouveau schéma et ajoute un programme avec une sortie sur 4 octets.
+
+
+
+=== levels/Wire Spaghetti ===
+
+$17106892574116 Ajoute un compteur au circuit
+$56024330661504 Le point d'Observation {watched\_state} doit pointer sur un registre ou un composant personnel contenant un registre.
+$19099471819164
+Voici les premières choses à faire pour résoudre ce niveau :
+    
+[b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
+[b]2.[/b] Ajoute un bloc de programme avec 4 sorties.
+[b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
+[b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
+[b]5.[/b] Clique "Editer point d'observation" sur le composant programme et connectr les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
+$18860645759682
+L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
+
+Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+
+Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
+
+Et comme la plupart des opérations retourne 1 résultat, le quatrième octet est pour le résultat.
+  
+  [img]dialogue/leg\_diagram\_1.png[/img]
+$62258842382434 Le point d'Observation {value} doit pointer sur le compteur.
+
