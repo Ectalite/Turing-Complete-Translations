@@ -413,83 +413,87 @@ $53266310714298 Contrôles
 
 === nim/backend_lib/level_list ===
 
-$58391129129347 Registres
-$45936227746026 Compteur
-$16881141174140 Course Binaire
-$12946639957230 Porte NOT
-$37136208388559 Bascule SR
-$32191988336459 Sauvegarde parfaite
-$59136962133320 Moteur Logique
-$30920780473397 Dépendance Circulaire
-$83321010943153 Compter des Signaux
-$58769021955965 Décodeur 3 bits
-$78673715398197 Valeurs Immédiates
-$49679174636208 XOR Octet
-$40356575891647 OR Octet
-$44393538021725 Calibration des Canons Laser
-$61228036919534 Tours d'Alliage Radioactifs
-$87426564872318 Diviser
-$24593959732668 Négation signée
-$19487493622742 Demi-additionneur
-$94163943335575 Le Bac à Sable
-$64662599400870 Inverseur d'Octet
-$14193654974055 Inférieur Signé
-$59485174474959 Délices ordonnés
-$74096060570427 Instructions Larges
-$14522992467987 Porte OR
-$30630492494839 NOT Octet
-$11457737665157 Plat de Spaghetti
-$27566801288091 Atelier de composants
-$85514901357243 Addition d'Octets
-$98013649264532 Pile
-$35790581910835 Second Cycle
-$94979277765051 Course de Robots
-$13303326918621 Porte NAND
-$16463062897451 Réveil brutal
-$28827008935802 Le Labo
-$77495536880911 Porte NOR
-$61466151084505 Invasion Spaciale 
-$20858506932774 Porte AND
-$92696642439976 Confrontation d'IA
-$62326481348276 Le Labyrinthe
-$74512388889988 Moteur Arithmétique
-$50884376329157 Petite Boite
-$70651296323768 Porte XOR
-$31140969090253 Noms de Planètes
-$42873691377272 Ajouter 5
-$68155633878444 Délais
-$45773199639367 Cycles pairs
-$17198602105978 Inférieur non signé
-$43018398941741 Toujours On
-$33343343932901 Turing Complet
-$95989050249094 Porte AND en plus grand
-$69830943995038 Sens Unique
-$62167495140389 Décaler
-$87626070552799 Additionneur complet
-$13219675195117 Nombre IMPAIR de Signaux
-$28985439820134 Le produit des Quartets
-$94896856420525 Porte XNOR
-$25805639594354 Programmer
-$57870391153000 Valeurs Immédiates
-$96825664933181 Fruit invisible
-$56272944092958 Lignes très en retard
-$86717899742637 Sauver les Octets
-$53092952738479 Sélecteur d'Entrée
-$77453667419150 Décodeur d'Instruction
-$96898830278153 Constante Octet
-$17750429607702 Décodeur 1 bit
-$59939822079116 Nombres Négatifs
-$79570913613529 Doubler les Nombres
-$49328023903824 Égalité
-$33132016601448 Empiler et Dépiler
-$74292408260828 Calculs
-$45480765206717 Conditions
-$71126291573555 Doublement compliqué
-$75225719777307 Monde Aquatique
-$64615090872051 Fonctions
-$84208736840052 Compter les jours
-$36221227239949 Machine à Danser
-$91954159574064 Porte OR en plus grand
+$58391129129347 Registres (Registers)
+$45936227746026 Compteur (Counter)
+$16881141174140 Course Binaire (Binary Racer)
+$12946639957230 Porte NOT (NOT Gate)
+$37136208388559 Bascule SR (SR Latch)
+$32191988336459 Sauvegarde parfaite (Saving Gracefully)
+$59136962133320 Moteur Logique (Logic Engine)
+$30920780473397 Dépendance Circulaire (Circular Dependency)
+$83321010943153 Compter des Signaux (Counting Signals)
+$58769021955965 Décodeur 3 bits (3 Bit Decoder)
+$78673715398197 Valeurs Immédiates (Immediate Values)
+$49679174636208 XOR Octet (Byte XOR)
+$40356575891647 OR Octet (Byte OR)
+$44393538021725 Calibration des Canons Laser (Calibrating Laser Cannons)
+$61228036919534 Tours d'Alliage (Tower of Alloy)
+$87426564872318 Diviser (Divide)
+$24593959732668 Négation signée (Signed Negator)
+$19487493622742 Demi-additionneur (Half Adder)
+$94163943335575 Le Bac à Sable (The Sandbox)
+$64662599400870 Inverseur de bit (Bit Inverter)
+$14193654974055 Inférieur Signé (Signed Less)
+$59485174474959 Délices ordonnés (Delicious Order)
+$74096060570427 Instructions Larges (Wide Instructions)
+$14522992467987 Porte OR (OR Gate)
+$30630492494839 NOT Octet (Byte NOT)
+$11457737665157 Plat de Spaghetti (Wire Spaghetti)
+$27566801288091 Atelier de composants (Component Factory)
+$85514901357243 Addition d'Octets (Adding Bytes)
+$98013649264532 Pile (Stack)
+$35790581910835 Second Cycle (Second Tick)
+$94979277765051 Course de Robots (Robot Racing)
+$13303326918621 Porte NAND (NAND Gate)
+$16463062897451 Réveil brutal (Crude Awakening)
+$28827008935802 Le Labo (The Lab)
+$77495536880911 Porte NOR (NOR Gate)
+$61466151084505 Invasion Spaciale (Spacial Invasion)
+$20858506932774 Porte AND (AND Gate)
+$92696642439976 Confrontation d'IA (AI Showdown)
+$74688348772072 Le bus (The bus)
+$62326481348276 Le Labyrinthe (The Maze)
+$74512388889988 Moteur Arithmétique (Arithmetic Engine)
+$50884376329157 Petite Boite (Little Box)
+$70651296323768 Porte XOR (XOR Gate)
+$31140969090253 Noms de Planètes (Planet Names)
+$42873691377272 Ajouter 5 (Add 5)
+$36114120875026 Craqueur de code (Storage cracker)
+$68155633878444 Délais (Delay)
+$45773199639367 Cycles pairs (Odd Ticks)
+$17198602105978 Inférieur non signé (Unsigned Less)
+$43018398941741 Toujours On (Always On)
+$33343343932901 Turing Complet (Turing Complete)
+$95989050249094 Porte AND en plus grand (Bigger AND Gate)
+$81417895515868 Commutateur de bits (Bit Switch)
+$69830943995038 Sens Unique (One Way)
+$62167495140389 Décaler (Shift)
+$87626070552799 Additionneur complet (Full Adder)
+$13219675195117 Nombre IMPAIR de Signaux (ODD Number of Signals)
+$28985439820134 Le produit des Quartets (The Product of Nibbles)
+$94896856420525 Porte XNOR (XNOR Gate)
+$25805639594354 Programmer (Program)
+$57870391153000 Valeurs Immédiates (Immediate Values)
+$96825664933181 Fruit invisible (Unseen Fruit)
+$56272944092958 Lignes très en retard (Delayed Lines)
+$86717899742637 Sauver les Octets (Saving Bytes)
+$53092952738479 Sélecteur d'Entrée (Input Selector)
+$77453667419150 Décodeur d'Instruction (Instruction Decoder)
+$96898830278153 Constante Octet (Byte Constant)
+$17750429607702 Décodeur 1 bit (1 Bit Decoder)
+$59939822079116 Nombres Négatifs (Negative Numbers)
+$79570913613529 Doubler les Nombres (Double the Number)
+$49328023903824 Égalité (Equality)
+$91267697977186 Course Hexa (Hex Racer)
+$33132016601448 Empiler et Dépiler (PUSH and POP)
+$74292408260828 Calculs (Calculations)
+$45480765206717 Conditions (Conditionals)
+$71126291573555 Doublement compliqué (Double Trouble)
+$75225719777307 Monde Aquatique (Water World)
+$64615090872051 Fonctions (Functions)
+$84208736840052 Compter les jours (Masking Time)
+$36221227239949 Machine à Danser (Dancing Machine)
+$91954159574064 Porte OR en plus grand (Bigger OR Gate)
 
 
 === misc/run ===
