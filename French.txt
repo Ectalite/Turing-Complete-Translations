@@ -919,6 +919,16 @@ $17375862136921
 La durée de notre semaine est de 4 jours. On appelle les jours Jour Zéro, Jour Un, Jour Deux et Jour Trois. J'ai entendu que les humains ne savaient pas compter les jours corrêctement?
 
 Ça me surprends pas vraiment.
+$19351773688761 Cycles restants : {ticks_left}  Entrée : {input}
+$65431688078892
+Dans ce niveau on te donne un nombre n en entrée et tu dois retourner comme résultat ce nombre modulo 4.
+
+La difficulté est que tu as seulement {ticks_per_test} cycles pour sortir le résultat attendu.
+
+Attention, tu n'as pas besoin de modifier le circuit, tu dois trouver l'astuce pour calculer rapidement le modulo 4.
+Regardes [color=#e63e5b][url=masking_time]l'indice[/url][/color] si tu es coincé.
+$81055582534899 Enfin le nouvel an arrive et nous te demandons de calculer le jour de la semaine de naissance de tout le monde. Nous te donnerons la date et tout ce que tu as à faire c'est de retourner le jour de la semaine en {ticks_per_test} cycles max.
+
 
 
 === levels/NAND Gate ===
@@ -1400,6 +1410,7 @@ $14259545926196 A
 $16217965518477 B
 $10891070331034 B
 $12933801309767 A
+
 
 === levels/saving_bytes ===
 
