@@ -881,6 +881,12 @@ $22002156022920 Déverrouille la page de manuel
 === levels/Further Delayed Lines ===
 
 $17366913897135 Construis un circuit dont la sortie est identique à l'entrée avec un retard de 2 cycles.
+$60989431641221
+Ce niveau présente le composant Ligne à Retard. Sa sortie est identique à l'entrée avec 1 cycle de décalage.
+
+[img]dialogue/delay_buffer.png[/img]
+
+
 
 
 === levels/negative_numbers ===
@@ -891,6 +897,19 @@ Nous avons besoin de valeurs négatives dans les octets. Le système que nous av
 Nous avons besoin d'un système pour gérer les nombres négatifs, habituellement nommé représentation "signée".
 
 De plus, cela simplifierait grandement les prochains circuit si la représentation fonctionnait avec l'additionneur que tu as déjà réalisé.
+$17231048881956 Pour mesurer la différence entre deux valeurs, tu as besoin de la soustraction. Pour soustraire, tu as d'abord besoin des nombres négatifs.
+$70755151984986 {a} devrait être {b}
+$11067230116844 {number} n'a pas de représentation
+$62744038163781 OK
+$19118970740682
+[color=#dd6576]Modifie les valeurs[/color] pour chaque bit de façon à respecter les objectifs suivants :
+
+[color=#e49f44]1[/color]: Tous les nombres de -127 à 127 doivent pouvoir être représentés
+[color=#e49f44]2[/color]: Les Octets représentant les valeurs de 0 to 127 doivent être les mêmes qu'en non signé.
+[color=#e49f44]3[/color]: Le nouveau système doit fonctionner avec l'additionneur (pour les résultats entre -127 et 127).
+$15431436023571 Tu as deux façons de représenter 0\nCe qui conduit à 0 + 1 = 0
+$28284583096369 1 plus -1 n'est pas égal à 0\n  
+$57604042654667 {number} n'a pas de représentation
 
 
 === levels/Masking Time ===
@@ -1388,3 +1407,14 @@ $13502950630653
 [color=#ff9800]Aucune
 0
 0[/color]
+
+=== main_scripts/overture_level ===
+
+$27259865408750 Au prochain cycle la valeur du compteur sera {next}, on attend {expected}
+$95030012922256 L'Entrée doit être activée seulement si nécessaire
+$12873109232054 On attendait {expected} en sortie, pas {got}
+$47188699762650 La Sortie devrait être activée et ce n'est pas le cas
+$28026304798371 La Sortie ne devrait être activée que quand c'est nécessaire
+$85260864781281 L'Entrée devrait être activée et ce n'est pas le cas
+$96569633331621 Charge {value} dans le REG 0
+$83829200305236 On attendait {expected} en sortie, pas {got}
