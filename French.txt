@@ -1371,3 +1371,13 @@ Et comme la plupart des opérations retourne 1 résultat, le quatrième octet es
   [img]dialogue/leg\_diagram\_1.png[/img]
 $62258842382434 Le point d'Observation {value} doit pointer sur le compteur.
 
+=== levels/ram_block ===
+
+$19282543476901 1
+$32676754026463 Sauegarde {value} et charge
+$16196915566111 0
+$30856781458049 Sauvegarde {value}
+$14259545926196 A
+$16217965518477 B
+$10891070331034 B
+$12933801309767 A
