@@ -1374,7 +1374,7 @@ $62258842382434 Le point d'Observation {value} doit pointer sur le compteur.
 === levels/ram_block ===
 
 $19282543476901 1
-$32676754026463 Sauegarde {value} et charge
+$32676754026463 Sauvegarde {value} et charge
 $16196915566111 0
 $30856781458049 Sauvegarde {value}
 $14259545926196 A
