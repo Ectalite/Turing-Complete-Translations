@@ -1429,3 +1429,68 @@ $28026304798371 La Sortie ne devrait être activée que quand c'est nécessaire
 $85260864781281 L'Entrée devrait être activée et ce n'est pas le cas
 $96569633331621 Charge {value} dans le REG 0
 $83829200305236 On attendait {expected} en sortie, pas {got}
+
+=== components/Input 2 ===
+
+$86870364449392 Entrée
+
+=== components/Input 4 ===
+
+$11447837612693 Entrée
+
+=== components/Input1_1B ===
+
+$10517158300617 Entrée
+
+=== components/Input16 ===
+
+$34560561101846 Entrée
+
+=== components/InputConditions ===
+
+$75386511637758 Entrée
+
+=== components/Output32 ===
+
+$37476623180671 Sortie
+
+=== components/Output16z ===
+
+$25071861608139 Sortie
+
+=== components/Output1z ===
+
+$46173002346157 Sortie
+
+=== components/Output8z ===
+
+$86533851094807 Sortie
+
+=== components/Output64z ===
+
+$23672623772864 Sortie
+
+=== components/Output16 ===
+
+$37381472194529 Sortie
+
+=== components/Output32z ===
+
+$90826155624234 Sortie
+
+=== components/Output 3 ===
+
+$96269858195218 Sortie
+
+=== components/Output 1B ===
+
+$77044600156969 Sortie
+
+=== components/Output8zLevel ===
+
+$49513138880387 Sortie
+
+=== components/Output 2 ===
+
+$73255344581755 Sortie
+
