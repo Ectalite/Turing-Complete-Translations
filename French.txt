@@ -1494,3 +1494,44 @@ $49513138880387 Sortie
 
 $73255344581755 Sortie
 
+=== levels/hex_racer ===
+
+$92057009138253 Comment écrire {number} en binaire ?
+$16009852370452
+Quand on manipule beaucoup de bits, le binaire commence à être difficile à lire. L'Hexadécimal (base 16) représente chaque combinaison de 4 bits par son propre caractère :
+[code]
+0 [OFF][OFF][OFF][OFF]
+1 [OFF][OFF][OFF][ON]
+2 [OFF][OFF][ON][OFF]
+3 [OFF][OFF][ON][ON]
+4 [OFF][ON][OFF][OFF]
+5 [OFF][ON][OFF][ON]
+6 [OFF][ON][ON][OFF]
+7 [OFF][ON][ON][ON]
+8 [ON][OFF][OFF][OFF]
+9 [ON][OFF][OFF][ON]
+A [ON][OFF][ON][OFF]
+B [ON][OFF][ON][ON]
+C [ON][ON][OFF][OFF]
+D [ON][ON][OFF][ON]
+E [ON][ON][ON][OFF]
+F [ON][ON][ON][ON]
+[/code]
+
+Voici un exemple de la meilleure lisibilité de l'hexadécimal, comparons les représentations du plus grand nombre de 16 bits :
+[code]
+Binaire :     1111111111111111
+Décimal :     65535
+Hexadécimal : FFFF
+[/code]
+
+Ce n'est pas facile de dire s'il manque un chiffre binaire ou s'il y a un décalage en décimal, mais l'hexadécimal est tout de suite clair (au moins une fois qu'on prend l'habitude).
+$84691609525475 Ce niveau est mon deuxième passe-temps préféré. Convertir de l'hexadécimal au binaire en temps limité.
+$45532697833519 Niveau {level} atteint !
+$87016829502381 Très bien, tu as atteint le niveau {current_level}.
+$43463538043782
+Modifie les bits du panneau pour atteindre le nombre hexadécimal demandé.
+
+Tu dois finir le niveau 3 pour réussir.
+
+(clique [color=#e63e5b][url=accessibility_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours)
