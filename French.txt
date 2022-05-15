@@ -1274,18 +1274,18 @@ $10141611261952 [center]Implémente les valeurs immédiates[/center]
 
 === levels/The Product of Nibbles ===
 
-$14622683750375 Bit 2
 $14957949958941 Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
-$17331397914567 Bit 1
 $19136817138607 [center]Multiplie les nombres de 4 bits[/center]
+$14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
+$83694551809785 Multiplier {num1} et {num2}
+$14622683750375 Bit 2
+$17331397914567 Bit 1
 $13232094477834 Bit 3
 $13549246864135 Bit 0
 $15857218442751 Bit 1
-$14533861483435 La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
 $10430040077737 Bit 3
 $10274387271390 Bit 0
 $16301538038805 Bit 2
-$83694551809785 Multiplier {num1} et {num2}
 
 === levels/sandbox ===
 
