@@ -505,7 +505,7 @@ $67345621265845 Démarrer les cycles (Raccourci : F6)
 === levels/3_decoder ===
 
 $19231618567710 Avec 3 bits en entrée 8 combinaisons sont possibles. Réalise un circuit pour sélectionner une sortie pour chacune des 8 combinaisons. Un bit et un seul doit être [ON] à chaque instant.
-$14293122338496 Nous avons fait ajouter au stagiaire un bit "désactivé" sur ce composant. Nous étions las de le voir tourner en rond et cherchions une nouvelle t‚che inutile et ennuyeuse à lui donner.
+$14293122338496 Nous avons fait ajouter au stagiaire un bit "désactivé" sur ce composant. Nous étions las de le voir tourner en rond et cherchions une nouvelle tâche inutile et ennuyeuse à lui donner.
 
 
 === levels/Opcodes ===
