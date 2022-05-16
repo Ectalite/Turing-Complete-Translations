@@ -1535,3 +1535,7 @@ Modifie les bits du panneau pour atteindre le nombre hexadécimal demandé.
 Tu dois finir le niveau 3 pour réussir.
 
 (clique [color=#e63e5b][url=accessibility_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours)
+
+=== levels/byte_adder ===
+
+$18732877690173 Additionez les deux octets en entrée. Chaque bit en sortie devra être le résultat de l'addition des bits d'entrées et potentiellement du carry. 
