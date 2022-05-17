@@ -1544,3 +1544,34 @@ $18732877690173 Additionez les deux octets en entrée. Chaque bit en sortie devr
 
 $15403032472607 La course de robots est notre sport favoris sur le vaisseau. Des robots programmés par différentes personnes vont essayez d'arriver à a fin de la course le plus rapidement possible. Le gagnant sera le programmeur dont le programme aura le moins de ligne.
 $19966247197959 Cette fois-ci vous controlerez FastBot: il ne peut pas voir ce qu'il y a devant lui, mais il peut tourner et avancer durant le même coup d'horloge. (Il porte aussi des baskets rouge pour aller plus vite).
+
+=== main_scripts/leg_level ===
+
+$85913831661289 SI_MOINS_GRAND
+$69956969985790 OUi
+$53021804895845 ETi
+$11144256835662 XORi
+$20104629254326 ARGUMENT 2
+$61412773713567 SOUSTRACTION
+$52344899983501 SI_PLUS_GRAND_OU_EGAL
+$89945092889418 SOUSTRACTIONi
+$89011349770597 NOT
+$71559031724238 SI_NON_EGAL
+$40520283279584 XOR
+$71204580217527 NOTi
+$71195301111400 ADDITIONi
+$98178474649432 SI_PLUS_GRAND_OU_EGAL
+$68187490877029 SI_EGAL
+$38681417496680 ARGUMENT 1
+$44009845985661 ADDITION
+$37810243909140 COMPTEUR
+$50722296752142 ENTREE
+$43723329256095 REGISTRE {nr}
+$68666991962246 OU
+$79492115258673 SI_PLUS_GRAND
+$60997201855346 ADRESSE DE RESULTAT
+$64519909700148 ET
+$49810487048038 COMPTEUR
+$18236360532765 SORTIE
+$20950946171790 SAUTER VERS
+$84307766381146 OPCODE (code d’opération)
