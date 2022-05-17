@@ -1582,3 +1582,416 @@ $14295883660596 VALEUR
 $14950983012226 SAUVEGARDER
 $14837033157870 ACTION
 $13045361823397 NE PAS SAUVEGARDER
+
+
+=== levels/ram_block ===
+
+$19282543476901 1
+$16196915566111 0
+$14259545926196 A
+$16217965518477 B
+$10891070331034 B
+$12933801309767 A
+
+
+=== levels/negative_numbers ===
+
+$62744038163781 OK
+
+
+=== main_scripts/leg_level ===
+
+$11144256835662 XORi
+$20104629254326 ARGUMENT 2
+$89011349770597 NOT
+$40520283279584 XOR
+$71204580217527 NOTi
+$38681417496680 ARGUMENT 1
+
+
+=== levels/call_ret ===
+
+$15840165316981
+Dans ce niveau tu as pour tâche d'implémenter les appels de fonctions et les retours avec les instructions [color=#e49f44]call[/color] et [color=#e49f44]ret[/color].
+
+Fais attention au retour d'une fonction, tu dois sauter à l'adresse qui vient APRÈS l'instruction [color=#e49f44]call[/color], sinon tu te retrouveras avec un boucle infinie.
+L'instruction [color=#e49f44]call[/color] doit réaliser les actions suivantes :
+ [i]- Ajouter la longueur de l'instruction au compteur et [color=#e49f44]EMPILER[/color] cette longueur sur la pile[/i]
+ [i]- Sauter à l'adresse de la fonction[/i]
+
+L'instruction [color=#e49f44]ret[/color] doit réaliser les actions suivantes :
+ [i]- [color=#e49f44]DÉPILER[/color] l'adresse de retour de la pile et sauter à cette adresse[/i]
+
+Tu peux échanger de l'information avec et depuis une fonction en écrivant normalement les données dans des registres. Rappelle-toi quels registres sont écrasés par une fonction avant de l'appeler.
+$19369640789869 Les coupes budgétaires ont conduit à réduire les salaires, et maintenant les assistants du labo sont en grève. Tu vas devoir t'autoévaluer dans ce test. Cela nous permettra d'évaluer ton niveau d'honnêteté et de maturité.
+$15463931654475 [center]Ajoute les instructions "call" et "ret"[/center]
+
+
+=== components/Bidirectional8 ===
+
+$18489033809282 Pattes sans mémoire tampon
+
+
+=== component_panels/FlexRam_1 ===
+
+$87788654491792
+Ce type de RAM ajouterait un délai de 1024 au circuit, mais au lieu d'augmenter la durée des cycles, nous n'attendrons simplement pas la sortie.
+
+En pratique cela signifie que la [color=#e49f44]lecture prend {ticks} cycles[/color] (car ton circuit a un délai de {delay}).
+
+
+=== levels/saving_gracefully ===
+
+$14837033157870 ACTION
+
+
+=== levels/Calibrating Laser Cannons ===
+
+$11331851878040 Tu as aussi accès maintenant à la programmation en assembleur. Cela te permet d'utiliser des noms pour les instructions, tu peux par exemple taper "add" au lieu de saisir 68.
+$11023157447564
+2×π×r
+
+r est l'entrée.
+Et tu peux approximer π avec 3.
+
+Envoie la réponse en sortie quand elle a été calculée.
+$15260627694444 Pour calibrer ce laser, nous te demandons de calculer la circonférence des astéroïdes en utilisant une équation avancée..
+$12669851602178 [center]Calculer la circonférence des astéroïdes[/center]
+$21601709632806 Combien fait 2π × {radius} ?
+$16954408093587 Sur notre vaisseau nous détruisons naturellement les astéroïdes qui s'approchent avec des lasers...
+
+
+=== levels/circular_dependency ===
+
+$16336401898647 Test 1/2
+$13520037133129 Je ne suis pas sur que c'est utile aux étudiants, mais les profs adorent ça.
+$11316928751185 Dans notre système éducatif nous enseignons traditionnellement en induisant les étudiants en erreur et en nous moquant d'eux.
+
+
+=== levels/component_factory ===
+
+$14665712485657 Ce composant personnalisé ne peut pas être utilisé car il n'a aucune surface.
+
+
+=== levels/Water World ===
+
+$13739681561355 Volume Total : 
+$19185457941725 Bonne nouvelle, nous voulons transformer la Terre en un parc aquatique exotique !
+$18940654086036 Nous avons besoin de ton aide pour trouver un bon emplacement pour le toboggan aquatique "Glissade du Pirate". En particulier nous cherchons un espace qui peut contenir un grand volume d'eau.
+$14706805272652 Appuie sur Entrée pour montrer l'eau
+
+
+=== components/Bidirectional1 ===
+
+$43779921858797 Patte sans tampon
+
+
+=== levels/Dancing Machine ===
+
+$15955150920362
+Dans ce niveau tu n'as qu'une entrée, nous l'appellerons la graine initiale. La graine passe par les étapes suivantes pour produire un nombre pseudoaléatoire.
+
+Dans l'algorithme ci-dessous, "shl 1" signifie un décalage à gauche,  "shl 2" signifie double décalage à gauche et "shr 1" un décalage à droite.
+
+[b]8 bit xorshift RNG :[/b][code][color=#87a8c8]
+temp1     = seed  xor (seed  shr 1)
+temp2     = temp1 xor (temp1 shl 1)
+next_seed = temp2 xor (temp2 shr 2)
+[/color][/code]
+Ensuite envoie en sortie next_seed mod 4 pour déplacer le robot. Enfin utilise next_seed (avant le mod 4) comme graine pour obtenir le nombre suivant pour la séquence de danse et ainsi de suite.
+
+(Attention la graine initiale ne sera jamais 0)
+
+
+=== components/Bidirectional32 ===
+
+$30284920151373 Patte sans tampon
+
+
+=== levels/Add 5 ===
+
+$11540713506719
+Tu es maintenant libre de modifier le programme de ton ordinateur.
+Clique sur l'icône Editer du composant programme pour commencer à programmer.
+$19281970848639 [center]Ajoute 5 à l'entrée.[/center]
+$17770257567603 Donc pendant ce temps on te demandera d'aider un peu sur le vaisseau.
+$19446152707984 Clique sur l'icône mémoire du composant programme pour commencer à programmer ton ordinateur. Ton ordinateur doit lire une entrée, y ajouter 5 et la renvoyer en sortie (on ne s'occupera pas du dépassement possible).
+$80639633676917 Entrée :
+$12078933051174 Mais comme tu ne sais pas encore le programmer, tu n'es pas encore vraiment prêt pour ça..
+$11074247151096 Remarque que le composant registre rouge a été remplacé par un composant personnel dont l'usage est identique.
+$18134632592542 Tu as construit ton ordinateur, mais pour gagner la compétition tu dois encore finir le labyrinthe.
+
+
+=== components/Bidirectional16 ===
+
+$56965384656153 Patte sans tampon
+
+
+=== main_scripts/levels ===
+
+$64510812504271
+Certains composants utilisés ne sont pas supposés être disponibles dans ce niveau !
+La solution n'obtient pas de score.
+
+
+=== misc/specifications ===
+
+$68054407020318 Instructions
+
+
+=== levels/The Product of Nibbles ===
+
+$14622683750375 Bit 2
+$17331397914567 Bit 1
+$13232094477834 Bit 3
+$13549246864135 Bit 0
+$15857218442751 Bit 1
+$10430040077737 Bit 3
+$10274387271390 Bit 0
+$16301538038805 Bit 2
+
+
+=== component_panels/Counter ===
+
+$57936010210151 Incrementer de : {amount}
+
+
+=== levels/1_decoder ===
+
+$16057674753878 Réalise un composant qui peut aiguiller un signal entre deux pattes.
+
+
+=== levels/byte_mux ===
+
+$49305362057225 Ta réponse {your_answer}\nRéponse correcte {correct_answer} (Entrée {input})
+$18296416014178 Quand le sélecteur de bit est [OFF], envoie en sortie l'Octet A, sinon envoie l'Octet B.
+$17093993196554
+Même s'il a échoué à nos tests nous avons décidé de garder le chien. Contrairement à la plupart des terriens, il est affectueux et obéit bien aux ordres simples. 
+
+Nous allons vous mettre tous les deux en équipe, vous êtes assez bien complémentaires.
+
+
+=== main_scripts/functions ===
+
+$72465734060414 Court-circuit sur le fil (valeurs en sortie  {values})
+$87591753278764 Reg {nr}
+
+
+=== levels/unseen_fruit ===
+
+$13023474026617
+Les fruits sont la découverte la plus remarquable sur votre planète. Ils sont très savoureux.
+
+C'est pourquoi nous organisons une dégustation de fruits dans cette cantine.
+
+$14259900563789 Surveille régulièrement le tapis roulant sur lequel les fruits arrivent. Si tu vois le même type de fruit pour la seconde fois, active et tourne le panneau de contrôle.
+$17070232883226 Mais nous voulons être sur de ne pas avoir deux fois le même fruit, car cela serait trop embarrassant.
+
+
+=== ui/toggles/negative_numbers ===
+
+$50924073287410 Choix du format de nombre
+
+=== ui/state_ui/title_screen/play ===
+
+$66967233942803 Jouer la Campagne
+
+
+=== nim/backend_lib/level_list ===
+
+$15420972347773 RAM
+$26705128002562 Conditions
+$70993791338383 XOR
+
+
+=== levels/conditions ===
+
+$12951779797594
+Dans ce niveau il y a en entrée une valeur et 3 bits de condition.
+
+Les 3 bits déterminent la condition comme indiqué ci-dessous. Evalue la valeur en fonction de la condition et envoie [ON] si elle est vérifiée et [OFF] sinon.
+
+Code condition       Sortir [ON] si [code]
+[OFF] [OFF] [OFF]    Jamais
+[OFF] [OFF] [ON]    Si valeur = 0
+[OFF] [ON] [OFF]    Si valeur < 0
+[OFF] [ON] [ON]    Si valeur ≤ 0
+[ON] [OFF] [OFF]    Toujours
+[ON] [OFF] [ON]    Si valeur ≠ 0
+[ON] [ON] [OFF]    Si valeur ≥ 0
+[ON] [ON] [ON]    Si valeur > 0[/code]
+$16407231803964 Si VALEUR < 0 sortie [img]dialogue/on.png[/img]
+$16742265812068 Quelquesoit la VALEUR output [img]dialogue/on.png[/img]
+$17616699231679 Si VALEUR > 0 sortie [img]dialogue/on.png[/img]
+$16632557438774 Si VALEUR ≠ 0 sortie [img]dialogue/on.png[/img]
+$18234235689107 Si VALEUR ≥ 0 sortie [img]dialogue/on.png[/img]
+$12429396872036 Quelquesoit la VALEUR output [img]dialogue/off.png[/img]
+$13680487623452 Si VALEUR ≤ 0 sortie [img]dialogue/on.png[/img]
+$19014698800906 Si VALEUR = 0 sortie [img]dialogue/on.png[/img]
+
+=== Missing 20220517 ===
+
+=== levels/full_adder ===
+
+$17063157033479
+Dans le niveau précédent, nous avons additionné 2 entrées, cette fois ce sera 3. Encore une fois, ajoute toutes les entrées en binaire, de façon à ce que le résultat soit [ZERO] ou [ONE].
+
+Comme avec l'addition normale, si le résultat ne peut être représenté avec un chiffre, met la retenue à [ONE].
+
+
+=== levels/test_lab ===
+
+$32399229965611 De plus, comme tu viens de finir [color=#e49f44]LEG[/color], j'ai débloqué tous les composants 16, 32 et 64 bit que tu trouveras dans le bac à sable.
+
+
+=== levels/or_gate ===
+
+$12749704931323 Tu devrais être heureux de pouvoir participer à nos tests prestigieux.
+$11472059692644 Tu as la chance de communiquer avec des gens très avancés de la civilisation galactique..
+
+
+=== levels/and_gate ===
+
+$15231724707514 Je ne veux pas te décourager, mais je pense que l'éléphant va gagner la compétition. Sans vouloir t'offenser ton cerveau est tout petit en comparaison.
+
+
+=== levels/byte_or ===
+
+$10368115829346 En fait c'est OK car tu as eu une vie heureuse dans la nature et nous ne gâchons pas la bonne viande.
+$15923734370936
+Applique OR sur chaque bit des octets en entrée et envoie le résultat en sortie.
+
+Par exemple :
+[code]
+ENTRÉE 1 [ON][ON][OFF][OFF][OFF][OFF][OFF][OFF]
+ENTRÉE 2 [OFF][OFF][OFF][OFF][ON][ON][OFF][OFF]
+SORTIE  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
+$15226896485081 Est ce que tu penses que ce serait immoral de manger tous les terriens qui ne gagnent pas la compétition ?
+
+
+=== levels/Conditionals ===
+
+$18542005958715 Définis l'incrément du compteur à 4
+$17133561664335 Félicitations, tu as terminé l'ordinateur [color=#e49f44]LEG[/color] !
+$12920514303805 Ajoute 6 registres au circuit
+$14309211963063 Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
+$16826220977157
+ [color=#b72d41][b]ASTUCE[/b][/color] 
+ COPY est identique à ADD avec un second
+ argument à 0
+$30132649789584 Le point d'Observation {number} doit pointer sur la sortie
+$18994998239232 Je vais te montrer quelques évolutions que tu peux faire, afin d'implémenter les appels de fonction. Mais à partir de là tu devras t'occuper des détails, je ne te dirai plus quels opcodes utiliser, etc.
+$12034111753799 Le point d'Observation {number} doit pointer sur le compteur
+$36561706158040 Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
+
+
+=== levels/bit_switch ===
+
+$56295261249455
+Si les composants envoient en sortie des valeurs différentes sur le même fil, tu auras une erreur. Par contre, certains composants ont des pattes de sortie grises, elles n'envoient rien en sortie quand le composant n'est pas activé. C'est le cas du composant Commutateur de bit (Bit Switch).
+
+[img]dialogue/bit_switch.png[/img]
+
+Cela signifie que plusieurs de ces pattes grises peuvent être connectées au même fil et ne pas causer d'erreur, tant qu'il n'y a pas plus d'une d'entre elles activée à la fois.
+$42793594302151 En utilisant 2 portes NOT et 2 Commutateurs, construis une porte XOR.
+
+
+=== levels/byte_less ===
+
+$62766453128684 Est ce que {a} est inférieur à {b}?
+$11632471752785 [center]Détermine si la première entrée est inférieure à la seconde.[/center]
+
+
+=== levels/sr_latch ===
+
+$11150103897185
+Dans ce niveau, les composants peuvent dépendre d'eux-mêmes ou former des boucles contenant 2 composants. Malgré ces dépendances certains de ces circuits ont des sorties stables, au moins pour certaines valeurs en entrée.
+
+Le circuit que l'on te demande de construire ici a une dépendance circulaire. Le circuit a aussi 2 "états stables" pour la plupart des entrées. Un état stable signifie ici que les sorties de chaque composant sont en accord avec leurs entrées. Par exemple, une porte OR avec une entrée déconnectée et l'autre connectée à sa propre sortie est stable. Si la sortie est [OFF], les 2 entrées sont [OFF], ce qui est acceptable pour la porte OR. Si la sortie est [ON] alors l'une des entrée l'est aussi. Par contre, une porte NOT connectée à sa propre entrée n'est pas stable. Si la sortie est [ON], alors l'entrée l'est aussi. Cela fait que la porte NOT essaie de changer sa sortie en [OFF]. Le circuit va osciller entre ces deux états indéfiniment et il n'est donc pas stable.
+
+
+=== misc/lab_toggle ===
+
+$16432178820878 le Labo
+
+
+=== levels/Logic Engine ===
+
+$15865646260225
+ [color=#b72d41][b]PROVERBE[/b][/color] 
+ La douleur est temporaire, la gloire est 
+ éternelle.
+$17594613477534
+Réalise un circuit qui peut effectuer les opérations OR, NAND, NOR et AND sur deux entrées. La troisième entrée sera l'[INSTRUCTION]. Une [INSTRUCTION] est juste le nom du nombre qui indique ce que l'on doit calculer.
+
+Instructions :
+[code][color=#87a8c8]0 OR
+1 NAND
+2 NOR
+3 AND[/color][/code]
+
+Enfin tu ne peux pas déplacer les composants rouges dans ce niveau, pour des raisons que l'on t'expliquera plus tard.
+
+
+=== levels/Counter ===
+
+$19407121413983 ACTION
+
+
+=== levels/binary_racer ===
+
+$16076448195257 Ce niveau est mon passe-temps favoris. Convertir du décimal au binaire en temps limité.
+$37319690622142 Très bien, tu as atteint le niveau {current_level}.
+$11176073682097 Combien fait {number} en binaire ?
+$71866932309393 Tu as atteint le niveau {level} !
+
+
+=== components/Bidirectional64 ===
+
+$57762192431697 Patte sans tampon
+
+
+=== levels/xor_gate ===
+
+$14093358515620 Ceci est aussi appelé une porte XOR. Ce niveau est difficile, ne te décourage pas si tu ne trouves pas la réponse immédiatement.
+
+
+=== levels/xor ===
+
+$11589029892097 XOR les bits des entrées {a} et {b}
+$12758156517177 En utilisant les instructions implémentées par ton ordinateur, lit deux fois l'entrée et effectue un XOR sur les deux valeurs
+$16047615798435 [center]Lit deux fois l'entrée et effectue un XOR sur les bits des deux entrées[/center]
+
+
+=== misc/sandbox_toggle ===
+
+$30516879701896 Bac à Sable
+
+
+=== levels/bit_adder ===
+
+$13109388951000 Nous mesurons l'univers avec des nombres. Donc ta machine doit apprendre à compter.
+$16564356062672
+Considère que les entrées sont [ZERO] ou [ONE] en fonction de leur valeur [OFF] ou [ON]. Additionne les en binaire, de sorte que le résultat soit [ZERO] ou [ONE].
+
+Comme avec l'addition habituelle, si le résultat ne peut être écrit avec un chiffre, mets la retenue à [ONE].
+
+
+=== levels/the_bus ===
+
+$72472660427162 [center]Copie la valeur de l'entrée {input_nr} vers la sortie {output_nr}[/center]
+$85140574084420 [center]Copie la valeur de la bonne entrée vers la bonne sortie[/center]
+
+
+=== main_menu/sandbox_button ===
+
+$16857608955464 bac à sable
+
+
+=== levels/double_number ===
+
+$74261206899285 Ton résultat {input} × 2 = {your_answer}\nRésultat attendu {input} × 2 = {correct_answer}
+$19766257822639
+L'entrée et la sortie de ce niveau utilisent des octets au lieu de bits. L'un des deux composants proposés prend un octet et l'éclate en 8 bits et l'autre fait l'inverse.
+
+A l'aide de ces composants, trouve comment doubler le nombre en entrée (jusqu'à 127).
