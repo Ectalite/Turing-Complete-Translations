@@ -1539,3 +1539,8 @@ Tu dois finir le niveau 3 pour réussir.
 === levels/byte_adder ===
 
 $18732877690173 Additionez les deux octets en entrée. Chaque bit en sortie devra être le résultat de l'addition des bits d'entrées et potentiellement du carry. 
+
+=== levels/robot_race ===
+
+$15403032472607 La course de robots est notre sport favoris sur le vaisseau. Des robots programmés par différentes personnes vont essayez d'arriver à a fin de la course le plus rapidement possible. Le gagnant sera le programmeur dont le programme aura le moins de ligne.
+$19966247197959 Cette fois-ci vous controlerez FastBot: il ne peut pas voir ce qu'il y a devant lui, mais il peut tourner et avancer durant le même coup d'horloge. (Il porte aussi des baskets rouge pour aller plus vite).
