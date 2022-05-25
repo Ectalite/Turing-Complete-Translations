@@ -1,601 +1,3 @@
-=== components/MemoryProbeBit ===
-
-$13846578075327 Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programme
-$25103579211328 Sonde Mémoire (bit)
-
-
-=== components/DualPortRam ===
-
-$13408945557666 RAM avec une patte Lire supplémentaire
-$30400404542678 RAM Double Lecture
-
-
-=== components/Output1Car ===
-
-$12896765714603 Retenue
-
-
-=== components/Switch64 ===
-
-$80980797636768 Active/Désactive une valeur
-$93223372486795 Commutateur 64 bits
-
-
-=== components/FullAdder ===
-
-$57559382166174 Additionne 3 bits et sort la somme et la retenue
-$77669928463861 Additionneur complet
-
-
-=== components/Rol16 ===
-
-$48583573494467 Rotation vers la gauche
-$73379230742631 Décalage à gauche des bits en entrée avec recyclage
-
-
-=== components/Neg16 ===
-
-$17253409670931 Inverser
-$57512333327652 Inverser l'entrée bit à bit
-
-
-=== components/Equal16 ===
-
-$97954874255512 Test d'Egalité entre entrées
-$33633607925660 Egal
-
-
-=== misc/ui_panel/outputs ===
-
-$29350436761480 SORTIES
-
-
-=== components/Register32 ===
-
-$65405398199118 Mémoire 32 bits
-$22031255978461 Registre 32 bits
-
-
-=== components/64Ram ===
-
-$63410290483563 Nombre de portes réduit mais mémoire lente
-$78790416494254 RAM
-
-
-=== components/Nand16 ===
-
-$63870790225686 NAND bit à bit de 2 entrées
-$56507506086622 NAND 8 Bits
-
-
-=== components/InputOutput ===
-
-$26488480303865 Entrée/Sortie
-
-
-=== components/Program8_1 ===
-
-$11057354704814 Composant mémoire programmable
-$12805545963716 Programme
-
-
-=== components/Mux16 ===
-
-$75979055121665 Multiplexeur 16 bits
-$13997767115693 Alterne entre 2 valeurs
-
-
-=== components/Mul16 ===
-
-$49880767097125 Multiplie 2 entrées
-$62247409328063 Multiplier
-
-
-=== components/Decoder2 ===
-
-$25937877347447 Alterne entre 4 entrées
-$21727998752868 Decodeur 2 bits
-
-
-=== components/Nor8 ===
-
-$34517798310461 NOR bit à bit de 2 entrées
-$39421972053612 NOR 8 Bits
-
-
-=== components/Output1z ===
-
-$31478630391268 Sortie activée quand la patte de contrôle est [ON]
-$84656390009725 Sortie commutée 1 bit
-
-
-=== components/Mux ===
-
-$11168613697835 Alterne entre 2 valeurs
-$22167405631310 Multiplexeur 8 bits
-
-
-=== components/Switch32 ===
-
-$70717074742809 Commutateur 32 bits
-$93061034213009 Active/Désactive une valeur
-
-
-=== components/SegmentDisplay ===
-
-$56761198694928 Permet d'afficher des nombres
-$90582128204153 Afficheur 7 segments
-
-
-=== components/Or16 ===
-
-$76807373575014 OR bit à bit sur 2 valeurs
-$62695381407925 OR 16 bits
-
-
-=== nim/backend_lib/level_list ===
-
-$15420972347773 RAM
-$26705128002562 Conditions
-$70993791338383 XOR
-
-
-=== components/Register16 ===
-
-$16015376037787 Registre 16 Bits
-$71792123436163 Mémoire 16 bits
-
-
-=== components/Mem Unit ===
-
-$57670626909848 1 bit de mémoire
-$78616473760551 mémoire 1 Bit
-
-
-=== components/Or64 ===
-
-$50631450923181 OR bit à bit sur 2 valeurs
-$62930122175674 OR 64 bits
-
-
-=== components/Maker64 ===
-
-$17464069717985 Créateur 64 bits
-$79677187590355 Transforme 64 bits en 8 octets
-
-
-=== components/Xnor64 ===
-
-$64937916903935 XNOR bit à bit sur 2 valeurs
-$47129074382309 XNOR 64 bits 
-
-
-=== components/Nor32 ===
-
-$82743668258816 NOR bit à bit sur 2 valeurs
-$82121937858245 NOR 32 bits 
-
-
-=== components/Not64 ===
-
-$74829633052959 Inverse bit à bit une entrée de 64 bits
-$81823773658328 NOT 64 bits
-
-
-=== components/Stack ===
-
-$71022099146246 Mémoire permettant d'EMPILER/DEPILER
-$47202418972371 Pile
-
-
-=== components/Program4 ===
-
-$27522667367787 Programme
-$45650720555565 Composant mémoire programmable
-
-
-=== components/Constant32 ===
-
-$39402227599142 Valeur constante
-$30896164786171 Constante 32 bits
-
-
-=== components/Xor16 ===
-
-$55408021160573 XOR bit à bit sur 2 valeurs
-$47846591761838 XOR 16 bits
-
-
-=== components/Rol64 ===
-
-$49017662473189 Rotation à gauche des bits en entrée
-$13677051385046 Rotation à gauche
-
-
-=== components/And32 ===
-
-$98890160152994 AND bit à bit sur 2 valeurs
-$30264879217145 AND 32 bits 
-
-
-=== components/AND ===
-
-$22719674432950
-[ON] quand les deux entrées sont [ON]
-[table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
-[/table]
-$58912167455465 AND
-
-
-=== levels/ram_block ===
-
-$16196915566111 0
-$14259545926196 A
-$12933801309767 A
-
-
-=== components/Shr64 ===
-
-$93124177265670* Shifts the bits of an input right
-$73798355428095* Shift right
-
-
-=== components/Constant64 ===
-
-$92424468899005* Constant value
-$25858905835416* 64 Bit Constant
-
-
-=== levels/negative_numbers ===
-
-$62744038163781 OK
-
-
-=== components/DelayLine8 ===
-
-$24840584785792* Outputs this tick's input, next tick
-$63449911993783* 8 Bit Delay Line
-
-
-=== misc/ui_panel/left_inputs ===
-
-$16586225094516 ENTREES
-
-
-=== components/Bit Compressor ===
-
-$74338505460996* Turns 8 bits into 1 byte
-$98747779812970* 8 bit Maker
-
-
-=== components/OutputCounter ===
-
-$52247325526438 Compteur
-
-
-=== components/Xnor16 ===
-
-$73699169812942* Bitwise XNOR two values
-$40088995721509* 16 Bit XNOR
-
-
-=== components/Off ===
-
-$61860786587357 OFF
-$72749460799924 Toujours [OFF]
-
-
-=== components/Bidirectional8 ===
-
-$20234315861487* 8 bit bidirectional pin
-$49499540884410* Can circumvent certain circular dependency errors
-
-
-=== components/Shr16 ===
-
-$20291717268875* Shifts the bits of an input right
-$31674686871821* Shift right
-
-
-=== components/Screen ===
-
-$12771040946773* Displays the visuals that accompany certain levels
-$50037736094411* Screen
-
-
-=== components/Mux64 ===
-
-$14050204031082* Toggles between two values
-$66892629981737* 64 Bit Mux
-
-
-=== levels/circular_dependency ===
-
-$16336401898647 Test 1/2
-
-
-=== components/Xnor32 ===
-
-$17419057954798* Bitwise XNOR two values
-$52489451755306* 32 Bit XNOR
-
-
-=== components/NOR ===
-
-$27510848535619*
-[ON] when neither inputs are [ON]
-[table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
-[/table]
-$83375115196253* NOR
-
-
-=== components/Or3 ===
-
-$17576327690867* 3 pin OR gate
-$99630419947500* 3 Pin OR
-
-
-=== components/Ror8 ===
-
-$10802217509530* Rotates the bits of an input right
-$70999134800536* Rotate right
-
-
-=== components/NAND ===
-
-$71130919681688* NAND
-$12903183841172*
-[ON] unless both inputs are [ON]
-[table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
-
-
-=== components/Output1Sum ===
-
-$90026011029075* Sum
-
-
-=== components/Output16z ===
-
-$78873885833823* 16 bit switched Output
-$54278394672948* Only outputs if the switch pin is [ON]
-
-
-=== components/ByteMul ===
-
-$56549841656852* Multiply
-$68631919890554* Multiplies two inputs
-
-
-=== components/Output8z ===
-
-$16915419621070* 8 bit switched Output
-$58449766432492* Only outputs if the switch pin is [ON]
-
-
-=== components/Counter32 ===
-
-$87245349851451* 32 Bit Counter
-$92765669828982* Increments each tick, unless overwritten
-
-
-=== components/Maker16 ===
-
-$55864807379312* Turns 16 bits into 2 bytes
-$39941195789458* 16 bit Maker
-
-
-=== components/ByteConstant ===
-
-$29445030761909* Constant value
-$25159790815891* 8 Bit Constant
-
-
-=== components/And3 ===
-
-$19664974941910* 3 Pin AND
-$86839706221116* 3 pin AND gate
-
-
-=== components/NEG ===
-
-$88379907297327* Negate
-$62021716182809* Bitwise negates an input
-
-
-=== components/Switch16 ===
-
-$15221175893882* 16 Bit Switch
-$59845475842015* Toggles a value
-
-
-=== components/Add32 ===
-
-$91616185859914* Adds two inputs
-$64111401384153* Add
-
-
-=== components/LessU32 ===
-
-$72614358420262* Less (unsigned)
-$55380524073095* Checks if one input is less than the other
-
-
-=== components/Or32 ===
-
-$92752025948920* Bitwise OR two values
-$40180779432911* 32 Bit OR
-
-
-=== components/Output64z ===
-
-$61656790122480* 64 bit switched Output
-$42506906257154* Only outputs if the switch pin is [ON]
-
-
-=== components/NOT ===
-
-$34453052824732* NOT
-$90844421681709*
-Inverts the input
-[table=3]
-[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
-
-
-=== components/And16 ===
-
-$56198785587874* Bitwise AND two values
-$26727645933234* 16 bit AND
-
-
-=== components/And64 ===
-
-$80790829001391* 64 bit AND
-$89424947351456* Bitwise AND two values
-
-
-=== components/ByteEqual ===
-
-$35668435514829* Checks if the two inputs are equal
-$39369982838671* Equal
-
-
-=== components/Mul64 ===
-
-$72281597169494* Multiply
-$11665562499390* Multiplies two inputs
-
-
-=== components/Bidirectional64 ===
-
-$82412839066570* 64 bit bidirectional pin
-$24932613021646* Can circumvent certain circular dependency errors
-
-
-=== components/Splitter64 ===
-
-$80420054807186* Splits 64 bits into 8 byts
-$14205692632393* 64bit Splitter
-
-
-=== components/Splitter16 ===
-
-$92674917729864* 16 bit Splitter
-$28271182652741* Splits 16 bits into 2 byts
-
-
-=== misc/component_button ===
-
-$75542474510177 PORTE
-$63839315669055 DELAI
-
-
-=== components/SRLatch ===
-
-$11641785582600* Set/Reset Latch
-$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
-
-
-=== components/Maker32 ===
-
-$82420653444614* Turns 32 bits into 4 bytes
-$85308499118176* 32 bit Maker
-
-
-=== main_scripts/dialouge ===
-
-
-NOTE: Hitn for byte switch
-$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
-
-NOTE: hint for the bus
-$50799425816171* Use switches to put the inputs on the same wire.
-
-NOTE: hint for odd number
-$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
-
-NOTE: Hint for the maze
-$36837749971886*
-Always following the left (or right) hand side of the maze will make sure you eventually reach the exit.
-	
-The pseudo code for such an algorithm looks like this:
- Step forward
- Turn left
- Turn right as long as there is a wall ahead
- Press use after each turn (in case the exit is ahead)
- Repeat
-
-NOTE: hint for counting signals
-
-NOTE: Hint for byte adder
-$37093555217568* You only need 8 full adders.
-$21044442262778* The circuitry for the 1's bit is the same as what you did in the level "Odd Number of Signals". The circuitry for the 2's bit is what you did in "Double Trouble", except when all 4 are on.
-
-NOTE: hint for saving gracefully
-$25321701584378*
-In this level you need to use 1 Delay Line. Make a truth table for what should go into the Delay Line. Consider the input to the Delay Line as the output for your table. 
-
-The inputs are the 2 level inputs AND the output of the Delay Line, as the output plays a role in its input. In total you have 3 "inputs" to for this table which gives you 8 combinations. Once you have the level requirements as a table, it should be a lot easier to solve.
-
-NOTE: Hint for conditions
-$87674181578455*
-There are 3 condition bits. The first bit being [ON] means the result being 0 meets the condition. The second bit being [ON] means the result being less than 0 meets the condition. If either of those two are [ON], the condition is met. 
-Finally, if the last bit is [ON], negate the status of the condition being met or not.
-
-NOTE: hint for xor gate
-$88963098241493* This level can be done with 3 components, a NAND, an AND and an OR gate.
-
-NOTE: Hint for masking time
-$46866534894828*
-In binary, taking modulo 4 of a number is the same as only using the two lower bits. This is because the higher bits represet 4, 8, 16 etc, and they all divide 4 with no remainder.
-This is true in general for modulo a power of 2, the lowest bit of a number represents that number modulo 2 (even or odd), the lowest 3 bits modulo 8 and so on.
-
-Likewise, in decimal 4321 modulo 100 is also simple (answer is 21, the higher digits are disregarded), this is because 100 is a power of 10.
-
-Now you just have to figure out how to get the last 2 digits of a number.
-
-NOTE: hint for less
-$56438995128380*
-First determine which bits are different between the 2 bytes. This can be done using a byte XOR (remember XOR turns [ON] when the inputs are not the same). We know the number that has the highest different bit [ON] is the larger number. But we must only consider the highest different bit, so for each bit, use a chain of OR gates to check if any higher are [ON].
-		
-Finally, the last bit is considered seperately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
-
-
-=== components/Xor64 ===
-
-$95012060885697* 64 bit XOR
-$13031452187028* Bitwise XOR two values
-
-
-=== components/ByteXor ===
-
-$98219910712564* 8 bit XOR
-$83236921580268* Bitwise XOR two values
-
-
-=== components/Hdd ===
-
-$75645507178296 HDD
-$78558655732992 mémoire persistente
-
-
-=== components/LessI32 ===
-
-$87609006355839* Less (signed)
-$99994775592318* Checks if one input is less than the other
-
-
 === components/Nand8 ===
 
 $50859914201083* Bitwise NAND two values
@@ -606,11 +8,6 @@ $93314093190526* 8 Bit NAND
 
 $14174811828377* Adds two inputs
 $73418471595285* Add
-
-
-=== misc/ui_panel/memory ===
-
-$65362728703588 MEMOIRE
 
 
 === components/Output 1 + 1B ===
@@ -712,6 +109,11 @@ $34603983706314* Checks if the two inputs are equal
 $82876546747608* Equal
 
 
+=== components/64Ram ===
+
+$78790416494254* RAM
+
+
 === components/Bidirectional16 ===
 
 $31038378395810* 16 bit bidirectional pin
@@ -782,9 +184,11 @@ NOTE: Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* B
 
 
-=== components/RegisterRedPlus ===
+=== nim/backend_lib/level_list ===
 
-$57531353625235 Registre
+$15420972347773* RAM
+$26705128002562* Conditions
+$70993791338383* XOR
 
 
 === components/Counter64 ===
@@ -864,6 +268,11 @@ $86856280609387*
 $54832952840086* XOR
 
 
+=== components/AND ===
+
+$58912167455465* AND
+
+
 === components/Not16 ===
 
 $17394768116288* 16 Bit NOT
@@ -876,21 +285,39 @@ $13970397213910* Rotates the bits of an input right
 $90115282457191* Rotate right
 
 
+=== levels/ram_block ===
+
+$16196915566111* 0
+$14259545926196* A
+$12933801309767* A
+
+
+=== components/Input 1B CODE ===
+
+$16878300327380* Instruction
+
+
+=== components/Shr64 ===
+
+$93124177265670* Shifts the bits of an input right
+$73798355428095* Shift right
+
+
+=== components/ON ===
+
+$95896157427528* ON
+
+
 === components/Nor16 ===
 
 $57921392198825* Bitwise NOR two values
 $69522380057631* 16 Bit NOR
 
 
-=== components/Input 1B CODE ===
+=== components/Constant64 ===
 
-$16878300327380 Instruction
-
-
-=== components/ON ===
-
-$96212935718484 Toujours [ON]
-$95896157427528 ON
+$92424468899005* Constant value
+$25858905835416* 64 Bit Constant
 
 
 === components/LatencyRam ===
@@ -911,21 +338,39 @@ $84788620524361* Rotate right
 $50013003040535* Rotates the bits of an input right
 
 
+=== levels/negative_numbers ===
+
+$62744038163781* OK
+
+
+=== components/DelayLine8 ===
+
+$24840584785792* Outputs this tick's input, next tick
+$63449911993783* 8 Bit Delay Line
+
+
+=== components/Bit Compressor ===
+
+$74338505460996* Turns 8 bits into 1 byte
+$98747779812970* 8 bit Maker
+
+
 === components/BOR ===
 
 $19406015796751* Bitwise OR two values
 $54190050450484* 8 Bit OR
 
 
-=== components/RegisterRed ===
-
-$10081371413873 Registre
-
-
 === components/Console ===
 
 $66743357915699* Console
 $16105755937680* 80x24 text character display
+
+
+=== components/Xnor16 ===
+
+$73699169812942* Bitwise XNOR two values
+$40088995721509* 16 Bit XNOR
 
 
 === components/ByteLessI ===
@@ -958,6 +403,18 @@ $28866575833369* Reads bytes from your hard disk
 $34159012148766* File Rom
 
 
+=== components/Mux64 ===
+
+$14050204031082* Toggles between two values
+$66892629981737* 64 Bit Mux
+
+
+=== components/Bidirectional8 ===
+
+$20234315861487* 8 bit bidirectional pin
+$49499540884410* Can circumvent certain circular dependency errors
+
+
 === components/BitSwitch ===
 
 $56917313833836* Toggles a bit
@@ -970,10 +427,73 @@ $80000130396288* 64 Bit Delay Line
 $35525647389906* Outputs this tick's input, next tick
 
 
+=== components/Shr16 ===
+
+$20291717268875* Shifts the bits of an input right
+$31674686871821* Shift right
+
+
+=== components/Screen ===
+
+$12771040946773* Displays the visuals that accompany certain levels
+$50037736094411* Screen
+
+
+=== components/Xnor32 ===
+
+$17419057954798* Bitwise XNOR two values
+$52489451755306* 32 Bit XNOR
+
+
+=== components/NOR ===
+
+$27510848535619*
+[ON] when neither inputs are [ON]
+[table=5]
+[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
+[/table]
+$83375115196253* NOR
+
+
+=== levels/circular_dependency ===
+
+$16336401898647* Test 1/2
+
+
+=== components/Off ===
+
+$61860786587357* OFF
+
+
+=== components/Or3 ===
+
+$17576327690867* 3 pin OR gate
+$99630419947500* 3 Pin OR
+
+
 === components/Nand32 ===
 
 $24565725389553* Bitwise NAND two values
 $71611588991682* 32 Bit NAND
+
+
+=== components/NAND ===
+
+$71130919681688* NAND
+$12903183841172*
+[ON] unless both inputs are [ON]
+[table=5]
+[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Output[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
+[/table]
+
+
+=== components/Output1Sum ===
+
+$90026011029075* Sum
 
 
 === components/Rol32 ===
@@ -982,9 +502,10 @@ $88734684504266* Rotates the bits of an input left
 $83642246004160* Rotate left
 
 
-=== components/BeepBox ===
+=== components/Ror8 ===
 
-$15009144144117 Générateur de forme d'onde (waveform)
+$10802217509530* Rotates the bits of an input right
+$70999134800536* Rotate right
 
 
 === components/Bidirectional1 ===
@@ -1020,21 +541,27 @@ $54631386552063* 32 bit bidirectional pin
 $35105566244017* Can circumvent certain circular dependency errors
 
 
+=== components/Output16z ===
+
+$78873885833823* 16 bit switched Output
+$54278394672948* Only outputs if the switch pin is [ON]
+
+
 === components/Counter ===
 
 $51446864816252* Increments each tick, unless overwritten
 $67910883947749* 8 Bit Counter
 
 
+=== components/ByteMul ===
+
+$56549841656852* Multiply
+$68631919890554* Multiplies two inputs
+
+
 === misc/specifications ===
 
-$68054407020318 Instructions
-
-
-=== components/Keyboard ===
-
-$40965596602414 Clavier
-$76766452660421 Enregistre les appuis de touches de ton clavier
+$68054407020318* Instructions
 
 
 === components/Input1_1B ===
@@ -1048,22 +575,58 @@ $44510554000571* Network
 $90462653419289* Handles network connections
 
 
-=== components/Xnor8 ===
+=== components/Output8z ===
 
-$31985293401482* 8 Bit XNOR
-$45789912406647* Bitwise XNOR two values
-
-
-=== components/3_decoder ===
-
-$59129788113517* Toggles between eight outputs
-$94375716460090* 3 Bit decoder
+$16915419621070* 8 bit switched Output
+$58449766432492* Only outputs if the switch pin is [ON]
 
 
-=== components/ByteShl ===
+=== components/Counter32 ===
 
-$74488427658653* Shift left
-$66482114876737* Shifts the bits of an input left
+$87245349851451* 32 Bit Counter
+$92765669828982* Increments each tick, unless overwritten
+
+
+=== components/Maker16 ===
+
+$55864807379312* Turns 16 bits into 2 bytes
+$39941195789458* 16 bit Maker
+
+
+=== components/ByteConstant ===
+
+$29445030761909* Constant value
+$25159790815891* 8 Bit Constant
+
+
+=== components/And3 ===
+
+$19664974941910* 3 Pin AND
+$86839706221116* 3 pin AND gate
+
+
+=== components/NEG ===
+
+$88379907297327* Negate
+$62021716182809* Bitwise negates an input
+
+
+=== components/Switch16 ===
+
+$15221175893882* 16 Bit Switch
+$59845475842015* Toggles a value
+
+
+=== components/Add32 ===
+
+$91616185859914* Adds two inputs
+$64111401384153* Add
+
+
+=== components/LessU32 ===
+
+$72614358420262* Less (unsigned)
+$55380524073095* Checks if one input is less than the other
 
 
 === components/Counter16 ===
@@ -1090,16 +653,51 @@ $32710942647020* Equal
 $32433537137277* Checks if the two inputs are equal
 
 
+=== components/NOT ===
+
+$34453052824732* NOT
+$90844421681709*
+Inverts the input
+[table=3]
+[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
+[/table]
+
+
 === components/MemoryProbe ===
 
 $46948613505134* Display a value on your custom component or in the program editor
 $44867305035474* Memory Probe
 
 
+=== components/Or32 ===
+
+$92752025948920* Bitwise OR two values
+$40180779432911* 32 Bit OR
+
+
+=== components/3_decoder ===
+
+$59129788113517* Toggles between eight outputs
+$94375716460090* 3 Bit decoder
+
+
+=== components/Xnor8 ===
+
+$31985293401482* 8 Bit XNOR
+$45789912406647* Bitwise XNOR two values
+
+
 === components/Byte Expander ===
 
 $60488114435022* Splits a byte into 8 bits
 $21904470559153* Byte Splitter
+
+
+=== components/And16 ===
+
+$56198785587874* Bitwise AND two values
+$26727645933234* 16 bit AND
 
 
 === misc/StateProbe ===
@@ -1114,6 +712,18 @@ $90978982016052* Splits 32 bits into 4 byts
 $24096666569346* 32 bit Splitter
 
 
+=== components/Output64z ===
+
+$61656790122480* 64 bit switched Output
+$42506906257154* Only outputs if the switch pin is [ON]
+
+
+=== components/ByteShl ===
+
+$74488427658653* Shift left
+$66482114876737* Shifts the bits of an input left
+
+
 === components/Shl32 ===
 
 $38930281262898* Shift left
@@ -1126,6 +736,12 @@ $56766765894165* Shifts the bits of an input left
 $37014604954362* Shift left
 
 
+=== components/And64 ===
+
+$80790829001391* 64 bit AND
+$89424947351456* Bitwise AND two values
+
+
 === components/Program64 ===
 
 $76480303942112* Programmable memory component
@@ -1135,6 +751,30 @@ $76480303942112* Programmable memory component
 
 $79436020115192* Fast but high gate cost memory
 $12924829814634* Fast RAM
+
+
+=== components/ByteEqual ===
+
+$35668435514829* Checks if the two inputs are equal
+$39369982838671* Equal
+
+
+=== components/Mul64 ===
+
+$72281597169494* Multiply
+$11665562499390* Multiplies two inputs
+
+
+=== components/Bidirectional64 ===
+
+$82412839066570* 64 bit bidirectional pin
+$24932613021646* Can circumvent certain circular dependency errors
+
+
+=== components/Splitter64 ===
+
+$80420054807186* Splits 64 bits into 8 byts
+$14205692632393* 64bit Splitter
 
 
 === components/switch ===
@@ -1149,10 +789,93 @@ $86007777261800* 64 Bit Register
 $99461037008796* 64 bit memory
 
 
+=== components/Splitter16 ===
+
+$92674917729864* 16 bit Splitter
+$28271182652741* Splits 16 bits into 2 byts
+
+
+=== components/SRLatch ===
+
+$11641785582600* Set/Reset Latch
+$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+
+=== components/Maker32 ===
+
+$82420653444614* Turns 32 bits into 4 bytes
+$85308499118176* 32 bit Maker
+
+
+=== main_scripts/dialouge ===
+
+
+NOTE: Hitn for byte switch
+$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
+
+NOTE: hint for the bus
+$50799425816171* Use switches to put the inputs on the same wire.
+
+NOTE: hint for odd number
+$68750974209145* You can figure out if 2 inputs have an odd number of [ON] with just 1 component...
+
+NOTE: Hint for the maze
+$36837749971886*
+Always following the left (or right) hand side of the maze will make sure you eventually reach the exit.
+	
+The pseudo code for such an algorithm looks like this:
+ Step forward
+ Turn left
+ Turn right as long as there is a wall ahead
+ Press use after each turn (in case the exit is ahead)
+ Repeat
+
+NOTE: hint for counting signals
+
+NOTE: Hint for byte adder
+$37093555217568* You only need 8 full adders.
+$21044442262778* The circuitry for the 1's bit is the same as what you did in the level "Odd Number of Signals". The circuitry for the 2's bit is what you did in "Double Trouble", except when all 4 are on.
+
+NOTE: hint for saving gracefully
+$25321701584378*
+In this level you need to use 1 Delay Line. Make a truth table for what should go into the Delay Line. Consider the input to the Delay Line as the output for your table. 
+
+The inputs are the 2 level inputs AND the output of the Delay Line, as the output plays a role in its input. In total you have 3 "inputs" to for this table which gives you 8 combinations. Once you have the level requirements as a table, it should be a lot easier to solve.
+
+NOTE: Hint for conditions
+$87674181578455*
+There are 3 condition bits. The first bit being [ON] means the result being 0 meets the condition. The second bit being [ON] means the result being less than 0 meets the condition. If either of those two are [ON], the condition is met. 
+Finally, if the last bit is [ON], negate the status of the condition being met or not.
+
+NOTE: hint for xor gate
+$88963098241493* This level can be done with 3 components, a NAND, an AND and an OR gate.
+
+NOTE: Hint for masking time
+$46866534894828*
+In binary, taking modulo 4 of a number is the same as only using the two lower bits. This is because the higher bits represet 4, 8, 16 etc, and they all divide 4 with no remainder.
+This is true in general for modulo a power of 2, the lowest bit of a number represents that number modulo 2 (even or odd), the lowest 3 bits modulo 8 and so on.
+
+Likewise, in decimal 4321 modulo 100 is also simple (answer is 21, the higher digits are disregarded), this is because 100 is a power of 10.
+
+Now you just have to figure out how to get the last 2 digits of a number.
+
+NOTE: hint for less
+$56438995128380*
+First determine which bits are different between the 2 bytes. This can be done using a byte XOR (remember XOR turns [ON] when the inputs are not the same). We know the number that has the highest different bit [ON] is the larger number. But we must only consider the highest different bit, so for each bit, use a chain of OR gates to check if any higher are [ON].
+		
+Finally, the last bit is considered seperately for signed numbers, here it has the opposite effect (if only one number has it [ON], that number is guaranteed to be lower)
+
+
 === components/Neg32 ===
 
 $26991597084705* Negate
 $35735598635057* Bitwise negates an input
+
+
+=== components/Xor64 ===
+
+$95012060885697* 64 bit XOR
+$13031452187028* Bitwise XOR two values
 
 
 === components/Ram ===
@@ -1165,5 +888,22 @@ $27094240214067* Memory component
 
 $85825068431072* 16 Bit Constant
 $61330657823382* Constant value
+
+
+=== components/ByteXor ===
+
+$98219910712564* 8 bit XOR
+$83236921580268* Bitwise XOR two values
+
+
+=== components/Hdd ===
+
+$75645507178296* HDD
+
+
+=== components/LessI32 ===
+
+$87609006355839* Less (signed)
+$99994775592318* Checks if one input is less than the other
 
 
