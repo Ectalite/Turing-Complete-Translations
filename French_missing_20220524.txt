@@ -123,7 +123,8 @@ $93061034213009* Toggles a value
 
 === components/SegmentDisplay ===
 
-$56761198694928* $90582128204153* 7 Segment Display
+$56761198694928* Good for displaying numbers
+$90582128204153* 7 Segment Display
 
 
 === components/Or16 ===
