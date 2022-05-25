@@ -1,240 +1,240 @@
 === components/MemoryProbeBit ===
 
-$13846578075327* Display a value on your custom component or in the program editor
-$25103579211328* Memory Probe (bit)
+$13846578075327 Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programme
+$25103579211328 Sonde Mémoire (bit)
 
 
 === components/DualPortRam ===
 
-$13408945557666* RAM with an extra load pin
-$30400404542678* Dual Load RAM
+$13408945557666 RAM avec une patte Lire supplémentaire
+$30400404542678 RAM Double Lecture
 
 
 === components/Output1Car ===
 
-$12896765714603* Carry
+$12896765714603 Retenue
 
 
 === components/Switch64 ===
 
-$80980797636768* Toggles a value
-$93223372486795* 64 Bit Switch
+$80980797636768 Active/Désactive une valeur
+$93223372486795 Commutateur 64 bits
 
 
 === components/FullAdder ===
 
-$57559382166174* Adds 3 bits and outputs the sum and the carry
-$77669928463861* Full Adder
+$57559382166174 Additionne 3 bits et sort la somme et la retenue
+$77669928463861 Additionneur complet
 
 
 === components/Rol16 ===
 
-$48583573494467* Rotate left
-$73379230742631* Rotates the bits of an input left
+$48583573494467 Rotation vers la gauche
+$73379230742631 Décalage à gauche des bits en entrée avec recyclage
 
 
 === components/Neg16 ===
 
-$17253409670931* Negate
-$57512333327652* Bitwise negates an input
+$17253409670931 Inverser
+$57512333327652 Inverser l'entrée bit à bit
 
 
 === components/Equal16 ===
 
-$97954874255512* Checks if the two inputs are equal
-$33633607925660* Equal
+$97954874255512 Test d'Egalité entre entrées
+$33633607925660 Egal
 
 
 === misc/ui_panel/outputs ===
 
-$29350436761480* OUTPUTS
+$29350436761480 SORTIES
 
 
 === components/Register32 ===
 
-$65405398199118* 32 bit memory
-$22031255978461* 32 Bit Register
+$65405398199118 Mémoire 32 bits
+$22031255978461 Registre 32 bits
 
 
 === components/64Ram ===
 
-$63410290483563* Low gate cost but slow memory
-$78790416494254* RAM
+$63410290483563 Nombre de portes réduit mais mémoire lente
+$78790416494254 RAM
 
 
 === components/Nand16 ===
 
-$63870790225686* Bitwise NAND two values
-$56507506086622* 8 Bit NAND
+$63870790225686 NAND bit à bit de 2 entrées
+$56507506086622 NAND 8 Bits
 
 
 === components/InputOutput ===
 
-$26488480303865* In/Out
+$26488480303865 Entrée/Sortie
 
 
 === components/Program8_1 ===
 
-$11057354704814* Programmable memory component
-$12805545963716* Program
+$11057354704814 Composant mémoire programmable
+$12805545963716 Programme
 
 
 === components/Mux16 ===
 
-$75979055121665* 16 Bit Mux
-$13997767115693* Toggles between two values
+$75979055121665 Multiplexeur 16 bits
+$13997767115693 Alterne entre 2 valeurs
 
 
 === components/Mul16 ===
 
-$49880767097125* Multiplies two inputs
-$62247409328063* Multiply
+$49880767097125 Multiplie 2 entrées
+$62247409328063 Multiplier
 
 
 === components/Decoder2 ===
 
-$25937877347447* Toggles between four outputs
-$21727998752868* 2 Bit decoder
+$25937877347447 Alterne entre 4 entrées
+$21727998752868 Decodeur 2 bits
 
 
 === components/Nor8 ===
 
-$34517798310461* Bitwise Nor two values
-$39421972053612* 8 Bit NOR
+$34517798310461 NOR bit à bit de 2 entrées
+$39421972053612 NOR 8 Bits
 
 
 === components/Output1z ===
 
-$31478630391268* Only outputs if the switch pin is [ON]
-$84656390009725* 1 bit switched Output
+$31478630391268 Sortie activée quand la patte de contrôle est [ON]
+$84656390009725 Sortie commutée 1 bit
 
 
 === components/Mux ===
 
-$11168613697835* Toggles between two values
-$22167405631310* 8 Bit Mux
+$11168613697835 Alterne entre 2 valeurs
+$22167405631310 Multiplexeur 8 bits
 
 
 === components/Switch32 ===
 
-$70717074742809* 32 Bit Switch
-$93061034213009* Toggles a value
+$70717074742809 Commutateur 32 bits
+$93061034213009 Active/Désactive une valeur
 
 
 === components/SegmentDisplay ===
 
-$56761198694928* Good for displaying numbers
-$90582128204153* 7 Segment Display
+$56761198694928 Permet d'afficher des nombres
+$90582128204153 Afficheur 7 segments
 
 
 === components/Or16 ===
 
-$76807373575014* Bitwise OR two values
-$62695381407925* 16 Bit OR
+$76807373575014 OR bit à bit sur 2 valeurs
+$62695381407925 OR 16 bits
 
 
 === nim/backend_lib/level_list ===
 
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
+$15420972347773 RAM
+$26705128002562 Conditions
+$70993791338383 XOR
 
 
 === components/Register16 ===
 
-$16015376037787* 16 Bit Register
-$71792123436163* 16 bit memory
+$16015376037787 Registre 16 Bits
+$71792123436163 Mémoire 16 bits
 
 
 === components/Mem Unit ===
 
-$57670626909848* 1 bit of memory
-$78616473760551* 1 Bit memory
+$57670626909848 1 bit de mémoire
+$78616473760551 mémoire 1 Bit
 
 
 === components/Or64 ===
 
-$50631450923181* Bitwise OR two values
-$62930122175674* 64 Bit OR
+$50631450923181 OR bit à bit sur 2 valeurs
+$62930122175674 OR 64 bits
 
 
 === components/Maker64 ===
 
-$17464069717985* 64bit Maker
-$79677187590355* Turns 64 bits into 8 bytes
+$17464069717985 Créateur 64 bits
+$79677187590355 Transforme 64 bits en 8 octets
 
 
 === components/Xnor64 ===
 
-$64937916903935* Bitwise XNOR two values
-$47129074382309* 64 Bit XNOR
+$64937916903935 XNOR bit à bit sur 2 valeurs
+$47129074382309 XNOR 64 bits 
 
 
 === components/Nor32 ===
 
-$82743668258816* Bitwise NOR two values
-$82121937858245* 32 Bit NOR
+$82743668258816 NOR bit à bit sur 2 valeurs
+$82121937858245 NOR 32 bits 
 
 
 === components/Not64 ===
 
-$74829633052959* Bitwise negates 64 bits
-$81823773658328* 64 Bit NOT
+$74829633052959 Inverse bit à bit une entrée de 64 bits
+$81823773658328 NOT 64 bits
 
 
 === components/Stack ===
 
-$71022099146246* Memory that can be pushed or popped onto
-$47202418972371* Stack
+$71022099146246 Mémoire permettant d'EMPILER/DEPILER
+$47202418972371 Pile
 
 
 === components/Program4 ===
 
-$27522667367787* Program
-$45650720555565* Programmable memory component
+$27522667367787 Programme
+$45650720555565 Composant mémoire programmable
 
 
 === components/Constant32 ===
 
-$39402227599142* Constant value
-$30896164786171* 32 Bit Constant
+$39402227599142 Valeur constante
+$30896164786171 Constante 32 bits
 
 
 === components/Xor16 ===
 
-$55408021160573* Bitwise XOR two values
-$47846591761838* 16 bits XOR
+$55408021160573 XOR bit à bit sur 2 valeurs
+$47846591761838 XOR 16 bits
 
 
 === components/Rol64 ===
 
-$49017662473189* Rotates the bits of an input left
-$13677051385046* Rotate left
+$49017662473189 Rotation à gauche des bits en entrée
+$13677051385046 Rotation à gauche
 
 
 === components/And32 ===
 
-$98890160152994* Bitwise AND two values
-$30264879217145* 32 bit AND
+$98890160152994 AND bit à bit sur 2 valeurs
+$30264879217145 AND 32 bits 
 
 
 === components/AND ===
 
-$22719674432950*
-[ON] when both inputs are [ON]
+$22719674432950
+[ON] quand les deux entrées sont [ON]
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
-$58912167455465* AND
+$58912167455465 AND
 
 
 === levels/ram_block ===
 
-$16196915566111* 0
-$14259545926196* A
-$12933801309767* A
+$16196915566111 0
+$14259545926196 A
+$12933801309767 A
 
 
 === components/Shr64 ===
@@ -251,7 +251,7 @@ $25858905835416* 64 Bit Constant
 
 === levels/negative_numbers ===
 
-$62744038163781* OK
+$62744038163781 OK
 
 
 === components/DelayLine8 ===
@@ -262,7 +262,7 @@ $63449911993783* 8 Bit Delay Line
 
 === misc/ui_panel/left_inputs ===
 
-$16586225094516* INPUTS
+$16586225094516 ENTREES
 
 
 === components/Bit Compressor ===
@@ -273,7 +273,7 @@ $98747779812970* 8 bit Maker
 
 === components/OutputCounter ===
 
-$52247325526438* Counter
+$52247325526438 Compteur
 
 
 === components/Xnor16 ===
@@ -284,8 +284,8 @@ $40088995721509* 16 Bit XNOR
 
 === components/Off ===
 
-$61860786587357* OFF
-$72749460799924* Always [OFF]
+$61860786587357 OFF
+$72749460799924 Toujours [OFF]
 
 
 === components/Bidirectional8 ===
@@ -314,7 +314,7 @@ $66892629981737* 64 Bit Mux
 
 === levels/circular_dependency ===
 
-$16336401898647* Test 1/2
+$16336401898647 Test 1/2
 
 
 === components/Xnor32 ===
@@ -497,8 +497,8 @@ $28271182652741* Splits 16 bits into 2 byts
 
 === misc/component_button ===
 
-$75542474510177* GATE
-$63839315669055* DELAY
+$75542474510177 PORTE
+$63839315669055 DELAI
 
 
 === components/SRLatch ===
@@ -586,8 +586,8 @@ $83236921580268* Bitwise XOR two values
 
 === components/Hdd ===
 
-$75645507178296* HDD
-$78558655732992* Persistent memory
+$75645507178296 HDD
+$78558655732992 mémoire persistente
 
 
 === components/LessI32 ===
@@ -610,7 +610,7 @@ $73418471595285* Add
 
 === misc/ui_panel/memory ===
 
-$65362728703588* MEMORY
+$65362728703588 MEMOIRE
 
 
 === components/Output 1 + 1B ===
@@ -784,7 +784,7 @@ $71072134093858* B
 
 === components/RegisterRedPlus ===
 
-$57531353625235* Register
+$57531353625235 Registre
 
 
 === components/Counter64 ===
@@ -884,13 +884,13 @@ $69522380057631* 16 Bit NOR
 
 === components/Input 1B CODE ===
 
-$16878300327380* Instruction
+$16878300327380 Instruction
 
 
 === components/ON ===
 
-$96212935718484* Always [ON]
-$95896157427528* ON
+$96212935718484 Toujours [ON]
+$95896157427528 ON
 
 
 === components/LatencyRam ===
@@ -919,7 +919,7 @@ $54190050450484* 8 Bit OR
 
 === components/RegisterRed ===
 
-$10081371413873* Register
+$10081371413873 Registre
 
 
 === components/Console ===
@@ -984,7 +984,7 @@ $83642246004160* Rotate left
 
 === components/BeepBox ===
 
-$15009144144117* Waveform Generator
+$15009144144117 Générateur de forme d'onde (waveform)
 
 
 === components/Bidirectional1 ===
@@ -1028,13 +1028,13 @@ $67910883947749* 8 Bit Counter
 
 === misc/specifications ===
 
-$68054407020318* Instructions
+$68054407020318 Instructions
 
 
 === components/Keyboard ===
 
-$40965596602414* Keyboard
-$76766452660421* Records keypresses from your physical keyboard
+$40965596602414 Clavier
+$76766452660421 Enregistre les appuis de touches de ton clavier
 
 
 === components/Input1_1B ===
