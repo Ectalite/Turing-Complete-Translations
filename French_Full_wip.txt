@@ -1247,10 +1247,11 @@ $51210946736766* Multiplie deux entrées
 
 === components/Halt ===
 
-$30351143139905 Arrêt (Halt)
+$30351143139905* Arrêt (Halt)
 
-$54106972240596 Arrêt (Halt)
-$62990744955549 Arrête l'exécution avec un message personnalisé
+NOTE: This is the default message of the Halt component
+$54106972240596* Arrêt (Halt)
+$62990744955549* Arrête l'exécution avec un message personnalisé
 
 
 === trans/options_setting_click_to_pan ===
@@ -2303,13 +2304,18 @@ $96269858195218* Sortie
 
 === main_scripts/dialouge ===
 
-$86319296925137 A quoi cela ressemblerait si tu ne commutais qu'un seul bit ? A quoi ressemblerait la table de vérité d'un tel composant ?
 
-$50799425816171 Utilise des commutateurs pour placer les entrées sur le même fil.
+NOTE: Hitn for byte switch
+$86319296925137* A quoi cela ressemblerait si tu ne commutais qu'un seul bit ? A quoi ressemblerait la table de vérité d'un tel composant ?
 
-$68750974209145 Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
+NOTE: hint for the bus
+$50799425816171* Utilise des commutateurs pour placer les entrées sur le même fil.
 
-$36837749971886
+NOTE: hint for odd number
+$68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
+
+NOTE: Hint for the maze
+$36837749971886*
 En suivant toujours le mur gauche (ou droit) du labyrinthe tu es sûr d'atteindre la sortie au bout d'un moment.
 
 Le pseudo-code pour cet algorithme est à peu près :
@@ -2319,29 +2325,29 @@ Le pseudo-code pour cet algorithme est à peu près :
  Tente d'ouvrir une porte (au cas ou la sortie serait en face) 
  Recommence
 
+NOTE: Hint for byte adder
 $37093555217568* Tu n'as besoin que de 8 additionneurs complets.
-$21044442262778 Le schéma pour les bits impairs est semblable à ce qui a été fait pour "Nombre IMPAIR de Signaux". Pour les bits pairs c'est comme dans "Doublement compliqué", sauf si les 4 sont ON.
+$21044442262778* Le schéma pour les bits impairs est semblable à ce qui a été fait pour "Nombre IMPAIR de Signaux". Pour les bits pairs c'est comme dans "Doublement compliqué", sauf si les 4 sont ON.
 
-$25321701584378
+NOTE: hint for saving gracefully
+$25321701584378*
 Dans ce niveau tu dois utiliser 1 Ligne à Retard. Ecris la table de vérité de ce qui doit aller dans la Ligne à Retard. Traite l'entrée de la Ligne à Retard comme la sortie de ta table.
 
 Les entrées sont les 2 entrées du niveaux ET la sortie de la Ligne à Retard, car la sortie dépend modifie sa propre entrée. Au total tu as trois "entrées" pour cette table ce qui fait 8 combinaisons. Une fois que l'objectif du niveau est sous forme de table, il devrait être beaucoup plus simple à résoudre.
-
-$87674181578455
+$87674181578455*
 Il y a 3 bits de conditions. Quand le premier bit est [ON] cela signifie que la condition est validée pour un résultat à 0. Quand le second bit est [ON] cela signifie que la condition est validée pour un résultat inférieur à 0. Si aucun des 2 premiers bits n'est [ON] la condition est validée.
 Enfin si le dernier bit est [ON] inverse la valeur de la condition obtenue.
+$88963098241493* Ce level peut être réalisé avec 3 composants, une porte NAND, une AND et une OR.
 
-$88963098241493 Ce level peut être réalisé avec 3 composants, une porte NAND, une AND et une OR.
-
-$46866534894828
+NOTE: Hint for masking time
+$46866534894828*
 En binaire, calculer le modulo 4 d'un nombre revient à conserver seulement les 2 bits de poids faible. C'est dû au fait que les bits supérieurs représentent 4,8,16 qui sont tous multiples de 4.
 C'est vrai en général pour le modulo d'une puissance de 2, le bit le plus faible représente le nombre modulo 2 (pair ou impair), les 3 bits les plus faibles le modulo 8 et ainsi de suite.
 
 De même, en décimal 4321 modulo 100 est aussi simple à calculer (la  réponse est 21, les chiffres de rang supérieur sont ignorés), du fait que 100 est une puissance de 10.
 
 Maintenant tu dois juste trouver comment obtenir les 2 derniers chiffres d'un nombre.
-
-$56438995128380
+$56438995128380*
 D'abord tu dois déterminer quels bits sont différents entre les 2 octets. Ceci peut se faire avec un XOR octet (souvenons nous que XOR est [ON] quand les entrées diffèrent). Nous savons que le nombre qui a le plus haut bit différent à [ON] est le plus grand. Mais il ne faut considérer que le plus haut bit différent, donc pour chaque bit, utilise un chaine de portes OR pour vérifier si un bit supérieur est [ON].
 
 Enfin, le dernier bit doit être considéré séparément pour les nombres signés, il a l'effet opposé (si un seule nombre l'a [ON], ce nombre est forcément inférieur)
@@ -2624,11 +2630,15 @@ $81337533438394* Complet
 
 === ui/abbreviated_units ===
 
-$22896492410578 10⁶
 
-$84696693690500 x10³
+NOTE: Instead of writing 5839000, the number turns into 5.8M
+$22896492410578* 10⁶
 
-$71072134093858 x10⁹
+NOTE: Instead of writing 5839, the number turns into 5.8K
+$84696693690500* x10³
+
+NOTE: Instead of writing 5839000000, the number turns into 5.8B
+$71072134093858* x10⁹
 
 
 === components/RegisterRedPlus ===
