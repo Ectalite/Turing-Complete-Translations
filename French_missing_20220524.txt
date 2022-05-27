@@ -1,274 +1,273 @@
 === components/Nand8 ===
 
-$50859914201083* Bitwise NAND two values
-$93314093190526* 8 Bit NAND
+$50859914201083 NAND bit à bit de 2 entrées
+$93314093190526 NAND 8 bits
 
 
 === trans/map_available ===
 
-$81707212583931* Available
+$81707212583931 Disponible
 
 
 === components/Add64 ===
 
-$14174811828377* Adds two inputs
-$73418471595285* Add
+$14174811828377 Ajoute 2 entrées
+$73418471595285 Ajouter
 
 
 === components/Output 1 + 1B ===
 
-$43917122084061* Accepts output for levels
+$43917122084061 Accepte la sortie du niveau
 
 
 === main_scripts/leg_level ===
 
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$89011349770597* NOT
-$40520283279584* XOR
-$71204580217527* NOTi
-$38681417496680* ARGUMENT 1
+$11144256835662 XORi
+$20104629254326 ARGUMENT 2
+$89011349770597 NOT
+$40520283279584 XOR
+$71204580217527 NOTi
+$38681417496680 ARGUMENT 1
 
 
 === components/DelayLine1 ===
 
-$30487770736917* Delay Line
-$38206009264853* Outputs this tick's input, next tick
+$30487770736917 Ligne à Retard
+$38206009264853 Envoie en sortie au prochain cycle l'entrée de ce cycle 
 
 
 === components/Adder Simple ===
 
-$33973952772642* Add
-$98429814030509* Adds two inputs
+$33973952772642 Ajouter
+$98429814030509 Ajoute 2 entrées
 
 
 === misc/ProbeWireBit ===
 
-$49521764791439* Wire Probe (bit)
-$15206117280094* Display a value on your custom component or in the program editor
+$49521764791439 Sonde de fil (bit)
+$15206117280094 Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programme
 
 
 === components/Neg64 ===
 
-$88458190974122* Negate
-$52206550732945* Bitwise negates an input
+$88458190974122 Inverser
+$52206550732945 Inversion bit à bit de l'entrée
 
 
 === components/DelayLine32 ===
 
-$56616725618490* Outputs this tick's input, next tick
-$49292282287971* 32 Bit Delay Line
+$56616725618490 Envoie en sortie au prochain cycle l'entrée de ce cycle 
+$49292282287971 Ligne à retard 32 bits
 
 
 === components/Nand64 ===
 
-$27197172037913* 64 Bit NAND
-$66590147372797* Bitwise NAND two values
+$27197172037913 NAND 64 bits
+$66590147372797 NAND bit à bit de 2 entrées
 
 
 === components/ByteShr ===
 
-$89595863403484* Shift right
-$69394421220436* Shifts the bits of an input right
+$89595863403484 Décalage à droite
+$69394421220436 Décalage à droite des bits d'une entrée
 
 
 === components/DelayLine16 ===
 
-$61925612221077* 16 Bit Delay Line
-$65706144678496* Outputs this tick's input, next tick
+$61925612221077 Ligne à retard 16 bits
+$65706144678496 Envoie en sortie au prochain cycle l'entrée de ce cycle 
 
 
 === trans/map_programming ===
 
-$44937904689376* PROGRAMMING
+$44937904689376 PROGRAMMATION
 
 
 === components/LessU64 ===
 
-$13018528868948* Less (unsigned)
-$90244529484227* Checks if one input is less than the other
+$13018528868948 Inférieur (non signé)
+$90244529484227 Détermine si une entrée est inférieure à la seconde
 
 
 === components/Nor64 ===
 
-$17208777467974* Bitwise NOR two values
-$72509242083648* 64 Bit NOR
+$17208777467974 NOR bit à bit de 2 entrées
+$72509242083648 NOR 64 bits
 
 
 === components/Rom ===
 
-$24976506406652* ROM
-$81743370431597* Read only memory (outside the sandbox)
+$24976506406652 ROM
+$81743370431597 Mémoire morte (Read only memory, hors bac à sable)
 
 
 === components/LessU16 ===
 
-$91783087669146* Checks if one input is less than the other
-$33190791348214* Less (unsigned)
+$91783087669146 Détermine si une entrée est inférieure à la seconde
+$33190791348214 Inférieur (non signé)
 
 
 === components/Xor32 ===
 
-$66299093873977* 32 bit XOR
-$38169019785615* Bitwise XOR two values
+$66299093873977 XOR 32 bits 
+$38169019785615 XOR bit à bit de 2 entrées
 
 
 === components/Equal64 ===
 
-$34603983706314* Checks if the two inputs are equal
-$82876546747608* Equal
+$34603983706314 Détermine si les 2 entrées sont égales
+$82876546747608 Egalité
 
 
 === components/IndexByte ===
 
-$27264669944539* Byte Indexer
-$54699455184164* Extracts a byte from a wire
+$27264669944539 Indexeur octet
+$54699455184164 Extrait un octet du fil
 
 
 === components/64Ram ===
 
-$78790416494254* RAM
+$78790416494254 RAM (mémoire vive)
 
 
 === components/Bidirectional16 ===
 
-$31038378395810* 16 bit bidirectional pin
-$99604485981015* Can circumvent certain circular dependency errors
+$31038378395810 Patte bidirectionnelle 16 bits
+$99604485981015 Permet de contourner certaines erreurs de dépendance cyclique
 
 
 === components/Register ===
 
-$19705753304166* 8 bit memory
-$68946767861738* 8 Bit Register
+$19705753304166 Memoire 8 bits
+$68946767861738 Registre 8 bits
 
 
 === trans/map_functions ===
 
-$83960548773205* FUNCTIONS
+$83960548773205 FONCTIONS
 
 
 === levels/The Product of Nibbles ===
 
-$13549246864135* Bit 0
-$10274387271390* Bit 0
+$13549246864135 Bit 0
+$10274387271390 Bit 0
 
 
 === components/Input 1 Byte ===
 
-$40943344093513* Input
+$40943344093513 Entrée
 
 
 === components/LessI64 ===
 
-$42718501644862* Less (signed)
-$19948786194409* Checks if one input is less than the other
+$42718501644862 Inférieur (signé)
+$19948786194409 Détermine si une entrée est inférieure à la seconde
 
 
 === components/ByteLessU ===
 
-$68645721548287* Checks if one input is less than the other
-$73502755965496* Less (unsigned)
+$68645721548287 Détermine si une entrée est inférieure à la seconde
+$73502755965496 Inférieur (non signé)
 
 
 === main_scripts/functions ===
 
-$87591753278764* Reg {nr}
+$87591753278764 Reg {nr}
 
 
 === trans/map_complete ===
 
-$81337533438394* Complete
+$81337533438394 Complet
 
 
 === components/Program1Red ===
 
-$26811947547688* Programmable memory component
-$55594749714809* Program
+$26811947547688 Composant mémoire programmable
+$55594749714809 Programme
 
 
 === ui/abbreviated_units ===
 
-
-NOTE: Instead of writing 5839000, the number turns into 5.8M
-$22896492410578* M
+NOTE : Instead of writing 5839000, the number turns into 5.8M
+$22896492410578 M
 
 NOTE: Instead of writing 5839, the number turns into 5.8K
-$84696693690500* K
+$84696693690500 K
 
 NOTE: Instead of writing 5839000000, the number turns into 5.8B
-$71072134093858* B
+$71072134093858 G
 
 
 === components/Shl16 ===
 
-$79406691850426* Shift left
-$34287811246049* Shifts the bits of an input left
+$79406691850426 Décalage à gauche
+$34287811246049 Décale à gauche les bits d'une entrée
 
 
 === nim/backend_lib/level_list ===
 
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
+$15420972347773 RAM
+$26705128002562 Conditions
+$70993791338383 XOR
 
 
 === components/Counter64 ===
 
-$62528867413395* 64 Bit Counter
-$62736827510023* Increments each tick, unless overwritten
+$62528867413395 Compteur 64 bits 
+$62736827510023 S'incrémente à chaque cycle jusqu'à réinitialisation
 
 
 === components/BNOT ===
 
-$53686485035156* 8 Bit NOT
-$26822227902426* Bitwise negates 8 bits
+$53686485035156 NOT 8 bits 
+$26822227902426 NOT octet bit à bit
 
 
 === components/Ror64 ===
 
-$43920264894591* Rotate right
-$49583010717958* Rotates the bits of an input right
+$43920264894591 Rotation à droite
+$49583010717958 Rotation à droite des bits de l'entrée
 
 
 === components/Output32z ===
 
-$73681609562628* Only outputs if the switch pin is [ON]
-$92749186427039* Switched Output
+$73681609562628 Sortie activée seulement si la patte d'activation est [ON]
+$92749186427039 Sortie commutée
 
 
 === trans/map_memory ===
 
-$58330421958143* MEMORY
+$58330421958143 MEMOIRE
 
 
 === components/Rol8 ===
 
-$79612280948390* Rotate left
-$55557725551789* Rotates the bits of an input left
+$79612280948390 Rotation à gauche
+$55557725551789 Rotation à gauche des bits de l'entrée
 
 
 === components/OR ===
 
 $13013154620359*
-[ON] when either input is [ON]
+[ON] quand au moins une des entrées est [ON]
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell]
 [/table]
-$97247779246257* OR
+$97247779246257 OR (OU)
 
 
 === components/Clock ===
 
-$72088325385177* Clock
+$72088325385177 Horloge
 
 
 === components/Xnor ===
 
-$94079327237795* XNOR
-$90614106399129*
-[ON] when nputs are the same
+$94079327237795 XNOR
+$90614106399129
+[ON] quand les entrées sont égales
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
@@ -278,264 +277,264 @@ $90614106399129*
 
 === trans/tick ===
 
-$92150881431937* Tick
+$92150881431937 Cycle
 
 
 === components/1_decoder ===
 
-$26685462633615* Toggles between two outputs
-$98250587600120* 1 Bit decoder
+$26685462633615 Bascule entre deux sorties
+$98250587600120 Décodeur 1 bit
 
 
 === components/XOR ===
 
-$86856280609387*
-[ON] when inputs are different
+$86856280609387
+[ON] quand les entrées sont différentes
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
-$54832952840086* XOR
+$54832952840086 XOR
 
 
 === components/AND ===
 
-$58912167455465* AND
+$58912167455465 AND (ET)
 
 
 === components/IndexBit ===
 
-$89611629299917* Bit Indexer
-$84431924133490* Extracts a single bit from a wire
+$89611629299917 Indexeur de bits
+$84431924133490 Extrait un bit unique du fil
 
 
 === components/Not16 ===
 
-$17394768116288* 16 Bit NOT
-$91053300263019* Bitwise negates 16 bits
+$17394768116288 NOT 16 Bits
+$91053300263019 Inversion bit à bit d'un mot de 16 bits
 
 
 === trans/map_locked ===
 
-$95146987030704* Locked
+$95146987030704 Verrouillé
 
 
 === components/Ror16 ===
 
-$13970397213910* Rotates the bits of an input right
-$90115282457191* Rotate right
+$13970397213910 Rotation à droite des bits de l'entrée
+$90115282457191 Rotation à droite
 
 
 === levels/ram_block ===
 
-$16196915566111* 0
-$14259545926196* A
-$12933801309767* A
+$16196915566111 0
+$14259545926196 A
+$12933801309767 A
 
 
 === components/Input 1B CODE ===
 
-$16878300327380* Instruction
+$16878300327380 Instruction
 
 
 === components/Shr64 ===
 
-$93124177265670* Shifts the bits of an input right
-$73798355428095* Shift right
+$93124177265670 Décalage à droite des bits de l'entrée
+$73798355428095 Décalage à droite
 
 
 === components/ON ===
 
-$95896157427528* ON
+$95896157427528 ON
 
 
 === components/Nor16 ===
 
-$57921392198825* Bitwise NOR two values
-$69522380057631* 16 Bit NOR
+$57921392198825 NOR bit à bit d'un mot de 16 bits
+$69522380057631 NOR 16 bits
 
 
 === components/Constant64 ===
 
-$92424468899005* Constant value
-$25858905835416* 64 Bit Constant
+$92424468899005 Valeur constante
+$25858905835416 Constante 64 bits 
 
 
 === components/LatencyRam ===
 
-$74156976676497* Latency RAM
-$31261866779127* Lowers delay by having save and load take several ticks to complete
+$74156976676497 RAM latente
+$31261866779127 Réduit le délai en réalisant les lectures et écritures sur plusieurs cycles
 
 
 === components/DotMatrixDisplay ===
 
-$18651725958642* 6x8 Dot Matrix Display
-$71512568789377* 6x8 pixel display
+$18651725958642 Affichage par matrice de points 6x8
+$71512568789377 Ecran graphique 6x8
 
 
 === trans/map_cpu_architecture ===
 
-$95559333192525* CPU ARCHITECTURE
+$95559333192525 ARCHITECTURE PROCESSEUR
 
 
 === components/Ror32 ===
 
-$84788620524361* Rotate right
-$50013003040535* Rotates the bits of an input right
+$84788620524361 Rotation à droite
+$50013003040535 Rotation à droite des bits de l'entrée
 
 
 === levels/negative_numbers ===
 
-$62744038163781* OK
+$62744038163781 OK
 
 
 === components/DelayLine8 ===
 
-$24840584785792* Outputs this tick's input, next tick
-$63449911993783* 8 Bit Delay Line
+$24840584785792 Envoie en sortie au prochain cycle l'entrée de ce cycle 
+$63449911993783 Ligne à retard 8 bits
 
 
 === components/Bit Compressor ===
 
-$74338505460996* Turns 8 bits into 1 byte
-$98747779812970* 8 bit Maker
+$74338505460996 Rassemble 8 bits en 1 octet
+$98747779812970 Créateur 8 bits
 
 
 === components/BOR ===
 
-$19406015796751* Bitwise OR two values
-$54190050450484* 8 Bit OR
+$19406015796751 OR bit à bit de deux valeurs
+$54190050450484 OR 8 bits 
 
 
 === components/Console ===
 
-$66743357915699* Console
-$16105755937680* 80x24 text character display
+$66743357915699 Console
+$16105755937680 Terminal d'affichage textuel 80x24
 
 
 === components/Xnor16 ===
 
-$73699169812942* Bitwise XNOR two values
-$40088995721509* 16 Bit XNOR
+$73699169812942 XNOR bit à bit de deux valeurs
+$40088995721509 XNOR 16 bits 
 
 
 === components/ByteLessI ===
 
-$52765625016236* Checks if one input is less than the other
-$25403981009644* Less (signed)
+$52765625016236 Détermine si une entrée est inférieure à l'autre
+$25403981009644 Inférieur (signé)
 
 
 === components/LessI16 ===
 
-$75600169624828* Less (signed)
-$73697238171042* Checks if one input is less than the other
+$75600169624828 Inférieur (signé)
+$73697238171042 Détermine si une entrée est inférieure à l'autre
 
 
 === components/Mux32 ===
 
-$16638728645850* Toggles between two values
-$21257226547838* 32 Bit Mux
+$16638728645850 Alterne entre deux valeurs
+$21257226547838 Multiplexeur 32 bits (Mux)
 
 
 === components/Shr32 ===
 
-$87104108203785* Shifts the bits of an input right
-$88430124157796* Shift right
+$87104108203785 Décalage à droite des bits de l'entrée
+$88430124157796 Décalage à droite
 
 
 === misc/FileInput ===
 
-$28866575833369* Reads bytes from your hard disk
-$34159012148766* File Loader
+$28866575833369 Lit des octets depuis votre disque dur
+$34159012148766 Chargeur de fichier
 
 
 === components/Mux64 ===
 
-$14050204031082* Toggles between two values
-$66892629981737* 64 Bit Mux
+$14050204031082 Alterne entre deux valeurs
+$66892629981737 Multiplexeur 64 bits (Mux)
 
 
 === components/Bidirectional8 ===
 
-$20234315861487* 8 bit bidirectional pin
-$49499540884410* Can circumvent certain circular dependency errors
+$20234315861487 Patte bidirectionnelle 8 bits
+$49499540884410 Permet de contourner certaines erreurs de dépendance cyclique
 
 
 === components/BitSwitch ===
 
-$56917313833836* Toggles a bit
-$41574334638147* Switch
+$56917313833836 Active/Désactive un bit
+$41574334638147 Commutateur (Switch)
 
 
 === components/DelayLine64 ===
 
-$80000130396288* 64 Bit Delay Line
-$35525647389906* Outputs this tick's input, next tick
+$80000130396288 Ligne à retard 64 bits
+$35525647389906 Envoie en sortie au prochain cycle l'entrée de ce cycle 
 
 
 === components/Shr16 ===
 
-$20291717268875* Shifts the bits of an input right
-$31674686871821* Shift right
+$20291717268875 Décalage à droite des bits de l'entrée
+$31674686871821 Décalage à droite
 
 
 === trans/map_keys_to_pan ===
 
-$26276191141664* Use keyboard to pan
+$26276191141664 Déplacer la vue à l'aide du clavier
 
 
 === components/Xnor32 ===
 
-$17419057954798* Bitwise XNOR two values
-$52489451755306* 32 Bit XNOR
+$17419057954798 XNOR bit à bit de 2 valeurs 32 bits
+$52489451755306 XNOR 32 bits
 
 
 === components/NOR ===
 
-$27510848535619*
-[ON] when neither inputs are [ON]
+$27510848535619
+[ON] quand aucune entrée n'est [ON]
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
 [/table]
-$83375115196253* NOR
+$83375115196253 NOR
 
 
 === components/Screen ===
 
-$12771040946773* Displays the visuals that accompany certain levels
-$50037736094411* Screen
+$12771040946773 Affiche les éléments visuels qui accompagnent certains niveaux
+$50037736094411 Ecran
 
 
 === levels/circular_dependency ===
 
-$16336401898647* Test 1/2
+$16336401898647 Test 1/2
 
 
 === components/Off ===
 
-$61860786587357* OFF
+$61860786587357 OFF
 
 
 === components/Or3 ===
 
-$17576327690867* 3 pin OR gate
-$99630419947500* 3 Pin OR
+$17576327690867 porte OR 3 pattes
+$99630419947500 OR 3 entrées
 
 
 === components/Nand32 ===
 
-$24565725389553* Bitwise NAND two values
-$71611588991682* 32 Bit NAND
+$24565725389553 NAND bit à bit de 2 valeurs 32 bits
+$71611588991682 NAND 32 bits
 
 
 === components/NAND ===
 
-$71130919681688* NAND
-$12903183841172*
-[ON] unless both inputs are [ON]
+$71130919681688 NAND
+$12903183841172
+[ON] sauf si les 2 entrées sont [ON]
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
@@ -545,7 +544,7 @@ $12903183841172*
 
 === components/Output1Sum ===
 
-$90026011029075* Sum
+$90026011029075 Somme
 
 
 === components/Rol32 ===
