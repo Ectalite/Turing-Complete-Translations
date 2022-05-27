@@ -1,3 +1,13 @@
+=== main_menu/sandbox_button ===
+
+$16857608955464 Bac à sable
+
+=== misc/lab_toggle ===
+
+$16432178820878 Labo
+
+
+
 === levels/ram_block ===
 
 $16196915566111* 0
