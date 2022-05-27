@@ -77,16 +77,16 @@ $15726318553190* C'est ce qui explique que tu ne seras pas mangé à la fin.
 $19277843280528*
  [color=#b72d41][b]TIP:[/b][/color] 
  Tu peux sélectionner un composant et ses pattes en double-cliquant dessus
-$15296208528991* Les espèces capables de finir sont considérées légalement intelligentes.
+$15296208528991 Les espèces capables de finir sont considérées comme légalement intelligentes.
 
 
 === levels/component_factory ===
 
 $14665712485657* Ce composant personnalisé ne peut pas être utilisé car il n'a aucune surface.
 $17077079648771* Des composants peuvent être ajoutés, renommés ou supprimés en utilisant le système de sauvegarde du niveau.
-$19551383617326*
+$19551383617326
 Bienvenue dans l'atelier de composants, les schémas que tu crées ici pourront être utilisés comme composants dans les niveaux d'architecture.
-Le composants importé aura le même comportement et son schéma définira sa forme.
+Le composant importé aura le même comportement et son schéma définira sa forme.
 $12516102012088* Ce composant n'a pas de forme définie et ne pourra pas être réutilisé. Placer des composants sur la carte pour définir sa forme.
 $14712417427860* Comme ce niveau est un outil et pas un défi, tu peux revenir à la carte des niveaux pour continuer quand tu voudras.
 $15549447390000* 2 composants d'entrée/sortie sont dans la même zone. Le composant personnalisé sera inutilisable car 2 pattes ne peuvent se chevaucher.
@@ -110,7 +110,7 @@ $22031255978461* Registre 32 bits
 
 === components/64Ram ===
 
-$63410290483563* Nombre de portes réduit mais mémoire lente
+$63410290483563 Nombre réduit de portes mais mémoire lente
 $78790416494254* RAM (mémoire vive)
 
 
@@ -241,7 +241,7 @@ $81823773658328* NOT 64 bits
 
 === components/Stack ===
 
-$71022099146246* Mémoire permettant d'EMPILER/DEPILER
+$71022099146246 Mémoire permettant d'EMPILER/DÉPILER
 $47202418972371* Pile
 
 
@@ -298,9 +298,9 @@ $13224963076378* Nous étudions comment les expériences passées influent les f
 
 $12901484249817* Pourras-tu mettre 4 octets de mémoire dans un espace aussi limité ?
 $15908016538045* VALEUR
-$14218335256117*
+$14218335256117
 Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
-    C'est pour cela que nous avons dit au stagiaire de faire une version 256 octets de votre composant.
+    C'est pour cela que nous avons dit au stagiaire de faire une version 256 octets de ton composant.
 $12306130287676*
 Dans ce niveau tu devras construire un circuit qui pourra
 [SAUVEGARDER] ou [CHARGER] 4 octets de mémoire différents. 
@@ -364,7 +364,7 @@ $72749460799924* Toujours [OFF]
 === components/Screen ===
 
 $12771040946773* Affiche les éléments visuels qui accompagnent certains niveaux
-$50037736094411* Ecran
+$50037736094411 Écran
 
 
 === misc/ide_control_link ===
@@ -429,7 +429,7 @@ $99630419947500* OR 3 entrées
 
 === ui/top_bar/scores ===
 
-$56840961921536* SCORE NAND : \n SCORE DELAI :
+$56840961921536 SCORE NAND : \n SCORE DÉLAI :
 
 
 === components/Output1Sum ===
@@ -511,7 +511,7 @@ $75078723880086* LOGIQUE ELEMENTAIRE
 === components/Counter32 ===
 
 $87245349851451* Compteur 32 bits 
-$92765669828982* S'incrémente à chaque cycle hors réinitialisaiton
+$92765669828982 S'incrémente à chaque cycle hors réinitialisaition
 
 
 === misc/reset ===
@@ -857,7 +857,7 @@ $16027225087666* Nous allons compléter l'encyclopédie galactique culinaire en 
 === components/Equal64 ===
 
 $34603983706314* Détermine si les 2 entrées sont égales
-$82876546747608* Egalité
+$82876546747608 Égalité
 
 
 === components/IndexByte ===
@@ -1069,7 +1069,7 @@ Construis : [b]porte NOT[/b]
 Sortie :  [OFF][ON][/code]
 $18442122157391* [b]Consigne[/b]\nDésélectionne le composant en cliquant sur l'arrière-plan
 $12880883686501* [b]Consigne[/b]\nClique sur la porte NAND en haut à droite et placez là
-$18780831606716* [b]Consigne[/b]\nMaintiens le clique gauche pour ajouter un fil
+$18780831606716 [b]Consigne[/b]\nMaintiens le clic gauche pour ajouter un fil
 
 
 === components/IndexBit ===
@@ -1080,7 +1080,7 @@ $84431924133490* Extrait un bit unique du fil
 
 === levels/registers ===
 
-$10661964231175* J'ai forcé la position des composants rouges pour ce niveau, car tu t'embrouilles toujours en ne laissant pas assez de place. A partir d'ici tu ne repartiras plus de rien à chaque niveau, le désordre sera désormais sauvegardé d'un niveau à l'autre.
+$10661964231175 J'ai forcé la position des composants rouges pour ce niveau, car tu t'embrouilles toujours en ne laissant pas assez de place. À partir d'ici tu ne repartiras plus de rien à chaque niveau, le désordre sera désormais sauvegardé d'un niveau à l'autre.
 $10211777161405*
 Voici les combinaisons de bits pour chaque [color=#c54d5e]source[/color] et [color=#e49f44]destination[/color].
 
@@ -1112,7 +1112,7 @@ L'octet instruction indique ici la [color=#c54d5e]source[/color] et la [color=#e
 
 Les bits 1, 2 et 3 indiquent la [color=#e49f44]destination[/color]. Les bits 4, 5 et 6 indiquent la [color=#c54d5e]source[/color].
 $14823499195861* Ouvrir les "Instructions" dans la barre en haut
-$14108238519744* Il est temps de créer ton chef d'oeuvre, en implémentant l'architecture informatique [color=#e49f44]OVERTURE[/color]. Ce sera un véritable système Turing Complet, un vrai ordinateur dans tous les sens du terme !
+$14108238519744 Il est temps de créer ton chef d'œuvre, en implémentant l'architecture informatique [color=#e49f44]OVERTURE[/color]. Ce sera un véritable système Turing Complet, un vrai ordinateur dans tous les sens du terme !
 $14411286553593* Enfin les composants d'entrée et sortie ont maintenant une nouvelle patte. Met cette patte à [ON] pour lire depuis l'entrée ou copier vers la sortie.
 $14041158687959*
 Les [color=#c54d5e]Sources[/color] et les [color=#e49f44]destinations[/color] peuvent être un des 6 registres, nous les appellerons REG 0 jusqu'à REG 5. 
@@ -1150,7 +1150,7 @@ $31261866779127* Réduit le délai en réalisant les lectures et écritures sur 
 === components/DotMatrixDisplay ===
 
 $18651725958642* Affichage par matrice de points 6x8
-$71512568789377* Ecran graphique 6x8
+$71512568789377 Écran graphique 6x8
 
 
 === components/BOR ===
@@ -1169,17 +1169,17 @@ $50013003040535* Rotation à droite des bits de l'entrée
 
 $19351773688761* Cycles restants : {ticks_left}  Entrée : {input}
 $16810715868480* [center]Calcule le modulo 4 de l'entrée.[/center]
-$17375862136921*
-La durée de notre semaine est de 4 jours. On appelle les jours Jour Zéro, Jour Un, Jour Deux et Jour Trois. J'ai entendu que les humains ne savaient pas compter les jours corrêctement?
+$17375862136921
+La durée de notre semaine est de 4 jours. On appelle les jours Jour Zéro, Jour Un, Jour Deux et Jour Trois. J'ai entendu que les humains ne savaient pas compter les jours correctement?
 
 Ça me surprends pas vraiment.
-$65431688078892*
+$65431688078892
 Dans ce niveau on te donne un nombre n en entrée et tu dois retourner comme résultat ce nombre modulo 4.
 
 La difficulté est que tu as seulement {ticks_per_test} cycles pour sortir le résultat attendu.
 
 Attention, tu n'as pas besoin de modifier le circuit, tu dois trouver l'astuce pour calculer rapidement le modulo 4.
-Regardes [color=#e63e5b][url=masking_time]l'indice[/url][/color] si tu es coincé.
+Regarde [color=#e63e5b][url=masking_time]l'indice[/url][/color] si tu es coincé.
 $81055582534899* Enfin le nouvel an arrive et nous te demandons de calculer le jour de la semaine de naissance de tout le monde. Nous te donnerons la date et tout ce que tu as à faire c'est de retourner le jour de la semaine en {ticks_per_test} cycles maximum.
 
 
@@ -1203,7 +1203,7 @@ $41574334638147* Commutateur (Switch)
 
 === misc/FileInput ===
 
-$28866575833369* Lit des octets depuis votre disque dur
+$28866575833369 Lit des octets depuis ton disque dur
 $34159012148766* Chargeur de fichier
 
 
@@ -1251,7 +1251,7 @@ $30351143139905* Arrêt (Halt)
 
 NOTE: This is the default message of the Halt component
 $54106972240596* Arrêt (Halt)
-$62990744955549* Arrête l'exécution avec un message personalisé
+$62990744955549 Arrête l'exécution avec un message personnalisé
 
 
 === trans/options_setting_click_to_pan ===
@@ -1324,13 +1324,13 @@ $94375716460090* Décodeur 3 bits
 
 === components/Counter16 ===
 
-$37313834107391* S'incrémente à chaque cycle hors réinitialisaiton
+$37313834107391 S'incrémente à chaque cycle hors réinitialisaition
 $49104925799943* Compteur 16 bits 
 
 
 === components/Equal32 ===
 
-$32710942647020* Egalité
+$32710942647020 Égalité
 $32433537137277* Détermine si les deux entrées sont égales
 
 
@@ -1426,7 +1426,7 @@ $14788981567936* Crée une porte NAND avec 3 entrées.
 
 === components/MemoryProbeBit ===
 
-$13846578075327* Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programme
+$13846578075327 Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 $25103579211328* Sonde Mémoire (bit)
 
 
@@ -1500,7 +1500,7 @@ $17721051281188* Réinitialisation aux Paramètres d'Usine
 
 === components/Equal16 ===
 
-$97954874255512* Test d'Egalité entre entrées
+$97954874255512 Test d'Égalité entre entrées
 $33633607925660* Egal
 
 
@@ -1873,7 +1873,7 @@ Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
 
 Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoie [ON] vers la sortie correspondante.
 $15105859227432* COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12671132029272* Votre circuit à été sauvegardé dans l'atelier de composants.
+$12671132029272 Ton circuit à été sauvegardé dans l'atelier de composants.
 $12068329066372* [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLETE, IL FAUT CLIQUER SUR L'ICONE DE SAUVEGARDE ET CREER UNE NOUVELLE VERSION DE CE CIRCUIT[/b]
 $11382827588408* Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
 $12976424717611* Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
@@ -2076,7 +2076,7 @@ $12903183841172*
 
 === trans/map_arithmetic ===
 
-$51337598329530* ARITHMETIQUE
+$51337598329530 ARITHMÉTIQUE
 
 
 === trans/rotate ===
@@ -2315,10 +2315,10 @@ NOTE: hint for odd number
 $68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
 
 NOTE: Hint for the maze
-$36837749971886*
+$36837749971886
 En suivant toujours le mur gauche (ou droit) du labyrinthe tu es sûr d'atteindre la sortie au bout d'un moment.
 
-Le pseudo code pour cet algorithme est à peu près :
+Le pseudo-code pour cet algorithme est à peu près :
  Avance d'un pas
  Tourne à gauche
  Tourne à droite tant qu'il y a un mur en face
@@ -2489,29 +2489,29 @@ L'instruction [color=#e49f44]ret[/color] doit réaliser les actions suivantes :
  [i]- [color=#e49f44]DÉPILER[/color] l'adresse de retour de la pile et sauter à cette adresse[/i]
 
 Tu peux échanger de l'information avec et depuis une fonction en écrivant normalement les données dans des registres. Rappelle-toi quels registres sont écrasés par une fonction avant de l'appeler.
-$19416009887091*
+$19416009887091
 Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. On appele cette méthode "l'appel" d'une fonction et le retour au programme le "retour" de la fonction.
 
-Mais pour que l'on puisse utiliser ce morceau de code plusieurs fois, on doit pouvoir sauter à des endroits différents lors du retour, dépendant de l'endroit dans le programme où on a appelé la fonction.
+Mais pour que l'on puisse utiliser ce morceau de code plusieurs fois, on doit pouvoir sauter à des endroits différents lors du retour, dépendant de l'endroit dans le programme où l'on a appelé la fonction.
 
-On pourrait sauvegarder la valeur du compteur dans un registre avant de sauter dans la foncton et utiliser cette valeur pour en resortir. Cependant, en faisant comme ça on pourrait écrire par dessus la valeur du registre si on appele une fonction depuis une autre fonction et on ne pourrait jamais revenir au programme principal.
+On pourrait sauvegarder la valeur du compteur dans un registre avant de sauter dans la fonction et utiliser cette valeur pour en ressortir. Cependant, en faisant comme ça on pourrait écrire par dessus la valeur du registre si on appele une fonction depuis une autre fonction et on ne pourrait jamais revenir au programme principal.
 
 Par exemple:
-Disons que la fonction A appele la fonction B qui appele a son tour la fonction C. Quand on voudra revenir en arrière on aura besoin que de l'adresse de retour de la fonction B et une fois dans B on aura besoin que de l'adresse de retour de la fonction A. En général, indépendement du nombre d'appels de fonctions, la première adresse stocké sera toujours utilisé en dernier. Magiquement, c'est exactement le comportement du stack.
+Disons que la fonction A appelle la fonction B qui appelle a son tour la fonction C. Quand on voudra revenir en arrière on aura besoin que de l'adresse de retour de la fonction B et une fois dans B on aura besoin que de l'adresse de retour de la fonction A. En général, indépendamment du nombre d'appels de fonctions, la première adresse stocké sera toujours utilisé en dernier. Magiquement, c'est exactement le comportement du stack.
 $19369640789869* Les coupes budgétaires ont conduit à réduire les salaires, et maintenant les assistants du labo sont en grève. Tu vas devoir t'autoévaluer dans ce test. Cela nous permettra d'évaluer ton niveau d'honnêteté et de maturité.
 $15463931654475* [center]Ajoute les instructions "call" et "ret"[/center]
 
 
 === levels/odd_ticks ===
 
-$18510295620397* Met la sortie à [OFF] pendant les cycles paires et [ON] pendant les cycles paires.
+$18510295620397 Met la sortie à [OFF] pendant les cycles impairs et [ON] pendant les cycles pairs.
 $16987046679863* Tu as appris précédemment que nous n'acceptons pas les dépendances circulaires. Il existe cependant une exception à la règle que tu vas voir maintenant.
-$16037516781370*
-Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaire. 
+$16037516781370
+Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaires. 
   
   [img]dialogue/delay\_buffer.png[/img]
-$17588119878416*
-Le ligne de délais a le droit de dépendre de sa sortie, car son entrée ne va pas influencer le reste du circuit jusqu'au prochain cycle.
+$17588119878416
+Le ligne à retard a le droit de dépendre de sa sortie, car son entrée ne va pas influencer le reste du circuit jusqu'au prochain cycle.
   
 [img]dialogue/delay\_buffer.png[/img]
 
@@ -2519,7 +2519,7 @@ Le ligne de délais a le droit de dépendre de sa sortie, car son entrée ne va 
 === misc/ProbeWireBit ===
 
 $49521764791439* Sonde de fil (bit)
-$15206117280094* Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programme
+$15206117280094 Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 
 
 === components/Adder Simple ===
@@ -2570,15 +2570,15 @@ $58334563411624* Annuler
 === levels/push_pop ===
 
 $78804623186243* SORTIE
-$49526452710191* NE PAS DEPILER
+$49526452710191 NE PAS DÉPILER
 $58050047963238* VALEUR
 $19245209470436* Créer une pile
-$12227209887733* A chaque cycle les entrées indiqueront soit EMPILER soit DÉPILER. Si c'est EMPILER, stocke la valeur en haut de la pile. Quand c'est DEPILER retire cette valeur de la pile et envoie-la en sortie.
+$12227209887733 A chaque cycle les entrées indiqueront soit EMPILER soit DÉPILER. Si c'est EMPILER, stocke la valeur en haut de la pile. Quand c'est DÉPILER retire cette valeur de la pile et envoie-la en sortie.
 $15662660252584* Ne rien faire
 $62469306234943* NE PAS EMPILER
 $65188797398656* EMPILER {value} sur la pile
 $18761197388580* Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées o˘ les usagers peuvent called poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DÉPILER[/color]). ¿ toi d'implémenter ce nouveau système.
-$46948857059388* DEPILER valeur {value} de la pile
+$46948857059388 DÉPILER valeur {value} de la pile
 
 
 === levels/The Product of Nibbles ===
@@ -2664,8 +2664,8 @@ $62736827510023* S'incrémente à chaque cycle jusqu'à réinitialisation
 $11910674853271*
 La porte sécurisée de la réserve est défaillante et elle enferme régulièrement notre vieil homme de ménage.
 La porte n'arrête pas de changer le code d'accès, nous avons besoin d'un programme qui peut le récupérer quand c'est nécessaire.
-$17462419719036*
-La façon la plus simple de trouver le code serait d'essayer toutes les combinaisons juqu'à ce que tu trouves la bonne.
+$17462419719036
+La façon la plus simple de trouver le code serait d'essayer toutes les combinaisons jusqu'à ce que tu trouves la bonne.
 Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop grand, il doit être possible d'en tirer profit.
 $11183892008673* Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop grand et 0 sinon.
 
@@ -2742,7 +2742,7 @@ $91053300263019* Inversion bit à bit d'un mot de 16 bits
 
 === misc/factory ===
 
-$53123649343022* L'atelier de composants
+$53123649343022 Atelier de composants
 
 
 === components/Ror16 ===
@@ -2788,8 +2788,8 @@ $10081371413873* Registre
 
 === levels/byte_adder ===
 
-$16888130664370*
-Si le résultat prends plus que 8 bits de place, met la sortie retenue à [ON] (tu peux l'utiliser comme un 9ème bit)
+$16888130664370
+Si le résultat prend plus que 8 bits de place, met la sortie retenue à [ON] (tu peux l'utiliser comme un 9ème bit)
 
 Il y a aussi une entrée retenue, elle sera utile pour additionner des octets à la suite. On additionne la retenue en entrée au résultat (0 [OFF] ou 1 [ON]).
 
@@ -2811,10 +2811,10 @@ $21257226547838* Multiplexeur 32 bits (Mux)
 
 === levels/saving_gracefully ===
 
-$12474728041023*
+$12474728041023
 La Ligne à Retard nous permet d'utiliser une valeur un cycle plus tard.
 
-Nous devons réaliser un composant qui nous permet d'utiliser une valeur dans le futur, quelque soit le nombre de cycles plus tard.
+Nous devons réaliser un composant qui nous permet d'utiliser une valeur dans le futur, quel que soit le nombre de cycles plus tard.
 Nous appellerons cette valeur [color=#e49f44]sauvegarde[/color].
 $13045361823397* NE PAS SAUVEGARDER
 $13740696609075*
@@ -2861,7 +2861,7 @@ $98135524286922* Taille de la police du code
 
 === components/Counter ===
 
-$51446864816252* S'incrémente à chaque cycle hors réinitialisaiton
+$51446864816252 S'incrémente à chaque cycle hors réinitialisaition
 $67910883947749* Compteur 8 bits
 
 
@@ -2884,8 +2884,8 @@ $57868504368581* Lit l'entrée des niveaux (CHECKME)
 
 === levels/unseen_fruit ===
 
-$13023474026617*
-Les fruits sont la découverte la plus remarquable sur votre planète. Ils sont très savoureux.
+$13023474026617
+Les fruits sont la découverte la plus remarquable sur ta planète. Ils sont très savoureux.
 
 C'est pourquoi nous organisons une dégustation de fruits dans cette cantine.
 $14259900563789* Surveille régulièrement le tapis roulant sur lequel les fruits arrivent. Si tu vois le même type de fruit pour la seconde fois, active et tourne le panneau de contrôle.
@@ -2921,7 +2921,7 @@ $18234235689107* Si VALEUR ≥ 0 sortie [img]dialogue/on.png[/img]
 $12429396872036* Quelquesoit la VALEUR output [img]dialogue/off.png[/img]
 $19014698800906* Si VALEUR = 0 sortie [img]dialogue/on.png[/img]
 $13680487623452* Si VALEUR ≤ 0 sortie [img]dialogue/on.png[/img]
-$12706881725738* Votre circuit a été enregistré dans l'atelier de composants.
+$12706881725738 Ton circuit a été enregistré dans l'atelier de composants.
 
 
 === misc/factory_back_inner ===
@@ -2958,7 +2958,7 @@ $24607331341411* Inversion bit à bit d'un mot de 32 bits
 
 === components/MemoryProbe ===
 
-$46948613505134* Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programe
+$46948613505134 Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 $44867305035474* Sonde Mémoire
 
 
@@ -2975,7 +2975,7 @@ $18749833316380* Actif
 === misc/StateProbe ===
 
 $54427436420428* Sonde de fil
-$15969687819995* Affiche une valeur sur votre composant personnalisé ou dans l'éditeur de programme
+$15969687819995 Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 
 
 === trans/map_working_computer ===
@@ -2985,10 +2985,10 @@ $38843517090942* ORDINATEUR FONCTIONNEL
 
 === levels/sr_latch ===
 
-$11150103897185*
+$11150103897185
 Dans ce niveau, les composants peuvent dépendre d'eux-mêmes ou former des boucles contenant 2 composants. Malgré ces dépendances certains de ces circuits ont des sorties stables, au moins pour certaines valeurs en entrée.
 
-Le circuit que l'on te demande de construire ici a une dépendance circulaire. Le circuit a aussi 2 "états stables" pour la plupart des entrées. Un état stable signifie ici que les sorties de chaque composant sont en accord avec leurs entrées. Par exemple, une porte OR avec une entrée déconnectée et l'autre connectée à sa propre sortie est stable. Si la sortie est [OFF], les 2 entrées sont [OFF], ce qui est acceptable pour la porte OR. Si la sortie est [ON] alors l'une des entrée l'est aussi. Par contre, une porte NOT connectée à sa propre entrée n'est pas stable. Si la sortie est [ON], alors l'entrée l'est aussi. Cela fait que la porte NOT essaie de changer sa sortie en [OFF]. Le circuit va osciller entre ces deux états indéfiniment et il n'est donc pas stable.
+Le circuit que l'on te demande de construire ici a une dépendance circulaire. Le circuit a aussi 2 "états stables" pour la plupart des entrées. Un état stable signifie ici que les sorties de chaque composant sont en accord avec leurs entrées. Par exemple, une porte OR avec une entrée déconnectée et l'autre connectée à sa propre sortie est stable. Si la sortie est [OFF], les 2 entrées sont [OFF], ce qui est acceptable pour la porte OR. Si la sortie est [ON] alors l'une des entrées l'est aussi. Par contre, une porte NOT connectée à sa propre entrée n'est pas stable. Si la sortie est [ON], alors l'entrée l'est aussi. Cela fait que la porte NOT essaie de changer sa sortie en [OFF]. Le circuit va osciller entre ces deux états indéfiniment et il n'est donc pas stable.
 $18165461234561* Les lignes à retard sont simples à comprendre et peuvent être utilisées pour construire n'importe quelle architecture d'ordinateur. Pourtant le matériel moderne ne les utilise plus comme base des mémoires.
 $15754153332116*
 Ce niveau présente le concept de bascule. Ce dispositif n'est pas utilisé ailleurs dans le jeu. Néanmoins ce niveau existe pour une raison d'exhaustivité.
@@ -3096,7 +3096,7 @@ $18769284297247* Créé un nouveau schéma et ajoute un programme avec une sorti
 
 === trans/options_resubmit ===
 
-$13328644005279* Soumettre à nouveau
+$13328644005279 Réessayer
 
 
 === components/Output8zLevel ===
