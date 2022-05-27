@@ -20,13 +20,6 @@ $95896157427528* ON
 $62744038163781* OK
 
 
-=== ui/abbreviated_units ===
-
-
-NOTE: Instead of writing 5839000, the number turns into 5.8M
-$22896492410578 10⁶
-
-
 === nim/backend_lib/level_list ===
 
 $15420972347773* RAM
