@@ -4,6 +4,11 @@ $50859914201083* Bitwise NAND two values
 $93314093190526* 8 Bit NAND
 
 
+=== trans/map_available ===
+
+$81707212583931* Available
+
+
 === components/Add64 ===
 
 $14174811828377* Adds two inputs
@@ -73,6 +78,11 @@ $61925612221077* 16 Bit Delay Line
 $65706144678496* Outputs this tick's input, next tick
 
 
+=== trans/map_programming ===
+
+$44937904689376* PROGRAMMING
+
+
 === components/LessU64 ===
 
 $13018528868948* Less (unsigned)
@@ -109,6 +119,12 @@ $34603983706314* Checks if the two inputs are equal
 $82876546747608* Equal
 
 
+=== components/IndexByte ===
+
+$27264669944539* Byte Indexer
+$54699455184164* Extracts a byte from a wire
+
+
 === components/64Ram ===
 
 $78790416494254* RAM
@@ -126,6 +142,11 @@ $19705753304166* 8 bit memory
 $68946767861738* 8 Bit Register
 
 
+=== trans/map_functions ===
+
+$83960548773205* FUNCTIONS
+
+
 === levels/The Product of Nibbles ===
 
 $13549246864135* Bit 0
@@ -134,7 +155,7 @@ $10274387271390* Bit 0
 
 === components/Input 1 Byte ===
 
-$40943344093513* 8 bit input
+$40943344093513* Input
 
 
 === components/LessI64 ===
@@ -154,15 +175,9 @@ $73502755965496* Less (unsigned)
 $87591753278764* Reg {nr}
 
 
-=== ui/translators/tick ===
+=== trans/map_complete ===
 
-$92150881431937* Tick
-
-
-=== components/Shl16 ===
-
-$79406691850426* Shift left
-$34287811246049* Shifts the bits of an input left
+$81337533438394* Complete
 
 
 === components/Program1Red ===
@@ -182,6 +197,12 @@ $84696693690500* K
 
 NOTE: Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* B
+
+
+=== components/Shl16 ===
+
+$79406691850426* Shift left
+$34287811246049* Shifts the bits of an input left
 
 
 === nim/backend_lib/level_list ===
@@ -212,7 +233,12 @@ $49583010717958* Rotates the bits of an input right
 === components/Output32z ===
 
 $73681609562628* Only outputs if the switch pin is [ON]
-$92749186427039* 32 bit switched Output
+$92749186427039* Switched Output
+
+
+=== trans/map_memory ===
+
+$58330421958143* MEMORY
 
 
 === components/Rol8 ===
@@ -250,6 +276,11 @@ $90614106399129*
 [/table]
 
 
+=== trans/tick ===
+
+$92150881431937* Tick
+
+
 === components/1_decoder ===
 
 $26685462633615* Toggles between two outputs
@@ -259,7 +290,7 @@ $98250587600120* 1 Bit decoder
 === components/XOR ===
 
 $86856280609387*
-[ON] when nputs are different
+[ON] when inputs are different
 [table=5]
 [cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
@@ -273,10 +304,21 @@ $54832952840086* XOR
 $58912167455465* AND
 
 
+=== components/IndexBit ===
+
+$89611629299917* Bit Indexer
+$84431924133490* Extracts a single bit from a wire
+
+
 === components/Not16 ===
 
 $17394768116288* 16 Bit NOT
 $91053300263019* Bitwise negates 16 bits
+
+
+=== trans/map_locked ===
+
+$95146987030704* Locked
 
 
 === components/Ror16 ===
@@ -330,6 +372,11 @@ $31261866779127* Lowers delay by having save and load take several ticks to comp
 
 $18651725958642* 6x8 Dot Matrix Display
 $71512568789377* 6x8 pixel display
+
+
+=== trans/map_cpu_architecture ===
+
+$95559333192525* CPU ARCHITECTURE
 
 
 === components/Ror32 ===
@@ -400,7 +447,7 @@ $88430124157796* Shift right
 === misc/FileInput ===
 
 $28866575833369* Reads bytes from your hard disk
-$34159012148766* File Rom
+$34159012148766* File Loader
 
 
 === components/Mux64 ===
@@ -433,10 +480,9 @@ $20291717268875* Shifts the bits of an input right
 $31674686871821* Shift right
 
 
-=== components/Screen ===
+=== trans/map_keys_to_pan ===
 
-$12771040946773* Displays the visuals that accompany certain levels
-$50037736094411* Screen
+$26276191141664* Use keyboard to pan
 
 
 === components/Xnor32 ===
@@ -455,6 +501,12 @@ $27510848535619*
 [cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
 [/table]
 $83375115196253* NOR
+
+
+=== components/Screen ===
+
+$12771040946773* Displays the visuals that accompany certain levels
+$50037736094411* Screen
 
 
 === levels/circular_dependency ===
@@ -514,6 +566,11 @@ $95836352586032* Can circumvent certain circular dependency errors
 $34912798641933* 1 bit bidirectional pin
 
 
+=== trans/map_arithmetic ===
+
+$51337598329530* ARITHMETIC
+
+
 === components/Mul32 ===
 
 $98530670555665* Multiply
@@ -543,7 +600,7 @@ $35105566244017* Can circumvent certain circular dependency errors
 
 === components/Output16z ===
 
-$78873885833823* 16 bit switched Output
+$78873885833823* Switched Output
 $54278394672948* Only outputs if the switch pin is [ON]
 
 
@@ -564,9 +621,19 @@ $68631919890554* Multiplies two inputs
 $68054407020318* Instructions
 
 
+=== trans/map_assembly_challenges ===
+
+$31733554125775* ASSEMBLY CHALLENGES
+
+
 === components/Input1_1B ===
 
 $57868504368581* Loads the input from levels
+
+
+=== trans/architecture_2 ===
+
+$38100016313511* CPU ARCHITECTURE 2
 
 
 === components/NetworkClient ===
@@ -575,10 +642,9 @@ $44510554000571* Network
 $90462653419289* Handles network connections
 
 
-=== components/Output8z ===
+=== trans/map_basic_logic ===
 
-$16915419621070* 8 bit switched Output
-$58449766432492* Only outputs if the switch pin is [ON]
+$75078723880086* BASIC LOGIC
 
 
 === components/Counter32 ===
@@ -635,10 +701,10 @@ $37313834107391* Increments each tick, unless overwritten
 $49104925799943* 16 Bit Counter
 
 
-=== components/Add16 ===
+=== components/Output8z ===
 
-$28092601427278* Adds two inputs
-$30820974870562* Add
+$16915419621070* Switched Output
+$58449766432492* Only outputs if the switch pin is [ON]
 
 
 === components/Not32 ===
@@ -670,6 +736,12 @@ $46948613505134* Display a value on your custom component or in the program edit
 $44867305035474* Memory Probe
 
 
+=== components/Add16 ===
+
+$28092601427278* Adds two inputs
+$30820974870562* Add
+
+
 === components/Or32 ===
 
 $92752025948920* Bitwise OR two values
@@ -680,12 +752,6 @@ $40180779432911* 32 Bit OR
 
 $59129788113517* Toggles between eight outputs
 $94375716460090* 3 Bit decoder
-
-
-=== components/Xnor8 ===
-
-$31985293401482* 8 Bit XNOR
-$45789912406647* Bitwise XNOR two values
 
 
 === components/Byte Expander ===
@@ -712,16 +778,15 @@ $90978982016052* Splits 32 bits into 4 byts
 $24096666569346* 32 bit Splitter
 
 
-=== components/Output64z ===
+=== trans/map_working_computer ===
 
-$61656790122480* 64 bit switched Output
-$42506906257154* Only outputs if the switch pin is [ON]
+$38843517090942* WORKING COMPUTER
 
 
-=== components/ByteShl ===
+=== components/Xnor8 ===
 
-$74488427658653* Shift left
-$66482114876737* Shifts the bits of an input left
+$31985293401482* 8 Bit XNOR
+$45789912406647* Bitwise XNOR two values
 
 
 === components/Shl32 ===
@@ -751,6 +816,12 @@ $76480303942112* Programmable memory component
 
 $79436020115192* Fast but high gate cost memory
 $12924829814634* Fast RAM
+
+
+=== components/Output64z ===
+
+$61656790122480* Switched Output
+$42506906257154* Only outputs if the switch pin is [ON]
 
 
 === components/ByteEqual ===
@@ -793,6 +864,12 @@ $99461037008796* 64 bit memory
 
 $92674917729864* 16 bit Splitter
 $28271182652741* Splits 16 bits into 2 byts
+
+
+=== components/ByteShl ===
+
+$74488427658653* Shift left
+$66482114876737* Shifts the bits of an input left
 
 
 === components/SRLatch ===
