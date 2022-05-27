@@ -1,8 +1,3 @@
-=== trans/manual_header ===
-
-$10757271456963 Sommaire du manuel
-
-
 === levels/ram_block ===
 
 $16196915566111* 0
@@ -15,19 +10,31 @@ $12933801309767* A
 $16878300327380* Instruction
 
 
+=== trans/manual_edit_instructions ===
+
+$86365051641280* Edit instruactions
+
+
 === components/ON ===
 
 $95896157427528* ON
 
 
-=== trans/manual_truth_tables ===
+=== trans/manual_terminology ===
 
-$75695254533352 Tables de vérité
+$13311390759928* Terminology
 
 
 === levels/negative_numbers ===
 
 $62744038163781* OK
+
+
+=== nim/backend_lib/level_list ===
+
+$15420972347773* RAM
+$26705128002562* Conditions
+$70993791338383* XOR
 
 
 === main_scripts/leg_level ===
@@ -40,19 +47,9 @@ $71204580217527* NOTi
 $38681417496680* ARGUMENT 1
 
 
-=== trans/manual_console ===
+=== trans/manual_instructions ===
 
-$73523750891893 Terminal
-
-
-=== trans/turing_complete ===
-
-$35911376069529 Turing complet
-
-
-=== trans/manual_computer_concepts ===
-
-$60892983318818 Lexique informatique
+$90323246286028* Instructions
 
 
 === components/Off ===
@@ -60,24 +57,14 @@ $60892983318818 Lexique informatique
 $61860786587357* OFF
 
 
-=== trans/manual_circular_dependency ===
+=== components/NOT ===
 
-$40263928358112 Dépendance circulaire
+$34453052824732* NOT
 
 
 === levels/circular_dependency ===
 
 $16336401898647* Test 1/2
-
-
-=== trans/manual_hard_disk ===
-
-$45865138134248 Disque dur
-
-
-=== trans/manual_RGB_color ===
-
-$62337044104456 Couleur RVB
 
 
 === components/NOR ===
@@ -95,109 +82,16 @@ $71130919681688* NAND
 $78806697204524* Delay
 
 
-=== trans/manual_the_robot ===
-
-$92896462984546 Le robot
-
-
-=== trans/manual_component_factory ===
-
-$35460636622618  Atelier de composant
-
-
-=== trans/manual_short_circuit ===
-
-$41209541005460 Court-circuit
-
-
-=== misc/specifications ===
-
-$68054407020318 Instructions
-
-
-=== trans/manual_universal_gates ===
-
-$28345532918560 Portes universelles
-
-
-=== trans/manual_matrix_display ===
-
-$86092436010494 Affichage par matrice de points
-
-
-=== levels/The Product of Nibbles ===
-
-$13549246864135* Bit 0
-$10274387271390* Bit 0
-
-
-=== trans/manual_bytes ===
-
-$46223559629673* Bytes
-
-
-=== trans/manual_binary ===
-
-$19098578855427 Binaire
-
-
-=== trans/manual_edit_instructions ===
-
-$86365051641280* Edit instruactions
-
-
-=== trans/manual_terminology ===
-
-$13311390759928* Terminologie
-
-
-=== nim/backend_lib/level_list ===
-
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
-
-
-=== trans/manual_instructions ===
-
-$90323246286028 Instructions
-
-
-=== components/NOT ===
-
-$34453052824732* NOT
-
-
-=== trans/manual_ASCII_encoding ===
-
-$30404865580119 Code ASCII
-
-
-=== trans/manual_components ===
-
-$40288888375581 Composants
-
-
 === components/ByteEqual ===
 
 $35668435514829* Checks if the two inputs are equal
 $39369982838671* Equal
 
 
-=== trans/manual_program ===
-
-$91120798735036 Programme
-
-
 === components/Bidirectional64 ===
 
 $82412839066570* 64 bit bidirectional pin
 $24932613021646* Can circumvent certain circular dependency errors
-
-
-=== trans/manual_simulator ===
-
-$19932404521621 Simulateur
 
 
 === components/SRLatch ===
@@ -215,23 +109,19 @@ $94079327237795* XNOR
 $54832952840086* XOR
 
 
-=== trans/negative_numbers ===
+=== misc/specifications ===
 
-$57872971841486 Nombres négatifs
-
-
-=== trans/manual_network ===
-
-$67416967652082 Réseau
+$68054407020318* Instructions
 
 
-=== trans/manual_assembly ===
+=== levels/The Product of Nibbles ===
 
-$14434902453525 Assembleur
+$13549246864135* Bit 0
+$10274387271390* Bit 0
 
 
-=== trans/manual_ram ===
+=== trans/manual_bytes ===
 
-$61854681801183 RAM (mémoire vive)
+$46223559629673* Bytes
 
 

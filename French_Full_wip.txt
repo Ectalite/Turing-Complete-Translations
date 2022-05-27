@@ -108,6 +108,11 @@ $65405398199118* Mémoire 32 bits
 $22031255978461* Registre 32 bits
 
 
+=== trans/manual_the_robot ===
+
+$92896462984546* Le robot
+
+
 === components/64Ram ===
 
 $63410290483563* Nombre réduit de portes mais mémoire lente
@@ -345,6 +350,11 @@ En pratique cela signifie que la [color=#e49f44]lecture prend {ticks} cycles[/co
 $16586225094516* ENTREES
 
 
+=== trans/manual_console ===
+
+$73523750891893* Terminal
+
+
 === components/OutputCounter ===
 
 $52247325526438* Compteur
@@ -467,6 +477,11 @@ $78873885833823* Sortie commutée
 $54278394672948* Sortie activée seulement si la patte d'activation est [ON]
 
 
+=== trans/manual_short_circuit ===
+
+$41209541005460* Court-circuit
+
+
 === components/ByteMul ===
 
 $56549841656852* Multiplier
@@ -500,7 +515,7 @@ $38100016313511* ARCHITECTURE PROCESSEUR 2
 
 === misc/component_factory_toggle ===
 
-$55499239951858 Atelier de composants
+$55499239951858* L'atelier de composants
 
 
 === trans/map_basic_logic ===
@@ -832,6 +847,11 @@ $17208777467974* NOR bit à bit de 2 entrées
 $72509242083648* NOR 64 bits
 
 
+=== trans/manual_RGB_color ===
+
+$62337044104456* Couleur RVB
+
+
 === misc/instruction_expand ===
 
 $44690074039467* Activer/Désactiver la définition des règles
@@ -870,6 +890,11 @@ $54699455184164* Extrait un octet du fil
 
 $31038378395810* Patte bidirectionnelle 16 bits
 $99604485981015* Permet de contourner certaines erreurs de dépendance cyclique
+
+
+=== trans/manual_component_factory ===
+
+$35460636622618* Atelier de composant
 
 
 === components/Register ===
@@ -922,6 +947,11 @@ déplacer(numdisque, source, destination, réserve)[/color][/code]
 === trans/map_functions ===
 
 $83960548773205* FONCTIONS
+
+
+=== trans/manual_universal_gates ===
+
+$28345532918560* Portes universelles
 
 
 === components/Input 1 Byte ===
@@ -986,6 +1016,11 @@ $19686277478479* Le programme envoie toujours la première instruction. As tu co
 
 $43920264894591* Rotation à droite
 $49583010717958* Rotation à droite des bits de l'entrée
+
+
+=== trans/manual_components ===
+
+$40288888375581* Composants
 
 
 === levels/Arithmetic Engine ===
@@ -1189,6 +1224,11 @@ $66743357915699* Terminal
 $16105755937680* Terminal d'affichage textuel 80x24
 
 
+=== trans/turing_complete ===
+
+$35911376069529* Turing complet
+
+
 === components/ByteLessI ===
 
 $52765625016236* Détermine si une entrée est inférieure à l'autre
@@ -1211,6 +1251,11 @@ $34159012148766* Chargeur de fichier
 
 $75600169624828* Inférieur (signé)
 $73697238171042* Détermine si une entrée est inférieure à l'autre
+
+
+=== trans/manual_circular_dependency ===
+
+$40263928358112* Dépendance circulaire
 
 
 === components/Output32 ===
@@ -1278,6 +1323,11 @@ $38773676077206* Éditer les instructions
 === trans/options_comment_wire ===
 
 $96449970906640* Commentaire de fil
+
+
+=== trans/manual_binary ===
+
+$19098578855427* Binaire
 
 
 === components/NetworkClient ===
@@ -1388,6 +1438,11 @@ $56916384895438* Menu Général
 $11589029892097* XOR les bits des entrées {a} et {b}
 $12758156517177* En utilisant les instructions implémentées par ton ordinateur, lit deux fois l'entrée et effectue un XOR sur les deux valeurs
 $16047615798435* [center]Lit deux fois l'entrée et effectue un XOR sur les bits des deux entrées[/center]
+
+
+=== trans/manual_simulator ===
+
+$19932404521621* Simulateur
 
 
 === components/Neg32 ===
@@ -1731,7 +1786,7 @@ $16072814175447* Programmer du matériel bugué est très frustrant. Il est pén
 
 === ui/state_ui/title_screen/play ===
 
-$66967233942803 Campagne
+$66967233942803* Campagne
 
 
 === components/Mem Unit ===
@@ -1768,6 +1823,11 @@ $78515694621006* Déplacer la vue vers la gauche
 === trans/options_pan_right ===
 
 $33884219481037* Déplacer la vue vers la droite
+
+
+=== trans/manual_ASCII_encoding ===
+
+$30404865580119* Code ASCII
 
 
 === trans/optinos_save_location ===
@@ -1862,6 +1922,11 @@ $58912167455465* AND (ET)
 $95146987030704* Verrouillé
 
 
+=== trans/manual_assembly ===
+
+$14434902453525* Assembleur
+
+
 === levels/decoder ===
 
 $16133643476631* Le circuit que tu as créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que "l'Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
@@ -1883,6 +1948,11 @@ $12068329066372* [b]ATTENTION: CETTE VERSION DU CIRCUIT EST OBSOLETE, IL FAUT CL
 $11382827588408* Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
 $12976424717611* Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $12532951884542* Valeur immédiate
+
+
+=== trans/manual_truth_tables ===
+
+$75695254533352* Tables de vérité
 
 
 === trans/options_effects_volume ===
@@ -1994,6 +2064,11 @@ $66892629981737* Multiplexeur 64 bits (Mux)
 $19141523477461*
 Toutes les solutions des niveaux, les composants personnalisés et les architectures seront supprimées. Cela ne peut être annulé, es tu sûr de vouloir le faire ?
 (Le jeu sera fermé, il sera réinitialisé au prochain démarrage)
+
+
+=== trans/manual_hard_disk ===
+
+$45865138134248* Disque dur
 
 
 === components/NOR ===
@@ -2137,6 +2212,11 @@ La solution n'obtient pas de score.
 === trans/options_music_volume ===
 
 $93981778736076* Volume de la Musique
+
+
+=== trans/manual_matrix_display ===
+
+$86092436010494* Affichage par matrice de points
 
 
 === component_panels/Counter ===
@@ -2523,6 +2603,11 @@ $33973952772642* Ajouter
 $98429814030509* Ajoute 2 entrées
 
 
+=== trans/manual_computer_concepts ===
+
+$60892983318818* Lexique informatique
+
+
 === components/ByteShr ===
 
 $89595863403484* Décalage à droite
@@ -2743,10 +2828,25 @@ $91053300263019* Inversion bit à bit d'un mot de 16 bits
 $53123649343022* Atelier de composants
 
 
+=== trans/manual_network ===
+
+$67416967652082* Réseau
+
+
+=== trans/manual_ram ===
+
+$61854681801183* RAM (mémoire vive)
+
+
 === components/Ror16 ===
 
 $13970397213910* Rotation à droite des bits de l'entrée
 $90115282457191* Rotation à droite
+
+
+=== trans/manual_header ===
+
+$10757271456963* Sommaire du manuel
 
 
 === misc/score_sync ===
@@ -3010,6 +3110,11 @@ $12924829814634* RAM rapide
 $19636386696963* Réalise un circuit qui applique XOR bit à bit sur deux octets.
 
 
+=== trans/manual_program ===
+
+$91120798735036* Programme
+
+
 === levels/Immediate Values ===
 
 $64348543296709* Le point d'Observation {value} doit pointer sur la sortie
@@ -3095,6 +3200,11 @@ $18769284297247* Créé un nouveau schéma et ajoute un programme avec une sorti
 === trans/options_resubmit ===
 
 $13328644005279* Réessayer
+
+
+=== trans/negative_numbers ===
+
+$57872971841486* Nombres négatifs
 
 
 === components/Output8zLevel ===
