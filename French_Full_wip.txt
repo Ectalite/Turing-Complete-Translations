@@ -2644,10 +2644,10 @@ $81337533438394* Complet
 
 
 NOTE: Instead of writing 5839, the number turns into 5.8K
-$84696693690500* k
+$84696693690500 x10³
 
 NOTE: Instead of writing 5839000000, the number turns into 5.8B
-$71072134093858* G
+$71072134093858 x10⁹
 
 
 === components/RegisterRedPlus ===
