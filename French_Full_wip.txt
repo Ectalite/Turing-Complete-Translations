@@ -277,7 +277,7 @@ $18518173140953* Je te recommande d'ajouter [color=#e49f44]décaler gauche[/colo
 
 === main_menu/sandbox_button ===
 
-$16857608955464* bac à sable
+$16857608955464* Bac à sable
 
 
 === levels/xnor ===
@@ -1772,7 +1772,7 @@ $61172959716558* Emplacement de Sauvegarde
 
 === misc/lab_toggle ===
 
-$16432178820878* le Labo
+$16432178820878* Labo
 
 
 === levels/Calculations ===
