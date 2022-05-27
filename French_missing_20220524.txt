@@ -10,14 +10,198 @@ $12933801309767* A
 $16878300327380* Instruction
 
 
+=== trans/options_confirm_reset ===
+
+$55371048386984* Right
+
+
 === components/ON ===
 
 $95896157427528* ON
 
 
+=== trans/options_setting_program_alignment ===
+
+$54874717650167* Program alignment warning
+
+
+=== trans/options_effects_volume ===
+
+$24145565754506* Effects volume
+
+
+=== trans/options_window_mode ===
+
+$54328660964287* Window mode
+
+
+=== trans/options_pan_up ===
+
+$80031998727851* Pan up
+
+
 === levels/negative_numbers ===
 
 $62744038163781* OK
+
+
+=== main_scripts/leg_level ===
+
+$11144256835662* XORi
+$20104629254326* ARGUMENT 2
+$89011349770597* NOT
+$40520283279584* XOR
+$71204580217527* NOTi
+$38681417496680* ARGUMENT 1
+
+
+=== trans/options_copy ===
+
+$55679445263875* Copy
+
+
+=== trans/options_pan_down ===
+
+$93140495547084* Pan down
+
+
+=== misc/confirm_factory_reset ===
+
+$65699778604521* Delete everything
+
+
+=== components/Off ===
+
+$61860786587357* OFF
+
+
+=== trans/options_synced ===
+
+$99411066573242* Synced
+
+
+=== levels/circular_dependency ===
+
+$16336401898647* Test 1/2
+
+
+=== trans/optinos_waiting ===
+
+$58990937331663* Waiting
+
+
+=== trans/optoins_factory_reset ===
+
+$17721051281188* Factory reset
+
+
+=== trans/options_reset_warning ===
+
+$19141523477461*
+This will delete all level solutions, custom components and architectures. This can not be undone, are you sure you want to do it?
+(This will close the game, it will be reset once you start it again.)
+
+
+=== misc/options_Score Sync ===
+
+$45371978167502* Score sync
+
+
+=== components/NOR ===
+
+$83375115196253* NOR
+
+
+=== components/NAND ===
+
+$71130919681688* NAND
+
+
+=== trans/optinos_undo ===
+
+$58334563411624* Undo
+
+
+=== trans/options_robot_controls ===
+
+$44632988778557* Robot controls
+
+
+=== trans/rotate ===
+
+$88236351843942* Rotate
+
+
+=== trans/options_setting_export_assembled ===
+
+$98549046707456* Export assembled binary
+
+
+=== trans/options_setting_click_to_pan ===
+
+$24654961601456* Click to pan
+
+
+=== trans/options_color_wire ===
+
+$64341547590822* Apply color to wire
+
+
+=== trans/options_code_font_size ===
+
+$98135524286922* Code font size
+
+
+=== trans/options_status ===
+
+$35063135798145* Status
+
+
+=== misc/specifications ===
+
+$68054407020318* Instructions
+
+
+=== trans/options_general_title ===
+
+$21908594290225* General
+
+
+=== levels/The Product of Nibbles ===
+
+$13549246864135* Bit 0
+$10274387271390* Bit 0
+
+
+=== trans/options_music_volume ===
+
+$93981778736076* Music volume
+
+
+=== trans/options_pipette_wire ===
+
+$96339976117958* Wire pipette
+
+
+=== trans/options_comment_wire ===
+
+$96449970906640* Comment wire
+
+
+=== trans/options_missing ===
+
+$22687523145097* Missing
+
+
+=== trans/options_animation_speed ===
+
+$13442839894535* Wire animation speed
+
+
+=== components/Xnor8 ===
+
+$31985293401482* 8 Bit XNOR
+$45789912406647* Bitwise XNOR two values
 
 
 === ui/abbreviated_units ===
@@ -34,25 +218,24 @@ $26705128002562* Conditions
 $70993791338383* XOR
 
 
-=== main_scripts/leg_level ===
+=== trans/options_disagree ===
 
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$89011349770597* NOT
-$40520283279584* XOR
-$71204580217527* NOTi
-$38681417496680* ARGUMENT 1
+$60077370372179* Disagree
 
 
-=== components/Xnor8 ===
+=== trans/options_level ===
 
-$31985293401482* 8 Bit XNOR
-$45789912406647* Bitwise XNOR two values
+$64744152268407* Level
 
 
-=== components/Off ===
+=== trans/options_robot_up ===
 
-$61860786587357* OFF
+$92522280178363* Up
+
+
+=== trans/options_redo ===
+
+$50610605761210* Redo
 
 
 === components/NOT ===
@@ -60,9 +243,19 @@ $61860786587357* OFF
 $34453052824732* NOT
 
 
-=== levels/circular_dependency ===
+=== trans/options_select_all ===
 
-$16336401898647* Test 1/2
+$21380256293472* Select all
+
+
+=== trans/options_robot_use ===
+
+$49182380646128* Use
+
+
+=== trans/options_working ===
+
+$18749833316380* Working
 
 
 === misc/StateProbe ===
@@ -77,9 +270,24 @@ $56198785587874* Bitwise AND two values
 $26727645933234* 16 bit AND
 
 
-=== components/NOR ===
+=== trans/options_paste ===
 
-$83375115196253* NOR
+$52159578521318* Music volume
+
+
+=== trans/optinos_save_location ===
+
+$61172959716558* Save location
+
+
+=== misc/option_reset ===
+
+$15557473522933* Reset
+
+
+=== trans/options_pan_left ===
+
+$78515694621006* Pan left
 
 
 === components/Shl32 ===
@@ -94,6 +302,11 @@ $56766765894165* Shifts the bits of an input left
 $37014604954362* Shift left
 
 
+=== trans/options_cut ===
+
+$88238310953306* Cut
+
+
 === components/And64 ===
 
 $80790829001391* 64 bit AND
@@ -105,9 +318,9 @@ $89424947351456* Bitwise AND two values
 $76480303942112* Programmable memory component
 
 
-=== components/NAND ===
+=== trans/options_controls ===
 
-$71130919681688* NAND
+$18297012748869* Controls
 
 
 === components/ByteEqual ===
@@ -128,9 +341,29 @@ $82412839066570* 64 bit bidirectional pin
 $24932613021646* Can circumvent certain circular dependency errors
 
 
+=== trans/options_pan_right ===
+
+$33884219481037* Pan right
+
+
+=== trans/options_cluster_color ===
+
+$77850745497963* Apply color to wire clustr
+
+
+=== trans/options_robot_shoot ===
+
+$52956877721342* Shoot
+
+
 === components/SRLatch ===
 
 $71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+
+=== trans/options_robot_right ===
+
+$70185788176428* Right
 
 
 === components/Xnor ===
@@ -143,14 +376,23 @@ $94079327237795* XNOR
 $54832952840086* XOR
 
 
-=== misc/specifications ===
+=== trans/options_robot_down ===
 
-$68054407020318* Instructions
+$71118559743827* Down
 
 
-=== levels/The Product of Nibbles ===
+=== trans/options_robot_left ===
 
-$13549246864135* Bit 0
-$10274387271390* Bit 0
+$73654791275689* Left
+
+
+=== trans/options_inline_latches ===
+
+$53886441687616* Inline latches
+
+
+=== trans/options_resubmit ===
+
+$13328644005279* Resumbit
 
 
