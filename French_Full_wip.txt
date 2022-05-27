@@ -500,7 +500,7 @@ $38100016313511* ARCHITECTURE PROCESSEUR 2
 
 === misc/component_factory_toggle ===
 
-$55499239951858* L'atelier de composants
+$55499239951858 Atelier de composants
 
 
 === trans/map_basic_logic ===
@@ -1731,7 +1731,7 @@ $16072814175447* Programmer du matériel bugué est très frustrant. Il est pén
 
 === ui/state_ui/title_screen/play ===
 
-$66967233942803* Jouer la Campagne
+$66967233942803 Campagne
 
 
 === components/Mem Unit ===
