@@ -10,20 +10,9 @@ $12933801309767* A
 $16878300327380* Instruction
 
 
-=== main_scripts/functions ===
-
-$87591753278764 Registre {nr}
-
-
 === components/ON ===
 
 $95896157427528* ON
-
-
-=== components/Output8z ===
-
-$16915419621070 Sortie commutée
-$58449766432492 Sortie activée seulement si la patte d'activation est [ON]
 
 
 === levels/negative_numbers ===
@@ -37,14 +26,12 @@ $62744038163781* OK
 NOTE: Instead of writing 5839000, the number turns into 5.8M
 $22896492410578* M
 
-NOTE: Instead of writing 5839, the number turns into 5.8K
-$84696693690500 k
 
+=== nim/backend_lib/level_list ===
 
-=== components/And3 ===
-
-$19664974941910 AND 3 pattes
-$86839706221116 porte AND à 3 entrées
+$15420972347773* RAM
+$26705128002562* Conditions
+$70993791338383* XOR
 
 
 === main_scripts/leg_level ===
@@ -57,52 +44,15 @@ $71204580217527* NOTi
 $38681417496680* ARGUMENT 1
 
 
-=== components/NEG ===
+=== components/Xnor8 ===
 
-$88379907297327 Inverser
-$62021716182809 Inverse l'entrée bit à bit
-
-
-=== components/Switch16 ===
-
-$15221175893882 Commutateur 16 bits
-$59845475842015 Active/Désactive une valeur
+$31985293401482* 8 Bit XNOR
+$45789912406647* Bitwise XNOR two values
 
 
-=== components/Console ===
+=== components/Off ===
 
-$66743357915699 Terminal
-
-
-=== nim/backend_lib/level_list ===
-
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
-
-
-=== components/LessU32 ===
-
-$72614358420262 Inférieur (non signé)
-$55380524073095 Détermine si une entrée est inférieure à l'autre
-
-
-=== components/Add16 ===
-
-$28092601427278 Ajoute deux entrées
-$30820974870562 Ajouter
-
-
-=== components/Not32 ===
-
-$33620523355085 NOT 32 bits
-$24607331341411 Inversion bit à bit d'un mot de 32 bits
-
-
-=== components/Equal32 ===
-
-$32710942647020 Egalité
-$32433537137277 Détermine si les deux entrées sont égales
+$61860786587357* OFF
 
 
 === components/NOT ===
@@ -110,39 +60,9 @@ $32433537137277 Détermine si les deux entrées sont égales
 $34453052824732* NOT
 
 
-=== components/MemoryProbe ===
-
-$46948613505134 Affiche une valeur sur votre composant personalisé ou dans l'éditeur de programe
-$44867305035474 Sonde Mémoire
-
-
-=== components/Or32 ===
-
-$92752025948920 OR bit à bit de 2 mots de 32 bits
-$40180779432911 OR 32 bits
-
-
 === levels/circular_dependency ===
 
 $16336401898647* Test 1/2
-
-
-=== components/3_decoder ===
-
-$59129788113517 Oriente vers 8 sorties
-$94375716460090 Décodeur 3 bits
-
-
-=== components/Byte Expander ===
-
-$60488114435022 Sépare un octet en 8 bits
-$21904470559153 Séparateur d'octets
-
-
-=== components/And16 ===
-
-$56198785587874* Bitwise AND two values
-$26727645933234* 16 bit AND
 
 
 === misc/StateProbe ===
@@ -151,20 +71,15 @@ $54427436420428* Wire Probe
 $15969687819995* Display a value on your custom component or in the program editor
 
 
+=== components/And16 ===
+
+$56198785587874* Bitwise AND two values
+$26727645933234* 16 bit AND
+
+
 === components/NOR ===
 
 $83375115196253* NOR
-
-
-=== trans/map_working_computer ===
-
-$38843517090942 ORDINATEUR FONCTIONNEL
-
-
-=== components/Xnor8 ===
-
-$31985293401482* 8 Bit XNOR
-$45789912406647* Bitwise XNOR two values
 
 
 === components/Shl32 ===
@@ -193,11 +108,6 @@ $76480303942112* Programmable memory component
 === components/NAND ===
 
 $71130919681688* NAND
-
-
-=== components/Off ===
-
-$61860786587357* OFF
 
 
 === components/ByteEqual ===
