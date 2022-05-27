@@ -52,11 +52,6 @@ $34453052824732* NOT
 $16336401898647* Test 1/2
 
 
-=== trans/options_pan_right ===
-
-$33884219481037 Déplacer la vue vers la droite
-
-
 === components/NOR ===
 
 $83375115196253* NOR
