@@ -1762,7 +1762,7 @@ $79677187590355* Transforme 64 bits en 8 octets
 
 === trans/options_pan_left ===
 
-$78515694621006* mouvement vers la gauche
+$78515694621006 Déplacer la vue vers la gauche
 
 
 === trans/optinos_save_location ===
