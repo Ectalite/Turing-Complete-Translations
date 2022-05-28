@@ -10,9 +10,12 @@ $12933801309767* A
 $16878300327380* Instruction
 
 
-=== trans/manual_edit_instructions ===
+=== main_scripts/functions ===
 
-$86365051641280* Edit instruactions
+$99285446909923* To solve this level you need to use the 'Level output' component
+$29225283986051* To solve this level you need to use the 'Level input' component
+$95056157627313* To solve this level you need to use the 'Level input' component
+$12249248261034* To solve this level you need to use the 'Level output' component
 
 
 === components/ON ===
@@ -20,9 +23,9 @@ $86365051641280* Edit instruactions
 $95896157427528* ON
 
 
-=== trans/manual_terminology ===
+=== trans/manual_edit_instructions ===
 
-$13311390759928* Terminology
+$86365051641280* Edit instruactions
 
 
 === levels/negative_numbers ===

@@ -515,7 +515,7 @@ $38100016313511* ARCHITECTURE PROCESSEUR 2
 
 === misc/component_factory_toggle ===
 
-$55499239951858* L'atelier de composants
+$55499239951858* Atelier de composants
 
 
 === trans/map_basic_logic ===
@@ -1328,6 +1328,11 @@ $96449970906640* Commentaire de fil
 === trans/manual_binary ===
 
 $19098578855427* Binaire
+
+
+=== trans/manual_terminology ===
+
+$13311390759928* Lexique
 
 
 === components/NetworkClient ===
@@ -2846,7 +2851,7 @@ $90115282457191* Rotation à droite
 
 === trans/manual_header ===
 
-$10757271456963* Sommaire du manuel
+$10757271456963* Aide-mémoire
 
 
 === misc/score_sync ===
