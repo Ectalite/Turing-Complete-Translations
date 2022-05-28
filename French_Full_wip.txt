@@ -2681,7 +2681,7 @@ $15885763626223* Réalise un circuit qui applique la fonction AND logique (bit �
 
 === ui/toggles/level_log2 ===
 
-$91515053618360* Manuel
+$91515053618360* Aide-mémoire
 
 
 === components/LessI64 ===
