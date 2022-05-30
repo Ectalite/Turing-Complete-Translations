@@ -16,6 +16,11 @@ $19006843777401* Crée un circuit qui sortira [ON] quand la première entrée es
 $46083799633716* {input\_1} est plus petit que {input\_2}?
 
 
+=== trans/level_registers_description ===
+
+$73800316874022* [center]Construis le circuit qui correspond au code demandé[/center]
+
+
 === components/Output1Car ===
 
 $12896765714603* Retenue
@@ -25,6 +30,11 @@ $12896765714603* Retenue
 
 $57559382166174* Additionne 3 bits et sort la somme et la retenue
 $77669928463861* Additionneur complet
+
+
+=== trans/level_circumference_description ===
+
+$20154743351442* [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === misc/options ===
@@ -108,15 +118,34 @@ $65405398199118* Mémoire 32 bits
 $22031255978461* Registre 32 bits
 
 
+=== trans/level_multiply_description ===
+
+$28761562806647* [center]Applique AND sur chaque paire de bits[/center]
+
+
 === trans/manual_the_robot ===
 
 $92896462984546* Le robot
+
+
+=== trans/level_bit_inverter_RichTextLabel2 ===
+
+$67127889187842*
+[right][color=#e49f44]Valeur
+Inversée[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === components/64Ram ===
 
 $63410290483563* Nombre réduit de portes mais mémoire lente
 $78790416494254* RAM (mémoire vive)
+
+
+=== trans/level_conditions_description ===
+
+$62540112577327* [center]Quand la valeur vérifie la condition mets la sortie à [img]dialogue/on.png[/img], sinon mets-la à [img]dialogue/off.png[/img].[/center]
 
 
 === components/Nand16 ===
@@ -149,6 +178,11 @@ $21727998752868* Decodeur 2 bits
 
 $49880767097125* Multiplie 2 entrées
 $62247409328063* Multiplier
+
+
+=== trans/level_negative_numbers_test_5 ===
+
+$68419648206312* [center]Représentation[/center]
 
 
 === components/Output1z ===
@@ -186,12 +220,25 @@ $76807373575014* OR bit à bit sur 2 valeurs
 $62695381407925* OR 16 bits
 
 
+=== trans/level_byte_adder_question3 ===
+
+$88075700159266*
+[right]Retenue en Entrée
+Octet 1
+Octet 2[/right]
+
+
 === levels/Nor GATE ===
 
 $11362258372706*
 La plupart des créatures sur la Terre sont agressives et ne savent pas se concentrer.
 
 Pour réussir, tu dois apprendre à raisonner, sans rien casser.
+
+
+=== trans/level_maze_description ===
+
+$25068965294593* [center]Retrouve la porte du labyrinthe[/center]
 
 
 === components/Or64 ===
@@ -880,10 +927,20 @@ $34603983706314* Détermine si les 2 entrées sont égales
 $82876546747608* Égalité
 
 
+=== trans/level_tick_tock_description ===
+
+$34658332565777* [center]Ajoute 1 au compteur ou écrase sa valeur[/center]
+
+
 === components/IndexByte ===
 
 $27264669944539* Indexeur octet
 $54699455184164* Extrait un octet du fil
+
+
+=== trans/level_byte_adder_you_carry_text3 ===
+
+$65048723622767* Nombre
 
 
 === components/Bidirectional16 ===
@@ -971,6 +1028,13 @@ $18288998816979* Ce niveau a un [color=#e63e5b][url=odd\_number]indice[/url][/co
 $78287906849040* Couleur de fil
 
 
+=== trans/level_alu1_description ===
+
+$90245779080897*
+[center]Effectue un OR, NAND, NOR ou un AND
+entre les 2 octets[/center]
+
+
 === components/Program1Red ===
 
 $26811947547688* Composant mémoire programmable
@@ -992,6 +1056,11 @@ Avec le mode immédiat, tout l'octet est interprété comme un nombre à [SAUVER
 [SAUVER] des valeurs allant de 0 à 63.
 
 
+=== trans/ide_binary_header ===
+
+$22615032668969* Editeur Binaire
+
+
 === trans/options_select_all ===
 
 $21380256293472* Sélectionner tout
@@ -1001,6 +1070,13 @@ $21380256293472* Sélectionner tout
 
 $53686485035156* NOT 8 bits 
 $26822227902426* NOT octet bit à bit
+
+
+=== trans/level_registers_text ===
+
+$78241632854567*
+[right][color=#e49f44]Code
+en Entrée[/color][/right]
 
 
 === levels/program ===
@@ -1490,6 +1566,13 @@ $13846578075327* Affiche une valeur sur ton composant personnalisé ou dans l'é
 $25103579211328* Sonde Mémoire (bit)
 
 
+=== trans/level_byte_mux_text ===
+
+$44961981616677*
+[center]Ta réponse 11 + 88 =  0
+Réponse attendue 11 + 88  = 99[/center]
+
+
 === components/DualPortRam ===
 
 $13408945557666* RAM avec une patte Lire supplémentaire
@@ -1521,10 +1604,25 @@ Utilise [color=#e63e5b][url=maze]cet indice[/url][/color] si tu es coincé.
 [tip]Souviens-toi que tu ne peux pas utiliser de valeur immédiate plus grande que 63, attention donc à ne pas vouloir sauter à une ligne plus bas que la ligne 63.[/tip]
 
 
+=== trans/level_constants_text ===
+
+$29779449172278*
+[right][color=#e49f44]Code
+en Entrée[/color][/right]
+
+
 === components/Switch64 ===
 
 $80980797636768* Active/Désactive une valeur
 $93223372486795* Commutateur 64 bits
+
+
+=== trans/level_byte_adder_question2 ===
+
+$85899338356278*
+[right]Réponse correcte
+
+Ta réponse[/right]
 
 
 === misc/delay_overlay ===
@@ -1542,10 +1640,20 @@ $18561605111721* EMPILER {input} sur la pile
 $59658696292688* DÉPILER {value} de la pile
 
 
+=== trans/levels_not_RichTextLabel3 ===
+
+$48425594158515* Construis une porte NOT
+
+
 === components/Rol16 ===
 
 $48583573494467* Rotation vers la gauche
 $73379230742631* Décalage à gauche des bits en entrée avec recyclage
+
+
+=== trans/level_codes_description ===
+
+$24678249110160* [center]Ajoute les codes de calcul à ton circuit[/center]
 
 
 === trans/options_synced ===
@@ -1582,9 +1690,19 @@ Assure-toi que le signal ne se propage que de gauche à droite. Il y aura trois 
 [b]Test 3[/b]: La sortie droite deviendra [ON] et le côté gauche devra être [OFF].
 
 
+=== trans/level_signed_negator_labels3 ===
+
+$66996894079719* Attendu   Actuel
+
+
 === ui/state_ui/state_ui_output_bit ===
 
 $40754755480566* Sortie
+
+
+=== trans/manual_delay ===
+
+$78806697204524* Délai
 
 
 === levels/ai_showdown ===
@@ -1622,6 +1740,16 @@ $34517798310461* NOR bit à bit de 2 entrées
 $39421972053612* NOR 8 Bits
 
 
+=== levels/crude_awakening/next_level ===
+
+$24027424800887* Niveau suivant
+
+
+=== trans/level_alu2_description ===
+
+$37432913848309* [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les 2 octets[/center]
+
+
 === levels/signed_negator ===
 
 $10866019808027* Pour ce niveau je te conseille d'activer les nombres signés pour que le dernier bit affiche -128. Clique sur "+255" visible dans le cadre du haut.
@@ -1630,9 +1758,23 @@ Considérant que l'entrée est signée (8ème bit valant -128), réalise un comp
 Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
 
 
+=== trans/level_circumference_subscript ===
+
+$80632450818467* [center][color=#cccccc](Considérons π ≈ 3)[/color][/center]
+
+
 === trans/options_missing ===
 
 $22687523145097* Manquant
+
+
+=== trans/level_xnor_RichTextLabel2 ===
+
+$59451104901430*
+[right][color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === ui/options/Controls ===
@@ -1806,12 +1948,50 @@ $16015376037787* Registre 16 Bits
 $71792123436163* Mémoire 16 bits
 
 
+=== trans/level_ram_component_value_description ===
+
+$53113984441582*
+[right]Test
+Adresse
+Action
+Sortie attendue[/right]
+
+
+=== trans/level_byte_less_description ===
+
+$37336202055283* [center]Determine si la première entrée est inférieure à la seconde.[/center]
+
+
 === levels/byte_not ===
 
 $14196498898485* La réalisation et l'utilisation d'outils est fondamental lors des premières étapes de l'évolution de l'intelligence.
 $12982025748137* Applique "NOT" sur chaque bit de l'octet en entrée.
 $10294533225655* Notre précédent modèle utilisant la taille du cerveau pour prédire l'intelligence était naïf.
 $14958585065722* En fait c'est le nombre de bras d'une créature qui est clairement le principal prédicateur de l'intelligence. Savais-tu qu'il existe des créatures marines sur ta planète avec quatre fois plus de bras que toi et qui réussissent mieux dans les tests ?
+
+
+=== misc/credit_box ===
+
+$15872341864658*
+Remerciements sincères à
+
+[b]Traducteurs[/b]
+{translators}
+
+[b]Premiers béta-testeurs[/b]
+{beta_testers}
+
+[b]Polices de caractères adaptées[/b]
+{font_work}
+
+[b]Musique Originale[/b]
+ Adolfo Aaron Figueroa Bianchi
+
+[b]Logiciels Open Source[/b]
+{software}
+
+[b]Ressources[/b]
+{assets}
 
 
 === components/Maker64 ===
@@ -2619,6 +2799,15 @@ $89595863403484* Décalage à droite
 $69394421220436* Décalage à droite des bits d'une entrée
 
 
+=== trans/level_sr_latch_RichTextLabel3 ===
+
+$55348415524361*
+[right]Entrée 1
+Entrée 2
+Sortie attendue
+Sortie actuelle[/right]
+
+
 === components/LessU64 ===
 
 $13018528868948* Inférieur (non signé)
@@ -2630,9 +2819,23 @@ $90244529484227* Détermine si une entrée est inférieure à la seconde
 $58990937331663* En Attente
 
 
+=== trans/level_byte_no_description ===
+
+$19806403089477* [center]Inverse chaque bit[/center]
+
+
 === misc/select_color ===
 
 $97461374731210* Couleur de fil
+
+
+=== trans/level_saving_gracefully_RichTextLabel3 ===
+
+$74117520663650*
+[right][color=#e49f44]Valeur
+Enregistrée[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === components/LessU16 ===
@@ -2650,6 +2853,38 @@ $38169019785615* XOR bit à bit de 2 entrées
 === trans/optinos_undo ===
 
 $58334563411624* Annuler
+
+
+=== trans/level_alu2_text ===
+
+$58359423026017*
+[right]Code
+[color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle
+[/right]
+
+
+=== trans/level_turing_complete_description ===
+
+$74859324795927* [center]Ajoute les conditions aux codes de calcul[/center]
+
+
+=== trans/level_nand_check ===
+
+$32982011047799* Vérifie
+
+
+=== trans/level_odd_number_RichTextLabel2 ===
+
+$28592851869484*
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3
+Entrée 4[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === levels/push_pop ===
@@ -2693,10 +2928,14 @@ $19948786194409* Détermine si une entrée est inférieure à la seconde
 === main_scripts/functions ===
 
 $11467644007149* Compteur {nr}
+$99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
 $10533010562232* SCORE DELAI : {delay}
+$29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
+$95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $29169064199243* Sortie {nr}
+$12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
 $32508339206292* SCORE NAND : {nand}
 
@@ -2736,9 +2975,34 @@ NOTE: Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* x10⁹
 
 
+=== trans/levels_any_doubles_RichTextLabel2 ===
+
+$60287131882436*
+[right]Entrée 1
+Entrée 2
+Entrée 3
+Entrée 4[color=#e49f44]
+Sortie actuelle
+Sortie attendue[/color][/right]
+
+
 === components/RegisterRedPlus ===
 
 $57531353625235* Registre
+
+
+=== trans/level_saving_bytes_text ===
+
+$43691912945654*
+[right]Action
+Etat attendu
+Sortie attendue
+[/right]
+
+
+=== trans/level_description ===
+
+$26184794529449* [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === components/Counter64 ===
@@ -2758,9 +3022,25 @@ Le mécanisme défectueux fait un bruit désagréable quand ton essai est trop g
 $11183892008673* Tu réussis ce niveau en envoyant en sortie le code correct, il n'est pas possible d'échouer avec une mauvaise sortie. De plus l'entrée sera à 1 après un essai trop grand et 0 sinon.
 
 
+=== trans/level_alu1_text ===
+
+$53254733455389*
+[right]Code
+[color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle
+[/right]
+
+
 === components/Output16 ===
 
 $37381472194529* Sortie
+
+
+=== trans/level_nand_1 ===
+
+$71204033550134* Que fais la porte NAND ?
 
 
 === components/Input 3 ===

@@ -1,408 +1,3 @@
-=== trans/level_byte_mux_text ===
-
-$44961981616677
-[center]Ta réponse 11 + 88 =  0
-Réponse attendue 11 + 88  = 99[/center]
-
-
-=== trans/level_registers_description ===
-
-$73800316874022 [center]Construis le circuit qui correspond au code demandé[/center]
-
-
-=== trans/level_byte_adder_question2 ===
-
-$85899338356278
-[right]Réponse correcte
-
-Ta réponse[/right]
-
-
-=== trans/level_constants_text ===
-
-$29779449172278
-[right][color=#e49f44]Code
-en Entrée[/color][/right]
-
-
-=== main_scripts/leg_level ===
-
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$89011349770597* NOT
-$40520283279584* XOR
-$71204580217527* NOTi
-$38681417496680* ARGUMENT 1
-
-
-=== trans/level_circumference_description ===
-
-$20154743351442 [center]Ajoute les conditions aux codes de calcul[/center]
-
-
-=== trans/levels_not_RichTextLabel3 ===
-
-$48425594158515 Construis une porte NOT
-
-
-=== trans/level_codes_description ===
-
-$24678249110160 [center]Ajoute les codes de calcul à ton circuit[/center]
-
-
-=== trans/level_sr_latch_RichTextLabel3 ===
-
-$55348415524361
-[right]Entrée 1
-Entrée 2
-Sortie attendue
-Sortie actuelle[/right]
-
-
-=== trans/level_byte_no_description ===
-
-$19806403089477 [center]Inverse chaque bit[/center]
-
-
-=== trans/level_signed_negator_labels3 ===
-
-$66996894079719 Attendu   Actuel
-
-
-=== trans/level_saving_gracefully_RichTextLabel3 ===
-
-$74117520663650
-[right][color=#e49f44]Valeur
-Enregistrée[/color]
-Sortie attendue
-Sortie actuelle[/right]
-
-
-=== trans/manual_delay ===
-
-$78806697204524 Délai
-
-
-=== trans/level_multiply_description ===
-
-$28761562806647 [center]Applique AND sur chaque paire de bits[/center]
-
-
-=== trans/level_byte_adder_you_carry_text3 ===
-
-$65048723622767 Nombre
-
-
-=== trans/level_alu2_text ===
-
-$58359423026017
-[right]Code
-[color=#e49f44]Entrée 1
-Entrée 2[/color]
-Sortie attendue
-Sortie actuelle
-[/right]
-
-
-=== trans/level_turing_complete_description ===
-
-$74859324795927 [center]Ajoute les conditions aux codes de calcul[/center]
-
-
-=== trans/level_bit_inverter_RichTextLabel2 ===
-
-$67127889187842
-[right][color=#e49f44]Valeur
-Inversée[/color]
-Sortie attendue
-Sortie actuelle[/right]
-
-
-=== trans/level_conditions_description ===
-
-$62540112577327 [center]Quand la valeur vérifie la condition mets la sortie à [img]dialogue/on.png[/img], sinon mets-la à [img]dialogue/off.png[/img].[/center]
-
-
-=== trans/level_nand_check ===
-
-$32982011047799 Vérifie
-
-
-=== trans/level_tick_tock_description ===
-
-$34658332565777 [center]Ajoute 1 au compteur ou écrase sa valeur[/center]
-
-
-=== trans/level_odd_number_RichTextLabel2 ===
-
-$28592851869484
-[right][color=#e49f44]Entrée 1
-Entrée 2
-Entrée 3
-Entrée 4[/color]
-Sortie attendue
-Sortie actuelle[/right]
-
-
-=== trans/level_negative_numbers_test_5 ===
-
-$68419648206312 [center]Représentation[/center]
-
-
-=== levels/crude_awakening/next_level ===
-
-$24027424800887 Niveau suivant
-
-
-=== trans/level_alu2_description ===
-
-$37432913848309 [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les 2 octets[/center]
-
-
-=== levels/The Product of Nibbles ===
-
-$13549246864135* Bit 0
-$10274387271390* Bit 0
-
-
-=== trans/level_circumference_subscript ===
-
-$80632450818467 [center][color=#cccccc](Considérons π ≈ 3)[/color][/center]
-
-
-=== main_scripts/functions ===
-
-$99285446909923 Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
-$29225283986051 Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
-$95056157627313 Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
-$12249248261034 Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
-
-
-=== trans/level_xnor_RichTextLabel2 ===
-
-$59451104901430
-[right][color=#e49f44]Entrée 1
-Entrée 2[/color]
-Sortie attendue
-Sortie actuelle[/right]
-
-
-=== trans/level_byte_adder_question3 ===
-
-$88075700159266
-[right]Retenue en Entrée
-Octet 1
-Octet 2[/right]
-
-
-=== trans/level_alu1_description ===
-
-$90245779080897
-[center]Effectue un OR, NAND, NOR ou un AND
-entre les 2 octets[/center]
-
-
-=== nim/backend_lib/level_list ===
-
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
-
-
-=== trans/level_ram_component_value_description ===
-
-$53113984441582
-[right]Test
-Adresse
-Action
-Sortie attendue[/right]
-
-
-=== trans/levels_any_doubles_RichTextLabel2 ===
-
-$60287131882436
-[right]Entrée 1
-Entrée 2
-Entrée 3
-Entrée 4[color=#e49f44]
-Sortie actuelle
-Sortie attendue[/color][/right]
-
-
-=== trans/level_byte_less_description ===
-
-$37336202055283 [center]Determine si la première entrée est inférieure à la seconde.[/center]
-
-
-=== trans/level_saving_bytes_text ===
-
-$43691912945654
-[right]Action
-Etat attendu
-Sortie attendue
-[/right]
-
-
-=== trans/level_description ===
-
-$26184794529449 [center]Ajoute les conditions aux codes de calcul[/center]
-
-
-=== trans/level_maze_description ===
-
-$25068965294593 [center]Retrouve la porte du labyrinthe[/center]
-
-
-=== misc/credit_box ===
-
-$15872341864658
-Remerciements sincères à
-
-[b]Traducteurs[/b]
-{translators}
-
-[b]Premiers béta-testeurs[/b]
-{beta_testers}
-
-[b]Polices de caractères adaptées[/b]
-{font_work}
-
-[b]Musique Originale[/b]
- Adolfo Aaron Figueroa Bianchi
-
-[b]Logiciels Open Source[/b]
-{software}
-
-[b]Ressources[/b]
-{assets}
-
-
-=== trans/level_alu1_text ===
-
-$53254733455389
-[right]Code
-[color=#e49f44]Entrée 1
-Entrée 2[/color]
-Sortie attendue
-Sortie actuelle
-[/right]
-
-
-=== trans/ide_binary_header ===
-
-$22615032668969 Editeur Binaire
-
-
-=== trans/level_registers_text ===
-
-$78241632854567
-[right][color=#e49f44]Code
-en Entrée[/color][/right]
-
-
-=== trans/level_nand_1 ===
-
-$71204033550134 Que fais la porte NAND ?
-
-
-=== trans/not_gate_RichTextLabel2 ===
-
-$10340875578771*
-[right][color=#e49f44]Input[/color]
-Desired output
-Current output[/right]
-
-
-=== trans/levels_counting_signals_RichTextLabel2 ===
-
-$34604121212779*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
-
-
-=== trans/level_program_text ===
-
-$38014836341470*
-[right][color=#e49f44]Code
-Input[/color][/right]
-
-
-=== trans/and_gate_RichTextLabel2 ===
-
-$98472849629373*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
-
-
-=== trans/level_byte_equal_description ===
-
-$38686097566531* [center]Check if the bytes are equal[/center]
-
-
-=== components/Xnor ===
-
-$94079327237795* XNOR
-
-
-=== trans/level_decoder_1_RichTextLabel2 ===
-
-$50454539040073*
-[right][color=#e49f44]Input[/color]
-Output 1
-Output 2[/right]
-
-
-=== trans/level_tick_tock_keys ===
-
-$11700778730606*
-[right][color=#e49f44]Action
-Desired output
-Current output[/color][/right]
-
-
-=== components/XOR ===
-
-$54832952840086* XOR
-
-
-=== trans/level_delay_level_description ===
-
-$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
-
-
-=== trans/credit_header ===
-
-$21717110565858* Credits
-
-
-=== trans/level_spacial_invasion_description ===
-
-$44980627299841* [center]Shoot the space rats![/center]
-
-
-=== trans/_second_tick_RichTextLabel2 ===
-
-$11680718497014*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
-
-
-=== trans/nand_values ===
-
-$38006065064488*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-[b]Output[/b][/right]
-
-
 === levels/ram_block ===
 
 $16196915566111* 0
@@ -447,6 +42,16 @@ $62744038163781* OK
 === trans/nand_Label2 ===
 
 $60885816586685* Output
+
+
+=== main_scripts/leg_level ===
+
+$11144256835662* XORi
+$20104629254326* ARGUMENT 2
+$89011349770597* NOT
+$40520283279584* XOR
+$71204580217527* NOTi
+$38681417496680* ARGUMENT 1
 
 
 === trans/always_on_RichTextLabel2 ===
@@ -588,6 +193,12 @@ Desired bit
 Current bit[/right]
 
 
+=== levels/The Product of Nibbles ===
+
+$13549246864135* Bit 0
+$10274387271390* Bit 0
+
+
 === trans/manual_bytes ===
 
 $46223559629673* Bytes
@@ -632,6 +243,13 @@ Input 2
 Input 3[/color]
 Desired output
 Current output[/right]
+
+
+=== nim/backend_lib/level_list ===
+
+$15420972347773* RAM
+$26705128002562* Conditions
+$70993791338383* XOR
 
 
 === trans/level_bit_switch_RichTextLabel2 ===
@@ -700,6 +318,14 @@ $20464862486158* [center]Copy the value from the correct input, to the correct o
 $20619700446604* [center]OR[/center]
 
 
+=== trans/not_gate_RichTextLabel2 ===
+
+$10340875578771*
+[right][color=#e49f44]Input[/color]
+Desired output
+Current output[/right]
+
+
 === trans/level_byte_mux_description ===
 
 $20538476756633* [center]Output the correct input byte[/center]
@@ -708,6 +334,17 @@ $20538476756633* [center]Output the correct input byte[/center]
 === trans/level_byte_less_i_description ===
 
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
+
+
+=== trans/levels_counting_signals_RichTextLabel2 ===
+
+$34604121212779*
+[right]Input 1
+Input 2
+Input 3
+Input 4[color=#e49f44]
+Desired output
+Current output[/color][/right]
 
 
 === trans/level_RichTextLabel2 ===
@@ -738,12 +375,24 @@ $82412839066570* 64 bit bidirectional pin
 $24932613021646* Can circumvent certain circular dependency errors
 
 
+=== trans/level_program_text ===
+
+$38014836341470*
+[right][color=#e49f44]Code
+Input[/color][/right]
+
+
 === trans/level_odd_ticks_RichTextLabel3 ===
 
 $89508766742523*
 [right]Input
 Desired output
 Current output[/right]
+
+
+=== trans/level_byte_equal_description ===
+
+$38686097566531* [center]Check if the bytes are equal[/center]
 
 
 === trans/level_byte_or_text ===
@@ -756,9 +405,36 @@ Current output
 [/right]
 
 
+=== trans/and_gate_RichTextLabel2 ===
+
+$98472849629373*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
 === components/SRLatch ===
 
 $71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+
+=== components/Xnor ===
+
+$94079327237795* XNOR
+
+
+=== trans/level_decoder_1_RichTextLabel2 ===
+
+$50454539040073*
+[right][color=#e49f44]Input[/color]
+Output 1
+Output 2[/right]
+
+
+=== components/XOR ===
+
+$54832952840086* XOR
 
 
 === trans/levels_byte_or_description ===
@@ -771,6 +447,24 @@ $68379799788575* [center]Pairwise OR together each bit[/center]
 $81238724438578* Make a wire where the input of a component depends on its own output
 
 
+=== trans/level_delay_level_description ===
+
+$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
+
+
+=== trans/level_tick_tock_keys ===
+
+$11700778730606*
+[right][color=#e49f44]Action
+Desired output
+Current output[/color][/right]
+
+
+=== trans/credit_header ===
+
+$21717110565858* Credits
+
+
 === trans/level_bit_adder_RichTextLabel2 ===
 
 $79624864981341*
@@ -780,5 +474,27 @@ Desired Sum
 Desired Carry
 Current Sum
 Current Carry[/right]
+
+
+=== trans/level_spacial_invasion_description ===
+
+$44980627299841* [center]Shoot the space rats![/center]
+
+
+=== trans/_second_tick_RichTextLabel2 ===
+
+$11680718497014*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/nand_values ===
+
+$38006065064488*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+[b]Output[/b][/right]
 
 
