@@ -1,28 +1,28 @@
 === trans/level_byte_mux_text ===
 
-$44961981616677*
-[center]Your answer 11 + 88 =  0
-Current answer 11 + 88  = 99[/center]
+$44961981616677
+[center]Ta réponse 11 + 88 =  0
+Réponse attendue 11 + 88  = 99[/center]
 
 
 === trans/level_registers_description ===
 
-$73800316874022* [center]Create the wire that matches the code specifications[/center]
+$73800316874022 [center]Construis le circuit qui correspond au code demandé[/center]
 
 
 === trans/level_byte_adder_question2 ===
 
-$85899338356278*
-[right]Correct answer
+$85899338356278
+[right]Réponse correcte
 
-Your answer[/right]
+Ta réponse[/right]
 
 
 === trans/level_constants_text ===
 
-$29779449172278*
+$29779449172278
 [right][color=#e49f44]Code
-Input[/color][/right]
+en Entrée[/color][/right]
 
 
 === main_scripts/leg_level ===
@@ -37,126 +37,126 @@ $38681417496680* ARGUMENT 1
 
 === trans/level_circumference_description ===
 
-$20154743351442* [center]Add conditions to the calculation codes[/center]
+$20154743351442 [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === trans/levels_not_RichTextLabel3 ===
 
-$48425594158515* Build: NOT gate
+$48425594158515 Construis une porte NOT
 
 
 === trans/level_codes_description ===
 
-$24678249110160* [center]Add calculation codes to your wire[/center]
+$24678249110160 [center]Ajoute les codes de calcul à ton circuit[/center]
 
 
 === trans/level_sr_latch_RichTextLabel3 ===
 
-$55348415524361*
-[right]Input 1
-Input 2
-Desired output
-Current output[/right]
+$55348415524361
+[right]Entrée 1
+Entrée 2
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === trans/level_byte_no_description ===
 
-$19806403089477* [center]Invert each bit[/center]
+$19806403089477 [center]Inverse chaque bit[/center]
 
 
 === trans/level_signed_negator_labels3 ===
 
-$66996894079719* Desired   Current
+$66996894079719 Attendu   Actuel
 
 
 === trans/level_saving_gracefully_RichTextLabel3 ===
 
-$74117520663650*
-[right][color=#e49f44]Save
-Value[/color]
-Desired output
-Current output[/right]
+$74117520663650
+[right][color=#e49f44]Valeur
+Enregistrée[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === trans/manual_delay ===
 
-$78806697204524* Delay
+$78806697204524 Délai
 
 
 === trans/level_multiply_description ===
 
-$28761562806647* [center]Pairwise AND together each bit[/center]
+$28761562806647 [center]Applique AND sur chaque paire de bits[/center]
 
 
 === trans/level_byte_adder_you_carry_text3 ===
 
-$65048723622767* Number
+$65048723622767 Nombre
 
 
 === trans/level_alu2_text ===
 
-$58359423026017*
+$58359423026017
 [right]Code
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle
 [/right]
 
 
 === trans/level_turing_complete_description ===
 
-$74859324795927* [center]Add conditions to the calculation codes[/center]
+$74859324795927 [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === trans/level_bit_inverter_RichTextLabel2 ===
 
-$67127889187842*
-[right][color=#e49f44]Value
-Invert[/color]
-Desired output
-Current output[/right]
+$67127889187842
+[right][color=#e49f44]Valeur
+Inversée[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === trans/level_conditions_description ===
 
-$62540112577327* [center]When the value meets the condition output [img]dialogue/on.png[/img], output [img]dialogue/off.png[/img] otherwise.[/center]
+$62540112577327 [center]Quand la valeur vérifie la condition mets la sortie à [img]dialogue/on.png[/img], sinon mets-la à [img]dialogue/off.png[/img].[/center]
 
 
 === trans/level_nand_check ===
 
-$32982011047799* Check
+$32982011047799 Vérifie
 
 
 === trans/level_tick_tock_description ===
 
-$34658332565777* [center]Add 1 to the counter, or overwrite it[/center]
+$34658332565777 [center]Ajoute 1 au compteur ou écrase sa valeur[/center]
 
 
 === trans/level_odd_number_RichTextLabel2 ===
 
-$28592851869484*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3
-Input 4[/color]
-Desired output
-Current output[/right]
+$28592851869484
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3
+Entrée 4[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === trans/level_negative_numbers_test_5 ===
 
-$68419648206312* [center]Representation[/center]
+$68419648206312 [center]Représentation[/center]
 
 
 === levels/crude_awakening/next_level ===
 
-$24027424800887* Next level
+$24027424800887 Niveau suivant
 
 
 === trans/level_alu2_description ===
 
-$37432913848309* [center]OR, NAND, NOR, AND, ADD or SUB the two bytes together[/center]
+$37432913848309 [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les 2 octets[/center]
 
 
 === levels/The Product of Nibbles ===
@@ -167,39 +167,39 @@ $10274387271390* Bit 0
 
 === trans/level_circumference_subscript ===
 
-$80632450818467* [center][color=#cccccc](Assuming π ≈ 3)[/color][/center]
+$80632450818467 [center][color=#cccccc](Considérons π ≈ 3)[/color][/center]
 
 
 === main_scripts/functions ===
 
-$99285446909923* To solve this level you need to use the 'Level output' component
-$29225283986051* To solve this level you need to use the 'Level input' component
-$95056157627313* To solve this level you need to use the 'Level input' component
-$12249248261034* To solve this level you need to use the 'Level output' component
+$99285446909923 Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
+$29225283986051 Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
+$95056157627313 Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
+$12249248261034 Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 
 
 === trans/level_xnor_RichTextLabel2 ===
 
-$59451104901430*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+$59451104901430
+[right][color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle[/right]
 
 
 === trans/level_byte_adder_question3 ===
 
-$88075700159266*
-[right]Carry IN
-Byte 1
-Byte 2[/right]
+$88075700159266
+[right]Retenue en Entrée
+Octet 1
+Octet 2[/right]
 
 
 === trans/level_alu1_description ===
 
-$90245779080897*
-[center]OR, NAND, NOR or AND
-the two bytes together[/center]
+$90245779080897
+[center]Effectue un OR, NAND, NOR ou un AND
+entre les 2 octets[/center]
 
 
 === nim/backend_lib/level_list ===
@@ -211,98 +211,98 @@ $70993791338383* XOR
 
 === trans/level_ram_component_value_description ===
 
-$53113984441582*
+$53113984441582
 [right]Test
-Address
+Adresse
 Action
-Expected output[/right]
+Sortie attendue[/right]
 
 
 === trans/levels_any_doubles_RichTextLabel2 ===
 
-$60287131882436*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
+$60287131882436
+[right]Entrée 1
+Entrée 2
+Entrée 3
+Entrée 4[color=#e49f44]
+Sortie actuelle
+Sortie attendue[/color][/right]
 
 
 === trans/level_byte_less_description ===
 
-$37336202055283* [center]Determine if the first input is less than the second.[/center]
+$37336202055283 [center]Determine si la première entrée est inférieure à la seconde.[/center]
 
 
 === trans/level_saving_bytes_text ===
 
-$43691912945654*
+$43691912945654
 [right]Action
-Desired state
-Desired output
+Etat attendu
+Sortie attendue
 [/right]
 
 
 === trans/level_description ===
 
-$26184794529449* [center]Add conditions to the calculation codes[/center]
+$26184794529449 [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === trans/level_maze_description ===
 
-$25068965294593* [center]Get to the door of the maze[/center]
+$25068965294593 [center]Retrouve la porte du labyrinthe[/center]
 
 
 === misc/credit_box ===
 
-$15872341864658*
-Sincere thanks to:
+$15872341864658
+Remerciements sincères à
 
-[b]Translators[/b]
+[b]Traducteurs[/b]
 {translators}
 
-[b]Early beta testers[/b]
+[b]Premiers béta-testeurs[/b]
 {beta_testers}
 
-[b]Font work[/b]
+[b]Polices de caractères adaptées[/b]
 {font_work}
 
-[b]Soundtrack[/b]
+[b]Musique Originale[/b]
  Adolfo Aaron Figueroa Bianchi
 
-[b]Open source software[/b]
+[b]Logiciels Open Source[/b]
 {software}
 
-[b]Assets[/b]
+[b]Ressources[/b]
 {assets}
 
 
 === trans/level_alu1_text ===
 
-$53254733455389*
+$53254733455389
 [right]Code
-[color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output
+[color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie actuelle
 [/right]
 
 
 === trans/ide_binary_header ===
 
-$22615032668969* Binary Editor
+$22615032668969 Editeur Binaire
 
 
 === trans/level_registers_text ===
 
-$78241632854567*
+$78241632854567
 [right][color=#e49f44]Code
-Input[/color][/right]
+en Entrée[/color][/right]
 
 
 === trans/level_nand_1 ===
 
-$71204033550134* What does the NAND gate do?
+$71204033550134 Que fais la porte NAND ?
 
 
 === trans/not_gate_RichTextLabel2 ===
