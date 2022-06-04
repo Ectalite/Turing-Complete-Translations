@@ -26,20 +26,25 @@ $73800316874022* [center]Construis le circuit qui correspond au code demandé[/c
 $12896765714603* Retenue
 
 
+=== trans/level_circumference_description ===
+
+$20154743351442* [center]Ajoute les conditions aux codes de calcul[/center]
+
+
 === components/FullAdder ===
 
 $57559382166174* Additionne 3 bits et sort la somme et la retenue
 $77669928463861* Additionneur complet
 
 
-=== trans/level_circumference_description ===
-
-$20154743351442* [center]Ajoute les conditions aux codes de calcul[/center]
-
-
 === misc/options ===
 
 $49251062339706* Options
+
+
+=== misc/ide_delete_program ===
+
+$87279416580516* Yes
 
 
 === levels/turing_complete ===
@@ -90,6 +95,22 @@ $19277843280528*
 $15296208528991* Les espèces capables de finir sont considérées comme légalement intelligentes.
 
 
+=== trans/manual_text_console ===
+
+$39093856809104*
+The console component is a 80x24 [color=#dd6576][url=RGB color]ASCII[/url][/color] display. It must be linked to a memory source through the component link button:
+ [img=200]dialogue/manual/Console/link_state.png[/img]
+
+Updating the linked memory will then update the visuals on the console. In standard non color mode, each byte in the memory component determines what the corresponding character on the screen will be. However, the first character position can be offset by using the input pin on the console. This is for example useful when implementing scrolling.
+
+The console also has a color mode that can be toggled on in the panel:
+[img=125]dialogue/manual/Console/color_mode.png[/img]
+
+In this mode each character has an additional 3 byte background and 3 byte foreground [color=#dd6576][url=RGB color]RGB color[/url][/color] for a total of 7 bytes of data per character. However, each character is 8 byte aligned, which is more convenient when you set your RAM or ROM to 64 bit width addressing. Also, you may keep the character indexes the same when changing your schematic from non color to color mode, by change the bitwidth of the RAM or ROM from 8 to 64 at the same time. 
+
+In color mode the lowest byte is the character, the next 3 bytes are the font color and the following 3 bytes are the background color.
+
+
 === levels/component_factory ===
 
 $14665712485657* Ce composant personnalisé ne peut pas être utilisé car il n'a aucune surface.
@@ -107,11 +128,6 @@ $15549447390000* 2 composants d'entrée/sortie sont dans la même zone. Le compo
 $29350436761480* SORTIES
 
 
-=== misc/instr_delete ===
-
-$91861509153454* Supprimer
-
-
 === components/Register32 ===
 
 $65405398199118* Mémoire 32 bits
@@ -121,6 +137,11 @@ $22031255978461* Registre 32 bits
 === trans/level_multiply_description ===
 
 $28761562806647* [center]Applique AND sur chaque paire de bits[/center]
+
+
+=== misc/instr_delete ===
+
+$91861509153454* Supprimer
 
 
 === trans/manual_the_robot ===
@@ -137,15 +158,20 @@ Sortie attendue
 Sortie actuelle[/right]
 
 
+=== trans/level_conditions_description ===
+
+$62540112577327* [center]Quand la valeur vérifie la condition mets la sortie à [img]dialogue/on.png[/img], sinon mets-la à [img]dialogue/off.png[/img].[/center]
+
+
 === components/64Ram ===
 
 $63410290483563* Nombre réduit de portes mais mémoire lente
 $78790416494254* RAM (mémoire vive)
 
 
-=== trans/level_conditions_description ===
+=== trans/manual_text_top_the_robot ===
 
-$62540112577327* [center]Quand la valeur vérifie la condition mets la sortie à [img]dialogue/on.png[/img], sinon mets-la à [img]dialogue/off.png[/img].[/center]
+$50801318216470* The screen shows the robot and his surroundings.
 
 
 === components/Nand16 ===
@@ -159,6 +185,11 @@ $56507506086622* NAND 8 Bits
 $69987793052607* Commentaire de fil (Cliquer sur le fil)
 
 
+=== trans/ide_memory_address ===
+
+$94594171568769* [center]Linked components[/center]
+
+
 === levels/delay_level ===
 
 $19986989895202*
@@ -166,6 +197,22 @@ Tous les composants ont un délai. Au niveau du schéma, le délai cumulé est d
 Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
 $11246430085016* Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
 $12817338693402* Le délai de tous les composants dérivent en fin de compte du délai de la porte NAND, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût NAND de 5.
+$17854168097855* Check
+
+
+=== misc/specification_dialogue ===
+
+$93899425142858* Copy from {from} to {to}
+$92046368194170* Condition
+$39935096343723* Never
+$52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
+$18833529038946* When [color=#2b8738]result[/color] {condition}
+$10141348037745* Immediate: {nr}
+$98983752580592* Copy
+$25145891843959* Always
+$53665446068319* UNUSED
+$26521666422399* Calculate
+$54909668901048* Immediate
 
 
 === components/Decoder2 ===
@@ -191,9 +238,48 @@ $31478630391268* Sortie activée quand la patte de contrôle est [ON]
 $84656390009725* Sortie commutée 1 bit
 
 
+=== trans/manual_text_assembly ===
+
+$54465324391961*
+You can use a mix of assembly codes and numbers to set the bytes. Assembly codes are just synonyms for a bit pattern. For example, instead of typing 196 for "add", this code can be named "add" directly, simplifying reading and writing code. 
+
+Comments can be added using "#". 
+[img]dialogue/comment.png[/img]
+
+Additionally, the [color=#c54d5e]CONST[/color] keyword can be used to name a value within a specific program. 
+[img]dialogue/const.png[/img]
+
+[color=#c54d5e]LABEL[/color] assigns a name to the byte offset of the line it was inserted on. This is especially useful for naming jump destinations.
+[img]dialogue/label.png[/img]
+
+You can add, subtract, multiply, integer divide, modulo, OR, AND or XOR values together using +, -, *, /, %, |, & or ^ respectively.
+
+Breakpoints can be added by clicking to the left of a line number. The program will automatically pause at breakpoints when running.
+[img]dialogue/breakpoint.png[/img]
+
+Breakpoints can also be added to any of the linked components, pausing the program when that state is changed. Click on the state and you will see the red dot.
+[img]dialogue/breakpoint_state.png[/img]
+
+Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0101) and hex with the prefix 0x (so 15 would be 0x0f)
+
+
 === trans/options_pipette_wire ===
 
 $96339976117958* Pipette à fil
+
+
+=== misc/add_assembly_64bit ===
+
+$33233688912123* [center]Add assembly code[/center]
+
+
+=== misc/files_preview ===
+
+$15827374884671* To parent folder
+$14135691870941* Last edit\nSchematics
+$32645745463577* Used in components
+$19184997172542* Used in architectures
+$36200352866864* Last edit
 
 
 === components/Mux ===
@@ -228,12 +314,29 @@ Octet 1
 Octet 2[/right]
 
 
+=== trans/level_complete_wire_comments ===
+
+$92673421413755*
+[b]Wire comments[/b]
+[color=#cccccc][i]Add comments to your wires.[/i][/color]
+
+
+=== trans/schematic_new_folder_name ===
+
+$86236104278688* New folder
+
+
 === levels/Nor GATE ===
 
 $11362258372706*
 La plupart des créatures sur la Terre sont agressives et ne savent pas se concentrer.
 
 Pour réussir, tu dois apprendre à raisonner, sans rien casser.
+
+
+=== trans/level_complete_stats ===
+
+$65428404547905* Stats
 
 
 === trans/level_maze_description ===
@@ -247,15 +350,28 @@ $50631450923181* OR bit à bit sur 2 valeurs
 $62930122175674* OR 64 bits
 
 
+=== trans/manual_text_bytes ===
+
+$73333514253412*
+This game asks you to build an 8 bit computer.  Practically this would normally require the player to put down 8 parallel wire lines in many places.
+To alleviate tedious busywork, you are given the notion of a byte, which is just a virtual bundle of 8 bits.
+
+The state of either a byte input / output or wire line is represented by a number, instead of the red or green color.
+
+
+=== trans/manual_robot_controls ===
+
+$94513149242653* Robot controls
+
+
 === misc/watchable_state ===
 
 $58678516111149* Éditer les espions
 
 
-=== components/Nor32 ===
+=== main_scripts/input ===
 
-$82743668258816* NOR bit à bit sur 2 valeurs
-$82121937858245* NOR 32 bits 
+$10186190492148* ALT click to move wire head
 
 
 === levels/wide_instrucitons ===
@@ -285,6 +401,12 @@ Cela signifie que plusieurs de ces pattes grises peuvent être connectées au m�
 $42793594302151* En utilisant 2 portes NOT et 2 Commutateurs, construis une porte XOR.
 
 
+=== components/Nor32 ===
+
+$82743668258816* NOR bit à bit sur 2 valeurs
+$82121937858245* NOR 32 bits 
+
+
 === components/Not64 ===
 
 $74829633052959* Inverse bit à bit une entrée de 64 bits
@@ -297,15 +419,48 @@ $71022099146246* Mémoire permettant d'EMPILER/DÉPILER
 $47202418972371* Pile
 
 
+=== ui/schematic_ui/confirm_delete ===
+
+$46014905606975* Yes
+
+
+=== trans/levels_saving_bytes_text ===
+
+$36838510526259*
+[right]Action
+Desired state
+Desired output
+[/right]
+
+
 === misc/sandbox_toggle ===
 
 $30516879701896* Bac à Sable
+
+
+=== trans/manual_side_the_robot ===
+
+$56547245144983*
+[color=#e49f44][b][/b][/color] The robot sees one 
+  tile ahead. The name
+  and ID are shown up 
+  here. This ID number
+  is also the computer's 
+  input.
 
 
 === components/Rol64 ===
 
 $49017662473189* Rotation à gauche des bits en entrée
 $13677051385046* Rotation à gauche
+
+
+=== trans/level_decoder_1_RichTextLabel2 ===
+
+$50454539040073*
+[right][color=#e49f44]Input[/color]
+Output 1
+Output 2[/right]
 
 
 === levels/byte_shift ===
@@ -327,9 +482,35 @@ $18137790657923* En plus de te faire faire le composant décaler à gauche, nous
 $18518173140953* Je te recommande d'ajouter [color=#e49f44]décaler gauche[/color] et [color=#e49f44]décaler droite[/color] à tes circuits pour les prochains niveaux.
 
 
+=== misc/restore_overture ===
+
+$52008982212566* Reset
+
+
+=== trans/credit_header ===
+
+$21717110565858* Credits
+
+
 === main_menu/sandbox_button ===
 
 $16857608955464* Bac à sable
+
+
+=== trans/_second_tick_RichTextLabel2 ===
+
+$11680718497014*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/level_complete_level_map ===
+
+$20801641140962*
+[b]Level map mode[/b]
+[color=#cccccc][i]Click "[color=#e49f44]Onwards[/color]" and you will see[/i][/color]
 
 
 === levels/xnor ===
@@ -349,10 +530,12 @@ $13224963076378* Nous étudions comment les expériences passées influent les f
 === levels/ram_block ===
 
 $12901484249817* Pourras-tu mettre 4 octets de mémoire dans un espace aussi limité ?
-$15908016538045* VALEUR
 $14218335256117*
 Dans notre civilisation avancée, forcer les prisonniers à faire des tâches complexes est de l'esclavage et est techniquement illégal.
     C'est pour cela que nous avons dit au stagiaire de faire une version 256 octets de ton composant.
+$15908016538045* VALEUR
+$16196915566111* 0
+$14259545926196* A
 $12306130287676*
 Dans ce niveau tu devras construire un circuit qui pourra
 [SAUVEGARDER] ou [CHARGER] 4 octets de mémoire différents. 
@@ -365,17 +548,18 @@ Avec 2 bits, tu auras 4 combinaisons possibles, une pour chaque octet de mémoir
 [i][tip]La barre d'espace fait tourner les composants.[/tip][/i]
 $18084166025569* Rien
 $13082830776248* NE PAS SAUVEGARDER
+$12933801309767* A
+
+
+=== trans/options_confirm_reset ===
+
+$55371048386984* D'accord
 
 
 === components/Shr64 ===
 
 $93124177265670* Décalage à droite des bits de l'entrée
 $73798355428095* Décalage à droite
-
-
-=== trans/options_confirm_reset ===
-
-$55371048386984* D'accord
 
 
 === components/Constant64 ===
@@ -407,15 +591,18 @@ $73523750891893* Terminal
 $52247325526438* Compteur
 
 
+=== trans/always_on_RichTextLabel2 ===
+
+$86547293707045*
+[right][color=#ffa502]Input[/color]
+Desired output
+Current output[/right]
+
+
 === components/Xnor16 ===
 
 $73699169812942* XNOR bit à bit de deux valeurs
 $40088995721509* XNOR 16 bits 
-
-
-=== components/Off ===
-
-$72749460799924* Toujours [OFF]
 
 
 === components/Screen ===
@@ -424,15 +611,21 @@ $12771040946773* Affiche les éléments visuels qui accompagnent certains niveau
 $50037736094411* Écran
 
 
-=== misc/ide_control_link ===
-
-$80788685813993* Contrôles du Robot
-
-
 === components/Shr16 ===
 
 $20291717268875* Décalage à droite des bits de l'entrée
 $31674686871821* Décalage à droite
+
+
+=== components/Off ===
+
+$61860786587357* OFF
+$72749460799924* Toujours [OFF]
+
+
+=== misc/ide_control_link ===
+
+$80788685813993* Contrôles du Robot
 
 
 === levels/Calibrating Laser Cannons ===
@@ -453,6 +646,7 @@ $16954408093587* Sur notre vaisseau nous détruisons naturellement les astéroï
 
 === levels/circular_dependency ===
 
+$16336401898647* Test 1/2
 $13880985462901* Réalise un circuit pour lequel l'entrée du composant dépend de sa propre sortie.
 $18010308863615*
 Crée une "dépendance circulaire". C'est un circuit pour lequel l'entrée du composant dépend de sa propre sortie. En cas de dépendance circulaire, il n'est pas possible de déterminer la sortie du composant, cela nécessiterait de connaître son entrée, qui dépend de sa sortie, et ainsi de suite, d'ou le "circulaire".
@@ -478,6 +672,11 @@ $17419057954798* XNOR bit à bit de 2 valeurs 32 bits
 $52489451755306* XNOR 32 bits
 
 
+=== trans/manual_send_otuput_robot ===
+
+$65542429897149* [center]Send output to control the robot[/center]
+
+
 === components/Or3 ===
 
 $17576327690867* porte OR 3 pattes
@@ -487,6 +686,11 @@ $99630419947500* OR 3 entrées
 === ui/top_bar/scores ===
 
 $56840961921536* SCORE NAND : \n SCORE DELAI :
+
+
+=== trans/level_binary_search_description ===
+
+$11976224688780* [center]Recover the passcode[/center]
 
 
 === components/Output1Sum ===
@@ -504,6 +708,26 @@ $31709565019284* Entrée
 $11447837612693* Entrée
 
 
+=== trans/level_component_factory_Label2 ===
+
+$37347658035959* Component preview
+
+
+=== trans/level_binary_programming_description ===
+
+$66247694103179* [center]Add 5 to the input[/center]
+
+
+=== trans/or_gate_3_RichTextLabel2 ===
+
+$56903547636751*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired output
+Current output[/right]
+
+
 === levels/Add 5 ===
 
 $11540713506719*
@@ -518,6 +742,11 @@ $11074247151096* Remarque que le composant registre rouge a été remplacé par 
 $18134632592542* Tu as construit ton ordinateur, mais pour gagner la compétition tu dois encore finir le labyrinthe.
 
 
+=== trans/not_gate_click_next2 ===
+
+$20820887361993* Click "Next tick" to see
+
+
 === components/Output16z ===
 
 $78873885833823* Sortie commutée
@@ -527,6 +756,16 @@ $54278394672948* Sortie activée seulement si la patte d'activation est [ON]
 === trans/manual_short_circuit ===
 
 $41209541005460* Court-circuit
+
+
+=== trans/manual_text_turing_complete ===
+
+$54897112350567*
+Certain computers, like simple calculators are limited in the algorithms they can perform.
+
+They cannot perform any calculation that requires looping or recursing an arbitrary amount of times. Technically machines without looping or recursion can only deal with combinational logic.
+
+Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
 
 
 === components/ByteMul ===
@@ -560,25 +799,14 @@ Nous allons vous mettre tous les deux en équipe, vous êtes assez bien complém
 $38100016313511* ARCHITECTURE PROCESSEUR 2
 
 
+=== trans/level_byte_constant_description ===
+
+$84789919073603* [center]Always output the number 164[/center]
+
+
 === misc/component_factory_toggle ===
 
 $55499239951858* Atelier de composants
-
-
-=== trans/map_basic_logic ===
-
-$75078723880086* LOGIQUE ELEMENTAIRE
-
-
-=== components/Counter32 ===
-
-$87245349851451* Compteur 32 bits 
-$92765669828982* S'incrémente à chaque cycle hors réinitialisaition
-
-
-=== misc/reset ===
-
-$39440928972984* Reset (Raccourci : F4)
 
 
 === components/Output8z ===
@@ -587,16 +815,20 @@ $16915419621070* Sortie commutée
 $58449766432492* Sortie activée seulement si la patte d'activation est [ON]
 
 
-=== components/Add32 ===
+=== trans/map_basic_logic ===
 
-$91616185859914* Ajoute deux entrées
-$64111401384153* Ajouter
+$75078723880086* LOGIQUE ELEMENTAIRE
 
 
 === components/And3 ===
 
 $19664974941910* AND 3 pattes
 $86839706221116* porte AND à 3 entrées
+
+
+=== misc/reset ===
+
+$39440928972984* Reset (Raccourci : F4)
 
 
 === components/Or32 ===
@@ -611,14 +843,35 @@ $88379907297327* Inverser
 $62021716182809* Inverse l'entrée bit à bit
 
 
+=== components/Add32 ===
+
+$91616185859914* Ajoute deux entrées
+$64111401384153* Ajouter
+
+
 === trans/options_disagree ===
 
 $60077370372179* Désaccord
 
 
-=== trans/options_robot_up ===
+=== nim/backend ===
 
-$92522280178363* Haut
+$98703677236827* 1 minute ago
+$86244493049244* {hours} hours ago
+$95018143828198* 1 year ago
+$21685594109067* Just now
+$98363990684104* 1 hour ago
+$84076931764831* 1 day ago
+$18300496139706* 1 month ago
+$17901039729248* {months} months ago
+$42553566189409* {minutes} minutes ago
+$70945526841433* {years} years ago
+$14036822471924* {days} days ago
+
+
+=== trans/instructions_hint ===
+
+$65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
 
 
 === trans/options_redo ===
@@ -626,14 +879,26 @@ $92522280178363* Haut
 $50610605761210* Refaire
 
 
-=== misc/instr_clone ===
+=== components/Counter32 ===
 
-$69090690657232* Cloner
+$87245349851451* Compteur 32 bits 
+$92765669828982* S'incrémente à chaque cycle hors réinitialisaition
 
 
-=== misc/program_edit_button ===
+=== trans/options_robot_up ===
 
-$38481453712356* Éditer la mémoire
+$92522280178363* Haut
+
+
+=== components/NOT ===
+
+$34453052824732* NOT
+$90844421681709*
+Inverse l'entrée
+[table=3]
+[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
+[/table]
 
 
 === levels/Crude Awakening ===
@@ -648,6 +913,11 @@ Un signal se déplace toujours de composants "IN" vers des composants "OUT".
 Dans le coin en haut à gauche en dessous de "IN" tu trouveras une icône verte, 
 clique dessus pour changer son état.
 $17675121574388* Le composant OUT s'est maintenant éteint, car aucun signal ne viens de l'entrée.\n
+
+
+=== misc/program_edit_button ===
+
+$38481453712356* Éditer la mémoire
 
 
 === misc/wire_draw ===
@@ -669,14 +939,9 @@ SORTIE  [ON][ON][OFF][OFF][ON][ON][OFF][OFF][/code]
 $15226896485081* Est ce que tu penses que ce serait immoral de manger tous les terriens qui ne gagnent pas la compétition ?
 
 
-=== components/NOT ===
+=== trans/level_registers_code ===
 
-$90844421681709*
-Inverse l'entrée
-[table=3]
-[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
-[/table]
+$40063003736243* [center]OR[/center]
 
 
 === components/And16 ===
@@ -685,9 +950,25 @@ $56198785587874* AND bit à bit entre 2 mots de 16 bits
 $26727645933234* AND 16 bits
 
 
+=== trans/instrucitons_header ===
+
+$14831276667273* [center]Instructions[/center]
+
+
+=== trans/level_the_bus_description ===
+
+$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
+
+
 === misc/option_reset ===
 
 $15557473522933* Réinitialiser
+
+
+=== components/DivMod32 ===
+
+$61314390474120* Divide and mod 2 numbers
+$84309999871615* Divide
 
 
 === misc/inst_new_rule ===
@@ -700,15 +981,41 @@ $41064305626707* Nouvelle règle
 $17712385236630* Réalise un circuit qui est toujours [ON].
 
 
+=== misc/instr_clone ===
+
+$69090690657232* Cloner
+
+
 === components/And64 ===
 
 $80790829001391* AND 64 bits
 $89424947351456* AND bit à bit sur deux mots de 64 bits
 
 
+=== trans/level_complete_hex ===
+
+$94261690850981*
+[b]Hexadecimal[/b]
+[color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
+
+
+=== trans/level_complete_gate ===
+
+$99373213759665*
+[b]Gate score[/b]
+[color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
+
+
+=== components/ByteEqual ===
+
+$35668435514829* Checks if the two inputs are equal
+$39369982838671* Equal
+
+
 === levels/binary_racer ===
 
 $16076448195257* Ce niveau est mon passe-temps favori. Convertir du décimal au binaire en temps limité.
+$29718660090112* Wrong answer
 $37319690622142* Très bien, tu as atteint le niveau {current_level}.
 $19111664765554*
 Modifie les bits dans le panneau afin qu'ils représentent le nombre décimal demandé.
@@ -718,6 +1025,7 @@ Tu dois atteindre le niveau 3 pour réussir.
 (cliques [color=#e63e5b][url=accessibility\\_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours.)
 $11176073682097* Combien fait {number} en binaire ?
 $71866932309393* Tu as atteint le niveau {level} !
+$37093663674348* Level {x}
 
 
 === components/Mul64 ===
@@ -732,6 +1040,19 @@ $14093358515620* Ceci est aussi appelé une porte XOR. Ce niveau est difficile, 
 $19182751521677* Dans le dernier niveau tu as réalisé un circuit qui était [ON] au second cycle. Ce niveau nécessite un circuit [ON] au second OU au troisième cycle.
 
 
+=== components/Bidirectional64 ===
+
+$82412839066570* 64 bit bidirectional pin
+$24932613021646* Can circumvent certain circular dependency errors
+
+
+=== trans/level_complete_profile ===
+
+$78783902500954*
+[b]Online profile[/b]
+[color=#cccccc][i]Find it in the main menu.[/i][/color]
+
+
 === levels/bit_adder ===
 
 $13109388951000* Nous mesurons l'univers avec des nombres. Donc ta machine doit apprendre à compter.
@@ -741,10 +1062,9 @@ Considère que les entrées sont [ZERO] ou [ONE] en fonction de leur valeur [OFF
 Comme avec l'addition habituelle, si le résultat ne peut être écrit avec un chiffre, mets la retenue à [ONE].
 
 
-=== components/Maker32 ===
+=== trans/options_robot_right ===
 
-$82420653444614* Assemble 32 bits en 4 octets
-$85308499118176* Créateur 32 bits
+$70185788176428* Droite
 
 
 === trans/options_robot_left ===
@@ -752,14 +1072,20 @@ $85308499118176* Créateur 32 bits
 $73654791275689* Gauche
 
 
-=== trans/options_robot_right ===
+=== components/Maker32 ===
 
-$70185788176428* Droite
+$82420653444614* Assemble 32 bits en 4 octets
+$85308499118176* Créateur 32 bits
 
 
 === trans/options_inline_latches ===
 
 $53886441687616* Verroux en ligne
+
+
+=== misc/add_code_name ===
+
+$57358078712675* Save
 
 
 === levels/double_number ===
@@ -793,9 +1119,29 @@ $12639868461113* Quitter
 $81707212583931* Disponible
 
 
+=== trans/manual_text_negative_numbers ===
+
+$85226853816564*
+The way to represent negative numbers you discovered is called "two's complement". It is the standard way to represent negative numbers in modern computers. The main advantage of two's complement is that the negative representation works seamlessly with the same adder that we used for the non signed representation.
+
+In the early days of computing, the main contender to two's complement was one's complement. Its main advantage is that changing the sign of a number is simple, you just NOT each bit in the number. However, it has 2 representations for 0, a positive and a negative, which makes comparisons more difficult.
+
+Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
+
+
 === trans/options_window_mode ===
 
 $54328660964287* Mode fenêtré
+
+
+=== trans/options_console ===
+
+$96601731563408* Open console
+
+
+=== trans/options_waiting ===
+
+$58990937331663* En Attente
 
 
 === misc/ui_panel/memory ===
@@ -806,6 +1152,16 @@ $65362728703588* MEMOIRE
 === misc/level_gate_component_icon ===
 
 $83440578602427* Déverrouille des composants
+
+
+=== trans/options_save_location ===
+
+$61172959716558* Emplacement de Sauvegarde
+
+
+=== trans/ide_add_assembly_header ===
+
+$94462268558066* [center]Add assembly code[/center]
 
 
 === levels/any_doubles ===
@@ -824,11 +1180,6 @@ $43917122084061* Accepte la sortie du niveau
 $81929942356043* Sortie
 
 
-=== ui/options/Robot Controls ===
-
-$58799802152286* Contrôles du robot
-
-
 === components/Neg64 ===
 
 $88458190974122* Inverser
@@ -841,6 +1192,11 @@ $30487770736917* Ligne à Retard
 $38206009264853* Envoie en sortie au prochain cycle l'entrée de ce cycle 
 
 
+=== ui/options/Robot Controls ===
+
+$58799802152286* Contrôles du robot
+
+
 === misc/solution_option ===
 
 $21618236951146* Regarder la solution
@@ -851,16 +1207,21 @@ $21618236951146* Regarder la solution
 $65699778604521* Tout Effacer
 
 
-=== components/DelayLine32 ===
+=== trans/map_programming ===
 
-$56616725618490* Envoie en sortie au prochain cycle l'entrée de ce cycle 
-$49292282287971* Ligne à retard 32 bits
+$44937904689376* PROGRAMMATION
 
 
 === components/Nand64 ===
 
 $27197172037913* NAND 64 bits
 $66590147372797* NAND bit à bit de 2 entrées
+
+
+=== components/DelayLine32 ===
+
+$56616725618490* Envoie en sortie au prochain cycle l'entrée de ce cycle 
+$49292282287971* Ligne à retard 32 bits
 
 
 === misc/run_fast ===
@@ -872,11 +1233,6 @@ $49363678936533* Augmenter la vitesse des cycles (clique droit: changer la vites
 
 $61925612221077* Ligne à retard 16 bits
 $65706144678496* Envoie en sortie au prochain cycle l'entrée de ce cycle 
-
-
-=== trans/map_programming ===
-
-$44937904689376* PROGRAMMATION
 
 
 === levels/divide ===
@@ -904,15 +1260,15 @@ $62337044104456* Couleur RVB
 $44690074039467* Activer/Désactiver la définition des règles
 
 
-=== components/Output 4 ===
-
-$90190739202646* Sortie
-
-
 === components/Rom ===
 
 $24976506406652* ROM (mémoire morte)
 $81743370431597* Mémoire morte (Read only memory, hors bac à sable)
+
+
+=== components/Output 4 ===
+
+$90190739202646* Sortie
 
 
 === levels/Delicious Order ===
@@ -1001,14 +1357,14 @@ déplacer(numdisque, source, destination, réserve)[/color][/code]
 [tip]Empile les valeurs de registre pour les sauvegarder avant l'appel d'une fonction qui les modifie.[/tip]
 
 
-=== trans/map_functions ===
-
-$83960548773205* FONCTIONS
-
-
 === trans/manual_universal_gates ===
 
 $28345532918560* Portes universelles
+
+
+=== trans/map_functions ===
+
+$83960548773205* FONCTIONS
 
 
 === components/Input 1 Byte ===
@@ -1016,11 +1372,34 @@ $28345532918560* Portes universelles
 $40943344093513* Entrée
 
 
+=== trans/wire_comment ===
+
+$41481492318983* Wire comment
+$87836369268219* Save
+$34083666001769* Wire comment
+
+
 === levels/odd_number_of_signals ===
 
 $16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
 $85589489148198* Composants utilisés\n{nr} sur 3
 $18288998816979* Ce niveau a un [color=#e63e5b][url=odd\_number]indice[/url][/color] que tu peux lire si tu es bloqué..
+
+
+=== trans/manual_text_binary ===
+
+$69488982380310*
+The numbers you are used to are base 10, here when we add a 0 to the right hand side of a number, it's value increases 10 fold.
+
+Binary is base 2, so doing the same will instead just double it. In other words, each digit represents a power of 2. For example with [color=#c54d5e]base 2[/color] and [color=#e49f44]base 10[/color] color coded:
+[color=#c54d5e]    1[/color] = [color=#e49f44]1[/color]
+[color=#c54d5e]  10[/color] = [color=#e49f44]2[/color]
+[color=#c54d5e]100[/color] = [color=#e49f44]4[/color]
+
+To represent 6 we can simply add 4 and 2:
+[color=#c54d5e]110[/color] = [color=#e49f44]6[/color]
+
+Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
 
 
 === misc/wire_color ===
@@ -1128,6 +1507,29 @@ $11201813578269* Sortie :
 $17156565273196* La sortie doit être [ON] quand les deux entrées sont identiques.
 
 
+=== trans/levels_counting_signals_RichTextLabel2 ===
+
+$34604121212779*
+[right]Input 1
+Input 2
+Input 3
+Input 4[color=#e49f44]
+Desired output
+Current output[/color][/right]
+
+
+=== trans/level_program_text ===
+
+$38014836341470*
+[right][color=#e49f44]Code
+Input[/color][/right]
+
+
+=== trans/level_complete_stat_time ===
+
+$39203727515285* Time
+
+
 === components/Rol8 ===
 
 $79612280948390* Rotation à gauche
@@ -1156,16 +1558,38 @@ $36195388998735* Général
 $58330421958143* MEMOIRE
 
 
+=== trans/manual_text_matrix ===
+
+$75170402412137*
+[b]Showing letters[/b]
+It just so happens that a pixel space of 5x7 while small is still able to render letters nicely. By adding an extra row and column, these letters will also look nice when put next to each other. 
+
+[center][img]dialogue/manual/matrix_letter.png[/img][/center]
+
+
+[b]Small tileable screen[/b]
+Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio and tiling these, you can get most resolutions you might want. The way the pins are set up on this component was specifically designed to allow tiling. Imagine the naive pin design where each component is enabled by a single bit. This would require you to connect 1 wire for each component. In this situation, the number of wires needed for a tiled screen would scale with the area, while the gap needed to fit wires between components, would scale with the circumference. 
+
+[center][img]dialogue/manual/tilable_screen.png[/img][/center]
+
+Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
+
+
 === trans/options_robot_shoot ===
 
 $52956877721342* Tirer
 
 
+=== trans/levels_double_the_number ===
+
+$41609125516676* [center]Double the number[/center]
+
+
 === levels/not_gate ===
 
 $19085882338208* [b]Consigne[/b]\nFais un clique droit pour désélectionner
-$14042842216181* Dans le dernier niveau, tu as construit le tableau à partir du circuit. Dans ce niveau tu devras créer un circuit qui correspondra au tableau.
 $10042327259531* Maintenant que tu as déverrouillé la porte NAND, il est temps de créer ton propre circuit.
+$14042842216181* Dans le dernier niveau, tu as construit le tableau à partir du circuit. Dans ce niveau tu devras créer un circuit qui correspondra au tableau.
 $10604720087324* [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nCliquez [i]?[/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\Tu réussiras le niveau une fois que les deux combinaisons seront justes.
 $19798729463813*
 En utilisant des portes NAND, contruis une porte NOT.
@@ -1183,10 +1607,20 @@ $12880883686501* [b]Consigne[/b]\nClique sur la porte NAND en haut à droite et 
 $18780831606716* [b]Consigne[/b]\nMaintiens le clic gauche pour ajouter un fil
 
 
+=== trans/level_delay_level_description ===
+
+$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
+
+
 === components/IndexBit ===
 
 $89611629299917* Indexeur de bits
 $84431924133490* Extrait un bit unique du fil
+
+
+=== trans/level_spacial_invasion_description ===
+
+$44980627299841* [center]Shoot the space rats![/center]
 
 
 === levels/registers ===
@@ -1216,13 +1650,13 @@ Voici les combinaisons de bits pour chaque [color=#c54d5e]source[/color] et [col
 [ON] [ON] [ON]  NON UTILISE
 
 Pour obtenir des explications plus intuitives des exigences clique sur l'icône [INSTRUCTION] dans le coin supérieur gauche.
+$14823499195861* Ouvrir les "Instructions" dans la barre en haut
 $15888345020710*
 Dans ce niveau tu dois créer un circuit pour copier d'une [color=#c54d5e]source[/color] vers une [color=#e49f44]destination[/color]. 
 
 L'octet instruction indique ici la [color=#c54d5e]source[/color] et la [color=#e49f44]destination[/color]. 
 
 Les bits 1, 2 et 3 indiquent la [color=#e49f44]destination[/color]. Les bits 4, 5 et 6 indiquent la [color=#c54d5e]source[/color].
-$14823499195861* Ouvrir les "Instructions" dans la barre en haut
 $14108238519744* Il est temps de créer ton chef d'œuvre, en implémentant l'architecture informatique [color=#e49f44]OVERTURE[/color]. Ce sera un véritable système Turing Complet, un vrai ordinateur dans tous les sens du terme !
 $14411286553593* Enfin les composants d'entrée et sortie ont maintenant une nouvelle patte. Met cette patte à [ON] pour lire depuis l'entrée ou copier vers la sortie.
 $14041158687959*
@@ -1245,6 +1679,11 @@ $69522380057631* NOR 16 bits
 === components/Input32 ===
 
 $10677927084411* Entrée
+
+
+=== components/Input 1B CODE ===
+
+$16878300327380* Instruction
 
 
 === misc/level_gate_manual_icon ===
@@ -1311,16 +1750,16 @@ $52765625016236* Détermine si une entrée est inférieure à l'autre
 $25403981009644* Inférieur (signé)
 
 
-=== components/BitSwitch ===
-
-$56917313833836* Active/Désactive un bit
-$41574334638147* Commutateur (Switch)
-
-
 === misc/FileInput ===
 
 $28866575833369* Lit des octets depuis ton disque dur
 $34159012148766* Chargeur de fichier
+
+
+=== components/BitSwitch ===
+
+$56917313833836* Active/Désactive un bit
+$41574334638147* Commutateur (Switch)
 
 
 === components/LessI16 ===
@@ -1329,9 +1768,41 @@ $75600169624828* Inférieur (signé)
 $73697238171042* Détermine si une entrée est inférieure à l'autre
 
 
+=== trans/level_constants_description ===
+
+$34641396464207* [center]Add constant loading to your architecture[/center]
+
+
 === trans/manual_circular_dependency ===
 
 $40263928358112* Dépendance circulaire
+
+
+=== misc/overture_add_assembly ===
+
+$10565133223872* Never
+$62421757655527* Name a code and click save.
+$24281479096246* When [color=#2b8738]result[/color] {condition}
+$63525237058165* Copy from {source} to {destination}
+$32873193471770* UNUSED
+$88446594314360* Immediate: {number}
+$94278717238239* Always
+$72740868980397* {condition} copy {register} to counter
+$79398554520691* {opcode} {reg_1} and {reg_2}
+
+
+=== trans/or_gate_RichTextLabel2 ===
+
+$56663370211115*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== levels/binary_count_down ===
+
+$56999237564848* {x} seconds left
 
 
 === components/Output32 ===
@@ -1342,6 +1813,11 @@ $37476623180671* Sortie
 === misc/profile ===
 
 $32835651830157* Profil
+
+
+=== trans/level_complete_level_complete ===
+
+$49647690443210* [center]Level Complete[/center]
 
 
 === components/BeepBox ===
@@ -1355,9 +1831,18 @@ $95836352586032* Permet de contourner certaines erreurs de dépendance circulair
 $34912798641933* patte bidirectionnelle 1 bit
 
 
-=== trans/options_setting_export_assembled ===
+=== trans/options_setting_click_to_pan ===
 
-$98549046707456* Exporter le binaire assemblé
+$24654961601456* Cliquer pour déplacer la vue
+
+
+=== components/Halt ===
+
+$30351143139905* Arrêt (Halt)
+
+#  This is the default message of the Halt component
+$54106972240596* Arrêt (Halt)
+$62990744955549* Arrête l'exécution avec un message personnalisé
 
 
 === components/Mul32 ===
@@ -1366,18 +1851,9 @@ $98530670555665* Multiplier
 $51210946736766* Multiplie deux entrées
 
 
-=== components/Halt ===
+=== misc/program_edit ===
 
-$30351143139905* Arrêt (Halt)
-
-NOTE: This is the default message of the Halt component
-$54106972240596* Arrêt (Halt)
-$62990744955549* Arrête l'exécution avec un message personnalisé
-
-
-=== trans/options_setting_click_to_pan ===
-
-$24654961601456* Cliquer pour déplacer la vue
+$57861256694537* Bytes {bytes_from} - {bytes_to}
 
 
 === components/Bidirectional32 ===
@@ -1386,9 +1862,44 @@ $54631386552063* patte bidirectionnelle 32 bits
 $35105566244017* Permet de contourner certaines erreurs de dépendance circulaire
 
 
+=== trans/options_setting_export_assembled ===
+
+$98549046707456* Exporter le binaire assemblé
+
+
+=== trans/level_wide_instructions_description ===
+
+$60538893544456* [center]Build a wide instruction program component[/center]
+
+
 === misc/delete ===
 
 $53448014080434* Supprimer (Raccourci : Clic droit)
+
+
+=== trans/manual_component_factory_text ===
+
+$42847481618884*
+Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
+
+The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
+
+The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
+
+Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
+
+For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
+
+
+=== misc/specifications ===
+
+$56390619785555* View instructions definitions
+$68054407020318* Instructions
+
+
+=== trans/level_complete_stat_delay ===
+
+$43118901497406* Delay
 
 
 === misc/controls2 ===
@@ -1396,9 +1907,9 @@ $53448014080434* Supprimer (Raccourci : Clic droit)
 $38773676077206* Éditer les instructions
 
 
-=== trans/options_comment_wire ===
+=== levels/negative_numbers/test ===
 
-$96449970906640* Commentaire de fil
+$64427417171037* Test
 
 
 === trans/manual_binary ===
@@ -1406,9 +1917,19 @@ $96449970906640* Commentaire de fil
 $19098578855427* Binaire
 
 
+=== trans/level_byte_adder_you_carry_text2 ===
+
+$87943759248740* Carry
+
+
 === trans/manual_terminology ===
 
 $13311390759928* Lexique
+
+
+=== trans/options_comment_wire ===
+
+$96449970906640* Commentaire de fil
 
 
 === components/NetworkClient ===
@@ -1429,8 +1950,17 @@ $13442839894535* Vitesse d'animation des fils
 
 === components/Xnor8 ===
 
-$45789912406647* XNOR bit à bit entre 2 octets
 $31985293401482* XNOR 8 bits 
+$45789912406647* XNOR bit à bit entre 2 octets
+
+
+=== trans/level_bit_switch_RichTextLabel2 ===
+
+$57920867194992*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
 
 
 === levels/or_gate ===
@@ -1451,6 +1981,14 @@ Comme avec l'addition normale, si le résultat ne peut être représenté avec u
 
 $59129788113517* Oriente vers 8 sorties
 $94375716460090* Décodeur 3 bits
+
+
+=== trans/levels_negative_descriptions ===
+
+$87964635915702*
+-127 to 127 representable:
+0 to 127 same as before:
+Works with adder:
 
 
 === components/Counter16 ===
@@ -1476,9 +2014,9 @@ $21904470559153* Séparateur d'octets
 $38557550573896* Présentation du niveau
 
 
-=== misc/change_schematic ===
+=== misc/instruciton_rule_label ===
 
-$79554853897000* Changer de schéma
+$70464083627337* Label
 
 
 === components/Splitter32 ===
@@ -1487,16 +2025,37 @@ $90978982016052* Répartit 32 bits en 4 octets
 $24096666569346* Répartiteur 32 bits
 
 
-=== components/Shl32 ===
+=== misc/change_schematic ===
 
-$38930281262898* Décalage à gauche
-$88685329847417* Décale à gauche les bits en entrée
+$79554853897000* Changer de schéma
+
+
+=== trans/level_alu1_code ===
+
+$20619700446604* [center]OR[/center]
+
+
+=== components/DivMod8 ===
+
+$37666366877853* Divide and mod 2 numbers
+$44959426271423* Divide
 
 
 === components/Shl64 ===
 
 $56766765894165* Décale à gauche les bits en entrée
 $37014604954362* Décalage à gauche
+
+
+=== trans/level_byte_mux_description ===
+
+$20538476756633* [center]Output the correct input byte[/center]
+
+
+=== components/Shl32 ===
+
+$38930281262898* Décalage à gauche
+$88685329847417* Décale à gauche les bits en entrée
 
 
 === components/Program64 ===
@@ -1509,9 +2068,22 @@ $76480303942112* composant mémoire programmable
 $77850745497963* Appliquer la couleur au groupe de fil
 
 
+=== trans/level_program_description ===
+
+$44017405175202* [center]Replace the input code with the program component.[/center]
+
+
 === misc/menu ===
 
 $56916384895438* Menu Général
+
+
+=== trans/level_odd_ticks_RichTextLabel3 ===
+
+$89508766742523*
+[right]Input
+Desired output
+Current output[/right]
 
 
 === levels/xor ===
@@ -1519,6 +2091,16 @@ $56916384895438* Menu Général
 $11589029892097* XOR les bits des entrées {a} et {b}
 $12758156517177* En utilisant les instructions implémentées par ton ordinateur, lit deux fois l'entrée et effectue un XOR sur les deux valeurs
 $16047615798435* [center]Lit deux fois l'entrée et effectue un XOR sur les bits des deux entrées[/center]
+
+
+=== trans/level_byte_or_text ===
+
+$99465606386164*
+[right]
+[color=#e49f44]Input[/color]
+Desired output
+Current output
+[/right]
 
 
 === trans/manual_simulator ===
@@ -1537,9 +2119,16 @@ $35735598635057* Inverse bit à bit une entrée
 $75386511637758* Entrée
 
 
+=== trans/level_dependency_description ===
+
+$81238724438578* Make a wire where the input of a component depends on its own output
+
+
 === levels/the_bus ===
 
 $72472660427162* [center]Copie la valeur de l'entrée {input_nr} vers la sortie {output_nr}[/center]
+$96958133516462* FROM
+$91318587712792* TO
 $85140574084420* [center]Copie la valeur de la bonne entrée vers la bonne sortie[/center]
 
 
@@ -1560,10 +2149,21 @@ $61330657823382* Valeur Constante
 $14788981567936* Crée une porte NAND avec 3 entrées.
 
 
+=== components/DivMod16 ===
+
+$42657221816637* Divide and mod 2 numbers
+$22319923069746* Divide
+
+
 === components/MemoryProbeBit ===
 
 $13846578075327* Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 $25103579211328* Sonde Mémoire (bit)
+
+
+=== trans/manual_keynote_the_robot ===
+
+$90224489436893* [center]Use arrow keys to play around[/center]
 
 
 === trans/level_byte_mux_text ===
@@ -1593,6 +2193,10 @@ Mais avant, tu dois construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/
 Pour résoudre les défis que je t proposerais sans t'arracher tous les cheveux qu'il te reste, tu auras besoin d'un élément en plus : l'architecture [color=#e49f44]LEG[/color].
 $17275059688693* Bravo ! Tu as réussi la compétition, c'est une prouesse incomparable !
 $13741358519166* Le labyrinthe mythique. Si tu réussis à en sortir, tu gagneras la compétition!
+$36193081514106* NOTHING
+$10837851446666* WALL
+$10598752971970* COIN
+$40917300157127* SEEING:
 $11103446544344* D'un autre côté, tu peux aussi fièrement partir et ne pas être mangé. 
 $19331074553774*
 Écris un algorithme qui permettra au robot de sortir du labyrinthe.
@@ -1602,6 +2206,7 @@ Ce niveau est dur, tu devrais d'abord écrire ton algorithme sur le papier avant
 Utilise [color=#e63e5b][url=maze]cet indice[/url][/color] si tu es coincé. 
 
 [tip]Souviens-toi que tu ne peux pas utiliser de valeur immédiate plus grande que 63, attention donc à ne pas vouloir sauter à une ligne plus bas que la ligne 63.[/tip]
+$54151353200088* DOOR
 
 
 === trans/level_constants_text ===
@@ -1640,9 +2245,27 @@ $18561605111721* EMPILER {input} sur la pile
 $59658696292688* DÉPILER {value} de la pile
 
 
+=== trans/level_complete_signed_numbers ===
+
+$41649402437253*
+[b]Negative numbers[/b]
+[color=#cccccc][i]Toggle between signed 
+ and unsigned numbers[/i][/color]
+
+
+=== trans/level_complete_stat_tick ===
+
+$47758922161853* Tick
+
+
 === trans/levels_not_RichTextLabel3 ===
 
 $48425594158515* Construis une porte NOT
+
+
+=== trans/level_codes_description ===
+
+$24678249110160* [center]Ajoute les codes de calcul à ton circuit[/center]
 
 
 === components/Rol16 ===
@@ -1651,14 +2274,17 @@ $48583573494467* Rotation vers la gauche
 $73379230742631* Décalage à gauche des bits en entrée avec recyclage
 
 
-=== trans/level_codes_description ===
-
-$24678249110160* [center]Ajoute les codes de calcul à ton circuit[/center]
-
-
 === trans/options_synced ===
 
 $99411066573242* Synchronisé
+
+
+=== trans/text_truth_table_left ===
+
+$58617980046951*
+[right]Input 1
+Input 2
+Output[/right]
 
 
 === trans/optoins_factory_reset ===
@@ -1693,6 +2319,14 @@ Assure-toi que le signal ne se propage que de gauche à droite. Il y aura trois 
 === trans/level_signed_negator_labels3 ===
 
 $66996894079719* Attendu   Actuel
+
+
+=== trans/manual_text_hard_disk ===
+
+$82372297690518*
+Hard disks are made of a spinning disk and a mechanical arm that has to physically move to load or save data. Of course physical movement is extremely slow in the timescales of electronics. Operating systems will normally order loads and saves such that the arm has to travel as little as possible.
+
+The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
 
 
 === ui/state_ui/state_ui_output_bit ===
@@ -1734,10 +2368,9 @@ $75979055121665* Multiplexeur 16 bits
 $13997767115693* Alterne entre 2 valeurs
 
 
-=== components/Nor8 ===
+=== trans/level_complete_stat_sum ===
 
-$34517798310461* NOR bit à bit de 2 entrées
-$39421972053612* NOR 8 Bits
+$99546064626994* Score
 
 
 === levels/crude_awakening/next_level ===
@@ -1745,9 +2378,20 @@ $39421972053612* NOR 8 Bits
 $24027424800887* Niveau suivant
 
 
+=== components/Nor8 ===
+
+$34517798310461* NOR bit à bit de 2 entrées
+$39421972053612* NOR 8 Bits
+
+
 === trans/level_alu2_description ===
 
 $37432913848309* [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les 2 octets[/center]
+
+
+=== trans/level_complete_stat_gate ===
+
+$95192766583497* Gate
 
 
 === levels/signed_negator ===
@@ -1768,6 +2412,18 @@ $80632450818467* [center][color=#cccccc](Considérons π ≈ 3)[/color][/center]
 $22687523145097* Manquant
 
 
+=== trans/manual_delay_text ===
+
+$52013630755752*
+In real hardware all components have delay. This is important since the delay in a circuit determines the maximum speed at which you can run it.
+
+Following wires from input to output and adding the delay of components in the path will give you the delay that path. The delay of a circuit is the delay of the slowest path.
+
+Besides inputs, paths can also start from components with no reliance on early phase inputs (like Counter and On) and they can end at late phase inputs (see page).
+
+Further, custom components don't have a delay score for the costliest path of the whole component, but rather the delay cost is calculated per pin. This is so as to not penalize using custom components by making faster pins cost the same as the slower ones.
+
+
 === trans/level_xnor_RichTextLabel2 ===
 
 $59451104901430*
@@ -1777,24 +2433,24 @@ Sortie attendue
 Sortie actuelle[/right]
 
 
-=== ui/options/Controls ===
+=== components/Input16 ===
 
-$53266310714298* Contrôles
+$34560561101846* Entrée
 
 
 === nim/backend_lib/level_list ===
 
 $58391129129347* Registres (Registers)
 $45936227746026* Compteur (Counter)
-$16881141174140* Course Binaire (Binary Racer)
 $12946639957230* Porte NOT (NOT Gate)
+$16881141174140* Course Binaire (Binary Racer)
 $37136208388559* Bascule SR (SR Latch)
 $32191988336459* Sauvegarde parfaite (Saving Gracefully)
 $59136962133320* Moteur Logique (Logic Engine)
 $30920780473397* Dépendance Circulaire (Circular Dependency)
-$83321010943153* Compter des Signaux (Counting Signals)
 $58769021955965* Décodeur 3 bits (3 Bit Decoder)
 $78673715398197* Valeurs Immédiates (Immediate Values)
+$83321010943153* Compter des Signaux (Counting Signals)
 $49679174636208* XOR Octet (Byte XOR)
 $40356575891647* OR Octet (Byte OR)
 $44393538021725* Calibration des Canons Laser (Calibrating Laser Cannons)
@@ -1802,15 +2458,16 @@ $61228036919534* Tours d'Alliage (Tower of Alloy)
 $87426564872318* Diviser (Divide)
 $24593959732668* Négation signée (Signed Negator)
 $19487493622742* Demi-additionneur (Half Adder)
+$26705128002562* Conditions
 $94163943335575* Le Bac à Sable (The Sandbox)
-$64662599400870* Inverseur de bit (Bit Inverter)
+$27566801288091* Atelier de composants (Component Factory)
 $14193654974055* Inférieur Signé (Signed Less)
 $59485174474959* Délices ordonnés (Delicious Order)
-$74096060570427* Instructions Larges (Wide Instructions)
 $14522992467987* Porte OR (OR Gate)
-$30630492494839* NOT Octet (Byte NOT)
+$64662599400870* Inverseur de bit (Bit Inverter)
 $11457737665157* Plat de Spaghetti (Wire Spaghetti)
-$27566801288091* Atelier de composants (Component Factory)
+$30630492494839* NOT Octet (Byte NOT)
+$74096060570427* Instructions Larges (Wide Instructions)
 $85514901357243* Addition d'Octets (Adding Bytes)
 $98013649264532* Pile (Stack)
 $35790581910835* Second Cycle (Second Tick)
@@ -1818,9 +2475,9 @@ $94979277765051* Course de Robots (Robot Racing)
 $13303326918621* Porte NAND (NAND Gate)
 $16463062897451* Réveil brutal (Crude Awakening)
 $28827008935802* Le Labo (The Lab)
-$77495536880911* Porte NOR (NOR Gate)
 $61466151084505* Invasion Spaciale (Spacial Invasion)
 $20858506932774* Porte AND (AND Gate)
+$77495536880911* Porte NOR (NOR Gate)
 $92696642439976* Confrontation d'IA (AI Showdown)
 $62326481348276* Le Labyrinthe (The Maze)
 $74512388889988* Moteur Arithmétique (Arithmetic Engine)
@@ -1829,38 +2486,40 @@ $70651296323768* Porte XOR (XOR Gate)
 $31140969090253* Noms de Planètes (Planet Names)
 $74688348772072* Le bus (The bus)
 $42873691377272* Ajouter 5 (Add 5)
-$68155633878444* Délais (Delay)
-$45773199639367* Cycles pairs (Odd Ticks)
+$36114120875026* Craqueur de code (Storage cracker)
+$15420972347773* RAM
 $17198602105978* Inférieur non signé (Unsigned Less)
 $43018398941741* Toujours On (Always On)
-$36114120875026* Craqueur de code (Storage cracker)
+$45773199639367* Cycles pairs (Odd Ticks)
+$68155633878444* Délais (Delay)
 $33343343932901* Turing Complet (Turing Complete)
-$95989050249094* Porte AND en plus grand (Bigger AND Gate)
 $69830943995038* Sens Unique (One Way)
 $81417895515868* Commutateur de bits (Bit Switch)
+$95989050249094* Porte AND en plus grand (Bigger AND Gate)
 $62167495140389* Décaler (Shift)
-$87626070552799* Additionneur complet (Full Adder)
-$13219675195117* Nombre IMPAIR de Signaux (ODD Number of Signals)
 $63331549672739* Codes Opération (Opcodes)
+$13219675195117* Nombre IMPAIR de Signaux (ODD Number of Signals)
+$87626070552799* Additionneur complet (Full Adder)
 $28985439820134* Le produit des Quartets (The Product of Nibbles)
-$94896856420525* Porte XNOR (XNOR Gate)
 $25805639594354* Programmer (Program)
 $57870391153000* Valeurs Immédiates (Immediate Values)
-$96825664933181* Fruit invisible (Unseen Fruit)
+$94896856420525* Porte XNOR (XNOR Gate)
 $56272944092958* Lignes très en retard (Delayed Lines)
+$96825664933181* Fruit invisible (Unseen Fruit)
 $86717899742637* Sauver les Octets (Saving Bytes)
 $53092952738479* Sélecteur d'Entrée (Input Selector)
-$77453667419150* Décodeur d'Instruction (Instruction Decoder)
-$96898830278153* Constante Octet (Byte Constant)
-$17750429607702* Décodeur 1 bit (1 Bit Decoder)
-$59939822079116* Nombres Négatifs (Negative Numbers)
-$79570913613529* Doubler les Nombres (Double the Number)
-$49328023903824* Égalité (Equality)
+$70993791338383* XOR
 $33132016601448* Empiler et Dépiler (PUSH and POP)
+$17750429607702* Décodeur 1 bit (1 Bit Decoder)
+$77453667419150* Décodeur d'Instruction (Instruction Decoder)
+$59939822079116* Nombres Négatifs (Negative Numbers)
+$49328023903824* Égalité (Equality)
+$79570913613529* Doubler les Nombres (Double the Number)
+$91267697977186* Course Hexa (Hex Racer)
 $74292408260828* Calculs (Calculations)
 $45480765206717* Conditions (Conditionals)
 $71126291573555* Doublement compliqué (Double Trouble)
-$91267697977186* Course Hexa (Hex Racer)
+$96898830278153* Constante Octet (Byte Constant)
 $75225719777307* Monde Aquatique (Water World)
 $64615090872051* Fonctions (Functions)
 $84208736840052* Compter les jours (Masking Time)
@@ -1868,21 +2527,22 @@ $36221227239949* Machine à Danser (Dancing Machine)
 $91954159574064* Porte OR en plus grand (Bigger OR Gate)
 
 
-=== misc/run ===
+=== trans/level_byte_less_description ===
 
-$67345621265845* Démarrer les cycles (Raccourci : F6)
+$37336202055283* [center]Determine si la première entrée est inférieure à la seconde.[/center]
 
 
-=== components/Input16 ===
+=== components/Register16 ===
 
-$34560561101846* Entrée
+$16015376037787* Registre 16 Bits
+$71792123436163* Mémoire 16 bits
 
 
 === levels/Opcodes ===
 
 $19693461238792* Fixe l'incrément du compteur à 4
-$38976231780455* Point d'observation {nr} doit cibler un registre ou un composant personnalisé contenant un registre
 $20916717363300* Point d'observation {nr} doit cibler la sortie
+$38976231780455* Point d'observation {nr} doit cibler un registre ou un composant personnalisé contenant un registre
 $18189600217529* [center]Implémente l'instruction OPCODE[/center]
 $13450117997204* Ajoute un compteur dans le circuit
 $77044880242883* Point d'observation {nr} doit cibler le compteur
@@ -1931,23 +2591,6 @@ $15446846177093* Bienvenue au labo. Comme l'atelier de composants, ce n'est pas 
 $16072814175447* Programmer du matériel bugué est très frustrant. Il est pénible de devoir soudainement se poser des questions sur les circuits quand on est en pleine résolution d'un problème de programmation. Il est tentant de faire un correctif rapide afin de revenir au problème initial. Mais maintenant ce correctif vite fait a cassé autre chose dans un programme qui fonctionnait jusque là et ainsi de suite. Au final, en développant le matériel essaie de viser 100% de fiabilité avant de démarrer la programmation !
 
 
-=== ui/state_ui/title_screen/play ===
-
-$66967233942803* Campagne
-
-
-=== components/Mem Unit ===
-
-$57670626909848* 1 bit de mémoire
-$78616473760551* mémoire 1 Bit
-
-
-=== components/Register16 ===
-
-$16015376037787* Registre 16 Bits
-$71792123436163* Mémoire 16 bits
-
-
 === trans/level_ram_component_value_description ===
 
 $53113984441582*
@@ -1957,9 +2600,25 @@ Action
 Sortie attendue[/right]
 
 
-=== trans/level_byte_less_description ===
+=== ui/options/Controls ===
 
-$37336202055283* [center]Determine si la première entrée est inférieure à la seconde.[/center]
+$53266310714298* Contrôles
+
+
+=== components/Mem Unit ===
+
+$57670626909848* 1 bit de mémoire
+$78616473760551* mémoire 1 Bit
+
+
+=== ui/state_ui/title_screen/play ===
+
+$66967233942803* Campagne
+
+
+=== misc/run ===
+
+$67345621265845* Démarrer les cycles (Raccourci : F6)
 
 
 === levels/byte_not ===
@@ -2000,9 +2659,9 @@ $17464069717985* Créateur 64 bits
 $79677187590355* Transforme 64 bits en 8 octets
 
 
-=== trans/options_pan_left ===
+=== trans/manual_ASCII_encoding ===
 
-$78515694621006* Déplacer la vue vers la gauche
+$30404865580119* Code ASCII
 
 
 === trans/options_pan_right ===
@@ -2010,14 +2669,17 @@ $78515694621006* Déplacer la vue vers la gauche
 $33884219481037* Déplacer la vue vers la droite
 
 
-=== trans/manual_ASCII_encoding ===
+=== trans/options_pan_left ===
 
-$30404865580119* Code ASCII
+$78515694621006* Déplacer la vue vers la gauche
 
 
-=== trans/optinos_save_location ===
+=== trans/not_gate_RichTextLabel2 ===
 
-$61172959716558* Emplacement de Sauvegarde
+$10340875578771*
+[right][color=#e49f44]Input[/color]
+Desired output
+Current output[/right]
 
 
 === misc/lab_toggle ===
@@ -2042,6 +2704,11 @@ Pour ce niveau tu n'as pas à t'occuper que des modes copie et calcul, lis les [
 $13013863429580* Pour ce niveau une patte supplémentaire a été ajoutée aux registres. Cette patte émet toujours en sortie la valeur du registre même lorsque la lecture n'est pas activée.
 
 
+=== trans/instructions_header ===
+
+$15089281203426* [center]Instructions[/center]
+
+
 === components/Program4 ===
 
 $27522667367787* Programme
@@ -2057,7 +2724,6 @@ $18297012748869* Contrôles
 
 $17701404772563* Ajouter 1
 $17940006660359* Compter
-$68874699768861* Enregistrer {value}
 $17263901743088*
 Construis un compteur qui s'incrémente de 1 à chaque cycle.
 
@@ -2066,6 +2732,7 @@ De plus il doit y avoir la possibilité de forcer le compteur à une valeur four
 Tu reçois 2 entrées, un bit et un octet.
 
 Le bit en entrée permet de basculer entre les modes comptage et enregistrement de la valeur de l'octet.
+$68874699768861* Enregistrer {value}
 $10555159894041*
 Compter est tellement fondamental que même les insectes le font. À partir de là, les espèces peuvent évoluer vers la comparaison et le calcul. Et alors que l'on ne s'y attend pas, voilà que des singes construisent des ordinateurs...
 
@@ -2078,10 +2745,40 @@ $39402227599142* Valeur constante
 $30896164786171* Constante 32 bits
 
 
+=== trans/manual_text_ram ===
+
+$10969790213397*
+This simulator has several types of RAM different trade-offs, similar to real life RAM options.
+
+[b]RAM[/b]
+The RAM component can store a lot of data, but adds a very high delay to the circuit.
+
+[b]Fast RAM[/b]
+The fast RAM has a low delay, but a very high gate cost per byte.
+
+[b]Latency RAM[/b]
+The normal RAM has very high delay, however instead of waiting for this delay each tick, we can treat the RAM as if load and save takes multiple ticks. The number of ticks save and load will take depends on the length of each tick. Say for example that our circuit has a delay of 100 units, a load would take 10 ticks, since we have to wait about 1000 units of delay. 
+
+A common approach for pipelined architectures is to use Latency RAM as for main memory, but use a small amount of Fast RAM for caching. Since memory access is often adjacent or close (for example when looping over an array), fetching adjacent values when loading from Latency RAM and caching them in Fast RAM can significantly speed up certain kinds of programs.
+
+The simplest way to integrate the Latency RAM is simply to stall the whole architecture while waiting for a save or load. An easy optimization on this comes from realizing that you don't have to wait for saves, except if you want to load.
+
+[b]Dual Load RAM[/b]
+Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continuously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
+
+
 === components/Xor16 ===
 
 $55408021160573* XOR bit à bit sur 2 valeurs
 $47846591761838* XOR 16 bits
+
+
+=== trans/level_tick_tock_keys ===
+
+$11700778730606*
+[right][color=#e49f44]Action
+Desired output
+Current output[/color][/right]
 
 
 === components/And32 ===
@@ -2102,6 +2799,25 @@ $22719674432950*
 $58912167455465* AND (ET)
 
 
+=== trans/manual_text_ascii_encoding ===
+
+$57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
+
+
+=== trans/manual_text_short_circuit ===
+
+$31105471890701*
+In electronics, two components outputting different values on the same wire causes a short circuit.
+
+[center][img=100]res://dialogue/short_circuit.png[/img][/center]
+
+However, by disconnecting output pins from a wire, it is possible for multiple pins to share the same wire (called a bus). Importantly, at most 1 component output should remain connected each tick, otherwise you risk a short circuit.
+
+[center][img]res://dialogue/switch.png[/img][/center]
+
+In this simulator, pins that can be disconnected are grey.
+
+
 === trans/map_locked ===
 
 $95146987030704* Verrouillé
@@ -2110,6 +2826,14 @@ $95146987030704* Verrouillé
 === trans/manual_assembly ===
 
 $14434902453525* Assembleur
+
+
+=== trans/nand_values ===
+
+$38006065064488*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+[b]Output[/b][/right]
 
 
 === levels/decoder ===
@@ -2135,6 +2859,11 @@ $12976424717611* Valeur immédiate\n[OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [A
 $12532951884542* Valeur immédiate
 
 
+=== trans/level_compute_xor_description ===
+
+$61886892927185* [center]Pairwise AND together each bit[/center]
+
+
 === trans/manual_truth_tables ===
 
 $75695254533352* Tables de vérité
@@ -2145,15 +2874,27 @@ $75695254533352* Tables de vérité
 $24145565754506* Volume des Effets
 
 
+=== trans/level_signed_negator_description ===
+
+$87777776285772* [center]Invert the sign of the number[/center]
+
+
 === main_scripts/overture_level ===
 
+$11338791453100* Dynamic
 $27259865408750* Au prochain cycle la valeur du compteur sera {next}, on attend {expected}
 $95030012922256* L'Entrée doit être activée seulement si nécessaire
 $12873109232054* On attendait {expected} en sortie, pas {got}
+
+#  "cond" is for condition, this label has to be short as it has to fit on a component
+$94982725578534* COND
 $47188699762650* La Sortie devrait être activée et ce n'est pas le cas
 $28026304798371* La Sortie ne devrait être activée que quand c'est nécessaire
 $85260864781281* L'Entrée devrait être activée et ce n'est pas le cas
 $96569633331621* Charge {value} dans le REG 0
+$16914143080303* Copy
+$59042824277105* Immediate
+$82949244692745* Calculate
 $83829200305236* On attendait {expected} en sortie, pas {got}
 
 
@@ -2177,6 +2918,7 @@ De plus, cela simplifierait grandement les prochains circuits si la représentat
 $17231048881956* Pour mesurer la différence entre deux valeurs, tu as besoin de la soustraction. Pour soustraire, tu as d'abord besoin des nombres négatifs.
 $70755151984986* {a} devrait être {b}
 $11067230116844* {number} n'a pas de représentation
+$62744038163781* OK
 $19118970740682*
 [color=#dd6576]Modifie les valeurs[/color] pour chaque bit de façon à respecter les objectifs suivants :
 
@@ -2205,15 +2947,27 @@ $14777350869870* Nous sommes impressionnés par ta capacité à résoudre le der
 $17994568832660* [b]Consigne[/b]\nLa porte NAND au milieu du circuit change son comportement.\nUtilises la barre sur la gauche pour expérimenter les effets qu'ont les entrées sur les sorties et compléte le tableau en conséquence.
 
 
-=== components/Input 2 ===
-
-$86870364449392* Entrée
-
-
 === components/DelayLine8 ===
 
 $24840584785792* Envoie en sortie au prochain cycle l'entrée de ce cycle 
 $63449911993783* Ligne à retard 8 bits
+
+
+=== trans/options_copy ===
+
+$55679445263875* Copier
+
+
+=== trans/nand_Label2 ===
+
+$60885816586685* Output
+
+
+=== trans/tooltip_tooltip ===
+
+$48829429502039*
+[b]Run fast[/b]
+[color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
 
 
 === components/Bit Compressor ===
@@ -2222,20 +2976,20 @@ $74338505460996* Rassemble 8 bits en 1 octet
 $98747779812970* Créateur 8 bits
 
 
-=== trans/options_copy ===
+=== components/Input 2 ===
 
-$55679445263875* Copier
-
-
-=== trans/options_pan_down ===
-
-$93140495547084* Déplacer la vue vers le bas
+$86870364449392* Entrée
 
 
 === components/Bidirectional8 ===
 
 $20234315861487* Patte bidirectionnelle 8 bits
 $49499540884410* Permet de contourner certaines erreurs de dépendance cyclique
+
+
+=== trans/options_pan_down ===
+
+$93140495547084* Déplacer la vue vers le bas
 
 
 === components/Mux64 ===
@@ -2265,10 +3019,12 @@ $27510848535619*
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
 [/table]
+$83375115196253* NOR
 
 
 === levels/hex_racer ===
 
+$33474352861351* Level {x}
 $92057009138253* Comment écrire {number} en binaire ?
 $16009852370452*
 Quand on manipule beaucoup de bits, le binaire commence à être difficile à lire. L'Hexadécimal (base 16) représente chaque combinaison de 4 bits par son propre caractère :
@@ -2299,6 +3055,7 @@ Hexadécimal : FFFF
 [/code]
 
 Ce n'est pas facile de dire s'il manque un chiffre binaire ou s'il y a un décalage en décimal, mais l'hexadécimal est tout de suite clair (au moins une fois qu'on prend l'habitude).
+$40775762006843* Wrong answer
 $84691609525475* Ce niveau est mon deuxième passe-temps préféré. Convertir de l'hexadécimal au binaire en temps limité.
 $45532697833519* Niveau {level} atteint !
 $87016829502381* Très bien, tu as atteint le niveau {current_level}.
@@ -2308,6 +3065,18 @@ Modifie les bits du panneau pour atteindre le nombre hexadécimal demandé.
 Tu dois finir le niveau 3 pour réussir.
 
 (clique [color=#e63e5b][url=accessibility_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours)
+
+
+=== trans/level_full_adder_RichTextLabel2 ===
+
+$25766177620842*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired Sum
+Desired Carry
+Current Sum
+Current Carry[/right]
 
 
 === components/Ror8 ===
@@ -2330,6 +3099,7 @@ Envois alors en sortie comme réponse le volume total que le terrain peut conten
 
 === components/NAND ===
 
+$71130919681688* NAND
 $12903183841172*
 [ON] sauf si les 2 entrées sont [ON]
 [table=5]
@@ -2347,6 +3117,13 @@ $51337598329530* ARITHMÉTIQUE
 === trans/rotate ===
 
 $88236351843942* Rotation
+
+
+=== levels/delay_level_check ===
+
+$59355217078543* Correct!
+$68999077595244* Check
+$90847326020954* Nope!
 
 
 === levels/Dancing Machine ===
@@ -2393,10 +3170,29 @@ $64510812504271*
 Certains composants utilisés ne sont pas supposés être disponibles dans ce niveau !
 La solution n'obtient pas de score.
 
+#  Level type for the level complete menu
+$58769207148712* Component
 
-=== trans/options_music_volume ===
+#  Level type for the level complete menu
+$90134890578411* Misc
 
-$93981778736076* Volume de la Musique
+#  Level type for the level complete menu
+$69219742310717* Architecture
+
+
+=== trans/level_decodre_RichTextLabel2 ===
+
+$40723962298647*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired bit
+Current bit[/right]
+
+
+=== trans/manual_bytes ===
+
+$46223559629673* Bytes
 
 
 === trans/manual_matrix_display ===
@@ -2404,9 +3200,41 @@ $93981778736076* Volume de la Musique
 $86092436010494* Affichage par matrice de points
 
 
+=== trans/options_music_volume ===
+
+$93981778736076* Volume de la Musique
+
+
 === component_panels/Counter ===
 
 $57936010210151* Incrementer de : {amount}
+
+
+=== trans/level_complete_ide ===
+
+$56719825235196*
+[b]CODE IDE[/b]
+[color=#cccccc][i]Name codes and edit them in a convenient editor[/i][/color]
+
+
+=== trans/level_alu2_code ===
+
+$93157894815498* [center]OR[/center]
+
+
+=== misc/binary_submit ===
+
+$95509904060545* Submit
+
+
+=== trans/and_gate_3_RichTextLabel2 ===
+
+$52008707927408*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired output
+Current output[/right]
 
 
 === components/ByteConstant ===
@@ -2424,6 +3252,11 @@ $39941195789458* Créateur 16 bits
 === components/Output64 ===
 
 $43552728118031* Sortie
+
+
+=== trans/level_decoder_description ===
+
+$10169248860836* [center]Decode the instruction[/center]
 
 
 === components/Switch16 ===
@@ -2459,20 +3292,64 @@ $18405942066048* L'horloge donne l'heure UNIX courante en microsecondes.
 $10451578314373* L'Écran Console te permet de dessiner des caractères sur un écran (voir caractères ASCII dans le manuel)
 
 
-=== ui/toggles/race_condition ===
-
-$75558678297830* Dépendance circulaire
-
-
 === components/Output64z ===
 
 $61656790122480* Sortie commutée
 $42506906257154* Sortie activée seulement quand la patte d'activation est [ON]
 
 
+=== trans/level_complete_stat_type ===
+
+$69511102367948* Type
+
+
+=== ui/toggles/race_condition ===
+
+$75558678297830* Dépendance circulaire
+
+
 === trans/options_paste ===
 
 $52159578521318* Volume de la Musique
+
+
+=== trans/level_double_buffer_RichTextLabel3 ===
+
+$27208335953837*
+[right]Input
+Desired output
+Current output[/right]
+
+
+=== trans/manual_text_terminology ===
+
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
+
+
+=== trans/manual_text_truth ===
+
+$16559670174521*
+The tables of input and output which are used everywhere throughout the game are commonly known as truth tables.
+
+
+
+
+
+
+
+
+"Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
 
 
 === levels/Conditionals ===
@@ -2544,10 +3421,23 @@ Enfin tu ne peux pas déplacer les composants rouges dans ce niveau, pour des ra
 $85147529532131* Sélection multiple (Raccourci : SHIFT & glisser)
 
 
+=== trans/level_byte_less_i_description ===
+
+$21195810950441* [center]Determine if the first input is less than the second.[/center]
+
+
 === components/Splitter16 ===
 
 $92674917729864* Répartiteur 16 bits
 $28271182652741* Répartit 16 bits en 2 octets
+
+
+=== trans/manual_text_universal_gates ===
+
+$37735744928195*
+It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
+
+Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
 
 
 === components/Splitter64 ===
@@ -2565,62 +3455,17 @@ $63839315669055* DELAI
 === components/SRLatch ===
 
 $11641785582600* Bascule SR
+$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+
+=== trans/levels_byte_or_description ===
+
+$68379799788575* [center]Pairwise OR together each bit[/center]
 
 
 === components/Output 3 ===
 
 $96269858195218* Sortie
-
-
-=== main_scripts/dialouge ===
-
-
-NOTE: Hitn for byte switch
-$86319296925137* A quoi cela ressemblerait si tu ne commutais qu'un seul bit ? A quoi ressemblerait la table de vérité d'un tel composant ?
-
-NOTE: hint for the bus
-$50799425816171* Utilise des commutateurs pour placer les entrées sur le même fil.
-
-NOTE: hint for odd number
-$68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
-
-NOTE: Hint for the maze
-$36837749971886*
-En suivant toujours le mur gauche (ou droit) du labyrinthe tu es sûr d'atteindre la sortie au bout d'un moment.
-
-Le pseudo-code pour cet algorithme est à peu près :
- Avance d'un pas
- Tourne à gauche
- Tourne à droite tant qu'il y a un mur en face
- Tente d'ouvrir une porte (au cas ou la sortie serait en face) 
- Recommence
-
-NOTE: Hint for byte adder
-$37093555217568* Tu n'as besoin que de 8 additionneurs complets.
-$21044442262778* Le schéma pour les bits impairs est semblable à ce qui a été fait pour "Nombre IMPAIR de Signaux". Pour les bits pairs c'est comme dans "Doublement compliqué", sauf si les 4 sont ON.
-
-NOTE: hint for saving gracefully
-$25321701584378*
-Dans ce niveau tu dois utiliser 1 Ligne à Retard. Ecris la table de vérité de ce qui doit aller dans la Ligne à Retard. Traite l'entrée de la Ligne à Retard comme la sortie de ta table.
-
-Les entrées sont les 2 entrées du niveaux ET la sortie de la Ligne à Retard, car la sortie dépend modifie sa propre entrée. Au total tu as trois "entrées" pour cette table ce qui fait 8 combinaisons. Une fois que l'objectif du niveau est sous forme de table, il devrait être beaucoup plus simple à résoudre.
-$87674181578455*
-Il y a 3 bits de conditions. Quand le premier bit est [ON] cela signifie que la condition est validée pour un résultat à 0. Quand le second bit est [ON] cela signifie que la condition est validée pour un résultat inférieur à 0. Si aucun des 2 premiers bits n'est [ON] la condition est validée.
-Enfin si le dernier bit est [ON] inverse la valeur de la condition obtenue.
-$88963098241493* Ce level peut être réalisé avec 3 composants, une porte NAND, une AND et une OR.
-
-NOTE: Hint for masking time
-$46866534894828*
-En binaire, calculer le modulo 4 d'un nombre revient à conserver seulement les 2 bits de poids faible. C'est dû au fait que les bits supérieurs représentent 4,8,16 qui sont tous multiples de 4.
-C'est vrai en général pour le modulo d'une puissance de 2, le bit le plus faible représente le nombre modulo 2 (pair ou impair), les 3 bits les plus faibles le modulo 8 et ainsi de suite.
-
-De même, en décimal 4321 modulo 100 est aussi simple à calculer (la  réponse est 21, les chiffres de rang supérieur sont ignorés), du fait que 100 est une puissance de 10.
-
-Maintenant tu dois juste trouver comment obtenir les 2 derniers chiffres d'un nombre.
-$56438995128380*
-D'abord tu dois déterminer quels bits sont différents entre les 2 octets. Ceci peut se faire avec un XOR octet (souvenons nous que XOR est [ON] quand les entrées diffèrent). Nous savons que le nombre qui a le plus haut bit différent à [ON] est le plus grand. Mais il ne faut considérer que le plus haut bit différent, donc pour chaque bit, utilise un chaine de portes OR pour vérifier si un bit supérieur est [ON].
-
-Enfin, le dernier bit doit être considéré séparément pour les nombres signés, il a l'effet opposé (si un seule nombre l'a [ON], ce nombre est forcément inférieur)
 
 
 === components/Output 1B ===
@@ -2632,6 +3477,14 @@ $77044600156969* Sortie
 
 $95012060885697* XOR 64 bits
 $13031452187028* XOR bit à bit de deux valeurs
+
+
+=== misc/skipped_custom ===
+
+$38174137226538* Select component
+
+#  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
+$99860977387728* Go to location
 
 
 === components/ByteXor ===
@@ -2674,15 +3527,21 @@ $50859914201083* NAND bit à bit de 2 entrées
 $93314093190526* NAND 8 bits
 
 
+=== components/Add64 ===
+
+$14174811828377* Ajoute 2 entrées
+$73418471595285* Ajouter
+
+
 === ui/toggles/level_map ===
 
 $71951682957395* Carte des niveaux
 
 
-=== components/Add64 ===
+=== components/DivMod64 ===
 
-$14174811828377* Ajoute 2 entrées
-$73418471595285* Ajouter
+$80284847781948* Divide
+$71663353206665* Divide and mod 2 numbers
 
 
 === levels/saving_bytes ===
@@ -2700,8 +3559,8 @@ $13502950630653*
 $19109563882664* NE PAS CHARGER
 $16372198430230* SAUVEGARDER
 $15498440508450* Ne rien faire
-$18873598212433* CHARGER
 $15582618410991* CHARGER ET SAUVEGARDER
+$18873598212433* CHARGER
 
 
 === levels/byte_constant ===
@@ -2712,23 +3571,35 @@ $12641789008694* Créez un système qui sortira toujours le nombre 164.
 === main_scripts/leg_level ===
 
 $70383685548547* REG 
-$85913831661289* SI\_INFERIEUR
-$69956969985790* OUi
 $53021804895845* ETi
+$69956969985790* OUi
+$85913831661289* SI\_INFERIEUR
+$11144256835662* XORi
+$20104629254326* ARGUMENT 2
 $61412773713567* SOUSTRACTION
+$65642901654732* {component} should be disabled
 $52344899983501* SI\_INFERIEUR\_OU\_EGAL
 $89945092889418* SOUSTRACTIONi
+$89011349770597* NOT
 $71559031724238* SI_NON_EGAL
+$98778676892898* {component} should be enabled with value {value
+$40520283279584* XOR
+$71204580217527* NOTi
 $71195301111400* ADDITIONi
 $98178474649432* SI\_SUPERIEUR\_OU\_EGAL
 $68187490877029* SI_EGAL
-$44009845985661* ADDITION
+$14186606871089* Next tick counter value will be {wrong_value}, but it should be {value}
+$27868897434461* Could not find the counter component
 $37810243909140* COMPTEUR
-$50722296752142* ENTREE
+$38681417496680* ARGUMENT 1
 $43723329256095* REGISTRE {nr}
+$44009845985661* ADDITION
+$50722296752142* ENTREE
 $68666991962246* OU
+$24003300271049* {component} should have value {value}, not {wrong_value}
 $79492115258673* SI\_SUPERIEUR
 $60997201855346* ADRESSE DE RESULTAT
+$50231510806554* Could not find the program component
 $64519909700148* ET
 $49810487048038* COMPTEUR
 $18236360532765* SORTIE
@@ -2808,25 +3679,22 @@ Sortie attendue
 Sortie actuelle[/right]
 
 
+=== trans/level_complete_delay ===
+
+$73470840319057*
+[b]Delay[/b]
+[color=#cccccc][i]You can now view the delay of wires and components.[/i][/color]
+
+
 === components/LessU64 ===
 
 $13018528868948* Inférieur (non signé)
 $90244529484227* Détermine si une entrée est inférieure à la seconde
 
 
-=== trans/optinos_waiting ===
-
-$58990937331663* En Attente
-
-
 === trans/level_byte_no_description ===
 
 $19806403089477* [center]Inverse chaque bit[/center]
-
-
-=== misc/select_color ===
-
-$97461374731210* Couleur de fil
 
 
 === trans/level_saving_gracefully_RichTextLabel3 ===
@@ -2836,6 +3704,33 @@ $74117520663650*
 Enregistrée[/color]
 Sortie attendue
 Sortie actuelle[/right]
+
+
+=== misc/select_color ===
+
+$97461374731210* Couleur de fil
+
+
+=== trans/manual_text_instructions ===
+
+$24791538034329*
+What this game calls an "instructions" is also known as an operation or an opcode (short for operation code). Regardless of the operating system, programming language or any other layers above it, all software must inevitably be reduced to instructions for the CPU to process them.
+
+Internally in modern CPUs, instructions are translated into "microcodes", which are even smaller steps, out of reach for the programmer.
+
+
+=== trans/manual_text_circular_dependency ===
+
+$29050562435902*
+A circular dependency is when the input of a component changes based on its own output. 
+
+[center][img]res://dialogue/circular_dependency.png[/img][/center]
+
+This simulator does not allow circular dependencies and instead triggers an error. 
+
+The exception to this are the square pins that do not influence the output in the same tick. They can therefore not cause circular dependencies.
+
+[center][img]res://dialogue/delay_buffer.png[/img][/center]
 
 
 === components/LessU16 ===
@@ -2848,11 +3743,6 @@ $33190791348214* Inférieur (non signé)
 
 $66299093873977* XOR 32 bits 
 $38169019785615* XOR bit à bit de 2 entrées
-
-
-=== trans/optinos_undo ===
-
-$58334563411624* Annuler
 
 
 === trans/level_alu2_text ===
@@ -2876,6 +3766,13 @@ $74859324795927* [center]Ajoute les conditions aux codes de calcul[/center]
 $32982011047799* Vérifie
 
 
+=== trans/level_complete_tooltip ===
+
+$33922330743421*
+[b]Wire color[/b]
+[color=#cccccc][i]Keep your wires organized with colors.[/i][/color]
+
+
 === trans/level_odd_number_RichTextLabel2 ===
 
 $28592851869484*
@@ -2896,16 +3793,25 @@ $19245209470436* Créer une pile
 $12227209887733* A chaque cycle les entrées indiqueront soit EMPILER soit DÉPILER. Si c'est EMPILER, stocke la valeur en haut de la pile. Quand c'est DÉPILER retire cette valeur de la pile et envoie-la en sortie.
 $15662660252584* Ne rien faire
 $62469306234943* NE PAS EMPILER
-$65188797398656* EMPILER {value} sur la pile
-$18761197388580* Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées o˘ les usagers peuvent called poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DÉPILER[/color]). ¿ toi d'implémenter ce nouveau système.
 $46948857059388* DEPILER valeur {value} de la pile
+$18761197388580* Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées o˘ les usagers peuvent called poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DÉPILER[/color]). ¿ toi d'implémenter ce nouveau système.
+$65188797398656* EMPILER {value} sur la pile
+
+
+=== trans/level_complete_robot ===
+
+$73150174144736*
+[b]Robotron 9000+[/b]
+[color=#cccccc][i]Control [color=#e49f44]Robotron 9000+[/color] using your computer[/i][/color]
 
 
 === levels/The Product of Nibbles ===
 
 $14957949958941* Ce que tu as fait ici c'est en fait une multiplication de deux nombres de 4 bits. Le stagiaire s'est chargé de l'étendre aux octets.
 $19136817138607* [center]Multiplie les nombres de 4 bits[/center]
+$13549246864135* Bit 0
 $14533861483435* La multiplication de deux nombres de 4 bits donne un nombre de 8 bits. Réalise le schéma adapté.
+$10274387271390* Bit 0
 $83694551809785* Multiplier {num1} et {num2}
 
 
@@ -2914,23 +3820,26 @@ $83694551809785* Multiplier {num1} et {num2}
 $15885763626223* Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
 
 
-=== ui/toggles/level_log2 ===
-
-$91515053618360* Aide-mémoire
-
-
 === components/LessI64 ===
 
 $42718501644862* Inférieur (signé)
 $19948786194409* Détermine si une entrée est inférieure à la seconde
 
 
+=== components/ByteLessU ===
+
+$68645721548287* Détermine si une entrée est inférieure à la seconde
+$73502755965496* Inférieur (non signé)
+
+
 === main_scripts/functions ===
 
 $11467644007149* Compteur {nr}
+$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
 $10533010562232* SCORE DELAI : {delay}
+$10098517717617* Test: {nr} / {total}
 $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
 $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
@@ -2940,23 +3849,31 @@ $13327741293223* Entrée {nr}
 $32508339206292* SCORE NAND : {nand}
 
 
-=== components/ByteLessU ===
-
-$68645721548287* Détermine si une entrée est inférieure à la seconde
-$73502755965496* Inférieur (non signé)
-
-
 === ui/global_translations ===
 
 
-NOTE: Instead of writing 5839000, the number turns into 5.8M
+#  Instead of writing 5839000, the number turns into 5.8M
 $22896492410578* 10⁶
+$91472284749011* DELAY
+$21803034737442* ick
+$86260137015175* TICK
+$44906330481241* Delay
+$30602804398798* Gate
+$22213999385406* delay
 
-NOTE: Instead of writing 5839, the number turns into 5.8K
+#  Instead of writing 5839, the number turns into 5.8K
 $84696693690500* x10³
+$39343770421034* gate
+$76763908762578* Tick
+$15265492169229* GATE
 
-NOTE: Instead of writing 5839000000, the number turns into 5.8B
+#  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* x10⁹
+
+
+=== ui/toggles/level_log2 ===
+
+$91515053618360* Aide-mémoire
 
 
 === levels/or_gate_3 ===
@@ -2964,15 +3881,15 @@ $71072134093858* x10⁹
 $15448906128695* Réalise une porte OR avec 3 entrées.
 
 
+=== trans/binary_racer_count_down2 ===
+
+$23959994711260* Ready to race?
+
+
 === components/Shl16 ===
 
 $79406691850426* Décalage à gauche
 $34287811246049* Décale à gauche les bits d'une entrée
-
-
-=== trans/map_complete ===
-
-$81337533438394* Complet
 
 
 === trans/levels_any_doubles_RichTextLabel2 ===
@@ -2984,6 +3901,16 @@ Entrée 3
 Entrée 4[color=#e49f44]
 Sortie actuelle
 Sortie attendue[/color][/right]
+
+
+=== trans/map_complete ===
+
+$81337533438394* Complet
+
+
+=== trans/schematics_menu_visible_label ===
+
+$34084132835354* Visible in menu
 
 
 === components/RegisterRedPlus ===
@@ -3043,6 +3970,26 @@ $37381472194529* Sortie
 $71204033550134* Que fais la porte NAND ?
 
 
+=== trans/manual_text_program ===
+
+$25326551844839*
+The program component is a read only memory component, that can have its data programmed in assembly. To edit the assembly, click on the yellow edit icon in the corner of the component.
+
+[center][img]dialogue/manual/program_edit.png[/img][/center]
+
+In the middle of the screen you will see the code area, read more about the assembly [color=#4d82c5][url=Assembly]here[/url][/color].
+
+On the left hand side of the assembly editor interface, you can add assembly codes (mnemonics). Assembly codes act as a replacement for numbers, so instead of remembering what number represents the AND instruction in your architecture, you can add "AND" to your assembly codes, making code easier to read and write.
+
+[center][img]dialogue/manual/assembly_codes.png[/img][/center]
+
+On the program component you will also find the "Watch state" button. 
+
+[center][img]dialogue/manual/watch_state.png[/img][/center]
+
+This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
+
+
 === components/Input 3 ===
 
 $70689623552857* Entrée
@@ -3059,6 +4006,25 @@ $73681609562628* Sortie activée seulement si la patte d'activation est [ON]
 $92749186427039* Sortie commutée
 
 
+=== trans/manual_text_top_truth ===
+
+$83283949590490* AND gate
+
+
+=== trans/and_gate_RichTextLabel2 ===
+
+$98472849629373*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/level_byte_equal_description ===
+
+$38686097566531* [center]Check if the bytes are equal[/center]
+
+
 === components/Clock ===
 
 $72088325385177* Horloge
@@ -3066,6 +4032,7 @@ $72088325385177* Horloge
 
 === components/Xnor ===
 
+$94079327237795* XNOR
 $90614106399129*
 [ON] quand les entrées sont égales
 [table=5]
@@ -3095,6 +4062,12 @@ $86856280609387*
 [cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
+$54832952840086* XOR
+
+
+=== trans/options_undo ===
+
+$58334563411624* Annuler
 
 
 === trans/options_robot_down ===
@@ -3108,6 +4081,15 @@ $17394768116288* NOT 16 Bits
 $91053300263019* Inversion bit à bit d'un mot de 16 bits
 
 
+=== trans/level_complete_manual_page ===
+
+$39011561067359*
+[b]Manual Entry[/b]
+[color=#cccccc][i]RTFM[/i][/color]
+
+Entry: [color=#68d277]Architectural complexity[/color]
+
+
 === misc/factory ===
 
 $53123649343022* Atelier de composants
@@ -3118,9 +4100,19 @@ $53123649343022* Atelier de composants
 $67416967652082* Réseau
 
 
+=== trans/level_complete_stat_level ===
+
+$92313038380926* Level
+
+
 === trans/manual_ram ===
 
 $61854681801183* RAM (mémoire vive)
+
+
+=== trans/manual_header ===
+
+$10757271456963* Aide-mémoire
 
 
 === components/Ror16 ===
@@ -3129,14 +4121,9 @@ $13970397213910* Rotation à droite des bits de l'entrée
 $90115282457191* Rotation à droite
 
 
-=== trans/manual_header ===
+=== misc/opcode_name ===
 
-$10757271456963* Aide-mémoire
-
-
-=== misc/score_sync ===
-
-$76911045833478* synchroniser le score
+$15090156481094* Name
 
 
 === ui/top_bar/gate_score ===
@@ -3144,19 +4131,13 @@ $76911045833478* synchroniser le score
 $16224450605442* NAND SCORE:
 
 
-=== misc/level_gate_unlocks_unknown ===
+=== trans/xor_gate_RichTextLabel2 ===
 
-$76731326010721* Déverrouille quelque chose d'inconnu
-
-
-=== components/ON ===
-
-$96212935718484* Toujours [ON]
-
-
-=== trans/map_cpu_architecture ===
-
-$95559333192525* ARCHITECTURE PROCESSEUR
+$21417732641222*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
 
 
 === trans/options_setting_program_alignment ===
@@ -3164,9 +4145,43 @@ $95559333192525* ARCHITECTURE PROCESSEUR
 $54874717650167* Code aligné
 
 
+=== misc/level_gate_unlocks_unknown ===
+
+$76731326010721* Déverrouille quelque chose d'inconnu
+
+
+=== misc/score_sync ===
+
+$76911045833478* synchroniser le score
+
+
+=== trans/map_cpu_architecture ===
+
+$95559333192525* ARCHITECTURE PROCESSEUR
+
+
+=== components/ON ===
+
+$96212935718484* Toujours [ON]
+$95896157427528* ON
+
+
 === components/RegisterRed ===
 
 $10081371413873* Registre
+
+
+=== trans/levels_negative_header ===
+
+$82195103144851* [center]Requirements[/center]
+
+
+=== trans/delete_confirm ===
+
+$57294448765637*
+Are you sure you want 
+to delete this schematic?
+$74657548486940* Yes
 
 
 === levels/byte_adder ===
@@ -3180,16 +4195,16 @@ Utilise [color=#e63e5b][url=byte\_adder]cet indice[/url][/color] si tu es coinc�
 $18732877690173* Additione les deux octets en entrée. Chaque bit en sortie devra être le résultat de l'addition des bits d'entrées et potentiellement de la retenue. 
 
 
-=== components/Shr32 ===
-
-$87104108203785* Décalage à droite des bits de l'entrée
-$88430124157796* Décalage à droite
-
-
 === components/Mux32 ===
 
 $16638728645850* Alterne entre deux valeurs
 $21257226547838* Multiplexeur 32 bits (Mux)
+
+
+=== components/Shr32 ===
+
+$87104108203785* Décalage à droite des bits de l'entrée
+$88430124157796* Décalage à droite
 
 
 === levels/saving_gracefully ===
@@ -3208,10 +4223,111 @@ La seconde entrée est la nouvelle valeur de la [color=#e49f44]sauvegarde[/color
 Envois toujours en sortie la [color=#e49f44]sauvegarde[/color].
 
 
+=== trans/levels_bytw_or_text ===
+
+$21877344150481*
+[right]
+[color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output
+[/right]
+
+
 === components/DelayLine64 ===
 
 $80000130396288* Ligne à retard 64 bits
 $35525647389906* Envoie en sortie au prochain cycle l'entrée de ce cycle 
+
+
+=== trans/level_unseen_fruit_description ===
+
+$96313037592447* [center]Use the robot to scan the fruit[/center]
+
+
+=== trans/manual_Cyclic recipes ===
+
+$45682345144408* Circular recipes
+
+
+=== main_scripts/dialogue ===
+
+
+#  hint for odd number
+$68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
+
+#  hint for the bus
+$50799425816171* Utilise des commutateurs pour placer les entrées sur le même fil.
+
+#  Hint for byte switch
+$86319296925137* A quoi cela ressemblerait si tu ne commutais qu'un seul bit ? A quoi ressemblerait la table de vérité d'un tel composant ?
+
+#  Hint for the maze
+$36837749971886*
+En suivant toujours le mur gauche (ou droit) du labyrinthe tu es sûr d'atteindre la sortie au bout d'un moment.
+
+Le pseudo-code pour cet algorithme est à peu près :
+ Avance d'un pas
+ Tourne à gauche
+ Tourne à droite tant qu'il y a un mur en face
+ Tente d'ouvrir une porte (au cas ou la sortie serait en face) 
+ Recommence
+
+#  Hint for byte adder
+$37093555217568* Tu n'as besoin que de 8 additionneurs complets.
+
+#  hint for counting signals
+$21044442262778* Le schéma pour les bits impairs est semblable à ce qui a été fait pour "Nombre IMPAIR de Signaux". Pour les bits pairs c'est comme dans "Doublement compliqué", sauf si les 4 sont ON.
+
+#  hint for saving gracefully
+$25321701584378*
+Dans ce niveau tu dois utiliser 1 Ligne à Retard. Ecris la table de vérité de ce qui doit aller dans la Ligne à Retard. Traite l'entrée de la Ligne à Retard comme la sortie de ta table.
+
+Les entrées sont les 2 entrées du niveaux ET la sortie de la Ligne à Retard, car la sortie dépend modifie sa propre entrée. Au total tu as trois "entrées" pour cette table ce qui fait 8 combinaisons. Une fois que l'objectif du niveau est sous forme de table, il devrait être beaucoup plus simple à résoudre.
+
+#  Hint for conditions
+$87674181578455*
+Il y a 3 bits de conditions. Quand le premier bit est [ON] cela signifie que la condition est validée pour un résultat à 0. Quand le second bit est [ON] cela signifie que la condition est validée pour un résultat inférieur à 0. Si aucun des 2 premiers bits n'est [ON] la condition est validée.
+Enfin si le dernier bit est [ON] inverse la valeur de la condition obtenue.
+
+#  hint for xor gate
+$88963098241493* Ce level peut être réalisé avec 3 composants, une porte NAND, une AND et une OR.
+
+#  Hint for masking time
+$46866534894828*
+En binaire, calculer le modulo 4 d'un nombre revient à conserver seulement les 2 bits de poids faible. C'est dû au fait que les bits supérieurs représentent 4,8,16 qui sont tous multiples de 4.
+C'est vrai en général pour le modulo d'une puissance de 2, le bit le plus faible représente le nombre modulo 2 (pair ou impair), les 3 bits les plus faibles le modulo 8 et ainsi de suite.
+
+De même, en décimal 4321 modulo 100 est aussi simple à calculer (la  réponse est 21, les chiffres de rang supérieur sont ignorés), du fait que 100 est une puissance de 10.
+
+Maintenant tu dois juste trouver comment obtenir les 2 derniers chiffres d'un nombre.
+
+#  hint for less
+$56438995128380*
+D'abord tu dois déterminer quels bits sont différents entre les 2 octets. Ceci peut se faire avec un XOR octet (souvenons nous que XOR est [ON] quand les entrées diffèrent). Nous savons que le nombre qui a le plus haut bit différent à [ON] est le plus grand. Mais il ne faut considérer que le plus haut bit différent, donc pour chaque bit, utilise un chaine de portes OR pour vérifier si un bit supérieur est [ON].
+
+Enfin, le dernier bit doit être considéré séparément pour les nombres signés, il a l'effet opposé (si un seule nombre l'a [ON], ce nombre est forcément inférieur)
+
+
+=== trans/instructions_the_robot ===
+
+$26621808961883*
+[color=#e49f44]0[/color] Move right
+[color=#e49f44]1[/color] Move down
+[color=#e49f44]2[/color] Move left
+[color=#e49f44]3[/color] Move up
+[color=#e49f44]4[/color] Enjoy the moment
+[color=#e49f44]5[/color] Use action [color=#a9a9a9](enter)[/color]
+[color=#e49f44]6[/color] Shoot laser [color=#a9a9a9](tab)[/color]
+
+
+=== trans/nor_gate_RichTextLabel2 ===
+
+$52955821161579*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
 
 
 === components/Nand32 ===
@@ -3220,15 +4336,30 @@ $24565725389553* NAND bit à bit de 2 valeurs 32 bits
 $71611588991682* NAND 32 bits
 
 
+=== trans/options_robot_controls ===
+
+$44632988778557* Contrôles du Robot
+
+
+=== trans/manual_text_edit_instructions ===
+
+$75786562031150*
+After you complete the level "Turing Complete" the instruction panel allows you to manually edit instructions. This is useful if you wish to build your own computers.
+
+If you just finished the OVERTURE computer and see something weird, odds are you may have changed the definitions.
+
+Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img], [img]dialogue/off.png[/img] or [img]dialogue/any.png[/img] (wildcard). When using the instruction panel, if the bitpattern matches a row, the label will be shown.
+
+
 === components/Rol32 ===
 
 $88734684504266* Rotation à gauche des bits d'une entrée
 $83642246004160* Rotation à gauche
 
 
-=== trans/options_robot_controls ===
+=== trans/odd_number_error ===
 
-$44632988778557* Contrôles du Robot
+$61530231182650* Too many components used
 
 
 === components/ByteAnd ===
@@ -3248,9 +4379,21 @@ $51446864816252* S'incrémente à chaque cycle hors réinitialisaition
 $67910883947749* Compteur 8 bits
 
 
+=== trans/ide_assembly_codes ===
+
+$62016169253008*
+[center]Assembly
+codes[/center]
+
+
 === trans/options_general_title ===
 
 $21908594290225* Général
+
+
+=== levels/binary_start ===
+
+$19099025738142* Start
 
 
 === components/Keyboard ===
@@ -3259,10 +4402,65 @@ $40965596602414* Clavier
 $76766452660421* Enregistre les appuis de touches de ton clavier
 
 
+=== trans/level_byte_xor_text ===
+
+$15756501406553*
+[right]
+[color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output
+[/right]
+
+
 === components/Input1_1B ===
 
 $10517158300617* Entrée
 $57868504368581* Lit l'entrée des niveaux (CHECKME)
+
+
+=== trans/manual_edit_instructions ===
+
+$86365051641280* Edit instructions
+
+
+=== trans/manual_text_network ===
+
+$70445160410129*
+[b]Overview[/b]
+The "Network" component gives you low level access to networking. In general you manipulate your network by sending the component [color=#e49f44]Requests[/color] and when update [color=#39aa49]Events[/color] return from the network they get queued up and you process them one at a time. To keep track of different simultaneous connections [color=#dd6576]Connection ID[/color]s are used.
+
+These are the request types you can send to the component and their arguments:
+[code]0[/code] No request
+[code]1[/code] [color=#e49f44]Listen[/color] ([color=#dd6576]Port[/color])
+[code]2[/code] [color=#e49f44]Connect[/color] ([color=#dd6576]IP[/color], [color=#dd6576]Port[/color])
+[code]3[/code] [color=#e49f44]Send data[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Data[/color], [color=#dd6576]Data length[/color])
+[code]4[/code] [color=#e49f44]Close[/color] ([color=#dd6576]Connection ID[/color])
+[code]5[/code] [color=#e49f44]Read next event[/color]
+[i]See component panel for which pin correspond to which argument.[/i]
+
+Request types [color=#e49f44]Listen[/color] and [color=#e49f44]Connect[/color] outputs the [color=#dd6576]Connection ID[/color] of the new connection.
+
+For 2 programs to [color=#e49f44]Send data[/color] to each other, one program must first [color=#e49f44]Listen[/color] (called a server) on a [color=#dd6576]Port[/color] and the other must then [color=#e49f44]Connect[/color] (called a client), using the [color=#dd6576]IP[/color] of the listening program and the [color=#dd6576]Port[/color] it selected. Once the connection is established, the server and client function exactly the same.
+
+Notice an [color=#dd6576]IP[/color] is a 32 bit number, normally written as 4 bytes with dots in between (example: 127.0.0.1). In this simulator you reverse the order of the bytes, so 127.0.0.1 becomes 0x0100007F. 0x0100007F is always your computers loopback address and you can use this to connect programs running on the same computer.
+
+You can detect when events happen on the network, by checking the "Next event type" pin. These are the event types:
+[code]0[/code] No event
+[code]1[/code] [color=#39aa49]Incoming connection[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Port[/color])
+[code]2[/code] [color=#39aa49]Connect complete[/color]
+[code]3[/code] [color=#39aa49]Receive data[/color] ([color=#dd6576]Connection ID, Data[/color], [color=#dd6576]Data length[/color])
+[code]4[/code] [color=#39aa49]Connection closed[/color] ([color=#dd6576]Connection ID[/color] / [color=#dd6576]Error code[/color])
+
+[color=#39aa49]Incoming connection[/color] only happens after a [color=#e49f44]Listen[/color]. Use the [color=#dd6576]Port[/color] to distinguish between listeners (it is not possible to listen to the same port twice at the same time).
+
+[color=#39aa49]Connect complete[/color] only happens after a [color=#e49f44]Connect[/color], wait for this before you start sending data.
+
+You may send or receive between 1 and 8 bytes of data at a time, use the [color=#dd6576]Data length[/color] to decide.
+
+A connection may be either "possibly open" or "closed". There is no way to know if a connection is actually open other than sending data. The underlying network protocols were designed like this for reliability and speed, it is not a limitation of the simulator.
+
+If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
 
 
 === levels/unseen_fruit ===
@@ -3278,6 +4476,11 @@ $17070232883226* Mais nous voulons être sur de ne pas avoir deux fois le même 
 === ui/toggles/negative_numbers ===
 
 $50924073287410* Choix du format de nombre
+
+
+=== misc/factory_back_inner ===
+
+$12211557416281* Revenir au niveau
 
 
 === levels/conditions ===
@@ -3302,20 +4505,20 @@ $17616699231679* Si VALEUR > 0 sortie [img]dialogue/on.png[/img]
 $16632557438774* Si VALEUR ≠ 0 sortie [img]dialogue/on.png[/img]
 $18234235689107* Si VALEUR ≥ 0 sortie [img]dialogue/on.png[/img]
 $12429396872036* Quelquesoit la VALEUR output [img]dialogue/off.png[/img]
-$19014698800906* Si VALEUR = 0 sortie [img]dialogue/on.png[/img]
 $13680487623452* Si VALEUR ≤ 0 sortie [img]dialogue/on.png[/img]
+$19014698800906* Si VALEUR = 0 sortie [img]dialogue/on.png[/img]
 $12706881725738* Ton circuit a été enregistré dans l'atelier de composants.
-
-
-=== misc/factory_back_inner ===
-
-$12211557416281* Revenir au niveau
 
 
 === components/ByteShl ===
 
 $74488427658653* Décalage à gauche
 $66482114876737* Décalage à gauche des bits d'une entrée
+
+
+=== trans/manual_instructions ===
+
+$90323246286028* Instructions
 
 
 === components/Add16 ===
@@ -3339,20 +4542,34 @@ $33620523355085* NOT 32 bits
 $24607331341411* Inversion bit à bit d'un mot de 32 bits
 
 
+=== trans/schematics_description ===
+
+$39347262933523* Description
+
+
+=== trans/nand_Label ===
+
+$11482037025960*
+Input 1
+
+
+Input 2
+
+
 === components/MemoryProbe ===
 
 $46948613505134* Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 $44867305035474* Sonde Mémoire
 
 
-=== trans/options_robot_use ===
-
-$49182380646128* Utiliser
-
-
 === trans/options_working ===
 
 $18749833316380* Actif
+
+
+=== trans/level_component_factory_error ===
+
+$49014901714855* Map squares can only contain one input or output node.
 
 
 === misc/StateProbe ===
@@ -3361,9 +4578,26 @@ $54427436420428* Sonde de fil
 $15969687819995* Affiche une valeur sur ton composant personnalisé ou dans l'éditeur de programme
 
 
+=== trans/options_robot_use ===
+
+$49182380646128* Utiliser
+
+
 === trans/map_working_computer ===
 
 $38843517090942* ORDINATEUR FONCTIONNEL
+
+
+=== trans/manual_text_rgb ===
+
+$52915933943906*
+This simulator uses 3 byte RGB colors for some components. Color are 1 byte each, the byte value determining the intensity of each color: 
+[color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
+
+
+=== trans/level_ram_component_RichTextLabel2 ===
+
+$92123299522120* [center]Expected states[/center]
 
 
 === levels/sr_latch ===
@@ -3372,16 +4606,21 @@ $11150103897185*
 Dans ce niveau, les composants peuvent dépendre d'eux-mêmes ou former des boucles contenant 2 composants. Malgré ces dépendances certains de ces circuits ont des sorties stables, au moins pour certaines valeurs en entrée.
 
 Le circuit que l'on te demande de construire ici a une dépendance circulaire. Le circuit a aussi 2 "états stables" pour la plupart des entrées. Un état stable signifie ici que les sorties de chaque composant sont en accord avec leurs entrées. Par exemple, une porte OR avec une entrée déconnectée et l'autre connectée à sa propre sortie est stable. Si la sortie est [OFF], les 2 entrées sont [OFF], ce qui est acceptable pour la porte OR. Si la sortie est [ON] alors l'une des entrées l'est aussi. Par contre, une porte NOT connectée à sa propre entrée n'est pas stable. Si la sortie est [ON], alors l'entrée l'est aussi. Cela fait que la porte NOT essaie de changer sa sortie en [OFF]. Le circuit va osciller entre ces deux états indéfiniment et il n'est donc pas stable.
-$18165461234561* Les lignes à retard sont simples à comprendre et peuvent être utilisées pour construire n'importe quelle architecture d'ordinateur. Pourtant le matériel moderne ne les utilise plus comme base des mémoires.
 $15754153332116*
 Ce niveau présente le concept de bascule. Ce dispositif n'est pas utilisé ailleurs dans le jeu. Néanmoins ce niveau existe pour une raison d'exhaustivité.
   
 Si tu n'as aucune expérience en électronique, il est recommandé de sauter ce niveau. Tu pourras toujours revenir plus tard.
+$18165461234561* Les lignes à retard sont simples à comprendre et peuvent être utilisées pour construire n'importe quelle architecture d'ordinateur. Pourtant le matériel moderne ne les utilise plus comme base des mémoires.
 $15213907597666* Avec 2 portes NOR, construisez le circuit qui correspond à la table. Tu auras besoin d'une bascule.
 $19448398663695*
 Pour déterminer quels composants contrôlent la sortie dans une dépendance circulaire, il est impossible de fixer un composant de départ. À la place nous utilisons les valeurs des fils du cycle précédent. Cela s'explique par le fait que les électrons ne se déplacent pas instantanément dans la réalité. En fonction du câble, le circuit oscille entre [ON] et [OFF], ou se fixe dans un état stable.
   
 Quand un circuit peut se fixer dans 2 états stables distincts, tu as la base pour une mémoire. L'état suivant dépendra des valeurs sur les fils du cycle précédent. De tels circuits sont appelés "bascules".
+
+
+=== trans/complete_unlocks ===
+
+$45250062735373* Unlocks
 
 
 === components/FastRam ===
@@ -3393,6 +4632,17 @@ $12924829814634* RAM rapide
 === levels/byte_xor ===
 
 $19636386696963* Réalise un circuit qui applique XOR bit à bit sur deux octets.
+
+
+=== trans/level_RichTextLabel2 ===
+
+$12683441099336*
+[right]Input 1
+Input 2
+Input 3
+Input 4[color=#e49f44]
+Desired output
+Current output[/color][/right]
 
 
 === trans/manual_program ===
@@ -3482,6 +4732,11 @@ $62258842382434* Le point d'Observation {counter} doit pointer sur le compteur
 $18769284297247* Créé un nouveau schéma et ajoute un programme avec une sortie sur 4 octets.
 
 
+=== trans/schematic_new_file_name ===
+
+$24424463568668* New schematic
+
+
 === trans/options_resubmit ===
 
 $13328644005279* Réessayer
@@ -3490,6 +4745,17 @@ $13328644005279* Réessayer
 === trans/negative_numbers ===
 
 $57872971841486* Nombres négatifs
+
+
+=== trans/level_bit_adder_RichTextLabel2 ===
+
+$79624864981341*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired Sum
+Desired Carry
+Current Sum
+Current Carry[/right]
 
 
 === components/Output8zLevel ===
