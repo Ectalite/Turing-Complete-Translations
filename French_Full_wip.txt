@@ -1972,15 +1972,16 @@ $14958585065722* En fait c'est le nombre de bras d'une créature qui est clairem
 
 === misc/credit_box ===
 
-$15872341864658
+$15872341864658*
+Remerciements sincères à
 
 [b]Traducteurs[/b]
 {translators}
 
-[b]Premiers bêta-testeurs[/b]
+[b]Premiers béta-testeurs[/b]
 {beta_testers}
 
-[b]Adaptation des Polices de caractères[/b]
+[b]Polices de caractères adaptées[/b]
 {font_work}
 
 [b]Musique Originale[/b]
@@ -2945,6 +2946,19 @@ $68645721548287* Détermine si une entrée est inférieure à la seconde
 $73502755965496* Inférieur (non signé)
 
 
+=== ui/global_translations ===
+
+
+NOTE: Instead of writing 5839000, the number turns into 5.8M
+$22896492410578* 10⁶
+
+NOTE: Instead of writing 5839, the number turns into 5.8K
+$84696693690500* x10³
+
+NOTE: Instead of writing 5839000000, the number turns into 5.8B
+$71072134093858* x10⁹
+
+
 === levels/or_gate_3 ===
 
 $15448906128695* Réalise une porte OR avec 3 entrées.
@@ -2959,19 +2973,6 @@ $34287811246049* Décale à gauche les bits d'une entrée
 === trans/map_complete ===
 
 $81337533438394* Complet
-
-
-=== ui/abbreviated_units ===
-
-
-NOTE: Instead of writing 5839000, the number turns into 5.8M
-$22896492410578* 10⁶
-
-NOTE: Instead of writing 5839, the number turns into 5.8K
-$84696693690500* x10³
-
-NOTE: Instead of writing 5839000000, the number turns into 5.8B
-$71072134093858* x10⁹
 
 
 === trans/levels_any_doubles_RichTextLabel2 ===
