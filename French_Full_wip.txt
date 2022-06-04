@@ -1972,16 +1972,15 @@ $14958585065722* En fait c'est le nombre de bras d'une créature qui est clairem
 
 === misc/credit_box ===
 
-$15872341864658*
-Remerciements sincères à
+$15872341864658
 
 [b]Traducteurs[/b]
 {translators}
 
-[b]Premiers béta-testeurs[/b]
+[b]Premiers bêta-testeurs[/b]
 {beta_testers}
 
-[b]Polices de caractères adaptées[/b]
+[b]Adaptation des Polices de caractères[/b]
 {font_work}
 
 [b]Musique Originale[/b]

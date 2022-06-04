@@ -462,7 +462,7 @@ Current output[/color][/right]
 
 === trans/credit_header ===
 
-$21717110565858* Credits
+$21717110565858 Crédits
 
 
 === trans/level_bit_adder_RichTextLabel2 ===
