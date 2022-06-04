@@ -1,78 +1,78 @@
 === trans/manual_text_negative_numbers ===
 
-$85226853816564*
-The way to represent negative numbers you discovered is called "two's complement". It is the standard way to represent negative numbers in modern computers. The main advantage of two's complement is that the negative representation works seamlessly with the same adder that we used for the non signed representation.
+$85226853816564
+La représentation des nombres négatifs que tu as trouvée est appelée "complément à 2". C'est la représentation standardisée des nombres négatifs dans les ordinateurs modernes. Son avantage principal est que cette représentation des négatifs fonctionne sans problème avec le même additionneur que nous avons utilisé pour la représentation non signée.
 
-In the early days of computing, the main contender to two's complement was one's complement. Its main advantage is that changing the sign of a number is simple, you just NOT each bit in the number. However, it has 2 representations for 0, a positive and a negative, which makes comparisons more difficult.
+Aux débuts de l'informatique, le principal concurrent du "complément à 2" était le "complément à 1". Son avantage était que l'inversion de signe était simple, et nécessitait d'inverser tous les bits du nombre. Par contre, il y avait 2 représentations de 0, une positive et une négative, ce qui compliquait les comparaisons.
 
-Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
+La base -2 est aussi une représentation potentiellement intéressante, à chaque bit correspond une valeur alternativement positive et négative.
 
 
 === trans/options_console ===
 
-$96601731563408* Open console
+$96601731563408 Ouvrir le terminal
 
 
 === components/DivMod64 ===
 
-$80284847781948* Divide
-$71663353206665* Divide and mod 2 numbers
+$80284847781948 Diviser
+$71663353206665 Diviser et calculer le modulo de deux nombres
 
 
 === trans/ide_add_assembly_header ===
 
-$94462268558066* [center]Add assembly code[/center]
+$94462268558066 [center]Ajoute le code assembleur[/center]
 
 
 === main_scripts/leg_level ===
 
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$65642901654732* {component} should be disabled
-$89011349770597* NOT
-$98778676892898* {component} should be enabled with value {value
-$40520283279584* XOR
-$71204580217527* NOTi
-$14186606871089* Next tick counter value will be {wrong_value}, but it should be {value}
-$27868897434461* Could not find the counter component
-$38681417496680* ARGUMENT 1
-$24003300271049* {component} should have value {value}, not {wrong_value}
-$50231510806554* Could not find the program component
+$11144256835662 XORi
+$20104629254326 ARGUMENT 2
+$65642901654732 {component} devrait être désactivé
+$89011349770597 NOT
+$98778676892898 {component} devrait être actif avec la valeur {value}
+$40520283279584 XOR
+$71204580217527 NOTi
+$14186606871089 Au prochain cycke la valeur du compteur sera {wrong_value} alors qu'on attend {value}
+$27868897434461 Composant compteur introuvable
+$38681417496680 ARGUMENT 1
+$24003300271049 {component} devrait avoir la valeur {value} et non {wrong_value}
+$50231510806554 Composant programme introuvable
 
 
 === trans/level_complete_delay ===
 
-$73470840319057*
-[b]Delay[/b]
-[color=#cccccc][i]You can now view the delay of wires and components.[/i][/color]
+$73470840319057
+[b]Délai[/b]
+[color=#cccccc][i]Tu peux désormais voir le délai de tes circuits et des composants.[/i][/color]
 
 
 === trans/manual_text_hard_disk ===
 
-$82372297690518*
-Hard disks are made of a spinning disk and a mechanical arm that has to physically move to load or save data. Of course physical movement is extremely slow in the timescales of electronics. Operating systems will normally order loads and saves such that the arm has to travel as little as possible.
+$82372297690518
+Les disques durs sont constitués d'un disque rotatif et d'un bras mécanique qui se déplace physiquement pour lire ou écrire les données. Evidemment les mouvements physiques sont extrêmement lents par rapport à l'électronique. Les systèmes d'exploitation réordonnent normalement les lectures et écritures de façon à limiter autant que possinle les déplacements du bras. 
 
-The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
+Le composant disque dur a une patte "positionner", qui te permet de modifier l'adresse observée d'une certaine quantité. Les adresses "bouclent" de telle sorte que descendre de 1 à partir de 0 nous ramène à l'adresse la plus grande, et remonter de 1 nous fait ensuite revenir à 0.
 
 
 === trans/manual_text_instructions ===
 
-$24791538034329*
-What this game calls an "instructions" is also known as an operation or an opcode (short for operation code). Regardless of the operating system, programming language or any other layers above it, all software must inevitably be reduced to instructions for the CPU to process them.
+$24791538034329
+Ce que ce jeu appelle une "instruction" s'appelle également opération ou opcode (raccourci anglais de code opération. Quelquesoit le système d'exploitation, le langage de programmation et tous les couches logicielles utilisées, tous les logiciels doivent finir par être ramenés à des instructions que le CPU peut exécuter.
 
-Internally in modern CPUs, instructions are translated into "microcodes", which are even smaller steps, out of reach for the programmer.
+A l'intérieur des processeurs modernes, les instructions sont converties en "microcodes" qui correspondent à des étapes encore plus élémentaires et sont inaccessibles au programmeur.
 
 
 === trans/manual_text_circular_dependency ===
 
-$29050562435902*
-A circular dependency is when the input of a component changes based on its own output. 
+$29050562435902
+Une dépendance circulaire apparaît quand l'entrée d'un composant dépend de sa propre sortie.
 
 [center][img]res://dialogue/circular_dependency.png[/img][/center]
 
-This simulator does not allow circular dependencies and instead triggers an error. 
+Ce simulateur n'autorise pas les dépendances circulaires et génère alors une erreur.
 
-The exception to this are the square pins that do not influence the output in the same tick. They can therefore not cause circular dependencies.
+Les pattes carrées sont une exception, elles influencent la sortie mais lors d'un autre cycle. Elles ne peuvent donc pas causer de dépendance circulaire.
 
 [center][img]res://dialogue/delay_buffer.png[/img][/center]
 
