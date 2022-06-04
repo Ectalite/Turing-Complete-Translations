@@ -1,57 +1,57 @@
 === trans/manual_keynote_the_robot ===
 
-$90224489436893* [center]Use arrow keys to play around[/center]
+$90224489436893 [center]Utilise les touches flêches pour bouger[/center]
 
 
 === levels/maze ===
 
-$36193081514106* NOTHING
-$10837851446666* WALL
-$10598752971970* COIN
-$40917300157127* SEEING:
-$54151353200088* DOOR
+$36193081514106 RIEN
+$10837851446666 MUR
+$10598752971970 PIECE
+$40917300157127 VISIBLE :
+$54151353200088 PORTE
 
 
 === trans/level_complete_stat_tick ===
 
-$47758922161853* Tick
+$47758922161853 Cycle
 
 
 === trans/level_complete_signed_numbers ===
 
-$41649402437253*
-[b]Negative numbers[/b]
-[color=#cccccc][i]Toggle between signed 
- and unsigned numbers[/i][/color]
+$41649402437253
+[b]Nombre négatifs[/b]
+[color=#cccccc][i]Bascule entre les nombres 
+ signés et non signés[/i][/color]
 
 
 === misc/ide_delete_program ===
 
-$87279416580516* Yes
+$87279416580516 Oui
 
 
 === trans/text_truth_table_left ===
 
-$58617980046951*
-[right]Input 1
-Input 2
-Output[/right]
+$58617980046951
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === trans/manual_text_console ===
 
-$39093856809104*
-The console component is a 80x24 [color=#dd6576][url=RGB color]ASCII[/url][/color] display. It must be linked to a memory source through the component link button:
+$39093856809104
+Le composant terminal est un écran [color=#dd6576][url=RGB color]ASCII[/url][/color] couleur 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
  [img=200]dialogue/manual/Console/link_state.png[/img]
 
-Updating the linked memory will then update the visuals on the console. In standard non color mode, each byte in the memory component determines what the corresponding character on the screen will be. However, the first character position can be offset by using the input pin on the console. This is for example useful when implementing scrolling.
+Les modifications de la mémoire liée permettent de modifier le contenu du terminal. Dans le mode monochrome standard, chaque octet correspond à un caractère de l'écran. Cependant, la position du premier caractère peut être décalée en fonction de l'entrée du terminal. Cela permet par exemple d'implémenter le défilement.
 
-The console also has a color mode that can be toggled on in the panel:
+Le terminal a aussi un mode couleur qui peut être activé sur le panneau :
 [img=125]dialogue/manual/Console/color_mode.png[/img]
 
-In this mode each character has an additional 3 byte background and 3 byte foreground [color=#dd6576][url=RGB color]RGB color[/url][/color] for a total of 7 bytes of data per character. However, each character is 8 byte aligned, which is more convenient when you set your RAM or ROM to 64 bit width addressing. Also, you may keep the character indexes the same when changing your schematic from non color to color mode, by change the bitwidth of the RAM or ROM from 8 to 64 at the same time. 
+Dans ce mode chaque caractère est associé en plus à 2 groupes de 3 octets pour les [color=#dd6576][url=RGB color]couleurs RVB[/url][/color] de fond et de texte. Attention les caractères sont alignés sur 8 octets ce qui est plus pratique quand l'adressage de ta ROM ou RAM est en 64 bits. De plus, l'index peut rester le même dans les deux modes en passant la largeur de bande mémoire de 8 à 64 bits. 
 
-In color mode the lowest byte is the character, the next 3 bytes are the font color and the following 3 bytes are the background color.
+Dans le mode couleur l'octet de poids faible est le caractère, les 3 octets suivants forment la couleur du texte et les 3 suivants la couleur de fond.
 
 
 === trans/manual_text_hard_disk ===
