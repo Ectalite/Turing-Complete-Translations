@@ -44,7 +44,7 @@ $49251062339706* Options
 
 === misc/ide_delete_program ===
 
-$87279416580516* Yes
+$87279416580516* Oui
 
 
 === levels/turing_complete ===
@@ -98,17 +98,17 @@ $15296208528991* Les espèces capables de finir sont considérées comme légale
 === trans/manual_text_console ===
 
 $39093856809104*
-The console component is a 80x24 [color=#dd6576][url=RGB color]ASCII[/url][/color] display. It must be linked to a memory source through the component link button:
+Le composant terminal est un écran [color=#dd6576][url=RGB color]ASCII[/url][/color] couleur 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
  [img=200]dialogue/manual/Console/link_state.png[/img]
 
-Updating the linked memory will then update the visuals on the console. In standard non color mode, each byte in the memory component determines what the corresponding character on the screen will be. However, the first character position can be offset by using the input pin on the console. This is for example useful when implementing scrolling.
+Les modifications de la mémoire liée permettent de modifier le contenu du terminal. Dans le mode monochrome standard, chaque octet correspond à un caractère de l'écran. Cependant, la position du premier caractère peut être décalée en fonction de l'entrée du terminal. Cela permet par exemple d'implémenter le défilement.
 
-The console also has a color mode that can be toggled on in the panel:
+Le terminal a aussi un mode couleur qui peut être activé sur le panneau :
 [img=125]dialogue/manual/Console/color_mode.png[/img]
 
-In this mode each character has an additional 3 byte background and 3 byte foreground [color=#dd6576][url=RGB color]RGB color[/url][/color] for a total of 7 bytes of data per character. However, each character is 8 byte aligned, which is more convenient when you set your RAM or ROM to 64 bit width addressing. Also, you may keep the character indexes the same when changing your schematic from non color to color mode, by change the bitwidth of the RAM or ROM from 8 to 64 at the same time. 
+Dans ce mode chaque caractère est associé en plus à 2 groupes de 3 octets pour les [color=#dd6576][url=RGB color]couleurs RVB[/url][/color] de fond et de texte. Attention les caractères sont alignés sur 8 octets ce qui est plus pratique quand l'adressage de ta ROM ou RAM est en 64 bits. De plus, l'index peut rester le même dans les deux modes en passant la largeur de bande mémoire de 8 à 64 bits. 
 
-In color mode the lowest byte is the character, the next 3 bytes are the font color and the following 3 bytes are the background color.
+Dans le mode couleur l'octet de poids faible est le caractère, les 3 octets suivants forment la couleur du texte et les 3 suivants la couleur de fond.
 
 
 === levels/component_factory ===
@@ -171,7 +171,7 @@ $78790416494254* RAM (mémoire vive)
 
 === trans/manual_text_top_the_robot ===
 
-$50801318216470* The screen shows the robot and his surroundings.
+$50801318216470* L'écran montre le robot et son environnement.
 
 
 === components/Nand16 ===
@@ -187,7 +187,7 @@ $69987793052607* Commentaire de fil (Cliquer sur le fil)
 
 === trans/ide_memory_address ===
 
-$94594171568769* [center]Linked components[/center]
+$94594171568769* [center]Composants liés[/center]
 
 
 === levels/delay_level ===
@@ -197,22 +197,22 @@ Tous les composants ont un délai. Au niveau du schéma, le délai cumulé est d
 Dans ce niveau tu vas devoir prouver que tu as compris ce concept.
 $11246430085016* Le délai de propagation est visible en cliquant sur le sablier dans le coin supérieur droit.
 $12817338693402* Le délai de tous les composants dérivent en fin de compte du délai de la porte NAND, qui a un délai de 2. Réalise un circuit ayant un délai de 6 et un coût NAND de 5.
-$17854168097855* Check
+$17854168097855* Vérifier
 
 
 === misc/specification_dialogue ===
 
-$93899425142858* Copy from {from} to {to}
+$93899425142858* Copier de {from} vers {to}
 $92046368194170* Condition
-$39935096343723* Never
-$52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
-$18833529038946* When [color=#2b8738]result[/color] {condition}
-$10141348037745* Immediate: {nr}
-$98983752580592* Copy
-$25145891843959* Always
-$53665446068319* UNUSED
-$26521666422399* Calculate
-$54909668901048* Immediate
+$39935096343723* Jamais
+$52961346176405* {condition} copier [color=#dd6576]REG 0[/color] vers le compteur
+$18833529038946* Si [color=#2b8738]résultat[/color] {condition}
+$10141348037745* Immédiate : {nr}
+$98983752580592* Copier
+$25145891843959* Toujours
+$53665446068319* INUTILISE
+$26521666422399* Calculer
+$54909668901048* Valeur immédiate
 
 
 === components/Decoder2 ===
@@ -241,26 +241,26 @@ $84656390009725* Sortie commutée 1 bit
 === trans/manual_text_assembly ===
 
 $54465324391961*
-You can use a mix of assembly codes and numbers to set the bytes. Assembly codes are just synonyms for a bit pattern. For example, instead of typing 196 for "add", this code can be named "add" directly, simplifying reading and writing code. 
+Tu peux utiliser un mélange de codes assembleur et de nombres pour initialiser les octets. Les codes assembleurs sont juste des synonymes pour un motif de bit. Par exemple, au lieu de taper 196 pour "addition", ce code peut être nommé "add" directement, ce qui simplifie la lecture et l'écriture du code.
 
-Comments can be added using "#". 
+Des commentaires peuvent être ajoutés en utilisant "#".
 [img]dialogue/comment.png[/img]
 
-Additionally, the [color=#c54d5e]CONST[/color] keyword can be used to name a value within a specific program. 
+De plus, le mot-clé [color=#c54d5e]CONST[/color] peut nommer une valeur pour le reste du programme.
 [img]dialogue/const.png[/img]
 
-[color=#c54d5e]LABEL[/color] assigns a name to the byte offset of the line it was inserted on. This is especially useful for naming jump destinations.
+[color=#c54d5e]LABEL[/color] nomme l'adresse de la ligne sur laquelle il est présent. Cela sert souvent pour nommer les destinations de saut.
 [img]dialogue/label.png[/img]
 
-You can add, subtract, multiply, integer divide, modulo, OR, AND or XOR values together using +, -, *, /, %, |, & or ^ respectively.
+Tu peux ajouter, soustraire, multiplier, calculer la division entière, le modulo, effectuer les opérations OR, AND et XOE de deux valeurs en utilisant respectivement +, -, *, /, %, |, &, ^.
 
-Breakpoints can be added by clicking to the left of a line number. The program will automatically pause at breakpoints when running.
+Des points d'arrêt peuvent être ajoutés en cliquant à gauche d'un numéro de ligne. Le programme s'interrompera sur ces points automatiquement à l'exécution.
 [img]dialogue/breakpoint.png[/img]
 
-Breakpoints can also be added to any of the linked components, pausing the program when that state is changed. Click on the state and you will see the red dot.
+Des points d'arrêt peuvent aussi être ajouté à un composant lié, et le programme sera interrompu quand leur état est modifié. Clique sur l'état et tu verras le point rouge.
 [img]dialogue/breakpoint_state.png[/img]
 
-Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0101) and hex with the prefix 0x (so 15 would be 0x0f)
+Enfin, les valeurs peuvent être indiquées en binaire avec le préfixe 0b (5 peut s'écrire 0b0101) et en hexa avec le préfixe 0x (15 s'écrit aussi 0x0f)
 
 
 === trans/options_pipette_wire ===
@@ -270,7 +270,7 @@ $96339976117958* Pipette à fil
 
 === misc/add_assembly_64bit ===
 
-$33233688912123* [center]Add assembly code[/center]
+$33233688912123* [center]Ajoute le code assembleur[/center]
 
 
 === misc/files_preview ===
@@ -1122,11 +1122,11 @@ $81707212583931* Disponible
 === trans/manual_text_negative_numbers ===
 
 $85226853816564*
-The way to represent negative numbers you discovered is called "two's complement". It is the standard way to represent negative numbers in modern computers. The main advantage of two's complement is that the negative representation works seamlessly with the same adder that we used for the non signed representation.
+La représentation des nombres négatifs que tu as trouvée est appelée "complément à 2". C'est la représentation standardisée des nombres négatifs dans les ordinateurs modernes. Son avantage principal est que cette représentation des négatifs fonctionne sans problème avec le même additionneur que nous avons utilisé pour la représentation non signée.
 
-In the early days of computing, the main contender to two's complement was one's complement. Its main advantage is that changing the sign of a number is simple, you just NOT each bit in the number. However, it has 2 representations for 0, a positive and a negative, which makes comparisons more difficult.
+Aux débuts de l'informatique, le principal concurrent du "complément à 2" était le "complément à 1". Son avantage était que l'inversion de signe était simple, et nécessitait d'inverser tous les bits du nombre. Par contre, il y avait 2 représentations de 0, une positive et une négative, ce qui compliquait les comparaisons.
 
-Another interesting representation, perhaps worth looking up is base -2, where the sign of the value of each digit alternates between positive and negative.
+La base -2 est aussi une représentation potentiellement intéressante, à chaque bit correspond une valeur alternativement positive et négative.
 
 
 === trans/options_window_mode ===
@@ -1136,7 +1136,7 @@ $54328660964287* Mode fenêtré
 
 === trans/options_console ===
 
-$96601731563408* Open console
+$96601731563408* Ouvrir le terminal
 
 
 === trans/options_waiting ===
@@ -1161,7 +1161,7 @@ $61172959716558* Emplacement de Sauvegarde
 
 === trans/ide_add_assembly_header ===
 
-$94462268558066* [center]Add assembly code[/center]
+$94462268558066* [center]Ajoute le code assembleur[/center]
 
 
 === levels/any_doubles ===
@@ -1374,9 +1374,9 @@ $40943344093513* Entrée
 
 === trans/wire_comment ===
 
-$41481492318983* Wire comment
-$87836369268219* Save
-$34083666001769* Wire comment
+$41481492318983* Commentaire de fil
+$87836369268219* Enregistrer
+$34083666001769* Commentaire de fil
 
 
 === levels/odd_number_of_signals ===
@@ -2163,7 +2163,7 @@ $25103579211328* Sonde Mémoire (bit)
 
 === trans/manual_keynote_the_robot ===
 
-$90224489436893* [center]Use arrow keys to play around[/center]
+$90224489436893* [center]Utilise les touches flêches pour bouger[/center]
 
 
 === trans/level_byte_mux_text ===
@@ -2193,10 +2193,10 @@ Mais avant, tu dois construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/
 Pour résoudre les défis que je t proposerais sans t'arracher tous les cheveux qu'il te reste, tu auras besoin d'un élément en plus : l'architecture [color=#e49f44]LEG[/color].
 $17275059688693* Bravo ! Tu as réussi la compétition, c'est une prouesse incomparable !
 $13741358519166* Le labyrinthe mythique. Si tu réussis à en sortir, tu gagneras la compétition!
-$36193081514106* NOTHING
-$10837851446666* WALL
-$10598752971970* COIN
-$40917300157127* SEEING:
+$36193081514106* RIEN
+$10837851446666* MUR
+$10598752971970* PIECE
+$40917300157127* VISIBLE :
 $11103446544344* D'un autre côté, tu peux aussi fièrement partir et ne pas être mangé. 
 $19331074553774*
 Écris un algorithme qui permettra au robot de sortir du labyrinthe.
@@ -2206,7 +2206,7 @@ Ce niveau est dur, tu devrais d'abord écrire ton algorithme sur le papier avant
 Utilise [color=#e63e5b][url=maze]cet indice[/url][/color] si tu es coincé. 
 
 [tip]Souviens-toi que tu ne peux pas utiliser de valeur immédiate plus grande que 63, attention donc à ne pas vouloir sauter à une ligne plus bas que la ligne 63.[/tip]
-$54151353200088* DOOR
+$54151353200088* PORTE
 
 
 === trans/level_constants_text ===
@@ -2248,14 +2248,14 @@ $59658696292688* DÉPILER {value} de la pile
 === trans/level_complete_signed_numbers ===
 
 $41649402437253*
-[b]Negative numbers[/b]
-[color=#cccccc][i]Toggle between signed 
- and unsigned numbers[/i][/color]
+[b]Nombre négatifs[/b]
+[color=#cccccc][i]Bascule entre les nombres 
+ signés et non signés[/i][/color]
 
 
 === trans/level_complete_stat_tick ===
 
-$47758922161853* Tick
+$47758922161853* Cycle
 
 
 === trans/levels_not_RichTextLabel3 ===
@@ -2282,9 +2282,9 @@ $99411066573242* Synchronisé
 === trans/text_truth_table_left ===
 
 $58617980046951*
-[right]Input 1
-Input 2
-Output[/right]
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === trans/optoins_factory_reset ===
@@ -2324,9 +2324,9 @@ $66996894079719* Attendu   Actuel
 === trans/manual_text_hard_disk ===
 
 $82372297690518*
-Hard disks are made of a spinning disk and a mechanical arm that has to physically move to load or save data. Of course physical movement is extremely slow in the timescales of electronics. Operating systems will normally order loads and saves such that the arm has to travel as little as possible.
+Les disques durs sont constitués d'un disque rotatif et d'un bras mécanique qui se déplace physiquement pour lire ou écrire les données. Evidemment les mouvements physiques sont extrêmement lents par rapport à l'électronique. Les systèmes d'exploitation réordonnent normalement les lectures et écritures de façon à limiter autant que possinle les déplacements du bras. 
 
-The hard disk component has a "seek" pin, which lets you change the address you are looking at by the given amount. The addresses "wrap around", such that seeking 1 less than 0 moves you to the highest address, and seeking 1 higher than that gets you back to 0.
+Le composant disque dur a une patte "positionner", qui te permet de modifier l'adresse observée d'une certaine quantité. Les adresses "bouclent" de telle sorte que descendre de 1 à partir de 0 nous ramène à l'adresse la plus grande, et remonter de 1 nous fait ensuite revenir à 0.
 
 
 === ui/state_ui/state_ui_output_bit ===
@@ -2391,7 +2391,7 @@ $37432913848309* [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les
 
 === trans/level_complete_stat_gate ===
 
-$95192766583497* Gate
+$95192766583497* Porte
 
 
 === levels/signed_negator ===
@@ -2415,13 +2415,13 @@ $22687523145097* Manquant
 === trans/manual_delay_text ===
 
 $52013630755752*
-In real hardware all components have delay. This is important since the delay in a circuit determines the maximum speed at which you can run it.
+Dans les circuits réels tous les composants ont du délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
 
-Following wires from input to output and adding the delay of components in the path will give you the delay that path. The delay of a circuit is the delay of the slowest path.
+Si tu suis les fils de l'entrée à la sortie en cumulant le délai de chaque compostant sur le chemin cela te donnera le délai de ce chemin. Le délai d'un circuit est le délai du chemin le plus lent.
 
-Besides inputs, paths can also start from components with no reliance on early phase inputs (like Counter and On) and they can end at late phase inputs (see page).
+En plus des entrées, les chemins peuvent aussi démarrer des composants qui ne dépendent pas initialement des entrées (comme les compteurs et On) et ils peuvent s'achever à des entrées différée (voir la page dédiée).
 
-Further, custom components don't have a delay score for the costliest path of the whole component, but rather the delay cost is calculated per pin. This is so as to not penalize using custom components by making faster pins cost the same as the slower ones.
+Enfin les composants personalisés n'ont pas de score de délai global basé sur le chemin le plus lent, le coût de délai est calculé pour chaque patte indépendamment. Ainsi il n'y a pas de pénalité à utiliser des composants personalisés comme cela serait le cas si les pattes rapides se retrouvaient avec le coût de la plus lente.
 
 
 === trans/level_xnor_RichTextLabel2 ===
@@ -3540,8 +3540,8 @@ $71951682957395* Carte des niveaux
 
 === components/DivMod64 ===
 
-$80284847781948* Divide
-$71663353206665* Divide and mod 2 numbers
+$80284847781948* Diviser
+$71663353206665* Diviser et calculer le modulo de deux nombres
 
 
 === levels/saving_bytes ===
@@ -3577,29 +3577,29 @@ $85913831661289* SI\_INFERIEUR
 $11144256835662* XORi
 $20104629254326* ARGUMENT 2
 $61412773713567* SOUSTRACTION
-$65642901654732* {component} should be disabled
+$65642901654732* {component} devrait être désactivé
 $52344899983501* SI\_INFERIEUR\_OU\_EGAL
 $89945092889418* SOUSTRACTIONi
 $89011349770597* NOT
 $71559031724238* SI_NON_EGAL
-$98778676892898* {component} should be enabled with value {value
+$98778676892898* {component} devrait être actif avec la valeur {value}
 $40520283279584* XOR
 $71204580217527* NOTi
 $71195301111400* ADDITIONi
 $98178474649432* SI\_SUPERIEUR\_OU\_EGAL
 $68187490877029* SI_EGAL
-$14186606871089* Next tick counter value will be {wrong_value}, but it should be {value}
-$27868897434461* Could not find the counter component
+$14186606871089* Au prochain cycke la valeur du compteur sera {wrong_value} alors qu'on attend {value}
+$27868897434461* Composant compteur introuvable
 $37810243909140* COMPTEUR
 $38681417496680* ARGUMENT 1
 $43723329256095* REGISTRE {nr}
 $44009845985661* ADDITION
 $50722296752142* ENTREE
 $68666991962246* OU
-$24003300271049* {component} should have value {value}, not {wrong_value}
+$24003300271049* {component} devrait avoir la valeur {value} et non {wrong_value}
 $79492115258673* SI\_SUPERIEUR
 $60997201855346* ADRESSE DE RESULTAT
-$50231510806554* Could not find the program component
+$50231510806554* Composant programme introuvable
 $64519909700148* ET
 $49810487048038* COMPTEUR
 $18236360532765* SORTIE
@@ -3682,8 +3682,8 @@ Sortie actuelle[/right]
 === trans/level_complete_delay ===
 
 $73470840319057*
-[b]Delay[/b]
-[color=#cccccc][i]You can now view the delay of wires and components.[/i][/color]
+[b]Délai[/b]
+[color=#cccccc][i]Tu peux désormais voir le délai de tes circuits et des composants.[/i][/color]
 
 
 === components/LessU64 ===
@@ -3714,21 +3714,21 @@ $97461374731210* Couleur de fil
 === trans/manual_text_instructions ===
 
 $24791538034329*
-What this game calls an "instructions" is also known as an operation or an opcode (short for operation code). Regardless of the operating system, programming language or any other layers above it, all software must inevitably be reduced to instructions for the CPU to process them.
+Ce que ce jeu appelle une "instruction" s'appelle également opération ou opcode (raccourci anglais de code opération. Quelquesoit le système d'exploitation, le langage de programmation et tous les couches logicielles utilisées, tous les logiciels doivent finir par être ramenés à des instructions que le CPU peut exécuter.
 
-Internally in modern CPUs, instructions are translated into "microcodes", which are even smaller steps, out of reach for the programmer.
+A l'intérieur des processeurs modernes, les instructions sont converties en "microcodes" qui correspondent à des étapes encore plus élémentaires et sont inaccessibles au programmeur.
 
 
 === trans/manual_text_circular_dependency ===
 
 $29050562435902*
-A circular dependency is when the input of a component changes based on its own output. 
+Une dépendance circulaire apparaît quand l'entrée d'un composant dépend de sa propre sortie.
 
 [center][img]res://dialogue/circular_dependency.png[/img][/center]
 
-This simulator does not allow circular dependencies and instead triggers an error. 
+Ce simulateur n'autorise pas les dépendances circulaires et génère alors une erreur.
 
-The exception to this are the square pins that do not influence the output in the same tick. They can therefore not cause circular dependencies.
+Les pattes carrées sont une exception, elles influencent la sortie mais lors d'un autre cycle. Elles ne peuvent donc pas causer de dépendance circulaire.
 
 [center][img]res://dialogue/delay_buffer.png[/img][/center]
 
@@ -3769,8 +3769,8 @@ $32982011047799* Vérifie
 === trans/level_complete_tooltip ===
 
 $33922330743421*
-[b]Wire color[/b]
-[color=#cccccc][i]Keep your wires organized with colors.[/i][/color]
+[b]Couleur de fil[/b]
+[color=#cccccc][i]Organise tes schémas avec ces couleurs.[/i][/color]
 
 
 === trans/level_odd_number_RichTextLabel2 ===
@@ -3802,7 +3802,7 @@ $65188797398656* EMPILER {value} sur la pile
 
 $73150174144736*
 [b]Robotron 9000+[/b]
-[color=#cccccc][i]Control [color=#e49f44]Robotron 9000+[/color] using your computer[/i][/color]
+[color=#cccccc][i]Contrôle [color=#e49f44]Robotron 9000+[/color] à l'aide de ton ordinateur[/i][/color]
 
 
 === levels/The Product of Nibbles ===
@@ -3835,11 +3835,11 @@ $73502755965496* Inférieur (non signé)
 === main_scripts/functions ===
 
 $11467644007149* Compteur {nr}
-$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
+$73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
 $10533010562232* SCORE DELAI : {delay}
-$10098517717617* Test: {nr} / {total}
+$10098517717617* Test : {nr} / {total}
 $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
 $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
@@ -3854,18 +3854,18 @@ $32508339206292* SCORE NAND : {nand}
 
 #  Instead of writing 5839000, the number turns into 5.8M
 $22896492410578* 10⁶
-$91472284749011* DELAY
-$21803034737442* ick
-$86260137015175* TICK
-$44906330481241* Delay
-$30602804398798* Gate
-$22213999385406* delay
+$91472284749011* DELAI
+$21803034737442* cycle
+$86260137015175* CYCLE
+$44906330481241* Délai
+$30602804398798* Porte
+$22213999385406* délai
 
 #  Instead of writing 5839, the number turns into 5.8K
 $84696693690500* x10³
-$39343770421034* gate
-$76763908762578* Tick
-$15265492169229* GATE
+$39343770421034* porte
+$76763908762578* Cycle
+$15265492169229* PORTE
 
 #  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* x10⁹
