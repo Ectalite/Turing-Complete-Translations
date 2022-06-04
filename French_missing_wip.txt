@@ -8,132 +8,20 @@ $71204580217527* NOTi
 $38681417496680* ARGUMENT 1
 
 
-=== trans/level_complete_tooltip ===
-
-$33922330743421
-[b]Couleur de fil[/b]
-[color=#cccccc][i]Organise tes schémas avec ces couleurs.[/i][/color]
-
-
-=== trans/ide_memory_address ===
-
-$94594171568769 [center]Composants liés[/center]
-
-
-=== trans/manual_text_top_the_robot ===
-
-$50801318216470 L'écran montre le robot et son environnement.
-
-
 === trans/level_complete_stat_sum ===
 
-$99546064626994 Score
-
-
-=== levels/delay_level ===
-
-$17854168097855 Vérifier
+$99546064626994* Score
 
 
 === misc/specification_dialogue ===
 
-$54909668901048 Valeur immédiate
-$92046368194170 Condition
-$39935096343723 Jamais
-$52961346176405 {condition} copier [color=#dd6576]REG 0[/color] vers le compteur
-$18833529038946 Si [color=#2b8738]résultat[/color] {condition}
-$10141348037745 Immédiate : {nr}
-$98983752580592 Copier
-$25145891843959 Toujours
-$53665446068319 INUTILISE
-$26521666422399 Calculer
-$93899425142858 Copier de {from} vers {to}
-
-
-=== trans/level_complete_robot ===
-
-$73150174144736
-[b]Robotron 9000+[/b]
-[color=#cccccc][i]Contrôle [color=#e49f44]Robotron 9000+[/color] à l'aide de ton ordinateur[/i][/color]
+$92046368194170* Condition
 
 
 === levels/The Product of Nibbles ===
 
-$13549246864135 Bit 0
-$10274387271390 Bit 0
-
-
-=== trans/level_complete_stat_gate ===
-
-$95192766583497 Porte
-
-
-=== trans/manual_text_assembly ===
-
-$54465324391961
-Tu peux utiliser un mélange de codes assembleur et de nombres pour initialiser les octets. Les codes assembleurs sont juste des synonymes pour un motif de bit. Par exemple, au lieu de taper 196 pour "addition", ce code peut être nommé "add" directement, ce qui simplifie la lecture et l'écriture du code.
-
-Des commentaires peuvent être ajoutés en utilisant "#".
-[img]dialogue/comment.png[/img]
-
-De plus, le mot-clé [color=#c54d5e]CONST[/color] peut nommer une valeur pour le reste du programme.
-[img]dialogue/const.png[/img]
-
-[color=#c54d5e]LABEL[/color] nomme l'adresse de la ligne sur laquelle il est présent. Cela sert souvent pour nommer les destinations de saut.
-[img]dialogue/label.png[/img]
-
-Tu peux ajouter, soustraire, multiplier, calculer la division entière, le modulo, effectuer les opérations OR, AND et XOE de deux valeurs en utilisant respectivement +, -, *, /, %, |, &, ^.
-
-Des points d'arrêt peuvent être ajoutés en cliquant à gauche d'un numéro de ligne. Le programme s'interrompera sur ces points automatiquement à l'exécution.
-[img]dialogue/breakpoint.png[/img]
-
-Des points d'arrêt peuvent aussi être ajouté à un composant lié, et le programme sera interrompu quand leur état est modifié. Clique sur l'état et tu verras le point rouge.
-[img]dialogue/breakpoint_state.png[/img]
-
-Enfin, les valeurs peuvent être indiquées en binaire avec le préfixe 0b (5 peut s'écrire 0b0101) et en hexa avec le préfixe 0x (15 s'écrit aussi 0x0f)
-
-
-=== trans/wire_comment ===
-
-$41481492318983 Commentaire de fil
-$87836369268219 Enregistrer
-$34083666001769 Commentaire de fil
-
-
-=== ui/global_translations ===
-
-$91472284749011 DELAI
-$21803034737442 cycle
-$86260137015175 CYCLE
-$44906330481241 Délai
-$30602804398798 Porte
-$22213999385406 délai
-$39343770421034 porte
-$76763908762578 Cycle
-$15265492169229 PORTE
-
-
-=== main_scripts/functions ===
-
-$73560327420927 Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
-$10098517717617 Test : {nr} / {total}
-
-
-=== trans/manual_delay_text ===
-
-$52013630755752
-Dans les circuits réels tous les composants ont du délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
-
-Si tu suis les fils de l'entrée à la sortie en cumulant le délai de chaque compostant sur le chemin cela te donnera le délai de ce chemin. Le délai d'un circuit est le délai du chemin le plus lent.
-
-En plus des entrées, les chemins peuvent aussi démarrer des composants qui ne dépendent pas initialement des entrées (comme les compteurs et On) et ils peuvent s'achever à des entrées différée (voir la page dédiée).
-
-Enfin les composants personalisés n'ont pas de score de délai global basé sur le chemin le plus lent, le coût de délai est calculé pour chaque patte indépendamment. Ainsi il n'y a pas de pénalité à utiliser des composants personalisés comme cela serait le cas si les pattes rapides se retrouvaient avec le coût de la plus lente.
-
-
-=== misc/add_assembly_64bit ===
-
-$33233688912123 [center]Ajoute le code assembleur[/center]
+$13549246864135* Bit 0
+$10274387271390* Bit 0
 
 
 === misc/files_preview ===
