@@ -10,130 +10,130 @@ $38681417496680* ARGUMENT 1
 
 === trans/level_complete_tooltip ===
 
-$33922330743421*
-[b]Wire color[/b]
-[color=#cccccc][i]Keep your wires organized with colors.[/i][/color]
+$33922330743421
+[b]Couleur de fil[/b]
+[color=#cccccc][i]Organise tes schémas avec ces couleurs.[/i][/color]
 
 
 === trans/ide_memory_address ===
 
-$94594171568769* [center]Linked components[/center]
+$94594171568769 [center]Composants liés[/center]
 
 
 === trans/manual_text_top_the_robot ===
 
-$50801318216470* The screen shows the robot and his surroundings.
+$50801318216470 L'écran montre le robot et son environnement.
 
 
 === trans/level_complete_stat_sum ===
 
-$99546064626994* Score
+$99546064626994 Score
 
 
 === levels/delay_level ===
 
-$17854168097855* Check
+$17854168097855 Vérifier
 
 
 === misc/specification_dialogue ===
 
-$54909668901048* Immediate
-$92046368194170* Condition
-$39935096343723* Never
-$52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
-$18833529038946* When [color=#2b8738]result[/color] {condition}
-$10141348037745* Immediate: {nr}
-$98983752580592* Copy
-$25145891843959* Always
-$53665446068319* UNUSED
-$26521666422399* Calculate
-$93899425142858* Copy from {from} to {to}
+$54909668901048 Valeur immédiate
+$92046368194170 Condition
+$39935096343723 Jamais
+$52961346176405 {condition} copier [color=#dd6576]REG 0[/color] vers le compteur
+$18833529038946 Si [color=#2b8738]résultat[/color] {condition}
+$10141348037745 Immédiate : {nr}
+$98983752580592 Copier
+$25145891843959 Toujours
+$53665446068319 INUTILISE
+$26521666422399 Calculer
+$93899425142858 Copier de {from} vers {to}
 
 
 === trans/level_complete_robot ===
 
-$73150174144736*
+$73150174144736
 [b]Robotron 9000+[/b]
-[color=#cccccc][i]Control [color=#e49f44]Robotron 9000+[/color] using your computer[/i][/color]
+[color=#cccccc][i]Contrôle [color=#e49f44]Robotron 9000+[/color] à l'aide de ton ordinateur[/i][/color]
 
 
 === levels/The Product of Nibbles ===
 
-$13549246864135* Bit 0
-$10274387271390* Bit 0
+$13549246864135 Bit 0
+$10274387271390 Bit 0
 
 
 === trans/level_complete_stat_gate ===
 
-$95192766583497* Gate
+$95192766583497 Porte
 
 
 === trans/manual_text_assembly ===
 
-$54465324391961*
-You can use a mix of assembly codes and numbers to set the bytes. Assembly codes are just synonyms for a bit pattern. For example, instead of typing 196 for "add", this code can be named "add" directly, simplifying reading and writing code. 
+$54465324391961
+Tu peux utiliser un mélange de codes assembleur et de nombres pour initialiser les octets. Les codes assembleurs sont juste des synonymes pour un motif de bit. Par exemple, au lieu de taper 196 pour "addition", ce code peut être nommé "add" directement, ce qui simplifie la lecture et l'écriture du code.
 
-Comments can be added using "#". 
+Des commentaires peuvent être ajoutés en utilisant "#".
 [img]dialogue/comment.png[/img]
 
-Additionally, the [color=#c54d5e]CONST[/color] keyword can be used to name a value within a specific program. 
+De plus, le mot-clé [color=#c54d5e]CONST[/color] peut nommer une valeur pour le reste du programme.
 [img]dialogue/const.png[/img]
 
-[color=#c54d5e]LABEL[/color] assigns a name to the byte offset of the line it was inserted on. This is especially useful for naming jump destinations.
+[color=#c54d5e]LABEL[/color] nomme l'adresse de la ligne sur laquelle il est présent. Cela sert souvent pour nommer les destinations de saut.
 [img]dialogue/label.png[/img]
 
-You can add, subtract, multiply, integer divide, modulo, OR, AND or XOR values together using +, -, *, /, %, |, & or ^ respectively.
+Tu peux ajouter, soustraire, multiplier, calculer la division entière, le modulo, effectuer les opérations OR, AND et XOE de deux valeurs en utilisant respectivement +, -, *, /, %, |, &, ^.
 
-Breakpoints can be added by clicking to the left of a line number. The program will automatically pause at breakpoints when running.
+Des points d'arrêt peuvent être ajoutés en cliquant à gauche d'un numéro de ligne. Le programme s'interrompera sur ces points automatiquement à l'exécution.
 [img]dialogue/breakpoint.png[/img]
 
-Breakpoints can also be added to any of the linked components, pausing the program when that state is changed. Click on the state and you will see the red dot.
+Des points d'arrêt peuvent aussi être ajouté à un composant lié, et le programme sera interrompu quand leur état est modifié. Clique sur l'état et tu verras le point rouge.
 [img]dialogue/breakpoint_state.png[/img]
 
-Finally, values can be specified in binary with the prefix 0b (so 5 could be 0b0101) and hex with the prefix 0x (so 15 would be 0x0f)
+Enfin, les valeurs peuvent être indiquées en binaire avec le préfixe 0b (5 peut s'écrire 0b0101) et en hexa avec le préfixe 0x (15 s'écrit aussi 0x0f)
 
 
 === trans/wire_comment ===
 
-$41481492318983* Wire comment
-$87836369268219* Save
-$34083666001769* Wire comment
+$41481492318983 Commentaire de fil
+$87836369268219 Enregistrer
+$34083666001769 Commentaire de fil
 
 
 === ui/global_translations ===
 
-$91472284749011* DELAY
-$21803034737442* ick
-$86260137015175* TICK
-$44906330481241* Delay
-$30602804398798* Gate
-$22213999385406* delay
-$39343770421034* gate
-$76763908762578* Tick
-$15265492169229* GATE
+$91472284749011 DELAI
+$21803034737442 cycle
+$86260137015175 CYCLE
+$44906330481241 Délai
+$30602804398798 Porte
+$22213999385406 délai
+$39343770421034 porte
+$76763908762578 Cycle
+$15265492169229 PORTE
 
 
 === main_scripts/functions ===
 
-$73560327420927* This save is from an obsolete version of this level.\nCreate and load a new schematic in the schematic menu.
-$10098517717617* Test: {nr} / {total}
+$73560327420927 Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
+$10098517717617 Test : {nr} / {total}
 
 
 === trans/manual_delay_text ===
 
-$52013630755752*
-In real hardware all components have delay. This is important since the delay in a circuit determines the maximum speed at which you can run it.
+$52013630755752
+Dans les circuits réels tous les composants ont du délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
 
-Following wires from input to output and adding the delay of components in the path will give you the delay that path. The delay of a circuit is the delay of the slowest path.
+Si tu suis les fils de l'entrée à la sortie en cumulant le délai de chaque compostant sur le chemin cela te donnera le délai de ce chemin. Le délai d'un circuit est le délai du chemin le plus lent.
 
-Besides inputs, paths can also start from components with no reliance on early phase inputs (like Counter and On) and they can end at late phase inputs (see page).
+En plus des entrées, les chemins peuvent aussi démarrer des composants qui ne dépendent pas initialement des entrées (comme les compteurs et On) et ils peuvent s'achever à des entrées différée (voir la page dédiée).
 
-Further, custom components don't have a delay score for the costliest path of the whole component, but rather the delay cost is calculated per pin. This is so as to not penalize using custom components by making faster pins cost the same as the slower ones.
+Enfin les composants personalisés n'ont pas de score de délai global basé sur le chemin le plus lent, le coût de délai est calculé pour chaque patte indépendamment. Ainsi il n'y a pas de pénalité à utiliser des composants personalisés comme cela serait le cas si les pattes rapides se retrouvaient avec le coût de la plus lente.
 
 
 === misc/add_assembly_64bit ===
 
-$33233688912123* [center]Add assembly code[/center]
+$33233688912123 [center]Ajoute le code assembleur[/center]
 
 
 === misc/files_preview ===
