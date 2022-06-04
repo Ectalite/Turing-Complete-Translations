@@ -1,80 +1,11 @@
-=== trans/manual_text_negative_numbers ===
-
-$85226853816564
-La représentation des nombres négatifs que tu as trouvée est appelée "complément à 2". C'est la représentation standardisée des nombres négatifs dans les ordinateurs modernes. Son avantage principal est que cette représentation des négatifs fonctionne sans problème avec le même additionneur que nous avons utilisé pour la représentation non signée.
-
-Aux débuts de l'informatique, le principal concurrent du "complément à 2" était le "complément à 1". Son avantage était que l'inversion de signe était simple, et nécessitait d'inverser tous les bits du nombre. Par contre, il y avait 2 représentations de 0, une positive et une négative, ce qui compliquait les comparaisons.
-
-La base -2 est aussi une représentation potentiellement intéressante, à chaque bit correspond une valeur alternativement positive et négative.
-
-
-=== trans/options_console ===
-
-$96601731563408 Ouvrir le terminal
-
-
-=== components/DivMod64 ===
-
-$80284847781948 Diviser
-$71663353206665 Diviser et calculer le modulo de deux nombres
-
-
-=== trans/ide_add_assembly_header ===
-
-$94462268558066 [center]Ajoute le code assembleur[/center]
-
-
 === main_scripts/leg_level ===
 
-$11144256835662 XORi
-$20104629254326 ARGUMENT 2
-$65642901654732 {component} devrait être désactivé
-$89011349770597 NOT
-$98778676892898 {component} devrait être actif avec la valeur {value}
-$40520283279584 XOR
-$71204580217527 NOTi
-$14186606871089 Au prochain cycke la valeur du compteur sera {wrong_value} alors qu'on attend {value}
-$27868897434461 Composant compteur introuvable
-$38681417496680 ARGUMENT 1
-$24003300271049 {component} devrait avoir la valeur {value} et non {wrong_value}
-$50231510806554 Composant programme introuvable
-
-
-=== trans/level_complete_delay ===
-
-$73470840319057
-[b]Délai[/b]
-[color=#cccccc][i]Tu peux désormais voir le délai de tes circuits et des composants.[/i][/color]
-
-
-=== trans/manual_text_hard_disk ===
-
-$82372297690518
-Les disques durs sont constitués d'un disque rotatif et d'un bras mécanique qui se déplace physiquement pour lire ou écrire les données. Evidemment les mouvements physiques sont extrêmement lents par rapport à l'électronique. Les systèmes d'exploitation réordonnent normalement les lectures et écritures de façon à limiter autant que possinle les déplacements du bras. 
-
-Le composant disque dur a une patte "positionner", qui te permet de modifier l'adresse observée d'une certaine quantité. Les adresses "bouclent" de telle sorte que descendre de 1 à partir de 0 nous ramène à l'adresse la plus grande, et remonter de 1 nous fait ensuite revenir à 0.
-
-
-=== trans/manual_text_instructions ===
-
-$24791538034329
-Ce que ce jeu appelle une "instruction" s'appelle également opération ou opcode (raccourci anglais de code opération. Quelquesoit le système d'exploitation, le langage de programmation et tous les couches logicielles utilisées, tous les logiciels doivent finir par être ramenés à des instructions que le CPU peut exécuter.
-
-A l'intérieur des processeurs modernes, les instructions sont converties en "microcodes" qui correspondent à des étapes encore plus élémentaires et sont inaccessibles au programmeur.
-
-
-=== trans/manual_text_circular_dependency ===
-
-$29050562435902
-Une dépendance circulaire apparaît quand l'entrée d'un composant dépend de sa propre sortie.
-
-[center][img]res://dialogue/circular_dependency.png[/img][/center]
-
-Ce simulateur n'autorise pas les dépendances circulaires et génère alors une erreur.
-
-Les pattes carrées sont une exception, elles influencent la sortie mais lors d'un autre cycle. Elles ne peuvent donc pas causer de dépendance circulaire.
-
-[center][img]res://dialogue/delay_buffer.png[/img][/center]
+$11144256835662* XORi
+$20104629254326* ARGUMENT 2
+$89011349770597* NOT
+$40520283279584* XOR
+$71204580217527* NOTi
+$38681417496680* ARGUMENT 1
 
 
 === trans/level_complete_tooltip ===
