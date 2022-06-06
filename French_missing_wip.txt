@@ -267,11 +267,12 @@ $65428404547905* Stats
 
 === trans/manual_text_bytes ===
 
-$73333514253412*
-This game asks you to build an 8 bit computer.  Practically this would normally require the player to put down 8 parallel wire lines in many places.
-To alleviate tedious busywork, you are given the notion of a byte, which is just a virtual bundle of 8 bits.
+$73333514253412
+Ce jeu te demande de construire un ordinateur 8 bits. En pratique cela demanderait normalement au joueur de placer 8 fils parallèles à beaucoup d'endroits.
 
-The state of either a byte input / output or wire line is represented by a number, instead of the red or green color.
+Pour t'éviter cette tâche ennuyeuse, on te propose le concept d'octet, qui n'est rien d'autre qu'un paquet de 8 bits.
+
+L'état d'une entrée, sortie ou d'un fil de type octet est représenté par un nombre au lieu des couleurs rouge ou verte.
 
 
 === trans/manual_robot_controls ===
@@ -286,10 +287,10 @@ $10186190492148* ALT click to move wire head
 
 === rpg/maps/prison/cat ===
 
-$60970953650633* Cat
-$55489562454759* Meow
-$33739450565687* RIP kittie
-$66402048769418* Blood
+$60970953650633 Chat
+$55489562454759 Miaou
+$33739450565687 Adieu minou
+$66402048769418 Sang
 
 
 === trans/panel_decoder2_output ===
@@ -402,13 +403,13 @@ $75492358516234* Output
 
 === trans/manual_side_the_robot ===
 
-$56547245144983*
-[color=#e49f44][b][/b][/color] The robot sees one 
-  tile ahead. The name
-  and ID are shown up 
-  here. This ID number
-  is also the computer's 
-  input.
+$56547245144983
+[color=#e49f44][b][/b][/color] Le robot voit une case 
+  devant. Le nom et
+  l'ID sont visibles 
+  ici. Cet ID 
+  est aussi l'entrée
+  de l'ordinateur.
 
 
 === trans/panel_register64_inputs ===
@@ -541,7 +542,7 @@ $16336401898647* Test 1/2
 
 === trans/manual_send_otuput_robot ===
 
-$65542429897149* [center]Send output to control the robot[/center]
+$65542429897149 [center]Ecris sur la sortie pour contrôler le robot[/center]
 
 
 === trans/panel_input_direction ===
@@ -591,13 +592,12 @@ $20820887361993* Click "Next tick" to see
 
 === trans/manual_text_turing_complete ===
 
-$54897112350567*
-Certain computers, like simple calculators are limited in the algorithms they can perform.
+$54897112350567
+Certains ordinateurs, comme les calculatrices de base, sont limités en terme d'algorithmes executables.
 
-They cannot perform any calculation that requires looping or recursing an arbitrary amount of times. Technically machines without looping or recursion can only deal with combinational logic.
+Ils ne peuvent pas réaliser des calculs nécessitant des boucles ou une récursion d'un niveau arbitraire. Techniquement les machines sans boucle ni récursion ne peuvent gérer que la logique combinatoire.
 
-Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
-
+Les machines Turing complètes par contre sont elles aussi puissantes qu'il est possible de l'être. Une telle machine peut avoir un processeur lent, mais il reste puissant dans le sens qu'il n'existe aucun algorithme (calculable) qu'il ne peut exécuter.
 
 === trans/panel_fileloader_output ===
 
@@ -993,18 +993,18 @@ $24213353038685* [center]Value[/center]
 
 === trans/manual_text_binary ===
 
-$69488982380310*
-The numbers you are used to are base 10, here when we add a 0 to the right hand side of a number, it's value increases 10 fold.
+$69488982380310
+Les nombres que tu as l'habitude d'utiliser forment la base 10, et quand nous ajoutons un 0 à droite d'un nombre, sa valeur est multipliée par 10.
 
-Binary is base 2, so doing the same will instead just double it. In other words, each digit represents a power of 2. For example with [color=#c54d5e]base 2[/color] and [color=#e49f44]base 10[/color] color coded:
+Le binaire est la base 2, et dans ce cas ce procédé ne fait que doubler le nombre. Autrement dit, chaque chiffre représente une puissance de 2. Voici des exemples en [color=#c54d5e]base 2[/color] et [color=#e49f44]base 10[/color] :
 [color=#c54d5e]    1[/color] = [color=#e49f44]1[/color]
 [color=#c54d5e]  10[/color] = [color=#e49f44]2[/color]
 [color=#c54d5e]100[/color] = [color=#e49f44]4[/color]
 
-To represent 6 we can simply add 4 and 2:
+Pour représenter 6 nous pouvons simplement ajouter 4 et 2 :
 [color=#c54d5e]110[/color] = [color=#e49f44]6[/color]
 
-Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
+L'addition, la multiplication et tout le reste fonctionne comme en base 10, sauf qu'une retenue est nécessaire à partir de 2 au lieu de 10.
 
 
 === rpg/maps/overworld/cannon ===
