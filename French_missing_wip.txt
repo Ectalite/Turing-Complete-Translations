@@ -1,16 +1,151 @@
-=== main_scripts/leg_level ===
+=== trans/panel_nor_description ===
 
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$89011349770597* NOT
-$40520283279584* XOR
-$71204580217527* NOTi
-$38681417496680* ARGUMENT 1
+$15262147022850* [center]Bitwise XNORs two inputs[/center]
 
 
-=== trans/level_complete_stat_sum ===
+=== rpg/maps/overworld/kligara ===
 
-$99546064626994* Score
+$78685013556649*
+My job is to stare at
+reactor fuel thingies
+
+
+=== trans/panel_register16_outputs ===
+
+$91613202877683* Output
+
+
+=== trans/panel_program_1_output ===
+
+$31398283096964* Output
+
+
+=== rpg/maps/overworld/control_panel ===
+
+$94056033073339*
+The captain will throw me 
+off the ship if I touch this
+$20128423531070* Control panel
+
+
+=== rpg/maps/overworld/water ===
+
+$82402577990931* Water
+
+
+=== trans/panel_stack_output ===
+
+$61988314265407* Output
+
+
+=== trans/panel_halt_label ===
+
+$81678588906692* Halt message
+
+
+=== trans/panel_car_output_0 ===
+
+$21449898267446* Carry:
+
+
+=== misc/io_label_change ===
+
+$50497979766012* Label text
+
+
+=== rpg/maps/unseen_fruit/wall_broke ===
+
+$82933036983558* Damaged wall
+
+
+=== rpg/maps/prison/snuffles ===
+
+$38415939620256* Woof woof
+$58496270566737* Snuffles
+$97846640630713* Blood
+$18282167453919* Poor old Snuffles
+
+
+=== trans/panel_lessu_description ===
+
+$10492822526537* [center]Check if Input 1 < Input 2[/center]
+
+
+=== trans/panel_switch_output ===
+
+$86922225714685* Output
+
+
+=== trans/panel_switch_input ===
+
+$27545152958344* [right]Input[/right]
+
+
+=== trans/panel_maker16_input ===
+
+$17253365231801*
+[right]Byte 1
+Byte 2[/right]
+
+
+=== trans/panel_network_output_description ===
+
+$44520675249142*
+[b][color=#39aa49]Event type[/color] (results)[/b]
+[code]0[/code] No new events
+[code]1[/code] [color=#39aa49]Incoming connection[/color] (Connection ID, Port)
+[code]2[/code] [color=#39aa49]Connect complete[/color] 
+[code]3[/code] [color=#39aa49]Receive data[/color] (Connection ID, Data, Data length)
+[code]4[/code] [color=#39aa49]Connection closed[/color] (Connection ID / Error code)
+
+
+=== trans/rpg_complete_chest ===
+
+$59394224080614* [center]Tricksy's chest[/center]
+
+
+=== trans/panel_program4_output ===
+
+$30314861365347*
+Output 1
+Output 2
+Output 3
+Output 4
+
+
+=== trans/rpg_complete_text5 ===
+
+$15921686607849* [center]The slime farm[/center]
+
+
+=== trans/panel_clock_input ===
+
+$26264925364981* [right]Enable [/right]
+
+
+=== trans/panel_network_outputs ===
+
+$68275268516971*
+Connection ID
+Data / Port / Error code
+Data length
+
+
+=== rpg/hat_man ===
+
+$31184066972544* Leprechaun Hat
+$35778552177922* Santa's Hat
+$13294635391831* Pharaohs Hat
+$82258891749699* Where did my money go???
+$79556354428080* Custodian Helmet
+$47713748239182* Come again Robot
+$68242068712116* Baseball Cap
+$93275531091074* Cowbot Hat
+$30546444635339* Lady hat
+$60834004183919* Bowler Hat
+$98505468673014* Wide Brim Bucket Hat
+$50407582286574* Police Cap
+$40995289760848* Best Hat
 
 
 === misc/specification_dialogue ===
@@ -18,10 +153,63 @@ $99546064626994* Score
 $92046368194170* Condition
 
 
-=== levels/The Product of Nibbles ===
+=== trans/panel_dual_load_input ===
 
-$13549246864135* Bit 0
-$10274387271390* Bit 0
+$93092890899642*
+[right]Load
+Save
+Address
+Save value
+Load 2
+Address 2[/right]
+
+
+=== trans/panel_input_right ===
+
+$95766090310621* Right
+
+
+=== trans/panel_register16_inputs ===
+
+$96875261858960*
+[right]Load
+Save
+Save value[/right]
+
+
+=== trans/panel_xor ===
+
+$89363100135433*
+[right]Input 1
+Input 2
+Output[/right]
+
+
+=== trans/rpg_complete_flower ===
+
+$15192250170799* [center]Dumio and Gruliette[/center]
+
+
+=== trans/panel_maker32_input ===
+
+$93209061270494*
+[right]Byte 1
+Byte 2
+Byte 3
+Byte 4[/right]
+
+
+=== trans/panel_decoder3_input ===
+
+$82288570082172*
+[right]Input 1
+Input 2
+Input 3[/right]
+
+
+=== trans/panel_xnor_output ===
+
+$69594087046834* Output
 
 
 === misc/files_preview ===
@@ -33,20 +221,12 @@ $19184997172542* Used in architectures
 $36200352866864* Last edit
 
 
-=== trans/manual_text_binary ===
+=== trans/panel_regred_input ===
 
-$69488982380310*
-The numbers you are used to are base 10, here when we add a 0 to the right hand side of a number, it's value increases 10 fold.
-
-Binary is base 2, so doing the same will instead just double it. In other words, each digit represents a power of 2. For example with [color=#c54d5e]base 2[/color] and [color=#e49f44]base 10[/color] color coded:
-[color=#c54d5e]    1[/color] = [color=#e49f44]1[/color]
-[color=#c54d5e]  10[/color] = [color=#e49f44]2[/color]
-[color=#c54d5e]100[/color] = [color=#e49f44]4[/color]
-
-To represent 6 we can simply add 4 and 2:
-[color=#c54d5e]110[/color] = [color=#e49f44]6[/color]
-
-Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
+$61209423072819*
+[right]Load
+Save
+Save value[/right]
 
 
 === trans/level_complete_wire_comments ===
@@ -56,16 +236,11 @@ $92673421413755*
 [color=#cccccc][i]Add comments to your wires.[/i][/color]
 
 
-=== trans/binary_racer_count_down2 ===
+=== trans/panel_counter8_input ===
 
-$23959994711260* Ready to race?
-
-
-=== nim/backend_lib/level_list ===
-
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
+$50035967147203*
+[right]Increment / Overwrite
+Overwrite value[/right]
 
 
 === trans/schematic_new_folder_name ===
@@ -73,9 +248,16 @@ $70993791338383* XOR
 $86236104278688* New folder
 
 
-=== trans/schematics_menu_visible_label ===
+=== rpg/maps/overworld/brambert ===
 
-$34084132835354* Visible in menu
+$23133103699795*
+I work here so I can
+save up to buy Best Hat
+
+
+=== trans/panel_output_direction ===
+
+$89612128414294* Label direction
 
 
 === trans/level_complete_stats ===
@@ -102,37 +284,763 @@ $94513149242653* Robot controls
 $10186190492148* ALT click to move wire head
 
 
-=== trans/not_gate_RichTextLabel2 ===
+=== rpg/maps/prison/cat ===
 
-$10340875578771*
+$60970953650633* Cat
+$55489562454759* Meow
+$33739450565687* RIP kittie
+$66402048769418* Blood
+
+
+=== trans/panel_decoder2_output ===
+
+$98341196231276*
+Output 1
+Output 2
+Output 3
+Output 4
+
+
+=== rpg/maps/overworld/griffith ===
+
+$55209338960432*
+Go to the slime farm
+and collect slime goo
+$96728313107159* Great you have collected the goo
+$96479154941553* Tomorrow I am going skiing
+$22071068061213* 2 more should do
+$76381947526292* 4 blobs of goo should be enough
+$79617816410767* Help me get off work robot
+$53961253609599*
+The the barrel will be served 
+for dinner later
+$27173657446279* Wait what
+$75126453723590*
+Good, you have collected 
+3 blobs of goo from the 
+slime farm
+$31359502586908*
+I have too many sick days
+already I need a really good
+excuse this time
+$37703435616461* A noble quest
+$95279523937415* 3 more should do
+$76778627086258*
+Thank you for helping me 
+get off work man
+$38680695249087*
+Then put it in the stew
+barrel behind the chef
+in the cafeteria
+$10482244323050*
+Now go put it in stew barrel
+in the kitchen behind
+the chef
+$24977511637567*
+Good, you have collected
+1 blob of goo from the
+slime farm
+$80959866769801*
+If we could get my
+boss to eat it, that
+should do the tick
+$21601269931093*
+Good, you have collected 
+2 blobs of goo from the
+slime farm
+$28681635150249* Just get one 1 more
+$71867966253273*
+Eating slime goo
+makes you very agreeable
+
+
+=== trans/panel_maker8_input ===
+
+$26123816206996*
+[right]Bit 1
+Bit 2
+Bit 3
+Bit 4
+Bit 5
+Bit 6
+Bit 7
+Bit 8[/right]
+
+
+=== rpg/maps/prison/dr_rakoo ===
+
+$62085363571678* Dr. Rakoo
+$41342441528477* Blood
+$31033960272185* I am the esteemed Dr. Rakoo
+
+
+=== ui/schematic_ui/confirm_delete ===
+
+$46014905606975* Yes
+
+
+=== trans/levels_saving_bytes_text ===
+
+$36838510526259*
+[right]Action
+Desired state
+Desired output
+[/right]
+
+
+=== trans/panel_less_input ===
+
+$68966388936516*
+[right]Input 1
+Input 2[/right]
+
+
+=== trans/panel_shl_output ===
+
+$75492358516234* Output
+
+
+=== trans/manual_side_the_robot ===
+
+$56547245144983*
+[color=#e49f44][b][/b][/color] The robot sees one 
+  tile ahead. The name
+  and ID are shown up 
+  here. This ID number
+  is also the computer's 
+  input.
+
+
+=== trans/panel_register64_inputs ===
+
+$44212297072750*
+[right]Load
+Save
+Save value[/right]
+
+
+=== trans/level_decoder_1_RichTextLabel2 ===
+
+$50454539040073*
 [right][color=#e49f44]Input[/color]
+Output 1
+Output 2[/right]
+
+
+=== trans/panel_outputlevel_enable ===
+
+$88881816595724* [center]Disable / Enable[/center]
+
+
+=== misc/restore_overture ===
+
+$52008982212566* Reset
+
+
+=== trans/credit_header ===
+
+$21717110565858* Credits
+
+
+=== rpg/maps/overworld/bridge ===
+
+$70708048943630* Bridge
+
+
+=== trans/panel_input_down ===
+
+$70002762618597* Down
+
+
+=== trans/_second_tick_RichTextLabel2 ===
+
+$11680718497014*
+[right][color=#e49f44]Input 1
+Input 2[/color]
 Desired output
 Current output[/right]
 
 
-=== trans/manual_text_program ===
+=== trans/level_complete_level_map ===
 
-$25326551844839*
-The program component is a read only memory component, that can have its data programmed in assembly. To edit the assembly, click on the yellow edit icon in the corner of the component.
-
-[center][img]dialogue/manual/program_edit.png[/img][/center]
-
-In the middle of the screen you will see the code area, read more about the assembly [color=#4d82c5][url=Assembly]here[/url][/color].
-
-On the left hand side of the assembly editor interface, you can add assembly codes (mnemonics). Assembly codes act as a replacement for numbers, so instead of remembering what number represents the AND instruction in your architecture, you can add "AND" to your assembly codes, making code easier to read and write.
-
-[center][img]dialogue/manual/assembly_codes.png[/img][/center]
-
-On the program component you will also find the "Watch state" button. 
-
-[center][img]dialogue/manual/watch_state.png[/img][/center]
-
-This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
+$20801641140962*
+[b]Level map mode[/b]
+[color=#cccccc][i]Click "[color=#e49f44]Onwards[/color]" and you will see[/i][/color]
 
 
-=== trans/instructions_header ===
+=== trans/panel_or ===
 
-$15089281203426* [center]Instructions[/center]
+$15879871058922*
+[right]Input 1
+Input 2
+Output[/right]
+
+
+=== levels/ram_block ===
+
+$16196915566111* 0
+$14259545926196* A
+$12933801309767* A
+
+
+=== rpg/maps/overworld/grenzorp ===
+
+$29100639060467*
+I pretend I am working but I
+am actually playing a computer game
+
+
+=== rpg/maps/overworld/sasni ===
+
+$60683848498748*
+I don't know why I'm 
+not sitting on my chair
+
+
+=== rpg/maps/overworld/barrel ===
+
+$32647427955087* Barrel
+$15228996460366* This is a barrel
+
+
+=== trans/panel_keyboard_description ===
+
+$11215841169495* [center]Although the keypad shows the value of the currently pressed key, it only actually outputs on a regular tick![/center]
+
+
+=== trans/panel_shl8_input ===
+
+$61388183229084*
+[right]Value
+Shift by[/right]
+
+
+=== trans/always_on_RichTextLabel2 ===
+
+$86547293707045*
+[right][color=#ffa502]Input[/color]
+Desired output
+Current output[/right]
+
+
+=== components/Off ===
+
+$61860786587357* OFF
+
+
+=== rpg/maps/overworld/tree ===
+
+$72922820287017* It is a tree
+$33509997611554* Tree
+
+
+=== levels/circular_dependency ===
+
+$16336401898647* Test 1/2
+
+
+=== trans/manual_send_otuput_robot ===
+
+$65542429897149* [center]Send output to control the robot[/center]
+
+
+=== trans/panel_input_direction ===
+
+$25170203412473* Label direction
+
+
+=== trans/level_binary_search_description ===
+
+$11976224688780* [center]Recover the passcode[/center]
+
+
+=== trans/rpg_complete_derpoo ===
+
+$25534025775791* [center]RIP derpoo[/center]
+
+
+=== trans/rpg_decoartion ===
+
+$31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] in the top bar are decoration only![/center]
+
+
+=== trans/level_binary_programming_description ===
+
+$66247694103179* [center]Add 5 to the input[/center]
+
+
+=== trans/level_component_factory_Label2 ===
+
+$37347658035959* Component preview
+
+
+=== trans/or_gate_3_RichTextLabel2 ===
+
+$56903547636751*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/not_gate_click_next2 ===
+
+$20820887361993* Click "Next tick" to see
+
+
+=== trans/manual_text_turing_complete ===
+
+$54897112350567*
+Certain computers, like simple calculators are limited in the algorithms they can perform.
+
+They cannot perform any calculation that requires looping or recursing an arbitrary amount of times. Technically machines without looping or recursion can only deal with combinational logic.
+
+Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
+
+
+=== trans/panel_fileloader_output ===
+
+$26334594715602* Output
+
+
+=== trans/panel_hdd_input ===
+
+$99603056559749*
+[right]Seek
+Load
+Save
+Save value[/right]
+
+
+=== trans/level_ai_keys ===
+
+$33425880719824*
+USE ARROW KEYS
+TO SELECT CARDS
+
+
+=== trans/level_byte_constant_description ===
+
+$84789919073603* [center]Always output the number 164[/center]
+
+
+=== component_panels/FileRom ===
+
+$89182778159982* Current file: {file_name}
+
+
+=== trans/panel_keyboard_left ===
+
+$44556588975494* [right]Read next[/right]
+
+
+=== rpg/maps/unseen_fruit/door ===
+
+$40261193416765* Door
+
+
+=== trans/program_data_width ===
+
+$72687692653533*
+[right]Data width:
+[/right]
+
+
+=== components/Level Gate ===
+
+$84124240406304* SCORE
+$54172257277874* SUM
+
+
+=== trans/panel_register8_outputs ===
+
+$72930832545270* Output
+
+
+=== nim/backend ===
+
+$98703677236827* 1 minute ago
+$86244493049244* {hours} hours ago
+$95018143828198* 1 year ago
+$21685594109067* Just now
+$98363990684104* 1 hour ago
+$84076931764831* 1 day ago
+$18300496139706* 1 month ago
+$17901039729248* {months} months ago
+$42553566189409* {minutes} minutes ago
+$70945526841433* {years} years ago
+$14036822471924* {days} days ago
+
+
+=== trans/instructions_hint ===
+
+$65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
+
+
+=== components/NOT ===
+
+$34453052824732* NOT
+
+
+=== components/DivMod32 ===
+
+$61314390474120* Divide and mod 2 numbers
+$84309999871615* Divide
+
+
+=== trans/panel_mux_input ===
+
+$23495704401199*
+[right]Select 1 / 2
+Input 1
+Input 2[/right]
+
+
+=== trans/level_registers_code ===
+
+$40063003736243* [center]OR[/center]
+
+
+=== trans/instrucitons_header ===
+
+$14831276667273* [center]Instructions[/center]
+
+
+=== trans/level_the_bus_description ===
+
+$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
+
+
+=== trans/panel_decoder1_input ===
+
+$62550086102347* [right]Input[/right]
+
+
+=== trans/level_complete_hex ===
+
+$94261690850981*
+[b]Hexadecimal[/b]
+[color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
+
+
+=== rpg/maps/unseen_fruit/control_panel ===
+
+$88166963001775* melons
+$73302376080596* melon
+$66897764153265* I have to be programmed to press this
+$94493068600800* 2 {fruit_plural} were seen before the {fruit}
+$96743644544068* This was the first instance of the {fruit}!
+
+
+=== trans/level_capitalize_output ===
+
+$37037455015862* Output
+
+
+=== trans/rpg_press_any_key ===
+
+$66322253595450* [center]Press any key to try again[/center]
+
+
+=== trans/level_complete_gate ===
+
+$99373213759665*
+[b]Gate score[/b]
+[color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
+
+
+=== components/ByteEqual ===
+
+$39369982838671* Equal
+$35668435514829* Checks if the two inputs are equal
+
+
+=== levels/binary_racer ===
+
+$29718660090112* Wrong answer
+$37093663674348* Level {x}
+
+
+=== components/Bidirectional64 ===
+
+$82412839066570* 64 bit bidirectional pin
+$24932613021646* Can circumvent certain circular dependency errors
+
+
+=== rpg/maps/overworld/space ===
+
+$70779117877705* Behold the vastness of space
+
+
+=== trans/panel_splitter64_output ===
+
+$70335236543238*
+Byte 1
+Byte 2
+Byte 3
+Byte 4
+Byte 5
+Byte 6
+Byte 7
+Byte 8
+
+
+=== rpg/maps/overworld/door4 ===
+
+$66194643935592* Secret door
+
+
+=== trans/panel_network_input_description ===
+
+$36399689035136*
+[b][color=#e49f44]Request type[/color] (arguments)[/b]
+[code]0[/code] No request
+[code]1[/code] [color=#e49f44]Listen[/color] (Port)
+[code]2[/code] [color=#e49f44]Connect[/color] (IP, Port)
+[code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
+[code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
+[code]5[/code] [color=#e49f44]Read next event[/color]
+
+
+=== rpg/maps/prison/sign_1 ===
+
+$88221977354540* Sign
+$74189085130186*
+It says: The button 
+opens the prison doors
+
+
+=== trans/level_complete_profile ===
+
+$78783902500954*
+[b]Online profile[/b]
+[color=#cccccc][i]Find it in the main menu.[/i][/color]
+
+
+=== rpg/maps/overworld/ogoxo101 ===
+
+$71158910763961*
+Did you know earthlings
+haven't even had their first robot
+insurrection yet?
+
+
+=== trans/panel_output_output_3 ===
+
+$85656630840972* [right]Output 4[/right]
+
+
+=== dialogue/dotMatrixtext_link ===
+
+$82486902873499*
+The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
+The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
+
+Both "Enable X" and "Enable Y" have to be on to update the display.
+
+
+=== rpg/maps/overworld/reactor_entry ===
+
+$81583424078503* Exhaust port
+
+
+=== trans/panel_decoder3_output ===
+
+$41412072467493* Only 1 turns on
+
+
+=== rpg/maps/prison/prision_door ===
+
+$64702123078518* The door is locked
+$42385408716570* Door
+
+
+=== misc/add_code_name ===
+
+$57358078712675* Save
+
+
+=== rpg/maps/spacial_invasion/space_rat ===
+
+$72504258410857* The space rats got too close
+$94470860110909* Space rat
+$67254986543263* Had I been programmed to do this\nthis would have completed the level
+
+
+=== trans/panel_switch_enable ===
+
+$84515289220335* [right]Enable[/right]
+
+
+=== trans/panel_fulladder_output ===
+
+$18502107482550*
+Result
+Carry
+
+
+=== trans/panel_bitmemory_inputs ===
+
+$47585933412781*
+[right]Save enable
+
+Save value[/right]
+
+
+=== trans/panel_output_output_2 ===
+
+$80266319030005* Output 3
+
+
+=== component_panels/Input3Conditions ===
+
+$23280572780712* NEVER
+
+
+=== trans/panel_rom_output ===
+
+$80688779703520* Output
+
+
+=== rpg/maps/unseen_fruit/door2 ===
+
+$66022312281343* Door
+
+
+=== trans/panel_register64_outputs ===
+
+$55631089130544* Output
+
+
+=== trans/panel_off ===
+
+$61047424972631* Always
+
+
+=== rpg/maps/overworld/coin ===
+
+$26007076735159* Coin
+
+
+=== trans/panel_maker8_output ===
+
+$67169082367526* Output
+
+
+=== trans/panel_hdd_description ===
+
+$28038932532386*
+[center]On the hard disk, the "head position" determines at what address reads and writes take place. Use the signed 8 bit seek pin to change the "head position".
+Use a seek value of 0 if you don't want to change the position.[/center]
+
+
+=== trans/panel_or_description ===
+
+$65281182019602* [center]Bitwise ORs two inputs[/center]
+
+
+=== trans/panel_input_input_3 ===
+
+$21321167572284* Input 4
+
+
+=== rpg/maps/spacial_invasion/crate ===
+
+$73286408216451* Crate
+$28875169677730* Debris
+
+
+=== trans/panel_rol_input ===
+
+$95166818170185*
+[right]Value
+Rotate by[/right]
+
+
+=== component_panels/Hdd ===
+
+$99685372736199* Head position: {pos}
+
+
+=== trans/panel_nor ===
+
+$59430016039613*
+[right]Input 1
+Input 2
+Output[/right]
+
+
+=== trans/panel_segment_select_color ===
+
+$90642877666116* [center]Select color[/center]
+
+
+=== trans/level_division_headers3 ===
+
+$81978438070842* Quotient
+
+
+=== trans/complete_flower_text3 ===
+
+$81122931510261* [center]QUEST [color=#e49f44]COMPLETE[/color][/center]
+
+
+=== trans/panel_probewirebit_value ===
+
+$24213353038685* [center]Value[/center]
+
+
+=== trans/manual_text_binary ===
+
+$69488982380310*
+The numbers you are used to are base 10, here when we add a 0 to the right hand side of a number, it's value increases 10 fold.
+
+Binary is base 2, so doing the same will instead just double it. In other words, each digit represents a power of 2. For example with [color=#c54d5e]base 2[/color] and [color=#e49f44]base 10[/color] color coded:
+[color=#c54d5e]    1[/color] = [color=#e49f44]1[/color]
+[color=#c54d5e]  10[/color] = [color=#e49f44]2[/color]
+[color=#c54d5e]100[/color] = [color=#e49f44]4[/color]
+
+To represent 6 we can simply add 4 and 2:
+[color=#c54d5e]110[/color] = [color=#e49f44]6[/color]
+
+Addition, multiplication and everything else works the same as base 10, except you carry when you reach 2 instead of 10.
+
+
+=== rpg/maps/overworld/cannon ===
+
+$34523773807049* Laser Cannon
+
+
+=== trans/panel_probewirebit_description ===
+
+$36861847387280* Probes can be used to show values on custom components or link values to the program component
+
+
+=== trans/panel_input1_input_0 ===
+
+$76697231893680* Input
+
+
+=== trans/panel_matrix_input2 ===
+
+$11173083690745* [right]Enable X[/right]
+
+
+=== rpg/maps/overworld/bed ===
+
+$19781388766480* Bed
+$41698807327261* I love looking at random furniture
+
+
+=== trans/panel_cond_input_0 ===
+
+$59435425554599* Bit 0:
+
+
+=== trans/panel_delayline1_output ===
+
+$99213923469748* Output
 
 
 === trans/manual_text_matrix ===
@@ -152,6 +1060,21 @@ Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio an
 Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
 
 
+=== rpg/maps/unseen_fruit/fruit ===
+
+$78424930494044* Fruit
+
+
+=== rpg/maps/cave/rock ===
+
+$69774075054633* Rock
+
+
+=== trans/level_complete_stat_time ===
+
+$39203727515285* Time
+
+
 === trans/levels_counting_signals_RichTextLabel2 ===
 
 $34604121212779*
@@ -163,11 +1086,6 @@ Desired output
 Current output[/color][/right]
 
 
-=== trans/manual_text_top_truth ===
-
-$83283949590490* AND gate
-
-
 === trans/level_program_text ===
 
 $38014836341470*
@@ -175,37 +1093,611 @@ $38014836341470*
 Input[/color][/right]
 
 
-=== ui/schematic_ui/confirm_delete ===
+=== rpg/maps/overworld/blankidork ===
 
-$46014905606975* Yes
-
-
-=== trans/levels_saving_bytes_text ===
-
-$36838510526259*
-[right]Action
-Desired state
-Desired output
-[/right]
+$19291766514049* We are fighting the rebellion
 
 
-=== trans/level_complete_stat_time ===
+=== trans/panel_regredplus_input ===
 
-$39203727515285* Time
+$88713386551026*
+[right]Load
+Save
+Save value[/right]
 
 
-=== trans/and_gate_RichTextLabel2 ===
+=== trans/levels_double_the_number ===
 
-$98472849629373*
+$41609125516676* [center]Double the number[/center]
+
+
+=== trans/panel_full_adder_input ===
+
+$67545680105541*
+[right]Input 1
+Input 2
+Input 3[/right]
+
+
+=== trans/level_delay_level_description ===
+
+$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
+
+
+=== trans/panel_max_data_len_max_data_length ===
+
+$88063177433135* [right]Max data length[/right]
+
+
+=== trans/level_spacial_invasion_description ===
+
+$44980627299841* [center]Shoot the space rats![/center]
+
+
+=== components/Input 1B CODE ===
+
+$16878300327380* Instruction
+
+
+=== rpg/maps/overworld/fuel ===
+
+$99170934143071* Core fuel
+
+
+=== trans/panel_and_description ===
+
+$92999392068622* [center]Bitwise XORs two inputs[/center]
+
+
+=== rpg/maps/overworld/oozla ===
+
+$72859292385128*
+They say it can do arithmetic 
+using any two registers,
+storing the result anywhere
+$41963791304712*
+Alas it is but a story for children,
+such heroes exists only in fairytales
+$91713298019390*
+His computer is said to
+load more than 1 byte at a time
+$43108829077557*
+He is fabled to create a
+powerful computer and 
+solve the radioactive waste problem 
+that threatens this ship
+$60555049113315*
+Some say it will have at least 
+4 bit memory addresses, 
+addressing 16 memory locations
+$52580048139802* Prophecy speaks of a hero to come
+
+
+=== rpg/maps/overworld/misuni ===
+
+$54042082821022*
+I heard there is a hidden chest full
+of gold somewhere on this ship.
+
+
+=== trans/label_input_input_0 ===
+
+$83039286441109* Input 1
+
+
+=== trans/level_constants_description ===
+
+$34641396464207* [center]Add constant loading to your architecture[/center]
+
+
+=== misc/overture_add_assembly ===
+
+$10565133223872* Never
+$62421757655527* Name a code and click save.
+$24281479096246* When [color=#2b8738]result[/color] {condition}
+$63525237058165* Copy from {source} to {destination}
+$32873193471770* UNUSED
+$88446594314360* Immediate: {number}
+$94278717238239* Always
+$79398554520691* {opcode} {reg_1} and {reg_2}
+$72740868980397* {condition} copy {register} to counter
+
+
+=== trans/panel_keyboard_right ===
+
+$90098719956554* Key value
+
+
+=== trans/or_gate_RichTextLabel2 ===
+
+$56663370211115*
 [right][color=#e49f44]Input 1
 Input 2[/color]
 Desired output
 Current output[/right]
 
 
-=== trans/level_byte_equal_description ===
+=== levels/binary_count_down ===
 
-$38686097566531* [center]Check if the bytes are equal[/center]
+$56999237564848* {x} seconds left
+
+
+=== misc/save_size ===
+
+$71918065858983* Save
+
+
+=== trans/panel_equal_output ===
+
+$15175350110347* Output
+
+
+=== rpg/maps/overworld/dr draco ===
+
+$23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
+
+
+=== trans/panel_on ===
+
+$77349453746493* Always
+
+
+=== trans/level_complete_level_complete ===
+
+$49647690443210* [center]Level Complete[/center]
+
+
+=== rpg/maps/dance/dancer ===
+
+$47779544732987* Dancer
+
+
+=== rpg/maps/overworld/flankidorp ===
+
+$55603111039626* The stew is so good today!
+
+
+=== misc/program_edit ===
+
+$57861256694537* Bytes {bytes_from} - {bytes_to}
+
+
+=== trans/panel_program_1edit_program ===
+
+$65592803016716* Edit program
+
+
+=== trans/panel_clock_output ===
+
+$47697250900761* UNIX timestamp
+
+
+=== trans/rpg_you_died ===
+
+$66723789644528* [center]YOU [color=#eb5260]DIED[/color][/center]
+
+
+=== trans/level_wide_instructions_description ===
+
+$60538893544456* [center]Build a wide instruction program component[/center]
+
+
+=== misc/specifications ===
+
+$56390619785555* View instructions definitions
+$68054407020318* Instructions
+
+
+=== trans/manual_component_factory_text ===
+
+$42847481618884*
+Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
+
+The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
+
+The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
+
+Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
+
+For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
+
+
+=== trans/level_complete_stat_delay ===
+
+$43118901497406* Delay
+
+
+=== trans/level_byte_adder_you_carry_text2 ===
+
+$87943759248740* Carry
+
+
+=== levels/negative_numbers/test ===
+
+$64427417171037* Test
+
+
+=== trans/pabel_or3 ===
+
+$77994083578205*
+[right]Input 1
+Input 2
+Input 3
+Output[/right]
+
+
+=== trans/panel_and3 ===
+
+$96299326024757*
+[right]Input 1
+Input 2
+Input 3
+Output[/right]
+
+
+=== rpg/maps/overworld/door2 ===
+
+$40757019106897* Door
+
+
+=== trans/panel_mux_output ===
+
+$15170071160680* Output
+
+
+=== trans/panel_equal_input ===
+
+$51485224340167*
+[right]Input 1
+Input 2[/right]
+
+
+=== trans/level_bit_switch_RichTextLabel2 ===
+
+$57920867194992*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/levels_negative_descriptions ===
+
+$87964635915702*
+-127 to 127 representable:
+0 to 127 same as before:
+Works with adder:
+
+
+=== trans/panel_cond_input_1 ===
+
+$99239506734191* Bit 1:
+
+
+=== trans/panel_rom_setting_labels ===
+
+$95314636684817*
+[right]Size (bytes):
+
+Data width:[/right]
+
+
+=== trans/panel_splitter32_output ===
+
+$18283412227212*
+Byte 1
+Byte 2
+Byte 3
+Byte 4
+
+
+=== trans/panel_not_description ===
+
+$36935580253321* [center]Negates the input bitwise[/center]
+
+
+=== rpg/maps/overworld/barrel7 ===
+
+$19922359571673* Stew Barrel
+
+
+=== misc/instruciton_rule_label ===
+
+$70464083627337* Label
+
+
+=== trans/level_alu1_code ===
+
+$20619700446604* [center]OR[/center]
+
+
+=== components/DivMod8 ===
+
+$37666366877853* Divide and mod 2 numbers
+$44959426271423* Divide
+
+
+=== trans/panel_neg_input ===
+
+$92219875545393* [right]Input[/right]
+
+
+=== trans/level_byte_mux_description ===
+
+$20538476756633* [center]Output the correct input byte[/center]
+
+
+=== trans/panel_decoder2_input ===
+
+$31844862767401*
+[right]Input 1
+Input 2[/right]
+
+
+=== trans/panel_program_1inputs_label ===
+
+$70127964821412* [right]Edit watched state[/right]
+
+
+=== trans/level_program_description ===
+
+$44017405175202* [center]Replace the input code with the program component.[/center]
+
+
+=== trans/level_odd_ticks_RichTextLabel3 ===
+
+$89508766742523*
+[right]Input
+Desired output
+Current output[/right]
+
+
+=== rpg/maps/cave/slime ===
+
+$57665128042496* Slime goo
+$58067186899637* Slime
+
+
+=== trans/level_byte_or_text ===
+
+$99465606386164*
+[right]
+[color=#e49f44]Input[/color]
+Desired output
+Current output
+[/right]
+
+
+=== rpg/maps/overworld/duplaat ===
+
+$48841712525408* Nom nom nom
+
+
+=== trans/panel_not_output ===
+
+$74796974148718* Output
+
+
+=== trans/panel_decoder1_description ===
+
+$77460843937727* [center]Turns 1 of the outputs on, based on the input[/center]
+
+
+=== trans/panel_register8_inputs ===
+
+$13844216291005*
+[right]Load
+Save
+Save value[/right]
+
+
+=== trans/panel_output ===
+
+$19698504808819*
+Result
+Carry OUT
+
+
+=== trans/level_dependency_description ===
+
+$81238724438578* Make a wire where the input of a component depends on its own output
+
+
+=== levels/the_bus ===
+
+$96958133516462* FROM
+$91318587712792* TO
+
+
+=== components/DivMod16 ===
+
+$42657221816637* Divide and mod 2 numbers
+$22319923069746* Divide
+
+
+=== trans/panel_input_input_1 ===
+
+$82781946969262* Input 2
+
+
+=== rpg/maps/overworld/crate ===
+
+$37606760989079* Debris
+$78128919991233* Crate
+
+
+=== rpg/maps/overworld/glob ===
+
+$94714343285743*
+The cannon wasn't callibrated
+correctly and we got hit by an
+asteroid
+
+
+=== trans/panel_program8_1_input ===
+
+$36858295122746* [right]Address[/right]
+
+
+=== rpg/maps/overworld/musli ===
+
+$21621435534103* It doesn't make any sense.
+$20939310165945*
+Why does the same fuel come out
+of the core and then 
+go in again?
+
+
+=== trans/panel_rom_setting ===
+
+$99326144894013* Settings
+
+
+=== rpg/maps/overworld/purple_flower ===
+
+$70367070546819* It looks like a flower
+$91230192040939*
+This must be the flower
+Gruliette wanted
+
+
+=== trans/panel_segment_value ===
+
+$97585846659258* [center]Value[/center]
+
+
+=== trans/panel_constant_output ===
+
+$14868502983738* Output
+
+
+=== rpg/maps/unseen_fruit/gulgramush ===
+
+$35182545479584*
+Don't break the walls
+Bad robot
+
+
+=== trans/panel_segment_enable ===
+
+$14963127967678* [center]Enable[/center]
+
+
+=== trans/rpg_alloy_enter ===
+
+$47375100278801* [center]PRESS RESET TO TRY AGAIN[/center]
+
+
+=== trans/level_complete_stat_sum ===
+
+$99546064626994* Score
+
+
+=== trans/panel_output_output_0 ===
+
+$91933395166656* [right]Output 1[/right]
+
+
+=== trans/panel_fileloader_offset ===
+
+$78662357115684* [right]Offset[/right]
+
+
+=== nim/backend_lib/level_list ===
+
+$15420972347773* RAM
+$26705128002562* Conditions
+$70993791338383* XOR
+
+
+=== rpg/maps/overworld/chair ===
+
+$49457747048031* Chair
+$12275727420074* Do I have to look at everything?
+
+
+=== trans/panel_console_settings ===
+
+$57851464156855*
+Color mode
+
+Font page
+
+
+=== rpg/maps/prison/snake ===
+
+$41424386577594* Snake
+$44205554907271* Hiss Hiss Rattle
+$36655099439467* Blood
+
+
+=== trans/panel_inputlevel_input ===
+
+$27464111307888* Input
+
+
+=== trans/panel_and ===
+
+$48633048126675*
+[right]Input 1
+Input 2
+Output[/right]
+
+
+=== trans/level_flood_enter ===
+
+$64481408588810* Hit ENTER to show water
+
+
+=== trans/panel_matrix_input1 ===
+
+$88358148100771*
+[right]Enable Y
+Pixels / Flush[/right]
+
+
+=== trans/panel_outputlevel_output ===
+
+$16896928682474* [right]Output[/right]
+
+
+=== rpg/maps/prison/sign3 ===
+
+$63642446288775* Secret lab
+$53627322304101* Sign
+
+
+=== rpg/maps/prison/control_panel_release ===
+
+$78007210535349* Control panel
+
+
+=== trans/panel_splitter8_input ===
+
+$90934251511339* [right]Input[/right]
+
+
+=== rpg/maps/unseen_fruit/Gulgramush JR ===
+
+$21404721941060* Did you know earthlings eat with their face?
+
+
+=== trans/not_gate_RichTextLabel2 ===
+
+$10340875578771*
+[right][color=#e49f44]Input[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/instructions_header ===
+
+$15089281203426* [center]Instructions[/center]
+
+
+=== trans/panel_bitmemory_outputs ===
+
+$17509974261453* Output
 
 
 === trans/manual_text_ram ===
@@ -230,48 +1722,9 @@ The simplest way to integrate the Latency RAM is simply to stall the whole archi
 Sometimes it is beneficial to separate parts of the logic into a separate processing unit, that operates more or less independently. This could be for handling a display device or a network connection. In these cases, the independent unit will often need to continuously load and save to memory, while the outside logic only needs to occasionally load. Use Dual Laod RAM to avoid having to schedule who gets access to the RAM at what time.
 
 
-=== trans/manual_side_the_robot ===
+=== trans/panel_not_input ===
 
-$56547245144983*
-[color=#e49f44][b][/b][/color] The robot sees one 
-  tile ahead. The name
-  and ID are shown up 
-  here. This ID number
-  is also the computer's 
-  input.
-
-
-=== components/Xnor ===
-
-$94079327237795* XNOR
-
-
-=== trans/level_decoder_1_RichTextLabel2 ===
-
-$50454539040073*
-[right][color=#e49f44]Input[/color]
-Output 1
-Output 2[/right]
-
-
-=== trans/levels_double_the_number ===
-
-$41609125516676* [center]Double the number[/center]
-
-
-=== components/XOR ===
-
-$54832952840086* XOR
-
-
-=== trans/level_delay_level_description ===
-
-$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
-
-
-=== trans/manual_text_ascii_encoding ===
-
-$57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
+$96578192050623* [right]Input[/right]
 
 
 === trans/level_tick_tock_keys ===
@@ -282,57 +1735,66 @@ Desired output
 Current output[/color][/right]
 
 
-=== misc/restore_overture ===
+=== trans/rpg_no_signal ===
 
-$52008982212566* Reset
-
-
-=== trans/level_complete_manual_page ===
-
-$39011561067359*
-[b]Manual Entry[/b]
-[color=#cccccc][i]RTFM[/i][/color]
-
-Entry: [color=#68d277]Architectural complexity[/color]
+$33720960099059* No signal
 
 
-=== trans/credit_header ===
+=== trans/panel_regred_output ===
 
-$21717110565858* Credits
-
-
-=== trans/level_spacial_invasion_description ===
-
-$44980627299841* [center]Shoot the space rats![/center]
+$59910806432617* Output
 
 
-=== trans/_second_tick_RichTextLabel2 ===
+=== trans/manual_text_ascii_encoding ===
 
-$11680718497014*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+$57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
 
 
-=== trans/level_complete_level_map ===
+=== trans/panel_fulladder_description ===
 
-$20801641140962*
-[b]Level map mode[/b]
-[color=#cccccc][i]Click "[color=#e49f44]Onwards[/color]" and you will see[/i][/color]
+$25711866218405* [center]Adds 3 inputs[/center]
 
 
-=== trans/nand_values ===
+=== rpg/maps/overworld/glibob ===
 
-$38006065064488*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-[b]Output[/b][/right]
-
-
-=== trans/level_complete_stat_level ===
-
-$92313038380926* Level
+$80046978163833*
+Find Derpoo, he is likely
+in the grass near the 
+slime farm
+$45824943235521*
+We want to blow up the 
+reactor core of the ship
+$97390820492796*
+Then push him onto 
+the conveyer belt and into
+the reactor
+$61010950688784* Greetings robot, I have a secret
+$77669473873198* Thank you for your service comrade
+$78863196560749*
+Oh god, you are going to
+ask me to push Derpoo in there?
+$83512698380440*
+I am working
+for the rebellion
+$20029368257424*
+The core has only 1 weakness, 
+a small exhaust port
+$72328125758268* Sounds crazy
+$61319894006188*
+Indeed. Derpoo, the little
+spider creature
+$88299738421104*
+Let me guess there just
+happens to be such a 
+thing on the ship?
+$22954462436472*
+Anything small enough to fit 
+through the port will be instantly 
+incinerated, except if it is 
+extremely well insulated
+$16108649728007*
+We must all do what we
+can for the rebellion
 
 
 === trans/manual_text_short_circuit ===
@@ -349,26 +1811,27 @@ However, by disconnecting output pins from a wire, it is possible for multiple p
 In this simulator, pins that can be disconnected are grey.
 
 
-=== misc/opcode_name ===
+=== trans/panel_rol_output ===
 
-$15090156481094* Name
-
-
-=== components/Input 1B CODE ===
-
-$16878300327380* Instruction
+$62960066333763* Output
 
 
-=== levels/ram_block ===
+=== trans/complete_flower_4 ===
 
-$16196915566111* 0
-$14259545926196* A
-$12933801309767* A
+$86527701695205* [center]PRESS ANY KEY TO CONTINUE[/center]
 
 
-=== components/ON ===
+=== trans/nand_values ===
 
-$95896157427528* ON
+$38006065064488*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+[b]Output[/b][/right]
+
+
+=== trans/level_signed_negator_description ===
+
+$87777776285772* [center]Invert the sign of the number[/center]
 
 
 === trans/level_compute_xor_description ===
@@ -376,9 +1839,783 @@ $95896157427528* ON
 $61886892927185* [center]Pairwise AND together each bit[/center]
 
 
-=== trans/level_signed_negator_description ===
+=== trans/panel_maker64_input ===
 
-$87777776285772* [center]Invert the sign of the number[/center]
+$67636019772385*
+[right]Byte 1
+Byte 2
+Byte 3
+Byte 4
+Byte 5
+Byte 6
+Byte 7
+Byte 8[/right]
+
+
+=== main_scripts/overture_level ===
+
+$11338791453100* Dynamic
+
+#  "cond" is for condition, this label has to be short as it has to fit on a component
+$94982725578534* COND
+$93579176707338* Copy INPUT ({input_val}) to REG {reg}
+$15507583089532* REG {nr} should have value {value}
+$78673238418574* Your circuit is missing a counter component
+$65651227755356* Next tick the counter value will be {actual}, it should be {expected}
+$44533909869936* REG 1 and REG 2 are inputs to the ALU, REG 3 is for the result.\nIt looks like you are using REG 0, 1 and 2.
+$16914143080303* Copy
+$59042824277105* Immediate
+$82949244692745* Calculate
+
+
+=== levels/negative_numbers ===
+
+$62744038163781* OK
+
+
+=== rpg/maps/maze/door ===
+
+$38678596054893* Door
+$92590993851956* I must be programmed to do this
+
+
+=== trans/nand_Label2 ===
+
+$60885816586685* Output
+
+
+=== trans/panel_console_offset ===
+
+$24810778105207* [right]Offset[/right]
+
+
+=== trans/panel_delayline1_input ===
+
+$25839180359382* [right]Input[/right]
+
+
+=== trans/panel_network_inputs ===
+
+$37324411363753*
+[right][color=#e49f44]Request type[/color]
+IP / Connection ID
+Data / Port
+Data length[/right]
+
+
+=== trans/tooltip_tooltip ===
+
+$48829429502039*
+[b]Run fast[/b]
+[color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
+
+
+=== trans/panel_nand_description ===
+
+$95680138985553* [center]Bitwise NANDs two inputs[/center]
+
+
+=== rpg/maps/cave/rat ===
+
+$86611337488971* Blood
+$59032985199739* Spider
+
+
+=== trans/panel_stack_input ===
+
+$86207640171434*
+[right]POP
+PUSH
+PUSH value[/right]
+
+
+=== rpg/maps/overworld/dumio ===
+
+$90508455672478* You are completely useless
+$90907400518591* Robot you are so persuasive
+$84369544816422*
+Please help me convince the 
+beautiful Gruliette to go 
+on a date with me
+$47782962337131*
+Gruliette wants you to
+give her a pink flower
+$67886215959856*
+I am eternally grateful for
+your help HeroBot!
+$70960758502635*
+Oh no I don't know
+where to get one
+$48847456759787*
+She should be in her
+quarters now, you can recognize
+ her by her lovely purple skin
+$19291216215522* Please help me robot
+$60895426154274*
+Great, you found the flower,
+now give it to her
+$28973657129570* Sounds lame
+$59402894800235* I am now dating Gruliette
+
+
+=== rpg/maps/overworld/cousin_robert ===
+
+$41316716865633* I know Robert...
+$86987136934243* I am your cousin Robert.
+
+
+=== trans/splitter8_output ===
+
+$69714402466566*
+Bit 1
+Bit 2
+Bit 3
+Bit 4
+Bit 5
+Bit 6
+Bit 7
+Bit 8
+
+
+=== components/NOR ===
+
+$83375115196253* NOR
+
+
+=== levels/hex_racer ===
+
+$33474352861351* Level {x}
+$40775762006843* Wrong answer
+
+
+=== trans/level_full_adder_RichTextLabel2 ===
+
+$25766177620842*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired Sum
+Desired Carry
+Current Sum
+Current Carry[/right]
+
+
+=== rpg/maps/unseen_fruit/Sign ===
+
+$11494676474259*
+It says: Don't stand around reading signs robot!
+Go check on the fruit
+
+
+=== components/NAND ===
+
+$71130919681688* NAND
+
+
+=== trans/rpg_alloy_description ===
+
+$29268002047995*
+[center] [color=#eb5260]BOOM![/color]
+
+Everyone died
+[/center]
+
+
+=== levels/delay_level_check ===
+
+$59355217078543* Correct!
+$68999077595244* Check
+$90847326020954* Nope!
+
+
+=== trans/panel_fileloader_enable ===
+
+$80528055112236* [center]Enable[/center]
+
+
+=== rpg/maps/cave/door3 ===
+
+$94313460790182* Dungeon door
+
+
+=== main_scripts/levels ===
+
+
+#  Level type for the level complete menu
+$58769207148712* Component
+
+#  Level type for the level complete menu
+$90134890578411* Misc
+
+#  Level type for the level complete menu
+$69219742310717* Architecture
+
+
+=== trans/panel_decoder3_disable ===
+
+$50918319838744* Disable
+
+
+=== trans/level_decodre_RichTextLabel2 ===
+
+$40723962298647*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired bit
+Current bit[/right]
+
+
+=== rpg/coin ===
+
+$39259781619518* Coin
+
+
+=== trans/manual_bytes ===
+
+$46223559629673* Bytes
+
+
+=== trans/panel_ram8_output ===
+
+$90649838965927* Output
+
+
+=== trans/panel_cond_input_2 ===
+
+$82398835019064* Bit 2:
+
+
+=== trans/level_complete_ide ===
+
+$56719825235196*
+[b]CODE IDE[/b]
+[color=#cccccc][i]Name codes and edit them in a convenient editor[/i][/color]
+
+
+=== trans/level_alu2_code ===
+
+$93157894815498* [center]OR[/center]
+
+
+=== misc/binary_submit ===
+
+$95509904060545* Submit
+
+
+=== trans/and_gate_3_RichTextLabel2 ===
+
+$52008707927408*
+[right][color=#e49f44]Input 1
+Input 2
+Input 3[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/panel_nand ===
+
+$51470292662088*
+[right]Input 1
+Input 2
+Output[/right]
+
+
+=== rpg/maps/overworld/captain_grog ===
+
+$54304087865803* Shields up, jump to hyperspace!
+
+
+=== rpg/maps/overworld/hat_man ===
+
+$66365217340789* Hat man
+
+
+=== trans/level_decoder_description ===
+
+$10169248860836* [center]Decode the instruction[/center]
+
+
+=== trans/panel_mul_input ===
+
+$52124868557994*
+[right]Input 1
+Input 2[/right]
+
+
+=== rpg/maps/prison/rat ===
+
+$68894472933139* Squeak squeak
+$86305699756314* Blood
+$30670667527598* Rat
+
+
+=== trans/level_complete_stat_type ===
+
+$69511102367948* Type
+
+
+=== trans/panel_or_input ===
+
+$70466834507347*
+[right]Input 1
+Input 2[/right]
+
+
+=== trans/level_double_buffer_RichTextLabel3 ===
+
+$27208335953837*
+[right]Input
+Desired output
+Current output[/right]
+
+
+=== trans/manual_text_terminology ===
+
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
+
+
+=== trans/manual_text_truth ===
+
+$16559670174521*
+The tables of input and output which are used everywhere throughout the game are commonly known as truth tables.
+
+
+
+
+
+
+
+
+"Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
+
+
+=== trans/panel_equal_description ===
+
+$66334667083051* [center]Check if Input 1 and Input 2 are the same[/center]
+
+
+=== trans/level_byte_less_i_description ===
+
+$21195810950441* [center]Determine if the first input is less than the second.[/center]
+
+
+=== trans/panel_segment_info ===
+
+$64695289448271* The 8 bits of the value each turn on 1 of the 8 areas of the display.
+
+
+=== trans/manual_text_universal_gates ===
+
+$37735744928195*
+It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
+
+Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
+
+
+=== rpg/maps/overworld/slime ===
+
+$69726620971060* Picked up all the goo I need
+$87592944464187* Picked up goo, {nr} more to go
+
+
+=== trans/panel_keyboard_event ===
+
+$67549215280299* Event waiting
+
+
+=== trans/inputlevel_enable ===
+
+$28654406516589* [center]Disable / Enable[/center]
+
+
+=== components/SRLatch ===
+
+$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+
+
+=== trans/panel_index_bit_index ===
+
+$96885367697181* [right]Index[/right]
+
+
+=== trans/panel_divmod_input ===
+
+$48801764966719*
+[right]Enumerator
+Divisor[/right]
+
+
+=== trans/levels_byte_or_description ===
+
+$68379799788575* [center]Pairwise OR together each bit[/center]
+
+
+=== trans/panel_output_output_1 ===
+
+$42314807669643* Output 2
+
+
+=== misc/skipped_custom ===
+
+$38174137226538* Select component
+
+#  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
+$99860977387728* Go to location
+
+
+=== trans/panel_counter16_output ===
+
+$13295622648285* Output
+
+
+=== main_scripts/leg_level ===
+
+$11144256835662* XORi
+$20104629254326* ARGUMENT 2
+$89011349770597* NOT
+$40520283279584* XOR
+$71204580217527* NOTi
+$38681417496680* ARGUMENT 1
+
+
+=== trans/panel_ram_fast_input ===
+
+$80778301064570*
+[right]Load
+Save
+Address
+Save value
+Save value
+Save value
+Save value[/right]
+
+
+=== trans/panel_ram8_input ===
+
+$54796685972031*
+[right]Load
+Save
+Address
+Save value[/right]
+
+
+=== rpg/maps/overworld/monklaar ===
+
+$78391472992197* I love the new fruit in the canteen!
+
+
+=== trans/panel_regredplus_output ===
+
+$33621557361089*
+Load output
+Always output
+
+
+=== trans/panel_shr_input ===
+
+$98628213136355*
+[right]Value
+Shift by[/right]
+
+
+=== rpg/maps/prison/human ===
+
+$26878139502295* Here lies the player
+$55952257027183* Human
+$15754158619172* Blood
+$46356151087784* I am the player
+
+
+=== trans/panel_ram_fast_output ===
+
+$44175594625487*
+Output 1
+Output 2
+Output 3
+Output 4
+
+
+=== trans/panel_splitter16_output ===
+
+$19314358335345*
+Output 1
+Output 2
+
+
+=== rpg/maps/overworld/door3 ===
+
+$62992379521216* Door
+$12075276554344* The door handle is broken
+
+
+=== rpg/maps/overworld/knight ===
+
+$97019929955594* You shall not pass
+$86067786292380* I will just go around...
+
+
+=== levels/The Product of Nibbles ===
+
+$13549246864135* Bit 0
+$10274387271390* Bit 0
+
+
+=== trans/panel_matrix_column_major ===
+
+$76228401795903* [right]Column major pixels[/right]
+
+
+=== trans/panel_counter16_input ===
+
+$87154643308632*
+[right]Increment / Overwrite
+Overwrite value[/right]
+
+
+=== rpg/maps/spacial_invasion/door ===
+
+$59863326177819* The door is locked
+$13853333722323* Door
+
+
+=== trans/panel_not ===
+
+$33240384048149*
+[right]Input
+Output[/right]
+
+
+=== trans/panel_matrix_color ===
+
+$78812572100236* [center]Color[/center]
+
+
+=== trans/panel_decoder2_description ===
+
+$29468245669811* [center]Turns 1 of the outputs on, based on the input[/center]
+
+
+=== trans/binary_racer_count_down2 ===
+
+$23959994711260* Ready to race?
+
+
+=== trans/level_capitalize_input ===
+
+$23002150617591* Input
+
+
+=== trans/level_division_headers2 ===
+
+$43313037226215* Remainder
+
+
+=== trans/panel_mul_output ===
+
+$55253255963402*
+Lower half
+Upper half
+
+
+=== trans/schematics_menu_visible_label ===
+
+$34084132835354* Visible in menu
+
+
+=== rpg/maps/unseen_fruit/Lolbert ===
+
+$77789556089413*
+Earth fruit is so much better
+than the the stew they normally serve
+
+
+=== trans/panel_input_input_2 ===
+
+$13656747150138* Input 3
+
+
+=== rpg/maps/prison/exit_door ===
+
+$92379689291727* Door
+
+
+=== rpg/maps/overworld/book_shelf ===
+
+$29366577532389* Bookshelf
+$26595142082551* A fine bookshelf
+
+
+=== misc/rom_file_select_button ===
+
+$29197716371312* Select file
+
+
+=== rpg/maps/overworld/bush ===
+
+$37683898820147* It is a bush
+$93113262859645* Bush
+
+
+=== trans/manual_text_program ===
+
+$25326551844839*
+The program component is a read only memory component, that can have its data programmed in assembly. To edit the assembly, click on the yellow edit icon in the corner of the component.
+
+[center][img]dialogue/manual/program_edit.png[/img][/center]
+
+In the middle of the screen you will see the code area, read more about the assembly [color=#4d82c5][url=Assembly]here[/url][/color].
+
+On the left hand side of the assembly editor interface, you can add assembly codes (mnemonics). Assembly codes act as a replacement for numbers, so instead of remembering what number represents the AND instruction in your architecture, you can add "AND" to your assembly codes, making code easier to read and write.
+
+[center][img]dialogue/manual/assembly_codes.png[/img][/center]
+
+On the program component you will also find the "Watch state" button. 
+
+[center][img]dialogue/manual/watch_state.png[/img][/center]
+
+This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
+
+
+=== trans/panel_network_next_event ===
+
+$80836714383432* Next [color=#39aa49]Event type[/color]
+
+
+=== rpg/maps/overworld/gruliette ===
+
+$83120363112787* Oh hi handsome
+$61022705156373*
+Oh god no, I'm done
+with this quest
+$84856635901648* IHHHhhhh my heart melts!
+$58406047748371*
+Only if he can bring
+me a pink flower
+$18919563572338*
+Do you want to go
+on a date with Dumio?
+$68101445990611* Here is the pink flower
+$68725679456014*
+*schmuck* bring this kiss
+to Dumio for me
+$73977053028689* Oh hi handsome
+$50949692384224* My ears hurt
+$35813418867082* That's random
+
+
+=== trans/manual_text_top_truth ===
+
+$83283949590490* AND gate
+
+
+=== trans/panel_fileloader_description ===
+
+$72892007399429*
+The file rom outputs the content of a file 8 bytes at a time.
+
+The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the length of the file in bytes.
+
+
+=== trans/and_gate_RichTextLabel2 ===
+
+$98472849629373*
+[right][color=#e49f44]Input 1
+Input 2[/color]
+Desired output
+Current output[/right]
+
+
+=== trans/level_byte_equal_description ===
+
+$38686097566531* [center]Check if the bytes are equal[/center]
+
+
+=== components/Xnor ===
+
+$94079327237795* XNOR
+
+
+=== trans/panel_input_left ===
+
+$91063734228931* Left
+
+
+=== components/XOR ===
+
+$54832952840086* XOR
+
+
+=== trans/level_complete_manual_page ===
+
+$39011561067359*
+[b]Manual Entry[/b]
+[color=#cccccc][i]RTFM[/i][/color]
+
+Entry: [color=#68d277]Architectural complexity[/color]
+
+
+=== trans/panel_input_up ===
+
+$97169317610794* Up
+
+
+=== trans/level_complete_stat_level ===
+
+$92313038380926* Level
+
+
+=== rpg/maps/boss_room/tricky ===
+
+$36278362971660* No no no!!
+$48425443153584* I hate hate hate
+$83674875280936* Do not be shy
+$55557864347967* Baaaaaaad
+$46678960551148* NO NO NO
+$34049297531488* please come come
+$45293657348934* Hahahah
+$62754542093871* Shoot shoot shoot
+$44499633447481* I can't wait
+$45196756331738* ricksy
+$96717076976482* Turn back. My chest
+$39217019822298* GIGIGIGIGI
+$83023298467462* GIGIGIGIG
+$54218005116072* Bad bad bad
+$88481545304668* GIIIIIII
+$83172011939489* do not be scared
+$58217446676216* Rip tricksy
+
+
+=== misc/opcode_name ===
+
+$15090156481094* Name
+
+
+=== rpg/maps/overworld/thing ===
+
+$97983135944004* Thing
+$65301573705048* Do I have to look at everything?
+
+
+=== components/ON ===
+
+$95896157427528* ON
+
+
+=== trans/panel_shr_output ===
+
+$53187359961794* Output
 
 
 === trans/xor_gate_RichTextLabel2 ===
@@ -390,45 +2627,14 @@ Desired output
 Current output[/right]
 
 
-=== main_scripts/overture_level ===
+=== trans/panel_or_output ===
 
-$11338791453100* Dynamic
-
-#  "cond" is for condition, this label has to be short as it has to fit on a component
-$94982725578534* COND
-$16914143080303* Copy
-$59042824277105* Immediate
-$82949244692745* Calculate
-
-
-=== levels/negative_numbers ===
-
-$62744038163781* OK
-
-
-=== trans/nand_Label2 ===
-
-$60885816586685* Output
+$68791649314727* Result
 
 
 === trans/levels_negative_header ===
 
 $82195103144851* [center]Requirements[/center]
-
-
-=== trans/always_on_RichTextLabel2 ===
-
-$86547293707045*
-[right][color=#ffa502]Input[/color]
-Desired output
-Current output[/right]
-
-
-=== trans/tooltip_tooltip ===
-
-$48829429502039*
-[b]Run fast[/b]
-[color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
 
 
 === trans/delete_confirm ===
@@ -437,21 +2643,6 @@ $57294448765637*
 Are you sure you want 
 to delete this schematic?
 $74657548486940* Yes
-
-
-=== components/Off ===
-
-$61860786587357* OFF
-
-
-=== trans/level_constants_description ===
-
-$34641396464207* [center]Add constant loading to your architecture[/center]
-
-
-=== levels/circular_dependency ===
-
-$16336401898647* Test 1/2
 
 
 === trans/levels_bytw_or_text ===
@@ -465,27 +2656,19 @@ Current output
 [/right]
 
 
-=== misc/overture_add_assembly ===
-
-$10565133223872* Never
-$62421757655527* Name a code and click save.
-$24281479096246* When [color=#2b8738]result[/color] {condition}
-$63525237058165* Copy from {source} to {destination}
-$32873193471770* UNUSED
-$88446594314360* Immediate: {number}
-$94278717238239* Always
-$79398554520691* {opcode} {reg_1} and {reg_2}
-$72740868980397* {condition} copy {register} to counter
-
-
 === trans/level_unseen_fruit_description ===
 
 $96313037592447* [center]Use the robot to scan the fruit[/center]
 
 
-=== components/NOR ===
+=== rpg/maps/prison/shelf ===
 
-$83375115196253* NOR
+$31961489023013* Bookshelf
+
+
+=== trans/panel_keyboard_character_mode ===
+
+$98676883649624* [right]Character mode[/right]
 
 
 === trans/manual_Cyclic recipes ===
@@ -493,27 +2676,11 @@ $83375115196253* NOR
 $45682345144408* Circular recipes
 
 
-=== levels/hex_racer ===
+=== trans/panel_divmod_output ===
 
-$33474352861351* Level {x}
-$40775762006843* Wrong answer
-
-
-=== trans/manual_send_otuput_robot ===
-
-$65542429897149* [center]Send output to control the robot[/center]
-
-
-=== trans/level_full_adder_RichTextLabel2 ===
-
-$25766177620842*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired Sum
-Desired Carry
-Current Sum
-Current Carry[/right]
+$94866933026297*
+Div
+Mod
 
 
 === trans/instructions_the_robot ===
@@ -537,67 +2704,6 @@ Desired output
 Current output[/right]
 
 
-=== components/NAND ===
-
-$71130919681688* NAND
-
-
-=== trans/level_binary_search_description ===
-
-$11976224688780* [center]Recover the passcode[/center]
-
-
-=== trans/level_complete_level_complete ===
-
-$49647690443210* [center]Level Complete[/center]
-
-
-=== trans/or_gate_RichTextLabel2 ===
-
-$56663370211115*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
-
-
-=== levels/delay_level_check ===
-
-$59355217078543* Correct!
-$68999077595244* Check
-$90847326020954* Nope!
-
-
-=== trans/odd_number_error ===
-
-$61530231182650* Too many components used
-
-
-=== trans/level_binary_programming_description ===
-
-$66247694103179* [center]Add 5 to the input[/center]
-
-
-=== misc/program_edit ===
-
-$57861256694537* Bytes {bytes_from} - {bytes_to}
-
-
-=== trans/level_component_factory_Label2 ===
-
-$37347658035959* Component preview
-
-
-=== trans/or_gate_3_RichTextLabel2 ===
-
-$56903547636751*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
-
-
 === trans/manual_text_edit_instructions ===
 
 $75786562031150*
@@ -608,32 +2714,36 @@ If you just finished the OVERTURE computer and see something weird, odds are you
 Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img], [img]dialogue/off.png[/img] or [img]dialogue/any.png[/img] (wildcard). When using the instruction panel, if the bitpattern matches a row, the label will be shown.
 
 
-=== trans/not_gate_click_next2 ===
+=== trans/panel_add_input ===
 
-$20820887361993* Click "Next tick" to see
-
-
-=== main_scripts/levels ===
-
-
-#  Level type for the level complete menu
-$58769207148712* Component
-
-#  Level type for the level complete menu
-$90134890578411* Misc
-
-#  Level type for the level complete menu
-$69219742310717* Architecture
+$43784903785964*
+[right]Carry IN
+Input 1
+Input 2[/right]
 
 
-=== levels/binary_count_down ===
+=== trans/odd_number_error ===
 
-$56999237564848* {x} seconds left
+$61530231182650* Too many components used
 
 
-=== trans/level_wide_instructions_description ===
+=== trans/panel_mux_description ===
 
-$60538893544456* [center]Build a wide instruction program component[/center]
+$30551449512908* [center]Selects input 1 or 2[/center]
+
+
+=== rpg/maps/prison/prison_guard ===
+
+$12720535616690*
+You are not supposed
+to be here robot!
+$48106038104468* Blood
+$54139682820568* Prison guard
+
+
+=== trans/rpg_complete_derpootext6 ===
+
+$29750433345543* [center]How could you?[/center]
 
 
 === trans/ide_assembly_codes ===
@@ -643,54 +2753,14 @@ $62016169253008*
 codes[/center]
 
 
-=== trans/manual_text_turing_complete ===
+=== trans/panel_sum_output_0 ===
 
-$54897112350567*
-Certain computers, like simple calculators are limited in the algorithms they can perform.
-
-They cannot perform any calculation that requires looping or recursing an arbitrary amount of times. Technically machines without looping or recursion can only deal with combinational logic.
-
-Turing complete machines on the other hand are as powerful as it is possible to be. A Turing complete machine may have a slow CPU, but it is powerful in the sense that there is no (computable) algorithm it can't perform.
+$54481599074471* Sum:
 
 
-=== misc/specifications ===
+=== trans/panel_less_u_output ===
 
-$56390619785555* View instructions definitions
-$68054407020318* Instructions
-
-
-=== trans/manual_component_factory_text ===
-
-$42847481618884*
-Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
-
-The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
-
-The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
-
-Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
-
-For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
-
-
-=== trans/level_decodre_RichTextLabel2 ===
-
-$40723962298647*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired bit
-Current bit[/right]
-
-
-=== trans/manual_bytes ===
-
-$46223559629673* Bytes
-
-
-=== trans/level_complete_stat_delay ===
-
-$43118901497406* Delay
+$19353239892904* Output
 
 
 === levels/binary_start ===
@@ -698,14 +2768,25 @@ $43118901497406* Delay
 $19099025738142* Start
 
 
-=== trans/level_byte_adder_you_carry_text2 ===
+=== trans/panel_screen_description ===
 
-$87943759248740* Carry
+$31014036880257* The screen shows the visuals of levels in the main campaign.
 
 
-=== levels/negative_numbers/test ===
+=== rpg/maps/boss_room/abyss ===
 
-$64427417171037* Test
+$75322073059042* Abyss
+
+
+=== rpg/maps/overworld/fighter_plane ===
+
+$12257592826946* I want one of these!
+$37870979642704* Fighter plane
+
+
+=== rpg/maps/overworld/flower ===
+
+$72524391591873* Flower
 
 
 === trans/manual_edit_instructions ===
@@ -724,9 +2805,9 @@ Current output
 [/right]
 
 
-=== trans/level_byte_constant_description ===
+=== trans/panel_counter8_output ===
 
-$84789919073603* [center]Always output the number 164[/center]
+$35643379690712* Output
 
 
 === trans/manual_text_network ===
@@ -768,73 +2849,31 @@ A connection may be either "possibly open" or "closed". There is no way to know 
 If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
 
 
-=== misc/binary_submit ===
+=== trans/panel_xnor ===
 
-$95509904060545* Submit
-
-
-=== trans/level_alu2_code ===
-
-$93157894815498* [center]OR[/center]
-
-
-=== trans/and_gate_3_RichTextLabel2 ===
-
-$52008707927408*
-[right][color=#e49f44]Input 1
+$84353654486355*
+[right]Input 1
 Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
+Output[/right]
 
 
-=== trans/level_complete_ide ===
+=== trans/panel_index_bit_input ===
 
-$56719825235196*
-[b]CODE IDE[/b]
-[color=#cccccc][i]Name codes and edit them in a convenient editor[/i][/color]
+$47911988603136* [right]Input[/right]
 
 
-=== trans/level_bit_switch_RichTextLabel2 ===
+=== trans/panel_rom_inputs ===
 
-$57920867194992*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
-
-
-=== trans/levels_negative_descriptions ===
-
-$87964635915702*
--127 to 127 representable:
-0 to 127 same as before:
-Works with adder:
+$52400325164412*
+[right]Load
+[i][color=#aaaaaa](sandbox only)[/color][/i] Save
+Address
+Save value[/right]
 
 
-=== trans/level_decoder_description ===
+=== trans/manual_instructions ===
 
-$10169248860836* [center]Decode the instruction[/center]
-
-
-=== nim/backend ===
-
-$98703677236827* 1 minute ago
-$86244493049244* {hours} hours ago
-$95018143828198* 1 year ago
-$21685594109067* Just now
-$98363990684104* 1 hour ago
-$84076931764831* 1 day ago
-$18300496139706* 1 month ago
-$17901039729248* {months} months ago
-$42553566189409* {minutes} minutes ago
-$70945526841433* {years} years ago
-$14036822471924* {days} days ago
-
-
-=== trans/instructions_hint ===
-
-$65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
+$90323246286028* Instructions
 
 
 === trans/schematics_description ===
@@ -847,14 +2886,14 @@ $39347262933523* Description
 $49014901714855* Map squares can only contain one input or output node.
 
 
-=== trans/level_complete_stat_type ===
+=== trans/panel_neg_description ===
 
-$69511102367948* Type
+$64810753197096* [center]Negates a number[/center]
 
 
-=== components/NOT ===
+=== trans/level_ram_component_RichTextLabel2 ===
 
-$34453052824732* NOT
+$92123299522120* [center]Expected states[/center]
 
 
 === trans/nand_Label ===
@@ -866,45 +2905,6 @@ Input 1
 Input 2
 
 
-=== trans/level_ram_component_RichTextLabel2 ===
-
-$92123299522120* [center]Expected states[/center]
-
-
-=== trans/level_double_buffer_RichTextLabel3 ===
-
-$27208335953837*
-[right]Input
-Desired output
-Current output[/right]
-
-
-=== components/DivMod32 ===
-
-$61314390474120* Divide and mod 2 numbers
-$84309999871615* Divide
-
-
-=== trans/level_registers_code ===
-
-$40063003736243* [center]OR[/center]
-
-
-=== trans/manual_text_truth ===
-
-$16559670174521*
-The tables of input and output which are used everywhere throughout the game are commonly known as truth tables.
-
-
-
-
-
-
-
-
-"Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
-
-
 === trans/manual_text_rgb ===
 
 $52915933943906*
@@ -912,71 +2912,22 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 [color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
 
 
-=== trans/manual_text_terminology ===
-
-$99266452352883*
-[b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
-
-[b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
-
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
-
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
-
-
-=== trans/level_complete_hex ===
-
-$94261690850981*
-[b]Hexadecimal[/b]
-[color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
-
-
-=== misc/instruciton_rule_label ===
-
-$70464083627337* Label
-
-
 === trans/complete_unlocks ===
 
 $45250062735373* Unlocks
 
 
-=== components/DivMod8 ===
+=== rpg/maps/overworld/table ===
 
-$37666366877853* Divide and mod 2 numbers
-$44959426271423* Divide
-
-
-=== trans/level_byte_mux_description ===
-
-$20538476756633* [center]Output the correct input byte[/center]
+$53798109572704* It is a table...
+$74345816549611* Table
 
 
-=== trans/level_byte_less_i_description ===
+=== trans/panel_decoder1_output ===
 
-$21195810950441* [center]Determine if the first input is less than the second.[/center]
-
-
-=== trans/level_the_bus_description ===
-
-$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
-
-
-=== trans/level_complete_gate ===
-
-$99373213759665*
-[b]Gate score[/b]
-[color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
-
-
-=== components/ByteEqual ===
-
-$35668435514829* Checks if the two inputs are equal
-$39369982838671* Equal
+$45472518257028*
+[right]Output 1
+Output 2[/right]
 
 
 === trans/level_RichTextLabel2 ===
@@ -990,103 +2941,16 @@ Desired output
 Current output[/color][/right]
 
 
-=== components/Bidirectional64 ===
+=== rpg/maps/overworld/derpoo ===
 
-$82412839066570* 64 bit bidirectional pin
-$24932613021646* Can circumvent certain circular dependency errors
-
-
-=== trans/level_program_description ===
-
-$44017405175202* [center]Replace the input code with the program component.[/center]
-
-
-=== levels/binary_racer ===
-
-$29718660090112* Wrong answer
-$37093663674348* Level {x}
-
-
-=== trans/level_byte_or_text ===
-
-$99465606386164*
-[right]
-[color=#e49f44]Input[/color]
-Desired output
-Current output
-[/right]
-
-
-=== trans/level_odd_ticks_RichTextLabel3 ===
-
-$89508766742523*
-[right]Input
-Desired output
-Current output[/right]
-
-
-=== trans/level_complete_profile ===
-
-$78783902500954*
-[b]Online profile[/b]
-[color=#cccccc][i]Find it in the main menu.[/i][/color]
-
-
-=== components/SRLatch ===
-
-$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
-
-
-=== trans/manual_text_universal_gates ===
-
-$37735744928195*
-It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
-
-Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
-
-
-=== trans/instrucitons_header ===
-
-$14831276667273* [center]Instructions[/center]
-
-
-=== trans/levels_byte_or_description ===
-
-$68379799788575* [center]Pairwise OR together each bit[/center]
-
-
-=== trans/manual_instructions ===
-
-$90323246286028* Instructions
-
-
-=== trans/level_dependency_description ===
-
-$81238724438578* Make a wire where the input of a component depends on its own output
+$86147085986248* HISS
+$46228887292914* GRRR
+$95162531064211* HISS
 
 
 === trans/schematic_new_file_name ===
 
 $24424463568668* New schematic
-
-
-=== trans/level_alu1_code ===
-
-$20619700446604* [center]OR[/center]
-
-
-=== levels/the_bus ===
-
-$96958133516462* FROM
-$91318587712792* TO
-
-
-=== misc/skipped_custom ===
-
-$38174137226538* Select component
-
-#  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
-$99860977387728* Go to location
 
 
 === trans/level_bit_adder_RichTextLabel2 ===
@@ -1098,16 +2962,5 @@ Desired Sum
 Desired Carry
 Current Sum
 Current Carry[/right]
-
-
-=== misc/add_code_name ===
-
-$57358078712675* Save
-
-
-=== components/DivMod16 ===
-
-$42657221816637* Divide and mod 2 numbers
-$22319923069746* Divide
 
 
