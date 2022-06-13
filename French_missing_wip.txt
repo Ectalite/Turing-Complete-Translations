@@ -980,11 +980,11 @@ Data width:[/right]
 
 === trans/panel_splitter32_output ===
 
-$18283412227212*
-Byte 1
-Byte 2
-Byte 3
-Byte 4
+$18283412227212
+Octet 1
+Octet 2
+Octet 3
+Octet 4
 
 
 === trans/panel_not_description ===
@@ -1227,15 +1227,15 @@ $36655099439467* Blood
 
 === trans/panel_inputlevel_input ===
 
-$27464111307888* Input
+$27464111307888 Entrée
 
 
 === trans/panel_and ===
 
-$48633048126675*
-[right]Input 1
-Input 2
-Output[/right]
+$48633048126675
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === trans/level_flood_enter ===
@@ -1252,13 +1252,13 @@ Pixels / Flush[/right]
 
 === trans/panel_outputlevel_output ===
 
-$16896928682474* [right]Output[/right]
+$16896928682474 [right]Sortie[/right]
 
 
 === rpg/maps/prison/sign3 ===
 
-$63642446288775* Secret lab
-$53627322304101* Sign
+$63642446288775 Labo secret
+$53627322304101 Panneau
 
 
 === rpg/maps/prison/control_panel_release ===
@@ -1268,7 +1268,7 @@ $78007210535349* Control panel
 
 === trans/panel_splitter8_input ===
 
-$90934251511339* [right]Input[/right]
+$90934251511339 [right]Entrée[/right]
 
 
 === rpg/maps/unseen_fruit/Gulgramush JR ===
@@ -1278,10 +1278,10 @@ $21404721941060* Did you know earthlings eat with their face?
 
 === trans/not_gate_RichTextLabel2 ===
 
-$10340875578771*
-[right][color=#e49f44]Input[/color]
-Desired output
-Current output[/right]
+$10340875578771
+[right][color=#e49f44]Entrée[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === trans/instructions_header ===
@@ -1291,7 +1291,7 @@ $15089281203426* [center]Instructions[/center]
 
 === trans/panel_bitmemory_outputs ===
 
-$17509974261453* Output
+$17509974261453 Sortie
 
 
 === trans/manual_text_ram ===
@@ -1323,20 +1323,20 @@ $96578192050623* [right]Input[/right]
 
 === trans/level_tick_tock_keys ===
 
-$11700778730606*
+$11700778730606
 [right][color=#e49f44]Action
-Desired output
-Current output[/color][/right]
+Sortie attendue
+Sortie courante[/color][/right]
 
 
 === trans/rpg_no_signal ===
 
-$33720960099059* No signal
+$33720960099059 Pas de signal
 
 
 === trans/panel_regred_output ===
 
-$59910806432617* Output
+$59910806432617 Sortie
 
 
 === trans/manual_text_ascii_encoding ===
@@ -1412,7 +1412,7 @@ In this simulator, pins that can be disconnected are grey.
 
 === trans/panel_rol_output ===
 
-$62960066333763* Output
+$62960066333763 Sortie
 
 
 === trans/complete_flower_4 ===
@@ -1440,15 +1440,15 @@ $61886892927185* [center]Pairwise AND together each bit[/center]
 
 === trans/panel_maker64_input ===
 
-$67636019772385*
-[right]Byte 1
-Byte 2
-Byte 3
-Byte 4
-Byte 5
-Byte 6
-Byte 7
-Byte 8[/right]
+$67636019772385
+[right]Octet 1
+Octet 2
+Octet 3
+Octet 4
+Octet 5
+Octet 6
+Octet 7
+Octet 8[/right]
 
 
 === main_scripts/overture_level ===
@@ -1469,18 +1469,18 @@ $82949244692745* Calculate
 
 === levels/negative_numbers ===
 
-$62744038163781* OK
+$62744038163781 OK
 
 
 === rpg/maps/maze/door ===
 
-$38678596054893* Door
-$92590993851956* I must be programmed to do this
+$38678596054893 Porte
+$92590993851956 Je dois être programmé pour faire cela
 
 
 === trans/nand_Label2 ===
 
-$60885816586685* Output
+$60885816586685 Sortie
 
 
 === trans/panel_console_offset ===
@@ -1490,7 +1490,7 @@ $24810778105207* [right]Offset[/right]
 
 === trans/panel_delayline1_input ===
 
-$25839180359382* [right]Input[/right]
+$25839180359382 [right]Entrée[/right]
 
 
 === trans/panel_network_inputs ===
@@ -1516,8 +1516,8 @@ $95680138985553* [center]Bitwise NANDs two inputs[/center]
 
 === rpg/maps/cave/rat ===
 
-$86611337488971* Blood
-$59032985199739* Spider
+$86611337488971 Sang
+$59032985199739 Araignée
 
 
 === trans/panel_stack_input ===
@@ -1565,7 +1565,7 @@ $86987136934243* I am your cousin Robert.
 
 === trans/splitter8_output ===
 
-$69714402466566*
+$69714402466566
 Bit 1
 Bit 2
 Bit 3
@@ -1578,25 +1578,25 @@ Bit 8
 
 === components/NOR ===
 
-$83375115196253* NOR
+$83375115196253 NOR
 
 
 === levels/hex_racer ===
 
-$33474352861351* Level {x}
-$40775762006843* Wrong answer
+$33474352861351 Niveau {x}
+$40775762006843 Mauvaise réponse
 
 
 === trans/level_full_adder_RichTextLabel2 ===
 
-$25766177620842*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired Sum
-Desired Carry
-Current Sum
-Current Carry[/right]
+$25766177620842
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3[/color]
+Somme attendue
+Retenue attendue
+Somme courante
+Retenue courante[/right]
 
 
 === rpg/maps/unseen_fruit/Sign ===
@@ -1608,82 +1608,82 @@ Go check on the fruit
 
 === components/NAND ===
 
-$71130919681688* NAND
+$71130919681688 NAND
 
 
 === trans/rpg_alloy_description ===
 
-$29268002047995*
-[center] [color=#eb5260]BOOM![/color]
+$29268002047995
+[center] [color=#eb5260]BOUM ![/color]
 
-Everyone died
+Tout le monde est mort.
 [/center]
 
 
 === levels/delay_level_check ===
 
-$59355217078543* Correct!
-$68999077595244* Check
-$90847326020954* Nope!
+$59355217078543 Correct !
+$68999077595244 Vérifie
+$90847326020954 Pas du tout !
 
 
 === trans/panel_fileloader_enable ===
 
-$80528055112236* [center]Enable[/center]
+$80528055112236 [center]Activer[/center]
 
 
 === rpg/maps/cave/door3 ===
 
-$94313460790182* Dungeon door
+$94313460790182 Porte du Donjon
 
 
 === main_scripts/levels ===
 
 
 #  Level type for the level complete menu
-$58769207148712* Component
+$58769207148712 Composant
 
 #  Level type for the level complete menu
 $90134890578411* Misc
 $68327708695625* [b]Manual Entry[/b]\n\n Entry: [color=#68d277]{page}[/color]
 
 #  Level type for the level complete menu
-$69219742310717* Architecture
+$69219742310717 Architecture
 
 
 === trans/panel_decoder3_disable ===
 
-$50918319838744* Disable
+$50918319838744 Désactiver
 
 
 === trans/level_decodre_RichTextLabel2 ===
 
-$40723962298647*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired bit
-Current bit[/right]
+$40723962298647
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3[/color]
+Bit attendu
+Bit courant[/right]
 
 
 === rpg/coin ===
 
-$39259781619518* Coin
+$39259781619518 Pièce
 
 
 === trans/manual_bytes ===
 
-$46223559629673* Bytes
+$46223559629673 Octets
 
 
 === trans/panel_ram8_output ===
 
-$90649838965927* Output
+$90649838965927 Sortie
 
 
 === trans/panel_cond_input_2 ===
 
-$82398835019064* Bit 2:
+$82398835019064 Bit 2
 
 
 === trans/level_complete_ide ===
@@ -1695,29 +1695,29 @@ $56719825235196*
 
 === trans/level_alu2_code ===
 
-$93157894815498* [center]OR[/center]
+$93157894815498 [center]OR[/center]
 
 
 === misc/binary_submit ===
 
-$95509904060545* Submit
+$95509904060545 Valider
 
 
 === trans/and_gate_3_RichTextLabel2 ===
 
-$52008707927408*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
+$52008707927408
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === trans/panel_nand ===
 
-$51470292662088*
-[right]Input 1
-Input 2
+$51470292662088
+[right]Entrée 1
+Entrée 2
 Output[/right]
 
 
@@ -1728,12 +1728,12 @@ $54304087865803* Shields up, jump to hyperspace!
 
 === components/Output64 ===
 
-$77952953696011* 64 Bit Output
+$77952953696011 Sortie 64 Bits
 
 
 === rpg/maps/overworld/hat_man ===
 
-$66365217340789* Hat man
+$66365217340789 Homme au chapeau
 
 
 === trans/level_decoder_description ===
@@ -1743,9 +1743,9 @@ $10169248860836* [center]Decode the instruction[/center]
 
 === trans/panel_mul_input ===
 
-$52124868557994*
-[right]Input 1
-Input 2[/right]
+$52124868557994
+[right]Entrée 1
+Entrée 2[/right]
 
 
 === rpg/maps/prison/rat ===
@@ -1762,22 +1762,22 @@ $35798118634001* 64 Bit Switched Output
 
 === trans/level_complete_stat_type ===
 
-$69511102367948* Type
+$69511102367948 Type
 
 
 === trans/panel_or_input ===
 
-$70466834507347*
-[right]Input 1
-Input 2[/right]
+$70466834507347
+[right]Entrée 1
+Entrée 2[/right]
 
 
 === trans/level_double_buffer_RichTextLabel3 ===
 
-$27208335953837*
-[right]Input
-Desired output
-Current output[/right]
+$27208335953837
+[right]Entrée
+Sortie attendue
+Sortie courante[/right]
 
 
 === trans/manual_text_terminology ===
@@ -1842,17 +1842,17 @@ $87592944464187* Picked up goo, {nr} more to go
 
 === trans/panel_keyboard_event ===
 
-$67549215280299* Event waiting
+$67549215280299 En attente évênement
 
 
 === trans/inputlevel_enable ===
 
-$28654406516589* [center]Disable / Enable[/center]
+$28654406516589 [center]Activer / Désactiver[/center]
 
 
 === components/SRLatch ===
 
-$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
+$71931050184389 [img=165]dialogue/sr_latch_tooltip.png[/img]
 
 
 === trans/panel_index_bit_index ===
@@ -1874,12 +1874,12 @@ $68379799788575* [center]Pairwise OR together each bit[/center]
 
 === components/Output 1B ===
 
-$15931283897895* 8 Bit Output
+$15931283897895 Sortie 8 Bits
 
 
 === trans/panel_output_output_1 ===
 
-$42314807669643* Output 2
+$42314807669643 Sortie 2
 
 
 === misc/skipped_custom ===
@@ -1892,38 +1892,38 @@ $99860977387728* Go to location
 
 === trans/panel_counter16_output ===
 
-$13295622648285* Output
+$13295622648285 Sortie
 
 
 === misc/button_next ===
 
-$80746616574054* Next (Hotkey: F5)
+$80746616574054 Suivant (Raccourci F5)
 
 
 === trans/panel_ram_fast_input ===
 
 $80778301064570*
-[right]Load
-Save
-Address
-Save value
-Save value
-Save value
-Save value[/right]
+[right]Lis
+Ecris
+Addresse
+Ecris valeur
+Ecris valeur
+Ecris valeur
+Ecris valeur[/right]
 
 
 === trans/panel_ram8_input ===
 
-$54796685972031*
-[right]Load
-Save
-Address
-Save value[/right]
+$54796685972031
+[right]Lis
+Ecris
+Addresse
+Ecris valeur[/right]
 
 
 === rpg/maps/overworld/monklaar ===
 
-$78391472992197* I love the new fruit in the canteen!
+$78391472992197 J'adore le nouveau fruit de la cantine !
 
 
 === trans/panel_regredplus_output ===
@@ -1942,37 +1942,37 @@ Shift by[/right]
 
 === rpg/maps/prison/human ===
 
-$26878139502295* Here lies the player
-$55952257027183* Human
-$15754158619172* Blood
-$46356151087784* I am the player
+$26878139502295 Ici gis le joueur
+$55952257027183 Humain
+$15754158619172 Sang
+$46356151087784 Je suis le joueur
 
 
 === trans/panel_ram_fast_output ===
 
-$44175594625487*
-Output 1
-Output 2
-Output 3
-Output 4
+$44175594625487
+Sortie 1
+Sortie 2
+Sortie 3
+Sortie 4
 
 
 === trans/options_explicit_clock ===
 
-$90384542658266* Explicit clock
+$90384542658266 Horloge explicite
 
 
 === trans/panel_splitter16_output ===
 
-$19314358335345*
-Output 1
-Output 2
+$19314358335345
+Sortie 1
+Sortie 2
 
 
 === rpg/maps/overworld/door3 ===
 
-$62992379521216* Door
-$12075276554344* The door handle is broken
+$62992379521216 Porte
+$12075276554344 La poignée de porte est cassée
 
 
 === rpg/maps/overworld/knight ===
@@ -1983,8 +1983,8 @@ $86067786292380* I will just go around...
 
 === levels/The Product of Nibbles ===
 
-$13549246864135* Bit 0
-$10274387271390* Bit 0
+$13549246864135 Bit 0
+$10274387271390 Bit 0
 
 
 === trans/panel_matrix_column_major ===
@@ -2001,15 +2001,15 @@ Overwrite value[/right]
 
 === rpg/maps/spacial_invasion/door ===
 
-$59863326177819* The door is locked
-$13853333722323* Door
+$59863326177819 La porte est verrouillée
+$13853333722323 Porte
 
 
 === trans/panel_not ===
 
-$33240384048149*
-[right]Input
-Output[/right]
+$33240384048149
+[right]Entrée
+Sortie[/right]
 
 
 === trans/panel_matrix_color ===
