@@ -28,6 +28,11 @@ off the ship if I touch this
 $20128423531070* Control panel
 
 
+=== components/Output 1 ===
+
+$59663530139004* 1 Bit Output
+
+
 === rpg/maps/overworld/water ===
 
 $82402577990931* Water
@@ -56,6 +61,11 @@ $50497979766012* Label text
 === rpg/maps/unseen_fruit/wall_broke ===
 
 $82933036983558* Damaged wall
+
+
+=== components/Input 1 ===
+
+$54126599191071* 1 Bit Input
 
 
 === rpg/maps/prison/snuffles ===
@@ -177,6 +187,11 @@ Save
 Save value[/right]
 
 
+=== components/Output1z ===
+
+$82456670459300* 1 Bit Switched Output
+
+
 === trans/panel_xor ===
 
 $89363100135433*
@@ -234,6 +249,11 @@ Save value[/right]
 $92673421413755*
 [b]Wire comments[/b]
 [color=#cccccc][i]Add comments to your wires.[/i][/color]
+
+
+=== trans/manual_SpriteDisplay ===
+
+$57792698381638* Sprite display
 
 
 === trans/panel_counter8_input ===
@@ -440,6 +460,12 @@ $20801641140962*
 [color=#cccccc][i]Click "[color=#e49f44]Onwards[/color]" and you will see[/i][/color]
 
 
+=== components/SpriteDisplay ===
+
+$27510895774306* Multi layer sprite display
+$49278744667468* Sprite Display
+
+
 === trans/panel_or ===
 
 $15879871058922*
@@ -531,6 +557,11 @@ $25534025775791* [center]RIP derpoo[/center]
 $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] in the top bar are decoration only![/center]
 
 
+=== components/Input64 ===
+
+$98777983100258* 64 Bit Input
+
+
 === trans/level_binary_programming_description ===
 
 $66247694103179* [center]Add 5 to the input[/center]
@@ -549,6 +580,41 @@ Input 2
 Input 3[/color]
 Desired output
 Current output[/right]
+
+
+=== misc/options_keys ===
+
+$92993941290486* Shift
+$65955105101920* Numpad Enter
+$12519478101154* End
+$99716387921256* Context menu
+$92411601634183* Pause
+$93394348651979* Right Hyper
+$49442994583673* Left Super key (Windows key)
+$64963573823520* Print Screen
+$59365233304896* Clear
+$11442487736991* System Request
+$17795913351819* Delete
+$74172180238771* Scroll Lock
+$16897068982305* Right Super key (Windows key)
+$10929402286573* Page Down
+$39382222147951* Caps Lock
+$93358816396539* Down arrow
+$14976122209522* Insert
+$47096285951897* Page Up
+$40013272281231* Left Hyper
+$78473292327654* Up arrow
+$54347318627968* Left arrow
+$20334952085165* Right arrow
+$25372126469538* Num Lock
+$43488085975448* Home
+$73529460447236* Return
+$50389171923636* Backspace
+
+
+=== components/Output16z ===
+
+$54782010205016* 16 Bit Switched Output
 
 
 === trans/not_gate_click_next2 ===
@@ -602,6 +668,16 @@ $40261193416765* Door
 $72687692653533*
 [right]Data width:
 [/right]
+
+
+=== components/Output8z ===
+
+$66776427840721* 8 Bit Switched Output
+
+
+=== trans/panels_clock_output ===
+
+$79367841142406* Clock signal
 
 
 === components/Level Gate ===
@@ -721,7 +797,7 @@ $37093663674348* Level {x}
 
 === components/Bidirectional64 ===
 
-$82412839066570* 64 bit bidirectional pin
+$82412839066570* 64 bit Bidirectional Pin
 $24932613021646* Can circumvent certain circular dependency errors
 
 
@@ -870,6 +946,11 @@ $66022312281343* Door
 $55631089130544* Output
 
 
+=== misc/run_fast ===
+
+$54853798559740* Run faster (right click: change target speed)
+
+
 === trans/panel_off ===
 
 $61047424972631* Always
@@ -936,6 +1017,11 @@ $90642877666116* [center]Select color[/center]
 === trans/level_division_headers3 ===
 
 $81978438070842* Quotient
+
+
+=== components/Input 1 Byte ===
+
+$90785720285146* 8 Bit Input
 
 
 === trans/complete_flower_text3 ===
@@ -1080,6 +1166,11 @@ $44980627299841* [center]Shoot the space rats![/center]
 $16878300327380* Instruction
 
 
+=== components/Input32 ===
+
+$31482038708224* 32 Bit Input
+
+
 === rpg/maps/overworld/fuel ===
 
 $99170934143071* Core fuel
@@ -1168,14 +1259,19 @@ $56999237564848* {x} seconds left
 $71918065858983* Save
 
 
-=== trans/panel_equal_output ===
+=== components/Timing ===
 
-$15175350110347* Output
+$96011300295966* Time
 
 
 === rpg/maps/overworld/dr draco ===
 
 $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
+
+
+=== components/Output32 ===
+
+$82172858698449* 32 Bit Output
 
 
 === trans/panel_on ===
@@ -1186,6 +1282,11 @@ $77349453746493* Always
 === trans/level_complete_level_complete ===
 
 $49647690443210* [center]Level Complete[/center]
+
+
+=== trans/panel_equal_output ===
+
+$15175350110347* Output
 
 
 === rpg/maps/dance/dancer ===
@@ -1544,6 +1645,16 @@ $91933395166656* [right]Output 1[/right]
 $78662357115684* [right]Offset[/right]
 
 
+=== components/Input16 ===
+
+$80992639558333* 16 Bit Input
+
+
+=== misc/run ===
+
+$58178852564701* Run (Hotkey: F6)
+
+
 === nim/backend_lib/level_list ===
 
 $15420972347773* RAM
@@ -1689,6 +1800,11 @@ $59910806432617* Output
 === trans/manual_text_ascii_encoding ===
 
 $57727768059917* This simulator uses (extended) ASCII in a few places. Below are the characters with their corresponding number. The console supports different versions of extended ASCII.
+
+
+=== component_panels/sprite_display_select_button ===
+
+$18632189666863* Select file
 
 
 === trans/panel_fulladder_description ===
@@ -1987,6 +2103,7 @@ $58769207148712* Component
 
 #  Level type for the level complete menu
 $90134890578411* Misc
+$68327708695625* [b]Manual Entry[/b]\n\n Entry: [color=#68d277]{page}[/color]
 
 #  Level type for the level complete menu
 $69219742310717* Architecture
@@ -2067,6 +2184,11 @@ Output[/right]
 $54304087865803* Shields up, jump to hyperspace!
 
 
+=== components/Output64 ===
+
+$77952953696011* 64 Bit Output
+
+
 === rpg/maps/overworld/hat_man ===
 
 $66365217340789* Hat man
@@ -2089,6 +2211,11 @@ Input 2[/right]
 $68894472933139* Squeak squeak
 $86305699756314* Blood
 $30670667527598* Rat
+
+
+=== components/Output64z ===
+
+$35798118634001* 64 Bit Switched Output
 
 
 === trans/level_complete_stat_type ===
@@ -2203,6 +2330,11 @@ Divisor[/right]
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
+=== components/Output 1B ===
+
+$15931283897895* 8 Bit Output
+
+
 === trans/panel_output_output_1 ===
 
 $42314807669643* Output 2
@@ -2219,6 +2351,11 @@ $99860977387728* Go to location
 === trans/panel_counter16_output ===
 
 $13295622648285* Output
+
+
+=== misc/button_next ===
+
+$80746616574054* Next (Hotkey: F5)
 
 
 === main_scripts/leg_level ===
@@ -2286,6 +2423,11 @@ Output 1
 Output 2
 Output 3
 Output 4
+
+
+=== trans/options_explicit_clock ===
+
+$90384542658266* Explicit clock
 
 
 === trans/panel_splitter16_output ===
@@ -2382,9 +2524,19 @@ Earth fruit is so much better
 than the the stew they normally serve
 
 
+=== trans/panels_config_delay_delay ===
+
+$52499013005170* [right]Delay[/right]
+
+
 === trans/panel_input_input_2 ===
 
 $13656747150138* Input 3
+
+
+=== components/Output16 ===
+
+$48008022162230* 16 Bit Output
 
 
 === rpg/maps/prison/exit_door ===
@@ -2427,6 +2579,11 @@ On the program component you will also find the "Watch state" button.
 [center][img]dialogue/manual/watch_state.png[/img][/center]
 
 This can be used to connect the assembly editor to registers, counters or probes. This way, the state of your architecture can be inspected as you write code, without closing the editor.
+
+
+=== components/Output32z ===
+
+$20432213737411* 32 Bit Switched Output
 
 
 === trans/panel_network_next_event ===
@@ -2483,6 +2640,12 @@ Current output[/right]
 $38686097566531* [center]Check if the bytes are equal[/center]
 
 
+=== components/Clock ===
+
+$29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
+$73207565196164* Clock
+
+
 === components/Xnor ===
 
 $94079327237795* XNOR
@@ -2500,15 +2663,13 @@ $54832952840086* XOR
 
 === trans/level_complete_manual_page ===
 
-$39011561067359*
-[b]Manual Entry[/b]
-[color=#cccccc][i]RTFM[/i][/color]
-
-Entry: [color=#68d277]Architectural complexity[/color]
+$39011561067359* [b]Manual Entry[/b]
 
 
 === trans/panel_input_up ===
 
+
+# [color=#cccccc][i]RTFM[/i][/color]Entry: [color=#68d277]Architectural complexity[/color]
 $97169317610794* Up
 
 
@@ -2755,10 +2916,10 @@ $35643379690712* Output
 
 $70445160410129*
 [b]Overview[/b]
-The "Network" component gives you low level access to networking. In general you manipulate your network by sending the component [color=#e49f44]Requests[/color] and when update [color=#39aa49]Events[/color] return from the network they get queued up and you process them one at a time. To keep track of different simultaneous connections [color=#dd6576]Connection ID[/color]s are used.
+The "Network" component gives you low level access to networking. In general you manipulate your network by sending the component [color=#e49f44]Commands[/color] and when update [color=#39aa49]Events[/color] return from the network they get queued up and you process them one at a time. To keep track of different simultaneous connections [color=#dd6576]Connection ID[/color]s are used.
 
-These are the request types you can send to the component and their arguments:
-[code]0[/code] No request
+These are the command types you can send to the component and their arguments:
+[code]0[/code] No command
 [code]1[/code] [color=#e49f44]Listen[/color] ([color=#dd6576]Port[/color])
 [code]2[/code] [color=#e49f44]Connect[/color] ([color=#dd6576]IP[/color], [color=#dd6576]Port[/color])
 [code]3[/code] [color=#e49f44]Send data[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Data[/color], [color=#dd6576]Data length[/color])
@@ -2766,7 +2927,7 @@ These are the request types you can send to the component and their arguments:
 [code]5[/code] [color=#e49f44]Read next event[/color]
 [i]See component panel for which pin correspond to which argument.[/i]
 
-Request types [color=#e49f44]Listen[/color] and [color=#e49f44]Connect[/color] outputs the [color=#dd6576]Connection ID[/color] of the new connection.
+Command types [color=#e49f44]Listen[/color] and [color=#e49f44]Connect[/color] outputs the [color=#dd6576]Connection ID[/color] of the new connection.
 
 For 2 programs to [color=#e49f44]Send data[/color] to each other, one program must first [color=#e49f44]Listen[/color] (called a server) on a [color=#dd6576]Port[/color] and the other must then [color=#e49f44]Connect[/color] (called a client), using the [color=#dd6576]IP[/color] of the listening program and the [color=#dd6576]Port[/color] it selected. Once the connection is established, the server and client function exactly the same.
 
@@ -2855,6 +3016,8 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 
 === trans/complete_unlocks ===
 
+
+# When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
 $45250062735373* Unlocks
 
 
@@ -2892,6 +3055,12 @@ $95162531064211* HISS
 === trans/schematic_new_file_name ===
 
 $24424463568668* New schematic
+
+
+=== components/ConfigDelay ===
+
+$31412778600732* Configurable delay
+$84124565448643* Adds a configurable amount of delay. Useful for delay debugging or controlling the latency of the latency RAM.
 
 
 === trans/level_bit_adder_RichTextLabel2 ===
