@@ -12,12 +12,12 @@ reactor fuel thingies
 
 === trans/panel_register16_outputs ===
 
-$91613202877683* Output
+$91613202877683 Sortie
 
 
 === trans/panel_program_1_output ===
 
-$31398283096964* Output
+$31398283096964 Sortie
 
 
 === rpg/maps/overworld/control_panel ===
@@ -30,7 +30,7 @@ $20128423531070* Control panel
 
 === components/Output 1 ===
 
-$59663530139004* 1 Bit Output
+$59663530139004 Sortie 1 Bit
 
 
 === rpg/maps/overworld/water ===
@@ -40,7 +40,7 @@ $82402577990931* Water
 
 === trans/panel_stack_output ===
 
-$61988314265407* Output
+$61988314265407 Sortie
 
 
 === trans/panel_halt_label ===
@@ -65,7 +65,7 @@ $82933036983558* Damaged wall
 
 === components/Input 1 ===
 
-$54126599191071* 1 Bit Input
+$54126599191071 Entrée 1 Bit
 
 
 === rpg/maps/prison/snuffles ===
@@ -83,7 +83,7 @@ $10492822526537* [center]Check if Input 1 < Input 2[/center]
 
 === trans/panel_switch_output ===
 
-$86922225714685* Output
+$86922225714685 Sortie
 
 
 === trans/panel_switch_input ===
@@ -116,11 +116,11 @@ $59394224080614* [center]Tricksy's chest[/center]
 
 === trans/panel_program4_output ===
 
-$30314861365347*
-Output 1
-Output 2
-Output 3
-Output 4
+$30314861365347
+Sortie 1
+Sortie 2
+Sortie 3
+Sortie 4
 
 
 === trans/rpg_complete_text5 ===
@@ -194,10 +194,10 @@ $82456670459300* 1 Bit Switched Output
 
 === trans/panel_xor ===
 
-$89363100135433*
-[right]Input 1
-Input 2
-Output[/right]
+$89363100135433
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === trans/rpg_complete_flower ===
@@ -207,24 +207,24 @@ $15192250170799* [center]Dumio and Gruliette[/center]
 
 === trans/panel_maker32_input ===
 
-$93209061270494*
-[right]Byte 1
-Byte 2
-Byte 3
-Byte 4[/right]
+$93209061270494
+[right]Octet 1
+Octet 2
+Octet 3
+Octet 4[/right]
 
 
 === trans/panel_decoder3_input ===
 
-$82288570082172*
-[right]Input 1
-Input 2
-Input 3[/right]
+$82288570082172
+[right]Entrée 1
+Entrée 2
+Entrée 3[/right]
 
 
 === trans/panel_xnor_output ===
 
-$69594087046834* Output
+$69594087046834 Sortie
 
 
 === misc/files_preview ===
@@ -282,7 +282,7 @@ $89612128414294* Label direction
 
 === trans/level_complete_stats ===
 
-$65428404547905* Stats
+$65428404547905 Stats
 
 
 === trans/manual_robot_controls ===
@@ -297,11 +297,11 @@ $10186190492148* ALT click to move wire head
 
 === trans/panel_decoder2_output ===
 
-$98341196231276*
-Output 1
-Output 2
-Output 3
-Output 4
+$98341196231276
+Sortie 1
+Sortie 2
+Sortie 3
+Sortie 4
 
 
 === rpg/maps/overworld/griffith ===
@@ -359,7 +359,7 @@ makes you very agreeable
 
 === trans/panel_maker8_input ===
 
-$26123816206996*
+$26123816206996
 [right]Bit 1
 Bit 2
 Bit 3
@@ -379,7 +379,7 @@ $31033960272185* I am the esteemed Dr. Rakoo
 
 === ui/schematic_ui/confirm_delete ===
 
-$46014905606975* Yes
+$46014905606975 Oui
 
 
 === trans/levels_saving_bytes_text ===
@@ -393,9 +393,9 @@ Desired output
 
 === trans/panel_less_input ===
 
-$68966388936516*
-[right]Input 1
-Input 2[/right]
+$68966388936516
+[right]Entrée 1
+Entrée 2[/right]
 
 
 === trans/panel_shl_output ===
@@ -426,12 +426,12 @@ $88881816595724* [center]Disable / Enable[/center]
 
 === misc/restore_overture ===
 
-$52008982212566* Reset
+$52008982212566 Réinitialiser
 
 
 === trans/credit_header ===
 
-$21717110565858* Credits
+$21717110565858 Crédits
 
 
 === rpg/maps/overworld/bridge ===
@@ -441,16 +441,16 @@ $70708048943630* Bridge
 
 === trans/panel_input_down ===
 
-$70002762618597* Down
+$70002762618597 Bas
 
 
 === trans/_second_tick_RichTextLabel2 ===
 
-$11680718497014*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+$11680718497014
+[right][color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === trans/level_complete_level_map ===
@@ -468,17 +468,17 @@ $49278744667468* Sprite Display
 
 === trans/panel_or ===
 
-$15879871058922*
-[right]Input 1
-Input 2
-Output[/right]
+$15879871058922
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === levels/ram_block ===
 
-$16196915566111* 0
-$14259545926196* A
-$12933801309767* A
+$16196915566111 0
+$14259545926196 A
+$12933801309767 A
 
 
 === rpg/maps/overworld/grenzorp ===
@@ -515,10 +515,10 @@ Shift by[/right]
 
 === trans/always_on_RichTextLabel2 ===
 
-$86547293707045*
-[right][color=#ffa502]Input[/color]
-Desired output
-Current output[/right]
+$86547293707045
+[right][color=#ffa502]Entrée[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === rpg/maps/overworld/tree ===
@@ -529,7 +529,7 @@ $33509997611554* Tree
 
 === levels/circular_dependency ===
 
-$16336401898647* Test 1/2
+$16336401898647 Test 1/2
 
 
 === trans/panel_input_direction ===
@@ -554,7 +554,7 @@ $31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/hea
 
 === components/Input64 ===
 
-$98777983100258* 64 Bit Input
+$98777983100258 Entrée 64 Bits
 
 
 === trans/level_binary_programming_description ===
@@ -569,12 +569,12 @@ $37347658035959* Component preview
 
 === trans/or_gate_3_RichTextLabel2 ===
 
-$56903547636751*
-[right][color=#e49f44]Input 1
-Input 2
-Input 3[/color]
-Desired output
-Current output[/right]
+$56903547636751
+[right][color=#e49f44]Entrée 1
+Entrée 2
+Entrée 3[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === misc/options_keys ===
@@ -619,7 +619,7 @@ $20820887361993* Click "Next tick" to see
 
 === trans/panel_fileloader_output ===
 
-$26334594715602* Output
+$26334594715602 Sortie
 
 
 === trans/panel_hdd_input ===
@@ -655,7 +655,7 @@ $44556588975494* [right]Read next[/right]
 
 === rpg/maps/unseen_fruit/door ===
 
-$40261193416765* Door
+$40261193416765 Porte
 
 
 === trans/program_data_width ===
@@ -672,18 +672,18 @@ $66776427840721* 8 Bit Switched Output
 
 === trans/panels_clock_output ===
 
-$79367841142406* Clock signal
+$79367841142406* Signal d'horloge
 
 
 === components/Level Gate ===
 
-$84124240406304* SCORE
-$54172257277874* SUM
+$84124240406304 SCORE
+$54172257277874 TOTAL
 
 
 === trans/panel_register8_outputs ===
 
-$72930832545270* Output
+$72930832545270 Sortie
 
 
 === nim/backend ===
@@ -708,7 +708,7 @@ $65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center
 
 === components/NOT ===
 
-$34453052824732* NOT
+$34453052824732 NOT
 
 
 === components/DivMod32 ===
@@ -719,20 +719,20 @@ $84309999871615* Divide
 
 === trans/panel_mux_input ===
 
-$23495704401199*
-[right]Select 1 / 2
-Input 1
-Input 2[/right]
+$23495704401199
+[right]Choix 1 / 2
+Entrée 1
+Entrée 2[/right]
 
 
 === trans/level_registers_code ===
 
-$40063003736243* [center]OR[/center]
+$40063003736243 [center]OR[/center]
 
 
 === trans/instrucitons_header ===
 
-$14831276667273* [center]Instructions[/center]
+$14831276667273 [center]Instructions[/center]
 
 
 === trans/level_the_bus_description ===
@@ -742,7 +742,7 @@ $20464862486158* [center]Copy the value from the correct input, to the correct o
 
 === trans/panel_decoder1_input ===
 
-$62550086102347* [right]Input[/right]
+$62550086102347 [right]Entrée[/right]
 
 
 === trans/level_complete_hex ===
@@ -763,7 +763,7 @@ $96743644544068* This was the first instance of the {fruit}!
 
 === trans/level_capitalize_output ===
 
-$37037455015862* Output
+$37037455015862 Sortie
 
 
 === trans/rpg_press_any_key ===
@@ -803,20 +803,20 @@ $70779117877705* Behold the vastness of space
 
 === trans/panel_splitter64_output ===
 
-$70335236543238*
-Byte 1
-Byte 2
-Byte 3
-Byte 4
-Byte 5
-Byte 6
-Byte 7
-Byte 8
+$70335236543238
+Octet 1
+Octet 2
+Octet 3
+Octet 4
+Octet 5
+Octet 6
+Octet 7
+Octet 8
 
 
 === rpg/maps/overworld/door4 ===
 
-$66194643935592* Secret door
+$66194643935592 Porte secrète
 
 
 === trans/panel_network_input_description ===
@@ -880,8 +880,8 @@ $41412072467493* Only 1 turns on
 
 === rpg/maps/prison/prision_door ===
 
-$64702123078518* The door is locked
-$42385408716570* Door
+$64702123078518 La porte est verrouillée
+$42385408716570 Porte
 
 
 === misc/add_code_name ===
@@ -903,9 +903,9 @@ $84515289220335* [right]Enable[/right]
 
 === trans/panel_fulladder_output ===
 
-$18502107482550*
-Result
-Carry
+$18502107482550
+Resultat
+Retenue
 
 
 === trans/panel_bitmemory_inputs ===
@@ -918,27 +918,27 @@ Save value[/right]
 
 === trans/panel_output_output_2 ===
 
-$80266319030005* Output 3
+$80266319030005 Sortie 3
 
 
 === component_panels/Input3Conditions ===
 
-$23280572780712* NEVER
+$23280572780712 JAMAIS
 
 
 === trans/panel_rom_output ===
 
-$80688779703520* Output
+$80688779703520 Sortie
 
 
 === rpg/maps/unseen_fruit/door2 ===
 
-$66022312281343* Door
+$66022312281343 Porte
 
 
 === trans/panel_register64_outputs ===
 
-$55631089130544* Output
+$55631089130544 Sortie
 
 
 === misc/run_fast ===
@@ -948,17 +948,17 @@ $54853798559740* Run faster (right click: change target speed)
 
 === trans/panel_off ===
 
-$61047424972631* Always
+$61047424972631 Toujours
 
 
 === rpg/maps/overworld/coin ===
 
-$26007076735159* Coin
+$26007076735159 Pièce
 
 
 === trans/panel_maker8_output ===
 
-$67169082367526* Output
+$67169082367526 Sortie
 
 
 === trans/panel_hdd_description ===
@@ -998,10 +998,10 @@ $99685372736199* Head position: {pos}
 
 === trans/panel_nor ===
 
-$59430016039613*
-[right]Input 1
-Input 2
-Output[/right]
+$59430016039613
+[right]Entrée 1
+Entrée 2
+Sortie[/right]
 
 
 === trans/panel_segment_select_color ===
@@ -1016,7 +1016,7 @@ $81978438070842* Quotient
 
 === components/Input 1 Byte ===
 
-$90785720285146* 8 Bit Input
+$90785720285146 Entrée 8 Bits
 
 
 === trans/complete_flower_text3 ===
@@ -1041,7 +1041,7 @@ $36861847387280* Probes can be used to show values on custom components or link 
 
 === trans/panel_input1_input_0 ===
 
-$76697231893680* Input
+$76697231893680 Entrée
 
 
 === trans/panel_matrix_input2 ===
@@ -1057,12 +1057,12 @@ $41698807327261* I love looking at random furniture
 
 === trans/panel_cond_input_0 ===
 
-$59435425554599* Bit 0:
+$59435425554599 Bit 0 :
 
 
 === trans/panel_delayline1_output ===
 
-$99213923469748* Output
+$99213923469748 Sortie
 
 
 === trans/manual_text_matrix ===
@@ -1084,28 +1084,28 @@ Instead, by having 2 enable pins, one wire can enable a whole row and another a 
 
 === rpg/maps/unseen_fruit/fruit ===
 
-$78424930494044* Fruit
+$78424930494044 Fruit
 
 
 === rpg/maps/cave/rock ===
 
-$69774075054633* Rock
+$69774075054633 Pierre
 
 
 === trans/level_complete_stat_time ===
 
-$39203727515285* Time
+$39203727515285 Temps
 
 
 === trans/levels_counting_signals_RichTextLabel2 ===
 
-$34604121212779*
-[right]Input 1
-Input 2
-Input 3
-Input 4[color=#e49f44]
-Desired output
-Current output[/color][/right]
+$34604121212779
+[right]Entrée 1
+Entrée 2
+Entrée 3
+Entrée 4[color=#e49f44]
+Sortie attendue
+Sortie courante[/color][/right]
 
 
 === trans/level_program_text ===
@@ -1135,10 +1135,10 @@ $41609125516676* [center]Double the number[/center]
 
 === trans/panel_full_adder_input ===
 
-$67545680105541*
-[right]Input 1
-Input 2
-Input 3[/right]
+$67545680105541
+[right]Entrée 1
+Entrée 2
+Entrée 3[/right]
 
 
 === trans/level_delay_level_description ===
@@ -1158,17 +1158,17 @@ $44980627299841* [center]Shoot the space rats![/center]
 
 === components/Input 1B CODE ===
 
-$16878300327380* Instruction
+$16878300327380 Instruction
 
 
 === components/Input32 ===
 
-$31482038708224* 32 Bit Input
+$31482038708224 Entrée 32 Bits
 
 
 === rpg/maps/overworld/fuel ===
 
-$99170934143071* Core fuel
+$99170934143071 Carburant du coeur
 
 
 === trans/panel_and_description ===
@@ -1209,7 +1209,7 @@ of gold somewhere on this ship.
 
 === trans/label_input_input_0 ===
 
-$83039286441109* Input 1
+$83039286441109 Entrée 1
 
 
 === trans/level_constants_description ===
@@ -1237,11 +1237,11 @@ $90098719956554* Key value
 
 === trans/or_gate_RichTextLabel2 ===
 
-$56663370211115*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired output
-Current output[/right]
+$56663370211115
+[right][color=#e49f44]Entrée 1
+Entrée 2[/color]
+Sortie attendue
+Sortie courante[/right]
 
 
 === levels/binary_count_down ===
@@ -1266,22 +1266,22 @@ $23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
 
 === components/Output32 ===
 
-$82172858698449* 32 Bit Output
+$82172858698449 Sortie 32 Bits
 
 
 === trans/panel_on ===
 
-$77349453746493* Always
+$77349453746493 Toujours
 
 
 === trans/level_complete_level_complete ===
 
-$49647690443210* [center]Level Complete[/center]
+$49647690443210 [center]Niveau terminé[/center]
 
 
 === trans/panel_equal_output ===
 
-$15175350110347* Output
+$15175350110347 Sortie
 
 
 === rpg/maps/dance/dancer ===
