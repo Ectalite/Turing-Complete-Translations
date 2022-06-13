@@ -523,7 +523,7 @@ Current output[/right]
 
 === components/Off ===
 
-$61860786587357* OFF
+$61860786587357 OFF
 
 
 === rpg/maps/overworld/tree ===
@@ -1632,7 +1632,7 @@ $47375100278801* [center]PRESS RESET TO TRY AGAIN[/center]
 
 === trans/level_complete_stat_sum ===
 
-$99546064626994* Score
+$99546064626994 Score
 
 
 === trans/panel_output_output_0 ===
@@ -1657,9 +1657,9 @@ $58178852564701* Run (Hotkey: F6)
 
 === nim/backend_lib/level_list ===
 
-$15420972347773* RAM
-$26705128002562* Conditions
-$70993791338383* XOR
+$15420972347773 RAM
+$26705128002562 Conditions
+$70993791338383 XOR
 
 
 === rpg/maps/overworld/chair ===
@@ -2360,12 +2360,12 @@ $80746616574054* Next (Hotkey: F5)
 
 === main_scripts/leg_level ===
 
-$11144256835662* XORi
-$20104629254326* ARGUMENT 2
-$89011349770597* NOT
-$40520283279584* XOR
-$71204580217527* NOTi
-$38681417496680* ARGUMENT 1
+$11144256835662 XORi
+$20104629254326 ARGUMENT 2
+$89011349770597 NOT
+$40520283279584 XOR
+$71204580217527 NOTi
+$38681417496680 ARGUMENT 1
 
 
 === trans/panel_ram_fast_input ===
@@ -2658,7 +2658,7 @@ $91063734228931* Left
 
 === components/XOR ===
 
-$54832952840086* XOR
+$54832952840086 XOR
 
 
 === trans/level_complete_manual_page ===
@@ -2712,7 +2712,7 @@ $65301573705048* Do I have to look at everything?
 
 === components/ON ===
 
-$95896157427528* ON
+$95896157427528 ON
 
 
 === trans/panel_shr_output ===
