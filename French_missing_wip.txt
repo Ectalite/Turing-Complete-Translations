@@ -1,226 +1,227 @@
 === trans/panel_network_output_description ===
 
-$44520675249142*
-[b][color=#39aa49]Event type[/color] (results)[/b]
-[code]0[/code] No new events
-[code]1[/code] [color=#39aa49]Incoming connection[/color] (Connection ID, Port)
-[code]2[/code] [color=#39aa49]Connect complete[/color] 
-[code]3[/code] [color=#39aa49]Receive data[/color] (Connection ID, Data, Data length)
-[code]4[/code] [color=#39aa49]Connection closed[/color] (Connection ID / Error code)
+$44520675249142
+[b][color=#39aa49]Type d'événement[/color] (results)[/b]
+[code]0[/code] Pas de nouvel événement
+[code]1[/code] [color=#39aa49]Connection entrante[/color] (ID Connection, Port)
+[code]2[/code] [color=#39aa49]Connection effectuée[/color] 
+[code]3[/code] [color=#39aa49]Réception de données[/color] (ID Connection, Données, Longueur)
+[code]4[/code] [color=#39aa49]Connection fermée[/color] (ID Connection / Code Erreur)
 
 
 === rpg/maps/unseen_fruit/gulgramush ===
 
-$35182545479584*
-Don't break the walls
-Bad robot
+$35182545479584
+
+Ne casse pas les murs
+Mauvais robot
 
 
 === trans/rpg_complete_chest ===
 
-$59394224080614* [center]Tricksy's chest[/center]
+$59394224080614 [center]Coffre de Tricksy[/center]
 
 
 === trans/rpg_complete_text5 ===
 
-$15921686607849* [center]The slime farm[/center]
+$15921686607849 [center]La ferme visqueuse[/center]
 
 
 === trans/panel_network_outputs ===
 
-$68275268516971*
-Connection ID
-Data / Port / Error code
-Data length
+$68275268516971
+ID Connection
+Données / Port / Code Erreur
+Longueur des Données
 
 
 === trans/rpg_alloy_enter ===
 
-$47375100278801* [center]PRESS RESET TO TRY AGAIN[/center]
+$47375100278801 [center]RÉINITIALISER POUR RÉESSAYER[/center]
 
 
 === rpg/hat_man ===
 
-$31184066972544* Leprechaun Hat
-$35778552177922* Santa's Hat
-$13294635391831* Pharaohs Hat
-$82258891749699* Where did my money go???
-$79556354428080* Custodian Helmet
-$47713748239182* Come again Robot
-$68242068712116* Baseball Cap
-$93275531091074* Cowbot Hat
-$30546444635339* Lady hat
-$60834004183919* Bowler Hat
-$98505468673014* Wide Brim Bucket Hat
-$50407582286574* Police Cap
-$40995289760848* Best Hat
+$31184066972544 Chapeau de Lutin
+$35778552177922 Chapeau du Père Noël
+$13294635391831 Chapeau de Pharaon
+$82258891749699 Où est passé mon argent ???
+$79556354428080 Casque de Gardien
+$47713748239182 Reviens Robot
+$68242068712116 Casquette de Baseball
+$93275531091074 Chapeau de Cowbot
+$30546444635339 Chapeau de Dame
+$60834004183919 Chapeau Melon
+$98505468673014 Bob à large bord
+$50407582286574 Casquette de Police
+$40995289760848 Meilleur Chapeau
 
 
 === misc/specification_dialogue ===
 
-$92046368194170* Condition
+$92046368194170 Condition
 
 
 === trans/panel_dual_load_input ===
 
-$93092890899642*
-[right]Load
-Save
-Address
-Save value
-Load 2
-Address 2[/right]
+$93092890899642
+[right]Lire
+Ecrire
+Adresse
+Ecrire valeur
+Lire 2
+Adresse 2[/right]
 
 
 === trans/panel_register16_inputs ===
 
-$96875261858960*
-[right]Load
-Save
-Save value[/right]
+$96875261858960
+[right]Lire
+Ecrire
+Ecrire valeur[/right]
 
 
 === components/Output1z ===
 
-$82456670459300* 1 Bit Switched Output
+$82456670459300 Sortie commutée 1 bit
 
 
 === trans/rpg_complete_flower ===
 
-$15192250170799* [center]Dumio and Gruliette[/center]
+$15192250170799 [center]Dumio et Gruliette[/center]
 
 
 === trans/panel_output_output_0 ===
 
-$91933395166656* [right]Output 1[/right]
+$91933395166656 [right]Sortie 1[/right]
 
 
 === misc/files_preview ===
 
-$15827374884671* To parent folder
-$14135691870941* Last edit\nSchematics
-$32645745463577* Used in components
-$19184997172542* Used in architectures
-$36200352866864* Last edit
+$15827374884671 Vers le dossier parent
+$14135691870941 Dernière modification\ndes schémas
+$32645745463577 Utilisé dans les composants
+$19184997172542 Utilisé dans les architectures
+$36200352866864 Dernière modification
 
 
 === trans/panel_regred_input ===
 
-$61209423072819*
-[right]Load
-Save
-Save value[/right]
+$61209423072819
+[right]Lire
+Ecrire
+Ecrire valeur[/right]
 
 
 === trans/level_complete_wire_comments ===
 
-$92673421413755*
-[b]Wire comments[/b]
-[color=#cccccc][i]Add comments to your wires.[/i][/color]
+$92673421413755
+[b]Commentaires de fil[/b]
+[color=#cccccc][i]Ajouter des commentaires à vos fils.[/i][/color]
 
 
 === trans/panel_fileloader_offset ===
 
-$78662357115684* [right]Offset[/right]
+$78662357115684 [right]Décalage[/right]
 
 
 === components/Input16 ===
 
-$80992639558333* 16 Bit Input
+$80992639558333 Entrée 16 bits
 
 
 === misc/run ===
 
-$58178852564701* Run (Hotkey: F6)
+$58178852564701 Exécuter (Raccourci : F6)
 
 
 === trans/panel_counter8_input ===
 
-$50035967147203*
-[right]Increment / Overwrite
-Overwrite value[/right]
+$50035967147203
+[right]Incrémenter / Remplacer
+Remplacer la valeur[/right]
 
 
 === rpg/maps/overworld/chair ===
 
-$49457747048031* Chair
-$12275727420074* Do I have to look at everything?
+$49457747048031 Chaise
+$12275727420074 Dois-je tout regarder ?
 
 
 === levels/test_lab ===
 
-$46069044039152* Expected to output {output} (address {address})
-$59234666744501* Expected wire state {state} (address {address})
-$84893616447734* Line {nr}: Linked component at index {index} is not connected
-$19965026621630* Expected output {value} but output not enabled (address {address})
-$95416257208387* Expected custom state {state} (address {address})
-$31718526969901* Expected address {address} to have value {value}
+$46069044039152 Sortie attendue {output} (adresse {address})
+$59234666744501 Etat de fil attendu {state} (adresse {address})
+$84893616447734 Ligne {nr} : Le composant lié {index} n'est pas connecté
+$19965026621630 Sortie attendue {value} mais la sortie n'est pas activée (adresse {address})
+$95416257208387 Etat attendu {state} (adresse {address})
+$31718526969901 Valeur attendue à l'adresse {address} : {value}
 
 
 === rpg/maps/overworld/brambert ===
 
-$23133103699795*
-I work here so I can
-save up to buy Best Hat
+$23133103699795
+Je travaille ici pour pouvoir économiser
+pour acheter le Meilleur Chapeau
 
 
 === trans/panel_output_direction ===
 
-$89612128414294* Label direction
+$89612128414294 Sens de l'étiquette
 
 
 === trans/manual_SpriteDisplay ===
 
-$57792698381638* Sprite display
+$57792698381638 Affichage des Sprites
 
 
 === trans/panel_console_settings ===
 
-$57851464156855*
-Color mode
+$57851464156855
+Mode couleur
 
-Font page
+Première page
 
 
 === rpg/maps/prison/snake ===
 
-$41424386577594* Snake
-$44205554907271* Hiss Hiss Rattle
-$36655099439467* Blood
+$41424386577594 Serpent
+$44205554907271 Ssshhh, Ssshhh, Kss
+$36655099439467 Sang
 
 
 === trans/level_flood_enter ===
 
-$64481408588810* Hit ENTER to show water
+$64481408588810 Appuyez sur ENTREE pour montrer l'eau
 
 
 === trans/panel_matrix_input1 ===
 
-$88358148100771*
-[right]Enable Y
-Pixels / Flush[/right]
+$88358148100771
+[right]Activer Y
+Pixels / Raffraichissement[/right]
 
 
 === trans/manual_robot_controls ===
 
-$94513149242653* Robot controls
+$94513149242653 Contrôles du Robot
 
 
 === misc/expectations_toggle ===
 
-$78508488734457* ON
-$97697026280362* OFF
-$58021874775869* Toggle expectations:
+$78508488734457 ON
+$97697026280362 OFF
+$58021874775869 Activer/désactiver les objectifs
 
 
 === main_scripts/input ===
 
-$10186190492148* ALT click to move wire head
+$10186190492148 Clique + ALT pour déplacer la tête de fil
 
 
 === rpg/maps/prison/control_panel_release ===
 
-$78007210535349* Control panel
+$78007210535349 Panneau de Contrôle
 
 
 === rpg/maps/overworld/griffith ===
@@ -293,23 +294,23 @@ $15089281203426* [center]Instructions[/center]
 
 === rpg/maps/prison/dr_rakoo ===
 
-$62085363571678* Dr. Rakoo
-$41342441528477* Blood
-$31033960272185* I am the esteemed Dr. Rakoo
+$62085363571678 Docteur Rakoo
+$41342441528477 Sang
+$31033960272185 Je suis le célèbre Dr Rakoo
 
 
 === trans/levels_saving_bytes_text ===
 
-$36838510526259*
+$36838510526259
 [right]Action
-Desired state
-Desired output
+Etat attendu
+Sortie attendue
 [/right]
 
 
 === trans/panel_shl_output ===
 
-$75492358516234* Output
+$75492358516234 Sortie
 
 
 === trans/manual_text_ram ===
