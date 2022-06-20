@@ -1,100 +1,3 @@
-=== trans/panel_nor_description ===
-
-$15262147022850 [center]XNOR bit à bit sur 2 entrées[/center]
-
-
-=== rpg/maps/overworld/kligara ===
-
-$78685013556649
-Mon boulot c'est rester vissé devant
-les écrans de contrôle du réacteur
-
-
-=== trans/panel_input_input_1 ===
-
-$82781946969262 Entrée 2
-
-
-=== rpg/maps/overworld/control_panel ===
-
-$94056033073339
-Le capitaine me jettera
-par dessus bord si je touche à ça
-$20128423531070 Panneau de contrôle
-
-
-=== rpg/maps/overworld/crate ===
-
-$37606760989079 Débris
-$78128919991233 Caisse
-
-
-=== rpg/maps/overworld/glob ===
-
-$94714343285743
-Le canon n'était pas calibré
-correctement et nous avons été touché
-par un astéroïde
-
-
-=== rpg/maps/prison/snuffles ===
-
-$38415939620256 Ouaf ouaf
-$58496270566737 Renifleur
-$97846640630713 Sang
-$18282167453919 Ce bon vieux Renifleur
-
-
-=== misc/ui_state_name ===
-
-$41936481068702 Compteur
-$42012207828907 Registre
-
-
-=== trans/panel_program8_1_input ===
-
-$36858295122746 [right]Adresse[/right]
-
-
-=== rpg/maps/overworld/musli ===
-
-$21621435534103 Cela n'a aucun sens.
-$20939310165945
-
-Pourquoi ce carburant sort du coeur
-pour y re-rentrer après ?
-
-
-=== trans/panel_lessu_description ===
-
-$10492822526537 [center]Teste si Entrée 1 < Entrée 2[/center]
-
-
-=== rpg/maps/overworld/purple_flower ===
-
-$70367070546819 Ca ressemble à une fleur
-$91230192040939
-Cela doit être la fleur
-que Gruliette voulait
-
-=== trans/panel_rom_setting ===
-
-$99326144894013 Paramètres
-
-
-=== levels/ai_showdown ===
-
-$91952386315199 ENTREE : VOIR LES COUPS DE L'IA
-$61844622314350 ENTREE : PRENDRE UNE CARTE
-$63022840108406 NAK 02 a pris 1 carte
-$38249859598461 TU AS GAGNE !
-$43263885242501 TU AS PERDU !
-$33425880719824 SELECTIONNE LES CARTES AVEC\nLES TOUCHES FLECHES
-$37273944507773 NAK 02 a pris {nr} cartes
-$86631925987075 ENTREE : PRENDRE {nr} CARTES
-$85996414406804 ENTREE : VOIR LE COUPS DE L'IA
-
-
 === trans/panel_network_output_description ===
 
 $44520675249142*
@@ -1076,11 +979,6 @@ $90120091310928* SUM
 $85656630840972* [right]Output 4[/right]
 
 
-=== trans/levels_byte_or_description ===
-
-$68379799788575* [center]Pairwise OR together each bit[/center]
-
-
 === dialogue/dotMatrixtext_link ===
 
 $82486902873499*
@@ -1088,6 +986,11 @@ The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/
 The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
 
 Both "Enable X" and "Enable Y" have to be on to update the display.
+
+
+=== trans/levels_byte_or_description ===
+
+$68379799788575* [center]Pairwise OR together each bit[/center]
 
 
 === trans/panel_divmod_input ===
