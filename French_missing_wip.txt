@@ -1,229 +1,3 @@
-=== trans/panel_network_output_description ===
-
-$44520675249142
-[b][color=#39aa49]Type d'événement[/color] (results)[/b]
-[code]0[/code] Pas de nouvel événement
-[code]1[/code] [color=#39aa49]Connection entrante[/color] (ID Connection, Port)
-[code]2[/code] [color=#39aa49]Connection effectuée[/color] 
-[code]3[/code] [color=#39aa49]Réception de données[/color] (ID Connection, Données, Longueur)
-[code]4[/code] [color=#39aa49]Connection fermée[/color] (ID Connection / Code Erreur)
-
-
-=== rpg/maps/unseen_fruit/gulgramush ===
-
-$35182545479584
-
-Ne casse pas les murs
-Mauvais robot
-
-
-=== trans/rpg_complete_chest ===
-
-$59394224080614 [center]Coffre de Tricksy[/center]
-
-
-=== trans/rpg_complete_text5 ===
-
-$15921686607849 [center]La ferme visqueuse[/center]
-
-
-=== trans/panel_network_outputs ===
-
-$68275268516971
-ID Connection
-Données / Port / Code Erreur
-Longueur des Données
-
-
-=== trans/rpg_alloy_enter ===
-
-$47375100278801 [center]RÉINITIALISER POUR RÉESSAYER[/center]
-
-
-=== rpg/hat_man ===
-
-$31184066972544 Chapeau de Lutin
-$35778552177922 Chapeau du Père Noël
-$13294635391831 Chapeau de Pharaon
-$82258891749699 Où est passé mon argent ???
-$79556354428080 Casque de Gardien
-$47713748239182 Reviens Robot
-$68242068712116 Casquette de Baseball
-$93275531091074 Chapeau de Cowbot
-$30546444635339 Chapeau de Dame
-$60834004183919 Chapeau Melon
-$98505468673014 Bob à large bord
-$50407582286574 Casquette de Police
-$40995289760848 Meilleur Chapeau
-
-
-=== misc/specification_dialogue ===
-
-$92046368194170 Condition
-
-
-=== trans/panel_dual_load_input ===
-
-$93092890899642
-[right]Lire
-Ecrire
-Adresse
-Ecrire valeur
-Lire 2
-Adresse 2[/right]
-
-
-=== trans/panel_register16_inputs ===
-
-$96875261858960
-[right]Lire
-Ecrire
-Ecrire valeur[/right]
-
-
-=== components/Output1z ===
-
-$82456670459300 Sortie commutée 1 bit
-
-
-=== trans/rpg_complete_flower ===
-
-$15192250170799 [center]Dumio et Gruliette[/center]
-
-
-=== trans/panel_output_output_0 ===
-
-$91933395166656 [right]Sortie 1[/right]
-
-
-=== misc/files_preview ===
-
-$15827374884671 Vers le dossier parent
-$14135691870941 Dernière modification\ndes schémas
-$32645745463577 Utilisé dans les composants
-$19184997172542 Utilisé dans les architectures
-$36200352866864 Dernière modification
-
-
-=== trans/panel_regred_input ===
-
-$61209423072819
-[right]Lire
-Ecrire
-Ecrire valeur[/right]
-
-
-=== trans/level_complete_wire_comments ===
-
-$92673421413755
-[b]Commentaires de fil[/b]
-[color=#cccccc][i]Ajouter des commentaires à vos fils.[/i][/color]
-
-
-=== trans/panel_fileloader_offset ===
-
-$78662357115684 [right]Décalage[/right]
-
-
-=== components/Input16 ===
-
-$80992639558333 Entrée 16 bits
-
-
-=== misc/run ===
-
-$58178852564701 Exécuter (Raccourci : F6)
-
-
-=== trans/panel_counter8_input ===
-
-$50035967147203
-[right]Incrémenter / Remplacer
-Remplacer la valeur[/right]
-
-
-=== rpg/maps/overworld/chair ===
-
-$49457747048031 Chaise
-$12275727420074 Dois-je tout regarder ?
-
-
-=== levels/test_lab ===
-
-$46069044039152 Sortie attendue {output} (adresse {address})
-$59234666744501 Etat de fil attendu {state} (adresse {address})
-$84893616447734 Ligne {nr} : Le composant lié {index} n'est pas connecté
-$19965026621630 Sortie attendue {value} mais la sortie n'est pas activée (adresse {address})
-$95416257208387 Etat attendu {state} (adresse {address})
-$31718526969901 Valeur attendue à l'adresse {address} : {value}
-
-
-=== rpg/maps/overworld/brambert ===
-
-$23133103699795
-Je travaille ici pour pouvoir économiser
-pour acheter le Meilleur Chapeau
-
-
-=== trans/panel_output_direction ===
-
-$89612128414294 Sens de l'étiquette
-
-
-=== trans/manual_SpriteDisplay ===
-
-$57792698381638 Affichage des Sprites
-
-
-=== trans/panel_console_settings ===
-
-$57851464156855
-Mode couleur
-
-Première page
-
-
-=== rpg/maps/prison/snake ===
-
-$41424386577594 Serpent
-$44205554907271 Ssshhh, Ssshhh, Kss
-$36655099439467 Sang
-
-
-=== trans/level_flood_enter ===
-
-$64481408588810 Appuyez sur ENTREE pour montrer l'eau
-
-
-=== trans/panel_matrix_input1 ===
-
-$88358148100771
-[right]Activer Y
-Pixels / Raffraichissement[/right]
-
-
-=== trans/manual_robot_controls ===
-
-$94513149242653 Contrôles du Robot
-
-
-=== misc/expectations_toggle ===
-
-$78508488734457 ON
-$97697026280362 OFF
-$58021874775869 Activer/désactiver les objectifs
-
-
-=== main_scripts/input ===
-
-$10186190492148 Clique + ALT pour déplacer la tête de fil
-
-
-=== rpg/maps/prison/control_panel_release ===
-
-$78007210535349 Panneau de Contrôle
-
-
 === rpg/maps/overworld/griffith ===
 
 $55209338960432*
@@ -292,27 +66,6 @@ $35696974632265* Level map colors
 $15089281203426* [center]Instructions[/center]
 
 
-=== rpg/maps/prison/dr_rakoo ===
-
-$62085363571678 Docteur Rakoo
-$41342441528477 Sang
-$31033960272185 Je suis le célèbre Dr Rakoo
-
-
-=== trans/levels_saving_bytes_text ===
-
-$36838510526259
-[right]Action
-Etat attendu
-Sortie attendue
-[/right]
-
-
-=== trans/panel_shl_output ===
-
-$75492358516234 Sortie
-
-
 === trans/manual_text_ram ===
 
 $10969790213397*
@@ -377,11 +130,6 @@ $57727768059917* This simulator uses (extended) ASCII in a few places. Below are
 $88881816595724* [center]Disable / Enable[/center]
 
 
-=== trans/panel_fulladder_description ===
-
-$25711866218405* [center]Adds 3 inputs[/center]
-
-
 === rpg/maps/overworld/glibob ===
 
 $80046978163833*
@@ -422,6 +170,11 @@ extremely well insulated
 $16108649728007*
 We must all do what we
 can for the rebellion
+
+
+=== trans/panel_fulladder_description ===
+
+$25711866218405* [center]Adds 3 inputs[/center]
 
 
 === levels/circular_dependency_check ===
@@ -870,13 +623,9 @@ $74299241677249* INPUT 1
 $60407971040713* INPUT 2
 
 
-=== rpg/maps/unseen_fruit/control_panel ===
+=== levels/always_on ===
 
-$88166963001775* melons
-$73302376080596* melon
-$66897764153265* I have to be programmed to press this
-$94493068600800* 2 {fruit_plural} were seen before the {fruit}
-$96743644544068* This was the first instance of the {fruit}!
+$50218226879226* This level unlocks your first manual page. This one is important, make sure you understand it.
 
 
 === trans/level_byte_less_i_description ===
@@ -884,9 +633,13 @@ $96743644544068* This was the first instance of the {fruit}!
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
 
 
-=== levels/always_on ===
+=== rpg/maps/unseen_fruit/control_panel ===
 
-$50218226879226* This level unlocks your first manual page. This one is important, make sure you understand it.
+$88166963001775* melons
+$73302376080596* melon
+$66897764153265* I have to be programmed to press this
+$94493068600800* 2 {fruit_plural} were seen before the {fruit}
+$96743644544068* This was the first instance of the {fruit}!
 
 
 === trans/rpg_press_any_key ===
@@ -939,20 +692,6 @@ $70779117877705* Behold the vastness of space
 $12015430928135* Space
 
 
-=== levels/binary_racer ===
-
-$29718660090112* Wrong answer
-$37093663674348* Level {x}
-
-
-=== rpg/maps/prison/sign_1 ===
-
-$88221977354540* Sign
-$74189085130186*
-It says: The button 
-opens the prison doors
-
-
 === trans/panel_network_input_description ===
 
 $36399689035136*
@@ -965,14 +704,30 @@ $36399689035136*
 [code]5[/code] [color=#e49f44]Read next event[/color]
 
 
+=== rpg/maps/prison/sign_1 ===
+
+$88221977354540* Sign
+$74189085130186*
+It says: The button 
+opens the prison doors
+
+
+=== levels/binary_racer ===
+
+$29718660090112* Wrong answer
+$37093663674348* Level {x}
+
+
 === trans/panel_index_bit_index ===
 
 $96885367697181* [right]Index[/right]
 
 
-=== levels/bit_adder ===
+=== trans/panel_divmod_input ===
 
-$90120091310928* SUM
+$48801764966719*
+[right]Enumerator
+Divisor[/right]
 
 
 === trans/panel_output_output_3 ===
@@ -994,11 +749,9 @@ Both "Enable X" and "Enable Y" have to be on to update the display.
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
-=== trans/panel_divmod_input ===
+=== levels/bit_adder ===
 
-$48801764966719*
-[right]Enumerator
-Divisor[/right]
+$90120091310928* SUM
 
 
 === rpg/maps/overworld/reactor_entry ===
@@ -1747,6 +1500,13 @@ $92123299522120* [center]Expected states[/center]
 $36935580253321* [center]Negates the input bitwise[/center]
 
 
+=== trans/manual_text_rgb ===
+
+$52915933943906*
+This simulator uses 3 byte RGB colors for some components. Color are 1 byte each, the byte value determining the intensity of each color: 
+[color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
+
+
 === rpg/maps/overworld/barrel7 ===
 
 $19922359571673* Stew Barrel
@@ -1757,16 +1517,20 @@ $19922359571673* Stew Barrel
 $70464083627337* Label
 
 
-=== trans/manual_text_rgb ===
-
-$52915933943906*
-This simulator uses 3 byte RGB colors for some components. Color are 1 byte each, the byte value determining the intensity of each color: 
-[color=#e3243f]RRRRRRRR[/color][color=#55ff55]GGGGGGGG[/color][color=#3333ff]BBBBBBBB[/color]
-
-
 === trans/level_alu1_code ===
 
 $20619700446604* [center]OR[/center]
+
+
+=== trans/panel_neg_input ===
+
+$92219875545393* [right]Input[/right]
+
+
+=== rpg/maps/overworld/table ===
+
+$53798109572704* It is a table...
+$74345816549611* Table
 
 
 === trans/complete_unlocks ===
@@ -1774,12 +1538,6 @@ $20619700446604* [center]OR[/center]
 
 # When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
 $45250062735373* Unlocks
-
-
-=== rpg/maps/overworld/table ===
-
-$53798109572704* It is a table...
-$74345816549611* Table
 
 
 === components/DivMod8 ===
@@ -1793,11 +1551,6 @@ $44959426271423* Divide
 $29665974488253*
 Output 1
 Output 2
-
-
-=== trans/panel_neg_input ===
-
-$92219875545393* [right]Input[/right]
 
 
 === trans/panel_program_1inputs_label ===
@@ -1862,12 +1615,6 @@ Desired output
 Current output[/right]
 
 
-=== rpg/maps/cave/slime ===
-
-$57665128042496* Slime goo
-$58067186899637* Slime
-
-
 === trans/level_byte_or_text ===
 
 $99465606386164*
@@ -1876,6 +1623,12 @@ $99465606386164*
 Desired output
 Current output
 [/right]
+
+
+=== rpg/maps/cave/slime ===
+
+$57665128042496* Slime goo
+$58067186899637* Slime
 
 
 === trans/panel_decoder1_description ===
