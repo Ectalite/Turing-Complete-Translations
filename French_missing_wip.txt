@@ -1,92 +1,91 @@
 === misc/ide_delete_program ===
 
-$30480928296639* Are you sure you want to delete the program: {program}
+$30480928296639 Es tu sûr de vouloir supprimer le programme : {program} ?
 
 
 === rpg/maps/overworld/purple_flower ===
 
-$25076873142666* Pink flower
+$25076873142666 Fleur rose
 
 
 === trans/component_panel_sprite_input_description ===
 
-$76433786063719*
-[b][color=#e49f44]Command type[/color][/b]
-[code]0[/code] No request
-[code]1[/code] [color=#e49f44]Load sprite[/color]
-[code]2[/code] [color=#e49f44]Set position[/color]
+$76433786063719
+[b][color=#e49f44]Type Commande[/color][/b]
+[code]0[/code] Aucune
+[code]1[/code] [color=#e49f44]Charger le sprite (lutin)[/color]
+[code]2[/code] [color=#e49f44]Définir la position[/color]
 
 
 === rpg/maps/cave/door4 ===
 
-$59392168282288* Dungeon door
+$59392168282288 Porte de Donjon
 
 
 === trans/ide_memory_address ===
 
-$93346467287938* Linked components
+$93346467287938 Composants liés
 
 
 === rpg/hat_man ===
 
-$82997731204414* Great price
-$96765749209775* I love this hat
-$97164370529682* Classic hat
-$85998153437635*
-I will tell people that I stole this
-from a police officer in London
-$26278098578888* Who is Santa?
-$47773161384061* This hat is a bad joke
-$87264083929605* I'm feeling snooty
-$12006162361832* Yihaa
-$35453270895749* Respect my authority
-$94489310827047* I think this hat is cursed
-$13395135491753* Kill me now
+$82997731204414 Prix intéressant
+$96765749209775 J'aime ce chapeau
+$97164370529682 Chapeau classique
+$85998153437635
+Je dirai aux gens que je l'ai volé
+à un policier  à Londres
+$26278098578888 C'est qui ce Noël ?
+$47773161384061 Ce chapeau est une mauvaise blague
+$87264083929605 Je me sens snob
+$12006162361832 Yihaa
+$35453270895749 Respecte mon autorité
+$94489310827047 Je crois que ce chapeau est maudit
+$13395135491753 Tue-moi maintenant
 
 
 === trans/level_byte_xor_description ===
 
-$44752799134543* Pairwise XOR together each bit
+$44752799134543 XOR bit à bit
 
 
 === trans/levels_adding_bytes_description ===
 
-$11219613205997* [center]Add the 2 numbers[/center]
+$11219613205997 [center]Ajoute les 2 nombres[/center]
 
 
 === trans/levels_ram_description ===
 
-$52265749461165* Add the ram block to the wire and complete the level
+$52265749461165 Ajoute le bloc de RAM au circuit et finalise le niveau
 
 
 === trans/component_output_car_label ===
 
 
 #  Label appears on the component and must be 3 letters or less
-$42054040513351* CAR
+$42054040513351 CAR
 
 
 === trans/panel_matrix_input1 ===
 
-$94408716277517*
-[right]Enable Y
-Color[/right]
+$94408716277517
+[right]Activer la couleur Jaune[/right]
 
 
 === components/Ashr16 ===
 
-$73288117008611* Arithmetic Shift right
-$69309153480016* Shifts bits to the right, while maintaining the sign of the number
+$73288117008611 Décalage arithmétique à droite
+$69309153480016 Décale les bits vers la droite, en maintenant le signe du nombre
 
 
 === trans/panel_hdd_size2 ===
 
-$82587023815880* Size (64 bit):
+$82587023815880 Taille (64 bits) :
 
 
 === rpg/maps/prison/control_panel2 ===
 
-$71445934051916* Control panel
+$71445934051916 Panneau de Contrôle
 
 
 === rpg/maps/overworld/griffith ===
