@@ -1,237 +1,14 @@
 === rpg/maps/overworld/griffith ===
 
-$55209338960432
-Va à la ferme visqueuse
-et récupère la gelée gluante
-$96728313107159 Super tu as ramené la gelée
-$96479154941553 Demain je vais aller skier
-$22071068061213 2 de plus et ça ira
-$76381947526292 4 doses de gelées devrait suffire
-$79617816410767 Robot aide moi à finir le travail
-$53961253609599
-Le tonneau sera servi
-plus tard au dîner
-$27173657446279 Quoi attends
-$75126453723590
-Bien tu as ramené 3 doses
-de gelée de la ferme visqueuse
-$31359502586908
-J'ai déjà pris trop d'arrêts maladie
-j'ai besoin d'une vrai bonne excuse
-cette fois
-$37703435616461 Une quête noble
-$95279523937415 encore 2 et ça le fait
-$76778627086258
-Merci de ton aide
-pour finir le travail
-$38680695249087
-Ensuite ajoute tout dans
-le tonneau de ragoût
-derrière le chef
-à la cafétéria
-10482244323050
-Maintenant va porter ça dans
-le tonneau de ragoût de la cuisine
-derrière le chef
-$24977511637567
-Bien tu as ramené 1 dose de gelée
-de la ferme visqueuse
-$80959866769801
-Si nous arrivions à faire
-manger ça à mon patron
-ça résoudrait le problème
-$21601269931093
-Bien tu as ramené 2 doses de gelée
-de la ferme visqueuse
-$28681635150249 Plus qu'une à aller chercher
-$71867966253273
-Manger de la gelée visqueuse
-te rend très agréable
-
-
-=== rpg/maps/unseen_fruit/Gulgramush JR ===
-
-$21404721941060 Savais tu que les terriens mangent avec leur visage ?
-
-
-=== trans/level map colors ===
-
-$35696974632265 Couleurs de la carte des niveaux
-
-
-=== trans/instructions_header ===
-
-$15089281203426 [center]Instructions[/center]
-
-
-=== components/Program4 ===
-
-$99408091907475 La prochaine valeur du compteur {address} ne correspond pas à une adresse de début de code assembleur (avertissement désactivable dans les paramètres)
-
-
-=== levels/Counter ===
-
-$19407121413983 ACTION
-
-
-=== trans/manual_text_ram ===
-
-$10969790213397
-Ce simulateur gère plusieurs types de RAM avec des caractéristiques différentes, comme ce qui existe en vrai.
-
-[b]RAM[/b]
-Le composant RAM peut stocker beaucoup de données, mais ajoute un délai important au circuit.
-
-[b]RAM rapide[/b]
-La RAM rapide a un délai faible, mais coûte beaucoup de portes par octet.
-
-[b]RAM latence[/b]
-La RAM normale a un délai trés élevé, mais au lieu d'attendre à chaque cycle, nous pouvons considérer que les lectures et écritures prennent plusieurs cycles. Le nombre de cycles pour lire et écrire va dépendre de la longueur du cycle. Si par exemple notre circuit a un délai de 100, une lecture prendra 10 cycles car nous devons attendre le délai de 1000.
-
-Une approche courante pour les architectures pipelinées est d'utiliser de la RAM latence comme mémoire principale avec une petite quantité de RAM rapide comme cache. Comme les accès mémoire sont souvent proches ou adjacents (par exemple en itérant sur un tableau), la récupération des valeurs chargées depuis la RAM latence et cachées en RAM Rapide peut vraiment accélérer certains programmes.
-
-La façon la plus simple d'intégrer la RAM latence est de bloquer toute l'architecture jusqu'à la fin de la lecture ou de l'écriture. Une première optimisation à partir de là c'est de se rendre compte qu'on a pas besoin d'attendre la fin des écritures, sauf si on doit relire.
-
-[b]RAM Double Lecture[/b]
-Parfois il est utile de séparer une partie de la logique dans une unité de traitement plus ou moins autonome. Elle peut servir pour gérer un écran ou une connection réseau. Dans ce cas, l'unité indépendante aura souvent besoin de lire ou écrire la mémoire de façon continue alors que le reste de la logique n'a besoin de lire que de temps en temps. Utilise la RAM Double Lecture pour éviter d'avoir à arbitrer les accès simultanés à la RAM.
-
-=== trans/panel_not_input ===
-
-$96578192050623 [right]Entrée[/right]
-
-
-=== trans/panel_register64_inputs ===
-
-$44212297072750
-[right]Lire
-Ecrire
-Ecrire valeur[/right]
-
-
-=== trans/level_decoder_1_RichTextLabel2 ===
-
-$50454539040073
-[right][color=#e49f44]Entrée/color]
-Sortie 1
-Sortie 2[/right]
-
-
-=== component_panels/sprite_display_select_button ===
-
-$18632189666863 Choisis le fichier
-
-
-=== levels/byte_shift ===
-
-$23134220902659 VALEUR
-$29295063752414 DECALER DE
-
-
-=== trans/manual_text_ascii_encoding ===
-
-$57727768059917 Ce simulateur utilise l'ASCII (étendu) à plusieurs reprises. Voici une table des caractères avec le nombre qui leur corresponde. Le terminal gère plusieurs variantes de l'ASCII étendu.
-
-
-=== trans/panel_outputlevel_enable ===
-
-$88881816595724 [center]Activer / Désactiver[/center]
-
-
-=== trans/rpg_hats_looking_at ===
-
-$10758794610945 VISIBLES : 13 CHAPEAUX
+$10482244323050*
+Now go put it in stew barrel
+in the kitchen behind
+the chef
 
 
 === trans/panel_fulladder_description ===
 
-$25711866218405* [center]Ajoute 3 entrées[/center]
-
-
-=== rpg/maps/overworld/glibob ===
-
-$80046978163833
-Trouve Derpoo il doit être
-dans l'herbe près de la ferme visqueuse
-$45824943235521
-Nous voulons faire sauter
-le coeur du réacteur du vaisseau
-$97390820492796
-Ensuite pousse le sur
-le tapis roulant vers
-le réacteur
-$61010950688784 Salut robot, j'ai un secret
-$77669473873198 Merci de tes services camarade
-$78863196560749
-Grand dieu tu vas me demander
-de pousser Derpoo là-dedans ?
-$83512698380440
-Je travaille
-pour la rébellion
-$20029368257424
-Le coeur a une seule faiblesse
-le petit tuyeau d'échappement
-$72328125758268 Ca semble dingue
-$61319894006188
-En effet. Derpoo, la petite
-créature araignée
-$88299738421104
-Laisse moi deviner il
-y a quelque chose comme ça
-sur le vaisseau ?
-thing on the ship?
-$22954462436472
-Tout objet suffisamment petit
-pour passer dans le tuyau sera
-instantanément incinéré sauf s'il
-est extrêmement bien protégé
-$16108649728007
-Nous devons faire tout
-notre possible pour la rébellion
-
-
-=== levels/circular_dependency_check ===
-
-$25155953943906  Correct !
-$32314337981189  Vérifie
-$73467991035922  Sans espoir !
-$22446480186064 Crée une dépendance circulaire incluant au moins 2 composants
-
-
-=== rpg/maps/unseen_fruit/conveyor_belt ===
-
-$45894441609339 Tapis Roulant
-
-
-=== trans/level_complete_level_map ===
-
-$20801641140962
-[b]Mode Carte des Niveaux[/b]
-[color=#cccccc][i]Clique "[color=#e49f44]En avant[/color]" et tu verras[/i][/color]
-
-
-=== trans/complete_flower_4 ===
-
-$86527701695205 [center]APPUIE SUR UNE TOUCHE POUR CONTINUER[/center]
-
-
-=== levels/decoder ===
-
-$82074370773365 INSTRUCTION
-$10169248860836 Decode l'instruction
-
-
-=== levels/bit_inverter ===
-
-$59090842372527 Valeur
-$12399164863741 Oui
-$22283233360163 Inverser
-$66589873978580 Non
-
-
-=== components/SpriteDisplay ===
-
-$27510895774306 écran de sprite multi-couche
-$49278744667468 Ecran de Sprite
+$25711866218405* [center]Adds 3 inputs[/center]
 
 
 === trans/manual_text_short_circuit ===
@@ -920,6 +697,15 @@ $48208190309258* CARRY
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
+=== dialogue/dotMatrixtext_link ===
+
+$82486902873499*
+The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
+The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
+
+Both "Enable X" and "Enable Y" have to be on to update the display.
+
+
 === trans/panel_output_output_3 ===
 
 $85656630840972* [right]Output 4[/right]
@@ -931,15 +717,6 @@ $88221977354540* Sign
 $74189085130186*
 It says: The button 
 opens the prison doors
-
-
-=== dialogue/dotMatrixtext_link ===
-
-$82486902873499*
-The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
-The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
-
-Both "Enable X" and "Enable Y" have to be on to update the display.
 
 
 === rpg/maps/overworld/reactor_entry ===
