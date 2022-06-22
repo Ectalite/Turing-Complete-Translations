@@ -1,93 +1,3 @@
-=== misc/ide_delete_program ===
-
-$30480928296639 Es tu sûr de vouloir supprimer le programme : {program} ?
-
-
-=== rpg/maps/overworld/purple_flower ===
-
-$25076873142666 Fleur rose
-
-
-=== trans/component_panel_sprite_input_description ===
-
-$76433786063719
-[b][color=#e49f44]Type Commande[/color][/b]
-[code]0[/code] Aucune
-[code]1[/code] [color=#e49f44]Charger le sprite (lutin)[/color]
-[code]2[/code] [color=#e49f44]Définir la position[/color]
-
-
-=== rpg/maps/cave/door4 ===
-
-$59392168282288 Porte de Donjon
-
-
-=== trans/ide_memory_address ===
-
-$93346467287938 Composants liés
-
-
-=== rpg/hat_man ===
-
-$82997731204414 Prix intéressant
-$96765749209775 J'aime ce chapeau
-$97164370529682 Chapeau classique
-$85998153437635
-Je dirai aux gens que je l'ai volé
-à un policier  à Londres
-$26278098578888 C'est qui ce Noël ?
-$47773161384061 Ce chapeau est une mauvaise blague
-$87264083929605 Je me sens snob
-$12006162361832 Yihaa
-$35453270895749 Respecte mon autorité
-$94489310827047 Je crois que ce chapeau est maudit
-$13395135491753 Tue-moi maintenant
-
-
-=== trans/level_byte_xor_description ===
-
-$44752799134543 XOR bit à bit
-
-
-=== trans/levels_adding_bytes_description ===
-
-$11219613205997 [center]Ajoute les 2 nombres[/center]
-
-
-=== trans/levels_ram_description ===
-
-$52265749461165 Ajoute le bloc de RAM au circuit et finalise le niveau
-
-
-=== trans/component_output_car_label ===
-
-
-#  Label appears on the component and must be 3 letters or less
-$42054040513351 CAR
-
-
-=== trans/panel_matrix_input1 ===
-
-$94408716277517
-[right]Activer la couleur Jaune[/right]
-
-
-=== components/Ashr16 ===
-
-$73288117008611 Décalage arithmétique à droite
-$69309153480016 Décale les bits vers la droite, en maintenant le signe du nombre
-
-
-=== trans/panel_hdd_size2 ===
-
-$82587023815880 Taille (64 bits) :
-
-
-=== rpg/maps/prison/control_panel2 ===
-
-$71445934051916 Panneau de Contrôle
-
-
 === rpg/maps/overworld/griffith ===
 
 $55209338960432*
@@ -2038,17 +1948,23 @@ $20397881687313* ew_program
 $20619700446604* [center]OR[/center]
 
 
-=== trans/complete_unlocks ===
+=== components/Program64 ===
 
-
-# When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
-$45250062735373* Unlocks
+$38310909505735* Program
+$56360155051962* Next counter value {address} is not the start of an assembly code line (disable this warning in settings)
 
 
 === rpg/maps/overworld/table ===
 
 $53798109572704* It is a table...
 $74345816549611* Table
+
+
+=== trans/complete_unlocks ===
+
+
+# When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
+$45250062735373* Unlocks
 
 
 === components/DivMod8 ===
@@ -2062,12 +1978,6 @@ $44959426271423* Divide
 $29665974488253*
 Output 1
 Output 2
-
-
-=== components/Program64 ===
-
-$38310909505735* Program
-$56360155051962* Next counter value {address} is not the start of an assembly code line (disable this warning in settings)
 
 
 === trans/panel_program_1inputs_label ===
