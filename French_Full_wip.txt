@@ -907,7 +907,7 @@ $41064305626707* Nouvelle règle
 
 === rpg/maps/unseen_fruit/control_panel ===
 
-$65321532772341* omato
+$65321532772341* tomato
 $51110810065199* orange
 $88166963001775* melons
 $22160541540437* pears
@@ -922,7 +922,7 @@ $66897764153265* I have to be programmed to press this
 $22067281046238* golden apple
 $94493068600800* 2 {fruit_plural} were seen before the {fruit}
 $54127406514854* blackberrys
-$94632554265850* omatos
+$94632554265850* tomatos
 $37155502172032* oranges
 $84136665661115* pear
 $26638472067834* apple
@@ -4531,7 +4531,7 @@ $17901039729248* {months} months ago
 $82336838435736* Load
 
 #  This is a file name
-$96230605270081* ew_program
+$96230605270081* new_program
 $42553566189409* {minutes} minutes ago
 $70945526841433* {years} years ago
 $81432548841957* (First test scored)
@@ -5419,7 +5419,7 @@ $70464083627337* Label
 
 === misc/ide_new_program ===
 
-$20397881687313* ew_program
+$20397881687313* new_program
 
 
 === trans/level_alu1_code ===
@@ -6319,7 +6319,7 @@ $39259781619518* Pièce
 
 === trans/manual_matrix_display ===
 
-$86092436010494* Affichage par matrice de points
+$86092436010494* Affichage matriciel
 
 
 === trans/options_music_volume ===
@@ -6985,7 +6985,7 @@ $94199633210330* None
 
 === trans/ticks_sec ===
 
-$16026817441460* icks/sec
+$16026817441460* ticks/sec
 
 
 === rpg/maps/boss_room/tricky ===
@@ -6998,7 +6998,7 @@ $46678960551148* NO NO NO
 $34049297531488* please come come
 $45293657348934* Hahahah
 $44499633447481* I can't wait
-$45196756331738* ricksy
+$45196756331738* tricksy
 $62754542093871* Shoot shoot shoot
 $96717076976482* Turn back. My chest
 $39217019822298* GIGIGIGIGI
