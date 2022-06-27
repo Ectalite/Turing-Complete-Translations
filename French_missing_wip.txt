@@ -1,323 +1,3 @@
-=== trans/level_tower_description ===
-
-$19095794285423 Reconstitue la pile de disques radioactifs
-
-
-=== trans/manual_text_top_the_robot ===
-
-$45646734925323
-L'écran montre le robot et son environnement
-
-[img=430]dialogue/screen.png[/img]
-
-
-=== trans/panel_output_output_0 ===
-
-$44355002441998 Sortie 1
-
-
-=== trans/options_language_disclaimer ===
-
-$72959997258737 Tu dois redémarrer pour que le changement de langue soit pris en compte.
-
-
-=== rpg/maps/overworld/griffith ===
-
-$10482244323050
-Maintenant apporte-le dans
-le tonneau de ragoût
-dans la cuisine
-derrière le chef
-
-
-=== trans/panel_fulladder_description ===
-
-$25711866218405 [center]Ajoute 3 entrées[/center]
-
-
-=== trans/manual_text_short_circuit ===
-
-$31105471890701
-En électronique, deux composants qui émettent des valeurs différentes sur le même fil produisent un court-circuit.
-
-[center][img=100]res://dialogue/short_circuit.png[/img][/center]
-
-Cependant, en déconnectant les pattes de sortie du fil, il est possible de partager le fil (appelé bus) entre plusieurs pattes. Surtout, une seule sortie de composant doit être connectée à chaque cycle, sinon vous risquez le court-circuit.
-
-[center][img]res://dialogue/switch.png[/img][/center]
-
-Dans ce simulateur, les pattes qui peuvent être déconnectées sont grises.
-
-=== levels/decoder ===
-
-
-#  Short because it will become the name of a custom component
-$62618958406279 DEC
-
-
-=== main_scripts/ui ===
-
-$74397786006652 Pattes de sortie
-$26316545288606 Logique
-$31787377521276 16 bits
-$32778241216484 1 bit
-$69169839562869 Sondes
-$56684378975952 Personalisé
-$93805543475022 32 bits
-$69195385009785 64 bits
-$36744990871521 Niveaux
-$60495775939951 IO
-$49451948914812 Maths
-$46598465325525 RAM
-$12972244522540 Ecrans
-$53900277352031 8 bits
-$73356117817137 Pattes de Sortie à trois états
-$79029955304279 Pattes d'Entrée
-$77408777382636 Pattes sans tampon
-
-
-=== levels/call_ret/no ===
-
-$90567812500955 Non
-$82611295916141 Nous attendions mieux de toi.
-
-
-=== trans/level_signed_negator_description ===
-
-$87777776285772 [center]Inverse le signe du nombre[/center]
-
-
-=== trans/level_compute_xor_description ===
-
-$61886892927185 Applique AND sur chaque bit 2 à 2
-
-
-=== rpg/maps/overworld/grenzorp ===
-
-$29100639060467
-Je prétends travailler mais en fait
-je suis en train de jouer à un jeu vidéo
-
-
-=== rpg/maps/overworld/chef (2) ===
-
-$60791074149079 Chef
-
-
-=== main_scripts/overture_level ===
-
-$11338791453100 Dynamique
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$85842797287714 R4
-$92808834805287 Copie l'ENTREE vers la SORTIE
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$81103754316448 IN
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$39748815905832 R2
-
-#  "cond" is for condition, this label has to be 4 letters or less as it has to fit on a component
-$94982725578534 COND
-$93579176707338 Copie ENTREE ({input_val}) vers REG {reg}
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$49076331369118 R5
-$95699170830383 Valeur Immediate {nr} vers REG 0
-$90667501138629 Si REG 3 ≥ 0, compteur = {val}
-$15507583089532 REG {nr} doit avoir la valeur {value}
-$78673238418574 Il manque un composant compteur à ton circuit
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$28690475492473  OUT
-$65651227755356 Au prochain cycle le compteur aura la valeur {actual}, mais on attend {expected}
-$56098077111355 Si REG 3 ≠ 0, compteur = {val}
-$36131297419794 Ne jamais réinitialiser le compteur (Ne rien faire)
-$76213462280109 si REG 3 > 0, compteur = {val}
-$19724825417529 Copie REG {n1} dans REG {n2}
-$75122220982708 Copie REG {n1} vers la SORTIE
-$44533909869936 REG 1 and REG 2 sont des entrées de l'ALU, REG 3 est pour le résultat.\nIl semble que tu utilises REG 0, 1 and 2.
-$51029568177086 Si REG 3 < 0, compteur = {val}
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$73538301913919 R0
-$79405336618718 Valeur Immediate {nr} vers REG 0
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$80997977734042 R3
-
-#  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$37653426314061 R1
-$51099912089198 Compteur = {val}
-$16914143080303 Copie
-$59042824277105 Valeur Immediate
-$82949244692745 Calculer
-$23384670264323 Si REG 3 = 0, compteur = {val}
-$50124579293905 Si REG 3 ≤ 0, compteur = {val}
-
-
-=== rpg/maps/overworld/sasni ===
-
-$60683848498748
-Je ne sais pas pourquoi je
-ne suis pas assis sur ma chaise
-
-
-=== rpg/maps/overworld/barrel ===
-
-$32647427955087 Tonneau
-$15228996460366 Ceci est un tonneau
-
-
-=== trans/panel_console_offset ===
-
-$24810778105207 [right]Décalage[/right]
-
-
-=== trans/panel_keyboard_description ===
-
-$11215841169495 [center]Même si le clavier numérique indique la valeur de la clé actuellement enfoncée, il n'envoie qu'une valeur par cycle ![/center]
-
-
-=== rpg/maps/boss_room/treasure_chest ===
-
-$15644092158788 Butin
-
-
-=== trans/panel_network_inputs ===
-
-$37324411363753
-[right][color=#e49f44]Type de requête[/color]
-IP / ID Connexion
-Donnée / Port
-Taille[/right]
-
-
-=== trans/panel_shl8_input ===
-
-$61388183229084
-[right]Valeur
-Décaler de[/right]
-
-
-=== trans/tooltip_tooltip ===
-
-$48829429502039
-[b]Exécuter rapidement[/b]
-[color=#cccccc][i]Simulation sans mise à jour de l'interface à chaque cycle[/i][/color]
-
-
-=== trans/panel_nand_description ===
-
-$95680138985553 [center]Effectue un NAND binaire entre les deux entrées[/center]
-
-
-=== rpg/maps/overworld/tree ===
-
-$72922820287017 C'est un arbre
-$33509997611554 Arbre
-
-
-=== trans/panel_stack_input ===
-
-$86207640171434
-[right]DEPILER
-EMPILER
-EMPILER valeur[/right]
-
-
-=== rpg/maps/overworld/dumio ===
-
-$90508455672478 Tu es complètement nul
-$90907400518591 Robot tu es tellement efficace
-$84369544816422
-S'il te plait, aide-moi à convaincre
-la belle Gruliette d'aller
-à un rendez-vous avec moi
-$47782962337131
-Gruliette souhaite que
-tu lui offres une fleur rose
-$67886215959856
-Je te serai éternellement reconnaissant
-pour ton aide Robot Héro !
-$70960758502635
-Ah non j'ignore où
-en trouver une
-$48847456759787
-Elle devrait se trouver
-dans ses appartements
-maintenant, tu peux la reconnaitre
-avec sa peau violette délicate.
-$19291216215522 S'il te plait aide moi robot
-$60895426154274
-Super, tu as trouvé la fleur,
-maintenant apporte-la lui.
-$28973657129570 Ca semble médiocre
-$59402894800235 Je sors avec Gruliette
-
-
-=== rpg/maps/overworld/cousin_robert ===
-
-$41316716865633 Je connais Robert...
-$86987136934243 Je suis ton cousin Robert.
-
-
-=== levels/circular_dependency ===
-
-$74003370318715 Vérifie
-
-
-=== misc/level_search ===
-
-$30824356356347 Recherche de niveau
-
-
-=== rpg/maps/unseen_fruit/Sign ===
-
-$96190557871470 Panneau
-$11494676474259
-Ca dit : Robot, be reste pas là à lire les panneaux,
-va chercher le fruit !
-
-
-
-=== components/Ashr8 ===
-
-$45194709458499 Décale les bits vers la droite, en conservant le signe du nombre
-$97418270861318 Décalage arithmétique à droite
-
-
-=== trans/options_language ===
-
-$30910326565868 Langue
-
-
-=== rpg/maps/overworld/chef ===
-
-$70248641743406 Chef
-
-
-=== trans/panel_input_direction ===
-
-$25170203412473 Sens du label
-
-
-=== trans/level_binary_search_description ===
-
-$11976224688780 [center]Retrouve le mot de passe[/center]
-
-
-=== trans/rpg_complete_derpoo ===
-
-$25534025775791 [center]derpoo RIP[/center]
-
-
-=== trans/rpg_decoartion ===
-
-$31542517516487 [center]Les [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] dans la barre supérieure ne sont que des décorations ![/center]
-
-
 === trans/manual_de_morgan ===
 
 $20250843622435*
@@ -630,6 +310,11 @@ $74299241677249* INPUT 1
 $60407971040713* INPUT 2
 
 
+=== levels/always_on ===
+
+$50218226879226* This level unlocks your first manual page. This one is important, make sure you understand it.
+
+
 === rpg/maps/unseen_fruit/control_panel ===
 
 $65321532772341* tomato
@@ -657,11 +342,6 @@ $84136665661115* pear
 === trans/level_byte_less_i_description ===
 
 $21195810950441* [center]Determine if the first input is less than the second.[/center]
-
-
-=== levels/always_on ===
-
-$50218226879226* This level unlocks your first manual page. This one is important, make sure you understand it.
 
 
 === trans/component_panel_latency_RichTextLabel2 ===
@@ -754,6 +434,15 @@ $48208190309258* CARRY
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
+=== dialogue/dotMatrixtext_link ===
+
+$82486902873499*
+The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
+The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
+
+Both "Enable X" and "Enable Y" have to be on to update the display.
+
+
 === trans/panel_output_output_3 ===
 
 $94657695889458* Output 4
@@ -767,23 +456,14 @@ It says: The button
 opens the prison doors
 
 
-=== dialogue/dotMatrixtext_link ===
+=== trans/panel_output_output_1 ===
 
-$82486902873499*
-The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
-The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
-
-Both "Enable X" and "Enable Y" have to be on to update the display.
+$38712851498419* Output 2
 
 
 === rpg/maps/overworld/reactor_entry ===
 
 $81583424078503* Exhaust port
-
-
-=== trans/panel_output_output_1 ===
-
-$38712851498419* Output 2
 
 
 === trans/panel_divmod_input ===
@@ -1802,6 +1482,16 @@ $38310909505735* Program
 $56360155051962* Next counter value {address} is not the start of an assembly code line (disable this warning in settings)
 
 
+=== misc/add_bottom ===
+
+$86446054110623* Add
+
+
+=== trans/panel_neg_input ===
+
+$92219875545393* [right]Input[/right]
+
+
 === rpg/maps/overworld/table ===
 
 $53798109572704* It is a table...
@@ -1815,6 +1505,11 @@ $74345816549611* Table
 $45250062735373* Unlocks
 
 
+=== trans/panel_program_1inputs_label ===
+
+$85358271811851* [right]Edit linked components[/right]
+
+
 === components/DivMod8 ===
 
 $37666366877853* Divide and mod 2 numbers
@@ -1826,21 +1521,6 @@ $44959426271423* Divide
 $29665974488253*
 Output 1
 Output 2
-
-
-=== trans/panel_program_1inputs_label ===
-
-$85358271811851* [right]Edit linked components[/right]
-
-
-=== misc/add_bottom ===
-
-$86446054110623* Add
-
-
-=== trans/panel_neg_input ===
-
-$92219875545393* [right]Input[/right]
 
 
 === trans/level_byte_mux_description ===
@@ -1899,12 +1579,6 @@ $47025412277453* Input 1
 $44017405175202* [center]Replace the input code with the program component.[/center]
 
 
-=== rpg/maps/cave/slime ===
-
-$57665128042496* Slime goo
-$58067186899637* Slime
-
-
 === trans/level_byte_or_text ===
 
 $99465606386164*
@@ -1913,6 +1587,12 @@ $99465606386164*
 Desired output
 Current output
 [/right]
+
+
+=== rpg/maps/cave/slime ===
+
+$57665128042496* Slime goo
+$58067186899637* Slime
 
 
 === trans/level_odd_ticks_RichTextLabel3 ===
@@ -1963,13 +1643,6 @@ $45382684265289* >0
 $48251720560954* Dungeon door
 
 
-=== rpg/maps/overworld/derpoo ===
-
-$86147085986248* HISS
-$46228887292914* GRRR
-$95162531064211* HISS
-
-
 === levels/the_bus ===
 
 $28468611444223* OUT 1
@@ -1988,6 +1661,13 @@ $91318587712792* TO
 $72709070901789* OUT 1
 $36872979988941* IN 0
 $33984298968523* OUT 0
+
+
+=== rpg/maps/overworld/derpoo ===
+
+$86147085986248* HISS
+$46228887292914* GRRR
+$95162531064211* HISS
 
 
 === components/ConfigDelay ===
