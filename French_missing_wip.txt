@@ -1,291 +1,321 @@
+=== trans/level_tower_description ===
+
+$19095794285423 Reconstitue la pile de disques radioactifs
+
+
+=== trans/manual_text_top_the_robot ===
+
+$45646734925323
+L'écran montre le robot et son environnement
+
+[img=430]dialogue/screen.png[/img]
+
+
+=== trans/panel_output_output_0 ===
+
+$44355002441998 Sortie 1
+
+
+=== trans/options_language_disclaimer ===
+
+$72959997258737 Tu dois redémarrer pour que le changement de langue soit pris en compte.
+
+
 === rpg/maps/overworld/griffith ===
 
-$10482244323050*
-Now go put it in stew barrel
-in the kitchen behind
-the chef
+$10482244323050
+Maintenant apporte-le dans
+le tonneau de ragoût
+dans la cuisine
+derrière le chef
 
 
 === trans/panel_fulladder_description ===
 
-$25711866218405* [center]Adds 3 inputs[/center]
+$25711866218405 [center]Ajoute 3 entrées[/center]
 
 
 === trans/manual_text_short_circuit ===
 
-$31105471890701*
-In electronics, two components outputting different values on the same wire causes a short circuit.
+$31105471890701
+En électronique, deux composants qui émettent des valeurs différentes sur le même fil produisent un court-circuit.
 
 [center][img=100]res://dialogue/short_circuit.png[/img][/center]
 
-However, by disconnecting output pins from a wire, it is possible for multiple pins to share the same wire (called a bus). Importantly, at most 1 component output should remain connected each tick, otherwise you risk a short circuit.
+Cependant, en déconnectant les pattes de sortie du fil, il est possible de partager le fil (appelé bus) entre plusieurs pattes. Surtout, une seule sortie de composant doit être connectée à chaque cycle, sinon vous risquez le court-circuit.
 
 [center][img]res://dialogue/switch.png[/img][/center]
 
-In this simulator, pins that can be disconnected are grey.
-
+Dans ce simulateur, les pattes qui peuvent être déconnectées sont grises.
 
 === levels/decoder ===
 
 
 #  Short because it will become the name of a custom component
-$62618958406279* DEC
+$62618958406279 DEC
 
 
 === main_scripts/ui ===
 
-$74397786006652* Output Pins
-$26316545288606* Logic
-$31787377521276* 16bit
-$32778241216484* 1bit
-$69169839562869* Probes
-$56684378975952* Custom
-$93805543475022* 32bit
-$69195385009785* 64bit
-$36744990871521* Levels
-$60495775939951* IO
-$49451948914812* Math
-$46598465325525* RAM
-$12972244522540* Displays
-$53900277352031* 8bit
-$73356117817137* Tristate Output Pins
-$79029955304279* Input Pins
-$77408777382636* Unbuffered Pins
+$74397786006652 Pattes de sortie
+$26316545288606 Logique
+$31787377521276 16 bits
+$32778241216484 1 bit
+$69169839562869 Sondes
+$56684378975952 Personalisé
+$93805543475022 32 bits
+$69195385009785 64 bits
+$36744990871521 Niveaux
+$60495775939951 IO
+$49451948914812 Maths
+$46598465325525 RAM
+$12972244522540 Ecrans
+$53900277352031 8 bits
+$73356117817137 Pattes de Sortie à trois états
+$79029955304279 Pattes d'Entrée
+$77408777382636 Pattes sans tampon
 
 
 === levels/call_ret/no ===
 
-$90567812500955* No
-$82611295916141* We thought better of you.
+$90567812500955 Non
+$82611295916141 Nous attendions mieux de toi.
 
 
 === trans/level_signed_negator_description ===
 
-$87777776285772* [center]Invert the sign of the number[/center]
+$87777776285772 [center]Inverse le signe du nombre[/center]
 
 
 === trans/level_compute_xor_description ===
 
-$61886892927185* Pairwise AND together each bit
+$61886892927185 Applique AND sur chaque bit 2 à 2
 
 
 === rpg/maps/overworld/grenzorp ===
 
-$29100639060467*
-I pretend I am working but I
-am actually playing a computer game
+$29100639060467
+Je prétends travailler mais en fait
+je suis en train de jouer à un jeu vidéo
 
 
 === rpg/maps/overworld/chef (2) ===
 
-$60791074149079* Chef
+$60791074149079 Chef
 
 
 === main_scripts/overture_level ===
 
-$11338791453100* Dynamic
+$11338791453100 Dynamique
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$85842797287714* R4
-$92808834805287* Copy INPUT to OUTPUT
+$85842797287714 R4
+$92808834805287 Copie l'ENTREE vers la SORTIE
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$81103754316448* IN
+$81103754316448 IN
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$39748815905832* R2
+$39748815905832 R2
 
 #  "cond" is for condition, this label has to be 4 letters or less as it has to fit on a component
-$94982725578534* COND
-$93579176707338* Copy INPUT ({input_val}) to REG {reg}
+$94982725578534 COND
+$93579176707338 Copie ENTREE ({input_val}) vers REG {reg}
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$49076331369118* R5
-$95699170830383* Immediate {nr} to REG 0
-$90667501138629* If REG 3 ≥ 0, counter = {val}
-$15507583089532* REG {nr} should have value {value}
-$78673238418574* Your circuit is missing a counter component
+$49076331369118 R5
+$95699170830383 Valeur Immediate {nr} vers REG 0
+$90667501138629 Si REG 3 ≥ 0, compteur = {val}
+$15507583089532 REG {nr} doit avoir la valeur {value}
+$78673238418574 Il manque un composant compteur à ton circuit
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$28690475492473* OUT
-$65651227755356* Next tick the counter value will be {actual}, it should be {expected}
-$56098077111355* If REG 3 ≠ 0, counter = {val}
-$36131297419794* Never overwrite counter (Do nothing)
-$76213462280109* If REG 3 > 0, counter = {val}
-$19724825417529* Copy REG {n1} to REG {n2}
-$75122220982708* Copy REG {n1} to OUTPUT
-$44533909869936* REG 1 and REG 2 are inputs to the ALU, REG 3 is for the result.\nIt looks like you are using REG 0, 1 and 2.
-$51029568177086* If REG 3 < 0, counter = {val}
+$28690475492473  OUT
+$65651227755356 Au prochain cycle le compteur aura la valeur {actual}, mais on attend {expected}
+$56098077111355 Si REG 3 ≠ 0, compteur = {val}
+$36131297419794 Ne jamais réinitialiser le compteur (Ne rien faire)
+$76213462280109 si REG 3 > 0, compteur = {val}
+$19724825417529 Copie REG {n1} dans REG {n2}
+$75122220982708 Copie REG {n1} vers la SORTIE
+$44533909869936 REG 1 and REG 2 sont des entrées de l'ALU, REG 3 est pour le résultat.\nIl semble que tu utilises REG 0, 1 and 2.
+$51029568177086 Si REG 3 < 0, compteur = {val}
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$73538301913919* R0
-$79405336618718* Immediate {nr} to REG 0
+$73538301913919 R0
+$79405336618718 Valeur Immediate {nr} vers REG 0
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$80997977734042* R3
+$80997977734042 R3
 
 #  Keep as short as possible as it has to fit on a component. 2 characters preferably, but 3 if you must
-$37653426314061* R1
-$51099912089198* Counter = {val}
-$16914143080303* Copy
-$59042824277105* Immediate
-$82949244692745* Calculate
-$23384670264323* If REG 3 = 0, counter = {val}
-$50124579293905* If REG 3 ≤ 0, counter = {val}
+$37653426314061 R1
+$51099912089198 Compteur = {val}
+$16914143080303 Copie
+$59042824277105 Valeur Immediate
+$82949244692745 Calculer
+$23384670264323 Si REG 3 = 0, compteur = {val}
+$50124579293905 Si REG 3 ≤ 0, compteur = {val}
 
 
 === rpg/maps/overworld/sasni ===
 
-$60683848498748*
-I don't know why I'm 
-not sitting on my chair
+$60683848498748
+Je ne sais pas pourquoi je
+ne suis pas assis sur ma chaise
 
 
 === rpg/maps/overworld/barrel ===
 
-$32647427955087* Barrel
-$15228996460366* This is a barrel
+$32647427955087 Tonneau
+$15228996460366 Ceci est un tonneau
 
 
 === trans/panel_console_offset ===
 
-$24810778105207* [right]Offset[/right]
+$24810778105207 [right]Décalage[/right]
 
 
 === trans/panel_keyboard_description ===
 
-$11215841169495* [center]Although the keypad shows the value of the currently pressed key, it only actually outputs on a regular tick![/center]
+$11215841169495 [center]Même si le clavier numérique indique la valeur de la clé actuellement enfoncée, il n'envoie qu'une valeur par cycle ![/center]
 
 
 === rpg/maps/boss_room/treasure_chest ===
 
-$15644092158788* Loot
+$15644092158788 Butin
 
 
 === trans/panel_network_inputs ===
 
-$37324411363753*
-[right][color=#e49f44]Request type[/color]
-IP / Connection ID
-Data / Port
-Data length[/right]
+$37324411363753
+[right][color=#e49f44]Type de requête[/color]
+IP / ID Connexion
+Donnée / Port
+Taille[/right]
 
 
 === trans/panel_shl8_input ===
 
-$61388183229084*
-[right]Value
-Shift by[/right]
+$61388183229084
+[right]Valeur
+Décaler de[/right]
 
 
 === trans/tooltip_tooltip ===
 
-$48829429502039*
-[b]Run fast[/b]
-[color=#cccccc][i]Run your computer without updating the UI at each tick[/i][/color]
+$48829429502039
+[b]Exécuter rapidement[/b]
+[color=#cccccc][i]Simulation sans mise à jour de l'interface à chaque cycle[/i][/color]
 
 
 === trans/panel_nand_description ===
 
-$95680138985553* [center]Bitwise NANDs two inputs[/center]
+$95680138985553 [center]Effectue un NAND binaire entre les deux entrées[/center]
 
 
 === rpg/maps/overworld/tree ===
 
-$72922820287017* It is a tree
-$33509997611554* Tree
+$72922820287017 C'est un arbre
+$33509997611554 Arbre
 
 
 === trans/panel_stack_input ===
 
-$86207640171434*
-[right]POP
-PUSH
-PUSH value[/right]
+$86207640171434
+[right]DEPILER
+EMPILER
+EMPILER valeur[/right]
 
 
 === rpg/maps/overworld/dumio ===
 
-$90508455672478* You are completely useless
-$90907400518591* Robot you are so persuasive
-$84369544816422*
-Please help me convince the 
-beautiful Gruliette to go 
-on a date with me
-$47782962337131*
-Gruliette wants you to
-give her a pink flower
-$67886215959856*
-I am eternally grateful for
-your help HeroBot!
-$70960758502635*
-Oh no I don't know
-where to get one
-$48847456759787*
-She should be in her
-quarters now, you can recognize
- her by her lovely purple skin
-$19291216215522* Please help me robot
-$60895426154274*
-Great, you found the flower,
-now give it to her
-$28973657129570* Sounds lame
-$59402894800235* I am now dating Gruliette
+$90508455672478 Tu es complètement nul
+$90907400518591 Robot tu es tellement efficace
+$84369544816422
+S'il te plait, aide-moi à convaincre
+la belle Gruliette d'aller
+à un rendez-vous avec moi
+$47782962337131
+Gruliette souhaite que
+tu lui offres une fleur rose
+$67886215959856
+Je te serai éternellement reconnaissant
+pour ton aide Robot Héro !
+$70960758502635
+Ah non j'ignore où
+en trouver une
+$48847456759787
+Elle devrait se trouver
+dans ses appartements
+maintenant, tu peux la reconnaitre
+avec sa peau violette délicate.
+$19291216215522 S'il te plait aide moi robot
+$60895426154274
+Super, tu as trouvé la fleur,
+maintenant apporte-la lui.
+$28973657129570 Ca semble médiocre
+$59402894800235 Je sors avec Gruliette
 
 
 === rpg/maps/overworld/cousin_robert ===
 
-$41316716865633* I know Robert...
-$86987136934243* I am your cousin Robert.
+$41316716865633 Je connais Robert...
+$86987136934243 Je suis ton cousin Robert.
 
 
 === levels/circular_dependency ===
 
-$74003370318715* Check
+$74003370318715 Vérifie
 
 
 === misc/level_search ===
 
-$30824356356347* Level search
+$30824356356347 Recherche de niveau
 
 
 === rpg/maps/unseen_fruit/Sign ===
 
-$96190557871470* Sign
-$11494676474259*
-It says: Don't stand around reading signs robot!
-Go check on the fruit
+$96190557871470 Panneau
+$11494676474259
+Ca dit : Robot, be reste pas là à lire les panneaux,
+va chercher le fruit !
+
 
 
 === components/Ashr8 ===
 
-$45194709458499* Shifts bits to the right, while maintaining the sign of the number
-$97418270861318* Arithmetic Shift right
+$45194709458499 Décale les bits vers la droite, en conservant le signe du nombre
+$97418270861318 Décalage arithmétique à droite
+
+
+=== trans/options_language ===
+
+$30910326565868 Langue
 
 
 === rpg/maps/overworld/chef ===
 
-$70248641743406* Chef
+$70248641743406 Chef
 
 
 === trans/panel_input_direction ===
 
-$25170203412473* Label direction
+$25170203412473 Sens du label
 
 
 === trans/level_binary_search_description ===
 
-$11976224688780* [center]Recover the passcode[/center]
+$11976224688780 [center]Retrouve le mot de passe[/center]
 
 
 === trans/rpg_complete_derpoo ===
 
-$25534025775791* [center]RIP derpoo[/center]
+$25534025775791 [center]derpoo RIP[/center]
 
 
 === trans/rpg_decoartion ===
 
-$31542517516487* [center]The [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] in the top bar are decoration only![/center]
+$31542517516487 [center]Les [i][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][img]res://rpg/heart.png[/img][/i] dans la barre supérieure ne sont que des décorations ![/center]
 
 
 === trans/manual_de_morgan ===
@@ -437,6 +467,11 @@ $44556588975494* [right]Read next[/right]
 $76111330686725* This door is locked
 
 
+=== trans/level_capitalize_description ===
+
+$31869433910274* Capitalize each planet name
+
+
 === rpg/maps/overworld/captain_grog ===
 
 $54304087865803* Shields up, jump to hyperspace!
@@ -465,6 +500,13 @@ $76218421577794* Sign
 $79367841142406* Clock signal
 
 
+=== trans/level_robot_racing_description ===
+
+$67533273328897*
+Move the robot through the track
+Use the smallest program you can
+
+
 === nim/backend ===
 
 $64492620873138* Always output
@@ -481,7 +523,7 @@ $18300496139706* 1 month ago
 $17901039729248* {months} months ago
 
 #  This is a file name
-$96230605270081* ew_program
+$96230605270081* new_program
 $82336838435736* Load
 $42553566189409* {minutes} minutes ago
 $70945526841433* {years} years ago
@@ -590,7 +632,7 @@ $60407971040713* INPUT 2
 
 === rpg/maps/unseen_fruit/control_panel ===
 
-$65321532772341* omato
+$65321532772341* tomato
 $51110810065199* orange
 $88166963001775* melons
 $22160541540437* pears
@@ -605,7 +647,7 @@ $66897764153265* I have to be programmed to press this
 $94493068600800* 2 {fruit_plural} were seen before the {fruit}
 $22067281046238* golden apple
 $54127406514854* blackberrys
-$94632554265850* omatos
+$94632554265850* tomatos
 $37155502172032* oranges
 $96743644544068* This was the first instance of the {fruit}!
 $26638472067834* apple
@@ -712,18 +754,9 @@ $48208190309258* CARRY
 $68379799788575* [center]Pairwise OR together each bit[/center]
 
 
-=== dialogue/dotMatrixtext_link ===
-
-$82486902873499*
-The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
-The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
-
-Both "Enable X" and "Enable Y" have to be on to update the display.
-
-
 === trans/panel_output_output_3 ===
 
-$85656630840972* [right]Output 4[/right]
+$94657695889458* Output 4
 
 
 === rpg/maps/prison/sign_1 ===
@@ -734,9 +767,23 @@ It says: The button
 opens the prison doors
 
 
+=== dialogue/dotMatrixtext_link ===
+
+$82486902873499*
+The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
+The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
+
+Both "Enable X" and "Enable Y" have to be on to update the display.
+
+
 === rpg/maps/overworld/reactor_entry ===
 
 $81583424078503* Exhaust port
+
+
+=== trans/panel_output_output_1 ===
+
+$38712851498419* Output 2
 
 
 === trans/panel_divmod_input ===
@@ -758,17 +805,17 @@ $36399689035136*
 [code]5[/code] [color=#e49f44]Read next event[/color]
 
 
+=== misc/add_code_name ===
+
+$57358078712675* Save
+
+
 === misc/skipped_custom ===
 
 $38174137226538* Select component
 
 #  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
 $99860977387728* Go to location
-
-
-=== misc/add_code_name ===
-
-$57358078712675* Save
 
 
 === trans/level_complete_profile ===
@@ -786,11 +833,6 @@ haven't even had their first robot
 insurrection yet?
 
 
-=== trans/rpg_press_any_key ===
-
-$66322253595450* [center]Press any key to try again[/center]
-
-
 === rpg/maps/spacial_invasion/space_rat ===
 
 $72504258410857* The space rats got too close
@@ -798,9 +840,9 @@ $94470860110909* Space rat
 $67254986543263* Had I been programmed to do this\nthis would have completed the level
 
 
-=== trans/panel_decoder3_output ===
+=== trans/rpg_press_any_key ===
 
-$41412072467493* Only 1 turns on
+$66322253595450* [center]Press any key to try again[/center]
 
 
 === trans/panel_switch_enable ===
@@ -816,9 +858,19 @@ $47585933412781*
 Save value[/right]
 
 
+=== trans/panel_decoder3_output ===
+
+$41412072467493* Only 1 turns on
+
+
 === levels/saving_bytes ===
 
 $10080722944246* DON'T SAVE
+
+
+=== trans/panel_output_output_2 ===
+
+$33211646632666* Output 3
 
 
 === component_panels/Input3Conditions ===
@@ -915,6 +967,11 @@ $73286408216451* Crate
 $28875169677730* Debris
 
 
+=== trans/manual_network_label ===
+
+$90392202103470* Input an IP here to convert it to an integer
+
+
 === trans/panel_rol_input ===
 
 $95166818170185*
@@ -990,6 +1047,7 @@ $78812572100236* [center]Pixels / Flush[/center]
 $35675567872962* Counter does nothing with a 0 increment
 $94410251595979* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
 $39385804477995* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
+$83854326413007* Custom component "{name}" has changed size and was removed from the schematic because it no longer fits.
 
 
 === ui/global_translations ===
@@ -1308,7 +1366,7 @@ Input
 
 === trans/ticks_sec ===
 
-$16026817441460* icks/sec
+$16026817441460* ticks/sec
 
 
 === rpg/maps/boss_room/tricky ===
@@ -1322,7 +1380,7 @@ $34049297531488* please come come
 $45293657348934* Hahahah
 $62754542093871* Shoot shoot shoot
 $44499633447481* I can't wait
-$45196756331738* ricksy
+$45196756331738* tricksy
 $96717076976482* Turn back. My chest
 $39217019822298* GIGIGIGIGI
 $83023298467462* GIGIGIGIG
@@ -1730,7 +1788,7 @@ This simulator uses 3 byte RGB colors for some components. Color are 1 byte each
 
 === misc/ide_new_program ===
 
-$20397881687313* ew_program
+$20397881687313* new_program
 
 
 === trans/level_alu1_code ===
@@ -1809,7 +1867,6 @@ $52720470197560* Condition
 $58135326697989* Output
 $45098916684469* Never
 $69871887031160* Result
-$38941401974657* AND
 $77964040770330* ADD
 $90287016519308* UNUSED
 $17900992684779* Input
@@ -1943,5 +2000,10 @@ $84124565448643* Adds a configurable amount of delay. Useful for delay debugging
 
 $42657221816637* Divide and mod 2 numbers
 $22319923069746* Divide
+
+
+=== trans/level_sorter_description ===
+
+$60186094365455* Sort the values
 
 
