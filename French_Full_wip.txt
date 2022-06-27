@@ -785,7 +785,7 @@ $92739814679396* Bass up
 
 === trans/not_gate_click_next2 ===
 
-$20820887361993* Click "Next tick" to see
+$20820887361993* Clique "Cycle suivant" pour voir
 
 
 === trans/panel_hdd_input ===
@@ -811,7 +811,7 @@ $72687692653533*
 
 === rpg/maps/prison/sign2 ===
 
-$76218421577794* Sign
+$76218421577794* Panneau
 
 
 === components/Counter32 ===
@@ -916,31 +916,31 @@ $41064305626707* Nouvelle règle
 
 === rpg/maps/unseen_fruit/control_panel ===
 
-$65321532772341* tomato
+$65321532772341* tomate
 $51110810065199* orange
 $88166963001775* melons
-$22160541540437* pears
-$74579380431603* golden apples
+$22160541540437* poires
+$74579380431603* pommes golden
 $66873855446862* kiwi
 $73302376080596* melon
 $32979920031183* kiwis
-$15870062259126* blackberry
-$70171621231240* Control panel
-$60591101734432* apples
-$66897764153265* I have to be programmed to press this
-$22067281046238* golden apple
-$94493068600800* 2 {fruit_plural} were seen before the {fruit}
-$54127406514854* blackberrys
-$94632554265850* tomatos
+$15870062259126* mûres
+$70171621231240* panneau de Contrôle
+$60591101734432* pommes
+$66897764153265* Je dois être programmé pour appuyer ainsi
+$22067281046238* pomme golden
+$94493068600800* 2 {fruit_plural} ont été vus avant {fruit}
+$54127406514854* mûres
+$94632554265850* tomates
 $37155502172032* oranges
-$84136665661115* pear
-$26638472067834* apple
-$96743644544068* This was the first instance of the {fruit}!
+$84136665661115* poire
+$26638472067834* pomme
+$96743644544068* C'est la première apparition de {fruit} !
 
 
 === levels/always_on ===
 
-$50218226879226* This level unlocks your first manual page. This one is important, make sure you understand it.
+$50218226879226* Ce niveau débloque ta première page de manuel. Elle est importante, fais en sorte de bien la comprendre.
 $17712385236630* Réalise un circuit qui est toujours [ON].
 
 
@@ -954,20 +954,20 @@ $94261690850981*
 === trans/level_complete_gate ===
 
 $99373213759665*
-[b]Gate score[/b]
-[color=#cccccc][i]You can now view the gate score of  wires and components.[/i][/color]
+[b]Score Porte[/b]
+[color=#cccccc][i]Tu peux maintenant voir le Score Porte de tes circuits et composants.[/i][/color]
 
 
 === components/ByteEqual ===
 
-$35668435514829* Checks if the two inputs are equal
-$39369982838671* Equal
+$35668435514829* Détermine si les deux entrées sont égales
+$39369982838671* Egalité
 
 
 === levels/binary_racer ===
 
 $16076448195257* Ce niveau est mon passe-temps favori. Convertir du décimal au binaire en temps limité.
-$29718660090112* Wrong answer
+$29718660090112* Mauvaise réponse
 $37319690622142* Très bien, tu as atteint le niveau {current_level}.
 $19111664765554*
 Modifie les bits dans le panneau afin qu'ils représentent le nombre décimal demandé.
@@ -977,7 +977,7 @@ Tu dois atteindre le niveau 3 pour réussir.
 (cliques [color=#e63e5b][url=accessibility\\_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours.)
 $11176073682097* Combien fait {number} en binaire ?
 $71866932309393* Tu as atteint le niveau {level} !
-$37093663674348* Level {x}
+$37093663674348* Niveau {x}
 
 
 === components/Mul64 ===
@@ -988,8 +988,8 @@ $11665562499390* Multiplie deux entrées
 
 === rpg/maps/overworld/space ===
 
-$70779117877705* Behold the vastness of space
-$12015430928135* Space
+$70779117877705* Regarde l'immensité de l'espace
+$12015430928135* Espace
 
 
 === levels/xor_gate ===
@@ -1000,8 +1000,8 @@ $19182751521677* Dans le dernier niveau tu as réalisé un circuit qui était [O
 
 === components/Bidirectional64 ===
 
-$82412839066570* 64 bit Bidirectional Pin
-$24932613021646* Can circumvent certain circular dependency errors
+$82412839066570* Patte bidirectionnelle 64 bits
+$24932613021646* Peut contourner certaines erreurs de dépendance circulaire
 
 
 === trans/panel_network_input_description ===
@@ -1068,7 +1068,7 @@ $94657695889458* Output 4
 
 === trans/panel_decoder3_output ===
 
-$41412072467493* Only 1 turns on
+$41412072467493* Seulement 1 s'active
 
 
 === rpg/maps/prison/prision_door ===
@@ -1095,9 +1095,9 @@ $12639868461113* Quitter
 
 === rpg/maps/spacial_invasion/space_rat ===
 
-$72504258410857* The space rats got too close
-$94470860110909* Space rat
-$67254986543263* Had I been programmed to do this\nthis would have completed the level
+$72504258410857* Les rats de l'espace sont arrivés trop près
+$94470860110909* Rat de l'Espace
+$67254986543263* Si j'avais été programmé pour faire cela\ncela aurait terminé le niveau
 
 
 === trans/panel_fulladder_output ===
@@ -1119,7 +1119,7 @@ $65362728703588* MEMOIRE
 
 === trans/panel_output_output_2 ===
 
-$33211646632666* Output 3
+$33211646632666* Sortie 3
 
 
 === trans/ide_add_assembly_header ===
@@ -1190,7 +1190,7 @@ $66590147372797* NAND bit à bit de 2 entrées
 
 === misc/run_fast ===
 
-$54853798559740* Run faster (right click: change target speed)
+$54853798559740* Exécuter plus vite (clic droit : modifier la vitesse cible)
 
 
 === misc/confirm_factory_reset ===
@@ -1205,7 +1205,7 @@ $61047424972631* Toujours
 
 === component_panels/Output8zLevel ===
 
-$35707954769868* Not enabled
+$35707954769868* Non activé
 
 
 === components/Nor64 ===
@@ -1228,7 +1228,7 @@ $65281182019602* [center]Bitwise ORs two inputs[/center]
 
 === trans/panel_input_input_3 ===
 
-$21321167572284* Input 4
+$21321167572284* Entrée 4
 
 
 === levels/Delicious Order ===
@@ -1245,14 +1245,14 @@ $82876546747608* Égalité
 
 === trans/manual_network_label ===
 
-$90392202103470* Input an IP here to convert it to an integer
+$90392202103470* Saisi une IP ici pour la convertir en 1 entier
 
 
 === trans/panel_rol_input ===
 
 $95166818170185*
-[right]Value
-Rotate by[/right]
+[right]Valeur
+Rotation de[/right]
 
 
 === trans/manual_component_factory ===
@@ -2746,8 +2746,8 @@ La solution n'obtient pas de score.
 $58769207148712* Composant
 
 #  Level type for the level complete menu
-$90134890578411* Misc
-$68327708695625* [b]Manual Entry[/b]\n\n Entry: [color=#68d277]{page}[/color]
+$90134890578411* Divers
+$68327708695625* [b]Entrée de Manuel[/b]\n\n Entrée : [color=#68d277]{page}[/color]
 
 #  Level type for the level complete menu
 $69219742310717* Architecture
@@ -2770,7 +2770,7 @@ $46223559629673* Octets
 
 === component_panels/Counter ===
 
-$42544828625264* Counter does nothing with a 0 increment
+$42544828625264* Le compteur ne fonctionne pas avec un incrément de 0
 $57936010210151* Incrementer de : {amount}
 
 
@@ -2803,8 +2803,8 @@ Sortie courante[/right]
 
 === rpg/maps/overworld/captain_grog ===
 
-$54304087865803* Shields up, jump to hyperspace!
-$28819210888759* Captain Grog
+$54304087865803* Activez boucliers, sautez dans l'hyperexpace !
+$28819210888759* Capitaine Grog
 
 
 === trans/panel_nand ===
@@ -2840,7 +2840,7 @@ $64744152268407* Niveau
 
 === components/Output64z ===
 
-$35798118634001* 64 Bit Switched Output
+$35798118634001* Sortie commutée 64 Bits
 $42506906257154* Sortie activée seulement quand la patte d'activation est [ON]
 
 
@@ -2958,15 +2958,15 @@ Modern computers are not built entirely of just one of the universal gates, but 
 
 === rpg/maps/overworld/slime ===
 
-$15692058001120* Slime
-$69726620971060* Picked up all the goo I need
-$87592944464187* Picked up goo, {nr} more to go
-$44317276399194* Slime goo
+$15692058001120* Bave
+$69726620971060* J'ai ramassé toute la gelée nécessaire
+$87592944464187* Gelée ramasée, encore {nr} à trouver
+$44317276399194* Gelée baveuse
 
 
 === trans/panel_segment_info ===
 
-$64695289448271* The 8 bits of the value each turn on 1 of the 8 areas of the display.
+$64695289448271* Les 8 bits de la valeur activent chacun une des 8 zones de l'afficheur.
 
 
 === trans/inputlevel_enable ===
@@ -3038,7 +3038,7 @@ $19109563882664* NE PAS CHARGER
 $16372198430230* SAUVEGARDER
 $11467279617581* SAUVEGARDER
 $15498440508450* Ne rien faire
-$10080722944246* DON'T SAVE
+$10080722944246* NE PAS ECRIRE
 $15582618410991* CHARGER ET SAUVEGARDER
 $18873598212433* CHARGER
 
@@ -3051,13 +3051,13 @@ $12641789008694* Créez un système qui sortira toujours le nombre 164.
 === trans/panel_ram_fast_input ===
 
 $80778301064570*
-[right]Load
-Save
-Address
-Save value
-Save value
-Save value
-Save value[/right]
+[right]Lire
+Ecrire
+Adresse
+Ecrire valeur
+Ecrire valeur
+Ecrire valeur
+Ecrire valeur[/right]
 
 
 === levels/odd_ticks ===
@@ -3258,19 +3258,19 @@ $23959994711260* Ready to race?
 
 === trans/level_capitalize_input ===
 
-$23002150617591* Input
+$23002150617591* Entrée
 
 
 === trans/panel_mul_output ===
 
 $55253255963402*
-Lower half
-Upper half
+Moité inférieure
+Moitié supérieure
 
 
 === trans/panels_config_delay_delay ===
 
-$52499013005170* [right]Delay[/right]
+$52499013005170* [right]Delai[/right]
 
 
 === rpg/maps/unseen_fruit/Lolbert ===
@@ -3309,13 +3309,13 @@ Sortie actuelle
 
 === components/Output16 ===
 
-$48008022162230* 16 Bit Output
+$48008022162230* Sortie 16 Bits
 
 
 === rpg/maps/overworld/book_shelf ===
 
-$29366577532389* Bookshelf
-$26595142082551* A fine bookshelf
+$29366577532389* Etagère
+$26595142082551* Une belle étagère
 
 
 === components/Input 3 ===
@@ -3330,7 +3330,7 @@ $88238310953306* Couper
 
 === trans/panel_network_next_event ===
 
-$80836714383432* Next [color=#39aa49]Event type[/color]
+$80836714383432* Prochain [color=#39aa49]Type Evenement[/color]
 
 
 === rpg/maps/overworld/gruliette ===
@@ -3358,7 +3358,7 @@ $35813418867082* That's random
 
 === trans/manual_text_top_truth ===
 
-$83283949590490* AND gate
+$83283949590490* porte AND
 
 
 === trans/panel_fileloader_description ===
@@ -4405,7 +4405,7 @@ Sortie courante[/right]
 
 === components/Output16z ===
 
-$54782010205016* 16 Bit Switched Output
+$54782010205016* Sortie commutée 16 Bits
 $54278394672948* Sortie activée seulement si la patte d'activation est [ON]
 
 
@@ -4458,13 +4458,13 @@ Nous allons vous mettre tous les deux en équipe, vous êtes assez bien complém
 
 === component_panels/FileRom ===
 
-$28789952270889* None
-$89182778159982* Current file: {file_name}
+$28789952270889* Aucun
+$89182778159982* Fichier courant : {file_name}
 
 
 === trans/level_capitalize_description ===
 
-$31869433910274* Capitalize each planet name
+$31869433910274* Ajoute une majuscule à chaque nom de planète
 
 
 === trans/panel_keyboard_left ===
@@ -4475,7 +4475,7 @@ $44556588975494* [right]Read next[/right]
 === rpg/maps/unseen_fruit/door ===
 
 $40261193416765* Porte
-$76111330686725* This door is locked
+$76111330686725* Cette porte est verrouillée
 
 
 === misc/component_factory_toggle ===
@@ -4491,7 +4491,7 @@ $84789919073603* [center]Always output the number 164[/center]
 === components/Output8z ===
 
 $58449766432492* Sortie activée seulement si la patte d'activation est [ON]
-$66776427840721* 8 Bit Switched Output
+$66776427840721* Sortie commutée 8 Bits
 
 
 === trans/map_basic_logic ===
@@ -4587,7 +4587,7 @@ Use the smallest program you can
 
 === trans/panels_clock_output ===
 
-$79367841142406* Clock signal
+$79367841142406* Signal d'Horloge
 
 
 === misc/program_edit_button ===
@@ -4622,7 +4622,7 @@ $26727645933234* AND 16 bits
 
 === trans/manual_De Morgan's laws ===
 
-$67837328811108* De Morgan's laws
+$67837328811108* Lois de De Morgan
 
 
 === trans/level_capitalize_output ===
@@ -4632,7 +4632,7 @@ $37037455015862* Sortie
 
 === trans/rpg_press_any_key ===
 
-$66322253595450* [center]Press any key to try again[/center]
+$66322253595450* [center]Appuie sur une touche pour réessayer[/center]
 
 
 === components/And64 ===
@@ -4657,16 +4657,15 @@ Octet 8
 === rpg/maps/overworld/ogoxo101 ===
 
 $71158910763961*
-Did you know earthlings
-haven't even had their first robot
-insurrection yet?
+Savais tu que les terriens
+n'ont pas encore eu leur première insurrection de robots ?
 
 
 === levels/bit_adder ===
 
 $13109388951000* Nous mesurons l'univers avec des nombres. Donc ta machine doit apprendre à compter.
-$90120091310928* SUM
-$48208190309258* CARRY
+$90120091310928* SOMME
+$48208190309258* RETENUE
 $16564356062672*
 Considère que les entrées sont [ZERO] ou [ONE] en fonction de leur valeur [OFF] ou [ON]. Additionne-les-en binaire, de sorte que le résultat soit [ZERO] ou [ONE].
 
@@ -4710,15 +4709,15 @@ $81707212583931* Disponible
 
 === trans/panel_switch_enable ===
 
-$84515289220335* [right]Enable[/right]
+$84515289220335* [right]Activer[/right]
 
 
 === trans/panel_bitmemory_inputs ===
 
 $47585933412781*
-[right]Save enable
+[right]Activer l'écriture
 
-Save value[/right]
+Ecrire valeur[/right]
 
 
 === trans/options_window_mode ===
@@ -4759,14 +4758,14 @@ $81929942356043* Sortie
 
 === component_panels/Input3Conditions ===
 
-$26016934287702* ALWAYS
+$26016934287702* TOUJOURS
 $23280572780712* JAMAIS
-$41356418485569* VALUE≥0
-$66462144102272* VALUE=0
-$62118687143343* VALUE≤0
-$60761142691177* VALUE>0
-$94629088310936* VALUE≠0
-$45120343226481* VALUE<0
+$41356418485569* VALEUR≥0
+$66462144102272* VALEUR=0
+$62118687143343* VALEUR≤0
+$60761142691177* VALEUR>0
+$94629088310936* VALEUR≠0
+$45120343226481* VALEUR<0
 
 
 === misc/solution_option ===
@@ -4832,8 +4831,8 @@ $90190739202646* Sortie
 
 === rpg/maps/spacial_invasion/crate ===
 
-$73286408216451* Crate
-$28875169677730* Debris
+$73286408216451* Caisse
+$28875169677730* Débris
 
 
 === trans/level_byte_adder_you_carry_text3 ===
@@ -4854,7 +4853,7 @@ $54699455184164* Extrait un octet du fil
 
 === component_panels/Hdd ===
 
-$99685372736199* Head position: {pos}
+$99685372736199* Position tête : {pos}
 
 
 === components/Bidirectional16 ===
@@ -4879,7 +4878,7 @@ $68946767861738* Registre 8 bits
 
 === trans/panel_segment_select_color ===
 
-$90642877666116* [center]Select color[/center]
+$90642877666116* [center]Selectionne une couleur[/center]
 
 
 === trans/level_division_headers3 ===
@@ -4934,7 +4933,7 @@ $76697231893680* Entrée
 
 === trans/panel_matrix_input2 ===
 
-$11173083690745* [right]Enable X[/right]
+$11173083690745* [right]Activer X[/right]
 
 
 === levels/constants ===
@@ -4976,8 +4975,8 @@ Instructions
 4 ADD
 5 SUB[/color][/code]
 $87042161621333* CODE
-$20357619206641* INPUT 2
-$94622250037548* INPUT 1
+$20357619206641* ENTREE 2
+$94622250037548* ENTREE 1
 
 #  Short because it will become the name of a custom component
 $14243962965012* ALU
@@ -4985,14 +4984,14 @@ $14243962965012* ALU
 
 === rpg/maps/unseen_fruit/fruit ===
 
-$74585814142093* Blackberry
-$59609837209455* Tomato
+$74585814142093* Mûre
+$59609837209455* Tomate
 $15802853329735* Kiwi
-$79445215329265* Pear
+$79445215329265* Poire
 $78424930494044* Fruit
 $18469474055437* Melon
-$60053656119333* Golden apple
-$51779877620644* Apple
+$60053656119333* Pomme Golden
+$51779877620644* Pomme
 $31466825108080* Orange
 
 
@@ -6439,7 +6438,7 @@ Entrée 2[/right]
 
 === misc/onwards ===
 
-$51096427131653* Onwards
+$51096427131653* En avant
 
 
 === trans/panel_equal_description ===
@@ -6467,23 +6466,23 @@ Instructions :
 3 AND[/color][/code]
 
 Enfin tu ne peux pas déplacer les composants rouges dans ce niveau, pour des raisons que l'on t'expliquera plus tard.
-$74299241677249* INPUT 1
-$60407971040713* INPUT 2
+$74299241677249* ENTREE 1
+$60407971040713* ENTREE 2
 
 
 === trans/level_byte_less_i_description ===
 
-$21195810950441* [center]Determine if the first input is less than the second.[/center]
+$21195810950441* [center]Détermine si la première entrée est inférieure à la seconde.[/center]
 
 
 === trans/component_panel_latency_RichTextLabel2 ===
 
 $51386316768363*
-Is busy
-Output 1
-Output 2
-Output 3
-Output 4
+Es occuppé
+Sortie 1
+Sortie 2
+Sortie 3
+Sortie 4
 
 
 === components/Splitter64 ===
@@ -6531,7 +6530,7 @@ $13031452187028* XOR bit à bit de deux valeurs
 
 === trans/panel_output_output_1 ===
 
-$38712851498419* Output 2
+$38712851498419* Sortie 2
 
 
 === misc/skipped_custom ===
@@ -6654,8 +6653,8 @@ Sortie actuelle[/right]
 
 === components/Ashr64 ===
 
-$26454447445967* Shifts bits to the right, while maintaining the sign of the number
-$91080427115081* Arithmetic Shift right
+$26454447445967* Décale les bits à droite, sans modifier le signe du nombre
+$91080427115081* Décalage Arithmétique à droite
 
 
 === components/LessU64 ===
@@ -6674,8 +6673,8 @@ Always output
 === trans/panel_shr_input ===
 
 $98628213136355*
-[right]Value
-Shift by[/right]
+[right]Valeur
+Décale de[/right]
 
 
 === trans/level_byte_no_description ===
@@ -6693,8 +6692,8 @@ $46356151087784* Je suis le joueur
 
 === levels/call_ret/completed ===
 
-$65495857744236* Level is complete
-$82323203550887* Can we trust you?
+$65495857744236* Niveau terminé
+$82323203550887* Pouvons-nous te faire confiance ?
 
 
 === trans/manual_text_instructions ===
@@ -6724,7 +6723,7 @@ $74859324795927* [center]Ajoute les conditions aux codes de calcul[/center]
 
 === trans/level_nand_check ===
 
-$61241226128494* Nope!
+$61241226128494* Non !
 $32982011047799* Vérifie
 
 
@@ -6737,8 +6736,8 @@ $33922330743421*
 
 === rpg/maps/overworld/knight ===
 
-$97019929955594* You shall not pass
-$86067786292380* I will just go around...
+$97019929955594* Tu ne passeras pas
+$86067786292380* Je vais juste faire le tour
 
 
 === trans/level_odd_number_RichTextLabel2 ===
@@ -6849,7 +6848,7 @@ $34287811246049* Décale à gauche les bits d'une entrée
 
 === trans/level_division_headers2 ===
 
-$43313037226215* Remainder
+$43313037226215* Reste
 
 
 === trans/levels_any_doubles_RichTextLabel2 ===
@@ -6900,12 +6899,12 @@ $62736827510023* S'incrémente à chaque cycle jusqu'à réinitialisation
 
 === main_scripts/rpg ===
 
-$87641351044559* Nothing
-$13202063774683* Wall
-$14021436258446* SEEING: [color=#e49f44]{looking_at}[/color]
-$57777174895519* Wall
-$25433644956674* Killed by {who}
-$64739179991428* Robot died!
+$87641351044559* Rien
+$13202063774683* Mur
+$14021436258446* VISIBLE : [color=#e49f44]{looking_at}[/color]
+$57777174895519* Mur
+$25433644956674* Tué par {who}
+$64739179991428* Le robot est mort !
 
 
 === misc/add_assembly ===
@@ -6920,18 +6919,18 @@ $71204033550134* Que fais la porte NAND ?
 
 === rpg/maps/prison/exit_door ===
 
-$92379689291727* Door
+$92379689291727* Porte
 
 
 === misc/rom_file_select_button ===
 
-$29197716371312* Select file
+$29197716371312* Sélectionne un fichier
 
 
 === rpg/maps/overworld/bush ===
 
-$37683898820147* It is a bush
-$93113262859645* Bush
+$37683898820147* C'est un buisson
+$93113262859645* Buisson
 
 
 === trans/manual_text_program ===
@@ -6956,7 +6955,7 @@ This can be used to connect the assembly editor to registers, counters or probes
 
 === components/Output32z ===
 
-$20432213737411* 32 Bit Switched Output
+$20432213737411* Sortie commutée 32 Bits
 $73681609562628* Sortie activée seulement si la patte d'activation est [ON]
 
 
@@ -7005,7 +7004,7 @@ $66510191984141* Command
 
 === trans/panel_input_up ===
 
-$97169317610794* Up
+$97169317610794* Haut
 
 
 === trans/manual_network ===
