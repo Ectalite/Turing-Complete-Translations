@@ -342,6 +342,11 @@ $33233688912123* [center]Ajoute le code assembleur[/center]
 $44752799134543* XOR bit à bit
 
 
+=== dialogue/schematic_hub/share_button ===
+
+$72402014450423* [center]Uploading[/center]
+
+
 === trans/panel_regred_input ===
 
 $61209423072819*
@@ -518,11 +523,6 @@ $31033960272185* Je suis le célèbre Dr Rakoo
 
 $71022099146246* Mémoire permettant d'EMPILER/DÉPILER
 $47202418972371* Pile
-
-
-=== ui/schematic_ui/confirm_delete ===
-
-$46014905606975* Oui
 
 
 === trans/levels_saving_bytes_text ===
@@ -942,6 +942,14 @@ $96743644544068* C'est la première apparition de {fruit} !
 
 $50218226879226* Ce niveau débloque ta première page de manuel. Elle est importante, fais en sorte de bien la comprendre.
 $17712385236630* Réalise un circuit qui est toujours [ON].
+
+
+=== dialogue/schematic_hub/delete_confirm ===
+
+$71921976503347* Yes
+$46660924781254*
+Are you sure you want 
+to delete the schematic called '{name}'?
 
 
 === trans/level_complete_hex ===
@@ -1434,6 +1442,11 @@ Tu dois utiliser le composant compteur que tu as déverrouillé dans un niveau p
 $19686277478479* Le programme envoie toujours la première instruction. As tu connecté un compteur ?
 
 
+=== trans/hub_status ===
+
+$64105077092961* Downloading...
+
+
 === trans/manual_components ===
 
 $40288888375581* Composants
@@ -1753,6 +1766,17 @@ Probes placed in custom components will show on their layout and can display val
 For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
 
 
+=== misc/network_update ===
+
+$47639082058046* Nothing here yet
+$70619187943439* Creator\nUploaded
+$83560387278127* Derives from: 
+$76023068123024* Error
+$81675147704214* Uses the network component
+$98151734218561* [center][color=#60a96b]Upload complete.[/color][/center]
+$40010486743721* [center][color=#dd6576]Upload failed.[/color][/center]
+
+
 === trans/level_complete_stat_delay ===
 
 $43118901497406* Delai
@@ -1805,6 +1829,11 @@ Octet 4
 === rpg/maps/overworld/barrel7 ===
 
 $19922359571673* Tonneau de Ragoût
+
+
+=== dialogue/schematic_hub ===
+
+$22639280459994* Downloading list...
 
 
 === components/Splitter32 ===
@@ -2045,6 +2074,12 @@ Sortie[/right]
 
 $41936481068702* Compteur
 $42012207828907* Registre
+
+
+=== dialogue/schematic_hub/load ===
+
+$41294322771286* Load
+$44524092309946* Loading...
 
 
 === rpg/maps/overworld/musli ===
@@ -2867,20 +2902,9 @@ Sortie attendue
 Sortie courante[/right]
 
 
-=== trans/manual_text_terminology ===
+=== trans/hub_stats ===
 
-$99266452352883*
-[b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
-
-[b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
-
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
-
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
+$30942143953871* User
 
 
 === trans/manual_text_truth ===
@@ -2896,6 +2920,24 @@ The tables of input and output which are used everywhere throughout the game are
 
 
 "Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
+
+
+=== trans/manual_text_terminology ===
+
+
+# DateCustoms
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
 
 
 === levels/Conditionals ===
@@ -4031,9 +4073,12 @@ Entrée 3[/right]
 
 $15827374884671* Vers le dossier parent
 $14135691870941* Dernière modification\ndes schémas
+$81783412663552* Resync
 $32645745463577* Utilisé dans les composants
 $19184997172542* Utilisé dans les architectures
+$62160230059637* Share
 $36200352866864* Dernière modification
+$70617979378677* View
 
 
 === trans/manual_SpriteDisplay ===
@@ -5431,6 +5476,11 @@ $94864122622568* Sortie
 $94089252493268* Patte
 
 
+=== misc/menu_schematic_hub ===
+
+$13921098180953* schematic hub
+
+
 === components/Byte Expander ===
 
 $60488114435022* Sépare un octet en 8 bits
@@ -5504,15 +5554,20 @@ Sortie attendue
 Sortie courante[/right]
 
 
-=== rpg/maps/cave/slime ===
+=== misc/save_schematic ===
 
-$57665128042496* Gelée visqueuse
-$58067186899637* Bave
+$36331525379247* Save this schematic
 
 
 === rpg/maps/overworld/duplaat ===
 
 $48841712525408* Name name name
+
+
+=== rpg/maps/cave/slime ===
+
+$57665128042496* Gelée visqueuse
+$58067186899637* Bave
 
 
 === trans/panel_decoder1_description ===
@@ -6283,6 +6338,16 @@ Bit 8
 $19141523477461*
 Toutes les solutions des niveaux, les composants personnalisés et les architectures seront supprimées. Cela ne peut être annulé, es tu sûr de vouloir le faire ?
 (Le jeu sera fermé, il sera réinitialisé au prochain démarrage)
+
+
+=== dialogue/schematic_hub/order_by ===
+
+$69981201197158* Rising
+$70134513915163* Newly added
+$87115430626073* My uploads
+$56045953383535* Architectures
+$25536941657464* Components
+$43488408276984* Popular
 
 
 === rpg/maps/overworld/chef ===
@@ -7072,6 +7137,13 @@ $53187359961794* Sortie
 === trans/options_setting_program_alignment ===
 
 $54874717650167* Code aligné
+
+
+=== trans/share_prompt_label ===
+
+$61304386273201*
+Name
+Description
 
 
 === trans/panel_or_output ===
