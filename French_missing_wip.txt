@@ -1,141 +1,141 @@
 === trans/panel_regredplus_output ===
 
-$33621557361089*
-Load output
-Always output
+$33621557361089
+Lire la sortie
+Toujours activer la sortie
 
 
 === dialogue/schematic_hub/load ===
 
-$41294322771286* Load
-$44524092309946* Loading...
+$41294322771286 Charger
+$44524092309946 En cours de chargement...
 
 
 === trans/panel_hdd_description ===
 
-$28038932532386*
-[center]On the hard disk, the "head position" determines at what address reads and writes take place. Use the signed 8 bit seek pin to change the "head position".
-Use a seek value of 0 if you don't want to change the position.[/center]
+$28038932532386
+[center]Sur le disque dur, la "position de tête" détermine l'adresse à laquelle ont lieu des lectures et écritures.  Utilise la patte de positionnement qui est de type 8 bit signée pour modifier la  "position de tête".
+Utilise une valeur de positionnement de 0 si tu ne souhaites pae modifier la position.[/center]
 
 
 === trans/panel_or_description ===
 
-$65281182019602* [center]Bitwise ORs two inputs[/center]
+$65281182019602 [center]Effectue un OU bit à bit sur deux entrées[/center]
 
 
 === trans/panel_matrix_column_major ===
 
-$90704227545058* Column major pixels
+$90704227545058 Pixels principaux de la colonne
 
 
 === trans/complete_flower_text3 ===
 
-$81122931510261* [center]QUEST [color=#e49f44]COMPLETE[/color][/center]
+$81122931510261 [center]QUEST [color=#e49f44]TERMINE[/color][/center]
 
 
 === trans/panel_probewirebit_value ===
 
-$24213353038685* [center]Value[/center]
+$24213353038685 [center]Valeur[/center]
 
 
 === trans/panel_counter16_input ===
 
-$87154643308632*
-[right]Increment / Overwrite
-Overwrite value[/right]
+$87154643308632
+[right]Incrémenter / Remplacer
+Remplacer la valeur[/right]
 
 
 === trans/panel_matrix_color ===
 
-$78812572100236* [center]Pixels / Flush[/center]
+$78812572100236 [center]Pixels / Raffraichissement[/center]
 
 
 === main_scripts/functions ===
 
-$35675567872962* Counter does nothing with a 0 increment
-$94410251595979* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
-$39385804477995* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
-$83854326413007* Custom component "{name}" has changed size and was removed from the schematic because it no longer fits.
+$35675567872962 Un compteur ne peut fonctionner avec un incrément de 0.
+$94410251595979 Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Read more[/url]
+$39385804477995 Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Read more[/url]
+$83854326413007 Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
 
 
 === dialogue/schematic_hub/share_button ===
 
-$72402014450423* [center]Uploading[/center]
+$72402014450423 [center]Téléchargement[/center]
 
 
 === misc/files_preview ===
 
-$81783412663552* Resync
-$62160230059637* Share
-$70617979378677* View
+$81783412663552 Resynchroniser
+$62160230059637 Partager
+$70617979378677 Vue
 
 
 === trans/panel_decoder2_description ===
 
-$29468245669811* [center]Turns 1 of the outputs on, based on the input[/center]
+$29468245669811 [center]Active 1 des sorties, selon l'état en entrée[/center]
 
 
 === panel_sound_sound_picker ===
 
-$73758040671294* Notes (click [i][/i] to replace)
+$73758040671294 Notes (clicque [i][/i] pour changer)
 
 
 === trans/binary_racer_count_down2 ===
 
-$23959994711260* Ready to race?
+$23959994711260 Prêt pour la course ?
 
 
 === rpg/maps/overworld/cannon ===
 
-$34523773807049* Laser Cannon
+$34523773807049 Canon Laser
 
 
 === misc/dir_delete ===
 
-$94436541903929* Architectures: {list}
-$17985924005596* It contains {nr} schematics.
-$51791491383290* The custom component is used in
-$63013773025775* Are you sure you want to delete {file_name}?
-$38011567415872* The folder is empty.
-$57790786178566* Custom components: {list}
+$94436541903929 Architectures : {list}
+$17985924005596 Contient {nr} schémas.
+$51791491383290 Le composant personalisé est utilisé dans
+$63013773025775 Est-u sûr de vouloir supprimer {file_name}?
+$38011567415872 Le dossier est vide.
+$57790786178566 Composants personalisés : {list}
 
 
 === trans/schematics_menu_visible_label ===
 
-$34084132835354* Visible in menu
+$34084132835354 Visible dans le menu
 
 
 === rpg/maps/unseen_fruit/Lolbert ===
 
-$77789556089413*
-Earth fruit is so much better
-than the the stew they normally serve
+$77789556089413
+Les fruits terrestres sont tellement meilleurs
+que le ragoût qu'ils servent d'habitude
 
 
 === trans/panel_probewirebit_description ===
 
-$36861847387280* Probes can be used to show values on custom components or link values to the program component
+$36861847387280 Les sondes peuvent être utilisées pour afficher les valeurs sur les composants personalisés ou associer les valeurs du composant programme.
 
 
 === trans/panel_input_input_2 ===
 
-$13656747150138* Input 3
+$13656747150138 Entrée 3
 
 
 === rpg/maps/overworld/bed ===
 
-$19781388766480* Bed
-$41698807327261* I love looking at random furniture
+$19781388766480 Lit
+$41698807327261 J'aime regarder des meubles au hasard
 
 
 === misc/add_assembly ===
 
-$66747898777348* Add
+$66747898777348 Ajouter
 
 
 === trans/hub_status ===
 
-$64105077092961* Downloading...
+$64105077092961 Téléchargement...
 
 
 === trans/manual_text_program ===
