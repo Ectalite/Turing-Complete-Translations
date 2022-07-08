@@ -1,141 +1,146 @@
 === trans/panel_regredplus_output ===
 
-$33621557361089
-Lire la sortie
-Toujours activer la sortie
+$33621557361089*
+Load output
+Always output
 
 
 === dialogue/schematic_hub/load ===
 
-$41294322771286 Charger
-$44524092309946 En cours de chargement...
+$41294322771286* Load
+$44524092309946* Loading...
 
 
 === trans/panel_hdd_description ===
 
-$28038932532386
-[center]Sur le disque dur, la "position de tête" détermine l'adresse à laquelle ont lieu des lectures et écritures.  Utilise la patte de positionnement qui est de type 8 bit signée pour modifier la  "position de tête".
-Utilise une valeur de positionnement de 0 si tu ne souhaites pae modifier la position.[/center]
+$28038932532386*
+[center]On the hard disk, the "head position" determines at what address reads and writes take place. Use the signed 8 bit seek pin to change the "head position".
+Use a seek value of 0 if you don't want to change the position.[/center]
 
 
 === trans/panel_or_description ===
 
-$65281182019602 [center]Effectue un OU bit à bit sur deux entrées[/center]
+$65281182019602* [center]Bitwise ORs two inputs[/center]
 
 
 === trans/panel_matrix_column_major ===
 
-$90704227545058 Pixels principaux de la colonne
+$90704227545058* Column major pixels
 
 
 === trans/complete_flower_text3 ===
 
-$81122931510261 [center]QUEST [color=#e49f44]TERMINE[/color][/center]
+$81122931510261* [center]QUEST [color=#e49f44]COMPLETE[/color][/center]
 
 
 === trans/panel_probewirebit_value ===
 
-$24213353038685 [center]Valeur[/center]
+$24213353038685* [center]Value[/center]
 
 
 === trans/panel_counter16_input ===
 
-$87154643308632
-[right]Incrémenter / Remplacer
-Remplacer la valeur[/right]
+$87154643308632*
+[right]Increment / Overwrite
+Overwrite value[/right]
 
 
 === trans/panel_matrix_color ===
 
-$78812572100236 [center]Pixels / Raffraichissement[/center]
+$78812572100236* [center]Pixels / Flush[/center]
 
 
 === main_scripts/functions ===
 
-$35675567872962 Un compteur ne peut fonctionner avec un incrément de 0.
-$94410251595979 Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Read more[/url]
-$39385804477995 Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Read more[/url]
-$83854326413007 Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
+$35675567872962* Counter does nothing with a 0 increment
+$94410251595979* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
+$39385804477995* Circular dependency - The output of a component leads back to its own input. [url=circular_dependency]Read more[/url]
+$83854326413007* Custom component "{name}" has changed size and was removed from the schematic because it no longer fits.
+
+
+=== trans/hub_type ===
+
+$23829497228009* Type
 
 
 === dialogue/schematic_hub/share_button ===
 
-$72402014450423 [center]Téléchargement[/center]
+$72402014450423* [center]Uploading[/center]
 
 
 === misc/files_preview ===
 
-$81783412663552 Resynchroniser
-$62160230059637 Partager
-$70617979378677 Vue
+$81783412663552* Resync
+$62160230059637* Share
+$70617979378677* View
 
 
 === trans/panel_decoder2_description ===
 
-$29468245669811 [center]Active 1 des sorties, selon l'état en entrée[/center]
+$29468245669811* [center]Turns 1 of the outputs on, based on the input[/center]
 
 
 === panel_sound_sound_picker ===
 
-$73758040671294 Notes (clicque [i][/i] pour changer)
+$73758040671294* Notes (click [i][/i] to replace)
 
 
 === trans/binary_racer_count_down2 ===
 
-$23959994711260 Prêt pour la course ?
+$23959994711260* Ready to race?
 
 
 === rpg/maps/overworld/cannon ===
 
-$34523773807049 Canon Laser
+$34523773807049* Laser Cannon
 
 
 === misc/dir_delete ===
 
-$94436541903929 Architectures : {list}
-$17985924005596 Contient {nr} schémas.
-$51791491383290 Le composant personalisé est utilisé dans
-$63013773025775 Est-u sûr de vouloir supprimer {file_name}?
-$38011567415872 Le dossier est vide.
-$57790786178566 Composants personalisés : {list}
+$94436541903929* Architectures: {list}
+$17985924005596* It contains {nr} schematics.
+$51791491383290* The custom component is used in
+$63013773025775* Are you sure you want to delete {file_name}?
+$38011567415872* The folder is empty.
+$57790786178566* Custom components: {list}
 
 
 === trans/schematics_menu_visible_label ===
 
-$34084132835354 Visible dans le menu
+$34084132835354* Visible in menu
 
 
 === rpg/maps/unseen_fruit/Lolbert ===
 
-$77789556089413
-Les fruits terrestres sont tellement meilleurs
-que le ragoût qu'ils servent d'habitude
+$77789556089413*
+Earth fruit is so much better
+than the the stew they normally serve
 
 
 === trans/panel_probewirebit_description ===
 
-$36861847387280 Les sondes peuvent être utilisées pour afficher les valeurs sur les composants personalisés ou associer les valeurs du composant programme.
+$36861847387280* Probes can be used to show values on custom components or link values to the program component
 
 
 === trans/panel_input_input_2 ===
 
-$13656747150138 Entrée 3
+$13656747150138* Input 3
 
 
 === rpg/maps/overworld/bed ===
 
-$19781388766480 Lit
-$41698807327261 J'aime regarder des meubles au hasard
+$19781388766480* Bed
+$41698807327261* I love looking at random furniture
 
 
 === misc/add_assembly ===
 
-$66747898777348 Ajouter
+$66747898777348* Add
 
 
 === trans/hub_status ===
 
-$64105077092961 Téléchargement...
+$64105077092961* Downloading...
 
 
 === trans/manual_text_program ===
@@ -415,18 +420,9 @@ $91210884350615* Launch Shortcut 1
 $60538893544456* [center]Build a wide instruction program component[/center]
 
 
-=== trans/manual_component_factory_text ===
+=== schematics_hub/accept_license ===
 
-$42847481618884*
-Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
-
-The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
-
-The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
-
-Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
-
-For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
+$72317516399185* Agree to use [color=#dd6576][url=cc0]CC0[/url][/color] license
 
 
 === trans/panel_hdd_input ===
@@ -447,6 +443,20 @@ $76023068123024* Error
 $81675147704214* Uses the network component
 $98151734218561* [center][color=#60a96b]Upload complete.[/color][/center]
 $47639082058046* Nothing here yet
+
+
+=== trans/manual_component_factory_text ===
+
+$42847481618884*
+Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
+
+The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
+
+The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
+
+Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
+
+For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
 
 
 === trans/level_complete_ide ===
@@ -596,6 +606,24 @@ $14116831487331* Assembly Editor
 $13921098180953* schematic hub
 
 
+=== trans/manual_text_terminology ===
+
+
+# DateCustoms
+$99266452352883*
+[b]Instruction[/b]
+A byte or a few bytes that together make the computer perform a specific action.
+
+[b]Opcode[/b]
+The part of the instruction that determines which operation (like ADD or AND) is to be done.
+
+[b]Memory address[/b]
+A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+
+[b]Jump[/b]
+Changing the value of the program counter, changing which instruction is loaded next.
+
+
 === components/DivMod32 ===
 
 $61314390474120* Divide and mod 2 numbers
@@ -622,11 +650,6 @@ The tables of input and output which are used everywhere throughout the game are
 $30942143953871* User
 
 
-=== trans/panel_equal_description ===
-
-$66334667083051* [center]Check if Input 1 and Input 2 are the same[/center]
-
-
 === trans/level_the_bus_description ===
 
 $20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
@@ -644,22 +667,14 @@ $94261690850981*
 [color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
 
 
-=== trans/manual_text_terminology ===
+=== trans/panel_equal_description ===
+
+$66334667083051* [center]Check if Input 1 and Input 2 are the same[/center]
 
 
-# DateCustoms
-$99266452352883*
-[b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
+=== trans/hub_order_by ===
 
-[b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
-
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
-
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
+$83319579232915* Order by
 
 
 === dialogue/schematic_hub/delete_confirm ===
