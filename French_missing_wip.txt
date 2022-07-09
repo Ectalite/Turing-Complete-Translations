@@ -1,5 +1,0 @@
-=== misc/rom_file_select_button ===
-
-$46471024006274* Set default file
-
-

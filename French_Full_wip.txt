@@ -7009,7 +7009,7 @@ $93113262859645* Buisson
 
 === misc/rom_file_select_button ===
 
-$46471024006274* Set default file
+$46471024006274* Définir le fichier par défaut
 
 
 === trans/manual_text_program ===
