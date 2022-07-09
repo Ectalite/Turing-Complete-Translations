@@ -61,7 +61,7 @@ Note that sprites are layered in the order of their ID and to remove a layer, si
 
 
 # DateCustoms
-$99266452352883*
+$99266452352883
 [b]Instruction[/b]
 Un Octet ou série d'octets qui ensemble font réaliser une action spécifique à l'ordinateur.
 
