@@ -57,24 +57,6 @@ The first input pin is the [color=#e49f44]Command type[/color], the meaning of t
 Note that sprites are layered in the order of their ID and to remove a layer, simply load a sprite with a width and height of 0.
 
 
-=== trans/manual_text_terminology ===
-
-
-# DateCustoms
-$99266452352883
-[b]Instruction[/b]
-Un Octet ou série d'octets qui ensemble font réaliser une action spécifique à l'ordinateur.
-
-[b]Opcode[/b]
-La partie de l'instruction qui détermine quelle opération (comme ADD ou AND) sera réalisée.
-
-[b]Adresse Mémoire[/b]
-Un nombre utilisé comme nom pour un emplacement mémoire (souvent pour un registre). Ils servent à indiquer ou l'instruction doit charger ou écrire les données.
-
-[b]Saut[/b]
-Modifie la valeur du compteur de programme, ce qui change l'instruction suivante à charger/
-
-
 === trans/manual_text_matrix ===
 
 $75170402412137*
@@ -100,14 +82,6 @@ It turns out that you can build all the logic for a computer out of either NAND 
 Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
 
 
-=== trans/panel_fileloader_description ===
-
-$72892007399429
-La rom fichier envoit en sortie le contenu d'un fichier par bloc de 8 octets.
-
-L'adresse 64 bits maximale (0xFFFFFFFFFFFFFFFF) est spéciale et renvoit en sortie la longueur du fichier en octets.
-
-
 === trans/panel_network_input_description ===
 
 $36399689035136*
@@ -118,19 +92,5 @@ $36399689035136*
 [code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
 [code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
 [code]5[/code] [color=#e49f44]Read next event[/color]
-
-
-=== components/Clock ===
-
-$29674337035619 L'usage de l'horloge divise les cycles en deux phases. L'horloge est [OFF] dans la première phase et [ON] dans la seconde phase. Tous les composants mémoire chargent dans la première phase et écrivent dans la seconde phase.
-
-
-=== dialogue/dotMatrixtext_link ===
-
-$82486902873499*
-The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
-The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
-
-Both "Enable X" and "Enable Y" have to be on to update the display.
 
 
