@@ -1,167 +1,55 @@
-=== trans/panel_max_data_len_max_data_length ===
-
-$88063177433135 [right]Longueur de données Max[/right]
-
-
-=== trans/level_delay_level_description ===
-
-$24326379952614 Crée un circuit qui coûte 5 PORTES and 6 DELAIS
-
-
-=== rpg/maps/boss_room/tricky ===
-
-$36278362971660 Non non non !!
-$48425443153584 la haine haine haine
-$83674875280936 Ne sois pas timide
-$55557864347967 Maaaaaaal
-$46678960551148 NON NON NON
-$34049297531488 s'il te plait viens viens
-$45293657348934 Hahahah
-$62754542093871 Tire tire tire
-$44499633447481 J'ai hâte
-$45196756331738 rusé
-$96717076976482 Reviens. Mon coffre
-$39217019822298 GIGIGIGIGI
-$83023298467462 GIGIGIGIG
-$54218005116072 Mal mal mal
-$88481545304668 GIIIIIII
-$83172011939489 n'ais pas peur
-$58217446676216 Rip tricksy
-
-
-=== trans/share_prompt_label ===
-
-$61304386273201
-Nom
-Description
-
-
-=== trans/panels_sound_description ===
-
-$65379881141228
-[b][color=#e49f44]Type de Commande[/color][/b]
-[code]0[/code] Aucune Requête
-[code]1[/code] [color=#e49f44]Lire[/color]
-[code]2[/code] [color=#e49f44]Retour et lire[/color]
-[code]3[/code] [color=#e49f44]Stop[/color]
-
-
-=== trans/component_panels_sprite_inputs ===
-
-$89388086235988
-[right][color=#e49f44]Type Commande[/color]
-Id de couche
-Position
-Taille[/right]
-
-
-=== dialogue/schematic_hub/order_by ===
-
-$69981201197158 Tendance
-$70134513915163 Ajouts récents
-$87115430626073 Mes contributions
-$56045953383535 Architectures
-$25536941657464 Composants
-$43488408276984 Populaire
-
-
-=== rpg/maps/overworld/dr draco ===
-
-$23996965687702 Je suis mécontent de mon lit\nLa couverture ne couvre pas mes pieds
-
-
-=== trans/manual_text_edit_instructions ===
-
-$75786562031150
-Après avoir terminé le niveau "Turing Complet", le panneau d'instructions te permet de modifier les instructions. Ceci est utile si vous souhaitez construire vos propres ordinateurs.
-
-Si vous venez de terminer l'ordinateur OVERTURE et que vous voyez quelque chose de bizarre, il y a de fortes chances que vous ayez changé les définitions.
-
-Chaque ligne a une étiquette et 8 bits que tu peux définir sur [img]dialogue/on.png[/img], [img]dialogue/off.png[/img] ou [img]dialogue/any.png[/img ] (caractère joker). Lors de l'utilisation du panneau d'instructions, si le modèle binaire correspond à une ligne, l'étiquette est affichée.
-
-
-=== trans/manual_de_morgan ===
-
-$20250843622435
-Les tables de vérité des quatre portes fondamentales sont symétriques. Tu peux passer de l'une à l'autre en [b][color=#6e9759]inversant l'entrée[/color][/b] (flêches verticales ou en [b][color=#596197]inversant la sortie[/color][/b] (flêches horizontales) comme indiqué dans la figure ci-dessous.
-
-[center][img=400]dialogue/manual/de_morgan.png[/img][/center]
-
-Notes
-[table=2]
-[cell]1 [/cell][cell]Tu peux passer de n'importe quelle porte de base à un autre, au plus tu dois INVERSER à la fois les entrées et la sortie.[/cell]
-[cell]2 [/cell][cell]Tu peux passer de OR à NOR en inversant la sortie. Pareil pour AND/NAND. En fait NOR signifie NON OU et NAND signifie NON ET. Remarque bien que la forme des composants OR et NOR sont identiques à l'exception du petit point à l'extrémité qui signifie NON. AND/NAND sont aussi identiques sauf pour ce point.[/cell]
-[cell]3[/cell][cell]Inverser la sortie correspond à inverser tous les bits de la dernière ligne de la table de vérité. Inverser les entrées produit le symétrique de la dernière ligne de la table de vérité par rapport au centre.[/cell]
-[/table]
-
-
-=== trans/level_dance_description ===
-
-$29803992718733 Génère des mouvements de dance
-
-
-=== trans/level_binary_programming_description ===
-
-$66247694103179 [center]Ajoute 5 à l'entrée[/center]
-
-
-=== trans/level_component_factory_Label2 ===
-
-$37347658035959 Prévisualisation du composant
-
-
 === misc/options_keys ===
 
-$15851382978562* Left
-$13781284353315* Standby
-$78882003890612* TAB
-$23041433375813* Launch Shortcut 6
-$31504133014584* Space
-$91413612191819* Launch Shortcut D
-$27874359646701* Treble up
-$65834804441085* Open URL
-$39317622588588* Launch Shortcut E
-$27726004575826* Launch Media
-$68199202258305* Next song
-$96347674697419* Forward
-$58999281424396* CMD
-$57038840198662* CTRL
-$50955698469296* Launch Shortcut 9
-$63772872007214* Stop
-$71982112085693* Launch Shortcut 7
-$28214161279082* Launch Shortcut B
-$83084380695531* SHIFT + TAB
-$70423659540492* Launch Mail
-$18970380352793* Alt
-$55972860446450* Search
-$81640191081376* Mute volume
-$91733527994209* Launch Shortcut 2
-$64108103861848* Refresh
-$86957870260110* Bass down
-$79228417307539* Right
-$48472841971511* Favorites
-$94137103361291* Play
-$86664894772851* Launch Shortcut F
-$57182221632160* Help
-$40801064032778* Previous song
-$32311987309013* Back
-$83183843351576* Launch Shortcut 0
-$51594389746074* Launch Shortcut 4
-$49947924390850* Launch Shortcut 5
-$24086297669523* Volume down
-$67529269053604* Home page
-$51120580663479* ESC
-$66339874250985* Media record
-$88355661220986* Launch Shortcut C
-$47330905474433* Volume up
-$17043010993255* Stop
-$18909108170114* Launch Shortcut A
-$57391159100618* Launch Shortcut 3
-$92739814679396* Bass up
-$17896149617641* Treble down
-$11908889523442* Bass Boost
-$74797401805098* Launch Shortcut 8
-$91210884350615* Launch Shortcut 1
+$15851382978562 Gauche
+$13781284353315 Veille
+$78882003890612 TAB
+$23041433375813 Raccourci 6
+$31504133014584 Espace
+$91413612191819 Raccourci D
+$27874359646701 Plus Aigu
+$65834804441085 Ouvrir l'URL
+$39317622588588 Raccourci E
+$27726004575826 Lire le contenu
+$68199202258305 Piste suivante
+$96347674697419 Avancer
+$58999281424396 CMD
+$57038840198662 CTRL
+$50955698469296 Raccourci 9
+$63772872007214 Stop
+$71982112085693 Raccourci 7
+$28214161279082 Raccourci B
+$83084380695531 SHIFT + TAB
+$70423659540492 Ouvrir Messagerie
+$18970380352793 Alt
+$55972860446450 Chercher
+$81640191081376 Muet
+$91733527994209 Raccourci 2
+$64108103861848 Raffraichir
+$86957870260110 Moins Grave
+$79228417307539 Droite
+$48472841971511 Favoris
+$94137103361291 Lire
+$86664894772851 Raccourci F
+$57182221632160 Aide
+$40801064032778 Piste précédente
+$32311987309013 Retour
+$83183843351576 Raccourci 0
+$51594389746074 Raccourci 4
+$49947924390850 Raccourci 5
+$24086297669523 Baisser le Volume
+$67529269053604 Page d'accueil
+$51120580663479 ESC
+$66339874250985 Enregistrer le contenu
+$88355661220986 Raccourci C
+$47330905474433 Augmenter le Volume
+$17043010993255 Stop
+$18909108170114 Raccourci A
+$57391159100618 Raccourci 3
+$92739814679396 Augmenter les basses
+$17896149617641 Réduire les Aigus
+$11908889523442 Renforcer les Basses
+$74797401805098 Raccourci 8
+$91210884350615 Raccourci 1
 
 
 === trans/level_wide_instructions_description ===
