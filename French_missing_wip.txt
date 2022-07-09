@@ -94,9 +94,8 @@ Instead, by having 2 enable pins, one wire can enable a whole row and another a 
 
 === trans/level_program_text ===
 
-$38014836341470*
-[right][color=#e49f44]Code
-Input[/color][/right]
+$38014836341470
+[right][color=#e49f44]Saisie Code[/color][/right]
 
 
 === trans/manual_text_universal_gates ===
@@ -117,14 +116,14 @@ The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the lengt
 
 === trans/level_negative_Label ===
 
-$11951041502381* Change what each bit means by changing the numbers.
+$11951041502381 Modifie la signification de chaque bit en modifiant les nombres.
 
 
 === misc/component_button ===
 
-$20148770258379* No component area
-$53184531022842* Sandbox only
-$40492377880609* Pins overlap
+$20148770258379 Composant sans surface
+$53184531022842 Bac à sable uniquement
+$40492377880609 Les pattes se chevauchent
 
 
 === trans/panel_network_input_description ===
@@ -146,12 +145,12 @@ $29674337035619* Placing the clock will divide ticks into 2 phases. The clock is
 
 === levels/byte_nand ===
 
-$76462832199594* Create a circuit that NANDs two bytes bitwise.
+$76462832199594 Créé un circuit qui effectue un NAND bit à bit sur deux octets.
 
 
 === trans/levels_byte_or_description ===
 
-$68379799788575* [center]Pairwise OR together each bit[/center]
+$68379799788575 [center]Applique OR sur chaque paire de bit[/center]
 
 
 === dialogue/dotMatrixtext_link ===
