@@ -1015,13 +1015,13 @@ $24932613021646* Peut contourner certaines erreurs de dépendance circulaire
 === trans/panel_network_input_description ===
 
 $36399689035136*
-[b][color=#e49f44]Request type[/color] (arguments)[/b]
-[code]0[/code] No request
-[code]1[/code] [color=#e49f44]Listen[/color] (Port)
-[code]2[/code] [color=#e49f44]Connect[/color] (IP, Port)
-[code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
-[code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
-[code]5[/code] [color=#e49f44]Read next event[/color]
+[b][color=#e49f44]Type de requête[/color] (arguments)[/b]
+[code]0[/code] Aucune requête
+[code]1[/code] [color=#e49f44]Ecouter[/color] (Port)
+[code]2[/code] [color=#e49f44]Se Connecter[/color] (IP, Port)
+[code]3[/code] [color=#e49f44]Envoyer des données[/color] (ID Connexion, Données, Taille des données)
+[code]4[/code] [color=#e49f44]Fermer[/color] (ID Connexion)
+[code]5[/code] [color=#e49f44]Lire l'évênements suivant[/color]
 
 
 === rpg/maps/overworld/door4 ===
@@ -1511,18 +1511,18 @@ $36195388998735* Général
 === trans/manual_text_matrix ===
 
 $75170402412137*
-[b]Showing letters[/b]
-It just so happens that a pixel space of 5x7 while small is still able to render letters nicely. By adding an extra row and column, these letters will also look nice when put next to each other. 
+[b]Afficher des lettres[/b]
+Il s'avère qu'un espace de 5x7 est petit mais suffisant pour afficher proprement des lettres. En ajoutant une ligne et une colonne supplémentaire, ces lettres rendront très bien les unes à la suite des autres.
 
 [center][img]dialogue/manual/matrix_letter.png[/img][/center]
 
 
-[b]Small tileable screen[/b]
-Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio and tiling these, you can get most resolutions you might want. The way the pins are set up on this component was specifically designed to allow tiling. Imagine the naive pin design where each component is enabled by a single bit. This would require you to connect 1 wire for each component. In this situation, the number of wires needed for a tiled screen would scale with the area, while the gap needed to fit wires between components, would scale with the circumference. 
+[b]Petit écran xxx[/b]
+En tournant le composant, tu obtiens 8x6 pixels, qui a un ratio d'aspect intéressant de 4:3 et en juxtaposant plusieurs, tu peux obtenir la plupart des résolutions utiles. Les pattes sont définies dans ce composant spécialement pour permettre d'en juxtaposer plusieurs. Imaginez la conception naïve des broches où chaque composant est activé par un seul bit. Cela vous obligerait à connecter 1 fil pour chaque composant. Dans cette situation, le nombre de fils nécessaires pour un écran en mosaïque serait proportionnel à la surface, tandis que l'espace nécessaire pour ajuster les fils entre les composants, serait proportionnel à la circonférence.
 
 [center][img]dialogue/manual/tilable_screen.png[/img][/center]
 
-Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
+Au lieu de cela, en ayant 2 pattes d'activation, un fil peut activer une ligne entière et un autre une colonne entière. De cette façon, un seul composant peut être sélectionné par sa combinaison unique de lignes et de colonnes. De plus, l'ajustement du reste des données sur les mêmes fils signifie que les espaces horizontaux et verticaux n'ont besoin que d'une largeur de 1 pixel. Ce composant occupe visuellement un demi-pixel supplémentaire de tous les côtés, de sorte que ces composants peuvent être parfaitement juxtaposés, avec 1 carré caché entre eux pour faire passer les fils.
 
 
 === trans/panel_delayline1_output ===
@@ -2996,9 +2996,9 @@ $28271182652741* Répartit 16 bits en 2 octets
 === trans/manual_text_universal_gates ===
 
 $37735744928195*
-It turns out that you can build all the logic for a computer out of either NAND or NOR gates. The Apollo guidance computers, were built entirely of NOR gates. Designed in the sixties, they had only 4KB of RAM and 32KB of disk space, but guided astronauts to the moon nonetheless.
+Il s'avère que vous pouvez construire toute la logique d'un ordinateur à partir de portes NAND ou NOR. Les ordinateurs de guidage Apollo étaient entièrement construits de portes NOR. Conçus dans les années 60, ils n'avaient que 4 Ko de RAM et 32 Ko d'espace disque, mais ont conduit néanmoins les astronautes vers la lune.
 
-Modern computers are not built entirely of just one of the universal gates, but when applicable NAND gates are preferred over NOR, because they have less delay and occupy less area.
+Les ordinateurs modernes ne sont pas entièrement construits avec une seule des portes universelles, mais le cas échéant, les portes NAND sont préférées aux NOR, car elles ont moins de latence et occupent moins d'espace.
 
 
 === rpg/maps/overworld/slime ===
@@ -5424,21 +5424,22 @@ Sortie courante[/right]
 === trans/manual_sprite_display ===
 
 $28358052747011*
-The sprite screen is a 640x480 pixel sprite display. Before using the sprite screen, you first need to attach a sprite map, which is a PNG image that contains all your sprites. Click on the component and set the sprite map in the component panel.
+L'écran des sprites est un écran matriciel de résolution 640x480. Avant d'utiliser l'écran des sprites, tu dois d'abord attacher une carte de sprites, qui est une image PNG contenant tous tes sprites. Clique sur le composant et sélectionne la carte de sprites dans le panneau du composant.
 
+La première patte d'entrée est le [color=#e49f44]Type de Commande[/color], et la signification des 3 pattes suivantes dépend du type de commande comme indiqué ci-dessous. L'ID de sprite est toujours un nombre 8 bits et toutes les autres valeurs (position et taille) sont toujours des pairs de valeurs 16 bits.
 The first input pin is the [color=#e49f44]Command type[/color], the meaning of the next 3 pins depends on the command type as shown below. The sprite ID is always a 8 bit number and all other values (position and size) are always pairs of 16 bit values.
 
 [table=2]
-[cell]0[/cell] [cell]No command[/cell]
-[cell]1[/cell] [cell][color=#e49f44]Load sprite[/color] (Sprite ID, Position, Size)[/cell]
-[cell][/cell][cell][i]Sets the sprite of this ID. The position is the upper left corner of the sprite map.[/i][/cell]
-[cell]2[/cell] [cell][color=#e49f44]Set position[/color] (Sprite ID, Position)[/cell]
-[cell][/cell][cell][i]This sets the X and Y coordinate of the loaded sprite.[/i][/cell]
+[cell]0[/cell] [cell]Pas de commande[/cell]
+[cell]1[/cell] [cell][color=#e49f44]Charger le sprite[/color] (ID Sprite, Position, Taille)[/cell]
+[cell][/cell][cell][i]Initialise le sprite associé à cet ID. La position est le coin supérieur gauche dans la carte de sprite.[/i][/cell]
+[cell]2[/cell] [cell][color=#e49f44]Définit la position[/color] (ID Sprite, Position)[/cell]
+[cell][/cell][cell][i]Ceci définit les coordonnées en X et Y du sprite chargé.[/i][/cell]
 [/table]
 
 [center][img=300]dialogue/manual/sprite_screen.png[/img][/center]
 
-Note that sprites are layered in the order of their ID and to remove a layer, simply load a sprite with a width and height of 0.
+Note que les sprites sont empilés dans l'ordre de leurs ID et que pour supprimer une couche, il suffit de charger un sprite avec une largeur et une hauteur à 0.
 
 
 === levels/or_gate ===
@@ -7000,15 +7001,15 @@ $71204033550134* Que fais la porte NAND ?
 $92379689291727* Porte
 
 
-=== misc/rom_file_select_button ===
-
-$29197716371312* Sélectionne un fichier
-
-
 === rpg/maps/overworld/bush ===
 
 $37683898820147* C'est un buisson
 $93113262859645* Buisson
+
+
+=== misc/rom_file_select_button ===
+
+$46471024006274* Set default file
 
 
 === trans/manual_text_program ===
@@ -7329,40 +7330,40 @@ $57868504368581* Lit l'entrée des niveaux (CHECKME)
 === trans/manual_text_network ===
 
 $70445160410129*
-[b]Overview[/b]
-The "Network" component gives you low level access to networking. In general you manipulate your network by sending the component [color=#e49f44]Commands[/color] and when update [color=#39aa49]Events[/color] return from the network they get queued up and you process them one at a time. To keep track of different simultaneous connections [color=#dd6576]Connection ID[/color]s are used.
+[b]Vue d'ensemble[/b]
+Le composant "Réseau' te donne un accès bas niveau à la communication en réseau. En général tu manipules ton réseau en envoyant des color=#e49f44]commandes[/color] au composants et quand des [color=#39aa49]évênements[/color] reviennent du réseau ils sont mis en file et tu les traite un à la fois. Pour suivre les différentes connexions simultanées on utilise des [color=#dd6576]IDs de Connexion[/color].
 
-These are the command types you can send to the component and their arguments:
-[code]0[/code] No command
-[code]1[/code] [color=#e49f44]Listen[/color] ([color=#dd6576]Port[/color])
-[code]2[/code] [color=#e49f44]Connect[/color] ([color=#dd6576]IP[/color], [color=#dd6576]Port[/color])
-[code]3[/code] [color=#e49f44]Send data[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Data[/color], [color=#dd6576]Data length[/color])
-[code]4[/code] [color=#e49f44]Close[/color] ([color=#dd6576]Connection ID[/color])
-[code]5[/code] [color=#e49f44]Read next event[/color]
-[i]See component panel for which pin correspond to which argument.[/i]
+Voici les types de commande que tu peux envoyer au composant et leurs arguments :
+[code]0[/code] Aucune commande
+[code]1[/code] [color=#e49f44]Ecouter[/color] ([color=#dd6576]Port[/color])
+[code]2[/code] [color=#e49f44]Se Connecter[/color] ([color=#dd6576]IP[/color], [color=#dd6576]Port[/color])
+[code]3[/code] [color=#e49f44]Envoyer des données[/color] ([color=#dd6576]ID Connexion[/color], [color=#dd6576]Données[/color], [color=#dd6576]Taille des données[/color])
+[code]4[/code] [color=#e49f44]Fermer[/color] ([color=#dd6576]ID Connexion[/color])
+[code]5[/code] [color=#e49f44]Lire l'évênements suivant[/color]
+[i]Voir le panneau du composant pour identifier les pattes correspondantes à chaque argument.[/i]
 
-Command types [color=#e49f44]Listen[/color] and [color=#e49f44]Connect[/color] outputs the [color=#dd6576]Connection ID[/color] of the new connection.
+Les types de commandes [color=#e49f44]Ecouter[/color] et [color=#e49f44]Se Connecter[/color] génère en sortie le [color=#dd6576]ID Connexion[/color] de la nouvelle connexion. 
 
-For 2 programs to [color=#e49f44]Send data[/color] to each other, one program must first [color=#e49f44]Listen[/color] (called a server) on a [color=#dd6576]Port[/color] and the other must then [color=#e49f44]Connect[/color] (called a client), using the [color=#dd6576]IP[/color] of the listening program and the [color=#dd6576]Port[/color] it selected. Once the connection is established, the server and client function exactly the same.
+Pour que 2 programmes puissent s'[color=#e49f44]Envoyer des données[/color] l'un à l'autre, un programme (appelé serveur) doit d'abord [color=#e49f44]Ecouter[/color] sur un [color=#dd6576]Port[/color] et l'autre (le client) doit alors [color=#e49f44]Se Connecter[/color] en utilisant l'[color=#dd6576]IP[/color] du programme qui écoute et le [color=#dd6576]Port[/color] qu'il a choisi. Une fois la connexion établie, le serveur et le client fonctionnent exactement  pareil.
 
-Notice an [color=#dd6576]IP[/color] is a 32 bit number, normally written as 4 bytes with dots in between (example: 127.0.0.1). In this simulator you reverse the order of the bytes, so 127.0.0.1 becomes 0x0100007F. 0x0100007F is always your computers loopback address and you can use this to connect programs running on the same computer.
+Remarque qu'une [color=#dd6576]IP[/color] est un nombre 32 bits, qui s'écrit normalement sous forme de 4 octets séparés par des points (par exemple : 127.0.0.1). Dans ce simulateur tu inverseras l'ordre des octets, ce qui fait que  127.0.0.1 devient 0x0100007F. 0x0100007F est toujours l'adresse de bouclage de tes ordinateurs et tu peux l'utiliser pour te connecter aux programmes du même ordinateur.
 
-You can detect when events happen on the network, by checking the "Next event type" pin. These are the event types:
-[code]0[/code] No event
-[code]1[/code] [color=#39aa49]Incoming connection[/color] ([color=#dd6576]Connection ID[/color], [color=#dd6576]Port[/color])
-[code]2[/code] [color=#39aa49]Connect complete[/color]
-[code]3[/code] [color=#39aa49]Receive data[/color] ([color=#dd6576]Connection ID, Data[/color], [color=#dd6576]Data length[/color])
-[code]4[/code] [color=#39aa49]Connection closed[/color] ([color=#dd6576]Connection ID[/color] / [color=#dd6576]Error code[/color])
+Tu peux détecter quand des évênements arrivent sur le réseau, en controlant la patte "type du prochain évênement". Voici les types d'évênement :
+[code]0[/code] Pas d'évênement
+[code]1[/code] [color=#39aa49]Connexion entrante[/color] ([color=#dd6576]ID Connexion[/color], [color=#dd6576]Port[/color])
+[code]2[/code] [color=#39aa49]Connexion établie[/color]
+[code]3[/code] [color=#39aa49]Réception de données[/color] ([color=#dd6576]ID Connexion, Données[/color], [color=#dd6576]Taille des données[/color])
+[code]4[/code] [color=#39aa49]Connexion fermée[/color] ([color=#dd6576]ID Connexion[/color] / [color=#dd6576]Code d'Erreur[/color])
 
-[color=#39aa49]Incoming connection[/color] only happens after a [color=#e49f44]Listen[/color]. Use the [color=#dd6576]Port[/color] to distinguish between listeners (it is not possible to listen to the same port twice at the same time).
+[color=#39aa49]Connexion entrante[/color] arrive seulement après un [color=#e49f44]Ecouter[/color]. Utilise le [color=#dd6576]Port[/color] pour différencier entre les écoutants (il n'est pas possible d'écouter deux fois sur le même port simultanément).
 
-[color=#39aa49]Connect complete[/color] only happens after a [color=#e49f44]Connect[/color], wait for this before you start sending data.
+[color=#39aa49]Connexion établie[/color] arrive seulement après un [color=#e49f44]Se Connecter[/color], attend le avant de commencer à envoyer des données.
 
-You may send or receive between 1 and 8 bytes of data at a time, use the [color=#dd6576]Data length[/color] to decide.
+Tu peux envoyer ou recevoir entre 1 et 8 octets à la fois, utilise le paramètre [color=#dd6576]Taille des données[/color] pour choisir.
 
-A connection may be either "possibly open" or "closed". There is no way to know if a connection is actually open other than sending data. The underlying network protocols were designed like this for reliability and speed, it is not a limitation of the simulator.
+Une connexion peut être soit "potentiellement ouverte" ou "fermée". Il n'y a pas d'autre façon de savoir si la connexion est ouverte que d'envoyer des données. Les protocoles réseaux sous-jacents ont été conçus ainsi pour des raisons de fiabilité et de vitesse, ce n'est pas une limitation du simulateur.
 
-If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
+Si tu obiens un [color=#dd6576]ID Connexion[/color] valant -1n cela signifie qu'il y a eu une erreur à la connexion.
 
 
 === trans/level_negative_Label2 ===
