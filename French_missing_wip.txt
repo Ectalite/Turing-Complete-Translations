@@ -1,90 +1,37 @@
-=== misc/options_keys ===
-
-$15851382978562 Gauche
-$13781284353315 Veille
-$78882003890612 TAB
-$23041433375813 Raccourci 6
-$31504133014584 Espace
-$91413612191819 Raccourci D
-$27874359646701 Plus Aigu
-$65834804441085 Ouvrir l'URL
-$39317622588588 Raccourci E
-$27726004575826 Lire le contenu
-$68199202258305 Piste suivante
-$96347674697419 Avancer
-$58999281424396 CMD
-$57038840198662 CTRL
-$50955698469296 Raccourci 9
-$63772872007214 Stop
-$71982112085693 Raccourci 7
-$28214161279082 Raccourci B
-$83084380695531 SHIFT + TAB
-$70423659540492 Ouvrir Messagerie
-$18970380352793 Alt
-$55972860446450 Chercher
-$81640191081376 Muet
-$91733527994209 Raccourci 2
-$64108103861848 Raffraichir
-$86957870260110 Moins Grave
-$79228417307539 Droite
-$48472841971511 Favoris
-$94137103361291 Lire
-$86664894772851 Raccourci F
-$57182221632160 Aide
-$40801064032778 Piste précédente
-$32311987309013 Retour
-$83183843351576 Raccourci 0
-$51594389746074 Raccourci 4
-$49947924390850 Raccourci 5
-$24086297669523 Baisser le Volume
-$67529269053604 Page d'accueil
-$51120580663479 ESC
-$66339874250985 Enregistrer le contenu
-$88355661220986 Raccourci C
-$47330905474433 Augmenter le Volume
-$17043010993255 Stop
-$18909108170114 Raccourci A
-$57391159100618 Raccourci 3
-$92739814679396 Augmenter les basses
-$17896149617641 Réduire les Aigus
-$11908889523442 Renforcer les Basses
-$74797401805098 Raccourci 8
-$91210884350615 Raccourci 1
-
-
 === trans/level_wide_instructions_description ===
 
-$60538893544456* [center]Build a wide instruction program component[/center]
+$60538893544456 [center]Construis un composant programme pour les instructions larges[/center]
 
 
 === schematics_hub/accept_license ===
 
-$72317516399185* Agree to use [color=#dd6576][url=cc0]CC0[/url][/color] license
+$72317516399185 Accepte d'utiliser la licence [color=#dd6576][url=cc0]CC0[/url][/color]
 
 
 === trans/panel_hdd_input ===
 
-$99603056559749*
-[right]Seek
-Load
-Save
-Save value[/right]
+$99603056559749
+[right]Rechercher
+Lire
+Ecrire
+Ecrire valeur[/right]
 
 
 === misc/network_update ===
 
-$40010486743721* [center][color=#dd6576]Upload failed.[/color][/center]
-$70619187943439* Creator\nUploaded
-$83560387278127* Derives from: 
-$76023068123024* Error
-$81675147704214* Uses the network component
-$98151734218561* [center][color=#60a96b]Upload complete.[/color][/center]
-$47639082058046* Nothing here yet
+$40010486743721 [center][color=#dd6576]Echec du transfert[/color][/center]
+$70619187943439 Createur\Transmis
+$83560387278127 Dérivé de : 
+$76023068123024 Erreur
+$81675147704214 Utilise le composant réseau
+$98151734218561 [center][color=#60a96b]Téléchargement terminé.[/color][/center]
+$47639082058046 Rien ici pour l'instant
 
 
 === trans/manual_component_factory_text ===
 
 $42847481618884*
+
 Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
 
 The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
@@ -98,19 +45,19 @@ For the component factory, the file manager also manages the custom components. 
 
 === trans/level_complete_ide ===
 
-$56719825235196*
-[b]CODE IDE[/b]
-[color=#cccccc][i]Name codes and edit them in a convenient editor[/i][/color]
+$56719825235196
+[b]IDE CODE[/b]
+[color=#cccccc][i]Nomme les instructions et édite les programmes dans un éditeur pratique[/i][/color]
 
 
 === levels/byte_mux ===
 
-$15428393549821* SELECT
+$15428393549821 CHOISIR
 
 
 === trans/level_byte_constant_description ===
 
-$84789919073603* [center]Always output the number 164[/center]
+$84789919073603 [center]Envoie toujours en sortie le nombre 164[/center]
 
 
 === trans/manual_text_network ===
@@ -154,18 +101,18 @@ If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an
 
 === trans/panel_keyboard_left ===
 
-$44556588975494* [right]Read next[/right]
+$44556588975494 [right]Lire la suite[/right]
 
 
 === trans/panel_decoder2_description ===
 
-$29468245669811* [center]Turns 1 of the outputs on, based on the input[/center]
+$29468245669811 [center]Active 1 des sorties en fonction de l'entrée[/center]
 
 
 === trans/program_data_width ===
 
-$72687692653533*
-[right]Data width:
+$72687692653533
+[right]Largeur de Données :
 [/right]
 
 
@@ -191,73 +138,73 @@ Note that sprites are layered in the order of their ID and to remove a layer, si
 
 === trans/level_robot_racing_description ===
 
-$67533273328897*
-Move the robot through the track
-Use the smallest program you can
+$67533273328897
+Déplace le robot le long de la piste
+Utilise le programme le plus court possible
 
 
 === nim/backend ===
 
-$64492620873138* Always output
-$98703677236827* 1 minute ago
-$86244493049244* {hours} hours ago
-$95018143828198* 1 year ago
-$21685594109067* Just now
-$91048993146856* Save
-$98363990684104* 1 hour ago
-$84076931764831* 1 day ago
-$58374689721038* BYTES
-$88592386859564* (Worst test: {worst_trial})
-$18300496139706* 1 month ago
-$17901039729248* {months} months ago
+$64492620873138 Sortie toujours activée
+$98703677236827 il y a 1 minute
+$86244493049244 il y a {hours} heures
+$95018143828198 il y a un an
+$21685594109067 a la minute
+$91048993146856 Enregistrer
+$98363990684104 il y a une heure
+$84076931764831 il y a un jour
+$58374689721038 OCTETS
+$88592386859564 (Plus mauvais test : {worst_trial})
+$18300496139706 il y a 1 mois
+$17901039729248 il y a {months} mois
 
 #  This is a file name
-$96230605270081* new_program
-$82336838435736* Load
-$42553566189409* {minutes} minutes ago
-$70945526841433* {years} years ago
-$81432548841957* (First test scored)
-$14036822471924* {days} days ago
-$18816732910302* Save value
+$96230605270081 nouveau_programme
+$82336838435736 Charger
+$42553566189409 il y a {minutes} minutes
+$70945526841433 il y a {years} ans
+$81432548841957 (First test scored)
+$14036822471924 il y a {days} jours
+$18816732910302 Enregistrer la valeur
 
 
 === rpg/maps/prison/rat ===
 
-$68894472933139* Squeak squeak
-$86305699756314* Blood
-$30670667527598* Rat
+$68894472933139 Squeak squeak
+$86305699756314 Sang
+$30670667527598 Rat
 
 
 === trans/instructions_hint ===
 
-$65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
+$65105856275770 [center][color=#c5c5c5]Clique pour changer les bits[/color][/center]
 
 
 === misc/tests_run_all ===
 
-$55533125021199* Run all
+$55533125021199 Lancer tout
 
 
 === trans/assembly_editor_header ===
 
-$14116831487331* Assembly Editor
+$14116831487331 Editeur Assembleur
 
 
 === misc/menu_schematic_hub ===
 
-$13921098180953* schematic hub
+$13921098180953 Ecran des schémas
 
 
 === components/DivMod32 ===
 
-$61314390474120* Divide and mod 2 numbers
-$84309999871615* Divide
+$61314390474120 Divise et calcule le modulo 2 des nombres
+$84309999871615 Divise
 
 
 === trans/manual_text_truth ===
 
-$16559670174521*
-The tables of input and output which are used everywhere throughout the game are commonly known as truth tables.
+$16559670174521
+Les tables des entrées et sorties qui sont utilisées partout dans le jeu sont appelées des tables de vérité.
 
 
 
@@ -266,34 +213,34 @@ The tables of input and output which are used everywhere throughout the game are
 
 
 
-"Input" and "Output" will often be represented with variable names, like in algebra. And instead of using colors, you will often see the values represented as 0 / 1 or False / True.
+L'"Entrée" et la "Sortie" seront souvent représentées avec des noms de variable, comme en algèbre. Et au lieu d'utiliser des couleurs, tu verras souvent les valeurs représentées sous forme de 0 / 1 ou Faux / Vrai.
 
 
 === trans/hub_stats ===
 
-$30942143953871* User
+$30942143953871 Utilisateur
 
 
 === trans/panel_equal_description ===
 
-$66334667083051* [center]Check if Input 1 and Input 2 are the same[/center]
+$66334667083051 [center]Vérifie que les Entrées 1 et 2 sont identiques[/center]
 
 
 === trans/level_the_bus_description ===
 
-$20464862486158* [center]Copy the value from the correct input, to the correct output[/center]
+$20464862486158 [center]Copie la valeur de la bonne entrée vers la bonne sortie[/center]
 
 
 === dialogue/schematic_hub ===
 
-$22639280459994* Downloading list...
+$22639280459994 Téléchargement de la liste...
 
 
 === trans/level_complete_hex ===
 
-$94261690850981*
+$94261690850981
 [b]Hexadecimal[/b]
-[color=#cccccc][i]Toggle between signed, unsigned and hex numbers[/i][/color]
+[color=#cccccc][i]Bascule les nombres entre les formats signés, non signés et hexa[/i][/color]
 
 
 === trans/manual_text_terminology ===
@@ -316,15 +263,15 @@ Changing the value of the program counter, changing which instruction is loaded 
 
 === trans/hub_order_by ===
 
-$83319579232915* Order by
+$83319579232915 Trié par
 
 
 === dialogue/schematic_hub/delete_confirm ===
 
-$71921976503347* Yes
-$46660924781254*
-Are you sure you want 
-to delete the schematic called '{name}'?
+$71921976503347 Oui
+$46660924781254
+Es tu sûr de vouloir
+supprimer le schéma nommé '{name}' ?
 
 
 === trans/manual_text_matrix ===
@@ -346,30 +293,30 @@ Instead, by having 2 enable pins, one wire can enable a whole row and another a 
 
 === rpg/maps/overworld/blankidork ===
 
-$19291766514049* We are fighting the rebellion
+$19291766514049 Nous combattons la rébellion
 
 
 === rpg/maps/overworld/gruliette ===
 
-$83120363112787* Oh hi handsome
-$61022705156373*
-Oh god no, I'm done
-with this quest
-$84856635901648* IHHHhhhh my heart melts!
-$16008092188500* Gruliette
-$58406047748371*
-Only if he can bring
-me a pink flower
-$18919563572338*
-Do you want to go
-on a date with Dumio?
-$68101445990611* Here is the pink flower
-$68725679456014*
-*schmuck* bring this kiss
-to Dumio for me
-$73977053028689* Oh hi handsome
-$50949692384224* My ears hurt
-$35813418867082* That's random
+$83120363112787 Oh salut beau gosse
+$61022705156373
+Oh mon dieu non, j'ai fini
+cette quête
+$84856635901648 IHHHhhhh mon cœur fond !
+$16008092188500 Gruliette
+$58406047748371
+Seulement s'il peut m'apporter
+une fleur rose
+$18919563572338
+Veux-tu aller
+à un rendez-vous avec Dumio ?
+$68101445990611 Voici la fleur rose
+$68725679456014
+*schmuck* apporte ce baiser
+à Dumio pour mo
+$73977053028689 Oh salut beau gosse
+$50949692384224 Mes oreilles me font mal
+$35813418867082 C'est au hasard
 
 
 === trans/manual_text_universal_gates ===
@@ -409,15 +356,16 @@ $40492377880609* Pins overlap
 
 === trans/level_byte_equal_description ===
 
-$38686097566531* [center]Check if the bytes are equal[/center]
+$38686097566531 [center]Vérifie si les octets sont égaux[/center]
 
 
 === rpg/maps/prison/sign_1 ===
 
-$88221977354540* Sign
-$74189085130186*
-It says: The button 
-opens the prison doors
+$88221977354540 Panneau
+$74189085130186
+Ca dit : Le bouton ouvre
+les portes de la prison
+
 
 
 === levels/byte_nand ===
@@ -427,18 +375,18 @@ $76462832199594* Create a circuit that NANDs two bytes bitwise.
 
 === trans/panel_index_bit_index ===
 
-$96885367697181* [right]Index[/right]
+$96885367697181 [right]Index[/right]
 
 
 === components/Clock ===
 
 $29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
-$73207565196164* Clock
+$73207565196164 Horloge
 
 
 === trans/panel_output_output_3 ===
 
-$94657695889458* Output 4
+$94657695889458 Sortie 4
 
 
 === trans/levels_byte_or_description ===
@@ -457,19 +405,19 @@ Both "Enable X" and "Enable Y" have to be on to update the display.
 
 === trans/panel_divmod_input ===
 
-$48801764966719*
-[right]Enumerator
-Divisor[/right]
+$48801764966719
+[right]Enumérateur
+Diviseur[/right]
 
 
 === rpg/maps/overworld/reactor_entry ===
 
-$81583424078503* Exhaust port
+$81583424078503 Orifice d'échappement
 
 
 === trans/panel_sound_command ===
 
-$66510191984141* Command
+$66510191984141 Commande
 
 
 === trans/panel_network_input_description ===
@@ -486,24 +434,24 @@ $36399689035136*
 
 === trans/level_spacial_invasion_description ===
 
-$44980627299841* [center]Shoot the space rats![/center]
+$44980627299841 [center]Tire sur les rats de l'espace ![/center]
 
 
 === misc/add_code_name ===
 
-$57358078712675* Save
+$57358078712675 Enregistrer
 
 
 === misc/skipped_custom ===
 
-$38174137226538* Select component
+$38174137226538 Choisir le composant
 
 #  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
-$99860977387728* Go to location
+$99860977387728 Voir l'emplacement
 
 
 === misc/save_schematic ===
 
-$36331525379247* Save this schematic
+$36331525379247 Enregistrer ce schéma
 
 
