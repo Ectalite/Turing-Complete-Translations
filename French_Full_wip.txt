@@ -1044,7 +1044,7 @@ $70185788176428* Droite
 
 === levels/byte_nand ===
 
-$76462832199594* Créé un circuit qui effectue un NAND bit à bit sur deux octets.
+$76462832199594 Créé un circuit qui applique un NAND bit à bit sur deux octets.
 
 
 === trans/level_complete_profile ===
@@ -1231,7 +1231,7 @@ Utilise une valeur de positionnement de 0 si tu ne souhaites pae modifier la pos
 
 === trans/panel_or_description ===
 
-$65281182019602* [center]Effectue un OU bit à bit sur deux entrées[/center]
+$65281182019602 [center]Applique un OU bit à bit sur deux entrées[/center]
 
 
 === trans/panel_input_input_3 ===
@@ -1623,7 +1623,7 @@ $99170934143071* Carburant du coeur
 
 === trans/panel_and_description ===
 
-$92999392068622* [center]Calcule XOR sur 2 entrées bit à bit[/center]
+$92999392068622 [center]Applique XOR sur 2 entrées bit à bit[/center]
 
 
 === levels/Masking Time ===
@@ -5487,7 +5487,7 @@ $94089252493268* Patte
 
 === misc/menu_schematic_hub ===
 
-$13921098180953* Ecran des schémas
+$13921098180953 Bourse aux schémas
 
 
 === components/Byte Expander ===
