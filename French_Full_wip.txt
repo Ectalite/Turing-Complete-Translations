@@ -4976,7 +4976,7 @@ $14293122338496* Nous avons fait ajouter au stagiaire un bit "désactivé" sur c
 
 === trans/panel_probewirebit_description ===
 
-$36861847387280 Les points d'observation peuvent être utilisées pour afficher les valeurs sur les composants personalisés ou associer des valeurs au composant programme.
+$36861847387280* Les points d'observation peuvent être utilisées pour afficher les valeurs sur les composants personalisés ou associer des valeurs au composant programme.
 
 
 === trans/panel_input1_input_0 ===
@@ -7014,7 +7014,7 @@ $46471024006274* Définir le fichier par défaut
 
 === trans/manual_text_program ===
 
-$25326551844839
+$25326551844839*
 Le composant programme est un composant en lecture seule dont les données sont programmées en assembleur. Pour éditer le code, clique sur l'icône édition jaune dans le coin du composant.
 
 
@@ -7552,7 +7552,7 @@ Voici les premières choses à faire pour résoudre ce niveau :
 [b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
 [b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
 [b]5.[/b] Clique "Editer point d'observation" sur le composant programme et connecter les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
-$18860645759682
+$18860645759682*
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
 Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
