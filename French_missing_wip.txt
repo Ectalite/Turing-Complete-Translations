@@ -1,65 +1,3 @@
-=== trans/level_wide_instructions_description ===
-
-$60538893544456 [center]Construis un composant programme pour les instructions larges[/center]
-
-
-=== schematics_hub/accept_license ===
-
-$72317516399185 Accepte d'utiliser la licence [color=#dd6576][url=cc0]CC0[/url][/color]
-
-
-=== trans/panel_hdd_input ===
-
-$99603056559749
-[right]Rechercher
-Lire
-Ecrire
-Ecrire valeur[/right]
-
-
-=== misc/network_update ===
-
-$40010486743721 [center][color=#dd6576]Echec du transfert[/color][/center]
-$70619187943439 Createur\Transmis
-$83560387278127 Dérivé de : 
-$76023068123024 Erreur
-$81675147704214 Utilise le composant réseau
-$98151734218561 [center][color=#60a96b]Téléchargement terminé.[/color][/center]
-$47639082058046 Rien ici pour l'instant
-
-
-=== trans/manual_component_factory_text ===
-
-$42847481618884*
-
-Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
-
-The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
-
-The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
-
-Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
-
-For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
-
-
-=== trans/level_complete_ide ===
-
-$56719825235196
-[b]IDE CODE[/b]
-[color=#cccccc][i]Nomme les instructions et édite les programmes dans un éditeur pratique[/i][/color]
-
-
-=== levels/byte_mux ===
-
-$15428393549821 CHOISIR
-
-
-=== trans/level_byte_constant_description ===
-
-$84789919073603 [center]Envoie toujours en sortie le nombre 164[/center]
-
-
 === trans/manual_text_network ===
 
 $70445160410129*
@@ -99,23 +37,6 @@ A connection may be either "possibly open" or "closed". There is no way to know 
 If you get a [color=#dd6576]Connection ID[/color] of -1, this means there was an error connecting.
 
 
-=== trans/panel_keyboard_left ===
-
-$44556588975494 [right]Lire la suite[/right]
-
-
-=== trans/panel_decoder2_description ===
-
-$29468245669811 [center]Active 1 des sorties en fonction de l'entrée[/center]
-
-
-=== trans/program_data_width ===
-
-$72687692653533
-[right]Largeur de Données :
-[/right]
-
-
 === trans/manual_sprite_display ===
 
 $28358052747011*
@@ -136,113 +57,6 @@ The first input pin is the [color=#e49f44]Command type[/color], the meaning of t
 Note that sprites are layered in the order of their ID and to remove a layer, simply load a sprite with a width and height of 0.
 
 
-=== trans/level_robot_racing_description ===
-
-$67533273328897
-Déplace le robot le long de la piste
-Utilise le programme le plus court possible
-
-
-=== nim/backend ===
-
-$64492620873138 Sortie toujours activée
-$98703677236827 il y a 1 minute
-$86244493049244 il y a {hours} heures
-$95018143828198 il y a un an
-$21685594109067 a la minute
-$91048993146856 Enregistrer
-$98363990684104 il y a une heure
-$84076931764831 il y a un jour
-$58374689721038 OCTETS
-$88592386859564 (Plus mauvais test : {worst_trial})
-$18300496139706 il y a 1 mois
-$17901039729248 il y a {months} mois
-
-#  This is a file name
-$96230605270081 nouveau_programme
-$82336838435736 Charger
-$42553566189409 il y a {minutes} minutes
-$70945526841433 il y a {years} ans
-$81432548841957 (First test scored)
-$14036822471924 il y a {days} jours
-$18816732910302 Enregistrer la valeur
-
-
-=== rpg/maps/prison/rat ===
-
-$68894472933139 Squeak squeak
-$86305699756314 Sang
-$30670667527598 Rat
-
-
-=== trans/instructions_hint ===
-
-$65105856275770 [center][color=#c5c5c5]Clique pour changer les bits[/color][/center]
-
-
-=== misc/tests_run_all ===
-
-$55533125021199 Lancer tout
-
-
-=== trans/assembly_editor_header ===
-
-$14116831487331 Editeur Assembleur
-
-
-=== misc/menu_schematic_hub ===
-
-$13921098180953 Ecran des schémas
-
-
-=== components/DivMod32 ===
-
-$61314390474120 Divise et calcule le modulo 2 des nombres
-$84309999871615 Divise
-
-
-=== trans/manual_text_truth ===
-
-$16559670174521
-Les tables des entrées et sorties qui sont utilisées partout dans le jeu sont appelées des tables de vérité.
-
-
-
-
-
-
-
-
-L'"Entrée" et la "Sortie" seront souvent représentées avec des noms de variable, comme en algèbre. Et au lieu d'utiliser des couleurs, tu verras souvent les valeurs représentées sous forme de 0 / 1 ou Faux / Vrai.
-
-
-=== trans/hub_stats ===
-
-$30942143953871 Utilisateur
-
-
-=== trans/panel_equal_description ===
-
-$66334667083051 [center]Vérifie que les Entrées 1 et 2 sont identiques[/center]
-
-
-=== trans/level_the_bus_description ===
-
-$20464862486158 [center]Copie la valeur de la bonne entrée vers la bonne sortie[/center]
-
-
-=== dialogue/schematic_hub ===
-
-$22639280459994 Téléchargement de la liste...
-
-
-=== trans/level_complete_hex ===
-
-$94261690850981
-[b]Hexadecimal[/b]
-[color=#cccccc][i]Bascule les nombres entre les formats signés, non signés et hexa[/i][/color]
-
-
 === trans/manual_text_terminology ===
 
 
@@ -259,19 +73,6 @@ A number used as a name for memory locations (often for registers). These are us
 
 [b]Jump[/b]
 Changing the value of the program counter, changing which instruction is loaded next.
-
-
-=== trans/hub_order_by ===
-
-$83319579232915 Trié par
-
-
-=== dialogue/schematic_hub/delete_confirm ===
-
-$71921976503347 Oui
-$46660924781254
-Es tu sûr de vouloir
-supprimer le schéma nommé '{name}' ?
 
 
 === trans/manual_text_matrix ===
@@ -291,32 +92,11 @@ Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio an
 Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
 
 
-=== rpg/maps/overworld/blankidork ===
+=== trans/level_program_text ===
 
-$19291766514049 Nous combattons la rébellion
-
-
-=== rpg/maps/overworld/gruliette ===
-
-$83120363112787 Oh salut beau gosse
-$61022705156373
-Oh mon dieu non, j'ai fini
-cette quête
-$84856635901648 IHHHhhhh mon cœur fond !
-$16008092188500 Gruliette
-$58406047748371
-Seulement s'il peut m'apporter
-une fleur rose
-$18919563572338
-Veux-tu aller
-à un rendez-vous avec Dumio ?
-$68101445990611 Voici la fleur rose
-$68725679456014
-*schmuck* apporte ce baiser
-à Dumio pour mo
-$73977053028689 Oh salut beau gosse
-$50949692384224 Mes oreilles me font mal
-$35813418867082 C'est au hasard
+$38014836341470*
+[right][color=#e49f44]Code
+Input[/color][/right]
 
 
 === trans/manual_text_universal_gates ===
@@ -335,13 +115,6 @@ The file rom outputs the content of a file 8 bytes at a time.
 The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the length of the file in bytes.
 
 
-=== trans/level_program_text ===
-
-$38014836341470*
-[right][color=#e49f44]Code
-Input[/color][/right]
-
-
 === trans/level_negative_Label ===
 
 $11951041502381* Change what each bit means by changing the numbers.
@@ -354,39 +127,26 @@ $53184531022842* Sandbox only
 $40492377880609* Pins overlap
 
 
-=== trans/level_byte_equal_description ===
+=== trans/panel_network_input_description ===
 
-$38686097566531 [center]Vérifie si les octets sont égaux[/center]
-
-
-=== rpg/maps/prison/sign_1 ===
-
-$88221977354540 Panneau
-$74189085130186
-Ca dit : Le bouton ouvre
-les portes de la prison
-
-
-
-=== levels/byte_nand ===
-
-$76462832199594* Create a circuit that NANDs two bytes bitwise.
-
-
-=== trans/panel_index_bit_index ===
-
-$96885367697181 [right]Index[/right]
+$36399689035136*
+[b][color=#e49f44]Request type[/color] (arguments)[/b]
+[code]0[/code] No request
+[code]1[/code] [color=#e49f44]Listen[/color] (Port)
+[code]2[/code] [color=#e49f44]Connect[/color] (IP, Port)
+[code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
+[code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
+[code]5[/code] [color=#e49f44]Read next event[/color]
 
 
 === components/Clock ===
 
 $29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
-$73207565196164 Horloge
 
 
-=== trans/panel_output_output_3 ===
+=== levels/byte_nand ===
 
-$94657695889458 Sortie 4
+$76462832199594* Create a circuit that NANDs two bytes bitwise.
 
 
 === trans/levels_byte_or_description ===
@@ -403,55 +163,17 @@ The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, 
 Both "Enable X" and "Enable Y" have to be on to update the display.
 
 
-=== trans/panel_divmod_input ===
+=== trans/manual_component_factory_text ===
 
-$48801764966719
-[right]Enumérateur
-Diviseur[/right]
+$42847481618884*
+Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
 
+The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
 
-=== rpg/maps/overworld/reactor_entry ===
+The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
 
-$81583424078503 Orifice d'échappement
+Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
 
-
-=== trans/panel_sound_command ===
-
-$66510191984141 Commande
-
-
-=== trans/panel_network_input_description ===
-
-$36399689035136*
-[b][color=#e49f44]Request type[/color] (arguments)[/b]
-[code]0[/code] No request
-[code]1[/code] [color=#e49f44]Listen[/color] (Port)
-[code]2[/code] [color=#e49f44]Connect[/color] (IP, Port)
-[code]3[/code] [color=#e49f44]Send data[/color] (Connection ID, Data, Data length)
-[code]4[/code] [color=#e49f44]Close[/color] (Connection ID)
-[code]5[/code] [color=#e49f44]Read next event[/color]
-
-
-=== trans/level_spacial_invasion_description ===
-
-$44980627299841 [center]Tire sur les rats de l'espace ![/center]
-
-
-=== misc/add_code_name ===
-
-$57358078712675 Enregistrer
-
-
-=== misc/skipped_custom ===
-
-$38174137226538 Choisir le composant
-
-#  This is the text on a button that appears when a custom component has changed size and no longer fits in a schematic. You can press this button to make the camera go to the location where the custom component was
-$99860977387728 Voir l'emplacement
-
-
-=== misc/save_schematic ===
-
-$36331525379247 Enregistrer ce schéma
+For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
 
 
