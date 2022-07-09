@@ -92,12 +92,6 @@ Rotating the component, you get 8x6 pixels, which has a nice 4:3 aspect ratio an
 Instead, by having 2 enable pins, one wire can enable a whole row and another a whole column. This way, a single component can be selected by its unique row and column combination. Further, fitting the rest of the data on the same wires, means that the horizontal and vertical gaps only need to be 1 square wide. This component visually takes up half a square extra on all sides, such that these components can be tiled up pixel perfectly, with 1 square hidden between them for running wires.
 
 
-=== trans/level_program_text ===
-
-$38014836341470
-[right][color=#e49f44]Saisie Code[/color][/right]
-
-
 === trans/manual_text_universal_gates ===
 
 $37735744928195*
@@ -112,18 +106,6 @@ $72892007399429*
 The file rom outputs the content of a file 8 bytes at a time.
 
 The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the length of the file in bytes.
-
-
-=== trans/level_negative_Label ===
-
-$11951041502381 Modifie la signification de chaque bit en modifiant les nombres.
-
-
-=== misc/component_button ===
-
-$20148770258379 Composant sans surface
-$53184531022842 Bac à sable uniquement
-$40492377880609 Les pattes se chevauchent
 
 
 === trans/panel_network_input_description ===
@@ -143,16 +125,6 @@ $36399689035136*
 $29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
 
 
-=== levels/byte_nand ===
-
-$76462832199594 Créé un circuit qui effectue un NAND bit à bit sur deux octets.
-
-
-=== trans/levels_byte_or_description ===
-
-$68379799788575 [center]Applique OR sur chaque paire de bit[/center]
-
-
 === dialogue/dotMatrixtext_link ===
 
 $82486902873499*
@@ -160,19 +132,5 @@ The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/
 The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
 
 Both "Enable X" and "Enable Y" have to be on to update the display.
-
-
-=== trans/manual_component_factory_text ===
-
-$42847481618884*
-Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
-
-The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
-
-The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
-
-Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
-
-For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
 
 
