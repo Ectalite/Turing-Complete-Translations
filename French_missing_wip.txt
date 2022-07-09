@@ -63,16 +63,16 @@ Note that sprites are layered in the order of their ID and to remove a layer, si
 # DateCustoms
 $99266452352883*
 [b]Instruction[/b]
-A byte or a few bytes that together make the computer perform a specific action.
+Un Octet ou série d'octets qui ensemble font réaliser une action spécifique à l'ordinateur.
 
 [b]Opcode[/b]
-The part of the instruction that determines which operation (like ADD or AND) is to be done.
+La partie de l'instruction qui détermine quelle opération (comme ADD ou AND) sera réalisée.
 
-[b]Memory address[/b]
-A number used as a name for memory locations (often for registers). These are used to specify where an instruction is supposed to load data from or save data to.
+[b]Adresse Mémoire[/b]
+Un nombre utilisé comme nom pour un emplacement mémoire (souvent pour un registre). Ils servent à indiquer ou l'instruction doit charger ou écrire les données.
 
-[b]Jump[/b]
-Changing the value of the program counter, changing which instruction is loaded next.
+[b]Saut[/b]
+Modifie la valeur du compteur de programme, ce qui change l'instruction suivante à charger/
 
 
 === trans/manual_text_matrix ===
@@ -102,10 +102,10 @@ Modern computers are not built entirely of just one of the universal gates, but 
 
 === trans/panel_fileloader_description ===
 
-$72892007399429*
-The file rom outputs the content of a file 8 bytes at a time.
+$72892007399429
+La rom fichier envoit en sortie le contenu d'un fichier par bloc de 8 octets.
 
-The highest 64 bit address (0xFFFFFFFFFFFFFFFF) is special and outputs the length of the file in bytes.
+L'adresse 64 bits maximale (0xFFFFFFFFFFFFFFFF) est spéciale et renvoit en sortie la longueur du fichier en octets.
 
 
 === trans/panel_network_input_description ===
@@ -122,7 +122,7 @@ $36399689035136*
 
 === components/Clock ===
 
-$29674337035619* Placing the clock will divide ticks into 2 phases. The clock is [OFF] in the early phase and [ON] in the late phase. All memory components load in the early phase and save in the late phase.
+$29674337035619 L'usage de l'horloge divise les cycles en deux phases. L'horloge est [OFF] dans la première phase et [ON] dans la seconde phase. Tous les composants mémoire chargent dans la première phase et écrivent dans la seconde phase.
 
 
 === dialogue/dotMatrixtext_link ===
