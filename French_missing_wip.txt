@@ -1,113 +1,113 @@
 === trans/panel_max_data_len_max_data_length ===
 
-$88063177433135* [right]Max data length[/right]
+$88063177433135 [right]Longueur de données Max[/right]
 
 
 === trans/level_delay_level_description ===
 
-$24326379952614* Create a circuit that costs 5 GATEs and 6 DELAY
+$24326379952614 Crée un circuit qui coûte 5 PORTES and 6 DELAIS
 
 
 === rpg/maps/boss_room/tricky ===
 
-$36278362971660* No no no!!
-$48425443153584* I hate hate hate
-$83674875280936* Do not be shy
-$55557864347967* Baaaaaaad
-$46678960551148* NO NO NO
-$34049297531488* please come come
-$45293657348934* Hahahah
-$62754542093871* Shoot shoot shoot
-$44499633447481* I can't wait
-$45196756331738* tricksy
-$96717076976482* Turn back. My chest
-$39217019822298* GIGIGIGIGI
-$83023298467462* GIGIGIGIG
-$54218005116072* Bad bad bad
-$88481545304668* GIIIIIII
-$83172011939489* do not be scared
-$58217446676216* Rip tricksy
+$36278362971660 Non non non !!
+$48425443153584 la haine haine haine
+$83674875280936 Ne sois pas timide
+$55557864347967 Maaaaaaal
+$46678960551148 NON NON NON
+$34049297531488 s'il te plait viens viens
+$45293657348934 Hahahah
+$62754542093871 Tire tire tire
+$44499633447481 J'ai hâte
+$45196756331738 rusé
+$96717076976482 Reviens. Mon coffre
+$39217019822298 GIGIGIGIGI
+$83023298467462 GIGIGIGIG
+$54218005116072 Mal mal mal
+$88481545304668 GIIIIIII
+$83172011939489 n'ais pas peur
+$58217446676216 Rip tricksy
 
 
 === trans/share_prompt_label ===
 
-$61304386273201*
-Name
+$61304386273201
+Nom
 Description
 
 
 === trans/panels_sound_description ===
 
-$65379881141228*
-[b][color=#e49f44]Command type[/color][/b]
-[code]0[/code] No request
-[code]1[/code] [color=#e49f44]Play[/color]
-[code]2[/code] [color=#e49f44]Reset and play[/color]
+$65379881141228
+[b][color=#e49f44]Type de Commande[/color][/b]
+[code]0[/code] Aucune Requête
+[code]1[/code] [color=#e49f44]Lire[/color]
+[code]2[/code] [color=#e49f44]Retour et lire[/color]
 [code]3[/code] [color=#e49f44]Stop[/color]
 
 
 === trans/component_panels_sprite_inputs ===
 
-$89388086235988*
-[right][color=#e49f44]Command type[/color]
-Layer ID
+$89388086235988
+[right][color=#e49f44]Type Commande[/color]
+Id de couche
 Position
-Size[/right]
+Taille[/right]
 
 
 === dialogue/schematic_hub/order_by ===
 
-$69981201197158* Rising
-$70134513915163* Newly added
-$87115430626073* My uploads
-$56045953383535* Architectures
-$25536941657464* Components
-$43488408276984* Popular
+$69981201197158 Tendance
+$70134513915163 Ajouts récents
+$87115430626073 Mes contributions
+$56045953383535 Architectures
+$25536941657464 Composants
+$43488408276984 Populaire
 
 
 === rpg/maps/overworld/dr draco ===
 
-$23996965687702* I am unhappy with my bed\nThe blanket doesn't cover my feet
+$23996965687702 Je suis mécontent de mon lit\nLa couverture ne couvre pas mes pieds
 
 
 === trans/manual_text_edit_instructions ===
 
-$75786562031150*
-After you complete the level "Turing Complete" the instruction panel allows you to manually edit instructions. This is useful if you wish to build your own computers.
+$75786562031150
+Après avoir terminé le niveau "Turing Complet", le panneau d'instructions te permet de modifier les instructions. Ceci est utile si vous souhaitez construire vos propres ordinateurs.
 
-If you just finished the OVERTURE computer and see something weird, odds are you may have changed the definitions.
+Si vous venez de terminer l'ordinateur OVERTURE et que vous voyez quelque chose de bizarre, il y a de fortes chances que vous ayez changé les définitions.
 
-Each row has a label and 8 bits you can set to either[img]dialogue/on.png[/img], [img]dialogue/off.png[/img] or [img]dialogue/any.png[/img] (wildcard). When using the instruction panel, if the bitpattern matches a row, the label will be shown.
+Chaque ligne a une étiquette et 8 bits que tu peux définir sur [img]dialogue/on.png[/img], [img]dialogue/off.png[/img] ou [img]dialogue/any.png[/img ] (caractère joker). Lors de l'utilisation du panneau d'instructions, si le modèle binaire correspond à une ligne, l'étiquette est affichée.
 
 
 === trans/manual_de_morgan ===
 
-$20250843622435*
-The truth tables of the four fundamental gates are symmetrical. You can convert between them by [b][color=#6e9759]inverting the input[/color][/b] (vertical arrows) or [b][color=#596197]inverting the output[/color][/b] (horizontal arrows) as indicated by the graphic below.
+$20250843622435
+Les tables de vérité des quatre portes fondamentales sont symétriques. Tu peux passer de l'une à l'autre en [b][color=#6e9759]inversant l'entrée[/color][/b] (flêches verticales ou en [b][color=#596197]inversant la sortie[/color][/b] (flêches horizontales) comme indiqué dans la figure ci-dessous.
 
 [center][img=400]dialogue/manual/de_morgan.png[/img][/center]
 
 Notes
 [table=2]
-[cell]1 [/cell][cell]You can get from any basic gate to any other, at most you have to NOT both inputs and output.[/cell]
-[cell]2 [/cell][cell]You can go between OR/NOR by inverting output. The same goes AND/NAND. In fact NOR means NOT OR and NAND means NOT AND. Notice the component shape of OR/NOR are identical except for the little dot at the tip which means NOT. AND/NAND are also identical except for this dot.[/cell]
-[cell]3[/cell][cell]Negating the output flips all the bits in the last row of the truth table. Negating the inputs mirrors the last row of the truth table around the center.[/cell]
+[cell]1 [/cell][cell]Tu peux passer de n'importe quelle porte de base à un autre, au plus tu dois INVERSER à la fois les entrées et la sortie.[/cell]
+[cell]2 [/cell][cell]Tu peux passer de OR à NOR en inversant la sortie. Pareil pour AND/NAND. En fait NOR signifie NON OU et NAND signifie NON ET. Remarque bien que la forme des composants OR et NOR sont identiques à l'exception du petit point à l'extrémité qui signifie NON. AND/NAND sont aussi identiques sauf pour ce point.[/cell]
+[cell]3[/cell][cell]Inverser la sortie correspond à inverser tous les bits de la dernière ligne de la table de vérité. Inverser les entrées produit le symétrique de la dernière ligne de la table de vérité par rapport au centre.[/cell]
 [/table]
 
 
 === trans/level_dance_description ===
 
-$29803992718733* Generate dance moves
+$29803992718733 Génère des mouvements de dance
 
 
 === trans/level_binary_programming_description ===
 
-$66247694103179* [center]Add 5 to the input[/center]
+$66247694103179 [center]Ajoute 5 à l'entrée[/center]
 
 
 === trans/level_component_factory_Label2 ===
 
-$37347658035959* Component preview
+$37347658035959 Prévisualisation du composant
 
 
 === misc/options_keys ===
