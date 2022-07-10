@@ -3273,7 +3273,7 @@ $91515053618360* Aide-mémoire
 === main_scripts/functions ===
 
 $11467644007149* Compteur {nr}
-$35675567872962* Un compteur ne peut fonctionner avec un incrément de 0
+$35675567872962 Un compteur ne peut pas fonctionner avec un incrément de 0
 $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
@@ -4719,10 +4719,10 @@ n'ont pas encore eu leur première insurrection de robots ?
 $13109388951000* Nous mesurons l'univers avec des nombres. Donc ta machine doit apprendre à compter.
 $90120091310928* SOMME
 $48208190309258* RETENUE
-$16564356062672*
+$16564356062672
 Considère que les entrées sont [ZERO] ou [ONE] en fonction de leur valeur [OFF] ou [ON]. Additionne-les-en binaire, de sorte que le résultat soit [ZERO] ou [ONE].
 
-Comme avec l'addition habituelle, si le résultat ne peut être écrit avec un chiffre, mets la retenue à [ONE].
+Comme avec l'addition habituelle, si le résultat ne peut pas être écrit avec un chiffre, mets la retenue à [ONE].
 
 
 === trans/options_robot_left ===
@@ -5453,7 +5453,7 @@ $11472059692644* Tu as la chance de communiquer avec des gens très avancés de 
 $17063157033479*
 Dans le niveau précédent, nous avons additionné 2 entrées, cette fois ce sera 3. Encore une fois, ajoute toutes les entrées en binaire, de façon à ce que le résultat soit [ZERO] ou [ONE].
 
-Comme avec l'addition normale, si le résultat ne peut être représenté avec un chiffre, met la retenue à [ONE].
+Comme avec l'addition normale, si le résultat ne peut pas être représenté avec un chiffre, met la retenue à [ONE].
 $74173200701943* SOMME
 $67922993335648* RETENUE
 
@@ -6344,8 +6344,8 @@ Bit 8
 
 === trans/options_reset_warning ===
 
-$19141523477461*
-Toutes les solutions des niveaux, les composants personnalisés et les architectures seront supprimées. Cela ne peut être annulé, es tu sûr de vouloir le faire ?
+$19141523477461
+Toutes les solutions des niveaux, les composants personnalisés et les architectures seront supprimées. Cela ne peut pas être annulé, es tu sûr de vouloir le faire ?
 (Le jeu sera fermé, il sera réinitialisé au prochain démarrage)
 
 
