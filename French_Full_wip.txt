@@ -421,7 +421,7 @@ $89612128414294* Sens de l'étiquette
 
 === misc/watchable_state ===
 
-$58678516111149* Éditer les espions
+$58678516111149 Verknüpfe Komponenten
 
 
 === main_scripts/input ===
