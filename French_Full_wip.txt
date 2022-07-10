@@ -5450,7 +5450,7 @@ $11472059692644* Tu as la chance de communiquer avec des gens très avancés de 
 
 === levels/full_adder ===
 
-$17063157033479
+$17063157033479*
 Dans le niveau précédent, nous avons additionné 2 entrées, cette fois ce sera 3. Encore une fois, ajoute toutes les entrées en binaire, de façon à ce que le résultat soit [ZERO] ou [ONE].
 
 Comme avec l'addition normale, si le résultat ne peut pas être représenté avec un chiffre, met la retenue à [ONE].
