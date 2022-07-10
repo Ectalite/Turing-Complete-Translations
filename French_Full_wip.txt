@@ -6478,9 +6478,9 @@ $59845475842015* Active/Désactive une valeur
 === trans/share_prompt_bbcode_tags ===
 
 $51065735869890*
-Supported BBcode tags: 
-URL: [url]https://turingcomplete.game[/url]
-Monospace: [code]01011101[/code]
+Balises BBcode gérées : 
+URL : [url]https://turingcomplete.game[/url]
+Monospace : [code]01011101[/code]
 
 
 === rpg/maps/prison/rat ===
