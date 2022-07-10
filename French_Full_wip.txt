@@ -17,7 +17,7 @@ les écrans de contrôle du réacteur
 
 === rpg/maps/overworld/control_panel ===
 
-$94056033073339
+$94056033073339*
 Le capitaine me jettera
 par-dessus bord si je touche à ça
 $20128423531070* Panneau de contrôle
@@ -61,7 +61,7 @@ $49251062339706* Options
 
 === misc/ide_delete_program ===
 
-$30480928296639* Es-tu sûr de vouloir supprimer le programme : {program} ?
+$30480928296639* Es tu sûr de vouloir supprimer le programme : {program} ?
 $87279416580516* Oui
 
 
@@ -206,7 +206,7 @@ Sortie 4
 
 === trans/panel_network_output_description ===
 
-$44520675249142
+$44520675249142*
 [b][color=#39aa49]Type d'événement[/color] (results)[/b]
 [code]0[/code] Pas de nouvel événement
 [code]1[/code] [color=#39aa49]Connexion entrante[/color] (ID Connexion, Port)
@@ -291,7 +291,7 @@ $62247409328063* Multiplier
 
 === trans/panel_dual_load_input ===
 
-$93092890899642
+$93092890899642*
 [right]Lire
 Écrire
 Adresse
@@ -307,7 +307,7 @@ $93346467287938* Composants liés
 
 === trans/panel_register16_inputs ===
 
-$96875261858960
+$96875261858960*
 [right]Lire
 Écrire
 Écrire valeur[/right]
@@ -349,7 +349,7 @@ $72402014450423* [center]Téléchargement[/center]
 
 === trans/panel_regred_input ===
 
-$61209423072819
+$61209423072819*
 [right]Lire
 Écrire
 Écrire valeur[/right]
@@ -421,7 +421,7 @@ $89612128414294* Sens de l'étiquette
 
 === misc/watchable_state ===
 
-$58678516111149 Éditer les points d'observation
+$58678516111149* Éditer les espions
 
 
 === main_scripts/input ===
@@ -527,7 +527,7 @@ $47202418972371* Pile
 
 === trans/levels_saving_bytes_text ===
 
-$36838510526259
+$36838510526259*
 [right]Action
 État attendu
 Sortie attendue
@@ -566,7 +566,7 @@ Décalage de 3 : [color=#e49f44]90 decg 3[/color]
 [ON] [ON] [OFF] [ON] [OFF] [OFF] [OFF] [OFF]
 $18137790657923* En plus de te faire faire le composant décaler à gauche, nous avons aussi demander au stagiaire de faire le composant décaler à droite. Il lui a suffi de réaliser une version miroir de ce schéma.
 $18518173140953* Je te recommande d'ajouter [color=#e49f44]décaler gauche[/color] et [color=#e49f44]décaler droite[/color] à tes circuits pour les prochains niveaux.
-$29295063752414 DÉCALER DE
+$29295063752414* DÉCALER DE
 
 
 === trans/panel_outputlevel_enable ===
@@ -606,12 +606,12 @@ $45894441609339* Tapis Roulant
 === components/SpriteDisplay ===
 
 $27510895774306* écran de sprite multi-couche
-$49278744667468 Écran de Sprite
+$49278744667468* Écran de Sprite
 
 
 === misc/ui_panel/left_inputs ===
 
-$16586225094516 ENTRÉES
+$16586225094516* ENTRÉES
 
 
 === trans/manual_console ===
@@ -691,7 +691,7 @@ $66247694103179* [center]Ajoute 5 à l'entrée[/center]
 
 === levels/Add 5 ===
 
-$11540713506719
+$11540713506719*
 Tu es maintenant libre de modifier le programme de ton ordinateur.
 Clique sur l'icône Éditer du composant programme pour commencer à programmer.
 $19281970848639* [center]Ajoute 5 à l'entrée.[/center]
@@ -753,7 +753,7 @@ $57182221632160* Aide
 $32311987309013* Retour
 $92411601634183* Pause
 $93394348651979* Hyper Droit
-$64963573823520 Impr Écran
+$64963573823520* Impr Écran
 $11442487736991* Pause Attn
 $83183843351576* Raccourci 0
 $74172180238771* Arrêt défill
@@ -790,7 +790,7 @@ $20820887361993* Clique "Cycle suivant" pour voir
 
 === trans/panel_hdd_input ===
 
-$99603056559749
+$99603056559749*
 [right]Rechercher
 Lire
 Écrire
@@ -947,7 +947,7 @@ $17712385236630* Réalise un circuit qui est toujours [ON].
 === dialogue/schematic_hub/delete_confirm ===
 
 $71921976503347* Oui
-$46660924781254
+$46660924781254*
 Es-tu sûr de vouloir
 supprimer le schéma nommé '{name}' ?
 
@@ -969,7 +969,7 @@ $99373213759665*
 === components/ByteEqual ===
 
 $35668435514829* Détermine si les deux entrées sont égales
-$39369982838671 Égalité
+$39369982838671* Égalité
 
 
 === levels/binary_racer ===
@@ -1014,7 +1014,7 @@ $24932613021646* Peut contourner certaines erreurs de dépendance circulaire
 
 === trans/panel_network_input_description ===
 
-$36399689035136
+$36399689035136*
 [b][color=#e49f44]Type de requête[/color] (arguments)[/b]
 [code]0[/code] Aucune requête
 [code]1[/code] [color=#e49f44]Ecouter[/color] (Port)
@@ -1793,7 +1793,7 @@ $40757019106897* Porte
 === components/NetworkClient ===
 
 $44510554000571* Réseau
-$90462653419289 Gère les connexions réseau
+$90462653419289* Gère les connexions réseau
 
 
 === trans/options_animation_speed ===
@@ -2375,7 +2375,7 @@ $30896164786171* Constante 32 bits
 
 === trans/manual_text_ram ===
 
-$10969790213397
+$10969790213397*
 Ce simulateur gère plusieurs types de RAM avec des caractéristiques différentes, comme ce qui existe en vrai.
 
 [b]RAM[/b]
@@ -2771,7 +2771,7 @@ $80528055112236* [center]Activer[/center]
 
 === misc/program_edit_signals ===
 
-$98772447663910 Éditer les points d'observation
+$98772447663910* Éditer les points d'observation
 
 
 === main_scripts/levels ===
@@ -3075,7 +3075,7 @@ Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 Lorsque le premier bit est [ON], [CHARGER] la mémoire et envoyez la vers la sortie.
 Lorsque le second bit est [ON], [SAUVEGARDER] l'octet en entrée.
 $15510981129613* CHARGER
-$13502950630653
+$13502950630653*
 [color=#ff9800]Aucune
 0
 0[/color
@@ -3083,7 +3083,7 @@ $19109563882664* NE PAS CHARGER
 $16372198430230* SAUVEGARDER
 $11467279617581* SAUVEGARDER
 $15498440508450* Ne rien faire
-$10080722944246* NE PAS Écrire
+$10080722944246* NE PAS ECRIRE
 $15582618410991* CHARGER ET SAUVEGARDER
 $18873598212433* CHARGER
 
@@ -3095,7 +3095,7 @@ $12641789008694* Créez un système qui sortira toujours le nombre 164.
 
 === trans/panel_ram_fast_input ===
 
-$80778301064570
+$80778301064570*
 [right]Lire
 Écrire
 Adresse
@@ -3588,7 +3588,7 @@ $24034386495895* Trouve le meilleur emplacement pour la plongée du Pirate
 
 === main_scripts/dialogue ===
 
-$95287273202819 Écrire
+$95287273202819* Écrire
 
 #  hint for odd number
 $68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] avec juste un unique composant...
@@ -3736,7 +3736,7 @@ Sortie courante[/color]
 
 === trans/manual_edit_instructions ===
 
-$86365051641280 Éditer les instructions
+$86365051641280* Éditer les instructions
 
 
 === trans/panel_xnor ===
@@ -3825,7 +3825,7 @@ $64810753197096* [center]Inverse un nombre[/center]
 
 === trans/level_ram_component_RichTextLabel2 ===
 
-$92123299522120 [center]États attendus[/center]
+$92123299522120* [center]États attendus[/center]
 
 
 === trans/options_working ===
@@ -3982,7 +3982,7 @@ $15921686607849* [center]La ferme visqueuse[/center]
 
 === trans/panel_network_outputs ===
 
-$68275268516971
+$68275268516971*
 ID Connexion
 Données / Port / Code Erreur
 Longueur des Données
@@ -4225,7 +4225,7 @@ $56547245144983*
 
 === trans/panel_register64_inputs ===
 
-$44212297072750
+$44212297072750*
 [right]Lire
 Écrire
 Écrire valeur[/right]
@@ -4645,7 +4645,7 @@ $79367841142406* Signal d'Horloge
 
 === misc/program_edit_button ===
 
-$38481453712356 Éditer la mémoire
+$38481453712356* Éditer la mémoire
 
 
 === trans/options_robot_up ===
@@ -4767,7 +4767,7 @@ $84515289220335* [right]Activer[/right]
 
 === trans/panel_bitmemory_inputs ===
 
-$47585933412781
+$47585933412781*
 [right]Activer l'écriture
 
 Écrire valeur[/right]
@@ -5073,7 +5073,7 @@ $97247779246257* OR (OU)
 
 === trans/panel_regredplus_input ===
 
-$88713386551026
+$88713386551026*
 [right]Lire
 Écrire
 Écrire valeur[/right]
@@ -5295,7 +5295,7 @@ $60887380748746* Réalise un circuit qui applique NOR sur 2 octets bit à bit.
 
 === trans/component_panel_latency_RichTextLabel ===
 
-$29766254362093
+$29766254362093*
 [right]Lire
 Écrire
 Adresse
@@ -5307,7 +5307,7 @@ Adresse
 
 === trans/panel_program_1edit_program ===
 
-$65592803016716 Éditer le programme
+$65592803016716* Éditer le programme
 
 
 === trans/level_wide_instructions_description ===
@@ -5342,7 +5342,7 @@ $12746117288689* Entrée
 
 === misc/controls2 ===
 
-$38773676077206 Éditer les instructions
+$38773676077206* Éditer les instructions
 $98116750645182* Lis la page de manuel
 
 
@@ -5586,7 +5586,7 @@ $77460843937727* [center]Active 1 des sorties, en fonction de l'entrée[/center]
 
 === trans/panel_register8_inputs ===
 
-$13844216291005
+$13844216291005*
 [right]Lire
 Écrire
 Écrire valeur[/right]
@@ -5951,10 +5951,10 @@ Toutes les valeurs des états surveillés sont comparées aux valeurs attendues 
 Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
 [url=import\_overture][color=#e49f44]OVERTURE[/color][/url]
 $32399229965611* De plus, comme tu viens de finir [color=#e49f44]LEG[/color], j'ai débloqué tous les composants 16, 32 et 64 bit que tu trouveras dans le bac à sable.
-$59234666744501 État de fil attendu {state} (adresse {address})
+$59234666744501* État de fil attendu {state} (adresse {address})
 $84893616447734* Ligne {nr} : Le composant lié {index} n'est pas connecté
 $19965026621630* Sortie attendue {value} mais la sortie n'est pas activée (adresse {address})
-$95416257208387 État attendu {state} (adresse {address})
+$95416257208387* État attendu {state} (adresse {address})
 $31718526969901* Valeur attendue à l'adresse {address} : {value}
 $15446846177093* Bienvenue au labo. Comme l'atelier de composants, ce n'est pas un niveau normal mais un outil.
 $16072814175447* Programmer du matériel bugué est très frustrant. Il est pénible de devoir soudainement se poser des questions sur les circuits quand on est en pleine résolution d'un problème de programmation. Il est tentant de faire un correctif rapide afin de revenir au problème initial. Mais maintenant ce correctif vite fait a cassé autre chose dans un programme qui fonctionnait jusque là et ainsi de suite. Au final, en développant le matériel essaie de viser 100% de fiabilité avant de démarrer la programmation !
@@ -6220,7 +6220,7 @@ $36744990871521* Niveaux
 $60495775939951* IO
 $49451948914812* Maths
 $46598465325525* RAM
-$12972244522540 Écrans
+$12972244522540* Écrans
 $53900277352031* 8 bits
 $73356117817137* Pattes de Sortie à trois états
 $77408777382636* Pattes sans tampon
@@ -6953,7 +6953,7 @@ $57531353625235* Registre
 
 === trans/level_saving_bytes_text ===
 
-$43691912945654
+$43691912945654*
 [right]Action
 État attendu
 Sortie attendue
@@ -7388,7 +7388,7 @@ $12211557416281* Revenir au niveau
 
 === trans/panel_rom_inputs ===
 
-$52400325164412
+$52400325164412*
 [right]Lire
 [i][color=#aaaaaa](bac à sable uniquement)[/color][/i] Écrire
 Adresse
@@ -7544,7 +7544,7 @@ $17106892574116* Ajoute un compteur au circuit
 $50177586789991* Ajoute {nr} registres de plus au circuit
 $15754373587500* Définis l'incrément du compteur à 4
 $56024330661504* Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
-$19099471819164
+$19099471819164*
 Voici les premières choses à faire pour résoudre ce niveau :
     
 [b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
