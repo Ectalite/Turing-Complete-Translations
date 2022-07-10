@@ -61,7 +61,7 @@ $49251062339706* Options
 
 === misc/ide_delete_program ===
 
-$30480928296639 Es-tu sûr de vouloir supprimer le programme : {program} ?
+$30480928296639* Es-tu sûr de vouloir supprimer le programme : {program} ?
 $87279416580516* Oui
 
 
@@ -421,7 +421,7 @@ $89612128414294* Sens de l'étiquette
 
 === misc/watchable_state ===
 
-$58678516111149 Éditer les points d'observation
+$58678516111149* Éditer les points d'observation
 
 
 === main_scripts/input ===
@@ -3075,7 +3075,7 @@ Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 Lorsque le premier bit est [ON], [CHARGER] la mémoire et envoyez la vers la sortie.
 Lorsque le second bit est [ON], [SAUVEGARDER] l'octet en entrée.
 $15510981129613* CHARGER
-$13502950630653
+$13502950630653*
 [color=#ff9800]Aucune
 0
 0[/color]
