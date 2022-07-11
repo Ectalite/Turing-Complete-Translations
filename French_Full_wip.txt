@@ -122,8 +122,8 @@ $15296208528991* Les espèces capables de finir sont considérées comme légale
 
 === trans/manual_text_console ===
 
-$39093856809104*
-Le composant terminal est un écran [color=#dd6576][url=RGB color]ASCII[/url][/color] couleur 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
+$39093856809104
+Le composant terminal est un écran ASCII [color=#dd6576][url=RGB color]couleur[/url][/color] 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
  [img=200]dialogue/manual/Console/link_state.png[/img]
 
 Les modifications de la mémoire liée permettent de modifier le contenu du terminal. Dans le mode monochrome standard, chaque octet correspond à un caractère de l'écran. Cependant, la position du premier caractère peut être décalée en fonction de l'entrée du terminal. Cela permet par exemple d'implémenter le défilement.
@@ -3273,7 +3273,7 @@ Sortie[/right]
 
 === ui/toggles/level_log2 ===
 
-$91515053618360* Aide-mémoire
+$91515053618360 Manuel
 
 
 === main_scripts/functions ===
@@ -3487,7 +3487,7 @@ Entrée
 
 === trans/manual_header ===
 
-$10757271456963* Aide-mémoire
+$10757271456963 Manuel
 
 
 === components/Ror16 ===
@@ -5871,7 +5871,7 @@ $14193654974055* Inférieur Signé
 $59485174474959* Délices ordonnés
 $14522992467987* Porte OR
 $64662599400870* Inverseur de bit
-$11457737665157* Plat de Spaghetti
+$11457737665157 Schéma Spaghetti
 $30630492494839* NOT Octet
 $74096060570427* Instructions Larges
 $85514901357243* Ajouter les Octets
@@ -7573,18 +7573,18 @@ $17106892574116* Ajoute un compteur au circuit
 $50177586789991* Ajoute {nr} registres de plus au circuit
 $15754373587500* Définis l'incrément du compteur à 4
 $56024330661504* Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
-$19099471819164*
+$19099471819164
 Voici les premières choses à faire pour résoudre ce niveau :
     
-[b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
+[b]1.[/b] Clique l'icône schéma ([b][i][/i][/b]) et crée une nouvelle architecture.
 [b]2.[/b] Ajoute un bloc de programme avec 4 sorties.
 [b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
 [b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
 [b]5.[/b] Clique "Éditer point d'observation" sur le composant programme et connecter les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
-$18860645759682*
+$18860645759682
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
-Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+Le premier octet correspond à l'opération (l'[color=#e49f44]OPCODE[/color]).
 
 Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
 
@@ -7596,7 +7596,7 @@ $14051336765362* Enfin c'est maintenant que tu commences à construire l'archite
 $13268807052125* (Tu pourras additionner 7+7, mais ici 7 signifie lire depuis l'entrée et l'entrée a pour valeur 8)
 $30006055126224* Le point d'Observation {output} doit pointer sur la sortie
 $19066122929275* [center]Met en place les registres et implémente l'opcode ADD [/center]
-$10912834168905*
+$10912834168905
 Enfin, pour ce niveau l'[color=#e49f44]OPCODE[/color] est toujours 0. Cela veut dire qu'il faut additionner les arguments 1 2 et envoyer le résultat sur la destination.
 
 Les valeurs utilisées pour les arguments ou la destination sont les suivantes :
@@ -7610,7 +7610,6 @@ Les valeurs utilisées pour les arguments ou la destination sont les suivantes :
 [color=#e49f44]6[/color]: Compteur
 [color=#e49f44]7[/color]: Entrée/Sortie
 [/code]
-
 Dans le niveau suivant tu implémenteras d'autres [color=#e49f44]OPCODES[/color], ce qui nécessitera une nouvelle ALU différente de celle d'[color=#e49f44]OVERTURE[/color].
 $10922418807673* L'argument 7 nécessite de lire sur l'entrée, mais l'entrée n'est pas active.
 $62258842382434* Le point d'Observation {counter} doit pointer sur le compteur
