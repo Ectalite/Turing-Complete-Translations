@@ -222,7 +222,7 @@ $59394224080614* [center]Coffre de Tricksy[/center]
 
 === trans/manual_text_top_the_robot ===
 
-$45646734925323
+$45646734925323*
 L'écran montre le robot et son environnement
 
 [img=430]dialogue/screen_fr.png[/img]
@@ -2552,7 +2552,7 @@ $82949244692745* Calculer
 === levels/Further Delayed Lines ===
 
 $17366913897135* Construis un circuit dont la sortie est identique à l'entrée avec un retard de 2 cycles.
-$60989431641221
+$60989431641221*
 Ce niveau présente le composant Ligne à Retard. Sa sortie est identique à l'entrée avec 1 cycle de décalage.
 
 [img]dialogue/delay_buffer_fr.png[/img]
@@ -3115,11 +3115,11 @@ Adresse
 
 $18510295620397* Met la sortie à [OFF] pendant les cycles impairs et [ON] pendant les cycles pairs.
 $16987046679863* Tu as appris précédemment que nous n'acceptons pas les dépendances circulaires. Il existe cependant une exception à la règle que tu vas voir maintenant.
-$16037516781370
+$16037516781370*
 Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaires. 
   
   [img]dialogue/delay_buffer_fr.png[/img]
-$17588119878416
+$17588119878416*
 Le ligne à retard a le droit de dépendre de sa sortie, car son entrée ne va pas influencer le reste du circuit jusqu'au prochain cycle.
   
 [img]dialogue/delay_buffer_fr.png[/img]
@@ -3172,7 +3172,7 @@ $97461374731210* Couleur de fil
 
 === trans/manual_text_circular_dependency ===
 
-$29050562435902
+$29050562435902*
 Une dépendance circulaire apparaît quand l'entrée d'un composant dépend de sa propre sortie.
 
 [center][img]res://dialogue/circular_dependency.png[/img][/center]
@@ -5244,6 +5244,7 @@ $71918065858983* Enregistrer
 === components/Timing ===
 
 $96011300295966* Temps
+$78774996925434* UNIX time in microseconds
 
 
 === rpg/maps/overworld/dr draco ===
@@ -7230,7 +7231,7 @@ La Ligne à Retard nous permet d'utiliser une valeur un cycle plus tard.
 Nous devons réaliser un composant qui nous permet d'utiliser une valeur dans le futur, quel que soit le nombre de cycles plus tard.
 Nous appellerons cette valeur [color=#e49f44]sauvegarde[/color].
 $13045361823397* NE PAS SAUVEGARDER
-$13740696609075
+$13740696609075*
 Ce niveau comporte deux entrées.
 La valeur sauvegardée est modifiée seulement quand la première entrée est à [ON].
 La seconde entrée est la nouvelle valeur de la [color=#e49f44]sauvegarde[/color].
@@ -7550,7 +7551,7 @@ $86446054110623* Ajoute
 $64348543296709* Le point d'Observation {value} doit pointer sur la sortie
 $14060810229477* Ajoute 6 registres dans le circuit
 $79667526283284* Le point d'Observation {value} doit pointer sur le compteur
-$14960344494328
+$14960344494328*
 Parfois il est utile de charger une valeur directement depuis le programme que d'un registre. Cela s'appelle charger une valeur immédiate. Pour l'architecture [color=#e49f44]LEG[/color] l'opcode indique directement que nous voulons faire cela. C'est possible de la façon suivante :
 
 Quand le 8ème bit de l'opcode est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
@@ -7586,7 +7587,7 @@ Voici les premières choses à faire pour résoudre ce niveau :
 [b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
 [b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
 [b]5.[/b] Clique "Éditer point d'observation" sur le composant programme et connecter les registres aux points 0 à 5. Connecte le compteur au 6 et la sortie au 7.
-$18860645759682
+$18860645759682*
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
 Le premier octet correspond à l'opération (l'[color=#e49f44]OPCODE[/color]).
