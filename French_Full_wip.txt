@@ -3278,7 +3278,7 @@ $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
-$10533010562232* SCORE DELAI : {delay}
+$10533010562232 DELAI : {delay}
 $10098517717617* Test : {nr} / {total}
 $39385804477995* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée.  [url=circular_dependency]Détails[/url]
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
@@ -3288,7 +3288,7 @@ $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée
 $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
-$32508339206292* SCORE NAND : {nand}
+$32508339206292 PORTES : {gate}
 
 
 === levels/or_gate_3 ===
