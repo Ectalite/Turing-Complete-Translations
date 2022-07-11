@@ -703,7 +703,6 @@ Clique sur l'icône Éditer du composant programme pour commencer à programmer.
 $19281970848639* [center]Ajoute 5 à l'entrée.[/center]
 $17770257567603* Donc pendant ce temps on te demandera d'aider un peu sur le vaisseau.
 $19446152707984* Clique sur l'icône mémoire du composant programme pour commencer à programmer ton ordinateur. Ton ordinateur doit lire une entrée, y ajouter 5 et la renvoyer en sortie (on ne s'occupera pas du dépassement possible).
-$80639633676917* Entrée :
 $12078933051174* Mais comme tu ne sais pas encore le programmer, tu n'es pas encore vraiment prêt pour ça..
 $11074247151096* Remarque que le composant registre rouge a été remplacé par un composant personnel dont l'usage est identique.
 $18134632592542* Tu as construit ton ordinateur, mais pour gagner la compétition tu dois encore finir le labyrinthe.
@@ -3284,7 +3283,7 @@ $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
-$10533010562232 DELAI : {delay}
+$10533010562232* DELAI : {delay}
 $10098517717617* Test : {nr} / {total}
 $39385804477995* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée.  [url=circular_dependency]Détails[/url]
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
@@ -3294,7 +3293,7 @@ $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée
 $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
-$32508339206292 PORTES : {gate}
+$32508339206292* PORTES : {gate}
 
 
 === levels/or_gate_3 ===
@@ -5244,7 +5243,7 @@ $71918065858983* Enregistrer
 === components/Timing ===
 
 $96011300295966* Temps
-$78774996925434* UNIX time in microseconds
+$78774996925434* temps UNIX en microsecondes
 
 
 === rpg/maps/overworld/dr draco ===
