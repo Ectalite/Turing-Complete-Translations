@@ -611,8 +611,8 @@ $49278744667468* Écran de Sprite
 
 === dialogue/schematic_hub/delete_comment_confirm ===
 
-$52709446588114* Yes
-$52823211591830* Are you sure you want to delete this comment?
+$52709446588114* Oui
+$52823211591830* Es-tu sur de vouloir supprimer ce commentaire ?
 
 
 === misc/ui_panel/left_inputs ===
@@ -3942,7 +3942,7 @@ $81678588906692* Message d'arrêt
 
 === dialogue/schematic_hub/submit_comment ===
 
-$56450764824675* Submit
+$56450764824675* Confirmer
 
 
 === components/Neg16 ===
@@ -4308,7 +4308,7 @@ $73798355428095* Décalage à droite
 
 === misc/hub_comment_label ===
 
-$90173235002118* Comments
+$90173235002118* Commentaires
 
 
 === components/Constant64 ===
@@ -5102,7 +5102,7 @@ $52956877721342* Tirer
 
 === trans/hub_add_comment ===
 
-$56654968471533* Add comment
+$56654968471533* Ajouter commentaire
 
 
 === levels/not_gate ===
