@@ -123,7 +123,7 @@ $15296208528991* Les espèces capables de finir sont considérées comme légale
 === trans/manual_text_console ===
 
 $39093856809104*
-Le composant terminal est un écran [color=#dd6576][url=RGB color]ASCII[/url][/color] couleur 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
+Le composant terminal est un écran ASCII [color=#dd6576][url=RGB color]couleur[/url][/color] 80x24. Il doit être associé à une source mémoire à l'aide du bouton composant lié :
  [img=200]dialogue/manual/Console/link_state.png[/img]
 
 Les modifications de la mémoire liée permettent de modifier le contenu du terminal. Dans le mode monochrome standard, chaque octet correspond à un caractère de l'écran. Cependant, la position du premier caractère peut être décalée en fonction de l'entrée du terminal. Cela permet par exemple d'implémenter le défilement.
@@ -225,7 +225,7 @@ $59394224080614* [center]Coffre de Tricksy[/center]
 $45646734925323*
 L'écran montre le robot et son environnement
 
-[img=430]dialogue/screen.png[/img]
+[img=430]dialogue/screen_fr.png[/img]
 
 
 === trans/panel_clock_input ===
@@ -607,6 +607,12 @@ $45894441609339* Tapis Roulant
 
 $27510895774306* écran de sprite multi-couche
 $49278744667468* Écran de Sprite
+
+
+=== dialogue/schematic_hub/delete_comment_confirm ===
+
+$52709446588114* Oui
+$52823211591830* Es-tu sur de vouloir supprimer ce commentaire ?
 
 
 === misc/ui_panel/left_inputs ===
@@ -2549,7 +2555,7 @@ $17366913897135* Construis un circuit dont la sortie est identique à l'entrée 
 $60989431641221*
 Ce niveau présente le composant Ligne à Retard. Sa sortie est identique à l'entrée avec 1 cycle de décalage.
 
-[img]dialogue/delay_buffer.png[/img]
+[img]dialogue/delay_buffer_fr.png[/img]
 
 
 === levels/negative_numbers ===
@@ -3112,11 +3118,11 @@ $16987046679863* Tu as appris précédemment que nous n'acceptons pas les dépen
 $16037516781370*
 Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaires. 
   
-  [img]dialogue/delay\\_buffer.png[/img]
+  [img]dialogue/delay_buffer_fr.png[/img]
 $17588119878416*
 Le ligne à retard a le droit de dépendre de sa sortie, car son entrée ne va pas influencer le reste du circuit jusqu'au prochain cycle.
   
-[img]dialogue/delay\\_buffer.png[/img]
+[img]dialogue/delay_buffer_fr.png[/img]
 
 
 === components/Adder Simple ===
@@ -3175,7 +3181,7 @@ Ce simulateur n'autorise pas les dépendances circulaires et génère alors une 
 
 Les pattes carrées sont une exception, elles influencent la sortie mais lors d'un autre cycle. Elles ne peuvent donc pas causer de dépendance circulaire.
 
-[center][img]res://dialogue/delay_buffer.png[/img][/center]
+[center][img]res://dialogue/delay_buffer_fr.png[/img][/center]
 
 
 === trans/panel_splitter16_output ===
@@ -3267,7 +3273,7 @@ Sortie[/right]
 
 === ui/toggles/level_log2 ===
 
-$91515053618360* Aide-mémoire
+$91515053618360* Manuel
 
 
 === main_scripts/functions ===
@@ -3481,7 +3487,7 @@ Entrée
 
 === trans/manual_header ===
 
-$10757271456963* Aide-mémoire
+$10757271456963* Manuel
 
 
 === components/Ror16 ===
@@ -3934,6 +3940,11 @@ $20154743351442* [center]Ajoute les conditions aux codes de calcul[/center]
 $81678588906692* Message d'arrêt
 
 
+=== dialogue/schematic_hub/submit_comment ===
+
+$56450764824675* Confirmer
+
+
 === components/Neg16 ===
 
 $17253409670931* Inverser
@@ -4293,6 +4304,11 @@ $55371048386984* D'accord
 
 $93124177265670* Décalage à droite des bits de l'entrée
 $73798355428095* Décalage à droite
+
+
+=== misc/hub_comment_label ===
+
+$90173235002118* Commentaires
 
 
 === components/Constant64 ===
@@ -5084,6 +5100,11 @@ $88713386551026*
 $52956877721342* Tirer
 
 
+=== trans/hub_add_comment ===
+
+$56654968471533* Ajouter commentaire
+
+
 === levels/not_gate ===
 
 $19085882338208* [b]Consigne[/b]\nFais un clique droit pour désélectionner
@@ -5223,6 +5244,7 @@ $71918065858983* Enregistrer
 === components/Timing ===
 
 $96011300295966* Temps
+$78774996925434* UNIX time in microseconds
 
 
 === rpg/maps/overworld/dr draco ===
@@ -5850,7 +5872,7 @@ $14193654974055* Inférieur Signé
 $59485174474959* Délices ordonnés
 $14522992467987* Porte OR
 $64662599400870* Inverseur de bit
-$11457737665157* Plat de Spaghetti
+$11457737665157* Schéma Spaghetti
 $30630492494839* NOT Octet
 $74096060570427* Instructions Larges
 $85514901357243* Ajouter les Octets
@@ -7214,6 +7236,10 @@ Ce niveau comporte deux entrées.
 La valeur sauvegardée est modifiée seulement quand la première entrée est à [ON].
 La seconde entrée est la nouvelle valeur de la [color=#e49f44]sauvegarde[/color].
 
+Voici un schéma du composant que tu dois réaliser :
+
+[img]dialogue/saving_gracefully/bit_memory_fr.png[/img]
+
 Envois toujours en sortie la [color=#e49f44]sauvegarde[/color].
 
 
@@ -7531,7 +7557,8 @@ Parfois il est utile de charger une valeur directement depuis le programme que d
 Quand le 8ème bit de l'opcode est [ON], utilise l'argument 1 comme une valeur immédiate et non comme une adresse de registre.
 Quand le 7ème bit de l'opcode est [ON], utilise l'argument 2 comme une valeur immédiate et non comme une adresse de registre.
 	
-		[img]dialogue/leg_diagram.png[/img]
+		[img]dialogue/leg_diagram_2_fr.png[/img]
+		
 $10788301006338* Le point d'Observation {nr} doit pointer sur un registre ou un composant personnel contenant un registre
 $19338533633006* Définis l'incrément du compteur à 4
 $15197362332657* Crée un nouveau schéma et ajoute un programme avec une sortie de 4 octets
@@ -7555,7 +7582,7 @@ $56024330661504* Le point d'Observation {nr} doit pointer sur un registre ou un 
 $19099471819164*
 Voici les premières choses à faire pour résoudre ce niveau :
     
-[b]1.[/b] Clique l'icône schéma ([b][i]?[/i][/b]) et crée une nouvelle architecture.
+[b]1.[/b] Clique l'icône schéma ([b][i][/i][/b]) et crée une nouvelle architecture.
 [b]2.[/b] Ajoute un bloc de programme avec 4 sorties.
 [b]3.[/b] Ajoute un compteur, définis son incrément à 4 et connecte-le au bloc de programme.
 [b]4.[/b] Ajoute 6 registres (ou 6 composants personnels contenant un registre)
@@ -7563,13 +7590,13 @@ Voici les premières choses à faire pour résoudre ce niveau :
 $18860645759682*
 L'architecture [color=#e49f44]LEG[/color] est un ordinateur qui lit 4 octets de programme par cycle. 
 
-Le premier octet correspond à l'opération (called the [color=#e49f44]OPCODE[/color]).
+Le premier octet correspond à l'opération (l'[color=#e49f44]OPCODE[/color]).
 
 Comme beaucoup d'opérations prennent 2 arguments (ADD, OR etc.), les second et troisième octets servent pour les arguments.
 
 Et comme la plupart des opérations retournent 1 résultat, le quatrième octet est pour le résultat.
   
-  [img]dialogue/leg\_diagram\_1.png[/img]
+	[img]dialogue/leg_diagram_1_fr.png[/img]
 $11377431500625* Ajoute 6 registres au circuit
 $14051336765362* Enfin c'est maintenant que tu commences à construire l'architecture [color=#e49f44]LEG[/color] !
 $13268807052125* (Tu pourras additionner 7+7, mais ici 7 signifie lire depuis l'entrée et l'entrée a pour valeur 8)
@@ -7589,7 +7616,6 @@ Les valeurs utilisées pour les arguments ou la destination sont les suivantes :
 [color=#e49f44]6[/color]: Compteur
 [color=#e49f44]7[/color]: Entrée/Sortie
 [/code]
-
 Dans le niveau suivant tu implémenteras d'autres [color=#e49f44]OPCODES[/color], ce qui nécessitera une nouvelle ALU différente de celle d'[color=#e49f44]OVERTURE[/color].
 $10922418807673* L'argument 7 nécessite de lire sur l'entrée, mais l'entrée n'est pas active.
 $62258842382434* Le point d'Observation {counter} doit pointer sur le compteur

@@ -1,8 +1,0 @@
-=== trans/share_prompt_bbcode_tags ===
-
-$51065735869890
-Balises BBcode gérées : 
-URL : [url]https://turingcomplete.game[/url]
-Monospace : [code]01011101[/code]
-
-
