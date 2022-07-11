@@ -966,7 +966,7 @@ $94261690850981*
 
 === trans/level_complete_gate ===
 
-$99373213759665
+$99373213759665*
 [b]Score Portes[/b]
 [color=#cccccc][i]Tu peux maintenant voir le Score Portes de tes circuits et composants.[/i][/color]
 
@@ -4438,7 +4438,7 @@ $25170203412473* Sens du label
 
 === ui/top_bar/scores ===
 
-$56840961921536 PORTES : \n DELAI :
+$56840961921536* PORTES : \n DELAI :
 
 
 === trans/rpg_decoartion ===
@@ -7161,7 +7161,7 @@ $58217446676216* Rip tricksy
 
 === ui/top_bar/gate_score ===
 
-$16224450605442 PORTES :
+$16224450605442* PORTES :
 
 
 === trans/xor_gate_RichTextLabel2 ===
