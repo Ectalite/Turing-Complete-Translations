@@ -3588,7 +3588,7 @@ $45682345144408* Recettes circulaires
 
 === trans/level_flood_predictor_description ===
 
-$24034386495895* Trouve le meilleur emplacement pour la plongée du Pirate
+$24034386495895 Trouve le meilleur emplacement pour la glissade du Pirate
 
 
 === main_scripts/dialogue ===
