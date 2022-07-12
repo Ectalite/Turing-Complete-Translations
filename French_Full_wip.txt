@@ -1777,7 +1777,7 @@ For the component factory, the file manager also manages the custom components. 
 === misc/network_update ===
 
 $47639082058046* Rien ici pour l'instant
-$70619187943439* Createur\Transmis
+$70619187943439 Createur\nTransmis
 $83560387278127* Dérivé de : 
 $76023068123024* Erreur
 $81675147704214* Utilise le composant réseau
