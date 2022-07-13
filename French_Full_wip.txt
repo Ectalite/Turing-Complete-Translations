@@ -3921,7 +3921,7 @@ $13520918982355* Ajoute un bloc de RAM, ainsi l'ordinateur aura 256 octets de m�
 
 $16755383054285* [center]Détermine si la première entrée est plus petite que la seconde.[/center]
 $19006843777401* Crée un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
-$46083799633716* {input\_1} est plus petit que {input\_2}?
+$46083799633716 {input_1} est plus petit que {input_2}?
 
 
 === trans/panel_register16_outputs ===
@@ -5953,7 +5953,7 @@ $12275727420074* Dois-je tout regarder ?
 === levels/test_lab ===
 
 $46069044039152* Sortie attendue {output} (adresse {address})
-$11038144815919*
+$11038144815919
 Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
 
 Le labo a 2 mots-clés supplémentaires.
@@ -5962,21 +5962,21 @@ Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au
 
 La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
-[img]dialogue/watched\_state.png[/img]
+[img]dialogue/watched_state.png[/img]
 
 Par exemple :
 [code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
-[color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]\_[/color] [color=#4a9658]r2[/color][/code]
+[color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]_[/color] [color=#4a9658]r2[/color][/code]
 
 Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
 
 Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
-[color=#c54d5e]set\_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
-[color=#c54d5e]set\_input[/color] [color=#eb9433]123[/color]
+[color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
+[color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
 
 Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
-[url=import\_overture][color=#e49f44]OVERTURE[/color][/url]
+[url=import_overture][color=#e49f44]OVERTURE[/color][/url]
 $32399229965611* De plus, comme tu viens de finir [color=#e49f44]LEG[/color], j'ai débloqué tous les composants 16, 32 et 64 bit que tu trouveras dans le bac à sable.
 $59234666744501* État de fil attendu {state} (adresse {address})
 $84893616447734* Ligne {nr} : Le composant lié {index} n'est pas connecté
