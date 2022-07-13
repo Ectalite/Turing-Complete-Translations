@@ -1283,7 +1283,7 @@ $35063135798145* Statut
 $13757925963562* Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer un disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
 $10750976989948*
 Les 4 premières entrées te donneront dans l'ordre :
-num\_disque - le numéro du disque en haut de la pile (de 2 à 4)
+num_disque - le numéro du disque en haut de la pile (de 2 à 4)
 source - le numéro d'emplacement de départ
 destination - le numéro d'emplacement cible
 réserve - Le 3ème emplacement qui n'est ni la source ni la destination
@@ -1302,12 +1302,12 @@ Implémente l'algorithme suivant :
 
 Algorithme des tours de Hanoi[code][color=#87a8c8]
 fonction déplacer(numdisque, source, destination, réserve):
-  si num\_disque est 0:
+  si num_disque est 0:
     déplacer disque de source à dest
   sinon:
-    déplacer(num\_disque-1, source, réserve, destination)
+    déplacer(num_disque-1, source, réserve, destination)
     déplacer disque de source à dest
-    déplacer(num\_disque-1, réserve, destination, source)
+    déplacer(num_disque-1, réserve, destination, source)
 
 déplacer(numdisque, source, destination, réserve)[/color][/code]
 
