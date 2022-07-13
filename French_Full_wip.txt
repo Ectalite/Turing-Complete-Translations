@@ -1281,9 +1281,9 @@ $35063135798145* Statut
 === levels/Tower of Radioactive Alloy ===
 
 $13757925963562* Cette fois nous te demandons de déplacer des piles de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer un disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
-$10750976989948
+$10750976989948*
 Les 4 premières entrées te donneront dans l'ordre :
-num_disque - le numéro du disque en haut de la pile (de 2 à 4)
+num\_disque - le numéro du disque en haut de la pile (de 2 à 4)
 source - le numéro d'emplacement de départ
 destination - le numéro d'emplacement cible
 réserve - Le 3ème emplacement qui n'est ni la source ni la destination
@@ -1297,17 +1297,17 @@ Contrôle la grue en utilisant les valeurs suivantes en sortie :
 Manipule l'aimant manuellement à l'aide des touches Flèches et Entrée pour activer/désactiver.
 $19265994465686* Nous avons besoin de toi pour ranger le sous-sol.
 $35120623183961* Déplacer de {source} vers {destination}
-$15855497886737
+$15855497886737*
 Implémente l'algorithme suivant :
 
 Algorithme des tours de Hanoi[code][color=#87a8c8]
 fonction déplacer(numdisque, source, destination, réserve):
-  si num_disque est 0:
+  si num\_disque est 0:
     déplacer disque de source à dest
   sinon:
-    déplacer(num_disque-1, source, réserve, destination)
+    déplacer(num\_disque-1, source, réserve, destination)
     déplacer disque de source à dest
-    déplacer(num_disque-1, réserve, destination, source)
+    déplacer(num\_disque-1, réserve, destination, source)
 
 déplacer(numdisque, source, destination, réserve)[/color][/code]
 
@@ -2587,7 +2587,7 @@ $60885816586685* Sortie
 
 === levels/NAND Gate ===
 
-$17420270098223 Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Sois [color=#dd6576]sûr[/color] de savoir comment elle fonctionne avant de valider le niveau, sinon tu pourrais être bloqué dans le prochain!
+$17420270098223* Dans ce niveau, le but sera de comprendre comment fonctionne une porte NAND. Sois [color=#dd6576]sûr[/color] de savoir comment elle fonctionne avant de valider le niveau, sinon tu pourrais être bloqué dans le prochain!
 $11034378482152* Correct ! Tu as débloqué la porte NAND. Avec ce composant tu pourras construire tout le reste de ton ordinateur!
 $18270083417453* Vérifier
 $19208664264770* [b]Consigne[/b]\nClique sur l'un des boutons de la dernière ligne du tableau.
@@ -4975,7 +4975,7 @@ $34083666001769* Commentaire de fil
 
 $16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
 $85589489148198* Composants utilisés\n{nr} sur 3
-$18288998816979 Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
+$18288998816979* Ce niveau a un [color=#e63e5b][url=odd\_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
 
 === misc/wire_color ===
@@ -5114,7 +5114,7 @@ $56654968471533* Ajouter commentaire
 $19085882338208* [b]Consigne[/b]\nFais un clique droit pour désélectionner
 $10042327259531* Maintenant que tu as déverrouillé la porte NAND, il est temps de créer ton propre circuit.
 $14042842216181* Dans le dernier niveau, tu as construit le tableau à partir du circuit. Dans ce niveau tu devras créer un circuit qui correspondra au tableau.
-$10604720087324 [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nCliquez [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nTu réussiras le niveau une fois que les deux combinaisons seront justes.
+$10604720087324* [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nCliquez [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nTu réussiras le niveau une fois que les deux combinaisons seront justes.
 $19798729463813*
 En utilisant des portes NAND, contruis une porte NOT.
 
@@ -6727,7 +6727,7 @@ L'instruction [color=#e49f44]ret[/color] doit réaliser les actions suivantes :
  [i]- [color=#e49f44]DÉPILER[/color] l'adresse de retour de la pile et sauter à cette adresse[/i]
 
 Tu peux échanger de l'information avec et depuis une fonction en écrivant normalement les données dans des registres. Rappelle-toi quels registres sont écrasés par une fonction avant de l'appeler.
-$19416009887091
+$19416009887091*
 Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le [color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. On appele cette méthode "l'appel" d'une fonction et le retour au programme le "retour" de la fonction.
 
 Mais pour que l'on puisse utiliser ce morceau de code plusieurs fois, on doit pouvoir sauter à des endroits différents lors du retour, dépendant de l'endroit dans le programme où l'on a appelé la fonction.
