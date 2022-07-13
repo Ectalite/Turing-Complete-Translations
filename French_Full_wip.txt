@@ -3921,7 +3921,7 @@ $13520918982355* Ajoute un bloc de RAM, ainsi l'ordinateur aura 256 octets de m�
 
 $16755383054285* [center]Détermine si la première entrée est plus petite que la seconde.[/center]
 $19006843777401* Crée un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
-$46083799633716 {input_1} est plus petit que {input_2}?
+$46083799633716* {input_1} est plus petit que {input_2}?
 
 
 === trans/panel_register16_outputs ===
@@ -5953,7 +5953,7 @@ $12275727420074* Dois-je tout regarder ?
 === levels/test_lab ===
 
 $46069044039152* Sortie attendue {output} (adresse {address})
-$11038144815919
+$11038144815919*
 Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
 
 Le labo a 2 mots-clés supplémentaires.
