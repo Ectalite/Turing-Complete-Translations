@@ -4471,6 +4471,11 @@ Sortie attendue
 Sortie courante[/right]
 
 
+=== trans/tick_label ===
+
+$39906291838542* Cycle
+
+
 === components/Output16z ===
 
 $54782010205016* Sortie commutée 16 Bits
@@ -5765,6 +5770,8 @@ $36858295122746* [right]Adresse[/right]
 
 === trans/level_signed_negator_labels3 ===
 
+
+# Make sure the signal flows only from left to right. There are 3 tests.[b]Test 1[/b]: Both sides will be [OFF].[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
 $66996894079719* Attendu   Actuel
 
 
@@ -5899,9 +5906,8 @@ $43018398941741* Toujours activé
 $45773199639367* Cycles pairs
 $68155633878444* Délai
 $33343343932901* Turing Complet
-$69830943995038* Sens Unique
-$81417895515868* Commutateur de bit
 $95989050249094* Porte AND étendue
+$81417895515868* Commutateur de bit
 $62167495140389* Décaler
 $63331549672739* Codes Opération
 $13219675195117* Nombre IMPAIR de Signaux
@@ -6256,6 +6262,12 @@ $75695254533352* Tables de vérité
 === levels/robot_race ===
 
 $15403032472607* La course de robots est notre sport favori sur le vaisseau. Des robots programmés par différentes personnes vont essayer d'arriver à a fin de la course le plus rapidement possible. Le gagnant sera le programmeur dont le programme aura le moins de ligne.
+$67151579876362*
+Contrôles du robot accéléré :
+[code][color=#e49f44]0[/color] Aller à droite
+[color=#e49f44]1[/color] Aller en bas
+[color=#e49f44]2[/color] Aller à gauche
+[color=#e49f44]3[/color] Aller en haut[/code]
 $19966247197959* Cette fois-ci tu contrôleras FastBot : il ne peut pas voir ce qu'il y a devant lui, mais il peut tourner et avancer durant le même coup d'horloge. (Il porte aussi des baskets rouges pour aller plus vite).
 
 
@@ -7266,14 +7278,13 @@ Mod
 
 === trans/instructions_the_robot ===
 
-$26621808961883*
-[color=#e49f44]0[/color] Déplacement à droite
-[color=#e49f44]1[/color] Déplacement vers le bas
-[color=#e49f44]2[/color] Déplacement à gauche
-[color=#e49f44]3[/color] Déplacement vers le haut
-[color=#e49f44]4[/color] Profite de l'instant
-[color=#e49f44]5[/color] Action [color=#a9a9a9](entrée)[/color]
-[color=#e49f44]6[/color] Tir laser [color=#a9a9a9](tab)[/color]
+$26358418182667*
+[color=#e49f44]0[/color] Tourner à gauche
+[color=#e49f44]1[/color] Avancer tout droit
+[color=#e49f44]2[/color] Tourner à droite
+[color=#e49f44]3[/color] Profiter de l'instant
+[color=#e49f44]4[/color] Effectuer une action [color=#a9a9a9](ENTREE)[/color]
+[color=#e49f44]5[/color] Tirer au laser [color=#a9a9a9](TAB)[/color]
 
 
 === trans/nor_gate_RichTextLabel2 ===
