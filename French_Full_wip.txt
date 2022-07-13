@@ -982,7 +982,7 @@ $39369982838671* Égalité
 $16076448195257* Ce niveau est mon passe-temps favori. Convertir du décimal au binaire en temps limité.
 $29718660090112* Mauvaise réponse
 $37319690622142* Très bien, tu as atteint le niveau {current_level}.
-$19111664765554
+$19111664765554*
 Modifie les bits dans le panneau afin qu'ils représentent le nombre décimal demandé.
 
 Tu dois atteindre le niveau 3 pour réussir.
@@ -2950,7 +2950,7 @@ Modifie la valeur du compteur de programme, ce qui change l'instruction suivante
 
 === levels/Conditionals ===
 
-$10794262854382
+$10794262854382*
 Ajoute des instructions si à ton circuit. Avec l'instruction si, les 2 arguments sont comparés et si la condition est vraie, le compteur est chargé avec une adresse de saut.
 
 L'instruction précédente contient 4 octets qui représentent :  
@@ -3538,7 +3538,7 @@ $12242923444593* Sortie
 
 === levels/byte_adder ===
 
-$16888130664370
+$16888130664370*
 Si le résultat prend plus que 8 bits de place, met la sortie retenue à [ON] (tu peux l'utiliser comme un 9ème bit)
 
 Il y a aussi une entrée retenue, elle sera utile pour additionner des octets à la suite. On additionne la retenue en entrée au résultat (0 [OFF] ou 1 [ON]).
@@ -3921,7 +3921,7 @@ $13520918982355* Ajoute un bloc de RAM, ainsi l'ordinateur aura 256 octets de m�
 
 $16755383054285* [center]Détermine si la première entrée est plus petite que la seconde.[/center]
 $19006843777401* Crée un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
-$46083799633716 {input_1} est plus petit que {input_2}?
+$46083799633716* {input\_1} est plus petit que {input\_2}?
 
 
 === trans/panel_register16_outputs ===
@@ -4975,7 +4975,7 @@ $34083666001769* Commentaire de fil
 
 $16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
 $85589489148198* Composants utilisés\n{nr} sur 3
-$18288998816979 Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
+$18288998816979* Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
 
 === misc/wire_color ===
@@ -5953,7 +5953,7 @@ $12275727420074* Dois-je tout regarder ?
 === levels/test_lab ===
 
 $46069044039152* Sortie attendue {output} (adresse {address})
-$11038144815919
+$11038144815919*
 Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
 
 Le labo a 2 mots-clés supplémentaires.
@@ -5962,21 +5962,21 @@ Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au
 
 La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
-[img]dialogue/watched_state.png[/img]
+[img]dialogue/watched\_state.png[/img]
 
 Par exemple :
 [code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
-[color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]_[/color] [color=#4a9658]r2[/color][/code]
+[color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]\_[/color] [color=#4a9658]r2[/color][/code]
 
 Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
 
 Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
-[color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
-[color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
+[color=#c54d5e]set\_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
+[color=#c54d5e]set\_input[/color] [color=#eb9433]123[/color]
 
 Tu peux en permanence également (ré)importer les tests d'exemple en cliquant ci-dessous :
-[url=import_overture][color=#e49f44]OVERTURE[/color][/url]
+[url=import\_overture][color=#e49f44]OVERTURE[/color][/url]
 $32399229965611* De plus, comme tu viens de finir [color=#e49f44]LEG[/color], j'ai débloqué tous les composants 16, 32 et 64 bit que tu trouveras dans le bac à sable.
 $59234666744501* État de fil attendu {state} (adresse {address})
 $84893616447734* Ligne {nr} : Le composant lié {index} n'est pas connecté
@@ -6676,7 +6676,7 @@ $13295622648285* Sortie
 
 $19967210826470* Attention : tu ne peux tirer avec le laser que lorsque les tir précédents ont disparus.
 $16294185981398* Le soute du vaisseau est infesté de rats de l'espaces.
-$11505369795084 Regarde [color=#e49f44][url=the_robot]la page du robot[/url][/color] pour connaître les instructions pour le programmer. Tu peux aussi trouver un lien vers cette page dans l'éditeur de programmes.
+$11505369795084* Regarde [color=#e49f44][url=the_robot]la page du robot[/url][/color] pour connaître les instructions pour le programmer. Tu peux aussi trouver un lien vers cette page dans l'éditeur de programmes.
 $10515630949378* Nous avons connecté ton ordinateur à notre robot avancé et nous voulons que tu le programmes pour qu'il dératise la soute.
 
 
@@ -6905,11 +6905,11 @@ $22896492410578* 10⁶
 $11144256835662* XORi
 
 #  4 letters max
-$61412773713567 SUB
-$85913831661289 SI_INFERIEUR
+$61412773713567* SUB
+$85913831661289* SI_INFERIEUR
 $21803034737442* cycle
-$52344899983501 SI_INFERIEUR_OU_EGAL
-$89945092889418 SUBi
+$52344899983501* SI_INFERIEUR_OU_EGAL
+$89945092889418* SUBi
 
 #  4 letters max
 $89011349770597* NOT
@@ -6918,28 +6918,28 @@ $71559031724238* SI_NON_EGAL
 #  4 letters max
 $40520283279584* XOR
 $71204580217527* NOTi
-$71195301111400 ADDi
-$98178474649432 SI_SUPERIEUR_OU_EGAL
+$71195301111400* ADDi
+$98178474649432* SI_SUPERIEUR_OU_EGAL
 $68187490877029* SI_EGAL
 
 #  4 letters max
-$44009845985661 ADD
+$44009845985661* ADD
 
 #  4 letters max
-$68666991962246 OR
+$68666991962246* OR
 $44906330481241* Délai
 $30602804398798* Porte
 $22213999385406* délai
 
 #  4 letters max
 $33873219185286* NAND
-$79492115258673 SI_SUPERIEUR
+$79492115258673* SI_SUPERIEUR
 
 #  Instead of writing 5839, the number turns into 5.8K
 $84696693690500* x10³
 
 #  4 letters max
-$64519909700148 AND
+$64519909700148* AND
 $39343770421034* porte
 $76763908762578* Cycle
 
