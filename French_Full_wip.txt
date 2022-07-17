@@ -77,7 +77,7 @@ $16583885726240* Bravo, tu as réussi ! Je pensais juste que t'étais un singe b
 $10510746154639* Au premier cycle, le programme devrait charger l'adresse 1.
 $10317244906317* Aucun programme trouvé.
 $14587485007736* Jusqu'à maintenant, les programmes étaient limités à tourner dans l'ordre dans lequel ils étaient écrits, octet par octet.
-$19649119273248
+$19649119273248*
 La dernière chose que l'on doit rajouter est un mécanisme pour changer le compteur de programme avec des [INSTRUCTIONS] quand certaines conditions sont respectées.
 
 Quand les deux deux bits les plus importants sont à [ON][ON], alors l'ordinateur sera en mode conditionnel. Dans ce mode, la valeur du registre 3 sera comparée avec une condition définie par les 3 bits les moins importants. Si la condition est vraie, le programme compteur prendra alors la valeur du registre 0.
@@ -878,7 +878,7 @@ $59836059268386* Nouveau fil (Raccourci : Alt & glisser)
 === levels/byte_or ===
 
 $10368115829346* En fait c'est OK car tu as eu une vie heureuse dans la nature et nous ne gâchons pas la bonne viande.
-$15923734370936
+$15923734370936*
 Applique OR sur chaque bit des octets en entrée et envoie le résultat en sortie.
 
 Par exemple :
@@ -1403,7 +1403,7 @@ $16196915566111* 0
 $32676754026463* Sauvegarde {value} et charge
 $30856781458049* Sauvegarde {value}
 $14259545926196* A
-$12306130287676
+$12306130287676*
 Dans ce niveau tu devras construire un circuit qui pourra
 [SAUVEGARDER] ou [CHARGER] 4 octets de mémoire différents. 
 
@@ -1599,7 +1599,7 @@ L'octet instruction indique ici la [color=#c54d5e]source[/color] et la [color=#e
 
 Les bits 1, 2 et 3 indiquent la [color=#e49f44]destination[/color]. Les bits 4, 5 et 6 indiquent la [color=#c54d5e]source[/color].
 $14108238519744* Il est temps de créer ton chef d'œuvre, en implémentant l'architecture informatique [color=#e49f44]OVERTURE[/color]. Ce sera un véritable système Turing Complet, un vrai ordinateur dans tous les sens du terme !
-$14041158687959
+$14041158687959*
 Les [color=#c54d5e]sources[/color] et les [color=#e49f44]destinations[/color] peuvent être un des 6 registres, nous les appellerons REG 0 jusqu'à REG 5. 
   
 De plus cette carte a un composant d'entrée spécifique qui peut être la [color=#c54d5e]source[/color] et un composant de sortie qui peut être la [color=#e49f44]destination[/color].
@@ -1977,7 +1977,7 @@ $48251720560954* Porte de donjon
 === levels/the_bus ===
 
 $28468611444223* SORTIE 1
-$67465559416096
+$67465559416096*
 Ce niveau a 2 entrées octet et 2 sorties octet. Ton objectif est de copier une des entrées vers l'une des sorties.
 
 Le premier bit d'entrée indique quelle entrée doit être copiée. Le second bit indique vers quelle sortie envoyer la valeur.
@@ -2176,7 +2176,7 @@ $95192766583497* Porte
 
 === levels/signed_negator ===
 
-$10866019808027 Pour ce niveau tu dois activer les nombres signés pour que le dernier bit vaille -128. Clique sur "+255" dans le cadre du haut.
+$10866019808027* Pour ce niveau tu dois activer les nombres signés pour que le dernier bit vaille -128. Clique sur "+255" dans le cadre du haut.
 $10400106910274*
 Considérant que l'entrée est signée (8ème bit valant -128), réalise un composant qui prend un nombre et envoie l'opposé en sortie.
 Par exemple l'opposé de 4 sera -4. -9 produira 9 en sortie.
@@ -3074,7 +3074,7 @@ $71663353206665* Diviser et calculer le modulo de deux nombres
 
 === levels/saving_bytes ===
 
-$10633476398156
+$10633476398156*
 Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 
 
@@ -4516,8 +4516,7 @@ $31733554125775* DÉFIS ASSEMBLEUR
 
 === levels/1_decoder ===
 
-$16057674753878 Réalise un composant qui peut aiguiller un signal
-entre deux pattes.
+$16057674753878* Réalise un composant qui peut aiguiller un signal
 
 
 === levels/byte_mux ===
@@ -6013,7 +6012,7 @@ Sortie[/right]
 === levels/byte_not ===
 
 $14196498898485* La réalisation et l'utilisation d'outils est fondamental lors des premières étapes de l'évolution de l'intelligence.
-$12982025748137 [center]Applique NOT sur chaque bit de l'octet en entrée.[/center]
+$12982025748137* [center]Applique NOT sur chaque bit de l'octet en entrée.[/center]
 $10294533225655* Notre précédent modèle utilisant la taille du cerveau pour prédire l'intelligence était naïf.
 $14958585065722* En fait c'est le nombre de bras d'une créature qui est clairement le principal prédicateur de l'intelligence. Savais-tu qu'il existe des créatures marines sur ta planète avec quatre fois plus de bras que toi et qui réussissent mieux dans les tests ?
 
