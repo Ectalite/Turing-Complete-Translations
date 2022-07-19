@@ -1,94 +1,102 @@
-[h2][b]-= LEARN =-[/b][/h2]
+[h2][b]-= APPRENDS =-[/b][/h2]
 
 
-Everything in a computer can be constructed from a basic component called a NAND gate. You will be challenged through a series of puzzles, to discover the path from NAND gates to arithmetic, memory and all the way to full CPU architectures. If you complete this game, you will have a deep understanding of how assembly, CPU instruction sets and basic components are related. And you will understand how programming concepts like if statements, loops and functions actually work in assembly and hardware.
+Un ordinateur au complet peut être construit à partir d'un composant de base appelée porte NAND. Tu seras mis au défi à travers une série d'énigmes de découvrir le chemin qui mène des portes NAND aux calculs, aux mémoires et jusqu'aux architectures CPU complètes. Si tu termines ce je, tu auras gagné une compréhension approfondie de la façon dont l'assembleur, les jeux d'instructions des CPU et les composants de base sont reliés. Et tu comprendras aussi comment les concepts de programmation tels que les instructions conditionnelles, les boucles et les fonctions s'exécutent en assembleur et avec le matériel.
 
 
  [img]{STEAM_APP_IMAGE}/extras/layers__3_.png[/img]
 
 
-[h2][b]-= BUILD =-[/b][/h2]
+[h2][b]-= CONSTRUIS =-[/b][/h2]
 
 
-The game is built on a powerful simulator, that gives you total freedom in how you solve levels or create your own computers. Wire up screens, timers, sound, keyboard input and network components to create whatever you want. You can even design a unique assembly language for your computer.
+Le jeu est construit sur un puissant simulateur, qui te donne une liberté totale dans la façon de résoudre les niveaux ou de créer tes propres ordinateurs. Connecte des écrans, des minuteries, des composants pour le son, l'interface clavier et le réseau pour créer ce que tu veux. Tu pourras même concevoir un langage d'assemblage spécifique pour ton ordinateur.
 
 [img]{STEAM_APP_IMAGE}/extras/build_pong.png[/img]
 
 -----
 
-Learn CPU architecture with puzzles
 
-A humble start
-with nothing given
+Apprends l'architecture d'un processeur avec les énigmes
 
-Create every component yourself
+Un départ modeste
+à partir de zéro
 
-Build more complex circuits
+Crée tous les composants toi-même
 
-Eventually complete 
-your first computer
+Construis des circuits plus complexes
 
-Programming in binary
-is a pain...
+Ton premier ordinateur 
+est enfin terminé
 
-So you make an assembly language
+Programmer en binaire
+est pénible...
 
-Who says you can't solve mazes
-in 20 bytes?
+Tu construis alors
+un langage assembleur
 
-In your own assembly language
+Qui a dit qu'on ne pouvait pas résoudre
+des labyrinthes en 20 octets ?
 
-On your own computer
+Dans ton propre langage assembleur
 
-Optimize your solutions
+Sur ton propre ordinateur
 
-Or build anything you want
+Optimise tes solutions
 
-"If you try to make such projects, unseen by others,
-as perfect as any human could, you'll develop
-skills that other professionals don't have"
+Ou construis tout ce que tu veux
+
+
+
+"Si vous essayez de réaliser de tels projets,
+ invisibles pour les autres, aussi parfaits que n'importe quel être humain,
+ vous développerez des compétences que les autres professionnels n'ont pas."
 
 -----
 
 
-Turing Complete
-Build a Turing Complete computer
+Turing Complet
+Construis un ordinateur Turing complet
 
 4 NAND = XOR
-Complete the XOR level using ONLY 4 NAND gates and nothing else
+Termine le niveau XOR en utilisant seulement 4 portes NAND et rien d'autre
 
-5 Component Full Adder
-Complete the full adder level using only 5 blue components
+Additionneur Complet avec 5 Composants
+Termine le niveau Additionneur complet en utilisant seulement 5 composants bleus
 
-Symmetric ALU
-Complete the "Logic Engine" level using only components from the "8 bit" category
 
-3 Adder Multiply
-Complete "The Product of Nibbles" using no more than three 8 bit adders
+ALU Symétrique
+Termine le niveau "Unité Logique" en utilisant uniquement des composants de la catégorie "8 bits"
 
-Tutorial Complete
-Complete the "Functions" level
+Multiplication avec 3 Additionneurs
+Termine "Le produit des Quartets" en utilisant au maximum que trois additionneurs 8 bits
+
+Tutoriel Terminé
+Termine le niveau "Fonctions"
 
 Condition 10
-Complete the level called "Conditions" using only 10 blue components
+Termine le niveau nommé "Conditions" en utilisant seulement 10 composants bleus
 
-Fast Adder
-Complete the byte adder with a delay of 35 or less
+Additionneur Rapide
+Termine l'additionneur d'octets avec un délai au plus de 35
 
-FastBot
-Complete the robot race with less than 64 bytes of code
+Robot Vitesse
+Termine la course de robot avec moins de 64 octets de code
 
-Helperbot
-Complete all 4 quests on the ship
+Robot assistant
+Termine les 4 quêtes sur le vaisseau
 
-Binary Counter
-Complete the Counter level with a 65 nand score or less
+Compteur Binaire
+Termine le niveau Compteur avec un score portes de 65 ou inférieur
 
-Best hat
+Meilleur chapeau
+Reçois le fabuleux meilleur chapeau
 
-Black hat
+Chapeau noir
+Pirate le chapelier !
 
-Water world
-Beat the level "Water World"
+Monde Aquatique
+Termine le niveau "Monde Aquatique"
 
-Binary Racer
+Course Binaire
+Termine le dernier niveau du jeu de la course binaire
