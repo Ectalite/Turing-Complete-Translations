@@ -1,0 +1,94 @@
+[h2][b]-= LEARN =-[/b][/h2]
+
+
+Everything in a computer can be constructed from a basic component called a NAND gate. You will be challenged through a series of puzzles, to discover the path from NAND gates to arithmetic, memory and all the way to full CPU architectures. If you complete this game, you will have a deep understanding of how assembly, CPU instruction sets and basic components are related. And you will understand how programming concepts like if statements, loops and functions actually work in assembly and hardware.
+
+
+ [img]{STEAM_APP_IMAGE}/extras/layers__3_.png[/img]
+
+
+[h2][b]-= BUILD =-[/b][/h2]
+
+
+The game is built on a powerful simulator, that gives you total freedom in how you solve levels or create your own computers. Wire up screens, timers, sound, keyboard input and network components to create whatever you want. You can even design a unique assembly language for your computer.
+
+[img]{STEAM_APP_IMAGE}/extras/build_pong.png[/img]
+
+-----
+
+Learn CPU architecture with puzzles
+
+A humble start
+with nothing given
+
+Create every component yourself
+
+Build more complex circuits
+
+Eventually complete 
+your first computer
+
+Programming in binary
+is a pain...
+
+So you make an assembly language
+
+Who says you can't solve mazes
+in 20 bytes?
+
+In your own assembly language
+
+On your own computer
+
+Optimize your solutions
+
+Or build anything you want
+
+"If you try to make such projects, unseen by others,
+as perfect as any human could, you'll develop
+skills that other professionals don't have"
+
+-----
+
+
+Turing Complete
+Build a Turing Complete computer
+
+4 NAND = XOR
+Complete the XOR level using ONLY 4 NAND gates and nothing else
+
+5 Component Full Adder
+Complete the full adder level using only 5 blue components
+
+Symmetric ALU
+Complete the "Logic Engine" level using only components from the "8 bit" category
+
+3 Adder Multiply
+Complete "The Product of Nibbles" using no more than three 8 bit adders
+
+Tutorial Complete
+Complete the "Functions" level
+
+Condition 10
+Complete the level called "Conditions" using only 10 blue components
+
+Fast Adder
+Complete the byte adder with a delay of 35 or less
+
+FastBot
+Complete the robot race with less than 64 bytes of code
+
+Helperbot
+Complete all 4 quests on the ship
+
+Binary Counter
+Complete the Counter level with a 65 nand score or less
+
+Best hat
+
+Black hat
+
+Water world
+Beat the level "Water World"
+
+Binary Racer
