@@ -51,6 +51,18 @@ Ou construis tout ce que tu veux
 "Si vous essayez de réaliser de tels projets,
  invisibles pour les autres, aussi parfaits que n'importe quel être humain,
  vous développerez des compétences que les autres professionnels n'ont pas."
+ 
+-----
+
+COUCHES INFORMATIQUES
+
+PROGRAMMATION
+ASSEMBLEUR
+ARCHITECTURE CPU
+COMPOSANTS
+PORTES LOGIQUES
+
+| Tu apprends cela 
 
 -----
 
@@ -63,7 +75,6 @@ Termine le niveau XOR en utilisant seulement 4 portes NAND et rien d'autre
 
 Additionneur Complet avec 5 Composants
 Termine le niveau Additionneur complet en utilisant seulement 5 composants bleus
-
 
 ALU Symétrique
 Termine le niveau "Unité Logique" en utilisant uniquement des composants de la catégorie "8 bits"
