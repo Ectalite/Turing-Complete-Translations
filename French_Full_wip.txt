@@ -870,11 +870,6 @@ $17675121574388* Le composant OUT s'est maintenant éteint, car aucun signal ne 
 $69090690657232* Cloner
 
 
-=== misc/wire_draw ===
-
-$59836059268386* Nouveau fil (Raccourci : Alt & glisser)
-
-
 === levels/byte_or ===
 
 $10368115829346* En fait c'est OK car tu as eu une vie heureuse dans la nature et nous ne gâchons pas la bonne viande.
@@ -1042,11 +1037,6 @@ Ca dit : Le bouton ouvre
 les portes de la prison
 
 
-=== trans/options_robot_right ===
-
-$70185788176428* Droite
-
-
 === levels/byte_nand ===
 
 $76462832199594* Créé un circuit qui applique un NAND bit à bit sur deux octets.
@@ -1150,11 +1140,6 @@ Sors [ON] quand 2 entrées ou plus sont [ON].
 [tip]Ne te casse pas trop la tête sur ce niveau.[/tip]
 
 
-=== ui/options/Robot Controls ===
-
-$58799802152286* Contrôles du robot
-
-
 === components/Neg64 ===
 
 $88458190974122* Inverser
@@ -1182,7 +1167,6 @@ $80688779703520* Sortie
 $80281780593326* {nr} CUST
 $33302419528314* {nr} CNT
 $57584872924662* {nr} OUT
-$28153588160916* {nr} RAM
 $66077393938044* {nr} REG
 $57192021095756* {nr} WIRE
 $89311802272165* {nr} BIT
@@ -3030,12 +3014,6 @@ $28654406516589* [center]Activer / Désactiver[/center]
 $67549215280299* En attente évênement
 
 
-=== components/SRLatch ===
-
-$11641785582600* Bascule SR
-$71931050184389* [img=165]dialogue/sr_latch_tooltip.png[/img]
-
-
 === trans/levels_byte_or_description ===
 
 $68379799788575* [center]Applique OR sur chaque paire de bit[/center]
@@ -3463,11 +3441,6 @@ $54832952840086* XOR
 $58334563411624* Annuler
 
 
-=== trans/options_robot_down ===
-
-$71118559743827* Bas
-
-
 === misc/factory ===
 
 $53123649343022* Atelier de composants
@@ -3659,11 +3632,6 @@ $66207112287034* ASTUCE
 
 $24565725389553* NAND bit à bit de 2 valeurs 32 bits
 $71611588991682* NAND 32 bits
-
-
-=== trans/options_robot_controls ===
-
-$44632988778557* Contrôles du Robot
 
 
 === trans/odd_number_error ===
@@ -4669,11 +4637,6 @@ $79367841142406* Signal d'Horloge
 $38481453712356* Éditer la mémoire
 
 
-=== trans/options_robot_up ===
-
-$92522280178363* Haut
-
-
 === components/DivMod32 ===
 
 $61314390474120* Divise et calcule le modulo 2 des nombres
@@ -4744,11 +4707,6 @@ $16564356062672*
 Considère que les entrées sont [ZERO] ou [ONE] en fonction de leur valeur [OFF] ou [ON]. Additionne-les-en binaire, de sorte que le résultat soit [ZERO] ou [ONE].
 
 Comme avec l'addition habituelle, si le résultat ne peut pas être écrit avec un chiffre, mets la retenue à [ONE].
-
-
-=== trans/options_robot_left ===
-
-$73654791275689* Gauche
 
 
 === trans/options_inline_latches ===
@@ -5098,11 +5056,6 @@ $88713386551026*
 [right]Lire
 Écrire
 Écrire valeur[/right]
-
-
-=== trans/options_robot_shoot ===
-
-$52956877721342* Tirer
 
 
 === trans/hub_add_comment ===
@@ -5606,6 +5559,11 @@ $57665128042496* Gelée visqueuse
 $58067186899637* Bave
 
 
+=== trans/options_colorblind ===
+
+$49806848871093* Daltonisme
+
+
 === trans/panel_decoder1_description ===
 
 $77460843937727* [center]Active 1 des sorties, en fonction de l'entrée[/center]
@@ -5746,24 +5704,6 @@ $97954874255512* Test d'Égalité entre entrées
 $33633607925660* Egal
 
 
-=== levels/buffer ===
-
-$10260210687588* [center]Test 2: l'entrée gauche est [img]dialogue/on.png[/img], la sortie droite devra être [img]dialogue/on.png[/img].[/center]
-$13309706297402* [center]Test 3: l'entrée droite est [img]dialogue/on.png[/img], la sortie gauche devra être [img]dialogue/off.png[/img].[/center]
-$17005228759908* [center]Assure-toi que [img]dialogue/on.png[/img] ne peut se propager que de gauche à droite.[/center]
-$18349621873762* [center]Test 1: les deux entrées sont [img]dialogue/off.png[/img], aucune sortie ne devra être [img]dialogue/on.png[/img].[/center]
-$15504762262759*
-Ce niveau démarre avec 2 composants spéciaux. Ils jouent les rôles à fois d'entrée et de sortie.
-
-Assure-toi que le signal ne se propage que de gauche à droite. Il y aura trois vérifications.
-
-[b]Test 1[/b]: Les deux côtés seront [OFF].
-
-[b]Test 2[/b]: L'entrée gauche [ON] et le côté droit devra être [ON].
-
-[b]Test 3[/b]: La sortie droite deviendra [ON] et le côté gauche devra être [OFF].
-
-
 === trans/panel_program8_1_input ===
 
 $36858295122746* [right]Adresse[/right]
@@ -5771,8 +5711,6 @@ $36858295122746* [right]Adresse[/right]
 
 === trans/level_signed_negator_labels3 ===
 
-
-# Make sure the signal flows only from left to right. There are 3 tests.[b]Test 1[/b]: Both sides will be [OFF].[b]Test 2[/b]: The left side input will turn [ON] and the right side should be [ON].[b]Test 3[/b]: The right side output will turn [ON] and the left side should be [OFF].
 $66996894079719* Attendu   Actuel
 
 
@@ -5813,11 +5751,6 @@ $11794110848012* Cette fois il a pris le contrôle du poste de contrôle et reti
 === trans/panel_segment_enable ===
 
 $14963127967678* [center]Activer[/center]
-
-
-=== components/InputOutput ===
-
-$26488480303865* Entrée/Sortie
 
 
 === trans/level_complete_stat_sum ===
@@ -6879,9 +6812,9 @@ $73150174144736*
 [color=#cccccc][i]Contrôle [color=#e49f44]Robotron 9000+[/color] à l'aide de ton ordinateur[/i][/color]
 
 
-=== levels/byte_and ===
+=== trans/panel_matrix_color ===
 
-$15885763626223* Réalise un circuit qui applique la fonction AND logique (bit à bit) sur deux octets.
+$78812572100236* [center]Pixels / Raffraichissement[/center]
 
 
 === components/LessI64 ===
@@ -6949,11 +6882,6 @@ $36090730285143* NOR
 
 #  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* x10⁹
-
-
-=== trans/panel_matrix_color ===
-
-$78812572100236* [center]Pixels / Raffraichissement[/center]
 
 
 === trans/panel_decoder2_description ===
@@ -7478,14 +7406,16 @@ $46948613505134* Affiche une valeur sur ton composant personnalisé ou dans l'é
 $44867305035474* Sonde Mémoire
 
 
-=== trans/options_robot_use ===
-
-$49182380646128* Utiliser
-
-
 === components/LevelOutput8 ===
 
 $77044600156969* Sortie
+
+
+=== trans/level_turing_complete_text ===
+
+$83740652063566*
+Code
+Entrée
 
 
 === misc/StateProbe ===
@@ -7499,13 +7429,6 @@ $15969687819995* Affiche une valeur sur ton composant personnalisé ou dans l'é
 $52915933943906*
 Ce simulateur utilise des couleurs RVB sur 3 octets pour certains composants. Chaque couleur occuppe 1 octet, la valeur correspondant à l'intensité :
 [color=#e3243f]RRRRRRRR[/color][color=#55ff55]VVVVVVVV[/color][color=#3333ff]BBBBBBBB[/color]
-
-
-=== trans/level_turing_complete_text ===
-
-$83740652063566*
-Code
-Entrée
 
 
 === levels/sr_latch ===
