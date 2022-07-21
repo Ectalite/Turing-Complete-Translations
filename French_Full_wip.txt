@@ -1292,8 +1292,7 @@ fonction déplacer(numdisque, source, destination, réserve):
     déplacer(num_disque-1, source, réserve, destination)
     déplacer disque de source à dest
     déplacer(num_disque-1, réserve, destination, source)
-
-déplacer(numdisque, source, destination, réserve)[/color][/code]
+[/color][/code]
 
 [tip]Empile les valeurs de registre pour les sauvegarder avant l'appel d'une fonction qui les modifie.[/tip]
 
