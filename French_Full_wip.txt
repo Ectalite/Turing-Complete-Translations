@@ -1117,7 +1117,7 @@ $58990937331663* En Attente
 
 === misc/ui_panel/memory ===
 
-$65362728703588* MEMOIRE
+$65362728703588 MÉMOIRE
 
 
 === trans/panel_output_output_2 ===
@@ -1489,7 +1489,7 @@ $39203727515285* Temps
 
 === trans/map_memory ===
 
-$58330421958143* MEMOIRE
+$58330421958143 MÉMOIRE
 
 
 === ui/options/General ===
@@ -4920,7 +4920,7 @@ Sortie[/right]
 
 === components/Register ===
 
-$19705753304166* Memoire 8 bits
+$19705753304166* Mémoire 8 bits
 $68946767861738* Registre 8 bits
 
 
