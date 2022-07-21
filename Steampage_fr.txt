@@ -1,0 +1,113 @@
+[h2][b]-= APPRENDS =-[/b][/h2]
+
+
+Un ordinateur au complet peut être construit à partir d'un composant de base appelée porte NAND. Tu seras mis au défi à travers une série d'énigmes de découvrir le chemin qui mène des portes NAND aux calculs, aux mémoires et jusqu'aux architectures CPU complètes. Si tu termines ce je, tu auras gagné une compréhension approfondie de la façon dont l'assembleur, les jeux d'instructions des CPU et les composants de base sont reliés. Et tu comprendras aussi comment les concepts de programmation tels que les instructions conditionnelles, les boucles et les fonctions s'exécutent en assembleur et avec le matériel.
+
+
+ [img]{STEAM_APP_IMAGE}/extras/layers__3_.png[/img]
+
+
+[h2][b]-= CONSTRUIS =-[/b][/h2]
+
+
+Le jeu est construit sur un puissant simulateur, qui te donne une liberté totale dans la façon de résoudre les niveaux ou de créer tes propres ordinateurs. Connecte des écrans, des minuteries, des composants pour le son, l'interface clavier et le réseau pour créer ce que tu veux. Tu pourras même concevoir un langage d'assemblage spécifique pour ton ordinateur.
+
+[img]{STEAM_APP_IMAGE}/extras/build_pong.png[/img]
+
+-----
+
+
+Apprends l'architecture d'un processeur avec les énigmes
+
+Un départ modeste
+à partir de zéro
+
+Crée tous les composants toi-même
+
+Construis des circuits plus complexes
+
+Ton premier ordinateur 
+est enfin terminé
+
+Programmer en binaire
+est pénible...
+
+Tu construis alors
+un langage assembleur
+
+Qui a dit qu'on ne pouvait pas résoudre
+des labyrinthes en 20 octets ?
+
+Dans ton propre langage assembleur
+
+Sur ton propre ordinateur
+
+Optimise tes solutions
+
+Ou construis tout ce que tu veux
+
+
+
+"Si vous essayez de réaliser de tels projets,
+ invisibles pour les autres, aussi parfaits que n'importe quel être humain,
+ vous développerez des compétences que les autres professionnels n'ont pas."
+ 
+-----
+
+COUCHES INFORMATIQUES
+
+PROGRAMMATION
+ASSEMBLEUR
+ARCHITECTURE CPU
+COMPOSANTS
+PORTES LOGIQUES
+
+| Tu apprends cela 
+
+-----
+
+
+Turing Complet
+Construis un ordinateur Turing complet
+
+4 NAND = XOR
+Termine le niveau XOR en utilisant seulement 4 portes NAND et rien d'autre
+
+Additionneur Complet avec 5 Composants
+Termine le niveau Additionneur complet en utilisant seulement 5 composants bleus
+
+ALU Symétrique
+Termine le niveau "Unité Logique" en utilisant uniquement des composants de la catégorie "8 bits"
+
+Multiplication avec 3 Additionneurs
+Termine "Le produit des Quartets" en utilisant au maximum que trois additionneurs 8 bits
+
+Tutoriel Terminé
+Termine le niveau "Fonctions"
+
+Condition 10
+Termine le niveau nommé "Conditions" en utilisant seulement 10 composants bleus
+
+Additionneur Rapide
+Termine l'additionneur d'octets avec un délai au plus de 35
+
+Robot Vitesse
+Termine la course de robot avec moins de 64 octets de code
+
+Robot assistant
+Termine les 4 quêtes sur le vaisseau
+
+Compteur Binaire
+Termine le niveau Compteur avec un score portes de 65 ou inférieur
+
+Meilleur chapeau
+Reçois le fabuleux meilleur chapeau
+
+Chapeau noir
+Pirate le chapelier !
+
+Monde Aquatique
+Termine le niveau "Monde Aquatique"
+
+Course Binaire
+Termine le dernier niveau du jeu de la course binaire
