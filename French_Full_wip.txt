@@ -1534,7 +1534,7 @@ Entrée 3[/right]
 
 === trans/level_delay_level_description ===
 
-$24326379952614* Crée un circuit qui coûte 5 PORTES and 6 DÉLAIS
+$24326379952614* Crée un circuit qui coûte 5 PORTES and 6 DELAIS
 
 
 === trans/panel_max_data_len_max_data_length ===
@@ -1771,7 +1771,7 @@ $40010486743721* [center][color=#dd6576]Echec du transfert[/color][/center]
 
 === trans/level_complete_stat_delay ===
 
-$43118901497406 Délai
+$43118901497406* Délai
 
 
 === rpg/maps/overworld/door2 ===
@@ -3261,7 +3261,7 @@ $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
-$10533010562232 DÉLAI : {delay}
+$10533010562232* DÉLAI : {delay}
 $10098517717617* Test : {nr} / {total}
 $39385804477995* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée.  [url=circular_dependency]Détails[/url]
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
@@ -3289,16 +3289,21 @@ $23959994711260* Prêt pour la course ?
 $23002150617591* Entrée
 
 
+=== trans/delay_score ===
+
+$29032982097458* DÉLAI :
+
+
+=== trans/panels_config_delay_delay ===
+
+$52499013005170* [right]Délai[/right]
+
+
 === trans/panel_mul_output ===
 
 $55253255963402*
 Moité inférieure
 Moitié supérieure
-
-
-=== trans/panels_config_delay_delay ===
-
-$52499013005170 [right]Délai[/right]
 
 
 === rpg/maps/unseen_fruit/Lolbert ===
@@ -4413,7 +4418,7 @@ $25170203412473* Sens du label
 
 === ui/top_bar/scores ===
 
-$56840961921536 PORTES : \n DÉLAI :
+$68953385743184* PORTES :
 
 
 === trans/rpg_decoartion ===
@@ -4557,7 +4562,7 @@ $86839706221116* porte AND à 3 entrées
 
 
 #  This must be no more than 5 characters long, use abbreviations if necessary
-$91472284749011 DÉLAI
+$91472284749011* DÉLAI
 
 #  This must be no more than 5 characters long, use abbreviations if necessary
 $86260137015175* CYCLE
@@ -6563,7 +6568,7 @@ $75542474510177* PORTE
 $20148770258379* Composant sans surface
 $53184531022842* Bac à sable uniquement
 $40492377880609* Les pattes se chevauchent
-$63839315669055 DÉLAI
+$63839315669055* DÉLAI
 
 
 === trans/panel_index_bit_index ===
