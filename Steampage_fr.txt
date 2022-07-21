@@ -93,7 +93,7 @@ Termine le niveau nommé "Conditions" en utilisant seulement 10 composants bleus
 Additionneur Rapide
 Termine l'additionneur d'octets avec un délai au plus de 35
 
-Robot Vitesse
+Robot rapide
 Termine la course de robot avec moins de 64 octets de code
 
 Robot assistant
