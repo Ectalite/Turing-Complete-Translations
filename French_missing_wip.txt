@@ -1,3 +1,9 @@
+=== trans/delay_score ===
+
+$29032982097458 DÉLAI :
 
 
+=== ui/top_bar/scores ===
+
+$68953385743184 PORTES :
 
