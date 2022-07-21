@@ -516,7 +516,7 @@ $42793594302151* En utilisant 2 portes NOT et 2 Commutateurs, construis une port
 
 $62085363571678* Docteur Rakoo
 $41342441528477* Sang
-$31033960272185* Je suis le célèbre Dr Rakoo
+$31033960272185* Je suis le célèbre\n Dr Rakoo
 
 
 === components/Stack ===
