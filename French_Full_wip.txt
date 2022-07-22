@@ -6852,7 +6852,7 @@ $53021804895845* ETi
 $69956969985790* OUi
 
 #  Instead of writing 5839000, the number turns into 5.8M
-$22896492410578 x10⁶
+$22896492410578* x10⁶
 $11144256835662* XORi
 
 #  4 letters max
@@ -6887,7 +6887,7 @@ $33873219185286* NAND
 $79492115258673* SI_SUPERIEUR
 
 #  Instead of writing 5839, the number turns into 5.8K
-$84696693690500 x10³
+$84696693690500* x10³
 
 #  4 letters max
 $64519909700148* AND
@@ -6898,7 +6898,7 @@ $76763908762578* Cycle
 $36090730285143* NOR
 
 #  Instead of writing 5839000000, the number turns into 5.8B
-$71072134093858 x10⁹
+$71072134093858* x10⁹
 
 
 === trans/panel_decoder2_description ===
