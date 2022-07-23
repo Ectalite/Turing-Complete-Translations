@@ -1400,7 +1400,7 @@ sinon ce sera le bazar ![/tip][/i]
 $16217965518477* B
 $10891070331034* B
 $18084166025569* Rien
-$13082830776248 NE PAS CHARGER
+$13082830776248* NE PAS SAUVEGARDER
 $13555908976270* 0 OU 1
 $17473197268827* CHARGER
 $10311371309532* SAUVEGARDER
@@ -1761,9 +1761,10 @@ For the component factory, the file manager also manages the custom components. 
 === misc/network_update ===
 
 $47639082058046* Rien ici pour l'instant
-$70619187943439* Createur\nTransmis
 $83560387278127* Dérivé de : 
+$86830276924898* Transmis :
 $76023068123024* Erreur
+$70694384106281* Créateur :
 $81675147704214* Utilise le composant réseau
 $98151734218561* [center][color=#60a96b]Téléchargement terminé.[/color][/center]
 $40010486743721* [center][color=#dd6576]Echec du transfert[/color][/center]
