@@ -1729,7 +1729,7 @@ $45047777963599*
 
 === components/Bidirectional32 ===
 
-$54631386552063 Patte bidirectionnelle 32 bits
+$54631386552063* Patte bidirectionnelle 32 bits
 $35105566244017* Permet de contourner certaines erreurs de dépendance circulaire
 
 
@@ -5246,7 +5246,7 @@ $92505830860215* SOMME
 === components/Bidirectional1 ===
 
 $95836352586032* Permet de contourner certaines erreurs de dépendance circulaire
-$34912798641933 Patte bidirectionnelle 1 bit
+$34912798641933* Patte bidirectionnelle 1 bit
 
 
 === trans/options_setting_click_to_pan ===
@@ -6194,13 +6194,13 @@ $56684378975952* Perso
 $93805543475022* 32bits
 $69195385009785* 64bits
 $36744990871521* Niveaux
-$60495775939951 E\/S
+$60495775939951* E\/S
 $49451948914812* Maths
 $46598465325525* RAM
 $12972244522540* Écrans
 $53900277352031* 8bits
 $73356117817137* Sorties à trois états
-$77408777382636 Bidirectionnel
+$77408777382636* Bidirectionnel
 $79029955304279* Entrées
 $90490391067117* Bac à sable exclusivement
 
