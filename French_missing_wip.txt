@@ -1,19 +1,1 @@
-=== misc/view_solution_button ===
-
-$59351520832720 Oui
-
-
-=== trans/panel_and_description ===
-
-$62144934019319 [center]AND bit à bit sur 2 entrées[/center]
-
-
-=== trans/view_solution_text ===
-
-$83652444593618 Veux-tu voir la solution de ce niveau ?
-
-=== misc/specification_dialogue ===
-
-$56175681834727 Si [color=#e49f44]résultat {condition}
-
 

@@ -793,6 +793,11 @@ $92739814679396* Augmenter les basses
 $20820887361993* Clique "Cycle suivant" pour voir
 
 
+=== trans/panel_xor_description ===
+
+$92999392068622* [center]Applique XOR sur 2 entrées bit à bit[/center]
+
+
 === trans/panel_hdd_input ===
 
 $99603056559749*
@@ -1612,7 +1617,7 @@ $99170934143071* Carburant du coeur
 
 === trans/panel_and_description ===
 
-$92999392068622* [center]Applique XOR sur 2 entrées bit à bit[/center]
+$62144934019319* [center]AND bit à bit sur 2 entrées[/center]
 
 
 === levels/Masking Time ===
@@ -3275,6 +3280,11 @@ $13327741293223* Entrée {nr}
 $32508339206292* PORTES : {gate}
 
 
+=== misc/view_solution_button ===
+
+$59351520832720* Oui
+
+
 === levels/or_gate_3 ===
 
 $15448906128695* Réalise une porte OR avec 3 entrées.
@@ -3991,7 +4001,7 @@ $93899425142858* Copier de {from} vers {to}
 $92046368194170* Condition
 $39935096343723* Jamais
 $52961346176405* {condition} copier [color=#dd6576]REG 0[/color] vers le compteur
-$18833529038946* Si [color=#2b8738]résultat[/color] {condition}
+$56175681834727* Si [color=#e49f44]résultat[/color] {condition}
 $10141348037745* Immédiate : {nr}
 $98983752580592* Copier
 $25145891843959* Toujours
@@ -7491,6 +7501,11 @@ $12924829814634* RAM rapide
 === levels/byte_xor ===
 
 $19636386696963* Réalise un circuit qui applique XOR bit à bit sur deux octets.
+
+
+=== trans/view_solution_text ===
+
+$83652444593618* Veux-tu voir la solution de ce niveau ?
 
 
 === misc/add_bottom ===
