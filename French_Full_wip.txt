@@ -660,7 +660,7 @@ $26276191141664* Déplacer la vue à l'aide du clavier
 
 === components/Xnor32 ===
 
-$17419057954798 XNOR bit à bit sur 2 valeurs 32 bits
+$17419057954798* XNOR bit à bit sur 2 valeurs 32 bits
 $52489451755306* XNOR 32 bits
 
 
@@ -1187,7 +1187,7 @@ $49292282287971* Ligne à retard 32 bits
 === components/Nand64 ===
 
 $27197172037913* NAND 64 bits
-$66590147372797 NAND bit à bit sur 2 entrées
+$66590147372797* NAND bit à bit sur 2 entrées
 
 
 === misc/run_fast ===
@@ -1212,7 +1212,7 @@ $35707954769868* Non activé
 
 === components/Nor64 ===
 
-$17208777467974 NOR bit à bit sur 2 entrées
+$17208777467974* NOR bit à bit sur 2 entrées
 $72509242083648* NOR 64 bits
 
 
@@ -2149,7 +2149,7 @@ $24027424800887* Niveau suivant
 
 === components/Nor8 ===
 
-$34517798310461 NOR bit à bit sur 2 entrées
+$34517798310461* NOR bit à bit sur 2 entrées
 $39421972053612* NOR 8 Bits
 
 
@@ -3645,7 +3645,7 @@ $66207112287034* ASTUCE
 
 === components/Nand32 ===
 
-$24565725389553 NAND bit à bit sur 2 valeurs 32 bits
+$24565725389553* NAND bit à bit sur 2 valeurs 32 bits
 $71611588991682* NAND 32 bits
 
 
@@ -3656,7 +3656,7 @@ $61530231182650* Trop de composants utilisés
 
 === components/ByteAnd ===
 
-$61791872137683 AND bit à bit de deux valeurs
+$61791872137683* AND bit à bit de deux valeurs
 $21541105796357* AND 8 Bits
 
 
@@ -3991,7 +3991,7 @@ Longueur des Données
 
 === components/Nand16 ===
 
-$63870790225686 NAND bit à bit sur 2 entrées
+$63870790225686* NAND bit à bit sur 2 entrées
 $56507506086622* NAND 8 Bits
 
 
@@ -4355,7 +4355,7 @@ Sortie courante[/right]
 
 === components/Xnor16 ===
 
-$73699169812942 XNOR bit à bit sur deux valeurs
+$73699169812942* XNOR bit à bit sur deux valeurs
 $40088995721509* XNOR 16 bits 
 
 
@@ -4591,7 +4591,7 @@ $39440928972984* Reset (Raccourci : F4)
 
 === components/Or32 ===
 
-$92752025948920 OR bit à bit sur 2 mots de 32 bits
+$92752025948920* OR bit à bit sur 2 mots de 32 bits
 $40180779432911* OR 32 bits
 
 
@@ -5147,7 +5147,7 @@ $31261866779127* Réduit le délai en réalisant les lectures et écritures sur 
 
 === components/BOR ===
 
-$19406015796751 OR bit à bit sur deux valeurs
+$19406015796751* OR bit à bit sur deux valeurs
 $54190050450484* OR 8 bits 
 
 
@@ -5416,7 +5416,7 @@ Entrée 2[/right]
 === components/Xnor8 ===
 
 $31985293401482* XNOR 8 bits 
-$45789912406647 XNOR bit à bit sur 2 octets
+$45789912406647* XNOR bit à bit sur 2 octets
 
 
 === trans/level_bit_switch_RichTextLabel2 ===
@@ -6607,7 +6607,7 @@ $15931283897895* Sortie 8 Bits
 === components/Xor64 ===
 
 $95012060885697* XOR 64 bits
-$13031452187028 XOR bit à bit sur deux valeurs
+$13031452187028* XOR bit à bit sur deux valeurs
 
 
 === trans/panel_output_output_1 ===
@@ -6626,7 +6626,7 @@ $99860977387728* Voir l'emplacement
 === components/ByteXor ===
 
 $98219910712564* XOR 8 bits
-$83236921580268 XOR bit à bit sur 2 valeurs
+$83236921580268* XOR bit à bit sur 2 valeurs
 
 
 === trans/panel_counter16_output ===
@@ -6644,7 +6644,7 @@ $10515630949378* Nous avons connecté ton ordinateur à notre robot avancé et n
 
 === components/Nand8 ===
 
-$50859914201083 NAND bit à bit sur 2 entrées
+$50859914201083* NAND bit à bit sur 2 entrées
 $93314093190526* NAND 8 bits
 
 
@@ -6795,7 +6795,7 @@ $33190791348214* Inférieur (non signé)
 === components/Xor32 ===
 
 $66299093873977* XOR 32 bits 
-$38169019785615 XOR bit à bit sur 2 entrées
+$38169019785615* XOR bit à bit sur 2 entrées
 
 
 === trans/level_turing_complete_description ===
