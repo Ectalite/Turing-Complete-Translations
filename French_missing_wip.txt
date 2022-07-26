@@ -1,1 +1,50 @@
+=== trans/manual_recipe_Label ===
 
+$30773017984502*
+Most [color=#dd6576][url=Circular dependency]circular dependencies[/url][/color] are chaotic, not useful and introduced by error. There are a few useful exceptions though. Given that they are enabled in the option menu, this simulator allows some of these.
+
+[b]Nor latch[/b]
+The nor latch stores a 1 bit value, which is always available on the wire [b]Q[/b]. 
+[center]
+[table=3]
+[cell]   [b]S[/b]  [/cell][cell]      [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Change nothing[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Value = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Value = [img]dialogue/on.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Error[/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/nor_latch.png[/img]
+[/center]
+
+[b]Nand latch[/b]
+The nand latch stores a 1 bit value, which is always available on the wire [b]Q[/b]. 
+[center]
+[table=3]
+[cell]   [b]S[/b]  [/cell][cell]     [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Error[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Value = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Value = [img]dialogue/on.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Change nothing[/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/nand_latch.png[/img]
+[/center]
+
+[b]And Or latch[/b]
+The and or latch stores a 1 bit value, which is always available on the wire [b]Q[/b]. 
+[center]
+[table=3]
+[cell]   [b]H[/b]  [/cell][cell]     [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Value = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Error[/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Change nothing[/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Value = [img]dialogue/on.png[/img][/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/and_or_latch.png[/img]
+[/center]
+
+
+=== trans/options_general_tps ===
+
+$53724631742096* Show ticks per second
+
+
+=== trans/tps_label ===
+
+$25685496576554* TPS:
