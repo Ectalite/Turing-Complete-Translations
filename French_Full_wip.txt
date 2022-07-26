@@ -2723,7 +2723,7 @@ $51337598329530* ARITHMÉTIQUE
 
 === trans/options_general_tps ===
 
-$53724631742096 Afficher les cycles par seconde
+$53724631742096* Afficher les cycles par seconde
 
 
 === trans/rotate ===
