@@ -3899,7 +3899,7 @@ $49513138880387* Sortie
 
 === trans/panel_nor_description ===
 
-$15262147022850* [center]XNOR bit à bit sur 2 entrées[/center]
+$95856050655799* [center]NOR bit à bit sur 2 entrées[/center]
 
 
 === levels/RAM ===
