@@ -6526,7 +6526,7 @@ $51096427131653* En avant
 === trans/manual_recipe_Label ===
 
 $30773017984502*
-La plupart des [color=#dd6576][url=Circular dependency]dépendances circulaires[/url][/color] sont chaotiques, inutiles et crées par erreur. Il y a quelques exceptions utiles néanmoins. Si elles sont activées dans le menu option, le simulateur en autorise quelques unes.
+La plupart des [color=#dd6576][url=Circular dependency]dépendances circulaires[/url][/color] sont chaotiques, inutiles et créées par erreur. Il y a quelques exceptions utiles néanmoins. Si elles sont activées dans le menu option, le simulateur en autorise quelques unes.
 
 [b]Bascule Nor[/b]
 La bascule nor stocke une valeur de 1 bit, toujours disponible sur le fil [b]Q[/b].
