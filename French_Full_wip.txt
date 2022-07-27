@@ -2156,7 +2156,7 @@ $37432913848309* [center]Effectue un OR, NAND, NOR, AND, ADD ou un SUB entre les
 
 === trans/level_complete_stat_gate ===
 
-$95192766583497 Portes
+$95192766583497* Portes
 
 
 === levels/signed_negator ===
@@ -6949,7 +6949,7 @@ $44009845985661* ADD
 #  4 letters max
 $68666991962246* OR
 $44906330481241* Délai
-$30602804398798 Portes
+$30602804398798* Portes
 $22213999385406* délai
 
 #  4 letters max
@@ -6961,7 +6961,7 @@ $84696693690500* k
 
 #  4 letters max
 $64519909700148* AND
-$39343770421034 portes
+$39343770421034* portes
 $76763908762578* Cycle
 
 #  4 letters max
