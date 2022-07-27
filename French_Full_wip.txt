@@ -345,6 +345,7 @@ $44752799134543* XOR bit à bit
 === dialogue/schematic_hub/share_button ===
 
 $72402014450423* [center]Téléchargement[/center]
+$63199010304839* Partager
 
 
 === trans/panel_regred_input ===
@@ -2103,11 +2104,6 @@ $25076873142666* Fleur rose
 $97585846659258* [center]Valeur[/center]
 
 
-=== ui/state_ui/state_ui_output_bit ===
-
-$40754755480566* Sortie
-
-
 === trans/manual_delay ===
 
 $78806697204524* Délai
@@ -2724,6 +2720,11 @@ $12903183841172*
 === trans/map_arithmetic ===
 
 $51337598329530* ARITHMÉTIQUE
+
+
+=== trans/options_general_tps ===
+
+$53724631742096* Afficher les cycles par seconde
 
 
 === trans/rotate ===
@@ -3461,6 +3462,11 @@ $58334563411624* Annuler
 $53123649343022* Atelier de composants
 
 
+=== trans/tps_label ===
+
+$25685496576554* CPS :
+
+
 === trans/manual_ram ===
 
 $61854681801183* RAM (mémoire vive)
@@ -3647,6 +3653,11 @@ $66207112287034* ASTUCE
 
 $24565725389553* NAND bit à bit sur 2 valeurs 32 bits
 $71611588991682* NAND 32 bits
+
+
+=== trans/options_ui_scale ===
+
+$78210579950439* Échelle de l'interface
 
 
 === trans/odd_number_error ===
@@ -3899,7 +3910,7 @@ $49513138880387* Sortie
 
 === trans/panel_nor_description ===
 
-$15262147022850* [center]XNOR bit à bit sur 2 entrées[/center]
+$95856050655799* [center]NOR bit à bit sur 2 entrées[/center]
 
 
 === levels/RAM ===
@@ -5121,6 +5132,11 @@ $84431924133490* Extrait un bit unique du fil
 === components/Output 2 ===
 
 $73255344581755* Sortie
+
+
+=== misc/options_ui_scale ===
+
+$49650951662549* Enregistrer
 
 
 === components/Nor16 ===
@@ -6516,6 +6532,49 @@ Entrée 2[/right]
 === misc/onwards ===
 
 $51096427131653* En avant
+
+
+=== trans/manual_recipe_Label ===
+
+$30773017984502*
+La plupart des [color=#dd6576][url=Circular dependency]dépendances circulaires[/url][/color] sont chaotiques, inutiles et créées par erreur. Il y a quelques exceptions utiles néanmoins. Si elles sont activées dans le menu option, le simulateur en autorise quelques unes.
+
+[b]Bascule Nor[/b]
+La bascule nor stocke une valeur de 1 bit, toujours disponible sur le fil [b]Q[/b].
+
+[center]
+[table=3]
+[cell]   [b]S[/b]  [/cell][cell]      [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Aucun effet[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Valeur = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Valeur = [img]dialogue/on.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Erreur[/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/nor_latch.png[/img]
+[/center]
+
+[b]Bascule Nand[/b]
+La bascule nand stocke une valeur de 1 bit, toujours disponible sur le fil [b]Q[/b].
+[center]
+[table=3]
+[cell]   [b]S[/b]  [/cell][cell]     [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Erreur[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Valeur = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Valeur = [img]dialogue/on.png[/img][/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Aucun effet[/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/nand_latch.png[/img]
+[/center]
+
+[b]Bascule And Or[/b]
+La bascule and or stocke une valeur de 1 bit, toujours disponible sur le fil [b]Q[/b].
+[center]
+[table=3]
+[cell]   [b]H[/b]  [/cell][cell]     [b]R[/b]     [/cell][cell]Action[/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Valeur = [img]dialogue/off.png[/img][/cell]
+[cell]  [img]dialogue/off.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Erreur[/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/off.png[/img][/cell][cell]Aucun effet[/cell]
+[cell]  [img]dialogue/on.png[/img][/cell][cell] [img]dialogue/on.png[/img][/cell][cell]Valeur = [img]dialogue/on.png[/img][/cell]
+[/table]                    [img=150]dialogue/manual/circular_recipes/and_or_latch.png[/img]
+[/center]
 
 
 === trans/panel_equal_description ===

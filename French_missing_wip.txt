@@ -1,14 +1,14 @@
 
 === misc/options_ui_scale ===
 
-$49650951662549* Save
+$49650951662549 Enregistrer
 
 
 === dialogue/schematic_hub/share_button ===
 
-$63199010304839* Share
+$63199010304839 Partager
 
 
 === trans/options_ui_scale ===
 
-$78210579950439* UI scale
+$78210579950439 Échelle de l'interface
