@@ -1364,19 +1364,19 @@ $55594749714809* Programme
 
 === nim/backend_lib/assembler ===
 
-$46709301132173* L{line} Nom attendu après [b]label[/b] (ex. label cible_saut)
-$91607161873807* L{line} Nom et valeur attendus après [b]const[/b] (ex. const haut 3)
-$29335866080065* L{line} [b]set_input[/b] attend un argument qui doit correspondre à un nombre
-$27717388396189* L{line} [b]expect[/b] attend en argument un index de point d'observation et une valeur
+$46709301132173* L{line} Nom attendu après [u]label[/u]\n(ex. label cible_saut)
+$91607161873807* L{line} Nom et valeur attendus après [u]const[/u]\n(ex. const haut 3)
+$29335866080065* L{line} [u]set_input[/u] attend un argument qui doit\ncorrespondre à un nombre
+$27717388396189* L{line} [u]expect[/u] attend en argument un index\nde point d'observation et une valeur
 $81373400907688* L{line} Erreur non identifiée ici
-$95834288706682* L{line} Valeur attendue après [b]set_input[/b]
-$65326376775481* L{line} Nom attendu après [b]label[/b] (ex. label cible_saut)
-$23247597342508* L{line} Le mot-clé [b]set_input[/b] n'est pas autorisé dans ce niveau.
-$49738057919794* L{line} Nom et valeur attendus après [b]const[/b] (ex. label cible_saut)
-$54823996766711* L{line} Second paramètre invalide pour [b]expect[/b]
-$15087417947547* L{line} [b]expect[/b] attend en argument un index de point d'observation et une valeur
-$39128060960831* L{line} Le mot-clé [b]expect[/b] n'est pas autorisé dans ce niveau.
-$34201706604320* L{line} Le premier argument d'[b]expect[/b] doit être un nombre (index du point d'observation)
+$95834288706682* L{line} Valeur attendue après [u]set_input[/u]
+$65326376775481* L{line} Nom manquant après [u]label[/u]\n(ex. label cible_saut)
+$23247597342508* L{line} Le mot-clé [u]set_input[/u] n'est pas autorisé\n dans ce niveau.
+$49738057919794* L{line} Nom et valeur attendus après [u]const[/u]\n(ex. label cible_saut)
+$54823996766711* L{line} Second paramètre invalide pour [u]expect[/u]
+$15087417947547* L{line} [u]expect[/u] attend en argument un index\n de point d'observation et une valeur
+$39128060960831* L{line} Le mot-clé [u]expect[/u] n'est pas autorisé\n dans ce niveau.
+$34201706604320* L{line} Le premier argument d'[u]expect[/u] doit être un nombre\n(index du point d'observation)
 $80435549997833* L{line} Constante invalide
 
 
