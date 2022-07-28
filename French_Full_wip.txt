@@ -5930,14 +5930,14 @@ $12275727420074* Dois-je tout regarder ?
 === levels/test_lab ===
 
 $46069044039152* Sortie attendue {output} (adresse {address})
-$11038144815919*
-Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si l'"état surveillé" évolue comme attendu.
+$11038144815919
+Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si le point d'observation évolue comme attendu.
 
 Le labo a 2 mots-clés supplémentaires.
 
 Le mot-clé [color=#c54d5e]expect[/color] sert à décrire la valeur attendue au cycle suivant à une adresse mémoire.
 
-La première valeur après [color=#c54d5e]expect[/color] est l'index de l'état surveillé, la seconde est la valeur attendue. L'index de l'état surveillé correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
+La première valeur après [color=#c54d5e]expect[/color] est l'index du point d'observation, la seconde est la valeur attendue. L'index du point d'observation correspond à l'ordre dans lequel les composants sont connectés au composant Programme.
 
 [img]dialogue/watched_state.png[/img]
 
@@ -5945,9 +5945,9 @@ Par exemple :
 [code][color=#c54d5e]expect[/color] [color=#eb9433]2[/color] [color=#eb9433]4[/color]
 [color=#4a9658]copy[/color] [color=#eb9433]4[/color] [color=#4a9658]_[/color] [color=#4a9658]r2[/color][/code]
 
-Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position de l'état surveillé.
+Ici la première ligne indique que nous attendons une valeur de 4 en 2ème position du point d'observation.
 
-Toutes les valeurs des états surveillés sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
+Toutes les valeurs des points d'observation sont comparées aux valeurs attendues à chaque cycle. Toutes les valeurs sont attendues à 0 au démarrage du programme, et tu peux ensuite modifier explicitement ces valeurs attendues. La seule exception concerne les compteurs, il est attendu qu'ils s'incrémentent à chaque cycle.
 
 [color=#c54d5e]set_input[/color] est le second mot-clé spécifique au labo. Avec lui tu peux contrôler l'entrée de l'ordinateur :
 [color=#c54d5e]set_input[/color] [color=#eb9433]123[/color]
