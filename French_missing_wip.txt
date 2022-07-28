@@ -1,18 +1,18 @@
 === nim/backend_lib/assembler ===
 
-$46709301132173* Line {line}: Only a name goes after \"label\" (e.g.: label jump_here)
-$91607161873807* Line {line}: Need a name and a value after \"const\" (e.g.: const up 3)
-$29335866080065* Line {line}: Argument of \"set_input\" must resolve to a number
-$27717388396189* Line {line}: Need a watched state index and a value after \"expect\"
-$81373400907688* Line {line}: Some kind of error here
-$95834288706682* Line {line}: Need a value after \"set_input\"
-$65326376775481* Line {line}: Need a name after \"label\" (e.g.: label jump_here)
-$23247597342508* Line {line}: The \"set_input\" keyword doesn't work in this level.
-$49738057919794* Line {line}: Only a name and a value goes after \"const\" (e.g.: const up 3)
-$54823996766711* Line {line}: Invalid second parameter for \"expect\"
-$15087417947547* Line {line}: Only a watched state index and a value goes after \"expect\"
-$39128060960831* Line {line}: The \"expect\" keyword doesn't work in this level.
-$34201706604320* Line {line}: Arg 1 of \"expect\" must be a number (watched state index)
-$80435549997833* Line {line}: Invalid constant
+$46709301132173 Ligne {line}: Nom attendu après \"label\" (ex. label cible_saut)
+$91607161873807 Ligne {line}: Nom et valeur attendus après \"const\" (ex. const haut 3)
+$29335866080065 Ligne {line}: \"set_input\" attend un argument qui doit correspondre à un nombre
+$27717388396189 Ligne {line}: \"expect\" attend en argument un index de point d'observation et une valeur
+$81373400907688 Ligne {line}: Erreur non identifiée ici
+$95834288706682 Ligne {line}: Valeur attendue après \"set_input\"
+$65326376775481 Ligne {line}: Nom attendu après \"label\" (ex. label cible_saut)
+$23247597342508 Ligne {line}: Le mot-clé \"set_input\" n'est pas autorisé dans ce niveau.
+$49738057919794 Ligne {line}: Nom et valeur attendus après \"const\" (ex. label cible_saut)
+$54823996766711 Ligne {line}: Second paramètre invalide pour \"expect\"
+$15087417947547 Ligne {line}: \"expect\" attend en argument un index de point d'observation et une valeur
+$39128060960831 Ligne {line}: Le mot-clé \"expect\" n'est pas autorisé dans ce niveau.
+$34201706604320 Ligne {line}: Le premier argument d'"expect\" doit être un nombre (index du point d'observation)
+$80435549997833 Ligne {line}: Constante invalide
 
 
