@@ -1362,6 +1362,24 @@ $26811947547688* Composant mémoire programmable
 $55594749714809* Programme
 
 
+=== nim/backend_lib/assembler ===
+
+$46709301132173* Ligne {line}: Nom attendu après \"label\" (ex. label cible_saut)
+$91607161873807* Ligne {line}: Nom et valeur attendus après \"const\" (ex. const haut 3)
+$29335866080065* Ligne {line}: \"set_input\" attend un argument qui doit correspondre à un nombre
+$27717388396189* Ligne {line}: \"expect\" attend en argument un index de point d'observation et une valeur
+$81373400907688* Ligne {line}: Erreur non identifiée ici
+$95834288706682* Ligne {line}: Valeur attendue après \"set_input\"
+$65326376775481* Ligne {line}: Nom attendu après \"label\" (ex. label cible_saut)
+$23247597342508* Ligne {line}: Le mot-clé \"set_input\" n'est pas autorisé dans ce niveau.
+$49738057919794* Ligne {line}: Nom et valeur attendus après \"const\" (ex. label cible_saut)
+$54823996766711* Ligne {line}: Second paramètre invalide pour \"expect\"
+$15087417947547* Ligne {line}: \"expect\" attend en argument un index de point d'observation et une valeur
+$39128060960831* Ligne {line}: Le mot-clé \"expect\" n'est pas autorisé dans ce niveau.
+$34201706604320* Ligne {line}: Le premier argument d'"expect\" doit être un nombre (index du point d'observation)
+$80435549997833* Ligne {line}: Constante invalide
+
+
 === misc/dir_delete ===
 
 $94436541903929* Architectures : {list}
@@ -5930,7 +5948,7 @@ $12275727420074* Dois-je tout regarder ?
 === levels/test_lab ===
 
 $46069044039152* Sortie attendue {output} (adresse {address})
-$11038144815919
+$11038144815919*
 Ce niveau utilise des programmes pour tester tes circuits. Quand les programmes sont lancés, ce niveau vérifie si le point d'observation évolue comme attendu.
 
 Le labo a 2 mots-clés supplémentaires.
