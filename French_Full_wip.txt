@@ -1787,6 +1787,7 @@ For the component factory, the file manager also manages the custom components. 
 $47639082058046* Rien ici pour l'instant
 $83560387278127* Dérivé de : 
 $86830276924898* Transmis :
+$15762392983604* Taille :
 $76023068123024* Erreur
 $70694384106281* Créateur :
 $81675147704214* Utilise le composant réseau
@@ -3282,11 +3283,11 @@ $11467644007149* Compteur {nr}
 $35675567872962* Un compteur ne peut pas fonctionner avec un incrément de 0
 $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
-$94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
+$18868256335352* Dépendance circulaire - La sortie d'un composant est reliée à sa propre entrée. [url=page~Circular dependency]Plus d'infos[/url]
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
+$12662244981566* Dépendance circulaire - La sortie d'un composant est reliée à sa propre entrée. [url=page~Circular dependency]Plus d'infos[/url]
 $10533010562232* DÉLAI : {delay}
 $10098517717617* Test : {nr} / {total}
-$39385804477995* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée.  [url=circular_dependency]Détails[/url]
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
 $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
@@ -4639,6 +4640,7 @@ $64111401384153* Ajouter
 $64492620873138* Sortie toujours activée
 $98703677236827* il y a 1 minute
 $86244493049244* il y a {hours} heures
+$10792411581963* {size}Mo
 $95018143828198* il y a un an
 $21685594109067* a la minute
 $91048993146856* Enregistrer
@@ -4646,15 +4648,19 @@ $98363990684104* il y a une heure
 $84076931764831* il y a un jour
 $58374689721038* OCTETS
 $88592386859564* (Plus mauvais test : {worst_trial})
+$98683857303458* {size} octets
+$86391754618645* {size}ko
 $18300496139706* il y a 1 mois
 $17901039729248* il y a {months} mois
 $82336838435736* Charger
+$31567406591202* 1 octet
 
 #  This is a file name
 $96230605270081* nouveau_programme
 $42553566189409* il y a {minutes} minutes
 $70945526841433* il y a {years} ans
 $81432548841957* (First test scored)
+$22729457392140* {size}Go
 $14036822471924* il y a {days} jours
 $18816732910302* Enregistrer la valeur
 
