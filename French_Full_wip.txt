@@ -1868,7 +1868,6 @@ $92219875545393* [right]Entrée[/right]
 
 $38310909505735* Programme
 $76480303942112* composant mémoire programmable
-$56360155051962* La prochaine valeur du compteur {address} n'est pas un début de ligne assembleur (désactive cet avertissement dans les paramètres)
 
 
 === components/Shl64 ===
@@ -2346,7 +2345,6 @@ $16432178820878* Labo
 === components/Program4 ===
 
 $27522667367787* Programme
-$99408091907475* La prochaine valeur du compteur {address} ne correspond pas à une adresse de début de code assembleur (avertissement désactivable dans les paramètres)
 $45650720555565* Composant mémoire programmable
 
 
@@ -5689,8 +5687,12 @@ Si tu réussis ce niveau, je te montrerai comment fonctionne la RAM, la pile et 
 
 Mais avant, tu dois construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/color] était une bonne première machine, mais elle est construite à l'arrache et les programmes sont rapidement illisibles.
 Pour résoudre les défis que je t proposerais sans t'arracher tous les cheveux qu'il te reste, tu auras besoin d'un élément en plus : l'architecture [color=#e49f44]LEG[/color].
+$39698491148180* Mur
 $17275059688693* Bravo ! Tu as réussi la compétition, c'est une prouesse incomparable !
 $13741358519166* Le labyrinthe mythique. Si tu réussis à en sortir, tu gagneras la compétition!
+$39079200383267* Porte
+$92831124744885* Rien
+$95516682647996* Pièce
 $11103446544344* D'un autre côté, tu peux aussi fièrement partir et ne pas être mangé. 
 $19331074553774*
 Écris un algorithme qui permettra au robot de sortir du labyrinthe.
