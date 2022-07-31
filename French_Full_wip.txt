@@ -4990,7 +4990,7 @@ $34083666001769* Commentaire de fil
 
 === levels/odd_number_of_signals ===
 
-$16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
+$16173829560311 En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre impair d'entrées est [ON].
 $85589489148198* Composants utilisés\n{nr} sur 3
 $18288998816979* Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
