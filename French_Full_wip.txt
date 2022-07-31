@@ -3114,7 +3114,7 @@ Adresse
 
 === levels/odd_ticks ===
 
-$18510295620397 Met la sortie à [OFF] pendant les cycles pairs et [ON] pendant les cycles impairs.
+$18510295620397* Met la sortie à [OFF] pendant les cycles pairs et [ON] pendant les cycles impairs.
 $16987046679863* Tu as appris précédemment que nous n'acceptons pas les dépendances circulaires. Il existe cependant une exception à la règle que tu vas voir maintenant.
 $16037516781370*
 Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaires. 
@@ -5904,7 +5904,7 @@ $36114120875026* Casseur de coffres
 $15420972347773* RAM
 $17198602105978* Inférieur non signé
 $43018398941741* Toujours activé
-$45773199639367 Cycles impairs
+$45773199639367* Cycles impairs
 $68155633878444* Délai
 $33343343932901* Turing Complet
 $95989050249094* Porte AND étendue
