@@ -2087,12 +2087,6 @@ Entrée 2
 Sortie[/right]
 
 
-=== misc/ui_state_name ===
-
-$41936481068702* Compteur
-$42012207828907* Registre
-
-
 === dialogue/schematic_hub/load ===
 
 $41294322771286* Charger
@@ -3282,6 +3276,7 @@ $91515053618360* Manuel
 $11467644007149* Compteur {nr}
 $35675567872962* Un compteur ne peut pas fonctionner avec un incrément de 0
 $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
+$41936481068702* Compteur
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
 $10533010562232* DÉLAI : {delay}
@@ -3294,6 +3289,7 @@ $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
 $32508339206292* PORTES : {gate}
+$42012207828907* Registre
 
 
 === misc/view_solution_button ===
@@ -5667,6 +5663,11 @@ $81238724438578* Réalise un circuit dont l'entrée d'un composant dépend de sa
 === trans/level_sorter_description ===
 
 $60186094365455* Trie les valeurs
+
+
+=== dialogue/schematic_hub/search_button ===
+
+$99419261731746* Recherche
 
 
 === trans/panel_input_input_1 ===
