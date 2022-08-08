@@ -1787,6 +1787,7 @@ For the component factory, the file manager also manages the custom components. 
 $47639082058046* Rien ici pour l'instant
 $83560387278127* Dérivé de : 
 $86830276924898* Transmis :
+$15762392983604* Taille :
 $76023068123024* Erreur
 $70694384106281* Créateur :
 $81675147704214* Utilise le composant réseau
@@ -1868,7 +1869,6 @@ $92219875545393* [right]Entrée[/right]
 
 $38310909505735* Programme
 $76480303942112* composant mémoire programmable
-$56360155051962* La prochaine valeur du compteur {address} n'est pas un début de ligne assembleur (désactive cet avertissement dans les paramètres)
 
 
 === components/Shl64 ===
@@ -2019,7 +2019,7 @@ $61330657823382* Valeur Constante
 
 === levels/and_gate_3 ===
 
-$14788981567936* Crée une porte NAND avec 3 entrées.
+$14788981567936* Crée une porte AND avec 3 entrées.
 
 
 === components/DivMod16 ===
@@ -2085,12 +2085,6 @@ $58617980046951*
 [right]Entrée 1
 Entrée 2
 Sortie[/right]
-
-
-=== misc/ui_state_name ===
-
-$41936481068702* Compteur
-$42012207828907* Registre
 
 
 === dialogue/schematic_hub/load ===
@@ -2346,7 +2340,6 @@ $16432178820878* Labo
 === components/Program4 ===
 
 $27522667367787* Programme
-$99408091907475* La prochaine valeur du compteur {address} ne correspond pas à une adresse de début de code assembleur (avertissement désactivable dans les paramètres)
 $45650720555565* Composant mémoire programmable
 
 
@@ -3115,7 +3108,7 @@ Adresse
 
 === levels/odd_ticks ===
 
-$18510295620397* Met la sortie à [OFF] pendant les cycles impairs et [ON] pendant les cycles pairs.
+$18510295620397* Met la sortie à [OFF] pendant les cycles pairs et [ON] pendant les cycles impairs.
 $16987046679863* Tu as appris précédemment que nous n'acceptons pas les dépendances circulaires. Il existe cependant une exception à la règle que tu vas voir maintenant.
 $16037516781370*
 Les pattes des composants carrés ne vont pas affecter la sortie du composant pendant le même cycle, c'est pour cela que l'on peut les utiliser pour les dépendances circulaires. 
@@ -3283,12 +3276,11 @@ $91515053618360* Manuel
 $11467644007149* Compteur {nr}
 $35675567872962* Un compteur ne peut pas fonctionner avec un incrément de 0
 $73560327420927* Cette sauvegarde provient d'une version obsolète de ce niveau.\nCrée et charge un nouveau schéma avec le menu schéma.
+$41936481068702* Compteur
 $99285446909923* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
-$94410251595979* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée. [url=circular_dependency]Détails[/url]
 $72465734060414* Court-circuit sur le fil (valeurs en sortie  {values})
 $10533010562232* DÉLAI : {delay}
 $10098517717617* Test : {nr} / {total}
-$39385804477995* Dépendance circulaire - La sortie d'un composant ramène à sa propre entrée.  [url=circular_dependency]Détails[/url]
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
 $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
@@ -3297,6 +3289,7 @@ $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
 $32508339206292* PORTES : {gate}
+$42012207828907* Registre
 
 
 === misc/view_solution_button ===
@@ -4641,6 +4634,7 @@ $64111401384153* Ajouter
 $64492620873138* Sortie toujours activée
 $98703677236827* il y a 1 minute
 $86244493049244* il y a {hours} heures
+$10792411581963* {size}Mio
 $95018143828198* il y a un an
 $21685594109067* a la minute
 $91048993146856* Enregistrer
@@ -4648,15 +4642,19 @@ $98363990684104* il y a une heure
 $84076931764831* il y a un jour
 $58374689721038* OCTETS
 $88592386859564* (Plus mauvais test : {worst_trial})
+$98683857303458* {size} octets
+$86391754618645* {size}Kio
 $18300496139706* il y a 1 mois
 $17901039729248* il y a {months} mois
 $82336838435736* Charger
+$31567406591202* 1 octet
 
 #  This is a file name
 $96230605270081* nouveau_programme
 $42553566189409* il y a {minutes} minutes
 $70945526841433* il y a {years} ans
 $81432548841957* (First test scored)
+$22729457392140* {size}Gio
 $14036822471924* il y a {days} jours
 $18816732910302* Enregistrer la valeur
 
@@ -4988,7 +4986,7 @@ $34083666001769* Commentaire de fil
 
 === levels/odd_number_of_signals ===
 
-$16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre pair d'entrées est [ON].
+$16173829560311* En utilisant au maximum 3 composants, met la sortie à [ON] seulement lorsqu'un nombre impair d'entrées est [ON].
 $85589489148198* Composants utilisés\n{nr} sur 3
 $18288998816979* Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/color] que tu peux lire si tu es bloqué..
 
@@ -5667,6 +5665,11 @@ $81238724438578* Réalise un circuit dont l'entrée d'un composant dépend de sa
 $60186094365455* Trie les valeurs
 
 
+=== dialogue/schematic_hub/search_button ===
+
+$99419261731746* Recherche
+
+
 === trans/panel_input_input_1 ===
 
 $82781946969262* Entrée 2
@@ -5689,8 +5692,12 @@ Si tu réussis ce niveau, je te montrerai comment fonctionne la RAM, la pile et 
 
 Mais avant, tu dois construire un meilleur ordinateur. [color=#e49f44]OVERTURE[/color] était une bonne première machine, mais elle est construite à l'arrache et les programmes sont rapidement illisibles.
 Pour résoudre les défis que je t proposerais sans t'arracher tous les cheveux qu'il te reste, tu auras besoin d'un élément en plus : l'architecture [color=#e49f44]LEG[/color].
+$39698491148180* Mur
 $17275059688693* Bravo ! Tu as réussi la compétition, c'est une prouesse incomparable !
 $13741358519166* Le labyrinthe mythique. Si tu réussis à en sortir, tu gagneras la compétition!
+$39079200383267* Porte
+$92831124744885* Rien
+$95516682647996* Pièce
 $11103446544344* D'un autre côté, tu peux aussi fièrement partir et ne pas être mangé. 
 $19331074553774*
 Écris un algorithme qui permettra au robot de sortir du labyrinthe.
@@ -5898,7 +5905,7 @@ $36114120875026* Casseur de coffres
 $15420972347773* RAM
 $17198602105978* Inférieur non signé
 $43018398941741* Toujours activé
-$45773199639367* Cycles pairs
+$45773199639367* Cycles impairs
 $68155633878444* Délai
 $33343343932901* Turing Complet
 $95989050249094* Porte AND étendue
@@ -6952,6 +6959,7 @@ $89945092889418* SUBi
 
 #  4 letters max
 $89011349770597* NOT
+$18868256335352* Dépendance circulaire - La sortie d'un composant est reliée à sa propre entrée. [url=page~Circular dependency]Plus d'infos[/url]
 $71559031724238* SI_NON_EGAL
 
 #  4 letters max
