@@ -544,7 +544,7 @@ $13677051385046* Rotation à gauche
 === trans/level_decoder_1_RichTextLabel2 ===
 
 $50454539040073*
-[right][color=#e49f44]Entrée/color]
+[right][color=#e49f44]Entrée[/color]
 Sortie 1
 Sortie 2[/right]
 
@@ -3081,6 +3081,8 @@ Créez un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 
 Lorsque le premier bit est [ON], [CHARGER] la mémoire et envoye-la vers la sortie.
 Lorsque le second bit est [ON], [SAUVEGARDER] l'octet en entrée.
+
+La sortie a une broche active. Activez-le uniquement sur [LOAD].
 $15510981129613* CHARGER
 $13502950630653*
 [color=#ff9800]Aucune
