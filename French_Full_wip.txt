@@ -3159,7 +3159,7 @@ Sortie 4
 
 === trans/level_saving_gracefully_RichTextLabel3 ===
 
-$74117520663650
+$74117520663650*
 [right][color=#e49f44]Sauvegarder
 Valeur[/color]
 Sortie attendue
