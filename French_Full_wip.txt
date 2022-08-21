@@ -3993,7 +3993,7 @@ $28761562806647* [center]Applique AND sur chaque paire de bits[/center]
 
 $67127889187842*
 [right][color=#e49f44]Valeur
-Inversée[/color]
+Inverser[/color]
 Sortie attendue
 Sortie actuelle[/right]
 
