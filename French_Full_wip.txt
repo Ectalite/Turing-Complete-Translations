@@ -980,6 +980,12 @@ $39369982838671* Égalité
 
 === levels/binary_racer ===
 
+$25272818268849*
+[b]EN RÉSUMÉ[/b]
+
+Tu auras probablement noté :
+1. Chaque nombre a une et une seule écriture binaire.
+2. Chaque chiffre prend une valeur double du chiffre précédent.
 $16076448195257* Ce niveau est mon passe-temps favori. Convertir du décimal au binaire en temps limité.
 $29718660090112* Mauvaise réponse
 $37319690622142* Très bien, tu as atteint le niveau {current_level}.
@@ -2019,7 +2025,7 @@ $61330657823382* Valeur Constante
 
 === levels/and_gate_3 ===
 
-$14788981567936* Crée une porte NAND avec 3 entrées.
+$14788981567936* Crée une porte AND avec 3 entrées.
 
 
 === components/DivMod16 ===
