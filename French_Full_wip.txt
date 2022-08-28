@@ -5825,6 +5825,11 @@ $86631925987075* ENTREE : PRENDRE {nr} CARTES
 $11794110848012* Cette fois il a pris le contrôle du poste de contrôle et retient en otage le capitaine.
 
 
+=== trans/panels_bidirectional_set_z_label ===
+
+$50319299760169* Entrée absente :
+
+
 === trans/panel_segment_enable ===
 
 $14963127967678* [center]Activer[/center]
