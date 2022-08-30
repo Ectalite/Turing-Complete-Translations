@@ -33,11 +33,6 @@ $73800316874022* [center]Construis le circuit qui correspond au code demandé[/c
 $82402577990931* Eau
 
 
-=== trans/panel_stack_output ===
-
-$61988314265407* Sortie
-
-
 === components/Output1Car ===
 
 $12896765714603* Retenue
@@ -520,12 +515,6 @@ $41342441528477* Sang
 $31033960272185* Je suis le célèbre\n Dr Rakoo
 
 
-=== components/Stack ===
-
-$71022099146246* Mémoire permettant d'EMPILER/DÉPILER
-$47202418972371* Pile
-
-
 === trans/levels_saving_bytes_text ===
 
 $36838510526259*
@@ -987,7 +976,6 @@ Tu auras probablement noté :
 1. Chaque nombre a une et une seule écriture binaire.
 2. Chaque chiffre prend une valeur double du chiffre précédent.
 $16076448195257* Ce niveau est mon passe-temps favori. Convertir du décimal au binaire en temps limité.
-$29718660090112* Mauvaise réponse
 $37319690622142* Très bien, tu as atteint le niveau {current_level}.
 $19111664765554*
 Modifie les bits dans le panneau afin qu'ils représentent le nombre décimal demandé.
@@ -996,8 +984,6 @@ Tu dois atteindre le niveau 3 pour réussir.
 
 (cliques [color=#e63e5b][url=accessibility_mode]ici[/url][/color] pour activer le mode accessible sans compte à rebours.)
 $11176073682097* Combien fait {number} en binaire ?
-$71866932309393* Tu as atteint le niveau {level} !
-$37093663674348* Niveau {x}
 
 
 === components/Mul64 ===
@@ -1913,19 +1899,23 @@ $43762760711440* 3 Conditions.assembly
 $36937658066516* AND
 $25378963142694* Entrée 2
 $34688070019016* Calcule
-$80984147393241* OPCODE
+$48524980499900* VALEUR
 $23343928938611* CALCUL
-$89904818945500* Toujours
+$80984147393241* OPCODE
 $41384200516164* Entrée
+$25947122599583* EMPILER
 $21762287720058* Defaut
 $52720470197560* Condition
 $58135326697989* Sortie
+$89904818945500* Toujours
 $45098916684469* Jamais
 $69871887031160* Résultat
 $77964040770330* AJOUTE
 $90287016519308* INUTILISE
 $17900992684779* Entrée
 $23756602199977* NAND
+$98979865390652* SORTIE
+$30360644331285* DÉPILER
 $52155313885654* Condition
 $38851635485723* 2 Calculations.assembly
 $55885017410507* 0 Immediate load.assembly
@@ -2441,7 +2431,6 @@ Ici [ANY] veut dire que l'ont peut avoir n'importe quelle valeur.
 
 Déterminez le mode dans lequel nous sommes à partir de l'entrée et envoie [ON] vers la sortie correspondante.
 $15105859227432* COPIER \n[ON] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
-$12671132029272* Ton circuit à été sauvegardé dans l'atelier de composants.
 $15440615199508* Condition logique
 $16785126425267* Calculer
 $11382827588408* Condition logique\n[ON] [ON] [OFF] [OFF] [OFF] [ANY] [ANY] [ANY]
@@ -2562,25 +2551,21 @@ Ce niveau présente le composant Ligne à Retard. Sa sortie est identique à l'e
 
 === levels/negative_numbers ===
 
-$12574817679356*
-Nous avons besoin de valeurs négatives dans les octets. Le système que nous avons utilisé jusqu'ici représente tous les nombres de 0 à 255 avec un octet. Ce système est appelé "non signé", car il ne gère que les nombres positifs.
-
-Nous avons besoin d'un système pour gérer les nombres négatifs, habituellement nommé représentation "signée".
-
-De plus, cela simplifierait grandement les prochains circuits si la représentation fonctionnait avec l'additionneur que tu as déjà réalisé.
 $17231048881956* Pour mesurer la différence entre deux valeurs, tu as besoin de la soustraction. Pour soustraire, tu as d'abord besoin des nombres négatifs.
-$70755151984986* {a} devrait être {b}
-$11067230116844* {number} n'a pas de représentation
-$62744038163781* OK
-$19118970740682*
-[color=#dd6576]Modifie les valeurs[/color] pour chaque bit de façon à respecter les objectifs suivants :
+$13872783467999* Écris {number} en binaire signé.
+$49993940138672*
+Ce niveau présente la représentation la plus courante des nombres négatifs, le complément à deux.
 
-[color=#e49f44]1[/color]: Tous les nombres de -127 à 127 doivent pouvoir être représentés
-[color=#e49f44]2[/color]: Les Octets représentant les valeurs de 0 to 127 doivent être les mêmes qu'en non signé.
-[color=#e49f44]3[/color]: Le nouveau système doit fonctionner avec l'additionneur (pour les résultats entre -127 et 127).
-$15431436023571* Tu as deux façons de représenter 0\nCe qui conduit à 0 + 1 = 0
-$28284583096369* 1 plus -1 n'est pas égal à 0\n  
-$57604042654667* {number} n'a pas de représentation
+On inverse la valeur du bit de poids fort. Pour un octet cela signifie que la valeur du 8ème bit passe de 128 à -128.
+
+Ce niveau est validé dès que tu atteins un niveau supérieur ou égal à 3.
+$97450409600317*
+[b]A RETENIR[/b]
+
+1. Pour basculer entre les négatifs et les positifs, tu inverses tous les bits et ajoute 1.
+2. L'additionneur octet que tu as construit fonctionne aussi avec les nombres signés.
+3. Il n'y a toujours qu'une seule façon d'écrire chaque nombre.
+$37471385247951* Bon travail, tu as atteint le niveau {current_level}.
 
 
 === trans/nand_Label2 ===
@@ -2620,14 +2605,6 @@ $86870364449392* Entrée
 $93140495547084* Déplacer la vue vers le bas
 
 
-=== trans/panel_stack_input ===
-
-$86207640171434*
-[right]DEPILER
-EMPILER
-EMPILER valeur[/right]
-
-
 === components/Mux64 ===
 
 $14050204031082* Alterne entre deux valeurs
@@ -2661,7 +2638,6 @@ va chercher le fruit !
 
 === levels/hex_racer ===
 
-$33474352861351* Niveau {x}
 $92057009138253* Comment écrire {number} en binaire ?
 $16009852370452*
 Quand on manipule beaucoup de bits, le binaire commence à être difficile à lire. L'Hexadécimal (base 16) représente chaque combinaison de 4 bits par son propre caractère :
@@ -2692,9 +2668,7 @@ Hexadécimal : FFFF
 [/code]
 
 Ce n'est pas facile de dire s'il manque un chiffre binaire ou s'il y a un décalage en décimal, mais l'hexadécimal est tout de suite clair (au moins une fois qu'on prend l'habitude).
-$40775762006843* Mauvaise réponse
 $84691609525475* Ce niveau est mon deuxième passe-temps préféré. Convertir de l'hexadécimal au binaire en temps limité.
-$45532697833519* Niveau {level} atteint !
 $87016829502381* Très bien, tu as atteint le niveau {current_level}.
 $43463538043782*
 Modifie les bits du panneau pour atteindre le nombre hexadécimal demandé.
@@ -3222,14 +3196,17 @@ $78804623186243* SORTIE
 $49526452710191* NE PAS DEPILER
 $58050047963238* VALEUR
 $30926395960020* EMPILER
-$19245209470436* Créer une pile
+$19245209470436* Crée une pile
+
+#  Short because it will become the name of a custom component
+$84236889840605* PILE
 $12227209887733* A chaque cycle les entrées indiqueront soit EMPILER soit DÉPILER. Si c'est EMPILER, stocke la valeur en haut de la pile. Quand c'est DÉPILER retire cette valeur de la pile et envoie-la en sortie.
 $15662660252584* Ne rien faire
 $85171087236638* ACTIVER
 $23726790986805* DEPILER
 $62469306234943* NE PAS EMPILER
 $46948857059388* DEPILER valeur {value} de la pile
-$18761197388580* Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées o˘ les usagers peuvent called poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DÉPILER[/color]). ¿ toi d'implémenter ce nouveau système.
+$18761197388580* Pour raison d'économies, il a été décidé de gérer différemment les files d'attente dans les établissements publics pour réduire le nombre de demandes. Plus de premier arrivé, premier servi, maintenant la règle ce sera dernier arrivé, premier servi. Imagine une [color=#e49f44]pile[/color] de fiches numérotées où les usagers peuvent aller poser leur fiche au-dessus (action [color=#e49f44]EMPILER[/color]) et les fonctionnaires prennent la fiche du haut de la pile (action [color=#e49f44]DÉPILER[/color]). A toi d'implémenter ce nouveau système.
 $65188797398656* EMPILER {value} sur la pile
 
 
@@ -3292,6 +3269,7 @@ $10098517717617* Test : {nr} / {total}
 $83854326413007* Le composant personalisé "{name}" a changé de taille et a été supprimé du schéma car il n'y avait plus assez de place.
 $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $87591753278764* Registre {nr}
+$39587966698723* Court-circuit dans {custom_component}
 $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
 $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
@@ -5824,6 +5802,11 @@ $86631925987075* ENTREE : PRENDRE {nr} CARTES
 $11794110848012* Cette fois il a pris le contrôle du poste de contrôle et retient en otage le capitaine.
 
 
+=== trans/panels_bidirectional_set_z_label ===
+
+$50319299760169* Entrée absente :
+
+
 === trans/panel_segment_enable ===
 
 $14963127967678* [center]Activer[/center]
@@ -6969,9 +6952,11 @@ $89945092889418* SUBi
 $89011349770597* NOT
 $18868256335352* Dépendance circulaire - La sortie d'un composant est reliée à sa propre entrée. [url=page~Circular dependency]Plus d'infos[/url]
 $71559031724238* SI_NON_EGAL
+$29718660090112* Mauvaise réponse
 
 #  4 letters max
 $40520283279584* XOR
+$12671132029272* Ton circuit à été sauvegardé dans l'atelier de composants.
 $71204580217527* NOTi
 $71195301111400* ADDi
 $98178474649432* SI_SUPERIEUR_OU_EGAL
@@ -6988,18 +6973,20 @@ $22213999385406* délai
 
 #  4 letters max
 $33873219185286* NAND
+$45532697833519* Niveau {level} atteint !
 $79492115258673* SI_SUPERIEUR
-
-#  Instead of writing 5839, the number turns into 5.8K
-$84696693690500* k
 
 #  4 letters max
 $64519909700148* AND
+
+#  Instead of writing 5839, the number turns into 5.8K
+$84696693690500* k
 $39343770421034* portes
 $76763908762578* Cycle
 
 #  4 letters max
 $36090730285143* NOR
+$37093663674348* Niveau {x}
 
 #  Instead of writing 5839000000, the number turns into 5.8B
 $71072134093858* G
