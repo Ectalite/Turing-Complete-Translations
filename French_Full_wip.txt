@@ -2037,6 +2037,11 @@ $44961981616677*
 Réponse attendue 11 + 88  = 99[/center]
 
 
+=== ui/verilog_format_options ===
+
+$61009819785587* Aucun
+
+
 === components/DualPortRam ===
 
 $13408945557666* RAM avec une patte Lire supplémentaire
@@ -4034,6 +4039,11 @@ $68419648206312* [center]Représentation[/center]
 $95766090310621* Droite
 
 
+=== ui/export_select_path ===
+
+$50432926756438* Modifier
+
+
 === components/Output1z ===
 
 $31478630391268* Sortie activée quand la patte de contrôle est [ON]
@@ -4580,15 +4590,19 @@ $86839706221116* porte AND à 3 entrées
 === components/Level Gate ===
 
 
-#  This must be no more than 5 characters long, use abbreviations if necessary
+#  This must be no more than 6 characters long, use abbreviations if necessary
 $91472284749011* DÉLAI
 
-#  This must be no more than 5 characters long, use abbreviations if necessary
+#  This must be no more than 6 characters long, use abbreviations if necessary
 $86260137015175* CYCLE
+
+#  This must be no more than 6 characters long, use abbreviations if necessary
 $84124240406304* SCORE
+
+#  This must be no more than 6 characters long, use abbreviations if necessary
 $54172257277874* TOTAL
 
-#  This must be no more than 5 characters long, use abbreviations if necessary
+#  This must be no more than 6 characters long, use abbreviations if necessary
 $15265492169229* PORTE
 
 
@@ -4643,6 +4657,7 @@ $81432548841957* (First test scored)
 $22729457392140* {size}Gio
 $14036822471924* il y a {days} jours
 $18816732910302* Enregistrer la valeur
+$38412380622852* Fichier illisible : {path}
 
 
 === trans/instructions_hint ===
@@ -6253,6 +6268,11 @@ $90490391067117* Bac à sable exclusivement
 $75695254533352* Tables de vérité
 
 
+=== trans/ui_export_success ===
+
+$97849993500646* Export réussi
+
+
 === levels/robot_race ===
 
 $15403032472607* La course de robots est notre sport favori sur le vaisseau. Des robots programmés par différentes personnes vont essayer d'arriver à a fin de la course le plus rapidement possible. Le gagnant sera le programmeur dont le programme aura le moins de ligne.
@@ -7291,6 +7311,20 @@ Voici un schéma du composant que tu dois réaliser :
 Envois toujours en sortie la [color=#e49f44]sauvegarde[/color].
 
 
+=== ui/files_export_description ===
+
+$78500352397752*
+[b]Options d'Exportation[/b]
+
+ Format :
+
+ Fichier associé :
+
+ Optimisation :
+
+ Dossier cible :
+
+
 === trans/rpg_hats_exit ===
 
 $71200030457801* Sortie
@@ -7304,6 +7338,11 @@ $96313037592447* [center]Utilise le robot pour scanner le fruit[/center]
 === trans/panel_keyboard_character_mode ===
 
 $98676883649624* [right]Mode caractère[/right]
+
+
+=== ui/file_export_button ===
+
+$35572795990520* Exporter
 
 
 === trans/panel_divmod_output ===
@@ -7385,6 +7424,11 @@ $54481599074471* Somme :
 === levels/binary_start ===
 
 $19099025738142* Démarrer
+
+
+=== ui/file_export ===
+
+$80702678699819* Exporter
 
 
 === rpg/maps/boss_room/abyss ===

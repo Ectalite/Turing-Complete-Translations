@@ -1,0 +1,44 @@
+=== ui/verilog_format_options ===
+
+$61009819785587 Aucun
+
+
+=== trans/ui_export_success ===
+
+$97849993500646 Export réussi
+
+
+=== nim/backend ===
+
+$38412380622852 Fichier illisible : {path}
+
+
+=== ui/files_export_description ===
+
+$78500352397752
+[b]Options d'Exportation[/b]
+
+ Format :
+
+ Fichier associé :
+
+ Optimisation :
+
+ Dossier cible :
+
+
+=== ui/file_export_button ===
+
+$35572795990520 Exporter
+
+
+=== ui/file_export ===
+
+$80702678699819 Exporter
+
+
+=== ui/export_select_path ===
+
+$50432926756438 Modifier
+
+
