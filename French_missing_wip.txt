@@ -1,0 +1,5 @@
+=== misc/specification_dialogue ===
+
+$81322935207536 ENTRÉE
+$34974836617918 {register_1} et {register_2}
+$31185395052385 SORTIE
