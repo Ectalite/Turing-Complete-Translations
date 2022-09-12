@@ -797,6 +797,11 @@ Lire
 Écrire valeur[/right]
 
 
+=== trans/overwrite_keep_both ===
+
+$70461062797309* Conserver les 2
+
+
 === trans/architecture_2 ===
 
 $38100016313511* ARCHITECTURE PROCESSEUR 2
@@ -2188,6 +2193,11 @@ $80632450818467* [center][color=#cccccc](Considérons π ≈ 3)[/color][/center]
 === trans/panel_output_output_0 ===
 
 $44355002441998* Sortie 1
+
+
+=== trans/overwrite_discard ===
+
+$78824878529707* Abandon
 
 
 === trans/options_missing ===
@@ -5000,6 +5010,11 @@ $18288998816979* Ce niveau a un [color=#e63e5b][url=odd_number]indice[/url][/col
 $78287906849040* Couleur de fil
 
 
+=== misc/overwrite_custom ===
+
+$26401730066442* Un composant personnalisé nommé "{comp}" existe déjà. Veux-tu le remplacer ?
+
+
 === rpg/maps/overworld/cannon ===
 
 $34523773807049* Canon Laser
@@ -7100,6 +7115,11 @@ $71204033550134* Que fais la porte NAND ?
 === rpg/maps/prison/exit_door ===
 
 $92379689291727* Porte
+
+
+=== trans/overwrite_button ===
+
+$11839708860574* Remplacer
 
 
 === rpg/maps/overworld/bush ===
