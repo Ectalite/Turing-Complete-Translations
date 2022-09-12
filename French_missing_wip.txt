@@ -1,5 +1,20 @@
-=== misc/specification_dialogue ===
+=== trans/overwrite_keep_both ===
 
-$81322935207536 ENTRÉE
-$34974836617918 {register_1} et {register_2}
-$31185395052385 SORTIE
+$70461062797309* Keep both
+
+
+=== trans/overwrite_discard ===
+
+$78824878529707* Discard
+
+
+=== misc/overwrite_custom ===
+
+$26401730066442* A custom component called "{comp}" already exists. Do you want to overwrite it?
+
+
+=== trans/overwrite_button ===
+
+$11839708860574* Overwrite
+
+
