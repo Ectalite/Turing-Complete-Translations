@@ -4774,7 +4774,7 @@ Comme avec l'addition habituelle, si le résultat ne peut pas être écrit avec 
 
 === trans/options_inline_latches ===
 
-$53886441687616 autoriser les recettes circulaires (voir manuel)
+$53886441687616* autoriser les recettes circulaires (voir manuel)
 
 
 === rpg/maps/overworld/reactor_entry ===
