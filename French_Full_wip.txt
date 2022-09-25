@@ -5148,11 +5148,11 @@ En utilisant des portes NAND, contruis une porte NOT.
 En utilisant : [b]porte NAND[/b]
 [code]Entrée 1 : [OFF][ON][OFF][ON]
 Entrée 2 : [OFF][OFF][ON][ON]
-Sortie :  [ON][ON][ON][OFF][/code]
+Sortie :   [ON][ON][ON][OFF][/code]
 
 Construis : [b]porte NOT[/b]
 [code]Entrée 1 : [ON][OFF]
-Sortie :  [OFF][ON][/code]
+Sortie :   [OFF][ON][/code]
 $18442122157391* [b]Consigne[/b]\nDésélectionne le composant en cliquant sur l'arrière-plan
 $12880883686501* [b]Consigne[/b]\nClique sur la porte NAND en haut à droite et placez là
 $18780831606716* [b]Consigne[/b]\nMaintiens le clic gauche pour ajouter un fil
@@ -5302,7 +5302,7 @@ $49647690443210* [center]Niveau terminé[/center]
 
 
 #  Label appears on the component and must be 3 letters or less
-$92505830860215* SOMME
+$92505830860215* SOM
 
 
 === components/Bidirectional1 ===
@@ -6773,7 +6773,7 @@ $70383685548547* REG
 $20104629254326* ARGUMENT 2
 $65642901654732* {component} devrait être désactivé
 $98778676892898* {component} devrait être actif avec la valeur {value}
-$14186606871089* Au prochain cycke la valeur du compteur sera {wrong_value} alors qu'on attend {value}
+$14186606871089* Au prochain cycle la valeur du compteur sera {wrong_value} alors qu'on attend {value}
 $27868897434461* Composant compteur introuvable
 $37810243909140* COMPTEUR
 $38681417496680* ARGUMENT 1
