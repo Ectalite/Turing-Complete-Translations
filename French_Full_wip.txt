@@ -7316,11 +7316,10 @@ $74657548486940* Oui
 $14295883660596* VALEUR
 $14950983012226* SAUVEGARDER
 $14837033157870* ACTION
-$12474728041023*
-La Ligne à Retard nous permet d'utiliser une valeur un cycle plus tard.
+$12474728041023
+La Ligne à Retard permet d'enregistrer une valeur pendant 1 cycle. Mais parfois nous aurons besoin d'un composant pouvant enregistrer une valeur pendant plus longtemps.
 
-Nous devons réaliser un composant qui nous permet d'utiliser une valeur dans le futur, quel que soit le nombre de cycles plus tard.
-Nous appellerons cette valeur [color=#e49f44]sauvegarde[/color].
+Tu dois réaliser maintenant un tel composant.
 $13045361823397* NE PAS SAUVEGARDER
 $13740696609075*
 Ce niveau comporte deux entrées.
