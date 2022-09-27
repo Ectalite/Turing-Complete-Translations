@@ -7316,7 +7316,7 @@ $74657548486940* Oui
 $14295883660596* VALEUR
 $14950983012226* SAUVEGARDER
 $14837033157870* ACTION
-$12474728041023
+$12474728041023*
 La Ligne à Retard permet d'enregistrer une valeur pendant 1 cycle. Mais parfois nous aurons besoin d'un composant pouvant enregistrer une valeur pendant plus longtemps.
 
 Tu dois réaliser maintenant un tel composant.
