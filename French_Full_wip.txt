@@ -1271,7 +1271,7 @@ $13757925963562* Cette fois nous te demandons de déplacer des pyramides réguli
 $10750976989948*
 Les 4 premières entrées te donneront dans l'ordre :
 num_disque - le nombre de disques à déplacer -1
-source - la position de départ (1,2 ou 3)
+source - la position de départ (0,1 ou 2)
 destination - la position d'arrivée
 réserve - la 3ème position restante
 
