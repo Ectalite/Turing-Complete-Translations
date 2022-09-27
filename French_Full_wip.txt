@@ -1273,7 +1273,7 @@ Les 4 premières entrées te donneront dans l'ordre :
 num_disque - le nombre de disques à déplacer -1
 source - la position de départ (1,2 ou 3)
 destination - la position d'arrivée
-réserve - La 3ème position restante
+réserve - la 3ème position restante
 
 Contrôle la grue en utilisant les valeurs suivantes en sortie :
 0 - Place l'aimant à la position 0
