@@ -133,7 +133,7 @@ Dans le mode couleur l'octet de poids faible est le caractère, les 3 octets sui
 
 === trans/level_tower_description ===
 
-$19095794285423 Reconstitue la pyramide de disques radioactifs
+$19095794285423* Reconstitue la pyramide de disques radioactifs
 
 
 === trans/panel_lessu_description ===
@@ -1267,8 +1267,8 @@ $35063135798145* Statut
 
 === levels/Tower of Radioactive Alloy ===
 
-$13757925963562 Cette fois nous te demandons de déplacer des pyramides régulières de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer un disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
-$10750976989948
+$13757925963562* Cette fois nous te demandons de déplacer des pyramides régulières de disques radioactifs retirés d'un vieux réacteur. Fais juste attention à ne pas placer un disque plus grand sur un plus petit sinon tout le vaisseau va exploser.
+$10750976989948*
 Les 4 premières entrées te donneront dans l'ordre :
 num_disque - le nombre de disques à déplacer -1
 source - la position de départ (1,2 ou 3)
@@ -1282,7 +1282,7 @@ Contrôle la grue en utilisant les valeurs suivantes en sortie :
 5 - Active ou désactive l'aimant
 
 Manipule l'aimant manuellement à l'aide des touches Flèches et Entrée pour activer/désactiver.
-$19265994465686 Nous avons besoin de toi pour mettre de l'ordre au sous-sol.
+$19265994465686* Nous avons besoin de toi pour mettre de l'ordre au sous-sol.
 $35120623183961* Déplacer de {source} vers {destination}
 $15855497886737*
 Implémente l'algorithme suivant :
@@ -5893,7 +5893,7 @@ $83321010943153* Compter les Signaux
 $49679174636208* XOR Octet
 $40356575891647* OR Octet
 $44393538021725* Calibration des Canons Laser
-$61228036919534  Tours radioactives de Hanoï
+$61228036919534* Tours radioactives de Hanoï
 $87426564872318* Diviser
 $24593959732668* Négation signée
 $19487493622742* Demi-additionneur
@@ -6458,7 +6458,7 @@ Notes
 
 === trans/rpg_alloy_description ===
 
-$29268002047995
+$29268002047995*
 [center] [color=#eb5260]BOUM ![/color]
 
 Tout le monde meurt.
