@@ -3088,7 +3088,7 @@ $18873598212433* CHARGER
 
 === levels/byte_constant ===
 
-$12641789008694 Crée un système qui sortira toujours le nombre 164.
+$12641789008694 Crée un circuit dont la sortie est toujours le nombre 164.
 
 
 === trans/panel_ram_fast_input ===
@@ -3934,7 +3934,7 @@ $13520918982355* Ajoute un bloc de RAM, ainsi l'ordinateur aura 256 octets de m�
 === levels/byte_less_i ===
 
 $16755383054285* [center]Détermine si la première entrée est plus petite que la seconde.[/center]
-$19006843777401* Crée un circuit qui sortira [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
+$19006843777401 Crée un circuit dont la sortie est [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
 $46083799633716* {input_1} est plus petit que {input_2}?
 
 
