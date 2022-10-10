@@ -1450,7 +1450,7 @@ $59435425554599* Bit 0 :
 
 === levels/program ===
 
-$16693098943939
+$16693098943939*
 Le composant d'entrée [INSTRUCTION] a été supprimé. Il a été remplacé par un composant programme. À chaque cycle, utilise le compteur pour charger l'[INSTRUCTION] suivante de la mémoire du programme.
   
 Tu dois utiliser le composant compteur que tu as débloqué dans un niveau précédent.
@@ -1617,7 +1617,7 @@ $77878150504241* Décale les bits vers la droite, en conservant le signe du nomb
 
 === misc/level_gate_manual_icon ===
 
-$22002156022920 Débloque la page de manuel
+$22002156022920* Débloque la page de manuel
 
 
 === components/DotMatrixDisplay ===
@@ -3525,7 +3525,7 @@ $65379881141228*
 
 === misc/level_gate_unlocks_unknown ===
 
-$76731326010721 Débloque quelque chose d'inconnu
+$76731326010721* Débloque quelque chose d'inconnu
 
 
 === trans/map_cpu_architecture ===
@@ -4837,7 +4837,7 @@ $96601731563408* Ouvrir le terminal
 
 === misc/level_gate_component_icon ===
 
-$83440578602427 Débloque des composants
+$83440578602427* Débloque des composants
 
 
 === trans/options_save_location ===
@@ -5139,7 +5139,7 @@ $56654968471533* Ajouter commentaire
 === levels/not_gate ===
 
 $19085882338208* [b]Consigne[/b]\nFais un clique droit pour désélectionner
-$10042327259531 Maintenant que tu as débloqué la porte NAND, il est temps de créer ton propre circuit.
+$10042327259531* Maintenant que tu as débloqué la porte NAND, il est temps de créer ton propre circuit.
 $14042842216181* Dans le dernier niveau, tu as construit le tableau à partir du circuit. Dans ce niveau tu devras créer un circuit qui correspondra au tableau.
 $10604720087324* [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nClique [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nTu réussiras le niveau une fois quand les tests passeront pour toutes les combinaisons.
 $19798729463813*
@@ -7629,7 +7629,7 @@ Quand un circuit peut se fixer dans 2 états stables distincts, tu as la base po
 
 
 # When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
-$45250062735373 Débloque
+$45250062735373* Débloque
 
 
 === rpg/maps/overworld/table ===
