@@ -373,7 +373,7 @@ Octet 2[/right]
 
 === trans/level_complete_wire_comments ===
 
-$92673421413755
+$92673421413755*
 [b]Commentaires de fil[/b]
 [color=#cccccc][i]Ajouter des commentaires à tes fils.[/i][/color]
 
@@ -1520,7 +1520,7 @@ $36195388998735* Général
 
 === trans/manual_text_matrix ===
 
-$75170402412137
+$75170402412137*
 [b]Afficher des lettres[/b]
 Il s'avère qu'un espace de 5x7 est petit mais suffisant pour afficher proprement des lettres. En ajoutant une ligne et une colonne supplémentaire, ces lettres rendront très bien les unes à la suite des autres.
 
@@ -2310,7 +2310,7 @@ Remerciements sincères à
 
 === trans/level_flood_enter ===
 
-$64481408588810 Appuie sur ENTRÉE pour montrer l'eau
+$64481408588810* Appuie sur ENTRÉE pour montrer l'eau
 
 
 === trans/panel_matrix_input1 ===
@@ -2434,7 +2434,7 @@ $62618958406279* DEC
 $16133643476631* Le circuit que tu as créé dans le niveau "Registres" peut copier des valeurs entre différents registres, tandis que "l'Unité arithmétique et logique" a la capacité de faire différentes opérations avec ses deux entrées.
 $18435544383511* CALCULER\n[OFF] [ON] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY]
 $18198768092383* COPIER
-$18945946395447
+$18945946395447*
 Pour distinguer les 4 [INSTRUCTIONS], nous utiliserons les deux bits de plus haut poids qui définieront le MODE dans lequel nous serons.
 Cette liste montre les 4 modes à implémenter:
 [OFF] [OFF] [ANY] [ANY] [ANY] [ANY] [ANY] [ANY] Valeur immédiate
@@ -2843,7 +2843,7 @@ Sortie courante[/right]
 
 === rpg/maps/overworld/captain_grog ===
 
-$54304087865803 Boucliers activés et saut dans l'hyperexpace !
+$54304087865803* Boucliers activés et saut dans l'hyperexpace !
 $28819210888759* Capitaine Grog
 
 
@@ -2997,7 +2997,7 @@ $28271182652741* Répartit 16 bits en 2 octets
 
 === trans/manual_text_universal_gates ===
 
-$37735744928195
+$37735744928195*
 Il s'avère que tu peux construire toute la logique d'un ordinateur à partir de portes NAND ou NOR. Les ordinateurs de guidage Apollo étaient entièrement construits de portes NOR. Conçus dans les années 60, ils n'avaient que 4 Ko de RAM et 32 Ko d'espace disque, mais ils ont emmenés les astronautes vers la lune.
 
 Les ordinateurs modernes ne sont pas entièrement construits avec une seule des portes universelles, mais le cas échéant, les portes NAND sont préférées aux NOR, car elles ont moins de latence et occupent moins d'espace.
@@ -3064,7 +3064,7 @@ $71663353206665* Diviser et calculer le modulo de deux nombres
 
 === levels/saving_bytes ===
 
-$10633476398156
+$10633476398156*
 Crée un circuit qui pourra [SAUVEGARDER] ou [CHARGER] un octet.
 
 
@@ -3088,7 +3088,7 @@ $18873598212433* CHARGER
 
 === levels/byte_constant ===
 
-$12641789008694 Crée un circuit dont la sortie est toujours le nombre 164.
+$12641789008694* Crée un circuit dont la sortie est toujours le nombre 164.
 
 
 === trans/panel_ram_fast_input ===
@@ -3934,7 +3934,7 @@ $13520918982355* Ajoute un bloc de RAM, ainsi l'ordinateur aura 256 octets de m�
 === levels/byte_less_i ===
 
 $16755383054285* [center]Détermine si la première entrée est plus petite que la seconde.[/center]
-$19006843777401 Crée un circuit dont la sortie est [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
+$19006843777401* Crée un circuit dont la sortie est [ON] quand la première entrée est plus petite que la seconde. Interpréte les octets comme étant [color=#dd6576]SIGNES[/color].
 $46083799633716* {input_1} est plus petit que {input_2}?
 
 
@@ -5141,7 +5141,7 @@ $56654968471533* Ajouter commentaire
 $19085882338208* [b]Consigne[/b]\nFais un clique droit pour désélectionner
 $10042327259531* Maintenant que tu as déverrouillé la porte NAND, il est temps de créer ton propre circuit.
 $14042842216181* Dans le dernier niveau, tu as construit le tableau à partir du circuit. Dans ce niveau tu devras créer un circuit qui correspondra au tableau.
-$10604720087324 [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nClique [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nTu réussiras le niveau une fois quand les tests passeront pour toutes les combinaisons.
+$10604720087324* [b]Consigne[/b]\nConstruis un circuit qui correspond au tableau.\nClique [i][/i] (Prochain Cycle) en haut à gauche pour tester chaque combinaison d'entrées.\nTu réussiras le niveau une fois quand les tests passeront pour toutes les combinaisons.
 $19798729463813*
 En utilisant des portes NAND, contruis une porte NOT.
 
@@ -5154,7 +5154,7 @@ Construis : [b]porte NOT[/b]
 [code]Entrée 1 : [ON][OFF]
 Sortie :   [OFF][ON][/code]
 $18442122157391* [b]Consigne[/b]\nDésélectionne le composant en cliquant sur l'arrière-plan
-$12880883686501 [b]Consigne[/b]\nClique sur la porte NAND en haut à droite et place-la
+$12880883686501* [b]Consigne[/b]\nClique sur la porte NAND en haut à droite et place-la
 $18780831606716* [b]Consigne[/b]\nMaintiens le clic gauche pour ajouter un fil
 
 
@@ -6224,7 +6224,7 @@ $25711866218405* [center]Ajoute 3 entrées[/center]
 
 === trans/manual_text_short_circuit ===
 
-$31105471890701
+$31105471890701*
 En électronique, deux composants qui émettent des valeurs différentes sur le même fil produisent un court-circuit.
 
 [center][img=100]res://dialogue/short_circuit.png[/img][/center]
@@ -6409,7 +6409,7 @@ Bit 8
 
 === trans/options_reset_warning ===
 
-$19141523477461
+$19141523477461*
 Toutes les solutions des niveaux, les composants personnalisés et les architectures seront supprimées. Cela ne peut pas être annulé, es-tu sûr de vouloir le faire ?
 Le jeu sera fermé, il sera réinitialisé au prochain démarrage.
 
@@ -7109,7 +7109,7 @@ $66747898777348* Ajouter
 
 === trans/level_nand_1 ===
 
-$71204033550134 Que fait la porte NAND ?
+$71204033550134* Que fait la porte NAND ?
 
 
 === rpg/maps/prison/exit_door ===
@@ -7396,7 +7396,7 @@ Sortie courante[/right]
 
 === trans/manual_text_edit_instructions ===
 
-$75786562031150
+$75786562031150*
 Après avoir terminé le niveau "Turing Complet", le panneau d'instructions te permet de modifier les instructions. Ceci est utile si tu souhaites construire tes propres ordinateurs.
 
 Si tu viens de terminer l'ordinateur OVERTURE et que tu vois quelquechose de bizarre, il y a de fortes chances que tu ais changé les définitions.
@@ -7618,7 +7618,7 @@ Si tu n'as aucune expérience en électronique, il est recommandé de sauter ce 
 
 # The circuit you are asked to construct here has a circular dependency. The circuit also has 2 "stable states" for most inputs. A stable state here means that every component's output agrees with its input. As an example, an OR gate with one input disconnected and the other connected to its own output is stable. If the output is [OFF], both inputs are [OFF], which agrees with the OR gate. If the output is [ON], then so is one of the inputs. However, a NOT gate connected to its own input is not stable. If the output is [ON], then the input is [ON] as well. This will cause the NOT gate to try and make the output [OFF], which will also make the input [OFF]. The circuit will switch between these two states forever, so it is not stable.
 $18165461234561* Les lignes à retard sont simples à comprendre et peuvent être utilisées pour construire n'importe quelle architecture d'ordinateur. Pourtant le matériel moderne ne les utilise plus comme base des mémoires.
-$15213907597666 Avec 2 portes NOR, construis le circuit qui correspond à la table. Tu auras besoin d'une bascule.
+$15213907597666* Avec 2 portes NOR, construis le circuit qui correspond à la table. Tu auras besoin d'une bascule.
 $19448398663695*
 Pour déterminer quels composants contrôlent la sortie dans une dépendance circulaire, il est impossible de fixer un composant de départ. À la place nous utilisons les valeurs des fils du cycle précédent. Cela s'explique par le fait que les électrons ne se déplacent pas instantanément dans la réalité. En fonction du câble, le circuit oscille entre [ON] et [OFF], ou se fixe dans un état stable.
   
