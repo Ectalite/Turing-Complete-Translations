@@ -6154,7 +6154,7 @@ $33720960099059* Pas de signal
 
 === components/AND ===
 
-$22719674432950
+$22719674432950*
 [ON] quand les deux entrées sont [ON]
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
