@@ -3906,7 +3906,7 @@ $84124565448643* Ajoute un délai de durée configurable. Utile pour mettre au p
 
 === trans/level_bit_adder_RichTextLabel2 ===
 
-$79624864981341
+$79624864981341*
 [right][color=#e49f44]Entrée 1
 Entrée 2[/color]
 Somme attendue
