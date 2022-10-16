@@ -3906,13 +3906,13 @@ $84124565448643* Ajoute un délai de durée configurable. Utile pour mettre au p
 
 === trans/level_bit_adder_RichTextLabel2 ===
 
-$79624864981341*
-[right][color=#e49f44]Input 1
-Input 2[/color]
-Desired Sum
-Desired Carry
-Current Sum
-Current Carry[/right]
+$79624864981341
+[right][color=#e49f44]Entrée 1
+Entrée 2[/color]
+Somme attendue
+Retenue attendue
+Somme courante
+Retenue courante[/right]
 
 
 === components/Output8zLevel ===
