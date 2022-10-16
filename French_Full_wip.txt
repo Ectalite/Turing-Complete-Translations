@@ -843,11 +843,11 @@ $55533125021199* Lancer tout
 === components/NOT ===
 
 $34453052824732* NOT
-$90844421681709*
+$90844421681709
 Inverse l'entrée
 [table=3]
-[cell]Input[/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell]
+[cell]Entrée[/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
 
 
@@ -1767,16 +1767,16 @@ $68054407020318* Instructions
 
 === trans/manual_component_factory_text ===
 
-$42847481618884*
-Open the component factory by clicking on this button [img]dialogue/manual/component_factory_icon.png[/img] in the upper left bar.
+$42847481618884
+Ouvre l'atelier de composant en cliquant sur ce bouton [img]dialogue/manual/component_factory_icon.png[/img] dans la barre supérieure gauche.
 
-The component factory allows you to create your own components. The logic you place determine the behavior of the custom component and the layout determines the shape. 
+L'atelier de composants te permet de créer tes propres composants. Le comportement du composant est déterminé par les circuits logiques qu'il contient et sa forme varie selon leur disposition.
 
-The input and output components you place become pins on the component. Like with other components, a component output leading back to its input causes a circular dependency. Outputs having a path back to inputs causes a circular dependency for custom components, even if the insides of the component would suggest there shouldn't be one. Not having to worry about the inside of components reduces the complexity of larger builds, however this strict abstraction can be inconvenient under certain circumstances. In that case, use the unbuffered pins. They allow bidirectional flow and use the insides of the component to check for circular dependencies.
+Les composants entrée et sortie que tu places deviennent les pattes du composant. Comme avec les autres composants, une sortie connectée à l'entrée cause une dépendance circulaire. Les sorties qui sont reliées aux entrées génèrent des dépendances circulaires, même si la structure interne du composant indique qu'il ne devrait pas y en avoir. Les circuits complexes sont mieux gérés si l'on n'a pas à contrôler le contenu de chaque composant, mais cela peut poser parfois problème. Dans ce cas, utilise les pattes bidirectionnelles. Elles autorisent le passage du signal dans les 2 sens et les dépendances circulaires sont détectées en contrôlant le contenu des composants.
 
-Probes placed in custom components will show on their layout and can display values inside. Probes can be connected to other custom components, so that deeply nested values can be displayed. Values probed in this way can also be connected to the program component.
+Les sondes placées dans les composants personnalisés seront visibles et indiqueront les valeurs internes. Les sondes peuvent être connectées à d'autres composants personnalisés, de façon à afficher des valeurs internes à des sous-composants. Ces valeurs peuvent aussi être connectées au composant programme.
 
-For the component factory, the file manager also manages the custom components. The file names decide the component name and the folder structure decides the components placement in the menu.
+Pour l'atelier de composant, le gestionnaire de fichier gère également les composants personnalisés. Le nom du fichier devient le nom du composant et les dossiers correspondent à la structure du menu.
 
 
 === misc/network_update ===
@@ -2633,12 +2633,12 @@ $45865138134248* Disque dur
 
 === components/NOR ===
 
-$27510848535619*
+$27510848535619
 [ON] quand aucune entrée n'est [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell]
 [/table]
 $83375115196253* NOR
 
@@ -2714,12 +2714,12 @@ $70999134800536* Rotation à droite
 === components/NAND ===
 
 $71130919681688* NAND
-$12903183841172*
+$12903183841172
 [ON] sauf si les 2 entrées sont [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
 
 
@@ -3454,12 +3454,12 @@ $91063734228931* Gauche
 
 === components/XOR ===
 
-$86856280609387*
+$86856280609387
 [ON] quand les entrées sont différentes
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][OFF][/cell]
 [/table]
 $54832952840086* XOR
 
@@ -5113,12 +5113,12 @@ $55557725551789* Rotation à gauche des bits de l'entrée
 
 === components/OR ===
 
-$13013154620359*
+$13013154620359
 [ON] quand au moins une des deux entrées est [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell][cell][ON][/cell]
 [/table]
 $97247779246257* OR (OU)
 
@@ -5481,11 +5481,10 @@ Sortie courante[/right]
 
 === trans/manual_sprite_display ===
 
-$28358052747011*
+$28358052747011
 L'écran des sprites est un écran matriciel de résolution 640x480. Avant d'utiliser l'écran des sprites, tu dois d'abord attacher une carte de sprites, qui est une image PNG contenant tous tes sprites. Clique sur le composant et sélectionne la carte de sprites dans le panneau du composant.
 
 La première patte d'entrée est le [color=#e49f44]Type de Commande[/color], et la signification des 3 pattes suivantes dépend du type de commande comme indiqué ci-dessous. L'ID de sprite est toujours un nombre 8 bits et toutes les autres valeurs (position et taille) sont toujours des pairs de valeurs 16 bits.
-The first input pin is the [color=#e49f44]Command type[/color], the meaning of the next 3 pins depends on the command type as shown below. The sprite ID is always a 8 bit number and all other values (position and size) are always pairs of 16 bit values.
 
 [table=2]
 [cell]0[/cell] [cell]Pas de commande[/cell]
@@ -6158,9 +6157,9 @@ $33720960099059* Pas de signal
 $22719674432950*
 [ON] quand les deux entrées sont [ON]
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
 $58912167455465* AND (ET)
 
@@ -7173,12 +7172,12 @@ $38686097566531* [center]Vérifie si les octets sont égaux[/center]
 === components/Xnor ===
 
 $94079327237795* XNOR
-$90614106399129*
+$90614106399129
 [ON] quand les entrées sont égales
 [table=5]
-[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Sortie[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
 
 
@@ -7471,7 +7470,7 @@ $72524391591873* Fleur
 === components/Input1_1B ===
 
 $10517158300617* Entrée
-$57868504368581* Lit l'entrée des niveaux (CHECKME)
+$57868504368581 Lit l'entrée du niveau
 
 
 === trans/manual_text_network ===
