@@ -4287,7 +4287,7 @@ $16857608955464* Bac à sable
 
 $20801641140962*
 [b]Mode Carte des Niveaux[/b]
-[color=#cccccc][i]Clique "[color=#e49f44]En avant[/color]" et tu verras[/i][/color]
+[color=#cccccc][i]Clique "[color=#e49f44]C'est parti ![/color]" et tu verras[/i][/color]
 
 
 === levels/xnor ===
@@ -6584,7 +6584,7 @@ Entrée 2[/right]
 
 === misc/onwards ===
 
-$51096427131653* En avant
+$51096427131653* C'est parti !
 
 
 === trans/manual_recipe_Label ===
