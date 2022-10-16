@@ -7628,7 +7628,7 @@ Quand un circuit peut se fixer dans 2 états stables distincts, tu as la base po
 
 
 # When you have a circuit where the wires can settle in either of 2 different stable states, you have a basis for memory. The next state will depend on the values the wires had last tick. Such wires are called "latches".
-$45250062735373 Déverrouillé
+$45250062735373* Déverrouillé
 
 
 === rpg/maps/overworld/table ===
