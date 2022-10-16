@@ -843,7 +843,7 @@ $55533125021199* Lancer tout
 === components/NOT ===
 
 $34453052824732* NOT
-$90844421681709
+$90844421681709*
 Inverse l'entrée
 [table=3]
 [cell]Entrée[/cell][cell][OFF][/cell][cell][ON][/cell]
@@ -1767,7 +1767,7 @@ $68054407020318* Instructions
 
 === trans/manual_component_factory_text ===
 
-$42847481618884
+$42847481618884*
 Ouvre l'atelier de composant en cliquant sur ce bouton [img]dialogue/manual/component_factory_icon.png[/img] dans la barre supérieure gauche.
 
 L'atelier de composants te permet de créer tes propres composants. Le comportement du composant est déterminé par les circuits logiques qu'il contient et sa forme varie selon leur disposition.
@@ -2633,7 +2633,7 @@ $45865138134248* Disque dur
 
 === components/NOR ===
 
-$27510848535619
+$27510848535619*
 [ON] quand aucune entrée n'est [ON]
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
@@ -2714,7 +2714,7 @@ $70999134800536* Rotation à droite
 === components/NAND ===
 
 $71130919681688* NAND
-$12903183841172
+$12903183841172*
 [ON] sauf si les 2 entrées sont [ON]
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
@@ -3454,7 +3454,7 @@ $91063734228931* Gauche
 
 === components/XOR ===
 
-$86856280609387
+$86856280609387*
 [ON] quand les entrées sont différentes
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
@@ -5113,7 +5113,7 @@ $55557725551789* Rotation à gauche des bits de l'entrée
 
 === components/OR ===
 
-$13013154620359
+$13013154620359*
 [ON] quand au moins une des deux entrées est [ON]
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
@@ -5481,7 +5481,7 @@ Sortie courante[/right]
 
 === trans/manual_sprite_display ===
 
-$28358052747011
+$28358052747011*
 L'écran des sprites est un écran matriciel de résolution 640x480. Avant d'utiliser l'écran des sprites, tu dois d'abord attacher une carte de sprites, qui est une image PNG contenant tous tes sprites. Clique sur le composant et sélectionne la carte de sprites dans le panneau du composant.
 
 La première patte d'entrée est le [color=#e49f44]Type de Commande[/color], et la signification des 3 pattes suivantes dépend du type de commande comme indiqué ci-dessous. L'ID de sprite est toujours un nombre 8 bits et toutes les autres valeurs (position et taille) sont toujours des pairs de valeurs 16 bits.
@@ -6157,9 +6157,9 @@ $33720960099059* Pas de signal
 $22719674432950*
 [ON] quand les deux entrées sont [ON]
 [table=5]
-[cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
-[cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
-[cell]Sortie[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Input 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
+[cell]Input 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
+[cell]Output[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
 $58912167455465* AND (ET)
 
@@ -7172,7 +7172,7 @@ $38686097566531* [center]Vérifie si les octets sont égaux[/center]
 === components/Xnor ===
 
 $94079327237795* XNOR
-$90614106399129
+$90614106399129*
 [ON] quand les entrées sont égales
 [table=5]
 [cell]Entrée 1[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
@@ -7470,7 +7470,7 @@ $72524391591873* Fleur
 === components/Input1_1B ===
 
 $10517158300617* Entrée
-$57868504368581 Lit l'entrée du niveau
+$57868504368581* Lit l'entrée du niveau
 
 
 === trans/manual_text_network ===
