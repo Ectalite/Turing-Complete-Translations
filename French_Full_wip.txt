@@ -1060,7 +1060,7 @@ $85308499118176* Créateur 32 bits
 
 === dialogue/dotMatrixtext_link ===
 
-$82486902873499
+$82486902873499*
 La patte couleur utilise les octets 2, 3 and 4 comme [color=#dd6576][url=RGB color]couleur RVB[/url][/color] (l'octet 1 est ignoré)
 La patte pixel pin utilise les octets 2, 3, 4, 5, 6 and 7 pour sélectionner les pixels à colorer, chaque bit correspondant à un pixel. La mise à jour n'est visible que lorsque l'octet 8 est mis à 1, ceci "valide" les modifications qui deviennent visibles sur l'écran.
 
@@ -1074,7 +1074,9 @@ $94657695889458* Sortie 4
 
 === trans/panel_decoder3_output ===
 
-$41412072467493* Seulement 1 s'active 
+$41412072467493* Seulement 1 s'active
+
+
 === rpg/maps/prison/prision_door ===
 
 $64702123078518* La porte est verrouillée
@@ -1780,9 +1782,13 @@ Pour l'atelier de composant, le gestionnaire de fichier gère également les com
 === misc/network_update ===
 
 $47639082058046* Rien ici pour l'instant
+
+#  Showing what components are used in schematics in the hub
 $83560387278127* Dérivé de : 
 $86830276924898* Transmis :
 $15762392983604* Taille :
+
+#  If the hub can't load a schematic for some reason
 $76023068123024* Erreur
 $70694384106281* Créateur :
 $81675147704214* Utilise le composant réseau
@@ -1897,41 +1903,79 @@ $85358271811851* [right]Edite les composants liés[/right]
 
 #  Default assembly instructions
 $98784625122112* add 68\nreg0_to_reg1 129\nreg0_to_reg2 130\nreg3_to_out 158
+
+#  Decoder pin name
 $80846046332059* CONDITION
+
+#  Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $43762760711440* 3 Conditions.assembly
+
+#  For the default OVERTURE instruction menu
 $36937658066516* AND
 $25378963142694* Entrée 2
+
+#  For the default OVERTURE instruction menu
 $34688070019016* Calcule
 $48524980499900* VALEUR
 $23343928938611* CALCUL
 $80984147393241* OPCODE
+
+#  For the default OVERTURE instruction menu
 $41384200516164* Entrée
 $25947122599583* EMPILER
 $21762287720058* Defaut
 $52720470197560* Condition
+
+#  For the default OVERTURE instruction menu
 $58135326697989* Sortie
+
+#  For the default OVERTURE instruction menu
 $89904818945500* Toujours
+
+#  For the default OVERTURE instruction menu
 $45098916684469* Jamais
 $69871887031160* Résultat
+
+#  For the default OVERTURE instruction menu
 $77964040770330* AJOUTE
+
+#  For the default OVERTURE instruction menu
 $90287016519308* INUTILISE
 $17900992684779* Entrée
+
+#  For the default OVERTURE instruction menu
 $23756602199977* NAND
 $98979865390652* SORTIE
 $30360644331285* DÉPILER
+
+#  For the default OVERTURE instruction menu
 $52155313885654* Condition
+
+#  Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $38851635485723* 2 Calculations.assembly
+
+#  Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $55885017410507* 0 Immediate load.assembly
+
+#  Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $84575312492466* 1 Register copying.assembly
 
 #  Default program the first time you open binary search
 $28582639590579* # Définis des labels comme ceci\nlabel my_label\n# Ceci est une constante\nconst PI 3\n# Tu devrais aussi jeter un oeil\n# à la page de manuel Assembleur
+
+#  For the default OVERTURE instruction menu
 $49207579633810* NOR
 $97114869841400* Sortie
 $23432943836287* exemple
 $15697933732634* Instruction
+
+#  For the default OVERTURE instruction menu
 $98586044504803* Copier
+
+#  For the default OVERTURE instruction menu
 $87661236574161* Valeur Immediate
+
+#  For the default OVERTURE instruction menu
 $43346201280348* SOUSTRAIRE
 $50176996454102* IMMEDIATE
 $38100656631435* COPIER
@@ -1939,6 +1983,8 @@ $38100656631435* COPIER
 #  Default code seen when first opening the IDE
 $46866969777934* # Je suis un commentaire !\n# Pour calculer 1 + 1\n1\nreg0_to_reg1\nreg0_to_reg2\nadd\nreg3_to_out
 $47025412277453* Entrée 1
+
+#  For the default OVERTURE instruction menu
 $63749396808309* OR
 
 
@@ -3241,7 +3287,7 @@ $83694551809785* Multiplier {num1} et {num2}
 
 === trans/panel_matrix_column_major ===
 
-$90704227545058 Pixels colonne
+$90704227545058* Pixels colonne
 
 
 === trans/panel_counter16_input ===
@@ -3284,6 +3330,8 @@ $29225283986051* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée
 $87591753278764* Registre {nr}
 $39587966698723* Court-circuit dans {custom_component}
 $95056157627313* Pour résoudre ce niveau tu dois utiliser le composant 'Entrée du Niveau'
+
+#  Right hand side menu
 $29169064199243* Sortie {nr}
 $12249248261034* Pour résoudre ce niveau tu dois utiliser le composant 'Sortie du Niveau'
 $13327741293223* Entrée {nr}
@@ -3474,6 +3522,8 @@ $53123649343022* Atelier de composants
 
 === trans/tps_label ===
 
+
+#  Stands for Ticks Per Second (an option in the menu)
 $25685496576554* CPS :
 
 
@@ -3523,6 +3573,8 @@ $65379881141228*
 
 === misc/level_gate_unlocks_unknown ===
 
+
+#  This is a tooltip for levels on the level map, before something has been unlocked.
 $76731326010721* Débloque quelque chose d'inconnu
 
 
@@ -3606,9 +3658,6 @@ $68750974209145* Tu peux déterminer si 2 entrées ont un nombre impair de [ON] 
 #  hint for the bus
 $50799425816171* Utilise des commutateurs pour placer les entrées sur le même fil.
 
-#  Hint for byte switch
-$86319296925137* A quoi cela ressemblerait si tu ne commutais qu'un seul bit ? A quoi ressemblerait la table de vérité d'un tel composant ?
-
 #  Hint for the maze
 $36837749971886*
 En suivant toujours le mur gauche (ou droit) du labyrinthe tu es sûr d'atteindre la sortie au bout d'un moment.
@@ -3633,11 +3682,6 @@ Dans ce niveau tu dois utiliser 1 Ligne à Retard. Ecris la table de vérité de
 Les entrées sont les 2 entrées du niveaux ET la sortie de la Ligne à Retard, car la sortie dépend modifie sa propre entrée. Au total tu as trois "entrées" pour cette table ce qui fait 8 combinaisons. Une fois que l'objectif du niveau est sous forme de table, il devrait être beaucoup plus simple à résoudre.
 $43114846393781* LIRE
 $65118645692603* instruction
-
-#  Hint for conditions
-$87674181578455*
-Il y a 3 bits de conditions. Quand le premier bit est [ON] cela signifie que la condition est validée pour un résultat à 0. Quand le second bit est [ON] cela signifie que la condition est validée pour un résultat inférieur à 0. Si aucun des 2 premiers bits n'est [ON] la condition est validée.
-Enfin si le dernier bit est [ON] inverse la valeur de la condition obtenue.
 $53308028631558* instructions
 
 #  Hint for masking time
@@ -3830,11 +3874,6 @@ Réalise le circuit qui correspond au tableau.
 $15231724707514* Je ne veux pas te décourager, mais je pense que l'éléphant va gagner la compétition. Sans vouloir t'offenser, ton cerveau est tout petit en comparaison.
 
 
-=== trans/level_component_factory_error ===
-
-$49014901714855* Les carreaux de la carte ne peuvent contenir qu'un noeud d'entrée ou de sortie.
-
-
 === trans/panel_neg_description ===
 
 $64810753197096* [center]Inverse un nombre[/center]
@@ -3847,6 +3886,8 @@ $92123299522120* [center]États attendus[/center]
 
 === trans/options_working ===
 
+
+#  Upload in progress for score sync
 $18749833316380* Actif
 
 
@@ -3893,6 +3934,8 @@ $95162531064211* PFFUIT
 
 === trans/options_resubmit ===
 
+
+#  Seen after having uploaded a schematic to the hub and then changing the schematic
 $13328644005279* Réessayer
 
 
@@ -4023,6 +4066,8 @@ $81322935207536* ENTRÉE
 $92046368194170* Condition
 $39935096343723* Jamais
 $52961346176405* {condition} copier [color=#dd6576]REG 0[/color] vers le compteur
+
+#  Overture instruction UI
 $56175681834727* Si [color=#e49f44]résultat[/color] {condition}
 $31185395052385* SORTIE
 $34974836617918* {register_1} et {register_2}
@@ -4673,6 +4718,8 @@ $38412380622852* Fichier illisible : {path}
 
 === trans/instructions_hint ===
 
+
+#  Seen the first time you open thte "instruction" menu 
 $65105856275770* [center][color=#c5c5c5]Clique pour changer les bits[/color][/center]
 
 
@@ -5244,12 +5291,18 @@ $63369063884491* Mauvais robot !
 
 === misc/overture_add_assembly ===
 
+
+#  Overture custom instruction interface (disappears when you complete the Turing Complete level)
 $10565133223872* Jamais
+
+#  Only shown in the first programming level
 $62421757655527* Nomme le code et clique enregistrer.
 $24281479096246* Si [color=#2b8738]resultat[/color] {condition}
 $63525237058165* Copie de {source} vers {destination}
 $32873193471770* INUTILISE
 $88446594314360* Immediate : {number}
+
+#  Overture custom instruction interface (disappears when you complete the Turing Complete level)
 $94278717238239* Toujours
 $72740868980397* {condition} copie {register} vers le compteur
 $79398554520691* {opcode} {reg_1} et {reg_2}
@@ -5535,8 +5588,14 @@ Largeur de Données :[/right]
 
 === nim/backend_lib/custom_component ===
 
+
+#  Default new input pin name for custom compoennts
 $64951951489108* Entrée
+
+#  Default new output pin name for custom compoennts
 $94864122622568* Sortie
+
+#  Default new bidirectional pin name for custom compoennts
 $94089252493268* Patte
 
 
@@ -5571,9 +5630,9 @@ $70464083627337* Label
 $20397881687313* nouveau_programme
 
 
-=== trans/level_alu1_code ===
+=== misc/change_schematic ===
 
-$20619700446604* [center]OR[/center]
+$79554853897000* Changer de schéma
 
 
 === components/DivMod8 ===
@@ -5586,11 +5645,6 @@ $44959426271423* Divise
 
 $38930281262898* Décalage à gauche
 $88685329847417* Décale à gauche les bits en entrée
-
-
-=== misc/change_schematic ===
-
-$79554853897000* Changer de schéma
 
 
 === trans/panel_decoder2_input ===
@@ -6979,7 +7033,6 @@ $11144256835662* XORi
 #  4 letters max
 $61412773713567* SUB
 $85913831661289* SI_INFERIEUR
-$21803034737442* cycle
 $52344899983501* SI_INFERIEUR_OU_EGAL
 $89945092889418* SUBi
 
@@ -7004,19 +7057,17 @@ $44009845985661* ADD
 $68666991962246* OR
 $44906330481241* Délai
 $30602804398798* Portes
-$22213999385406* délai
+$45532697833519* Niveau {level} atteint !
 
 #  4 letters max
 $33873219185286* NAND
-$45532697833519* Niveau {level} atteint !
 $79492115258673* SI_SUPERIEUR
-
-#  4 letters max
-$64519909700148* AND
 
 #  Instead of writing 5839, the number turns into 5.8K
 $84696693690500* k
-$39343770421034* portes
+
+#  4 letters max
+$64519909700148* AND
 $76763908762578* Cycle
 
 #  4 letters max
@@ -7076,11 +7127,6 @@ Sortie attendue
 === trans/panel_input_input_2 ===
 
 $13656747150138* Entrée 3
-
-
-=== trans/level_description ===
-
-$26184794529449* [center]Ajoute les conditions aux codes de calcul[/center]
 
 
 === components/Counter64 ===
@@ -7177,11 +7223,6 @@ $90614106399129*
 [cell]Entrée 2[/cell][cell][OFF][/cell][cell][ON][/cell][cell][OFF][/cell][cell][ON][/cell]
 [cell]Sortie[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
-
-
-=== trans/tick ===
-
-$92150881431937* Cycle
 
 
 === components/Not16 ===
