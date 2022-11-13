@@ -1060,11 +1060,11 @@ $85308499118176* Créateur 32 bits
 
 === dialogue/dotMatrixtext_link ===
 
-$82486902873499*
-The color pin uses byte 2, 3 and 4 for [color=#dd6576][url=RGB color]RGB color[/url][/color] (byte 1 is unused)
-The pixel pin uses byte 2, 3, 4, 5, 6 and 7 for selecting pixels to be colored, where each bit corresponds to a pixel. Updates are only visible once byte 8 is set to 1, this "flushes" the changes and updates the display visually.
+$82486902873499
+La patte couleur utilise les octets 2, 3 and 4 comme [color=#dd6576][url=RGB color]couleur RVB[/url][/color] (l'octet 1 est ignoré)
+La patte pixel pin utilise les octets 2, 3, 4, 5, 6 and 7 pour sélectionner les pixels à colorer, chaque bit correspondant à un pixel. La mise à jour n'est visible que lorsque l'octet 8 est mis à 1, ceci "valide" les modifications qui deviennent visibles sur l'écran.
 
-Both "Enable X" and "Enable Y" have to be on to update the display.
+Les entrées "Activer X" et "Activer Y" doivent être toutes deux à On pour modifier l'affichage.
 
 
 === trans/panel_output_output_3 ===
@@ -1074,9 +1074,7 @@ $94657695889458* Sortie 4
 
 === trans/panel_decoder3_output ===
 
-$41412072467493* Seulement 1 s'active
-
-
+$41412072467493* Seulement 1 s'active 
 === rpg/maps/prison/prision_door ===
 
 $64702123078518* La porte est verrouillée
@@ -3243,7 +3241,7 @@ $83694551809785* Multiplier {num1} et {num2}
 
 === trans/panel_matrix_column_major ===
 
-$90704227545058* Pixels principaux de la colonne
+$90704227545058 Pixels colonne
 
 
 === trans/panel_counter16_input ===
