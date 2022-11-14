@@ -281,7 +281,7 @@ $13395135491753* Tue-moi maintenant
 === components/Mul16 ===
 
 $49880767097125* Multiplie 2 entrées
-$62247409328063* Multiplier
+$62247409328063 Multiplication
 
 
 === trans/panel_dual_load_input ===
@@ -993,7 +993,7 @@ $11176073682097* Combien fait {number} en binaire ?
 
 === components/Mul64 ===
 
-$72281597169494* Multiplier
+$72281597169494 Multiplication
 $11665562499390* Multiplie deux entrées
 
 
@@ -1145,7 +1145,7 @@ Sors [ON] quand 2 entrées ou plus sont [ON].
 
 === components/Neg64 ===
 
-$88458190974122* Inverser
+$88458190974122 Inversion
 $52206550732945* Inversion bit à bit de l'entrée
 
 
@@ -2070,7 +2070,7 @@ $14788981567936* Crée une porte AND avec 3 entrées.
 === components/DivMod16 ===
 
 $42657221816637* Divise et calcule le modulo 2 des nombres
-$22319923069746* Divise
+$22319923069746 Division
 
 
 === components/MemoryProbeBit ===
@@ -3102,7 +3102,7 @@ $71951682957395* Carte des niveaux
 
 === components/DivMod64 ===
 
-$80284847781948* Diviser
+$80284847781948 Division
 $71663353206665* Diviser et calculer le modulo de deux nombres
 
 
@@ -4001,7 +4001,7 @@ $56450764824675* Confirmer
 
 === components/Neg16 ===
 
-$17253409670931* Inverser
+$17253409670931 Inversion
 $57512333327652* Inverser l'entrée bit à bit
 
 
@@ -4675,14 +4675,14 @@ $40180779432911* OR 32 bits
 
 === components/NEG ===
 
-$88379907297327* Inverser
+$88379907297327 Inversion
 $62021716182809* Inverse l'entrée bit à bit
 
 
 === components/Add32 ===
 
 $91616185859914* Ajoute deux entrées
-$64111401384153* Ajouter
+$64111401384153 Addition
 
 
 === nim/backend ===
@@ -4748,7 +4748,7 @@ $38481453712356* Éditer la mémoire
 === components/DivMod32 ===
 
 $61314390474120* Divise et calcule le modulo 2 des nombres
-$84309999871615* Divise
+$84309999871615 Division
 
 
 === trans/panel_mux_input ===
@@ -5383,7 +5383,7 @@ $47779544732987* Danceur
 
 === components/Mul32 ===
 
-$98530670555665* Multiplier
+$98530670555665 Multiplication
 $51210946736766* Multiplie deux entrées
 
 
@@ -5638,7 +5638,7 @@ $79554853897000* Changer de schéma
 === components/DivMod8 ===
 
 $37666366877853* Divise et calcule le modulo 2 des nombre
-$44959426271423* Divise
+$44959426271423 Division
 
 
 === components/Shl32 ===
@@ -5708,7 +5708,7 @@ $13844216291005*
 
 === components/Neg32 ===
 
-$26991597084705* Inverser
+$26991597084705 Inversion
 $35735598635057* Inverse bit à bit une entrée
 
 
@@ -6753,8 +6753,8 @@ $96885367697181* [right]Index[/right]
 
 === trans/panel_divmod_input ===
 
-$48801764966719*
-[right]Enumérateur
+$48801764966719
+[right]Dividende
 Diviseur[/right]
 
 
@@ -6815,7 +6815,7 @@ $93314093190526* NAND 8 bits
 === components/Add64 ===
 
 $14174811828377* Ajoute 2 entrées
-$73418471595285* Ajouter
+$73418471595285 Addition
 
 
 === main_scripts/leg_level ===
@@ -7407,9 +7407,9 @@ $35572795990520* Exporter
 
 === trans/panel_divmod_output ===
 
-$94866933026297*
-Div
-Mod
+$94866933026297
+Quotient
+Reste
 
 
 === trans/instructions_the_robot ===
@@ -7589,7 +7589,7 @@ $66482114876737* Décalage à gauche des bits d'une entrée
 === components/Add16 ===
 
 $28092601427278* Ajoute deux entrées
-$30820974870562* Ajouter
+$30820974870562 Addition
 
 
 === components/Not32 ===
