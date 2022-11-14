@@ -3287,7 +3287,7 @@ $83694551809785* Multiplier {num1} et {num2}
 
 === trans/panel_matrix_column_major ===
 
-$90704227545058* en colonne
+$90704227545058* suivant les colonnes
 
 
 === trans/panel_counter16_input ===
