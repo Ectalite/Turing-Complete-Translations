@@ -1767,12 +1767,12 @@ $68054407020318* Instructions
 
 === trans/manual_component_factory_text ===
 
-$42847481618884*
-Ouvre l'atelier de composant en cliquant sur ce bouton [img]dialogue/manual/component_factory_icon.png[/img] dans la barre supérieure gauche.
+$42847481618884
+Ouvre l'atelier de composants en cliquant sur ce bouton [img]dialogue/manual/component_factory_icon.png[/img] dans la barre supérieure gauche.
 
 L'atelier de composants te permet de créer tes propres composants. Le comportement du composant est déterminé par les circuits logiques qu'il contient et sa forme varie selon leur disposition.
 
-Les composants entrée et sortie que tu places deviennent les pattes du composant. Comme avec les autres composants, une sortie connectée à l'entrée cause une dépendance circulaire. Les sorties qui sont reliées aux entrées génèrent des dépendances circulaires, même si la structure interne du composant indique qu'il ne devrait pas y en avoir. Les circuits complexes sont mieux gérés si l'on n'a pas à contrôler le contenu de chaque composant, mais cela peut poser parfois problème. Dans ce cas, utilise les pattes bidirectionnelles. Elles autorisent le passage du signal dans les 2 sens et les dépendances circulaires sont détectées en contrôlant le contenu des composants.
+Les composants entrée et sortie que tu places deviennent les pattes du composant. Comme avec les autres composants, une sortie connectée à l'entrée cause une dépendance circulaire. Les sorties qui sont reliées aux entrées génèrent des dépendances circulaires, même si la structure interne du composant indique qu'il ne devrait pas y en avoir. Les circuits complexes sont mieux gérés si l'on n'a pas à contrôler le contenu de chaque composant, mais cela peut être gênant dans certaines circonstances. Dans ce cas, utilise les pattes bidirectionnelles. Elles autorisent le passage du signal dans les 2 sens et utilisent l'intérieur du composant pour vérifier les dépendances circulaires.
 
 Les sondes placées dans les composants personnalisés seront visibles et indiqueront les valeurs internes. Les sondes peuvent être connectées à d'autres composants personnalisés, de façon à afficher des valeurs internes à des sous-composants. Ces valeurs peuvent aussi être connectées au composant programme.
 
