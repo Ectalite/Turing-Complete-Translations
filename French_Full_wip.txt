@@ -1767,7 +1767,7 @@ $68054407020318* Instructions
 
 === trans/manual_component_factory_text ===
 
-$42847481618884
+$42847481618884*
 Ouvre l'atelier de composants en cliquant sur ce bouton [img]dialogue/manual/component_factory_icon.png[/img] dans la barre supérieure gauche.
 
 L'atelier de composants te permet de créer tes propres composants. Le comportement du composant est déterminé par les circuits logiques qu'il contient et sa forme varie selon leur disposition.
