@@ -2432,7 +2432,7 @@ $30896164786171* Constante 32 bits
 
 === trans/manual_text_ram ===
 
-$10969790213397*
+$10969790213397
 Ce simulateur gère plusieurs types de RAM avec des caractéristiques différentes, comme ce qui existe en vrai.
 
 [b]RAM[/b]
@@ -2446,9 +2446,9 @@ La RAM normale a un délai trés élevé, mais au lieu d'attendre à chaque cycl
 
 Une approche courante pour les architectures pipelinées est d'utiliser de la RAM latence comme mémoire principale avec une petite quantité de RAM rapide comme cache. Comme les accès mémoire sont souvent proches ou adjacents (par exemple en itérant sur un tableau), la récupération des valeurs chargées depuis la RAM latence et cachées en RAM Rapide peut vraiment accélérer certains programmes.
 
-La façon la plus simple d'intégrer la RAM latence est de bloquer toute l'architecture jusqu'à la fin de la lecture ou de l'écriture. Une première optimisation à partir de là c'est de se rendre compte qu'on a pas besoin d'attendre la fin des écritures, sauf si on doit relire.
+La façon la plus simple d'intégrer la RAM latence est de bloquer toute l'architecture jusqu'à la fin de la lecture ou de l'écriture. Une première optimisation à partir de là consiste à réaliser qu'on a pas besoin d'attendre la fin des écritures, sauf si on doit relire.
 
-[b]RAM Double Lecture[/b]
+[b]RAM à Double Accès[/b]
 Parfois il est utile de séparer une partie de la logique dans une unité de traitement plus ou moins autonome. Elle peut servir pour gérer un écran ou une connexion réseau. Dans ce cas, l'unité indépendante aura souvent besoin de lire ou écrire la mémoire de façon continue alors que le reste de la logique n'a besoin de lire que de temps en temps. Utilise la RAM Double Lecture pour éviter d'avoir à arbitrer les accès simultanés à la RAM.
 
 
@@ -3041,10 +3041,10 @@ $28271182652741* Répartit 16 bits en 2 octets
 
 === trans/manual_text_universal_gates ===
 
-$37735744928195*
-Il s'avère que tu peux construire toute la logique d'un ordinateur à partir de portes NAND ou NOR. Les ordinateurs de guidage Apollo étaient entièrement construits de portes NOR. Conçus dans les années 60, ils n'avaient que 4 Ko de RAM et 32 Ko d'espace disque, mais ils ont emmenés les astronautes vers la lune.
+$37735744928195
+Il s'avère que tu peux construire toute la logique d'un ordinateur à partir de portes NAND ou NOR. Les ordinateurs de guidage Apollo étaient entièrement construits de portes NOR. Conçus dans les années 60, ils n'avaient que 4 Ko de RAM et 32 Ko d'espace disque, mais ils ont conduits les astronautes vers la lune.
 
-Les ordinateurs modernes ne sont pas entièrement construits avec une seule des portes universelles, mais le cas échéant, les portes NAND sont préférées aux NOR, car elles ont moins de latence et occupent moins d'espace.
+Les ordinateurs modernes ne sont pas entièrement construits avec une seule des portes universelles, mais lorsque cela est possible, les portes NAND sont préférées aux NOR, car elles ont moins de latence et occupent moins d'espace.
 
 
 === rpg/maps/overworld/slime ===
@@ -5909,14 +5909,14 @@ $13997767115693* Alterne entre 2 valeurs
 
 === trans/manual_delay_text ===
 
-$52013630755752*
-Dans les circuits réels tous les composants ont du délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
+$52013630755752
+Dans le matériel réel, tous les composants ont un délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
 
-Si tu suis les fils de l'entrée à la sortie en cumulant le délai de chaque compostant sur le chemin cela te donnera le délai de ce chemin. Le délai d'un circuit est le délai du chemin le plus lent.
+En suivant les fils d'entrée à sortie et en ajoutant le délai des composants sur le parcours, tu obtiendras le délai de ce parcours. Le délai d'un circuit est le délai du parcours le plus lent.
 
-En plus des entrées, les chemins peuvent aussi démarrer des composants qui ne dépendent pas initialement des entrées (comme les compteurs et On) et ils peuvent s'achever à des entrées différée (voir la page dédiée).
+En plus des entrées, les parcours peuvent aussi démarrer des composants qui ne dépendent pas initialement des entrées (comme les compteurs et On) et ils peuvent s'achever à des entrées différée (voir la page dédiée).
 
-Enfin les composants personalisés n'ont pas de score de délai global basé sur le chemin le plus lent, le coût de délai est calculé pour chaque patte indépendamment. Ainsi il n'y a pas de pénalité à utiliser des composants personalisés comme cela serait le cas si les pattes rapides se retrouvaient avec le coût de la plus lente.
+Enfin les composants personalisés n'ont pas de score de délai global basé sur le parcours le plus lent, le coût de délai est calculé pour chaque patte indépendamment. Ainsi il n'y a pas de pénalité à utiliser des composants personalisés comme cela serait le cas si les pattes rapides se retrouvaient avec le coût de la plus lente.
 
 
 === trans/panel_fileloader_offset ===
@@ -5968,7 +5968,7 @@ $28827008935802* Le Labo
 $61466151084505* Invasion Spaciale
 $20858506932774* Porte AND
 $77495536880911* Porte NOR
-$92696642439976* Confrontation d'IA
+$92696642439976 Duel d'IA
 $62326481348276* Le Labyrinthe
 $74512388889988* Unité Arithmétique
 $50884376329157* Petite Boite
@@ -6275,12 +6275,12 @@ $25711866218405* [center]Ajoute 3 entrées[/center]
 
 === trans/manual_text_short_circuit ===
 
-$31105471890701*
+$31105471890701
 En électronique, deux composants qui émettent des valeurs différentes sur le même fil produisent un court-circuit.
 
 [center][img=100]res://dialogue/short_circuit.png[/img][/center]
 
-Cependant, en déconnectant les pattes de sortie du fil, il est possible de partager le fil (appelé bus) entre plusieurs pattes. Surtout, une seule sortie de composant doit être connectée à chaque cycle, sinon tu risques le court-circuit.
+Cependant, en déconnectant les pattes de sortie du fil, il est possible de partager le fil (appelé bus) entre plusieurs pattes. Il est important de ne connecter qu'une seule sortie de composant à chaque cycle, afin de ne pas risquer un court-circuit.
 
 [center][img]res://dialogue/switch.png[/img][/center]
 
@@ -6610,12 +6610,12 @@ $30670667527598* Rat
 
 $17054292175058* Bienvenue dans le bac à sable, ici tu es libre de t'amuser librement. Je t'ai donné des fils de 64 bits et quelques composants supplémentaires d'Entrées/Sorties (IO).
 $10731996208080* Il y a également des versions 64 bit du programme, du compteur, du registre et de la RAM. Rappelle-toi que les lectures en RAM 64 bits prennent 1 cycle.
-$72764802067974*
+$72764802067974
 Bienvenue dans le bac à sable. 
 
-Les composants sont disponibles dans les menus du côté droit. Une fois placée, clique sur les pattes du composant et glisse pour les connecter au circuit. À gauche tu trouveras l'interface pour le contrôle de la simulation. Note que tu peux utiliser le clic droit sur le bouton "Vitesse d'Exécution" pour sélectionner la vitesse de ton choix.
+Les composants sont disponibles dans les menus du côté droit. Une fois placé, clique sur les pattes du composant et glisse pour les connecter au circuit. À gauche tu trouveras l'interface pour le contrôle de la simulation. Note que tu peux utiliser le clic droit sur le bouton "Vitesse d'Exécution" pour sélectionner la vitesse de ton choix.
 
-Tu peux trouver plus d'information sur la simulation dans le manuel (bouton en haut à gauche). Les fonctions importantes à voir sont l'"atelier de composants" qui te permet de créer tes propres composants and le composant programme, qui te permet de définir ton propre langage assembleur.
+Tu peux trouver plus d'informations sur la simulation dans le manuel (bouton en haut à gauche). Les fonctions importantes à voir sont l'"atelier de composants"  où tu peux créer tes propres composants et le composant programme, qui te permet de définir ton propre langage assembleur.
 $19454393978813* Le mini clavier te permet de contrôler ton ordinateur directement avec ton  clavier.
 $14434122873489* Le générateur de forme d'onde (Waveform) te permet de générer des sons. Je vais probablement regretter de t'avoir donné celui-là.
 $18405942066048* L'horloge donne l'heure UNIX courante en microsecondes.
@@ -6853,15 +6853,15 @@ L'instruction [color=#e49f44]ret[/color] doit réaliser les actions suivantes :
  [i]- [color=#e49f44]DÉPILER[/color] l'adresse de retour de la pile et sauter à cette adresse[/i]
 
 Tu peux échanger de l'information avec et depuis une fonction en écrivant normalement les données dans des registres. Rappelle-toi quels registres sont écrasés par une fonction avant de l'appeler.
-$19416009887091*
-Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le [color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. On appele cette méthode "l'appel" d'une fonction et le retour au programme le "retour" de la fonction.
+$19416009887091
+Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le [color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. Nous appelons le fait de sauter vers une fonction "l'appel" de celle-ci, et le fait de sauter en arrière depuis une fonction "le retour" depuis celle-ci.
 
-Mais pour que l'on puisse utiliser ce morceau de code plusieurs fois, on doit pouvoir sauter à des endroits différents lors du retour, dépendant de l'endroit dans le programme où l'on a appelé la fonction.
+Pour que cette section de code soit réellement réutilisable, le saut de retour doit être capable de retourner à différentes positions, selon l'endroit d'où la fonction a été appelée.
 
-On pourrait sauvegarder la valeur du compteur dans un registre avant de sauter dans la fonction et utiliser cette valeur pour en ressortir. Cependant, en faisant comme ça on pourrait écrire par dessus la valeur du registre si on appele une fonction depuis une autre fonction et on ne pourrait jamais revenir au programme principal.
+Nous pourrions enregistrer la valeur du compteur dans un registre avant de sauter vers la fonction et utiliser cette valeur lors du retour. Cependant, si nous faisons cela de cette manière, une fonction ne pourrait pas appeler une autre fonction, car cela écraserait l'adresse de retour d'origine.
 
 Par exemple:
-Disons que la fonction A appelle la fonction B qui appelle a son tour la fonction C. Quand on voudra revenir en arrière on aura besoin que de l'adresse de retour de la fonction B et une fois dans B on aura besoin que de l'adresse de retour de la fonction A. En général, indépendamment du nombre d'appels de fonctions, la première adresse stocké sera toujours utilisé en dernier. Magiquement, c'est exactement le comportement du stack.
+Disons que la fonction A appelle la fonction B qui appelle a son tour la fonction C. Quand on voudra revenir en arrière on aura besoin que de l'adresse de retour de la fonction B et une fois dans B on aura besoin que de l'adresse de retour de la fonction A. En général, indépendamment du nombre d'appels de fonctions, la première adresse stocké sera toujours utilisé en dernier. Magiquement, c'est exactement le comportement de la pile (stack).
 $19369640789869* Les coupes budgétaires ont conduit à réduire les salaires, et maintenant les assistants du labo sont en grève. Tu vas devoir t'autoévaluer dans ce test. Cela nous permettra d'évaluer ton niveau d'honnêteté et de maturité.
 $15463931654475* [center]Ajoute les instructions "call" et "ret"[/center]
 
