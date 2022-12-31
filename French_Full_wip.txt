@@ -1234,7 +1234,7 @@ $21321167572284* Entrée 4
 === levels/Delicious Order ===
 
 $10160261151833* Commence par lire, une par une, les 15 notes des différents plats depuis l'entrée. Ton travail est de les envoyer triées sur la sortie, de la plus petite à la plus grande.
-$16027225087666* Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nourriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés dans l'ordre de leur note.
+$16027225087666* Nous allons compléter l'encyclopédie galactique culinaire en ajoutant la nourriture humaine. Comme nous n'avons pas d'alphabet, les articles de l'encyclopédie sont rangés par degré de plaisir procuré.
 
 
 === components/Equal64 ===
