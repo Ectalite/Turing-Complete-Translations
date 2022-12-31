@@ -2432,7 +2432,7 @@ $30896164786171* Constante 32 bits
 
 === trans/manual_text_ram ===
 
-$10969790213397
+$10969790213397*
 Ce simulateur gère plusieurs types de RAM avec des caractéristiques différentes, comme ce qui existe en vrai.
 
 [b]RAM[/b]
@@ -3041,7 +3041,7 @@ $28271182652741* Répartit 16 bits en 2 octets
 
 === trans/manual_text_universal_gates ===
 
-$37735744928195
+$37735744928195*
 Il s'avère que tu peux construire toute la logique d'un ordinateur à partir de portes NAND ou NOR. Les ordinateurs de guidage Apollo étaient entièrement construits de portes NOR. Conçus dans les années 60, ils n'avaient que 4 Ko de RAM et 32 Ko d'espace disque, mais ils ont conduits les astronautes vers la lune.
 
 Les ordinateurs modernes ne sont pas entièrement construits avec une seule des portes universelles, mais lorsque cela est possible, les portes NAND sont préférées aux NOR, car elles ont moins de latence et occupent moins d'espace.
@@ -5909,7 +5909,7 @@ $13997767115693* Alterne entre 2 valeurs
 
 === trans/manual_delay_text ===
 
-$52013630755752
+$52013630755752*
 Dans le matériel réel, tous les composants ont un délai. C'est important car le délai du circuit détermine la fréquence maximum à laquelle il peut fonctionner.
 
 En suivant les fils d'entrée à sortie et en ajoutant le délai des composants sur le parcours, tu obtiendras le délai de ce parcours. Le délai d'un circuit est le délai du parcours le plus lent.
@@ -5968,7 +5968,7 @@ $28827008935802* Le Labo
 $61466151084505* Invasion Spaciale
 $20858506932774* Porte AND
 $77495536880911* Porte NOR
-$92696642439976 Duel d'IA
+$92696642439976* Duel d'IA
 $62326481348276* Le Labyrinthe
 $74512388889988* Unité Arithmétique
 $50884376329157* Petite Boite
@@ -6275,7 +6275,7 @@ $25711866218405* [center]Ajoute 3 entrées[/center]
 
 === trans/manual_text_short_circuit ===
 
-$31105471890701
+$31105471890701*
 En électronique, deux composants qui émettent des valeurs différentes sur le même fil produisent un court-circuit.
 
 [center][img=100]res://dialogue/short_circuit.png[/img][/center]
@@ -6610,7 +6610,7 @@ $30670667527598* Rat
 
 $17054292175058* Bienvenue dans le bac à sable, ici tu es libre de t'amuser librement. Je t'ai donné des fils de 64 bits et quelques composants supplémentaires d'Entrées/Sorties (IO).
 $10731996208080* Il y a également des versions 64 bit du programme, du compteur, du registre et de la RAM. Rappelle-toi que les lectures en RAM 64 bits prennent 1 cycle.
-$72764802067974
+$72764802067974*
 Bienvenue dans le bac à sable. 
 
 Les composants sont disponibles dans les menus du côté droit. Une fois placé, clique sur les pattes du composant et glisse pour les connecter au circuit. À gauche tu trouveras l'interface pour le contrôle de la simulation. Note que tu peux utiliser le clic droit sur le bouton "Vitesse d'Exécution" pour sélectionner la vitesse de ton choix.
@@ -6853,7 +6853,7 @@ L'instruction [color=#e49f44]ret[/color] doit réaliser les actions suivantes :
  [i]- [color=#e49f44]DÉPILER[/color] l'adresse de retour de la pile et sauter à cette adresse[/i]
 
 Tu peux échanger de l'information avec et depuis une fonction en écrivant normalement les données dans des registres. Rappelle-toi quels registres sont écrasés par une fonction avant de l'appeler.
-$19416009887091
+$19416009887091*
 Parfois il est utile de réutiliser le même morceau de code. On appele ces morceaux des "fonctions". Pour pouvoir les utiliser, on pourrait utiliser le [color=#e63e5b][url=termonology]jump[/url][/color] pour sauter au début de la fonction et pour en ressortir à la fin. Nous appelons le fait de sauter vers une fonction "l'appel" de celle-ci, et le fait de sauter en arrière depuis une fonction "le retour" depuis celle-ci.
 
 Pour que cette section de code soit réellement réutilisable, le saut de retour doit être capable de retourner à différentes positions, selon l'endroit d'où la fonction a été appelée.
