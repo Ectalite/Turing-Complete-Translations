@@ -2513,6 +2513,7 @@ $61886892927185* Applique AND sur chaque bit 2 à 2
 === rpg/maps/overworld/chef (2) ===
 
 $60791074149079* Chef
+$43137217122501* T'as besoin d'aide !
 
 
 === trans/options_effects_volume ===
@@ -5457,7 +5458,7 @@ $98116750645182* Lis la page de manuel
 
 === levels/negative_numbers/test ===
 
-$64427417171037* Test
+$64427417171037* Vérifier
 
 
 === trans/manual_binary ===
@@ -6478,6 +6479,7 @@ $43488408276984* Populaire
 === rpg/maps/overworld/chef ===
 
 $70248641743406* Chef
+$92065398867997* T'as besoin d'aide !
 
 
 === levels/Water World ===
