@@ -1054,7 +1054,7 @@ $78783902500954*
 
 === components/Maker32 ===
 
-$82420653444614* Assemble 32 bits en 4 octets
+$82420653444614 Assemble 4 octets en 32 bits
 $85308499118176* Créateur 32 bits
 
 
@@ -1847,6 +1847,7 @@ Octet 4
 
 === rpg/maps/overworld/barrel7 ===
 
+$56979881178765* Ceci est un tonneau
 $19922359571673* Tonneau de Ragoût
 
 
@@ -2330,7 +2331,7 @@ $27464111307888* Entrée
 
 === misc/credit_box ===
 
-$15872341864658*
+$15872341864658
 Remerciements sincères à
 
 [b]Traducteurs[/b]
@@ -2343,7 +2344,7 @@ Remerciements sincères à
 {font_work}
 
 [b]Musique Originale[/b]
- Adolfo Aaron Figueroa Bianchi
+ Aarón F. Bianchi
 
 [b]Logiciels Open Source[/b]
 {software}
@@ -2507,7 +2508,7 @@ $82611295916141* Nous attendions mieux de toi.
 
 === trans/level_compute_xor_description ===
 
-$61886892927185* Applique AND sur chaque bit 2 à 2
+$61886892927185 Applique XOR sur chaque bit 2 à 2
 
 
 === rpg/maps/overworld/chef (2) ===
@@ -2823,6 +2824,10 @@ $98772447663910* Éditer les points d'observation
 
 === main_scripts/levels ===
 
+$15232844525838*
+Réalise le circuit qui correspond au tableau.
+  
+[tip]Double-clique sur un composant pour le déplacer avec son groupe de fils connectés directement.[/tip]
 $64510812504271*
 Certains composants utilisés ne sont pas supposés être disponibles dans ce niveau !
 La solution n'obtient pas de score.
@@ -3868,10 +3873,6 @@ $90323246286028* Instructions
 
 === levels/and_gate ===
 
-$15232844525838*
-Réalise le circuit qui correspond au tableau.
-  
-[tip]Double-clique sur un composant pour le déplacer avec son groupe de fils connectés directement.[/tip]
 $15231724707514* Je ne veux pas te décourager, mais je pense que l'éléphant va gagner la compétition. Sans vouloir t'offenser, ton cerveau est tout petit en comparaison.
 
 
@@ -6109,8 +6110,7 @@ $16896928682474* [right]Sortie[/right]
 === components/Maker64 ===
 
 $17464069717985* Créateur 64 bits
-$79677187590355* Transforme 64 bits en 8 octets
-
+$79677187590355 Assemble 8 octets en 64 bits
 
 === trans/manual_ASCII_encoding ===
 
@@ -6578,7 +6578,7 @@ $25159790815891* Constante 8 bits
 
 === components/Maker16 ===
 
-$55864807379312* Assemble 16 bits en 2 octets
+$55864807379312 Assemble 2 octets en 16 bits 
 $39941195789458* Créateur 16 bits
 
 

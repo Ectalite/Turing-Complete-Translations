@@ -1051,7 +1051,7 @@ $76462832199594* Create a circuit that NANDs two bytes bitwise.
 
 === components/Maker32 ===
 
-$82420653444614* Turns 4 bytes into a 16 bit value
+$82420653444614* Turns 4 bytes into a 32 bit value
 $85308499118176* 32 Bit Maker
 
 
@@ -1793,9 +1793,13 @@ For the component factory, the file manager also manages the custom components. 
 === misc/network_update ===
 
 $47639082058046* Nothing here yet
+
+# Showing what components are used in schematics in the hub
 $83560387278127* Derives from: 
 $86830276924898* Uploaded:
 $15762392983604* Size:
+
+# If the hub can't load a schematic for some reason
 $76023068123024* Error
 $70694384106281* Creator:
 $81675147704214* Uses the network component
@@ -1854,6 +1858,7 @@ Byte 4
 
 === rpg/maps/overworld/barrel7 ===
 
+$56979881178765* This is a barrel
 $19922359571673* Stew Barrel
 
 
@@ -1910,41 +1915,79 @@ $85358271811851* [right]Edit linked components[/right]
 
 # Default assembly instructions
 $98784625122112* add 68\nreg0_to_reg1 129\nreg0_to_reg2 130\nreg3_to_out 158
+
+# Decoder pin name
 $80846046332059* CONDITION
+
+# Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $43762760711440* 3 Conditions.assembly
+
+# For the default OVERTURE instruction menu
 $36937658066516* AND
 $25378963142694* Input 2
+
+# For the default OVERTURE instruction menu
 $34688070019016* Compute
 $80984147393241* OPCODE
 $23343928938611* CALCULATION
 $48524980499900* VALUE
+
+# For the default OVERTURE instruction menu
 $89904818945500* Always
 $25947122599583* PUSH
+
+# For the default OVERTURE instruction menu
 $41384200516164* Input
 $52720470197560* Condition
+
+# For the default OVERTURE instruction menu
 $58135326697989* Output
 $21762287720058* Default
+
+# For the default OVERTURE instruction menu
 $45098916684469* Never
 $69871887031160* Result
+
+# For the default OVERTURE instruction menu
 $77964040770330* ADD
+
+# For the default OVERTURE instruction menu
 $90287016519308* UNUSED
 $17900992684779* Input
+
+# For the default OVERTURE instruction menu
 $23756602199977* NAND
 $98979865390652* OUTPUT
 $30360644331285* POP
+
+# For the default OVERTURE instruction menu
 $52155313885654* Condition
+
+# Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $55885017410507* 0 Immediate load.assembly
+
+# Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $38851635485723* 2 Calculations.assembly
+
+# Name of lab test file (the name determines what it looks like in game, but don't the .assembly part)
 $84575312492466* 1 Register copying.assembly
 
 # Default program the first time you open binary search
 $28582639590579* # Create labels like this\nlabel my_label\n# This is a constant\nconst PI 3\n# Also you actually should take a look\n# at the assembly manual entry
+
+# For the default OVERTURE instruction menu
 $49207579633810* NOR
 $97114869841400* Output
 $23432943836287* example
 $15697933732634* Instruction
+
+# For the default OVERTURE instruction menu
 $98586044504803* Copy
+
+# For the default OVERTURE instruction menu
 $87661236574161* Immediate
+
+# For the default OVERTURE instruction menu
 $43346201280348* SUB
 $50176996454102* IMMEDIATE
 $47025412277453* Input 1
@@ -1952,6 +1995,8 @@ $38100656631435* COPY
 
 # Default code seen when first opening the IDE
 $46866969777934* # I am a comment!\n# Below calculates 1 + 1\n1\nreg0_to_reg1\nreg0_to_reg2\nadd\nreg3_to_out
+
+# For the default OVERTURE instruction menu
 $63749396808309* OR
 
 
@@ -2308,7 +2353,7 @@ Sincere thanks to:
 {font_work}
 
 [b]Soundtrack[/b]
- Adolfo Aaron Figueroa Bianchi
+ Aarón F. Bianchi
 
 [b]Open source software[/b]
 {software}
@@ -2474,7 +2519,7 @@ $82611295916141* We thought better of you.
 
 === trans/level_compute_xor_description ===
 
-$61886892927185* Pairwise AND together each bit
+$61886892927185* Pairwise XOR together each bit
 
 
 === trans/level_signed_negator_description ===
@@ -2503,6 +2548,7 @@ Byte 8[/right]
 === rpg/maps/overworld/chef (2) ===
 
 $60791074149079* Chef
+$43137217122501* You need help
 
 
 === main_scripts/overture_level ===
@@ -2792,6 +2838,10 @@ $98772447663910* Link components
 
 === main_scripts/levels ===
 
+$15232844525838*
+Create the circuit that matches the table.
+	
+[tip]Double click on a component to move it together with connected wires.[/tip]
 $64510812504271*
 Some of the components used are not supposed to be available in this level!
 The solution is not scored.
@@ -2994,7 +3044,7 @@ $16826220977157*
 COPY is just ADD with the second argument being 0
 $14690660047411* Implement the condition opcodes
 $30132649789584* Linked component {number} should point to the output
-$18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I wont tell you what opcodes to use and so on.
+$18994998239232* I will show you some upgrades you can make, on the path to implementing function calls. But from here on the details are up to you, I won't tell you what opcodes to use and so on.
 $12034111753799* Linked component {number} should point to the counter
 $36561706158040* Linked component {nr} should point to a register or custom component with a register inside
 
@@ -3305,6 +3355,8 @@ $29225283986051* To solve this level you need to use the 'Level input' component
 $95056157627313* To solve this level you need to use the 'Level input' component
 $39587966698723* Short circuit inside {custom_component}
 $87591753278764* Reg {nr}
+
+# Right hand side menu
 $29169064199243* Output {nr}
 $12249248261034* To solve this level you need to use the 'Level output' component
 $13327741293223* Input {nr}
@@ -3496,6 +3548,8 @@ $53123649343022* Component Factory
 
 === trans/tps_label ===
 
+
+# Stands for Ticks Per Second (an option in the menu)
 $25685496576554* TPS:
 
 
@@ -3550,6 +3604,8 @@ $65379881141228*
 
 === misc/level_gate_unlocks_unknown ===
 
+
+# This is a tooltip for levels on the level map, before something has been unlocked.
 $76731326010721* Unlocks something unknown
 
 
@@ -3628,9 +3684,6 @@ $68750974209145* You can figure out if 2 inputs have an odd number of [ON] with 
 # hint for the bus
 $50799425816171* Use switches to put the inputs on the same wire.
 
-# Hint for byte switch
-$86319296925137* What would this look like if you were only switching 1 bit? What would the truth table for such a component look like?
-
 # Hint for byte adder
 $37093555217568* You only need 8 full adders.
 
@@ -3655,11 +3708,6 @@ In this level you need to use 1 Delay Line. Make a truth table for what should g
 The inputs are the 2 level inputs AND the output of the Delay Line, as the output plays a role in its input. In total you have 3 "inputs" to for this table which gives you 8 combinations. Once you have the level requirements as a table, it should be a lot easier to solve.
 $43114846393781* LOAD
 $65118645692603* instruction
-
-# Hint for conditions
-$87674181578455*
-There are 3 condition bits. The first bit being [ON] means the result being 0 meets the condition. The second bit being [ON] means the result being less than 0 meets the condition. If either of those two are [ON], the condition is met. 
-Finally, if the last bit is [ON], negate the status of the condition being met or not.
 $53308028631558* instructions
 
 # Hint for masking time
@@ -3847,16 +3895,7 @@ $90323246286028* Instructions
 
 === levels/and_gate ===
 
-$15232844525838*
-Create the circuit that matches the table.
-	
-[tip]Double click on a component to move it together with connected wires.[/tip]
 $15231724707514* Right now the elephant is dominating all the other test subjects from earth. Adjusting for brain size, you are also doing well.
-
-
-=== trans/level_component_factory_error ===
-
-$49014901714855* Map squares can only contain one input or output node.
 
 
 === trans/panel_neg_description ===
@@ -3871,6 +3910,8 @@ $92123299522120* [center]Expected states[/center]
 
 === trans/options_working ===
 
+
+# Upload in progress for score sync
 $18749833316380* Working
 
 
@@ -3917,6 +3958,8 @@ $95162531064211* HISS
 
 === trans/options_resubmit ===
 
+
+# Seen after having uploaded a schematic to the hub and then changing the schematic
 $13328644005279* Resubmit
 
 
@@ -4047,6 +4090,8 @@ $81322935207536* INPUT
 $92046368194170* Condition
 $39935096343723* Never
 $52961346176405* {condition} copy [color=#dd6576]REG 0[/color] to counter
+
+# Overture instruction UI
 $56175681834727* When [color=#e49f44]result {condition}[/color]
 $31185395052385* OUTPUT
 $34974836617918* {register_1} and {register_2}
@@ -4660,6 +4705,8 @@ $40180779432911* 32 Bit OR
 
 === trans/instructions_hint ===
 
+
+# Seen the first time you open thte "instruction" menu 
 $65105856275770* [center][color=#c5c5c5]Click to toggle the bits[/color][/center]
 
 
@@ -5263,12 +5310,18 @@ $47320399181598* File not selected
 
 === misc/overture_add_assembly ===
 
+
+# Overture custom instruction interface (disappears when you complete the Turing Complete level)
 $10565133223872* Never
+
+# Only shown in the first programming level
 $62421757655527* Name a code and click save.
 $63525237058165* Copy from {source} to {destination}
 $24281479096246* When [color=#2b8738]result[/color] {condition}
 $32873193471770* UNUSED
 $88446594314360* Immediate: {number}
+
+# Overture custom instruction interface (disappears when you complete the Turing Complete level)
 $94278717238239* Always
 $79398554520691* {opcode} {reg_1} and {reg_2}
 $72740868980397* {condition} copy {register} to counter
@@ -5554,8 +5607,14 @@ Data width:[/right]
 
 === nim/backend_lib/custom_component ===
 
+
+# Default new input pin name for custom compoennts
 $64951951489108* Input
+
+# Default new output pin name for custom compoennts
 $94864122622568* Output
+
+# Default new bidirectional pin name for custom compoennts
 $94089252493268* Pin
 
 
@@ -5590,9 +5649,9 @@ $79554853897000* Switch schematic
 $20397881687313* new_program
 
 
-=== trans/level_alu1_code ===
+=== misc/instruciton_rule_label ===
 
-$20619700446604* [center]OR[/center]
+$70464083627337* Label
 
 
 === components/Shl32 ===
@@ -5605,11 +5664,6 @@ $88685329847417* Shifts the bits of an input left
 
 $37666366877853* Divide and mod 2 numbers
 $44959426271423* Divide
-
-
-=== misc/instruciton_rule_label ===
-
-$70464083627337* Label
 
 
 === trans/panel_decoder2_input ===
@@ -6084,7 +6138,7 @@ $30404865580119* ASCII encoding
 === components/Maker64 ===
 
 $17464069717985* 64 Bit Maker
-$79677187590355* Turns 8 bytes into a 16 bit value
+$79677187590355* Turns 8 bytes into a 64 bit value
 
 
 === rpg/maps/prison/sign3 ===
@@ -6443,6 +6497,7 @@ $43488408276984* Popular
 === rpg/maps/overworld/chef ===
 
 $70248641743406* Chef
+$92065398867997* You need help
 
 
 === levels/Water World ===
@@ -6998,7 +7053,6 @@ $11144256835662* XORi
 # 4 letters max
 $61412773713567* SUB
 $85913831661289* IF_LESS
-$21803034737442* tick
 $52344899983501* IF_LESS_OR_EQUAL
 $89945092889418* SUBi
 
@@ -7025,17 +7079,15 @@ $79492115258673* IF_GREATER
 
 # Instead of writing 5839, the number turns into 5.8K
 $84696693690500* K
-$22213999385406* delay
+$30602804398798* Gate
 
 # 4 letters max
 $33873219185286* NAND
-$30602804398798* Gate
 $44906330481241* Delay
+$45532697833519* You made it to level {level}!
 
 # 4 letters max
 $64519909700148* AND
-$45532697833519* You made it to level {level}!
-$39343770421034* gate
 $76763908762578* Tick
 
 # 4 letters max
@@ -7090,11 +7142,6 @@ $43691912945654*
 Desired state
 Desired output
 [/right]
-
-
-=== trans/level_description ===
-
-$26184794529449* [center]Add conditions to the calculation codes[/center]
 
 
 === trans/panel_input_input_2 ===
@@ -7195,11 +7242,6 @@ $90614106399129*
 [cell]Input 2[/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell][cell][ON][/cell]
 [cell]Output[/cell][cell][ON][/cell][cell][OFF][/cell][cell][OFF][/cell][cell][ON][/cell]
 [/table]
-
-
-=== trans/tick ===
-
-$92150881431937* Tick
 
 
 === components/Not16 ===

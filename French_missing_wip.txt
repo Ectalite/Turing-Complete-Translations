@@ -1,0 +1,5 @@
+=== rpg/maps/overworld/barrel7 ===
+
+$56979881178765 Ceci est un tonneau
+
+
