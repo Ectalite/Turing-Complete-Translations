@@ -1054,7 +1054,7 @@ $78783902500954*
 
 === components/Maker32 ===
 
-$82420653444614 Assemble 4 octets en 32 bits
+$82420653444614* Assemble 4 octets en 32 bits
 $85308499118176* Créateur 32 bits
 
 
@@ -2331,7 +2331,7 @@ $27464111307888* Entrée
 
 === misc/credit_box ===
 
-$15872341864658
+$15872341864658*
 Remerciements sincères à
 
 [b]Traducteurs[/b]
@@ -2508,7 +2508,7 @@ $82611295916141* Nous attendions mieux de toi.
 
 === trans/level_compute_xor_description ===
 
-$61886892927185 Applique XOR sur chaque bit 2 à 2
+$61886892927185* Applique XOR sur chaque bit 2 à 2
 
 
 === rpg/maps/overworld/chef (2) ===
@@ -6110,7 +6110,8 @@ $16896928682474* [right]Sortie[/right]
 === components/Maker64 ===
 
 $17464069717985* Créateur 64 bits
-$79677187590355 Assemble 8 octets en 64 bits
+$79677187590355* Assemble 8 octets en 64 bits
+
 
 === trans/manual_ASCII_encoding ===
 
@@ -6578,7 +6579,7 @@ $25159790815891* Constante 8 bits
 
 === components/Maker16 ===
 
-$55864807379312 Assemble 2 octets en 16 bits 
+$55864807379312* Assemble 2 octets en 16 bits 
 $39941195789458* Créateur 16 bits
 
 
