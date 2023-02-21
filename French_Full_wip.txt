@@ -6823,7 +6823,7 @@ $73418471595285* Addition
 
 === main_scripts/leg_level ===
 
-$70383685548547* REG 
+$70383685548547 REG {nr}
 $20104629254326* ARGUMENT 2
 $65642901654732* {component} devrait être désactivé
 $98778676892898* {component} devrait être actif avec la valeur {value}
@@ -6831,7 +6831,7 @@ $14186606871089* Au prochain cycle la valeur du compteur sera {wrong_value} alor
 $27868897434461* Composant compteur introuvable
 $37810243909140* COMPTEUR
 $38681417496680* ARGUMENT 1
-$43723329256095* REGISTRE {nr}
+$43723329256095 REG {nr}
 $50722296752142* ENTREE
 $24003300271049* {component} devrait avoir la valeur {value} et non {wrong_value}
 $60997201855346* ADRESSE DE RESULTAT
