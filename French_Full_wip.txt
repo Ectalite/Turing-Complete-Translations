@@ -690,7 +690,7 @@ $66247694103179* [center]Ajoute 5 à l'entrée[/center]
 $11540713506719*
 Tu es maintenant libre de modifier le programme de ton ordinateur.
 Clique sur l'icône Éditer du composant programme pour commencer à programmer.
-$19281970848639 [center]Ajoute 5 à l'entrée (test {test} of 32).[/center]
+$19281970848639* [center]Ajoute 5 à l'entrée (test {test} of 32).[/center]
 $17770257567603* Donc pendant ce temps on te demandera d'aider un peu sur le vaisseau.
 $19446152707984* Clique sur l'icône mémoire du composant programme pour commencer à programmer ton ordinateur. Ton ordinateur doit lire une entrée, y ajouter 5 et la renvoyer en sortie (on ne s'occupera pas du dépassement possible).
 $12078933051174* Mais comme tu ne sais pas encore le programmer, tu n'es pas encore vraiment prêt pour ça..
